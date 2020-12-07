@@ -1,0 +1,98 @@
+.page-header-top-black {
+    height: 35px;
+    width: 100%;
+    background-color: #292929;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    span {
+        color: #d8d8d8;
+        font-family: "Freight Sans Pro";
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 1.68px;
+        line-height: normal;
+        /* Text style for "Parfum & B" */
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}
+
+.page-header-top-grey {
+    height: 35px;
+    width: 100%;
+    background-color: #efefef;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+    span {
+        color: #434343;
+        font-family: "Freight Sans Pro";
+        font-size: 14px;
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: 1.68px;
+        line-height: normal;
+        text-align: center;
+        /* Text style for "Geniessen" */
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}
+
+.header-search-section {
+    width: 80%;
+    margin: 0 auto;
+
+    /* height: 9vh; */
+    padding: 20px 0;
+
+    .left-side-search {
+        display: flex;
+        justify-content: space-between;
+        /* height: 9vh; */
+        padding: 20px 0;
+        margin: 0 auto;
+
+        div {
+            &:nth-child(1) {
+                flex: 2;
+            }
+
+            &:nth-child(2) {
+                flex: 1;
+            }
+
+            &:nth-child(3) {
+                flex: 2;
+                text-align: right;
+            }
+        }
+
+        /* width: 100%;*/
+        span {
+            /* Style for "shop@daspa" */
+
+            color: #7b7b7b;
+            font-family: "Freight Sans Pro";
+            font-size: 14px;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 1.68px;
+            line-height: normal;
+            text-align: center;
+            /* Text style for "shop@daspa" */
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+}
