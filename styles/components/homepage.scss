@@ -1,0 +1,325 @@
+.first-intro{
+  padding: 50px 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+  .first-intro-body{
+    width: 95%;
+display: flex;
+    justify-content: space-between;
+    .first-intro-bod-right{
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .first-intro-bod-left{
+      height: 65vh;
+      padding: 150px 0 100px 0;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      button{
+        /* Style for "Rechteck 2" */
+        margin-top: 30px;
+        width: 297px;
+        height: 64px;
+        background-color: #080808;
+        color: #ffffff;
+        font-family: "Freight Sans Pro";
+        font-size: 25px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 5px;
+        line-height: normal;
+        text-align: center;
+        text-transform: uppercase;
+        /* Text style for "JETZT SHOP" */
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-transform: uppercase;
+        border: none;
+      }
+      .intro-small-txt{
+        color: #5c5c5c;
+        font-family: "Freight Sans Pro";
+        font-size: 23px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 1.38px;
+        line-height: normal;
+        text-align: left;
+        /* Text style for "Entdecken" */
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      .intro-big-txt{
+        color: #3e3e3e;
+        font-family: "Freight Sans Pro";
+        font-size: 90px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 3.6px;
+        line-height: 80px;
+        text-align: left;
+        /* Text style for "Machen Sie" */
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+}
+.first-products-body{
+  width: 90%;
+  height: 65vh;
+  margin: 0 auto;
+  margin-top: 76px;
+  .first-prod-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .heart-icon-item{
+      position: absolute;
+      top: 0vh;
+      right: 5vw;
+    }
+    .circled-txt{
+      position: absolute;
+      bottom: 15vh;
+      left: 2vh;
+
+    }
+    .item-new{
+      position: absolute;
+      bottom: 15vh;
+      color: #ffffff;
+      margin: 0;
+      font-family: "Freight Sans Pro";
+      font-size: 12px;
+      padding: 5px 0;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2.4px;
+      line-height: normal;
+      text-align: center;
+      /* Text style for "New" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-transform: uppercase;
+      /* Style for "Pfad 56" */
+      width: 67px;
+      background-color: #000000
+    }
+    button{
+      /* Style for "Rechteck 1" */
+      width: 192px;
+      padding: 10px;
+      border: 1px solid #707070;
+      background: white;
+      transition: .5s;
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro";
+      font-size: 20px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2px;
+      line-height: normal;
+      text-align: left;
+      /* Text style for "Quick shop" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-transform: uppercase;
+      text-align: center;
+      &:hover{
+        /* Style for "Rechteck 1" */
+        width: 192px;
+        height: 51px;
+        border: 1px solid #707070;
+        background-color: #000000;
+        transition: .5s;
+        color: #ffffff;
+        font-family: "Freight Sans Pro";
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 2px;
+        line-height: normal;
+        text-align: left;
+        /* Text style for "Quick shop" */
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+    .prod-txt-head{
+      color: #7b7b7b;
+      font-family: "Freight Sans Pro";
+      font-size: 20px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2.6px;
+      line-height: 35px;
+      text-align: center;
+      /* Text style for "Clean prod" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    .prod-txt-head2{
+      color: #7b7b7b;
+      font-family: "Freight Sans Pro";
+      font-size: 17px;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 0.34px;
+      line-height: 35px;
+      text-align: center;
+      /* Text style for "Limited ed" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    .prod-txt-name{
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro";
+      font-size: 35px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 3.5px;
+      line-height: normal;
+      text-align: center;
+      /* Text style for "Ylumi" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    .prod-txt-foot{
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro";
+      font-size: 25px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 1.25px;
+      line-height: 35px;
+      text-align: center;
+      /* Text style for "Energy Kap" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+    }
+    .prod-txt-foot2{
+      color: #7b7b7b;
+      font-family: "Freight Sans Pro";
+      font-size: 18px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2.34px;
+      line-height: 35px;
+      text-align: center;
+      /* Text style for "Kapseln" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+    .prod-txt-price{
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro";
+      font-size: 28px;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 1.4px;
+      line-height: 35px;
+      text-align: center;
+      /* Text style for "28,00 €" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+    }
+
+  }
+  .firstprod-left-text{
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    p{
+      color: #5c5c5c;
+      font-family: "Freight Sans Pro";
+      font-size: 23px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 1.38px;
+      line-height: normal;
+      text-align: left;
+      /* Text style for "Beauty: Ge" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    h2{
+      color: #3e3e3e;
+      font-family: "Freight Sans Pro";
+      font-size: 60px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2.4px;
+      line-height: 55px;
+      text-align: left;
+      /* Text style for "Exklusive" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+    span{
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro";
+      font-size: 22px;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 0.55px;
+      line-height: 35px;
+      text-align: left;
+      /* Text style for "Lorem ipsu" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+    }
+    button{
+      /* Style for "Rechteck 2" */
+      width: 297px;
+      height: 64px;
+      background-color: #080808;
+      color: #ffffff;
+      font-family: "Freight Sans Pro";
+      font-size: 25px;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 5px;
+      line-height: normal;
+      text-align: center;
+      text-transform: uppercase;
+      /* Text style for "JETZT SHOP" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+}

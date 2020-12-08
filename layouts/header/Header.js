@@ -1,5 +1,5 @@
 import HeaderSearch from "./HeaderSearch";
-
+import Navbar from "./Navbar";
 const Header = () => {
   return (
     <>
@@ -15,6 +15,7 @@ const Header = () => {
         </span>
       </div>
       <HeaderSearch />
+      <Navbar/>
     </>
   );
 };

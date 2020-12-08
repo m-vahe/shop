@@ -1,8 +1,12 @@
 import PageHeader from "../layouts/header/Header";
+import Homepage from "../scenes/homepage";
 export default function Home() {
   return (
     <>
-      <PageHeader />
+      <header>
+          <PageHeader />
+          <Homepage/>
+      </header>
     </>
   );
 }
