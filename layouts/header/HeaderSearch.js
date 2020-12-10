@@ -48,6 +48,8 @@ const HeaderSearch = () => {
               <button>de</button>
               |
               <button>en</button>
+              |
+              <button>FR</button>
             </div>
             <div className={"user-circle"}>
               <FontAwesomeIcon
