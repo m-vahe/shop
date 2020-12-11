@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0 auto;
   border-top: 1px solid #000000;
-  padding: 30px 0;
+  padding: 15px 0;
   .payment-section{
     width: 80%;
     margin: 0 auto;
@@ -22,14 +22,14 @@
     flex-direction: column;
     .footer-circled-bod{
       justify-content: space-evenly;
-      padding: 20vh 0;
+      padding: 10vh 0;
       .nav-top-items{
         flex-direction: column;
         align-items: center;
         p{
           color: #000000;
           font-family: "Freight Sans Pro";
-          font-size: 22px;
+          font-size: 1rem;
           font-weight: 500;
           font-style: normal;
           letter-spacing: 0.66px;
@@ -39,19 +39,15 @@
           font-family: "Freight Sans Pro Bold - Regular";
           font-weight: 700;
           font-style: normal;
-          letter-spacing: normal;
-          line-height: normal;
           /* Text style for ", Senden S" */
           font-style: normal;
-          letter-spacing: normal;
-          line-height: normal;
         }
         .footer-circled-persons{
-          width: 78px;
-          height: 78px;
+          width: 58px;
+          height: 58px;
           border-radius: 50%;
           background: #000000;
-          margin-bottom: 50px;
+          margin-bottom: 25px;
         }
       }
     }
@@ -60,9 +56,9 @@
   .footer-navbar-all{
     width: 100%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .footer-main-nav{
     display: flex;
@@ -72,25 +68,29 @@
     position: relative;
     li{
       list-style: none;
+      margin: 0 20px;
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
     }
     a{
       display: inline-block;
       //height: 15px;
       color: #000000;
       font-family: "Freight Sans Pro";
-      font-size: 22px;
+      font-size: 1rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 0.9px;
-      line-height: normal;
       text-align: center;
       /* Text style for "PARFUM" */
       font-style: normal;
       letter-spacing: normal;
-      line-height: normal;
       text-transform: uppercase;
       text-decoration: none;
-
     }
   }
 
@@ -100,7 +100,7 @@
   align-items: center;
   background: black;
   padding: 5vh 0;
-  border-bottom: 5vh solid white;
+  border-bottom: 3vh solid white;
   img{
     max-width:188px ;
     max-height: 46px;

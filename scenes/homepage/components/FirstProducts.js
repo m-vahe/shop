@@ -24,7 +24,9 @@ const FirstProducts = () =>{
                 </div>
                 <div className={"d-flex flex-wrap col-lg-9"}>
                     <div className={"col-lg-4 first-prod-items"}>
-                        <img src="/item.jpg" alt=""/>
+                       <div className={"picture-body-prod"}>
+                           <img src="/item.jpg" className={"item-picture"} alt=""/>
+                       </div>
                         <span className={'prod-txt-head'}>Clean product</span>
                         <span className={'prod-txt-head2'}>Limited edition</span>
                         <h3 className={'prod-txt-name'}>Ylumi</h3>
@@ -44,10 +46,13 @@ const FirstProducts = () =>{
                         </button>
                     </div>
                     <div className={"col-lg-4 first-prod-items"}>
-                        <img src="/item.jpg" alt=""/>
-                        <span className={"item-new"}>New</span>
+                        <div className={"picture-body-prod"}>
+                            <img src="/item.jpg" className={"item-picture"} alt=""/>
+                            <span className={"item-new"}>New</span>
+                            <img src="/15-layers.png" alt="15 layers" className={"circled-txt"}/>
+                        </div>
                         <span className={'prod-txt-head'} style={{opacity:"0"}}>Clean product</span>
-                        <img src="/15-layers.png" alt="15 layers" className={"circled-txt"}/>
+
                         <span className={'prod-txt-head2'}>Limited edition</span>
                         <h3 className={'prod-txt-name'}>Ylumi</h3>
                         <span className={'prod-txt-foot'}>Energy Kapseln</span>
@@ -66,7 +71,9 @@ const FirstProducts = () =>{
                         </button>
                     </div>
                     <div className={"col-lg-4 first-prod-items"}>
-                        <img src="/item.jpg" alt=""/>
+                        <div className={"picture-body-prod"}>
+                            <img src="/item.jpg" className={"item-picture"} alt=""/>
+                        </div>
                         <span className={'prod-txt-head'}>Clean product</span>
                         <span className={'prod-txt-head2'}>Limited edition</span>
                         <h3 className={'prod-txt-name'}>Ylumi</h3>

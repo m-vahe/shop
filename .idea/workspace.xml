@@ -2,56 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/layouts/footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/footer/FooterBottom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/footer/FooterNav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/footer/FooterPayment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/aaa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/amazonlogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/anzeige-final.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dhllogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dpab1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dpab2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dpab3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/dpabbottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/footerlogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/gorgeenlogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/inspiration.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/inspirationbot1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/inspirationbot2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mastercardlogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/paypallogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/productbotleft.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/productbotright.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/versandartenlogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/video.webm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/visalogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vorkasselogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/zahlungstartenlogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/BottomVideos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/DpabBottom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/DpabMagazine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/FilteredProductBottom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/InspirationBottomTwo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/InspirationSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/Newsletter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/ProductsWithFilter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/SecondProducts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/Services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/VideoPart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/inspirationBottomOne.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/components/footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/components/mediaheader.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/FirstIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/FirstIntro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/components/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/FirstProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/InspirationSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/InspirationSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/ProductsWithFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/SecondProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/SecondProducts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/components/SecondSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/SecondSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/components/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/components/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/components/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/homepage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
@@ -64,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -110,7 +71,8 @@
       <workItem from="1607432098096" duration="8259000" />
       <workItem from="1607492116281" duration="12947000" />
       <workItem from="1607507834781" duration="16818000" />
-      <workItem from="1607578101920" duration="30772000" />
+      <workItem from="1607578101920" duration="44519000" />
+      <workItem from="1607680008951" duration="16653000" />
     </task>
     <servers />
   </component>
@@ -135,7 +97,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/layouts/footer/FooterNav.js</url>
           <line>3</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

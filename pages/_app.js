@@ -8,7 +8,7 @@ class MyApp extends App {
     return (
       <>
         <Head>
-          <title>App</title>
+          <title>Das Parfum & Beauty</title>
         </Head>
         <Component {...pageProps} />
       </>

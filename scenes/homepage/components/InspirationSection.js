@@ -3,10 +3,10 @@ const InspirationSection = () =>{
     return(
         <>
         <div className={"inspiration-body d-flex flex-wrap"}>
-            <div className={"col-lg-8 inspiration-left"} style={{backgroundImage:"url(/inspiration.png)"}}>
+            <div className={"col-lg-9 col-xl-9 inspiration-left"} style={{backgroundImage:"url(/inspiration.png)"}}>
                 <p>INSPIRATION</p>
             </div>
-            <div className={"col-lg-4 inspiration-right d-flex"}>
+            <div className={"col-lg-3 col-xl-3 inspiration-right d-flex"}>
               <div className={"inspiration-right-head"}>
                   <p className={"inspiration-right-headtxt"}>
                       Gesichtspflege-serie

@@ -1,5 +1,5 @@
 .page-header-top-black {
-    height: 35px;
+    padding: 5px;
     width: 100%;
     background-color: #292929;
     display: flex;
@@ -9,21 +9,21 @@
     span {
         color: #d8d8d8;
         font-family: "Freight Sans Pro";
-        font-size: 14px;
+        font-size: .70rem;
         font-weight: 500;
         font-style: normal;
         letter-spacing: 1.68px;
-        line-height: normal;
+
         /* Text style for "Parfum & B" */
         font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
+
+
         text-transform: uppercase;
     }
 }
 
 .page-header-top-grey {
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     background-color: #efefef;
     display: flex;
@@ -33,16 +33,16 @@
     span {
         color: #434343;
         font-family: "Freight Sans Pro";
-        font-size: 14px;
+        font-size: .70rem;
         font-weight: 500;
         font-style: italic;
         letter-spacing: 1.68px;
-        line-height: normal;
+
         text-align: center;
         /* Text style for "Geniessen" */
         font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
+
+
         text-transform: uppercase;
     }
 }
@@ -63,34 +63,37 @@
         align-items: baseline;
         justify-content: space-between;
         width: 351px;
-
+.header-search-icons-bod{
+    display: flex;
+    justify-content: space-between;
+}
         .lang-btns{
             color: #7b7b7b;
             font-family: "Freight Sans Pro";
-            font-size: 14px;
+            font-size: .75rem;
             font-weight: 500;
             font-style: normal;
             letter-spacing: 1.68px;
-            line-height: normal;
+
             text-align: center;
             /* Text style for "De | EN" */
             font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
+
+
             text-transform: uppercase;
             button{
                 color: #7b7b7b;
                 font-family: "Freight Sans Pro";
-                font-size: 14px;
+                font-size: .75rem;
                 font-weight: 500;
                 font-style: normal;
                 letter-spacing: 1.68px;
-                line-height: normal;
+
                 text-align: center;
                 /* Text style for "De | EN" */
                 font-style: normal;
-                letter-spacing: normal;
-                line-height: normal;
+
+
                 text-transform: uppercase;
                 border: none;
                 background: none;
@@ -119,21 +122,21 @@
                 height: 16px;
                 padding-left:24px ;
                 outline: none;
-                font-size: 11px;
+                font-size: .68rem;
                 font-family: "Freight Sans Pro";
                 &::placeholder{
                     color: #7b7b7b;
                     font-family: "Freight Sans Pro";
-                    font-size: 11px;
+                    font-size: .68rem;
                     font-weight: 500;
                     font-style: normal;
                     letter-spacing: 1.32px;
-                    line-height: normal;
+
                     text-align: center;
                     /* Text style for "Suche" */
                     font-style: normal;
-                    letter-spacing: normal;
-                    line-height: normal;
+
+
                     text-transform: uppercase;
                     text-align: left;
                 }
@@ -143,26 +146,31 @@
     .left-side-search{
         display: flex;
         justify-content: space-between;
-        .more-right{
-            margin-right: 15px;
+        .left-side-contacts{
+            display: flex;
+            flex-wrap: wrap;
         }
+
       .logo-div{
-          padding: 37px 34px;
+          padding: 30px 35px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
       }
     }
         span {
             color: #7b7b7b;
             font-family: "Freight Sans Pro";
-            font-size: 14px;
+            font-size: .75rem;
             font-weight: 500;
             font-style: normal;
             letter-spacing: 1.68px;
-            line-height: normal;
+
             text-align: center;
             font-style: normal;
-            letter-spacing: normal;
-            line-height: normal;
+
             text-transform: uppercase;
+            flex: 1;
         }
     }
 .navbar-body{
@@ -183,16 +191,18 @@
                     z-index: 4;
                     color: #000000;
                     font-family: "Freight Sans Pro";
-                    font-size: 20px;
+                    a{
+                        font-size : .9rem;
+                    }
                     font-weight: 300;
                     font-style: normal;
                     letter-spacing: 0.9px;
-                    line-height: normal;
+
                     text-align: center;
                     /* Text style for "PARFUM" */
                     font-style: normal;
-                    letter-spacing: normal;
-                    line-height: normal;
+
+
                     text-transform: uppercase;
                     padding-top: 5px;
                     border-left: 1px solid transparent;
@@ -213,7 +223,6 @@
                             height: 10px;
                             z-index: 100;
                             background: white;
-                            bottom: 14px;
                         }
                     }
                     a{
@@ -240,7 +249,6 @@
                                 height: 10px;
                                 z-index: 100;
                                 background: white;
-                                bottom: 14px;
                             }
                         }
 
@@ -264,10 +272,13 @@
                             .nav-hov-links{
                                 flex-direction: column;
                                 text-align: left;
+                                h2{
+                                    font-size: 1.8rem;
+                                }
                             a{
                                 color: #000000;
                                 font-family: "Freight Sans Pro";
-                                font-size: 23px;
+                                font-size: .9rem;
                                 font-weight: 300;
                                 font-style: normal;
                                 letter-spacing: 1.38px;
@@ -275,8 +286,8 @@
                                 text-align: left;
                                 /* Text style for "A-Z,  , Ap" */
                                 font-style: normal;
-                                letter-spacing: normal;
-                                line-height: normal;
+
+
                                 text-transform: uppercase;
                             }
                             }
