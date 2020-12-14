@@ -11,7 +11,7 @@ const Newsletter = () =>{
                 <div className={"newsletter_email"}>
                     <form action="#" className={"d-flex"}>
                         <input type="email" placeholder={"Email adresse"} className={"newsletter-email-inp col-lg-8"}/>
-                        <input type="submit" className={"newsletter-email-sub col-lg-4" }/>
+                        <input type="submit" className={"newsletter-email-sub col-lg-4" } value={"Senden"}/>
                     </form>
                 </div>
             </div>
