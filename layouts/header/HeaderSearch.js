@@ -13,23 +13,23 @@ const HeaderSearch = () => {
       <div className="header-search-section">
         <div className="left-side-search ">
           <div className={"left-side-contacts col-lg-4"}>
-            <span className={"more-right col-lg-6"}>
+            <h2 className={"more-right "}>
               {" "}
               <FontAwesomeIcon
                 icon={faEnvelopeSquare}
                 style={{ fontSize: "14px" ,marginRight:"10px"}}
               />{" "}
               shop@dasparfum-beauty.de
-            </span>
+            </h2>
 
-            <span className={"col-lg-6"}>
+            <h2 className={""}>
               {" "}
               <FontAwesomeIcon
                 icon={faPhoneAlt}
                 style={{ fontSize: "14px" ,marginRight:"10px"}}
               />{" "}
               +49 (0)6173 9938000
-            </span>
+            </h2>
           </div>
           <div className="logo-div col-lg-4">
             <Image src="/logo.png" alt="me" width="318" height="76" />

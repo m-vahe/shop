@@ -1,5 +1,5 @@
 .page-header-top-black {
-    padding: 5px;
+    padding: 0 5px 5px 5px;
     width: 100%;
     background-color: #292929;
     display: flex;
@@ -65,7 +65,7 @@
         width: 351px;
 .header-search-icons-bod{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
         .lang-btns{
             color: #7b7b7b;
@@ -152,20 +152,20 @@
         }
 
       .logo-div{
-          padding: 30px 35px;
+          padding: 45px 35px 30px 35px;
           display: flex;
           flex-direction: column;
           align-items: center;
       }
     }
-        span {
+        h2 {
             color: #7b7b7b;
             font-family: "Freight Sans Pro";
-            font-size: .75rem;
+            font-size: .6rem;
             font-weight: 500;
             font-style: normal;
             letter-spacing: 1.68px;
-
+            flex: 1;
             text-align: center;
             font-style: normal;
 

@@ -34,7 +34,7 @@ const FilteredProductBottom = () =>{
                         <a href="#">Mehr lesen</a>
                     </div>
                 </div>
-                <button>MEHR Neuigkeiten </button>
+                <button className={"filter-bot-btn"}>MEHR Neuigkeiten </button>
             </div>
         </>
     )
