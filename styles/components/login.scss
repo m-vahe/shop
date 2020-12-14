@@ -1,0 +1,17 @@
+
+.login-scene{
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0 75px 0;
+  .login-scene-head{
+      h2{
+        text-align: center;
+      }
+  }
+  .login-scene-form-and-else{
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}

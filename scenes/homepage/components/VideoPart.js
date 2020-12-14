@@ -22,9 +22,38 @@ const VideoPart = () =>{
                     setPlay(true)
                 }}/>
                 {/*<button  style={play ? {display:"none"}:null} >Play</button>*/}
-                <button className={"pausevideohome"} style={!play ? {display:"none"}:null} onClick={()=>{
-                    setPlay(false)
-                }}>Pause</button>
+                {/*<button className={"pausevideohome"} style={!play ? {display:"none"}:null} >Pause</button>*/}
+                <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg"
+                     onClick={()=>{
+                         setPlay(false)
+                     }}
+                     className={"pausevideohome"}
+                     xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 512 512"  space="preserve" style={!play ? {
+                    fill: "none",
+                    stroke: "white",
+                    strokeWidth: "25",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    strokeMiterlimit: "10",
+                    position: "absolute",
+                    width: "6rem",
+                    display:"none"
+                }: {
+                    fill: "none",
+                    stroke: "white",
+                    strokeWidth: "25",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    strokeMiterlimit: "10",
+                    position: "absolute",
+                    width: "6rem"
+                }}>
+                    <g>
+                        <line className="st0" x1="197.8" y1="430.8" x2="197.8" y2="81.2"/>
+                        <line className="st0" x1="314.2" y1="430.8" x2="314.2" y2="81.2"/>
+                    </g>
+                </svg>
                 <p >Entdecken sie unseren showroom</p>
             </div>
         </>

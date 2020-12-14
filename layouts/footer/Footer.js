@@ -4,9 +4,11 @@ import FooterBottom from "./FooterBottom";
 const Footer = () =>{
     return(
         <>
-            <FooterPayment/>
-            <FooterNav/>
-            <FooterBottom/>
+           <footer>
+               <FooterPayment/>
+               <FooterNav/>
+               <FooterBottom/>
+           </footer>
         </>
     )
 }

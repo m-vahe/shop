@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/amazonlogin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/paypallogin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/login/compoents/LoginForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/login/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/components/login.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/Newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/Newsletter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/BottomVideos.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/BottomVideos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/FirstProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/ProductsWithFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/SecondProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/SecondProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/VideoPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/VideoPart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/components/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/components/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +81,7 @@
       <workItem from="1607697646458" duration="96000" />
       <workItem from="1607697779490" duration="265000" />
       <workItem from="1607927843315" duration="8924000" />
+      <workItem from="1607943659378" duration="12475000" />
     </task>
     <servers />
   </component>
