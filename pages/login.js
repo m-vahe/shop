@@ -6,7 +6,7 @@ const Login = () => {
         <>
             <Header/>
             <LoginScene />
-            <Footer/>
+
         </>
     );
 };

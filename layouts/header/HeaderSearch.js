@@ -1,12 +1,9 @@
 import {
-  faEnvelopeSquare,
-  faPhoneAlt,
     faSearch,
-    faUser,
-    faHeart, faShoppingCart
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Link from 'next/link'
 const HeaderSearch = () => {
   return (
     <>
@@ -36,7 +33,12 @@ const HeaderSearch = () => {
             </h2>
           </div>
           <div className="logo-div col-lg-4">
-            <Image src="/logo.png" alt="me" width="318" height="76" />
+            <Link  href={"/"}>
+              <a className={"hovered-top-link"} href={"/"}>
+                <Image src="/logo.png" alt="me" width="318" height="76" />
+              </a>
+            </Link>
+
           </div>
           <div className={"header-search-bar col-lg-4 flex-wrap"}>
             <div className={"search-bar col-lg-4"}>
