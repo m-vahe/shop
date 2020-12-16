@@ -2,36 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/harren2section1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/harren2section2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/harrenfirst.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/harrensec.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/inspirharren.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/herren/components/Inspiration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/herren/components/InspirationBottomOne.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/herren/components/InspirationBottomTwo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilterHarrenTwo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/herren/components/SecondSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/repeatable/FirstAddSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/repeatable/Inspiration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/repeatable/InspirationBottomTwoRep.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/repeatable/InsprationBottomOneRep.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/repeatable/PorductsWithLeftText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/repeatable/ProductsWithFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/herren/components/Newsletter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/herren/components/SecondFilteredProdBottom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/herren/components/Services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/repeatable/Neuigkeiten.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/repeatable/NewsletterRep.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/repeatable/Services.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/herren/components/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/FirstProducts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/herren/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/FirstProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/InspirationBottomTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/InspirationBottomTwo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/InspirationSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/InspirationSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/SecondSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/SecondSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/inspirationBottomOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/inspirationBottomOne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/components/herren.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/herren.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/components/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/FilteredProductBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/FilteredProductBottom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/Newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/Newsletter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +74,7 @@
       <workItem from="1607927843315" duration="8924000" />
       <workItem from="1607943659378" duration="12640000" />
       <workItem from="1608010996199" duration="11926000" />
-      <workItem from="1608096809307" duration="11550000" />
+      <workItem from="1608096809307" duration="13097000" />
     </task>
     <servers />
   </component>

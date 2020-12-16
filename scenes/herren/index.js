@@ -6,6 +6,9 @@ import Inspiration from "./components/Inspiration";
 import InspirationBottomOne from "./components/InspirationBottomOne";
 import InspirationBottomTwo from "./components/InspirationBottomTwo";
 import ProductsWithFilterHarrenTwo from "./components/ProductsWithFilterHarrenTwo";
+import SecondFilteredProdBottom from "./components/SecondFilteredProdBottom";
+import Services from "./components/Services";
+import Newsletter from "./components/Newsletter";
 
 const HerrenScene = () =>{
 
@@ -20,6 +23,9 @@ const HerrenScene = () =>{
                 <InspirationBottomOne/>
                 <InspirationBottomTwo/>
                 <ProductsWithFilterHarrenTwo/>
+                <SecondFilteredProdBottom/>
+                <Services/>
+                <Newsletter/>
             </div>
         </>
     )
