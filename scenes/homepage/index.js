@@ -5,7 +5,7 @@ import InspirationSection from "./components/InspirationSection";
 import InspirationBottomOne from "./components/inspirationBottomOne";
 import InspirationBottomTwo from "./components/InspirationBottomTwo";
 import SecondProducts from "./components/SecondProducts";
-import ProductsWithFilter from "./components/ProductsWithFilter";
+import ProductsWithFilterHomepage from "./components/ProductsWithFilter";
 import FilteredProductBottom from "./components/FilteredProductBottom";
 import VideoPart from "./components/VideoPart";
 import DpabMagazine from "./components/DpabMagazine";
@@ -25,7 +25,7 @@ const Homepage = () =>{
                 <InspirationBottomOne/>
                 <InspirationBottomTwo/>
                 <SecondProducts/>
-                <ProductsWithFilter/>
+                <ProductsWithFilterHomepage/>
                 <FilteredProductBottom/>
                 <VideoPart/>
                 <BottomVideo/>

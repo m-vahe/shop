@@ -8,12 +8,6 @@ const Navbar = () =>{
         {name:"Marken",hovered:false,link:"/marken"},{name:"typentests",hovered:false, link:"/typentests"},{name:"video",hovered:false,link:"/video"},
         {name:"Showroom",hovered:false,link: "/showroom"},{name:"magazin",hovered:false,link: "/magazin"},{name:"kontakt",hovered:false,link: "/kontakt"}])
 
-    // {name:"herren",link:"/herren",categories:[
-    //     {name:"Reingung",subcat:[
-    //             {},
-    //             {}
-    //         ]}
-    // ]}
     return(
         <>
             <div className={"navbar-body"}>
