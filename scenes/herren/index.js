@@ -26,6 +26,7 @@ const HerrenScene = () =>{
                 <SecondFilteredProdBottom/>
                 <Services/>
                 <Newsletter/>
+
             </div>
         </>
     )

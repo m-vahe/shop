@@ -1,0 +1,64 @@
+.shop-head-body{
+  width: 100%;
+  margin: 5vh auto;
+
+  .shop-head-left{
+    display: flex;
+    justify-content: flex-end;
+
+    width: 90%;
+    padding: 100px 0;
+    .shop-head-left-body{
+      width: 90%;
+      padding-right: 150px;
+      p{
+        color: #5c5c5c;
+        font-family: "Freight Sans Pro";
+        font-size: 1.1rem;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 1.38px;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      h2{
+        color: #3e3e3e;
+        font-family: "Freight Sans Pro";
+        font-size: 3.8rem;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 3.6px;
+        line-height: 80px;
+        text-transform: uppercase;
+        text-align: left;
+      }
+      span{
+        color: #2e2e2e;
+        font-family: "Freight Sans Pro";
+        font-size: .9rem;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: 0.55px;
+        line-height: 35px;
+        text-align: left;
+        /* Text style for "Lorem ipsu" */
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+      }
+    }
+  }
+  .shop-head-right{
+    min-height: 55vh;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.harren-first-products{
+  width: 90%;
+  margin: 10vh auto ;
+
+
+}

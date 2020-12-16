@@ -6,7 +6,7 @@ const Navbar = () =>{
         {name:"interieur",hovered:false,link:"/interieur",hover:true},
         {name:"lifestyle",hovered:false,link:"/lifestyle",hover:true},{name:"Beauty food",hovered:false, link:"/beautyfood",hover:true},{name:"clean Beauty",hovered:false,link:"/cleanbeauty",hover:true},
         {name:"Marken",hovered:false,link:"/marken"},{name:"typentests",hovered:false, link:"/typentests"},{name:"video",hovered:false,link:"/video"},
-        {name:"Showroom",hovered:false,link: "/showroom"},{name:"magazin",hovered:false,link: "/magazin"},{name:"kontakt",hovered:false,link: "/kontakt"}])
+        {name:"Shop",hovered:false,link: "/shop"},{name:"magazin",hovered:false,link: "/magazin"},{name:"kontakt",hovered:false,link: "/kontakt"}])
 
     return(
         <>

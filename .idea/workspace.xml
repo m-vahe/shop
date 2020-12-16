@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scenes/herren/components/Newsletter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/herren/components/SecondFilteredProdBottom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/herren/components/Services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/repeatable/Neuigkeiten.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/repeatable/NewsletterRep.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/repeatable/Services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/loader/Loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/shoptop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/shop/components/ShopHead.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/shop/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/components/loader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/components/shop.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/herren/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/FilteredProductBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/FilteredProductBottom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/Newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/Newsletter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/components/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/components/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -74,7 +76,7 @@
       <workItem from="1607927843315" duration="8924000" />
       <workItem from="1607943659378" duration="12640000" />
       <workItem from="1608010996199" duration="11926000" />
-      <workItem from="1608096809307" duration="13097000" />
+      <workItem from="1608096809307" duration="21612000" />
     </task>
     <servers />
   </component>
