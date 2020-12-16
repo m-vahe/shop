@@ -1,13 +1,13 @@
-@import "./components/header.scss";
-@import "./components/homepage";
-@import "./components/footer";
-@import "./components/mediaheader";
-@import "./components/mediahomepage";
-@import "./components/login";
-@import "./components/herren";
-@import "./components/mediaherren";
-@import "./components/loader";
-@import "./components/shop";
+@import "../layouts/header/header";
+@import "../scenes/homepage/homepage";
+@import "../layouts/footer/footer";
+@import "../layouts/header/mediaheader";
+@import "../scenes/homepage/mediahomepage";
+@import "../scenes/login/login";
+@import "../scenes/herren/herren";
+@import "../scenes/herren/mediaherren";
+@import "../layouts/loader/loader";
+@import "../scenes/shop/shop";
 
 * {
     padding: 0;
