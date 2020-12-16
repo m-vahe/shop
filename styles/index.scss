@@ -8,10 +8,19 @@
 @import "../scenes/herren/mediaherren";
 @import "../layouts/loader/loader";
 @import "../scenes/shop/shop";
-
+@font-face {
+    src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
+    src: local('Freight Sans Pro'), local('FreightSansPro'),
+    url('../public/fonts/FreightSansProBlack-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../public/fonts/FreightSansProBlack-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../public/fonts/FreightSansProBlack-Italic.woff') format('woff'), /* Modern Browsers */
+    url('../public/fonts/FreightSansProBlack-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../public/fonts/FreightSansProBlack-Italic.eot#OpenSans') format('svg'); /* Legacy iOS */
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: "Freight Sans Pro", sans-serif;
 }

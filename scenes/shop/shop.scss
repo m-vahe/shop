@@ -13,7 +13,7 @@
       padding-right: 150px;
       p{
         color: #5c5c5c;
-        font-family: "Freight Sans Pro";
+        font-family: "Freight Sans Pro",sans-serif;
         font-size: 1.1rem;
         font-weight: 300;
         font-style: normal;
@@ -24,7 +24,7 @@
       }
       h2{
         color: #3e3e3e;
-        font-family: "Freight Sans Pro";
+        font-family: "Freight Sans Pro", sans-serif ;
         font-size: 3.8rem;
         font-weight: 300;
         font-style: normal;
@@ -35,7 +35,7 @@
       }
       span{
         color: #2e2e2e;
-        font-family: "Freight Sans Pro";
+        font-family: "Freight Sans Pro",sans-serif;
         font-size: .9rem;
         font-weight: 500;
         font-style: normal;
@@ -59,4 +59,9 @@
 .harren-first-products{
   width: 90%;
   margin: 10vh auto ;
+}
+
+.shop-body{
+  width: 90%;
+  margin: 0 auto;
 }
