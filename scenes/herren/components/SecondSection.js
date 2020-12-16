@@ -1,4 +1,4 @@
-import FirstAddSection from "../../repeatable/FirstAddSection";
+import FirstAddSection from "../../../shareable/FirstAddSection";
 
 const SecondSection = () =>{
     const background="black"

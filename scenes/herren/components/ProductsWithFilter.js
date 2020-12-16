@@ -1,4 +1,4 @@
-import ProductsWithFilter from "../../repeatable/ProductsWithFilter";
+import ProductsWithFilter from "../../../shareable/ProductsWithFilter";
 import {useState} from "react";
 
 

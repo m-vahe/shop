@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Neuigkeiten from "../../repeatable/Neuigkeiten";
+import Neuigkeiten from "../../../shareable/Neuigkeiten";
 const FilteredProductBottom = () =>{
     return(
         <>

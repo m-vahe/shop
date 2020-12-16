@@ -1,4 +1,4 @@
-import ServicesRep from "../../repeatable/Services";
+import ServicesRep from "../../../shareable/Services";
 
 const Services = () =>{
     const padding = "15vh 0"

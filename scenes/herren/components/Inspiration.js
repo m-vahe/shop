@@ -1,4 +1,4 @@
-import InspirationSection from "../../repeatable/Inspiration";
+import InspirationSection from "../../../shareable/Inspiration";
 
 const Inspiration = () =>{
     const background = "black"

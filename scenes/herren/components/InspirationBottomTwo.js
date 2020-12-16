@@ -1,4 +1,4 @@
-import InspirationBottomTwoRep from "../../repeatable/InspirationBottomTwoRep";
+import InspirationBottomTwoRep from "../../../shareable/InspirationBottomTwoRep";
 
 const InspirationBottomTwo = () =>{
     const background = "black"

@@ -1,4 +1,4 @@
-import Neuigkeiten from "../../repeatable/Neuigkeiten";
+import Neuigkeiten from "../../../shareable/Neuigkeiten";
 
 const SecondFilteredProdBottom = () =>{
     const background = "black"

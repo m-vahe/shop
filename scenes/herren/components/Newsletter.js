@@ -1,4 +1,4 @@
-import NewsletterRep from "../../repeatable/NewsletterRep";
+import NewsletterRep from "../../../shareable/NewsletterRep";
 
 const Newsletter = () =>{
     const padding="20vh"
