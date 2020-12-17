@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scenes/shop/layouts/AsideRight.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/products/asd.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/[id].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/herren/herren.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/herren.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/FirstIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/FirstIntro.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/shop/components/Aside.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/Aside.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/ShopHead.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/ShopHead.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/shop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/shop/shop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/shop.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/PorductsWithLeftText.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/PorductsWithLeftText.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +81,8 @@
       <workItem from="1607927843315" duration="8924000" />
       <workItem from="1607943659378" duration="12640000" />
       <workItem from="1608010996199" duration="11926000" />
-      <workItem from="1608096809307" duration="26547000" />
+      <workItem from="1608096809307" duration="28845000" />
+      <workItem from="1608183416182" duration="7467000" />
     </task>
     <servers />
   </component>

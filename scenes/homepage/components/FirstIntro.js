@@ -8,7 +8,8 @@ const FirstIntro = () =>{
                        <div>
                            <p className={"intro-small-txt"}>Entdecken Sie perfekte Pflege und Düfte für Ihren Stil</p>
                            <h2 className={"intro-big-txt"}>Machen Sie
-                               Den Typen-Test</h2>
+                              </h2>
+                           <h2 className={"intro-big-txt1"}> Den Typen-Test</h2>
                        </div>
                         <button>JETZT SHOPPEN</button>
                     </div>

@@ -1,7 +1,9 @@
 const Aside = () =>{
     return(
         <>
-            qaauheuahgyegywg
+            <div>
+
+            </div>
         </>
     )
 }

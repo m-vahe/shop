@@ -6,6 +6,9 @@ const ShopScene = () =>{
   return (
       <>
         <ShopHead/>
+        <div className={"shop-body-head"}>
+
+        </div>
         <div className={"d-flex shop-body"}>
             <div className={"col-lg-3"}>
                 <Aside/>

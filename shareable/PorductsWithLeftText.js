@@ -28,8 +28,8 @@ const ProductsWithLeftText = (
                     </div>
                     <button>JETZT SHOPPEN</button>
                 </div>
-                <div className={"d-flex flex-wrap col-lg-9"}>
-                    <div className={"col-lg-4 first-prod-items"}>
+                <div className={"d-flex flex-wrap col-lg-9 prod-items-bod"}>
+                    <div className={"first-prod-items"}>
                         <div className={"picture-body-prod"}>
                             <img src={image1} className={"item-picture"} alt=""/>
                         </div>
@@ -55,7 +55,7 @@ const ProductsWithLeftText = (
                             </svg>
                         </button>
                     </div>
-                    <div className={"col-lg-4 first-prod-items"}>
+                    <div className={"first-prod-items"}>
                         <div className={"picture-body-prod"}>
                             <img src={image2} className={"item-picture"} alt=""/>
                             <span className={"item-new"}>New</span>
@@ -85,7 +85,7 @@ const ProductsWithLeftText = (
                             </svg>
                         </button>
                     </div>
-                    <div className={"col-lg-4 first-prod-items"}>
+                    <div className={"first-prod-items"}>
                         <div className={"picture-body-prod"}>
                             <img src={image3} className={"item-picture"} alt=""/>
                         </div>
