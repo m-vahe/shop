@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 .first-intro{
-  padding: 50px 0 0 0;
+  padding: 29px 0 0 0;
   display: flex;
   justify-content: flex-end;
   .first-intro-body{
@@ -20,20 +20,21 @@
     }
     .first-intro-bod-left{
       //min-height: 60vh;
-      padding: 143px 0 100px 0;
+      padding: 146px 0 94px 0;
       margin-bottom: 50px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       button{
         /* Style for "Rechteck 2" */
-        width: 30%;
+        padding: 15px 0;
+        width: 32.6%;
         min-height: 50px;
         background-color: #080808;
         color: #ffffff;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: 1.2rem;
-        font-weight: 500;
+        font-size: 1.55rem;
+        font-weight: 400;
         font-style: normal;
         letter-spacing: 5px;
         text-align: center;
@@ -47,15 +48,16 @@
       .intro-small-txt{
         color: #5c5c5c;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 300;
         font-style: normal;
-        letter-spacing: 1.38px;
+        letter-spacing: 2.4px;
         text-align: left;
         /* Text style for "Entdecken" */
         font-style: normal;
         margin: 0;
         text-transform: uppercase;
+        margin-bottom: 15px;
       }
       .intro-big-txt{
         color: #3e3e3e;
@@ -63,7 +65,7 @@
         font-size: 5.6rem;
         font-weight: 300;
         font-style: normal;
-        letter-spacing: 3.6px;
+        letter-spacing: 2.2px;
         line-height: 80px;
         text-align: left;
         /* Text style for "Machen Sie" */
@@ -78,13 +80,13 @@
         font-size: 5.6rem;
         font-weight: 300;
         font-style: normal;
-        letter-spacing: 3.6px;
+        letter-spacing: 2.2px;
         line-height: 80px;
         text-align: left;
         /* Text style for "Machen Sie" */
         font-style: normal;
         margin: 0;
-        margin-bottom: 6vh;
+        margin-bottom: 6.5vh;
         text-transform: uppercase;
       }
     }
