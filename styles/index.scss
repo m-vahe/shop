@@ -8,6 +8,10 @@
 @import "../scenes/herren/mediaherren";
 @import "../layouts/loader/loader";
 @import "../scenes/shop/shop";
+@import "../shareable/component-header/component-info/componentInfo.scss";
+@import "../shareable/component-header/component-title/componentTitle.scss";
+@import "../scenes/video/components/mediatek-info/mediatekInfo.scss";
+@import "../shareable/social/social.scss";
 @font-face {
     src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
     src: local('Freight Sans Pro'), local('FreightSansPro'),

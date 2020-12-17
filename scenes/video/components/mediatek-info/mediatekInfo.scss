@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  .mediatek-options {
+      width: unset;
+    flex-grow: unset;
+    padding: 2px 4px;
+    background-color: #000;
+    color: #fff;
+    margin-left: 2%;
+  }
+}
