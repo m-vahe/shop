@@ -62,12 +62,16 @@ const HeaderSearch = () => {
                     </div>
                 </div>
                 <div className={"header-logo"}>
-                    <Image
-                        src="/logo.png"
-                        alt="Das Parfum"
-                        width={308}
-                        height={75}
-                    />
+                    <Link exact href={"/"} >
+                        <a href="/">
+                            <Image
+                                src="/logo.png"
+                                alt="Das Parfum"
+                                width={308}
+                                height={75}
+                            />
+                        </a>
+                    </Link>
                 </div>
             </div>
         </>
