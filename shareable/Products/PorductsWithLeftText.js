@@ -14,8 +14,8 @@ const ProductsWithLeftText = (
 
     return(
         <>
-            <div className={"first-products-body d-flex flex-wrap"}>
-                <div className={"firstprod-left-text col-lg-3"}>
+            <div className={"first-products-body "}>
+                <div className={"firstprod-left-text"}>
                     <div>
                         <p>Beauty: Gesichtspflege</p>
                         <h2>
@@ -28,7 +28,7 @@ const ProductsWithLeftText = (
                     </div>
                     <button>JETZT SHOPPEN</button>
                 </div>
-                <div className={"d-flex flex-wrap col-lg-9 prod-items-bod"}>
+                <div className={"prod-items-bod"}>
                     <div className={"first-prod-items"}>
                         <div className={"picture-body-prod"}>
                             <img src={image1} className={"item-picture"} alt=""/>

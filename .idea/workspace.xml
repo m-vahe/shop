@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/FirstProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/FirstProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/PorductsWithLeftText.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -44,11 +51,11 @@
       <recent name="$PROJECT_DIR$/public/paymentlogos" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shareable/Products" />
       <recent name="$PROJECT_DIR$/scenes/shop/components" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/scenes/shop/layouts" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/scenes/login" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -72,7 +79,7 @@
       <workItem from="1608010996199" duration="11926000" />
       <workItem from="1608096809307" duration="28845000" />
       <workItem from="1608183416182" duration="18316000" />
-      <workItem from="1608269681272" duration="20008000" />
+      <workItem from="1608269681272" duration="24315000" />
     </task>
     <servers />
   </component>

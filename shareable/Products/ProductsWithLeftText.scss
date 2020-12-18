@@ -1,0 +1,249 @@
+.first-products-body{
+  width: 90.5%;
+
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: column;
+  .prod-items-bod{
+    justify-content: space-between;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: grid;
+    grid-auto-flow: column;
+  }
+  .first-prod-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .picture-body-prod{
+      position: relative;
+      .item-picture{
+        width: 100%;
+      }
+      .circled-txt{
+        position: absolute;
+        bottom: 10%;
+        left: 0%;
+
+      }
+      .item-new{
+        position: absolute;
+        bottom: 0;
+        color: #ffffff;
+        margin: 0;
+        font-family: "Freight Sans Pro",system-ui;
+        font-size: .7rem;
+        padding: 5px 10px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 2.4px;
+        text-align: center;
+        /* Text style for "New" */
+        font-style: normal;
+        left: 42%;
+        text-transform: uppercase;
+        /* Style for "Pfad 56" */
+        //width: 67px;
+        background-color: #000000
+      }
+    }
+    .heart-icon-item{
+      position: absolute;
+      top: 0vh;
+      right:0;
+      width: 30px;
+      height: 30px;
+      stroke: #7b7b7b;
+      cursor: pointer;
+    }
+
+
+    button{
+      /* Style for "Rechteck 1" */
+      width: 192px;
+      padding: 10px;
+      border: 1px solid #707070;
+      background: white;
+      transition: .5s;
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro",system-ui;
+      font-size: .9rem;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2px;
+      text-align: left;
+      /* Text style for "Quick shop" */
+      font-style: normal;
+
+      text-transform: uppercase;
+      text-align: center;
+      .letter-svg{
+        stroke: #7b7b7b !important;
+        transition: .5s !important;
+      }
+      &:hover{
+        border: 1px solid #707070;
+        background-color: #000000;
+        transition: .5s;
+        color: #ffffff;
+        .letter-svg{
+          transition: .5s;
+          stroke: white !important;
+        }
+      }
+    }
+    .prod-txt-head{
+      color: #7b7b7b;
+      font-family: "Freight Sans Pro",system-ui;
+      font-size: .9rem;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2.6px;
+      //line-height: 35px;
+      text-align: center;
+      /* Text style for "Clean prod" */
+      font-style: normal;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+    .prod-txt-head2{
+      color: #7b7b7b;
+      font-family: "Freight Sans Pro",system-ui;
+      font-size: .7rem;
+      margin: 0px auto;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 0.34px;
+      //line-height: 35px;
+      text-align: center;
+      /* Text style for "Limited ed" */
+      font-style: normal;
+
+      text-transform: uppercase;
+    }
+    .prod-txt-name{
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro",system-ui;
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-size: 1.5rem;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 3.5px;
+      text-align: center;
+      /* Text style for "Ylumi" */
+      font-style: normal;
+
+      text-transform: uppercase;
+    }
+    .prod-txt-foot{
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro",system-ui;
+      font-size: 1rem;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 1.25px;
+      line-height: 35px;
+      text-align: center;
+      /* Text style for "Energy Kap" */
+      font-style: normal;
+
+    }
+    .prod-txt-foot2{
+      color: #7b7b7b;
+      font-family: "Freight Sans Pro",system-ui;
+      font-size: .9rem;
+      //margin-top: 10px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2.34px;
+      line-height: 35px;
+      text-align: center;
+      /* Text style for "Kapseln" */
+      font-style: normal;
+
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+    .prod-txt-price{
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro",system-ui;
+      font-size: 1.3rem;
+      margin:5px auto ;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 1.4px;
+      line-height: 35px;
+      text-align: center;
+      /* Text style for "28,00 €" */
+      font-style: normal;
+
+    }
+
+  }
+  .firstprod-left-text{
+    display: grid;
+    grid-gap: 10px;
+    gap: 45px;
+    height: 71%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    p{
+      color: #5c5c5c;
+      font-family: "Freight Sans Pro",system-ui;
+      font-size: 2.2rem;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 1.38px;
+      text-align: left;
+      font-style: normal;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 22px;
+    }
+    h2{
+      color: #3e3e3e;
+      font-family: "Freight Sans Pro",system-ui;
+      font-size: 6rem;
+      font-weight: 300;
+      font-style: normal;
+      text-align: left;
+      letter-spacing: 2.4px;
+      //line-height: 55px;
+      text-align: left;
+      /* Text style for "Exklusive" */
+      font-style: normal;
+      margin-top: 0px;
+      text-transform: uppercase;
+      line-height: 55px;
+    }
+    span{
+      margin-top: 57px;
+      display: inline-block;
+      color: #2e2e2e;
+      font-size: 22px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 0.55px;
+      line-height: 35px;
+      width: 68%;
+      text-align: left;
+    }
+    button{
+      border: none;
+      width: 48.5%;
+      min-height: 50px;
+      background-color: #080808;
+      color: #ffffff;
+      font-family: "Freight Sans Pro",system-ui;
+      font-size: 2.6rem;
+      font-weight: 400;
+      letter-spacing: 5px;
+      text-align: center;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+  }
+}

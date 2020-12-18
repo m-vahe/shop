@@ -19,7 +19,7 @@ const Homepage = () =>{
         <>
             <div className={"homepage-body"}>
                 <FirstIntro/>
-                {/*<FirstProducts/>*/}
+                <FirstProducts/>
                 {/*<SecondSection/>*/}
                 {/*<InspirationSection/>*/}
                 {/*<InspirationBottomOne/>*/}

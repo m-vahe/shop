@@ -1,5 +1,5 @@
 import {useState} from "react";
-import ProductsWithLeftText from "../../../shareable/PorductsWithLeftText";
+import ProductsWithLeftText from "../../../shareable/Products/PorductsWithLeftText";
 const FirstProducts = () =>{
     const [heart,setHeart] = useState(false)
     const [heart1,setHeart1] = useState(false)
