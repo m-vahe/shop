@@ -1,0 +1,13 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .social-title {
+    h4 {
+      word-spacing: 5px;
+    }
+  }
+  .social-icon {
+    margin:0 12px;
+  }
+}

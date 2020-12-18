@@ -19,8 +19,6 @@
     "react-player": "^2.7.0"
   },
   "devDependencies": {
-    "bootstrap": "^4.5.3",
-    "node-sass": "^5.0.0",
-    "react-bootstrap": "^1.4.0"
+    "node-sass": "^5.0.0"
   }
 }
