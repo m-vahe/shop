@@ -1,7 +1,7 @@
 
 const ComponentTitle = ({title}) => {
   return (
-    <div>
+    <div className={"ttl"}>
       <p>{title}</p>
     </div>
   )

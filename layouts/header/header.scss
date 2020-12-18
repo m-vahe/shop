@@ -1,16 +1,16 @@
 .page-header-top-black {
-    padding: 8px;
     width: 100%;
     background-color: #292929;
     display: flex;
     text-align: center;
     align-items: center;
     //letter-spacing: 2px;
+    height: 35px;
 
     span {
         color: #d8d8d8;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: .9rem;
+        font-size: 1.5rem;
         font-weight: 400;
         font-style: normal;
         letter-spacing:2px;
@@ -22,17 +22,16 @@
 }
 
 .page-header-top-grey {
-    padding: 8px;
     width: 100%;
     background-color: #efefef;
     display: flex;
     text-align: center;
     align-items: center;
-
+    height: 35px;
     span {
         color: #434343;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: .9rem;
+        font-size: 1.4rem;
         font-weight: 400;
         font-style: italic;
         letter-spacing: 1.68px;
@@ -45,133 +44,57 @@
         text-transform: uppercase;
     }
 }
-
-.header-search-section {
-    width: 90%;
+.header-mid-logo-section{
+    width: 90.5%;
     margin: 0 auto;
-    padding: 20px 0 0 0;
-    .letter-svg{
-        width: 15px;
-        height: 19px;
-        stroke: #7b7b7b;
-    }
-    .user-circle{
-        width: 17px;
-        height: 17px;
-        border: 1px solid #7b7b7b;
-        border-radius: 50%;
-        position: relative;
-    }
-    .header-search-bar{
+    height: 35px;
+    padding: 20px 0;
+
+    .header-mid-left-side{
         display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        width: 351px;
-.header-search-icons-bod{
-    display: flex;
-    justify-content: space-evenly;
-}
-        .lang-btns{
-            color: #7b7b7b;
-            font-family: "Freight Sans Pro",system-ui;
-            font-size: .75rem;
-            font-weight: 500;
-            font-style: normal;
-            letter-spacing: 1.68px;
-
-            text-align: center;
-            /* Text style for "De | EN" */
-            font-style: normal;
-
-
-            text-transform: uppercase;
-            button{
+        .head-mid-left-phone{
+            display: flex;
+            height: 100%;
+            margin-left: 34px;
+            .letter-svg{
+                width: 24px;
+                height: 20px;
+                stroke: #7b7b7b;
+                margin-right: 9px;
+            }
+            p{
                 color: #7b7b7b;
                 font-family: "Freight Sans Pro",system-ui;
-                font-size: .75rem;
-                font-weight: 500;
+                font-size: 1.4rem;
+                font-weight: 300;
                 font-style: normal;
                 letter-spacing: 1.68px;
-
-                text-align: center;
-                /* Text style for "De | EN" */
-                font-style: normal;
-
-
+                line-height: normal;
                 text-transform: uppercase;
-                border: none;
-                background: none;
-                &:nth-child(1){
-                    margin-right: 5px;
-                }&:nth-child(2){
-                     margin: 0 5px;
-                 }
-                &:nth-child(3){
-                    margin-left: 5px;
-                }
             }
         }
-        .search-bar{
-            width: 118px;
-            position: relative;
-            border-bottom: 1px solid #707070;
-            .search-icon{
-                position: absolute;
-                width: 24px;
-                height: 16px;
-            }
-            input{
-                border: none;
-                width: 100%;
-                height: 16px;
-                padding-left:24px ;
-                outline: none;
-                font-size: .68rem;
-                font-family: "Freight Sans Pro",system-ui;
-                &::placeholder{
-                    color: #7b7b7b;
-                    font-family: "Freight Sans Pro",system-ui;
-                    font-size: .68rem;
-                    font-weight: 500;
-                    font-style: normal;
-                    letter-spacing: 1.32px;
-
-                    text-align: center;
-                    /* Text style for "Suche" */
-                    font-style: normal;
-
-
-                    text-transform: uppercase;
-                    text-align: left;
-                }
-            }
-        }
-    }
-    .left-side-search{
-        display: flex;
-        .left-side-contacts{
+        .head-mid-left-mail{
             display: flex;
-            flex-wrap: wrap;
-        }
-
-      .logo-div{
-          padding: 45px 35px 30px 35px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-    }
-        h2 {
-            color: #7b7b7b;
-            font-family: "Freight Sans Pro",system-ui;
-            font-size: .8rem;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: 1.68px;
-            flex: 1;
-            text-transform: uppercase;
+            height: 100%;
+            .letter-svg{
+                stroke: #7b7b7b;
+                height: 21px;
+                width: 24px;
+                margin-right: 7px;
+            }
+            p{
+                color: #7b7b7b;
+                font-family: "Freight Sans Pro",system-ui;
+                font-size: 1.4rem;
+                font-weight: 300;
+                font-style: normal;
+                letter-spacing: 1.68px;
+                line-height: normal;
+                text-transform: uppercase;
+            }
         }
     }
+}
 .navbar-body{
     position: relative;
     width: 100%;
