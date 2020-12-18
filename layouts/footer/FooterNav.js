@@ -10,9 +10,9 @@ const FooterNav = () =>{
     return(
         <>
             <div className={"nav-footer-body"}>
-                <div className={"footer-nav-all d-flex"}>
-                    <div className={"d-flex footer-circled-bod"}>
-                        <div className={"nav-top-items d-flex col-lg-3"}>
+                <div className={"footer-nav-all "}>
+                    <div className={" footer-circled-bod"}>
+                        <div className={"nav-top-items "}>
                             <div className={"footer-circled-persons"}></div>
                             <p className={"footer-nav-title"}>Gratis Rücklieferungen</p>
                             <p>
@@ -20,7 +20,7 @@ const FooterNav = () =>{
                                 von 14 Tagen problemlos zurück
                             </p>
                         </div>
-                        <div className={"nav-top-items d-flex col-lg-3"}>
+                        <div className={"nav-top-items  "}>
                             <div className={"footer-circled-persons"}></div>
                             <p className={"footer-nav-title"}> Sie erreichen uns direkt</p>
                             <p>
@@ -28,7 +28,7 @@ const FooterNav = () =>{
                                 +49 (0)6173 9938000
                             </p>
                         </div>
-                        <div className={"nav-top-items d-flex col-lg-3"}>
+                        <div className={"nav-top-items  "}>
                             <div className={"footer-circled-persons"}></div>
                             <p className={"footer-nav-title"}>Sie erreichen uns per WhatsApp</p>
                             <p>

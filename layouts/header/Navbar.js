@@ -26,7 +26,7 @@ const Navbar = () =>{
                                         {e.hover ?
                                             <>
                                                 <div className={"hovered "}>
-                                                    <div className={"d-flex nav-hov-links col-lg-3"}>
+                                                    <div className={" nav-hov-links "}>
                                                         <h2>Shop By</h2>
                                                         <Link href={"/a-z"}>a-z</Link>
                                                         <Link href={"/a-z"}>aproved by dpab</Link>
@@ -36,7 +36,7 @@ const Navbar = () =>{
                                                         <Link href={"/a-z"}>Top 10</Link>
                                                         <Link href={"/a-z"}>Bestseller</Link>
                                                     </div>
-                                                    <div className={"d-flex nav-hov-links col-lg-3"}>
+                                                    <div className={"nav-hov-links"}>
                                                             <h2>Shop By</h2>
                                                             <Link href={"/a-z"}>a-z</Link>
                                                             <Link href={"/a-z"}>aproved by dpab</Link>
@@ -46,7 +46,7 @@ const Navbar = () =>{
                                                             <Link href={"/a-z"}>Top 10</Link>
                                                             <Link href={"/a-z"}>Bestseller</Link>
                                                     </div>
-                                                    <div className={"d-flex nav-hov-links col-lg-3"}>
+                                                    <div className={"nav-hov-links"}>
                                                             <h2>Shop By</h2>
                                                             <Link href={"/a-z"}>a-z</Link>
                                                             <Link href={"/a-z"}>aproved by dpab</Link>

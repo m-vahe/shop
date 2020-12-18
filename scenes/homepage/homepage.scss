@@ -3,94 +3,84 @@
   flex-direction: column;
 }
 .first-intro{
-  padding: 29px 0 0 0;
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 36px;
   .first-intro-body{
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    .first-intro-bod-right{
-      width: 100%;
-      //height: 60vh;
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height: 60vh;
-      max-height: 100%;
-    }
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+    gap: 25px;
     .first-intro-bod-left{
-      //min-height: 60vh;
-      padding: 146px 0 94px 0;
-      margin-bottom: 50px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
+      padding: 100px 0px 100px 87px;
+      margin-bottom: 49px;
+      margin-top: 53px;
+      display: grid;
+      grid-auto-flow: row;
+      gap: 58px;
       button{
-        /* Style for "Rechteck 2" */
-        padding: 15px 0;
-        width: 32.6%;
-        min-height: 50px;
-        background-color: #080808;
-        color: #ffffff;
-        font-family: "Freight Sans Pro",system-ui;
-        font-size: 1.55rem;
+        width: 34.7%;
+        background: #000000;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 25px;
         font-weight: 400;
+        padding: 12px;
         font-style: normal;
         letter-spacing: 5px;
         text-align: center;
         text-transform: uppercase;
-        /* Text style for "JETZT SHOP" */
-        font-style: normal;
-
-        text-transform: uppercase;
-        border: none;
+        @media screen and (max-width:1797px){
+          font-size: 2rem;
+          width: 40%;
+          padding: 9px;
+        }
+        @media screen and (max-width:1440px){
+          font-size: 1.5rem;
+          padding: 6px;
+        }
       }
-      .intro-small-txt{
+      p{
         color: #5c5c5c;
-        font-family: "Freight Sans Pro",system-ui;
-        font-size: 1.3rem;
+        font-size: 2.19rem;
         font-weight: 300;
         font-style: normal;
-        letter-spacing: 2.4px;
+        letter-spacing: 1.7px;
+        line-height: normal;
         text-align: left;
-        /* Text style for "Entdecken" */
-        font-style: normal;
-        margin: 0;
         text-transform: uppercase;
+        margin: 0;
         margin-bottom: 15px;
+        @media screen and (max-width:1630px){
+          font-size: 1.8rem;
+        }
+        @media screen and (max-width:1440px){
+          font-size: 1.4rem;
+        }
       }
-      .intro-big-txt{
+      h2{
         color: #3e3e3e;
-        font-family: "Freight Sans Pro",system-ui;
-        font-size: 5.6rem;
+        font-size: 9rem;
         font-weight: 300;
         font-style: normal;
-        letter-spacing: 2.2px;
-        line-height: 80px;
+        letter-spacing: 1px;
+        line-height: 76px;
         text-align: left;
-        /* Text style for "Machen Sie" */
-        font-style: normal;
-        margin: 0;
-
         text-transform: uppercase;
-      }
-      .intro-big-txt1{
-        color: #3e3e3e;
-        font-family: "Freight Sans Pro",system-ui;
-        font-size: 5.6rem;
-        font-weight: 300;
-        font-style: normal;
-        letter-spacing: 2.2px;
-        line-height: 80px;
-        text-align: left;
-        /* Text style for "Machen Sie" */
-        font-style: normal;
-        margin: 0;
-        margin-bottom: 6.5vh;
-        text-transform: uppercase;
+        @media screen and (max-width:1612px){
+            font-size: 7.5rem;
+        }
+        @media screen and (max-width:1460px){
+          font-size: 6.5rem;
+        }
       }
     }
-
+    .first-intro-bod-right{
+      min-height: 66vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 .first-products-body{

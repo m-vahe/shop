@@ -19,20 +19,20 @@ const Homepage = () =>{
         <>
             <div className={"homepage-body"}>
                 <FirstIntro/>
-                <FirstProducts/>
-                <SecondSection/>
-                <InspirationSection/>
-                <InspirationBottomOne/>
-                <InspirationBottomTwo/>
-                <SecondProducts/>
-                <ProductsWithFilterHomepage/>
-                <FilteredProductBottom/>
-                <VideoPart/>
-                <BottomVideo/>
-                <DpabMagazine/>
-                <DpabBottom/>
-                <Services/>
-                <Newsletter/>
+                {/*<FirstProducts/>*/}
+                {/*<SecondSection/>*/}
+                {/*<InspirationSection/>*/}
+                {/*<InspirationBottomOne/>*/}
+                {/*<InspirationBottomTwo/>*/}
+                {/*<SecondProducts/>*/}
+                {/*<ProductsWithFilterHomepage/>*/}
+                {/*<FilteredProductBottom/>*/}
+                {/*<VideoPart/>*/}
+                {/*<BottomVideo/>*/}
+                {/*<DpabMagazine/>*/}
+                {/*<DpabBottom/>*/}
+                {/*<Services/>*/}
+                {/*<Newsletter/>*/}
             </div>
         </>
     )

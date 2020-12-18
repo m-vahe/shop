@@ -2,7 +2,7 @@ import Image from "next/image";
 const FooterBottom = () =>{
     return(
         <>
-            <div className={"footer-logo d-flex"}>
+            <div className={"footer-logo "}>
                 <img src="/footerlogo.png" alt="Logo"/>
             </div>
         </>
