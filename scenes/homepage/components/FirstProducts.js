@@ -4,9 +4,9 @@ const FirstProducts = () =>{
     const [heart,setHeart] = useState(false)
     const [heart1,setHeart1] = useState(false)
     const [heart2,setHeart2] = useState(false)
-    const image1="/item.jpg"
-    const image2="/item.jpg"
-    const image3="/item.jpg"
+    const image1="/item.png"
+    const image2="/item.png"
+    const image3="/item.png"
     return(
         <>
             <ProductsWithLeftText
