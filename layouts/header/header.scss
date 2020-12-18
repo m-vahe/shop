@@ -18,6 +18,9 @@
         /* Text style for "Parfum & B" */
         font-style: normal;
         text-transform: uppercase;
+        @media screen and (min-width:1024px) and (max-width:1440px){
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -42,6 +45,9 @@
 
 
         text-transform: uppercase;
+        @media screen and (min-width:1024px) and (max-width:1440px){
+            font-size: 1.2rem;
+        }
     }
 }
 .header-mid-logo-section{
