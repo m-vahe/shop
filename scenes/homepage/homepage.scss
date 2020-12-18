@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 .first-intro{
-  padding: 50px 0 0 0;
+  padding: 29px 0 0 0;
   display: flex;
   justify-content: flex-end;
   .first-intro-body{
@@ -20,20 +20,21 @@
     }
     .first-intro-bod-left{
       //min-height: 60vh;
-      padding: 143px 0 100px 0;
+      padding: 146px 0 94px 0;
       margin-bottom: 50px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       button{
         /* Style for "Rechteck 2" */
-        width: 30%;
+        padding: 15px 0;
+        width: 32.6%;
         min-height: 50px;
         background-color: #080808;
         color: #ffffff;
-        font-family: "Freight Sans Pro",sans-serif;
-        font-size: 1.2rem;
-        font-weight: 500;
+        font-family: "Freight Sans Pro",system-ui;
+        font-size: 1.55rem;
+        font-weight: 400;
         font-style: normal;
         letter-spacing: 5px;
         text-align: center;
@@ -46,30 +47,46 @@
       }
       .intro-small-txt{
         color: #5c5c5c;
-        font-family: "Freight Sans Pro",sans-serif;
-        font-size: 1rem;
+        font-family: "Freight Sans Pro",system-ui;
+        font-size: 1.3rem;
         font-weight: 300;
         font-style: normal;
-        letter-spacing: 1.38px;
+        letter-spacing: 2.4px;
         text-align: left;
         /* Text style for "Entdecken" */
         font-style: normal;
         margin: 0;
         text-transform: uppercase;
+        margin-bottom: 15px;
       }
       .intro-big-txt{
         color: #3e3e3e;
-        font-family: "Freight Sans Pro",sans-serif;
-        font-size: 2.5rem;
+        font-family: "Freight Sans Pro",system-ui;
+        font-size: 5.6rem;
         font-weight: 300;
         font-style: normal;
-        letter-spacing: 3.6px;
+        letter-spacing: 2.2px;
         line-height: 80px;
         text-align: left;
         /* Text style for "Machen Sie" */
         font-style: normal;
         margin: 0;
 
+        text-transform: uppercase;
+      }
+      .intro-big-txt1{
+        color: #3e3e3e;
+        font-family: "Freight Sans Pro",system-ui;
+        font-size: 5.6rem;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 2.2px;
+        line-height: 80px;
+        text-align: left;
+        /* Text style for "Machen Sie" */
+        font-style: normal;
+        margin: 0;
+        margin-bottom: 6.5vh;
         text-transform: uppercase;
       }
     }
@@ -81,11 +98,15 @@
   //height: 75vh;
   margin: 0 auto;
   margin-top: 76px;
+  .prod-items-bod{
+    justify-content: space-between;
+  }
   .first-prod-items{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: 25%;
     .picture-body-prod{
       position: relative;
       .item-picture{
@@ -102,7 +123,7 @@
         bottom: 0;
         color: #ffffff;
         margin: 0;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: .7rem;
         padding: 5px 10px;
         font-weight: 300;
@@ -121,7 +142,7 @@
     .heart-icon-item{
       position: absolute;
       top: 0vh;
-      right: 5vw;
+      right:0;
       width: 30px;
       height: 30px;
       stroke: #7b7b7b;
@@ -137,7 +158,7 @@
       background: white;
       transition: .5s;
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: .9rem;
       font-weight: 300;
       font-style: normal;
@@ -165,12 +186,12 @@
     }
     .prod-txt-head{
       color: #7b7b7b;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: .9rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 2.6px;
-      line-height: 35px;
+      //line-height: 35px;
       text-align: center;
       /* Text style for "Clean prod" */
       font-style: normal;
@@ -179,13 +200,13 @@
     }
     .prod-txt-head2{
       color: #7b7b7b;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: .7rem;
       margin: 0px auto;
       font-weight: 600;
       font-style: normal;
       letter-spacing: 0.34px;
-      line-height: 35px;
+      //line-height: 35px;
       text-align: center;
       /* Text style for "Limited ed" */
       font-style: normal;
@@ -194,7 +215,7 @@
     }
     .prod-txt-name{
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       margin-top: 10px;
       margin-bottom: 0;
       font-size: 1.5rem;
@@ -209,7 +230,7 @@
     }
     .prod-txt-foot{
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1rem;
       font-weight: 300;
       font-style: normal;
@@ -222,7 +243,7 @@
     }
     .prod-txt-foot2{
       color: #7b7b7b;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: .9rem;
       //margin-top: 10px;
       font-weight: 300;
@@ -238,7 +259,7 @@
     }
     .prod-txt-price{
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1.3rem;
       margin:5px auto ;
       font-weight: 600;
@@ -257,7 +278,7 @@
     flex-direction: column;
     p{
       color: #5c5c5c;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1rem;
       font-weight: 300;
       font-style: normal;
@@ -269,13 +290,13 @@
     }
     h2{
       color: #3e3e3e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 2rem;
       font-weight: 300;
       font-style: normal;
       text-align: left;
       letter-spacing: 2.4px;
-      line-height: 55px;
+      //line-height: 55px;
       text-align: left;
       /* Text style for "Exklusive" */
       font-style: normal;
@@ -288,13 +309,13 @@
       color: #2e2e2e;
       margin: 5px auto;
       margin-bottom: 35px;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: .9rem;
       font-weight: 500;
       font-style: normal;
       width: 80%;
       //letter-spacing: 0.55px;
-      line-height: 35px;
+      //line-height: 35px;
       text-align: left;
       /* Text style for "Lorem ipsu" */
       font-style: normal;
@@ -307,7 +328,7 @@
       min-height: 50px;
       background-color: #080808;
       color: #ffffff;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1.2rem;
       font-weight: 500;
       font-style: normal;
@@ -337,7 +358,7 @@
         padding: 30px 0 0 0 ;
         p{
           color: #5c5c5c;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 1rem;
           font-weight: 300;
           font-style: normal;
@@ -351,7 +372,7 @@
         h3{
           min-height: 61px;
           color: #3e3e3e;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 2rem;
           font-weight: 300;
           font-style: normal;
@@ -365,7 +386,7 @@
       .sec-sec-el-link{
         a{
           color: #a12224;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 1rem;
           font-weight: 500;
           font-style: normal;
@@ -401,7 +422,7 @@
       position: absolute;
       top: -8vh;
       color: #3e3e3e;
-      font-family: 'Open Sans Condensed', sans-serif;
+      font-family: 'Open Sans Condensed', system-ui;
       font-size: 6vw;
       font-weight: lighter;
       font-style: normal;
@@ -420,7 +441,7 @@
     justify-content: space-between;
     .inspiration-right-headtxt{
       color: #5c5c5c;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1rem;
       font-weight: 300;
       font-style: normal;
@@ -433,7 +454,7 @@
     }
     h2{
       color: #3e3e3e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 2.3rem;
       font-weight: 300;
       font-style: normal;
@@ -447,7 +468,7 @@
     }
     .inspiration-right-bottxt{
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: .9rem;
       font-weight: 500;
       font-style: normal;
@@ -460,7 +481,7 @@
     }
     button{
       color: #ffffff;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1rem;
       font-weight: 500;
       font-style: normal;
@@ -491,7 +512,7 @@
       margin-bottom: 10px;
       p{
         color: #5c5c5c;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: 1.2rem;
         font-weight: 300;
         font-style: normal;
@@ -504,7 +525,7 @@
       }
       h2{
         color: #3e3e3e;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: 2.5rem;
         font-weight: 300;
         font-style: normal;
@@ -521,7 +542,7 @@
     }
     span{
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1rem;
       font-weight: 500;
       font-style: normal;
@@ -537,7 +558,7 @@
       padding: 15px 5px;
       background-color: #080808;
       color: #ffffff;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1rem;
       font-weight: 500;
       font-style: normal;
@@ -569,7 +590,7 @@
         padding: 10px ;
         background-color: #000000;
         color: #ffffff;
-        font-family: "Ivy Presto Display",sans-serif;
+        font-family: "Ivy Presto Display",system-ui;
         font-size: 1rem;
         font-weight: 400;
         font-style: normal;
@@ -585,7 +606,7 @@
       }
       .insp-bot-lg{
         color: #ffffff;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: 2.5rem;
         font-weight: 300;
         font-style: normal;
@@ -612,7 +633,7 @@
 
       .insp-bot-lg{
         color: #ffffff;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: 2.5rem;
         font-weight: 300;
         font-style: normal;
@@ -649,7 +670,7 @@
     flex: 1;
     h2{
       color: #3e3e3e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 2.5rem;
       font-weight: 300;
       font-style: normal;
@@ -663,7 +684,7 @@
     }
     button{
       color: #3e3e3e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1.3rem;
       font-weight: 500;
       font-style: normal;
@@ -695,7 +716,7 @@
     .heart-icon-item{
       position: absolute;
       top: 0vh;
-      right: 5vw;
+      right: 0;
       width: 30px;
       height: 30px;
       stroke: #7b7b7b;
@@ -723,7 +744,7 @@
         bottom: 0;
         color: #ffffff;
         margin: 0;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: .7rem;
         padding: 5px 10px;
         font-weight: 300;
@@ -748,7 +769,7 @@
       background: white;
       transition: .5s;
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: .9rem;
       font-weight: 300;
       font-style: normal;
@@ -777,7 +798,7 @@
     .prod-txt-head{
       margin-top: 20px;
       color: #7b7b7b;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: .9rem;
       font-weight: 300;
       font-style: normal;
@@ -791,7 +812,7 @@
     }
     .prod-txt-head2{
       color: #7b7b7b;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: .7rem;
       //margin: 10px auto;
       font-weight: 600;
@@ -806,7 +827,7 @@
     }
     .prod-txt-name{
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       margin-top: 10px;
       margin-bottom: 0;
       font-size: 1.5rem;
@@ -821,7 +842,7 @@
     }
     .prod-txt-foot{
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1rem;
       font-weight: 300;
       font-style: normal;
@@ -834,7 +855,7 @@
     }
     .prod-txt-foot2{
       color: #7b7b7b;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: .9rem;
       //margin-top: 10px;
       font-weight: 300;
@@ -850,7 +871,7 @@
     }
     .prod-txt-price{
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1.3rem;
       //margin:10px auto ;
       font-weight: 600;
@@ -870,7 +891,7 @@
   align-items: center;
   button{
     color: #ffffff;
-    font-family: "Freight Sans Pro",sans-serif;
+    font-family: "Freight Sans Pro",system-ui;
     font-size: 1rem;
     font-weight: 500;
     font-style: normal;
@@ -898,7 +919,7 @@
         background-repeat: no-repeat;
         h2{
           color: #3e3e3e;
-          font-family: "Ivy Presto Display",sans-serif;
+          font-family: "Ivy Presto Display",system-ui;
           font-size: 4.5vw;
           font-weight: 100;
           font-style: normal;
@@ -920,7 +941,7 @@
           margin: 10px auto;
           margin-top: 40px;
           color: #5c5c5c;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 1.1rem;
           font-weight: 300;
           font-style: normal;
@@ -932,7 +953,7 @@
         h2{
           color: #3e3e3e;
           margin: 0px 0 10px  0 ;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 2.2rem;
           font-weight: 300;
           font-style: normal;
@@ -945,7 +966,7 @@
         }
         span{
           color: #2e2e2e;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 1rem;
           font-weight: 500;
           font-style: normal;
@@ -959,7 +980,7 @@
         }
         a{
           color: #a12224;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: .9rem;
           font-weight: 300;
           font-style: normal;
@@ -987,7 +1008,7 @@
         margin: 10px auto;
         margin-top: 40px;
         color: #5c5c5c;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: 1.1rem;
         font-weight: 300;
         font-style: normal;
@@ -999,7 +1020,7 @@
       h2{
         color: #3e3e3e;
         margin: 0px 0 10px  0 ;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: 2.2rem;
         font-weight: 300;
         font-style: normal;
@@ -1012,7 +1033,7 @@
       }
       span{
         color: #2e2e2e;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: 1rem;
         font-weight: 500;
         font-style: normal;
@@ -1026,7 +1047,7 @@
       }
       a{
         color: #a12224;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: .9rem;
         font-weight: 300;
         font-style: normal;
@@ -1054,7 +1075,7 @@
     align-items: center;
     .dpab-magazin-title{
       color: #ffffff;
-      font-family: "Ivy Presto Display",sans-serif;
+      font-family: "Ivy Presto Display",system-ui;
       font-size: 4.5rem;
       font-weight: 100;
       font-style: normal;
@@ -1083,7 +1104,7 @@
         padding: 50px 70px 70px;
         h2{
           color: #3e3e3e;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 1.5rem;
           font-weight: 300;
           font-style: normal;
@@ -1095,7 +1116,7 @@
         p{
           margin: 10px 0 30px 0;
           color: #5c5c5c;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 1rem;
           font-weight: 300;
           font-style: normal;
@@ -1108,7 +1129,7 @@
         }
         span{
           color: #3e3e3e;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 1rem;
           font-weight: 500;
           font-style: normal;
@@ -1121,7 +1142,7 @@
         }
         a{
           color: #a12224;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: .9rem;
           font-weight: 300;
           font-style: normal;
@@ -1166,7 +1187,7 @@
             margin-top: 0vh;
             margin-bottom: 10px;
             color: #3e3e3e;
-            font-family: "Freight Sans Pro",sans-serif;
+            font-family: "Freight Sans Pro",system-ui;
             font-size: 2rem;
             font-weight: 300;
             font-style: normal;
@@ -1178,7 +1199,7 @@
           }
           p{
             color: #5c5c5c;
-            font-family: "Freight Sans Pro",sans-serif;
+            font-family: "Freight Sans Pro",system-ui;
             font-size: 1rem;
             font-weight: 300;
             font-style: normal;
@@ -1192,7 +1213,7 @@
           }
           span{
             color: #3e3e3e;
-            font-family: "Freight Sans Pro",sans-serif;
+            font-family: "Freight Sans Pro",system-ui;
             font-size: .9rem;
             text-align: center;
             font-weight: 500;
@@ -1204,7 +1225,7 @@
           }
           a{
             color: #a12224;
-            font-family: "Freight Sans Pro",sans-serif;
+            font-family: "Freight Sans Pro",system-ui;
             font-size: .9rem;
             font-weight: 300;
             font-style: normal;
@@ -1233,7 +1254,7 @@
         }
         h2{
           color: #3e3e3e;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 2rem;
           font-weight: 300;
           font-style: normal;
@@ -1246,7 +1267,7 @@
         }
         p{
           color: #5c5c5c;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 1rem;
           font-weight: 300;
           font-style: normal;
@@ -1258,7 +1279,7 @@
         }
         span{
           color: #3e3e3e;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: .9rem;
           font-weight: 500;
           font-style: normal;
@@ -1271,7 +1292,7 @@
         }
         a{
           color: #a12224;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: .9rem;
           font-weight: 300;
           font-style: normal;
@@ -1313,7 +1334,7 @@
     h2{
       width: 60%;
       color: #3e3e3e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 2.5rem;
       font-weight: 300;
       font-style: normal;
@@ -1326,7 +1347,7 @@
     }
     p{
       color: #3e3e3e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: .9rem;
       font-weight: 500;
       font-style: normal;
@@ -1374,7 +1395,7 @@
     }
     p{
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",sans-serif;
+      font-family: "Freight Sans Pro",system-ui;
       font-size: 1.1rem;
       font-weight: 300;
       font-style: normal;
@@ -1394,7 +1415,7 @@
   align-items: center;
   h2{
     color: #3e3e3e;
-    font-family: "Freight Sans Pro",sans-serif;
+    font-family: "Freight Sans Pro",system-ui;
     font-size: 2.2rem;
     font-weight: 300;
     font-style: normal;
@@ -1405,7 +1426,7 @@
   }
   p{
     color: #3e3e3e;
-    font-family: "Freight Sans Pro",sans-serif;
+    font-family: "Freight Sans Pro",system-ui;
     font-size: 1rem;
     font-weight: 500;
     font-style: normal;
@@ -1432,7 +1453,7 @@
         border: none;
         padding: 5px 10px;
         color: #3e3e3e;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: 1.2rem;
         font-weight: 500;
         font-style: normal;
@@ -1445,7 +1466,7 @@
 
         &::placeholder{
           color: #3e3e3e;
-          font-family: "Freight Sans Pro",sans-serif;
+          font-family: "Freight Sans Pro",system-ui;
           font-size: 1.2rem;
           font-weight: 500;
           font-style: normal;
@@ -1460,7 +1481,7 @@
       .newsletter-email-sub{
         background-color: #000000;
         color: #ffffff;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: 1.2rem;
         font-weight: 500;
         font-style: normal;
@@ -1482,7 +1503,7 @@
   margin-bottom: 10vh;
   p{
     color: #ffffff;
-    font-family: "Freight Sans Pro",sans-serif;
+    font-family: "Freight Sans Pro",system-ui;
     font-size: 1.6rem;
     font-weight: 300;
     font-style: normal;
@@ -1546,7 +1567,7 @@
         margin-top: 30px;
         margin-bottom: 0;
         color: #000000;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: .9rem;
         font-weight: 300;
         font-style: normal;
@@ -1560,7 +1581,7 @@
       h2{
 
         color: #000000;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: 1.7rem;
         font-weight: 300;
         font-style: normal;
@@ -1572,7 +1593,7 @@
       }
       span{
         color: #2e2e2e;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: 1rem;
         font-weight: 500;
         font-style: normal;
@@ -1585,7 +1606,7 @@
       a{
         margin-top: 10px;
         color: #a12224;
-        font-family: "Freight Sans Pro",sans-serif;
+        font-family: "Freight Sans Pro",system-ui;
         font-size: .9rem;
         font-weight: 500;
         font-style: normal;

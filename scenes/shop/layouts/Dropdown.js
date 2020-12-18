@@ -1,11 +1,11 @@
-const Aside = () =>{
+const Dropdown = () =>{
     return(
         <>
             <div>
-                
+
             </div>
         </>
     )
 }
 
-export default Aside
+export default Dropdown

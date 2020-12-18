@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .mediatek__container {
   display: grid;
   grid-auto-flow: column;
@@ -14,5 +15,18 @@
       color: #ffffff;
       text-transform: uppercase;
     }
+=======
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  .mediatek-options {
+      width: unset;
+    flex-grow: unset;
+    padding: 2px 4px;
+    background-color: #000;
+    color: #fff;
+    margin-left: 2%;
+>>>>>>> 04a3525be177e81093e8b739a25dc8befd9ccc60
   }
 }
