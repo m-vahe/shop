@@ -16,7 +16,7 @@ const Header = () => {
                 </span>
           </div>
           <HeaderSearch />
-          {/*<Navbar/>*/}
+          <Navbar/>
       </header>
     </>
   );

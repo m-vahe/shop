@@ -3,8 +3,8 @@ const FooterPayment = () =>{
     return(
         <>
             <div className={"payment-section-all"}>
-                <div className={"payment-section d-flex"}>
-                    <div className={"payment-logos d-flex flex-wrap"}>
+                <div className={"payment-section"}>
+                    <div className={"payment-logos "}>
                         <img src="/zahlungstartenlogo.png" alt="Zahlungsarten"/>
                         <img src="/paypallogo.png" alt="PayPal"/>
                         <img src="/amazonlogo.png" alt="Amazon"/>
@@ -12,7 +12,7 @@ const FooterPayment = () =>{
                         <img src="/mastercardlogo.png" alt="Mastercardlogo"/>
                         <img src="/vorkasselogo.png" alt="Vorkasse"/>
                     </div>
-                    <div className={"d-flex shipping-logos flex-wrap"}>
+                    <div className={" shipping-logos "}>
                         <img src="/versandartenlogo.png" alt="Versandarten"/>
                         <img src="/dhllogo.png" alt="DHL"/>
                         <img src="/gorgeenlogo.png" alt="Gorgeen"/>
