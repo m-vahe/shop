@@ -5,13 +5,8 @@ import Image from 'next/image';
 const VideosContainer = () => {
   const [play1, setPlay1] = useState(false);
   return (
-<<<<<<< HEAD
     <div className='smallVideo__container'>
       <div className='smallVideo__container__content'>
-=======
-    <div className='col-lg-4 small-vid-bod'>
-      <div className='video-small-body-only'>
->>>>>>> 04a3525be177e81093e8b739a25dc8befd9ccc60
         <ReactPlayer
           url='/video.webm'
           muted={true}
@@ -74,17 +69,10 @@ const VideosContainer = () => {
           </g>
         </svg>
       </div>
-<<<<<<< HEAD
       <div className='smallVideo__container__info'>
         <div className='smallVideo__container__info__option'>
           <p className='smallVideo__container__info__option--text'> Review </p>
           <Image src='/bookmark.png' alt='bookmark' width={50} height={18} />
-=======
-      <div className={'small-vid-text'}>
-        <div className='d-flex justify-content-between align-items-end mb-2'>
-          <p> Review </p>
-          <Image src='/bookmark.png' alt='bookmark' width={18} height={18} />
->>>>>>> 04a3525be177e81093e8b739a25dc8befd9ccc60
         </div>
         <h2>Notorious Oud von D.S. & Durga</h2>
         <span>

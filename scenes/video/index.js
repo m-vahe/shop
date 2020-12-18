@@ -15,13 +15,8 @@ const Video = () => {
       <MediatekInfo />
       <VideoPart />
       <VideosContainer />
-<<<<<<< HEAD
       {/* <Social /> */}
       {/* <Newsletter /> */}
-=======
-      <Social />
-      <Newsletter />
->>>>>>> 04a3525be177e81093e8b739a25dc8befd9ccc60
     </div>
   );
 };

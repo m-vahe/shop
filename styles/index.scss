@@ -9,18 +9,11 @@
 @import "../layouts/loader/loader";
 @import "../scenes/shop/shop";
 @import "../shareable/component-header/component-info/componentInfo.scss";
-<<<<<<< HEAD
 @import "../shareable/component-header/componentHeader.scss";
 @import "../shareable/component-header/component-title/componentTitle.scss";
 @import "../scenes/video/components/mediatek-info/mediatekInfo.scss";
 @import "../scenes/video/components/small-video-container/smallVideoContainer.scss";
 @import "../shareable/social/social.scss";
-=======
-@import "../shareable/component-header/component-title/componentTitle.scss";
-@import "../scenes/video/components/mediatek-info/mediatekInfo.scss";
-@import "../shareable/social/social.scss";
-@import "./components/newheader";
->>>>>>> 04a3525be177e81093e8b739a25dc8befd9ccc60
 @font-face {
     src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
     src: local('Freight Sans Pro'), local('FreightSansPro'),
@@ -37,7 +30,6 @@
     box-sizing: border-box;
     font-family: "Freight Sans Pro", system-ui;
 }
-<<<<<<< HEAD
 
 html{
     font-size: 62.5%;
@@ -62,8 +54,3 @@ html{
 //         font-size: 42.5%;
 //     }
 // }
-=======
-html{
-    font-size: 62.5% ;
-}
->>>>>>> 04a3525be177e81093e8b739a25dc8befd9ccc60
