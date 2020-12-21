@@ -89,51 +89,56 @@
 
 .second-section-home{
   width: 100%;
-  margin: 80px auto;
   padding: 65px 0;
 
   .sec-sect-all{
-    width: 90%;
+    width: 90.5%;
     margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+
+    gap:40px;
     .sec-sec-el{
       height: auto;
       display: flex;
       flex-direction: column;
       .sec-sec-el-text{
-        padding: 30px 0 0 0 ;
         p{
+          margin-top: 30px;
           color: #5c5c5c;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: 1rem;
+          font-size: 2.5rem;
           font-weight: 300;
           font-style: normal;
-          letter-spacing: 1.38px;
+          letter-spacing: .5px;
           text-align: left;
           /* Text style for "Gemütliche" */
           font-style: normal;
+          text-transform: uppercase;
           //letter-spacing: normal;
-          margin: 0;
         }
         h3{
           min-height: 61px;
           color: #3e3e3e;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: 2rem;
+          font-size: 5rem;
           font-weight: 300;
           font-style: normal;
           letter-spacing: 1.5px;
           text-align: left;
           font-style: normal;
           text-transform: uppercase;
-          margin: 0;
+          margin: 5px auto;
+
         }
       }
       .sec-sec-el-link{
+        margin-top: 5px;
         a{
           color: #a12224;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: 1rem;
-          font-weight: 500;
+          font-size: 2rem;
+          font-weight: 400;
           font-style: normal;
           letter-spacing: 1px;
           line-height: 35px;
@@ -145,7 +150,7 @@
         }
       }
       .sec-sec-img{
-        min-height: 55vh;
+        min-height: 67vh;
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -154,40 +159,42 @@
 }
 
 .inspiration-body{
-  width: 90%;
+  width: 90.5%;
   margin: 0px auto;
-
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 75% 25%;
+  gap: 10px;
   .inspiration-left{
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     max-height: 70vh;
-    min-height: 65vh;
+    min-height: 67vh;
     p{
       position: absolute;
       top: -8vh;
       color: #3e3e3e;
       font-family: 'Open Sans Condensed', system-ui;
       font-size: 6vw;
-      font-weight: lighter;
+      font-weight: 300;
       font-style: normal;
       letter-spacing: 11px;
       text-align: left;
       text-transform: uppercase;
-      /* Text style for "INSPIRATIO" */
       font-style: normal;
 
     }
 
   }
   .inspiration-right{
-    padding: 60px 50px;
+    padding: 80px 0px 60px 36px;
     flex-direction: column;
     justify-content: space-between;
     .inspiration-right-headtxt{
       color: #5c5c5c;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: 1rem;
+      font-size: 2.2rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 1.38px;
@@ -195,70 +202,69 @@
       /* Text style for "Gesichtspf" */
       font-style: normal;
       text-transform: uppercase;
-      margin: 0 0 15px 0;
     }
     h2{
+      margin-top: 5px;
       color: #3e3e3e;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: 2.3rem;
+      font-size: 6rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 2.4px;
-      line-height: 35px;
       text-align: left;
-      /* Text style for "Find your" */
       font-style: normal;
-
       text-transform: uppercase;
+      line-height: 55px;
+      width: 120%;
     }
     .inspiration-right-bottxt{
+      margin-top: 60px;
       color: #2e2e2e;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: .9rem;
-      font-weight: 500;
+      font-size: 2rem;
+      font-weight: 300;
       font-style: normal;
-      letter-spacing: 0.55px;
       line-height: 35px;
       text-align: left;
       /* Text style for "Lorem ipsu" */
       font-style: normal;
-      margin:0 auto;
+      margin-bottom: 60px;
     }
     button{
       color: #ffffff;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: 1rem;
-      font-weight: 500;
+      font-size: 2.6rem;
+      font-weight: 400;
       font-style: normal;
       letter-spacing: 5px;
       text-align: center;
       text-transform: uppercase;
-      /* Text style for "JETZT SHOP" */
       font-style: normal;
       text-transform: uppercase;
       padding: 15px 10px;
       background-color: #080808;
-      width: 70%;
+      width: 75%;
       border: none;
     }
   }
 }
 .inspiration-bottom{
-  width: 90%;
+  width: 90.5%;
   margin: 0px auto;
-  padding: 50px 0;
   //height: 70vh;
-  .inspiration-bottom-text{
-    padding: 80px 50px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 50%;
+  .inspiration-bottom-text2{
+    padding: 45px 0 0 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     .inspiration-bottom-head-txt{
       margin-bottom: 10px;
       p{
         color: #5c5c5c;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: 1.2rem;
+        font-size: 2.15rem;
         font-weight: 300;
         font-style: normal;
         letter-spacing: 1.38px;
@@ -271,16 +277,16 @@
       h2{
         color: #3e3e3e;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: 2.5rem;
+        font-size: 6rem;
         font-weight: 300;
         font-style: normal;
         letter-spacing: 2.4px;
         line-height: 55px;
         text-align: left;
-        /* Text style for "Die Duft-s" */
         font-style: normal;
-
         text-transform: uppercase;
+        width: 80%;
+        margin-bottom: 40px;
       }
 
 
@@ -288,8 +294,8 @@
     span{
       color: #2e2e2e;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: 1rem;
-      font-weight: 500;
+      font-size: 2.2rem;
+      font-weight: 300;
       font-style: normal;
       letter-spacing: 0.55px;
       line-height: 35px;
@@ -297,6 +303,8 @@
       /* Text style for "Lorem ipsu" */
       font-style: normal;
       margin-bottom: 35px;
+      display: inline-block;
+
     }
     .inspiration-bottom-btn{
       width: 35%;
@@ -304,15 +312,82 @@
       background-color: #080808;
       color: #ffffff;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: 1rem;
-      font-weight: 500;
+      font-size: 2.6rem;
+      font-weight: 400;
       font-style: normal;
       letter-spacing: 5px;
       text-align: center;
       text-transform: uppercase;
-      /* Text style for "JETZT SHOP" */
       font-style: normal;
+      text-transform: uppercase;
+      border: none;
+    }
 
+  }
+  .inspiration-bottom-text{
+    display: flex;
+    flex-direction: column;
+     padding: 70px 40px 0 0px ;
+    .inspiration-bottom-head-txt{
+      margin-bottom: 10px;
+      p{
+        color: #5c5c5c;
+        font-family: "Freight Sans Pro",system-ui;
+        font-size: 2.15rem;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 1.38px;
+        text-align: left;
+        /* Text style for "Damendüfte" */
+        font-style: normal;
+        margin: 10px auto;
+        text-transform: uppercase;
+      }
+      h2{
+        color: #3e3e3e;
+        font-family: "Freight Sans Pro",system-ui;
+        font-size: 6rem;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 2.4px;
+        line-height: 55px;
+        text-align: left;
+        font-style: normal;
+        text-transform: uppercase;
+        width: 80%;
+        margin-bottom: 40px;
+      }
+
+
+    }
+    span{
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro",system-ui;
+      font-size: 2.2rem;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 0.55px;
+      line-height: 35px;
+      text-align: left;
+      /* Text style for "Lorem ipsu" */
+      font-style: normal;
+      margin-bottom: 35px;
+      display: inline-block;
+
+    }
+    .inspiration-bottom-btn{
+      width: 35%;
+      padding: 15px 5px;
+      background-color: #080808;
+      color: #ffffff;
+      font-family: "Freight Sans Pro",system-ui;
+      font-size: 2.6rem;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      font-style: normal;
       text-transform: uppercase;
       border: none;
     }
@@ -321,8 +396,9 @@
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    min-height: 66vh;
     .inspiration-bottom-imagetxt{
+      //padding: 100px;
       display: flex;
       flex-direction: column;
       position: absolute;
@@ -336,7 +412,7 @@
         background-color: #000000;
         color: #ffffff;
         font-family: "Ivy Presto Display",system-ui;
-        font-size: 1rem;
+        font-size: 2.5rem;
         font-weight: 400;
         font-style: normal;
         letter-spacing: 1.5px;
@@ -347,19 +423,19 @@
 
         text-transform: uppercase;
         text-align: center;
-        margin-bottom: 35px;
+        margin-bottom: 20px;
       }
       .insp-bot-lg{
         color: #ffffff;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: 2.5rem;
-        font-weight: 300;
+        font-size: 6rem;
+        font-weight: 400;
         font-style: normal;
         letter-spacing: 2.4px;
         text-align: left;
         /* Text style for "Entdecken" */
         font-style: normal;
-
+        margin: 10px 0;
         text-transform: uppercase;
         background-color: #000000;
         text-align: center;
@@ -374,12 +450,11 @@
       position: absolute;
       left: 0;
       top: 15%;
-      padding: 5px 0;
 
       .insp-bot-lg{
         color: #ffffff;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: 2.5rem;
+        font-size: 6rem;
         font-weight: 300;
         font-style: normal;
         letter-spacing: 2.4px;
@@ -391,6 +466,7 @@
         text-align: center;
         padding: 0px 10px;
         width: fit-content;
+        margin: 10px 0;
 
       }
     }

@@ -21,7 +21,7 @@
       }
       .circled-txt{
         position: absolute;
-        bottom: 10%;
+        bottom: 0%;
         left: 0%;
 
       }
@@ -30,9 +30,9 @@
         bottom: 0;
         color: #ffffff;
         margin: 0;
-        font-family: "Freight Sans Pro",system-ui;
-        font-size: .7rem;
-        padding: 5px 10px;
+
+        font-size: 1.3rem;
+        padding: 4px 15px;
         font-weight: 300;
         font-style: normal;
         letter-spacing: 2.4px;
@@ -58,24 +58,29 @@
 
 
     button{
-      /* Style for "Rechteck 1" */
-      width: 192px;
+      margin-top: 15px;
+      width: 182px;
       padding: 10px;
       border: 1px solid #707070;
       background: white;
       transition: .5s;
-      color: #2e2e2e;
-      font-family: "Freight Sans Pro",system-ui;
-      font-size: .9rem;
-      font-weight: 300;
-      font-style: normal;
-      letter-spacing: 2px;
-      text-align: left;
-      /* Text style for "Quick shop" */
-      font-style: normal;
+      display: flex;
+      align-items: center;
+      p{
+        color: #2e2e2e;
+        font-family: "Freight Sans Pro",system-ui;
+        font-size: 2rem;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 2px;
+        text-align: left;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
 
-      text-transform: uppercase;
-      text-align: center;
       .letter-svg{
         stroke: #7b7b7b !important;
         transition: .5s !important;
@@ -84,7 +89,11 @@
         border: 1px solid #707070;
         background-color: #000000;
         transition: .5s;
-        color: #ffffff;
+        cursor: pointer;
+       p{
+         transition: .5s;
+         color: #ffffff;
+       }
         .letter-svg{
           transition: .5s;
           stroke: white !important;
@@ -94,7 +103,7 @@
     .prod-txt-head{
       color: #7b7b7b;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: .9rem;
+      font-size: 2rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 2.6px;
@@ -106,11 +115,11 @@
       text-transform: uppercase;
     }
     .prod-txt-head2{
+      margin: 10px auto;
       color: #7b7b7b;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: .7rem;
-      margin: 0px auto;
-      font-weight: 600;
+      font-size: 1.7rem;
+      font-weight: 500;
       font-style: normal;
       letter-spacing: 0.34px;
       //line-height: 35px;
@@ -121,24 +130,24 @@
       text-transform: uppercase;
     }
     .prod-txt-name{
+      margin-top: 25px;
       color: #2e2e2e;
       font-family: "Freight Sans Pro",system-ui;
-      margin-top: 10px;
       margin-bottom: 0;
-      font-size: 1.5rem;
+      font-size: 3.6rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 3.5px;
       text-align: center;
       /* Text style for "Ylumi" */
       font-style: normal;
-
       text-transform: uppercase;
     }
     .prod-txt-foot{
+      margin-top: 5px;
       color: #2e2e2e;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: 1rem;
+      font-size: 2.5rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 1.25px;
@@ -151,24 +160,19 @@
     .prod-txt-foot2{
       color: #7b7b7b;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: .9rem;
-      //margin-top: 10px;
+      font-size: 2rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 2.34px;
       line-height: 35px;
       text-align: center;
-      /* Text style for "Kapseln" */
       font-style: normal;
-
       text-decoration: underline;
       text-transform: uppercase;
     }
     .prod-txt-price{
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",system-ui;
-      font-size: 1.3rem;
-      margin:5px auto ;
+      font-size: 2.8rem;
       font-weight: 600;
       font-style: normal;
       letter-spacing: 1.4px;
@@ -187,7 +191,6 @@
     gap: 45px;
     p{
       color: #5c5c5c;
-      font-family: "Freight Sans Pro",system-ui;
       font-size: 2.2rem;
       font-weight: 300;
       font-style: normal;

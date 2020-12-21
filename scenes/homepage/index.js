@@ -20,10 +20,10 @@ const Homepage = () =>{
             <div className={"homepage-body"}>
                 <FirstIntro/>
                 <FirstProducts/>
-                {/*<SecondSection/>*/}
-                {/*<InspirationSection/>*/}
-                {/*<InspirationBottomOne/>*/}
-                {/*<InspirationBottomTwo/>*/}
+                <SecondSection/>
+                <InspirationSection/>
+                <InspirationBottomOne/>
+                <InspirationBottomTwo/>
                 {/*<SecondProducts/>*/}
                 {/*<ProductsWithFilterHomepage/>*/}
                 {/*<FilteredProductBottom/>*/}
