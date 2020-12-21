@@ -1,7 +1,7 @@
 const NewsletterRep = ({ padding }) => {
   return (
     <>
-      <div className='newsLetter__container' style={{ paddingBottom: padding }}>
+      <div className='newsLetter__container' >
         <div className='newsLetter__container__header'>
           <h2 className='newsLetter__container__header--title'>Newsletter</h2>
           <p className='newsLetter__container__header--info'>

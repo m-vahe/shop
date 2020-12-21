@@ -1,7 +1,7 @@
-const FirstAddSection = ({background,image1,image2,textcolor}) =>{
+const FirstAddSection = ({background,image1,image2,textcolor,padding}) =>{
     return(
         <>
-            <div className={"second-section-home "} style={{backgroundColor:background}}>
+            <div className={"second-section-home "} style={{backgroundColor:background,paddingTop:padding,paddingBottom:padding}}>
                 <div className={"sec-sect-all d-flex flex-wrap"}>
                     <div className={"sec-sec-el col-lg-6"}>
                         <div style={{backgroundImage:`url(${image1})`}} className={"sec-sec-img"}></div>

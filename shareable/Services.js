@@ -3,10 +3,10 @@ import { faTruck ,faHeart, faPercent, faFlask} from "@fortawesome/free-solid-svg
 const ServicesRep = ({padding}) =>{
     return(
         <>
-            <div className={"d-flex flex-wrap services-body"} style={{padding:padding}}>
+            <div className={"d-flex flex-wrap services-body"} >
                 <div className={"col-lg-3 services-item"}>
                     <FontAwesomeIcon
-                        style={{fontSize:"30px"}}
+                        style={{fontSize:"70px"}}
                         icon={faTruck}
                     />{" "}
                     <h2>
@@ -20,7 +20,7 @@ const ServicesRep = ({padding}) =>{
                 </div>
                 <div className={"col-lg-3 services-item"}>
                     <FontAwesomeIcon
-                        style={{fontSize:"30px"}}
+                        style={{fontSize:"70px"}}
                         icon={faHeart}
                     />{" "}
                     <h2>
@@ -34,7 +34,7 @@ const ServicesRep = ({padding}) =>{
                 </div>
                 <div className={"col-lg-3 services-item"}>
                     <FontAwesomeIcon
-                        style={{fontSize:"30px"}}
+                        style={{fontSize:"70px"}}
                         icon={faPercent}
                     />{" "}
                     <h2>
@@ -48,7 +48,7 @@ const ServicesRep = ({padding}) =>{
                 </div>
                 <div className={"col-lg-3 services-item"}>
                     <FontAwesomeIcon
-                        style={{fontSize:"30px"}}
+                        style={{fontSize:"70px"}}
                         icon={faFlask}
                     />{" "}
                     <h2>

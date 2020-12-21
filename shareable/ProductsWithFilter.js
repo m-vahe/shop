@@ -2,7 +2,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHeart, faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import {useState,useEffect} from "react";
 
-const ProductsWithFilter = ({headtext,products, setProducts}) =>{
+const ProductsWithFilter = ({headtext,products, setProducts, autoFlow,gridTemplateColumns,gap}) =>{
 
     const [parfum,setParfum] = useState(true)
     const [beauty,setBeauty] = useState(false)
@@ -39,7 +39,7 @@ const ProductsWithFilter = ({headtext,products, setProducts}) =>{
                         }}>Interieur</button>
                     </div>
                 </div>
-                <div className={"products-with-filter-list"}>
+                <div className={"products-with-filter-list"} style={{gridTemplateColumns:gridTemplateColumns,gridAutoFlow:autoFlow,gap:gap}}>
                     {products.map((e,i)=>{
                         return(
                             <div className={" first-prod-items col-lg-3"} key={i}>

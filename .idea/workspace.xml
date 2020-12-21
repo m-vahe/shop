@@ -3,7 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/FirstProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/Inspiration.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/Inspiration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilterHarrenTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilterHarrenTwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/SecondFilteredProdBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/SecondFilteredProdBottom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/SecondSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/SecondSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/herren.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/herren.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/video/components/small-video-container/smallVideoContainer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/components/small-video-container/smallVideoContainer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/video/components/video-container/videoContainer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/components/video-container/videoContainer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/FirstAddSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/FirstAddSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Inspiration.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Inspiration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Neuigkeiten.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Neuigkeiten.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/component-header/component-title/componentTitle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/component-header/component-title/componentTitle.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +91,7 @@
       <workItem from="1608183416182" duration="18316000" />
       <workItem from="1608269681272" duration="26447000" />
       <workItem from="1608530508381" duration="21129000" />
-      <workItem from="1608555378742" duration="418000" />
+      <workItem from="1608555378742" duration="5814000" />
     </task>
     <servers />
   </component>

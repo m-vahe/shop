@@ -1,8 +1,8 @@
 import Image from "next/image";
-const Neuigkeiten = ({background,color}) =>{
+const Neuigkeiten = ({background,color,paddingTop,paddingBottom,btntext,width,padd}) =>{
     return(
         <>
-            <div className={"prodbotbodall"} style={{backgroundColor:background}}>
+            <div className={"prodbotbodall"} style={{backgroundColor:background,paddingTop:paddingTop,paddingBottom:paddingBottom}}>
                 <div className={"d-flex flex-row flex-wrap first-product-bottom-body"}>
                     <div className={"col-lg-6 product-bottom-left d-flex"}>
                         <div style={{backgroundImage:"url(/productbotleft.png)"}} className={"prod-bot-left-img"}>
@@ -34,7 +34,7 @@ const Neuigkeiten = ({background,color}) =>{
                         <a href="#">Mehr lesen</a>
                     </div>
                 </div>
-                <button className={"filter-bot-btn"} style={{color:background,backgroundColor:color}}>MEHR Neuigkeiten </button>
+                <button className={"filter-bot-btn"} style={{color:background,backgroundColor:color,width:width,padding:padd}}>{btntext} </button>
             </div>
         </>
     )

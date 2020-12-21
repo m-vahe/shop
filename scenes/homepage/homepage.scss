@@ -480,12 +480,15 @@
   justify-content: space-between;
   margin-bottom: 85px;
 .products-with-filter-list {
+
   .first-prod-items {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-
+    button{
+      font-size: 2rem;
+    }
     .picture-body-prod {
       position: relative;
 

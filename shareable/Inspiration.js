@@ -1,8 +1,8 @@
 import Image from "next/image";
-const InspirationSection = ({background,color,image}) =>{
+const InspirationSection = ({background,color,image,padding}) =>{
     return(
         <>
-           <div style={{backgroundColor:background}}>
+           <div style={{backgroundColor:background,paddingTop:padding}}>
                <div className={"inspiration-body d-flex flex-wrap"} >
                    <div className={"col-lg-9 col-xl-9 inspiration-left"} style={{backgroundImage:`url(${image})`}}>
                        <p style={{color:color}}>INSPIRATION</p>

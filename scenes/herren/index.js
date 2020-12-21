@@ -14,14 +14,16 @@ const HerrenScene = () =>{
 
     return(
         <>
-            <div>
+            <div className={"harren-main-body"}>
                 <HerrenHead/>
                 <FirstProducts/>
                 <SecondSection/>
                 <ProductsWithFilterHarren/>
-                <Inspiration/>
-                <InspirationBottomOne/>
-                <InspirationBottomTwo/>
+                <div className={"harreninsp"}>
+                    <Inspiration/>
+                    <InspirationBottomOne/>
+                    <InspirationBottomTwo/>
+                </div>
                 <ProductsWithFilterHarrenTwo/>
                 <SecondFilteredProdBottom/>
                 <Services/>
