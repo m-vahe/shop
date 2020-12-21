@@ -1,8 +1,8 @@
 
 const ComponentTitle = ({title}) => {
   return (
-    <div>
-      <p>{title}</p>
+    <div className='componentTitle__container'>
+      <p className='componentTitle__container--text'>{title}</p>
     </div>
   )
 }

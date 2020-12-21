@@ -1,7 +1,9 @@
-p {
-  font-size: 9rem;
-  letter-spacing: 0.4rem;
-  color: #000000;
-  font-weight: 500;
-  font-style: normal;
+.componentTitle__container {
+  &--text {
+    font-size: 9rem;
+    letter-spacing: 0.4rem;
+    color: #000000;
+    font-style: normal;
+    margin-top: -3rem;
+  }
 }

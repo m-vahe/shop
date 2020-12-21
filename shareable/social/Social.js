@@ -2,12 +2,12 @@ import Image from 'next/image';
 
 const Social = () => {
   return (
-    <div className='social'>
-      <div className='social-title'>
-        <h4 className='text-center'>FOLGEN SIE DPA AUF</h4>
+    <div className='social__container'>
+      <div className='social__container__title'>
+        <h4 >FOLGEN SIE DPA AUF</h4>
       </div>
-      <div className='row'>
-        <div className='col-xs-3 social-icon'>
+      <div className='social__container__icons'>
+        <div className='social__container__icons--icon'>
           <Image
             src='/facebook-icon.png'
             alt='facebook'
@@ -15,7 +15,7 @@ const Social = () => {
             height={50}
           />
         </div>
-        <div className='col-xs-3 social-icon'>
+        <div className='social__container__icons--icon'>
           <Image
             src='/instagram-icon.png'
             alt='instagram'
@@ -23,10 +23,10 @@ const Social = () => {
             height={50}
           />
         </div>
-        <div className='col-xs-3 social-icon'>
+        <div className='social__container__icons--icon'>
           <Image src='/twitter-icon.png' alt='twitter' width={50} height={50} />
         </div>
-        <div className='col-xs-3 social-icon'>
+        <div className='social__container__icons--icon'>
           <Image
             src='/painterest-icon.png'
             alt='painterest '

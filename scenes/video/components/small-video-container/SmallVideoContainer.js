@@ -72,15 +72,16 @@ const VideosContainer = () => {
       <div className='smallVideo__container__info'>
         <div className='smallVideo__container__info__option'>
           <p className='smallVideo__container__info__option--text'> Review </p>
-          <Image src='/bookmark.png' alt='bookmark' width={50} height={18} />
+          <Image src='/bookmark.png' alt='bookmark' width={17} height={17} />
         </div>
-        <h2>Notorious Oud von D.S. & Durga</h2>
-        <span>
+        <h2 className='smallVideo__container__info--title'>Notorious Oud von D.S. & Durga</h2>
+        <span className='smallVideo__container__info--desc'>
           Lassen Sie sich von unserem Duftexperten Dr. Coucoulis den
           indonesischen Duft Notorious Oud von D.S. & Durga vorstellen.
           Formuliert in Bed-Stuy, Brooklyn mit nordafrikanischem Papyrus,
           afghanischem Safran und bulgarischer Rose.
         </span>
+        <br/>
         <a href='#'>Produkt shoppen</a>
       </div>
     </div>

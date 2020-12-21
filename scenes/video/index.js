@@ -15,8 +15,8 @@ const Video = () => {
       <MediatekInfo />
       <VideoPart />
       <VideosContainer />
-      {/* <Social /> */}
-      {/* <Newsletter /> */}
+      <Social />
+      <Newsletter />
     </div>
   );
 };

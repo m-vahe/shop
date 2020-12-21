@@ -1,4 +1,4 @@
-import NewsletterRep from "../../../shareable/NewsletterRep";
+import NewsletterRep from "../../../shareable/newsLetter/NewsletterRep";
 
 const Newsletter = () =>{
     return(

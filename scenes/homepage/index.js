@@ -27,7 +27,7 @@ const Homepage = () =>{
                 {/*<SecondProducts/>*/}
                 {/*<ProductsWithFilterHomepage/>*/}
                 {/*<FilteredProductBottom/>*/}
-                {/*<VideoPart/>*/}
+                <VideoPart/>
                 {/*<BottomVideo/>*/}
                 {/*<DpabMagazine/>*/}
                 {/*<DpabBottom/>*/}

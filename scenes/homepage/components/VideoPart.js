@@ -11,7 +11,7 @@ const VideoPart = () =>{
             <div className={"video-body"} >
                 <ReactPlayer url='/video.webm'  muted={true}
                              width='100%'
-                             height='110vh'
+                             height='120vh'
                              playing={play}
                              id={"videoBG"}
                              style={{position:"absolute",top:"-20vh",left:"0"}}

@@ -1,0 +1,54 @@
+.newsLetter__container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20rem;
+  &__header {
+    display: grid;
+    justify-content: center;
+    &--title {
+      font-weight: 300;
+      color: #3e3e3e;
+      font-size: 9rem;
+      text-transform: uppercase;
+    }
+    &--info {
+      width: 51.5rem;
+      font-size: 2.2rem;
+      font-weight: 500;
+      font-style: normal;
+      color: #3e3e3e;
+      margin-top: 6rem;
+    }
+  }
+  &__action {
+    &__form {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 3.5rem;
+      margin-top: 5.3rem;
+      &--email {
+        width: 60rem;
+        height: 67px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 0;
+        &::placeholder {
+          font-size: 3rem;
+          font-weight: 500;
+          text-transform: uppercase;
+          padding: 1.6rem 2.6rem;
+        }
+      }
+      &--submit {
+        width: 19.2rem;
+        height: 67px;
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+    
+      }
+    }
+  }
+}

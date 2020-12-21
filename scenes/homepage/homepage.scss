@@ -1246,6 +1246,9 @@
   overflow: hidden;
   height: 55vh;
   margin-bottom: 10vh;
+  div{
+      height: unset;
+  }
   p{
     color: #ffffff;
     font-family: "Freight Sans Pro",system-ui;
