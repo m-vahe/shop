@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/DpabMagazine.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/DpabMagazine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/SecondProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/SecondProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/Services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/VideoPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/VideoPart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/InsprationBottomOneRep.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/InsprationBottomOneRep.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +73,8 @@
       <workItem from="1608096809307" duration="28845000" />
       <workItem from="1608183416182" duration="18316000" />
       <workItem from="1608269681272" duration="26447000" />
-      <workItem from="1608530508381" duration="19563000" />
+      <workItem from="1608530508381" duration="21129000" />
+      <workItem from="1608555378742" duration="418000" />
     </task>
     <servers />
   </component>

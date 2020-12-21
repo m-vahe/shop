@@ -80,7 +80,7 @@
       }
     }
     .first-intro-bod-right{
-      min-height: 66vh;
+      min-height: 625px;
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -148,7 +148,7 @@
         }
       }
       .sec-sec-img{
-        min-height: 67vh;
+        min-height: 630px;
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -167,7 +167,7 @@
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    max-height: 70vh;
+    max-height: 630px;
     min-height: 67vh;
     p{
       position: absolute;
@@ -394,7 +394,7 @@
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 66vh;
+    min-height: 628px;
     .inspiration-bottom-imagetxt{
       //padding: 100px;
       display: flex;
@@ -1000,7 +1000,7 @@
     .product-bottom-left{
       flex-direction: column;
       .prod-bot-left-img{
-        min-height: 89vh ;
+        min-height: 840px ;
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1087,7 +1087,7 @@
       display: flex;
       flex-direction: column;
       .prod-bot-right-img{
-        min-height: 66vh;
+        min-height: 628px;
         background-repeat: no-repeat;
         background-size: cover;
       }
@@ -1179,7 +1179,7 @@
       flex-direction: column;
       align-items: center;
       .dpab-top-section-img{
-        height: 73.5vh;
+        height:  695px;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1257,7 +1257,7 @@
         .dpab-bottom-section-left-img-bod{
           width: 100%;
           .dpab-bottom-section-left-img{
-            height: 70vh;
+            height:  668px;
             width: 100%;
             background-size: cover;
             background-repeat: no-repeat;
@@ -1338,7 +1338,7 @@
         padding: 50px;
         .dpab-bottom-section-right-img{
           width: 100%;
-          height: 66vh;
+          height: 627px;
           margin-bottom: 3vh;
           background-size: cover;
           background-repeat: no-repeat;
@@ -1408,7 +1408,7 @@
   margin: 0 auto;
   .dpab-bot-img{
     width: 100%;
-    height: 68vh;
+    min-height: 607px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1589,7 +1589,7 @@
 .video-body{
   position: relative;
   overflow: hidden;
-  height: 67vh;
+  height:633px;
   div{
       height: unset;
   }
