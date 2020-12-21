@@ -24,15 +24,15 @@ const Homepage = () =>{
                 <InspirationSection/>
                 <InspirationBottomOne/>
                 <InspirationBottomTwo/>
-                {/*<SecondProducts/>*/}
-                {/*<ProductsWithFilterHomepage/>*/}
-                {/*<FilteredProductBottom/>*/}
+                <SecondProducts/>
+                <ProductsWithFilterHomepage/>
+                <FilteredProductBottom/>
                 <VideoPart/>
-                {/*<BottomVideo/>*/}
-                {/*<DpabMagazine/>*/}
-                {/*<DpabBottom/>*/}
-                {/*<Services/>*/}
-                {/*<Newsletter/>*/}
+                <BottomVideo/>
+                <DpabMagazine/>
+                <DpabBottom/>
+                <Services/>
+                <Newsletter/>
             </div>
         </>
     )

@@ -37,7 +37,7 @@ const VideoPart = () =>{
                     strokeLinejoin: "round",
                     strokeMiterlimit: "10",
                     position: "absolute",
-                    width: "6rem",
+                    width: "10.5rem",
                     display:"none"
                 }: {
                     fill: "none",
@@ -47,7 +47,8 @@ const VideoPart = () =>{
                     strokeLinejoin: "round",
                     strokeMiterlimit: "10",
                     position: "absolute",
-                    width: "6rem"
+                    width: "10.5rem",
+                    left:"46.5%"
                 }}>
                     <g>
                         <line className="st0" x1="197.8" y1="430.8" x2="197.8" y2="81.2"/>

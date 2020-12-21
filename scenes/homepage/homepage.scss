@@ -89,8 +89,6 @@
 
 .second-section-home{
   width: 100%;
-  padding: 65px 0;
-
   .sec-sect-all{
     width: 90.5%;
     margin: 0 auto;
@@ -138,7 +136,7 @@
           color: #a12224;
           font-family: "Freight Sans Pro",system-ui;
           font-size: 2rem;
-          font-weight: 400;
+          font-weight: 300;
           font-style: normal;
           letter-spacing: 1px;
           line-height: 35px;
@@ -327,7 +325,7 @@
   .inspiration-bottom-text{
     display: flex;
     flex-direction: column;
-     padding: 70px 40px 0 0px ;
+     padding: 45px 40px 0 0px ;
     .inspiration-bottom-head-txt{
       margin-bottom: 10px;
       p{
@@ -474,14 +472,277 @@
 }
 
 .filtered-products-body{
-  width: 90%;
+  width: 90.5%;
   //height: 100vh;
   margin: 0 auto;
-  margin-top: 76px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 85px;
+.products-with-filter-list {
+  .first-prod-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .picture-body-prod {
+      position: relative;
+
+      .item-picture {
+        width: 100%;
+      }
+
+      .circled-txt {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+
+      }
+
+      .item-new {
+        position: absolute;
+        bottom: 0;
+        color: #ffffff;
+        margin: 0;
+
+        font-size: 1.3rem;
+        padding: 4px 15px;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 2.4px;
+        text-align: center;
+        /* Text style for "New" */
+        font-style: normal;
+        left: 42%;
+        text-transform: uppercase;
+        /* Style for "Pfad 56" */
+        //width: 67px;
+        background-color: #000000
+      }
+    }
+
+    .heart-icon-item {
+      position: absolute;
+      top: 0vh;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      stroke: #7b7b7b;
+      cursor: pointer;
+    }
+
+
+    button {
+      margin-top: 15px;
+      width: 182px;
+      padding: 10px;
+      border: 1px solid #707070;
+      background: white;
+      transition: .5s;
+      display: flex;
+      align-items: center;
+
+      p {
+        color: #2e2e2e;
+        font-family: "Freight Sans Pro", system-ui;
+        font-size: 2rem;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 2px;
+        text-align: left;
+        font-style: normal;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .letter-svg {
+        stroke: #7b7b7b !important;
+        transition: .5s !important;
+      }
+
+      &:hover {
+        border: 1px solid #707070;
+        background-color: #000000;
+        transition: .5s;
+        cursor: pointer;
+
+        p {
+          transition: .5s;
+          color: #ffffff;
+        }
+
+        .letter-svg {
+          transition: .5s;
+          stroke: white !important;
+        }
+      }
+    }
+
+    .prod-txt-head {
+      color: #7b7b7b;
+      font-family: "Freight Sans Pro", system-ui;
+      font-size: 2rem;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2.6px;
+      //line-height: 35px;
+      text-align: center;
+      /* Text style for "Clean prod" */
+      font-style: normal;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+
+    .prod-txt-head2 {
+      margin: 10px auto;
+      color: #7b7b7b;
+      font-family: "Freight Sans Pro", system-ui;
+      font-size: 1.7rem;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 0.34px;
+      //line-height: 35px;
+      text-align: center;
+      /* Text style for "Limited ed" */
+      font-style: normal;
+
+      text-transform: uppercase;
+    }
+
+    .prod-txt-name {
+      margin-top: 25px;
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro", system-ui;
+      margin-bottom: 0;
+      font-size: 3.6rem;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 3.5px;
+      text-align: center;
+      /* Text style for "Ylumi" */
+      font-style: normal;
+      text-transform: uppercase;
+    }
+
+    .prod-txt-foot {
+      margin-top: 5px;
+      color: #2e2e2e;
+      font-family: "Freight Sans Pro", system-ui;
+      font-size: 2.5rem;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 1.25px;
+      line-height: 35px;
+      text-align: center;
+      /* Text style for "Energy Kap" */
+      font-style: normal;
+
+    }
+
+    .prod-txt-foot2 {
+      color: #7b7b7b;
+      font-family: "Freight Sans Pro", system-ui;
+      font-size: 2rem;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2.34px;
+      line-height: 35px;
+      text-align: center;
+      font-style: normal;
+      text-decoration: underline;
+      text-transform: uppercase;
+    }
+
+    .prod-txt-price {
+      color: #2e2e2e;
+      font-size: 2.8rem;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 1.4px;
+      line-height: 35px;
+      text-align: center;
+      /* Text style for "28,00 €" */
+      font-style: normal;
+
+    }
+
+  }
+
+  .firstprod-left-text {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    gap: 45px;
+
+    p {
+      color: #5c5c5c;
+      font-size: 2.2rem;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 1.38px;
+      text-align: left;
+      font-style: normal;
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      color: #3e3e3e;
+      font-family: "Freight Sans Pro", system-ui;
+      font-size: 6rem;
+      font-weight: 300;
+      font-style: normal;
+      text-align: left;
+      letter-spacing: 2.4px;
+      //line-height: 55px;
+      text-align: left;
+      /* Text style for "Exklusive" */
+      font-style: normal;
+      margin-top: 0px;
+      text-transform: uppercase;
+      line-height: 55px;
+    }
+
+    span {
+      margin-top: 57px;
+      display: inline-block;
+      color: #2e2e2e;
+      font-size: 22px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 0.55px;
+      line-height: 35px;
+      width: 82%;
+      text-align: left;
+    }
+
+    button {
+      border: none;
+      width: 58.5%;
+      min-height: 50px;
+      background-color: #080808;
+      color: #ffffff;
+      font-family: "Freight Sans Pro", system-ui;
+      font-size: 2.6rem;
+      font-weight: 400;
+      letter-spacing: 5px;
+      text-align: center;
+      font-style: normal;
+      text-transform: uppercase;
+      margin-top: 17px;
+      padding: 15px;
+    }
+  }
+}
+  .products-with-filter-list{
+    display: grid;
+    grid-auto-flow: column;
+
+  }
   .products-filter-head-home{
     width: 100%;
     display: flex;
@@ -492,22 +753,21 @@
     h2{
       color: #3e3e3e;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: 2.5rem;
+      font-size: 6rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 3.3px;
       text-align: center;
       /* Text style for "Von uns fü" */
       font-style: normal;
-      margin-top: 10vh;
       text-transform: uppercase;
       margin-bottom: 30px;
     }
     button{
       color: #3e3e3e;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: 1.3rem;
-      font-weight: 500;
+      font-size: 2.6rem;
+      font-weight: 400;
       font-style: normal;
       letter-spacing: 2.5px;
       text-align: center;
@@ -518,11 +778,13 @@
       border: none;
       outline: none;
       background: transparent;
+      cursor: pointer;
     }
     .filter-btns{
       justify-content: space-between;
       width: 30%;
       margin-bottom: 100px;
+      display: flex;
       .active-filter{
         text-decoration: underline;
       }
@@ -712,37 +974,41 @@
   align-items: center;
   button{
     color: #ffffff;
-    font-family: "Freight Sans Pro",system-ui;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 400;
     font-style: normal;
     letter-spacing: 5px;
     text-align: center;
     font-style: normal;
     text-transform: uppercase;
-    width: 15%;
-    padding: 20px 0;
+    width: 18%;
+    padding: 15px 0;
     border: none;
-    margin: 100px auto;
+    margin: 100px  0 0 0;
     background-color: #080808;
   }
+
   .first-product-bottom-body{
 
-    width: 90%;
+    width: 90.5%;
     margin: 0 auto;
-    margin-top: 100px;
+    //margin-top: 100px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+
     .product-bottom-left{
       flex-direction: column;
       .prod-bot-left-img{
-        min-height: 65vh ;
+        min-height: 89vh ;
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
         h2{
           color: #3e3e3e;
           font-family: "Ivy Presto Display",system-ui;
-          font-size: 4.5vw;
-          font-weight: 100;
+          font-size: 5.8vw;
+          font-weight: 400;
           font-style: normal;
           letter-spacing: 11px;
           text-align: left;
@@ -750,8 +1016,8 @@
           font-style: normal;
           text-transform: uppercase;
           position: absolute;
-          top: -45px;
-          left: 10px;
+          top: -65px;
+          left: 0px;
         }
       }
       .prod-bod-left-txt{
@@ -759,11 +1025,11 @@
         flex-direction: column;
         align-items: center;
         p{
-          margin: 10px auto;
-          margin-top: 40px;
+          margin: 18px auto;
+          margin-top: 25px;
           color: #5c5c5c;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: 1.1rem;
+          font-size: 2.2rem;
           font-weight: 300;
           font-style: normal;
           letter-spacing: 1.38px;
@@ -773,9 +1039,9 @@
         }
         h2{
           color: #3e3e3e;
-          margin: 0px 0 10px  0 ;
+          margin: 0px 0 12px  0 ;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: 2.2rem;
+          font-size: 6rem;
           font-weight: 300;
           font-style: normal;
           letter-spacing: 2.4px;
@@ -788,8 +1054,8 @@
         span{
           color: #2e2e2e;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: 1rem;
-          font-weight: 500;
+          font-size: 2.2rem;
+          font-weight: 300;
           font-style: normal;
           letter-spacing: 0.55px;
           line-height: 35px;
@@ -802,7 +1068,7 @@
         a{
           color: #a12224;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: .9rem;
+          font-size: 2.2rem;
           font-weight: 300;
           font-style: normal;
           letter-spacing: 1px;
@@ -821,28 +1087,28 @@
       display: flex;
       flex-direction: column;
       .prod-bot-right-img{
-        min-height: 45vh;
+        min-height: 66vh;
         background-repeat: no-repeat;
         background-size: cover;
       }
       p{
-        margin: 10px auto;
-        margin-top: 40px;
+
         color: #5c5c5c;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: 1.1rem;
+        font-size: 2.2rem;
         font-weight: 300;
         font-style: normal;
         letter-spacing: 1.38px;
         text-align: center;
         font-style: normal;
         text-transform: uppercase;
+        margin-bottom: 15px;
       }
       h2{
         color: #3e3e3e;
         margin: 0px 0 10px  0 ;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: 2.2rem;
+        font-size: 6rem;
         font-weight: 300;
         font-style: normal;
         letter-spacing: 2.4px;
@@ -855,8 +1121,8 @@
       span{
         color: #2e2e2e;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: 2.2rem;
+        font-weight: 300;
         font-style: normal;
         letter-spacing: 0.55px;
         line-height: 35px;
@@ -869,7 +1135,7 @@
       a{
         color: #a12224;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: .9rem;
+        font-size: 2.2rem;
         font-weight: 300;
         font-style: normal;
         letter-spacing: 1px;
@@ -888,8 +1154,8 @@
   margin: 0 auto;
   background-color: #000000;
   .dpab-magazin-body{
-    padding: 10vh 0;
-    width: 90%;
+    padding: 11vh 0 15vh 0;
+    width: 90.5%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -897,10 +1163,10 @@
     .dpab-magazin-title{
       color: #ffffff;
       font-family: "Ivy Presto Display",system-ui;
-      font-size: 4.5rem;
-      font-weight: 100;
+      font-size: 11rem;
+      font-weight: 400;
       font-style: normal;
-      letter-spacing: 11px;
+      letter-spacing:4px;
       text-align: left;
       text-transform: uppercase;
       /* Text style for "DPAB MAGAZ" */
@@ -913,20 +1179,21 @@
       flex-direction: column;
       align-items: center;
       .dpab-top-section-img{
-        height: 50vh;
+        height: 73.5vh;
         width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       .dpab-top-section-txt{
         background: white;
-        width: 90%;
+        width: 90.5%;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 50px 70px 70px;
         h2{
           color: #3e3e3e;
-          font-family: "Freight Sans Pro",system-ui;
-          font-size: 1.5rem;
+          font-size: 4.5rem;
           font-weight: 300;
           font-style: normal;
           letter-spacing: 2.25px;
@@ -935,10 +1202,9 @@
           text-transform: uppercase;
         }
         p{
-          margin: 10px 0 30px 0;
+          margin: 20px 0 35px 0;
           color: #5c5c5c;
-          font-family: "Freight Sans Pro",system-ui;
-          font-size: 1rem;
+          font-size: 2.2rem;
           font-weight: 300;
           font-style: normal;
           letter-spacing: 1.38px;
@@ -951,20 +1217,20 @@
         span{
           color: #3e3e3e;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: 1rem;
-          font-weight: 500;
+          font-size: 2.2rem;
+          font-weight: 300;
           font-style: normal;
           letter-spacing: 0.55px;
-          line-height: 35px;
+          line-height: 30px;
           text-align: center;
           /* Text style for "Es gibt wo" */
           font-style: normal;
-          margin-bottom: 25px;
+          margin-bottom: 35px;
         }
         a{
           color: #a12224;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: .9rem;
+          font-size: 2rem;
           font-weight: 300;
           font-style: normal;
           letter-spacing: 1px;
@@ -981,15 +1247,17 @@
     .dpab-bottom-section{
       margin-top: 10vh;
       justify-content: space-evenly;
-
+      display: grid;
+      grid-auto-flow: column;
       .dpab-bottom-section-left{
+        display: flex;
         flex-direction: column;
         align-items: center;
         padding-right: 25px;
         .dpab-bottom-section-left-img-bod{
           width: 100%;
           .dpab-bottom-section-left-img{
-            height: 50vh;
+            height: 70vh;
             width: 100%;
             background-size: cover;
             background-repeat: no-repeat;
@@ -997,7 +1265,7 @@
         }
 
         .dpab-bottom-section-left-txt{
-          width: 90%;
+          width: 90.5%;
           background: white;
           display: flex;
           flex-direction: column;
@@ -1005,11 +1273,11 @@
           padding: 50px;
           height: 100%;
           h2{
-            margin-top: 0vh;
+            margin-top: 3vh;
             margin-bottom: 10px;
             color: #3e3e3e;
             font-family: "Freight Sans Pro",system-ui;
-            font-size: 2rem;
+            font-size: 4.5rem;
             font-weight: 300;
             font-style: normal;
             letter-spacing: 2.25px;
@@ -1019,9 +1287,10 @@
             text-transform: uppercase;
           }
           p{
+            margin-top: 5px;
             color: #5c5c5c;
             font-family: "Freight Sans Pro",system-ui;
-            font-size: 1rem;
+            font-size: 2.5rem;
             font-weight: 300;
             font-style: normal;
             letter-spacing: 1.38px;
@@ -1033,21 +1302,22 @@
             margin-bottom: 10px;
           }
           span{
+            margin-top: 10px;
             color: #3e3e3e;
             font-family: "Freight Sans Pro",system-ui;
-            font-size: .9rem;
+            font-size: 2.2rem;
             text-align: center;
-            font-weight: 500;
+            font-weight: 300;
             font-style: normal;
             letter-spacing: 0.55px;
             line-height: 35px;
             font-style: normal;
-            margin-bottom: 2vh;
+            margin-bottom: 1vh;
           }
           a{
             color: #a12224;
             font-family: "Freight Sans Pro",system-ui;
-            font-size: .9rem;
+            font-size: 2rem;
             font-weight: 300;
             font-style: normal;
             letter-spacing: 1px;
@@ -1064,11 +1334,11 @@
         flex-direction: column;
         background: white;
         align-items: center;
-        padding: 60px 80px 30px 80px;
         height: 100%;
+        padding: 50px;
         .dpab-bottom-section-right-img{
           width: 100%;
-          height: 50vh;
+          height: 66vh;
           margin-bottom: 3vh;
           background-size: cover;
           background-repeat: no-repeat;
@@ -1076,7 +1346,7 @@
         h2{
           color: #3e3e3e;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: 2rem;
+          font-size: 4.5rem;
           font-weight: 300;
           font-style: normal;
           letter-spacing: 2.25px;
@@ -1084,37 +1354,38 @@
           text-transform: uppercase;
           font-style: normal;
           text-transform: uppercase;
-          margin-bottom: 10px;
+          margin-bottom: 15px;
         }
         p{
           color: #5c5c5c;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: 1rem;
+          font-size: 2.2rem;
           font-weight: 300;
           font-style: normal;
           letter-spacing: 1.38px;
           text-align: center;
           font-style: normal;
           text-transform: uppercase;
-          margin-bottom: 10px;
+          margin-bottom: 30px;
         }
         span{
           color: #3e3e3e;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: .9rem;
-          font-weight: 500;
+          font-size: 2.2rem;
+          font-weight: 300;
           font-style: normal;
           letter-spacing: 0.55px;
           line-height: 35px;
           text-align: center;
           /* Text style for "Zur Vorste" */
           font-style: normal;
-          margin-bottom: 3vh;
+          margin-bottom: 20px;
         }
         a{
+          margin-top: 20px;
           color: #a12224;
           font-family: "Freight Sans Pro",system-ui;
-          font-size: .9rem;
+          font-size: 2rem;
           font-weight: 300;
           font-style: normal;
           letter-spacing: 1px;
@@ -1135,13 +1406,11 @@
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  margin-top: 15vh;
   .dpab-bot-img{
     width: 100%;
-    height: 50vh;
+    height: 68vh;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 10vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1156,7 +1425,7 @@
       width: 60%;
       color: #3e3e3e;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: 2.5rem;
+      font-size: 6rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 2.4px;
@@ -1164,13 +1433,13 @@
       text-align: center;
       font-style: normal;
       text-transform: uppercase;
-      margin-bottom: 2vh;
+      margin-bottom: 5vh;
     }
     p{
       color: #3e3e3e;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: .9rem;
-      font-weight: 500;
+      font-size: 2.5rem;
+      font-weight: 300;
       font-style: normal;
       letter-spacing: 0.55px;
       text-align: center;
@@ -1189,8 +1458,10 @@
   }
 }
 .services-body{
-  width: 90%;
+  width: 90.5%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
   .services-item{
     display: flex;
     flex-direction: column;
@@ -1198,12 +1469,11 @@
     text-align: center;
     svg{
       width: 90px;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
     h2{
       color: #2e2e2e;
-
-      font-size: 1rem;
+      font-size: 3.8rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 3.5px;
@@ -1217,7 +1487,7 @@
     p{
       color: #2e2e2e;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: 1.1rem;
+      font-size: 2.5rem;
       font-weight: 300;
       font-style: normal;
       letter-spacing: 1.25px;
@@ -1231,7 +1501,6 @@
 }
 .newsletter_all{
   width: 40%;
-  margin: 10vh auto;
   flex-direction: column ;
   align-items: center;
   h2{
@@ -1320,16 +1589,15 @@
 .video-body{
   position: relative;
   overflow: hidden;
-  height: 55vh;
-  margin-bottom: 10vh;
+  height: 67vh;
   div{
       height: unset;
   }
   p{
     color: #ffffff;
     font-family: "Freight Sans Pro",system-ui;
-    font-size: 1.6rem;
-    font-weight: 300;
+    font-size: 4.8rem;
+    font-weight: 200;
     font-style: normal;
     letter-spacing: 2.25px;
     text-align: center;
@@ -1338,32 +1606,36 @@
 
     text-transform: uppercase;
     position: absolute;
-    top: 50%;
-    left: 35vw;
+    top: 53%;
+    left: 25vw;
   }
   .playvideohome{
     position: absolute;
-    top: 35%;
-    left: 48.5%;
+    top: 34.5%;
+    left: 47.5%;
     cursor: pointer;
-    width: 60px;
+    width: 73px;
   }
   .pausevideohome{
     position: absolute;
     top: 33%;
     left: 47%;
     cursor: pointer;
-    width: 60px;
+    width: 73px;
   }
 
 }
 .bottom-video-body{
-  width: 90%;
+  width: 90.5%;
   margin: 0 auto;
   justify-content: space-between;
-  margin-bottom: 10vh;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 70px;
   .video-small-body-only{
     position: relative;
+    display: grid;
+    grid-auto-flow: column;
     button{
       position: absolute;
       top: 40%;
@@ -1373,15 +1645,14 @@
     }
     img{
       position: absolute;
-      top: 40%;
-      left: 45%;
-      width: 35px;
-      height: 42px;
+      top: 38%;
+      left: 47%;
+      width: 37px;
+      height: 49px;
       cursor: pointer;
     }
   }
   .small-vid-bod{
-    padding: 50px ;
     display: flex;
     flex-direction: column;
     .small-vid-text{
@@ -1391,8 +1662,7 @@
         margin-top: 30px;
         margin-bottom: 0;
         color: #000000;
-        font-family: "Freight Sans Pro",system-ui;
-        font-size: .9rem;
+        font-size: 2.2rem;
         font-weight: 300;
         font-style: normal;
         letter-spacing: 1.38px;
@@ -1403,26 +1673,26 @@
         text-transform: uppercase;
       }
       h2{
-
+        margin-top: 10px;
         color: #000000;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: 1.7rem;
+        font-size: 5rem;
         font-weight: 300;
         font-style: normal;
         letter-spacing: 1.5px;
-        line-height: 40px;
+        line-height: 55px;
         text-align: left;
         font-style: normal;
         text-transform: uppercase;
+        margin-bottom: 50px;
       }
       span{
         color: #2e2e2e;
-        font-family: "Freight Sans Pro",system-ui;
-        font-size: 1rem;
-        font-weight: 500;
+        font-size: 2.2rem;
+        font-weight: 300;
         font-style: normal;
         letter-spacing: 0.55px;
-        line-height: 35px;
+        line-height: 40px;
         text-align: left;
         font-style: normal;
         margin-top: 0px;
@@ -1431,8 +1701,8 @@
         margin-top: 10px;
         color: #a12224;
         font-family: "Freight Sans Pro",system-ui;
-        font-size: .9rem;
-        font-weight: 500;
+        font-size: 2rem;
+        font-weight: 300;
         font-style: normal;
         letter-spacing: 1px;
         line-height: 35px;

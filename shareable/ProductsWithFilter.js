@@ -39,7 +39,7 @@ const ProductsWithFilter = ({headtext,products, setProducts}) =>{
                         }}>Interieur</button>
                     </div>
                 </div>
-                <div className={"d-flex flex-wrap"}>
+                <div className={"products-with-filter-list"}>
                     {products.map((e,i)=>{
                         return(
                             <div className={" first-prod-items col-lg-3"} key={i}>

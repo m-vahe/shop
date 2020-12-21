@@ -9,19 +9,19 @@ const ProductsWithFilterHomepage = () =>{
         [
             {
                 id:0,productHead:"Clean product",productHead2:"Limited edition",productName:"Ylumi", productTextFoot:"Energy Kapseln",
-                productTextFoot2:"Kapseln",price:"28,00 €",new:true,approoved:true,imageHead:"/item.jpg",heart:false
+                productTextFoot2:"Kapseln",price:"28,00 €",new:true,approoved:true,imageHead:"/item.png",heart:false
             },
             {
                 id:1,productHead:"Clean product",productHead2:"Limited edition",productName:"Ylumi", productTextFoot:"Energy Kapseln",
-                productTextFoot2:"Kapseln",price:"28,00 €",new:false,approoved:true,imageHead:"/item.jpg",heart:false
+                productTextFoot2:"Kapseln",price:"28,00 €",new:false,approoved:true,imageHead:"/item.png",heart:false
             },
             {
                 id:2,productHead:"Clean product",productHead2:"Limited edition",productName:"Ylumi", productTextFoot:"Energy Kapseln",
-                productTextFoot2:"Kapseln",price:"28,00 €",new:false,approoved:true,imageHead:"/item.jpg",heart:false
+                productTextFoot2:"Kapseln",price:"28,00 €",new:false,approoved:true,imageHead:"/item.png",heart:false
             },
             {
                 id:3,productHead:"Clean product",productHead2:"Limited edition",productName:"Ylumi", productTextFoot:"Energy Kapseln",
-                productTextFoot2:"Kapseln",price:"28,00 €",new:false,approoved:true,imageHead:"/item.jpg",heart:false
+                productTextFoot2:"Kapseln",price:"28,00 €",new:false,approoved:true,imageHead:"/item.png",heart:false
             },
         ]
     )

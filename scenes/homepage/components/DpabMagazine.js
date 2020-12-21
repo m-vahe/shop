@@ -10,11 +10,10 @@ const DpabMagazine = () =>{
                             <h2>Home sweet home</h2>
                             <p>Gemütliches Ambiente für Zuhause </p>
                             <span>
-                            Es gibt wohl kaum etwas schöneres, als nach einem langen Tag nach Hause zu kommen und die lang ersehnte Entspannung in seinem eigenen Heim genießen zu können.
-                            Es gibt unzählige Möglichkeiten seine geliebten vier Wände in einem Design einzurichten, mit dem man sich absolut wohl fühlt. Egal ob im Landhausstil, modern,
-                            minimalistisch oder im skandinavischen Stil. Beim Einrichten können Sie Ihrer Kreativität freien Lauf lassen. Denn Ihr Zuhause sollte für Sie ein Ort sein, an
-                            dem Sie sich gerne zurückziehen um einfach mal die Seele baumeln zu lassen.
-                        </span>
+                                Es gibt wohl kaum etwas schöneres, als nach einem langen Tag nach Hause zu kommen und die lang ersehnte Entspannung in seinem eigenen Heim genießen zu können.
+                                Es gibt unzählige Möglichkeiten seine geliebten vier Wände in einem Design einzurichten, mit dem man sich absolut wohl fühlt. Egal ob im Landhausstil, modern,
+                                minimalistisch oder im skandinavischen Stil. Beim Einrichten können Sie Ihrer
+                             </span>
                             <a href="#">Mehr lesen</a>
                         </div>
                     </div>
