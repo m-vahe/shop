@@ -1,12 +1,12 @@
 .shopHeader__container {
     display: grid;
     grid-template-columns: 1fr max-content;
-    padding: 0 10rem;
+    padding-left: 9rem;
     margin-top: 4rem;
   &__info {
       &--label {
           display: inline-block;
-          font-size: 2.3rem;
+          font-size: 2.5rem;
           font-weight: 300;
           color: #5c5c5c;
           text-transform: uppercase;
@@ -15,19 +15,21 @@
         &--title {
             display: inline-block;
             color: #3e3e3e;
-            font-size: 7rem;
+            font-size: 9rem;
             font-weight: 300;
             font-style: normal;
             text-transform: uppercase;
             line-height: 1;
         }
         &--description {
-        width: 45rem;
-      display: inline-block;
-      color: #2e2e2e;
-      font-size: 1.6rem;
-      font-style: normal;
-      margin-top: 3rem;
+          width: 82rem;
+          display: inline-block;
+          color: #2e2e2e;
+          line-height: 30px;
+          font-size: 2.1rem;
+          font-style: normal;
+          margin-top: 3rem;
+          font-weight: 300;
     }
   }
 

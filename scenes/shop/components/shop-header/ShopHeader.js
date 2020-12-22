@@ -7,13 +7,9 @@ const ShopHeader = () => {
         <span className='shopHeader__container__info--label'>Exklusive nischenparfums für sie</span>
         <span className='shopHeader__container__info--title'>Entdecken Sie DamenParfums</span>
         <span className='shopHeader__container__info--description'>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet. consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur corporis culpa ex excepturi fugit iure iusto maiores odit rem temporibus totam,
+            voluptate. Ab accusamus atque consequuntur culpa cum dolores eius harum illo ipsam,
+            iusto, maiores natus omnis perspiciatis quas, quasi quos tempore totam voluptatibus. Consectetur laboriosam pariatur repellendus tempora. Molestiae, temporibus.
         </span>
       </div>
       <div className='shopHeader__container__images'>

@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/login/compoents/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/login/compoents/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/login/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/login/login.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/video/components/small-video-container/SmallVideoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/components/small-video-container/SmallVideoContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/video/components/small-video-container/smallVideoContainer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/components/small-video-container/smallVideoContainer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/video/components/video-container/videoContainer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/components/video-container/videoContainer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/component-header/component-title/componentTitle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/component-header/component-title/componentTitle.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body-container/ShopBodyContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body-container/ShopBodyContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-header/ShopHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-header/ShopHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-header/shopheader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-header/shopheader.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +81,7 @@
       <workItem from="1608269681272" duration="26447000" />
       <workItem from="1608530508381" duration="21129000" />
       <workItem from="1608555378742" duration="6419000" />
-      <workItem from="1608615968365" duration="8831000" />
+      <workItem from="1608615968365" duration="11605000" />
     </task>
     <servers />
   </component>
