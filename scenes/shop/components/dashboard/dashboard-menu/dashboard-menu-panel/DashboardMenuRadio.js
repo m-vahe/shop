@@ -1,8 +1,7 @@
 import React from 'react';
 import { Radio } from 'antd';
 
-const DashboardMenuRadio = ({ onChange, value, data }) => {
-console.log("file: DashboardMenuRadio.js ~ line 5 ~ DashboardMenuRadio ~ data", data)
+const DashboardMenuRadio = ({ onChange, value,data }) => {
   const radioStyle = {
     display: 'block',
     height: '30px',
@@ -10,11 +9,13 @@ console.log("file: DashboardMenuRadio.js ~ line 5 ~ DashboardMenuRadio ~ data", 
   };
 
   return (
-    <Radio.Group onChange={onChange} value={value}>
-      {data.category.map((item, i) => {
-        <Radio value={value} style={radioStyle} key={i}>
-          {item.name}
-        </Radio>;
+    <Radio.Group onChange={onChange} value={value} className='radio---'>
+      {data.map((item, i) => {
+        return (
+          <Radio value={i} style={radioStyle} key={i}>
+            <span className='radio__text'>{item.name}</span>
+          </Radio>
+        );
       })}
     </Radio.Group>
   );

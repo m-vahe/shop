@@ -1,0 +1,41 @@
+.dashboard__container {
+  width: 50rem;
+  padding: 0 0 0 10rem;
+  .ant-collapse {
+    .ant-collapse-item {
+      .ant-collapse-header {
+        font-size: 3.5rem;
+        color: #3e3e3e;
+        .anticon {
+          font-size: 3rem;
+        }
+      }
+      .ant-collapse-content {
+        border-top: 0;
+        border-bottom: 1px solid;
+        .ant-collapse-content-box {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+        .ant-radio-group {
+          display: grid;
+          gap: 4rem;
+          .ant-radio-wrapper {
+              .ant-radio{
+                  top:-.5rem;
+                  .ant-radio-inner{
+                      border-color: #3e3e3e;
+                      &::after{
+                          background-color: #000000;
+                      }
+                  }
+              }
+            .radio__text {
+              font-size: 2.5rem;
+            }
+          }
+        }
+    }
+      }
+    }
+  }
+}

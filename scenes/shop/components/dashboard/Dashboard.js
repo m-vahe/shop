@@ -16,6 +16,16 @@ const Dashboard = () => {
     console.log(key);
   }
   const data = {
+    titles: [
+      { title: 'KATEGORIEN:' },
+       { title: 'SHOP BY' },
+        { title: 'MARKEN' },
+        { title: 'WIRKSTOFFE' },
+        { title: 'DUFT ANLASS' },
+        { title: 'DUFTNOTEN' },
+        { title: 'DUFTRICHTUNG' },
+        { title: '(SONNENSCHUTZ)' },
+      ],
     category: [
       {
         name: 'ALLES',
@@ -59,13 +69,16 @@ const Dashboard = () => {
   };
 
   return (
-    <div>
+    <div className='dashboard__container'>
+      {/* {Array.from(Array(7)).map((_, i) => ( */}
         <DashboardMenu
+          // key={i}
           onChange={onChange}
           value={value}
           callback={callback}
           data={data}
         />
+      {/* ))} */}
     </div>
   );
 };

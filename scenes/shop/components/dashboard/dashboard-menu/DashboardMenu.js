@@ -4,19 +4,26 @@ import DashboardMenuRadio from './dashboard-menu-panel/DashboardMenuRadio';
 const DashboardMenu = ({ onChange, callback, value, data }) => {
   const { Panel } = Collapse;
   return (
-    <Collapse defaultActiveKey={['1']} onChange={callback}>
-      <Panel header='KATEGORIEN:' key='1'>
-      <DashboardMenuRadio
-            onChange={onChange}
-            value={value}
-            data={data}
-          />
-      </Panel>
-        
+    <>
+      {data.titles.map((item,i) => (
+        <Collapse
+          defaultActiveKey={['1']}
+          onChange={callback}
+          expandIconPosition='right'
+          ghost='true'
           
-      
-      
-    </Collapse>
+        >
+          <Panel key='1' header={item.title} >
+            <DashboardMenuRadio
+              onChange={onChange}
+              value={value}
+              data={data.category}
+              key={i}
+            />
+          </Panel>
+        </Collapse>
+      ))}
+    </>
   );
 };
 
