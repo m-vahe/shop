@@ -1,4 +1,4 @@
-//@import 'antd/dist/antd.css';
+@import 'antd/dist/antd.css';
 @import "../layouts/header/header";
 @import "../scenes/homepage/homepage";
 @import "../layouts/footer/footer";
@@ -7,8 +7,8 @@
 @import "../scenes/login/login";
 @import "../scenes/herren/herren";
 @import "../scenes/herren/mediaherren";
+@import "../scenes/shop/components/shop-header/shopheader.scss";
 @import "../layouts/loader/loader";
-@import "../scenes/shop/shop";
 @import "../shareable/component-header/component-info/componentInfo.scss";
 @import "../shareable/newsLetter/newsLetterRep.scss";
 @import "../shareable/component-header/componentHeader.scss";

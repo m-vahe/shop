@@ -1,10 +1,10 @@
-import ShopHead from "./components/ShopHead";
-import ShopBody from "./layouts/shopBody";
+import ShopHeader from './components/shop-header/ShopHeader'
+import ShopBody from './components/shop-body/ShopBody'
 
 const ShopScene = () =>{
   return (
       <>
-        <ShopHead/>
+        <ShopHeader/>
         <ShopBody/>
       </>
   )
