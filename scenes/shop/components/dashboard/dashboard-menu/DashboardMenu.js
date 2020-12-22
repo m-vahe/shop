@@ -11,6 +11,7 @@ const DashboardMenu = ({ onChange, callback, value, data }) => {
           onChange={callback}
           expandIconPosition='right'
           ghost='true'
+          key={i}
           
         >
           <Panel key='1' header={item.title} >
