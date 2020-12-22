@@ -17,16 +17,17 @@ const LoginForm = () =>{
                             <form action="#">
                                 <input type="email" placeholder={"E-Mail-Adresse"}/>
                                 <input type="password" placeholder={"Passwort"}/>
-
+                                <div className={"forgot-pass-and-submit"}>
+                                    <button type="submit">
+                                        Anmelden
+                                    </button>
+                                    <Link href={"/forgotpassword"}>
+                                        <a href="/forgotpassword">
+                                            Passwort vergessen
+                                        </a>
+                                    </Link>
+                                </div>
                             </form>
-                        </div>
-                        <div className={"left-login-form-two"}>
-                            <input type="submit" value={"Anmelden"}/>
-                            <Link href={"/forgotpassword"}>
-                                <a href="/forgotpassword">
-                                    Passwort vergessen
-                                </a>
-                            </Link>
                         </div>
                         <div className={"left-login-form-three"}>
                             <button>Facebook</button>
