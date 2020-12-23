@@ -1,0 +1,145 @@
+.shop__body{
+  width: 90.5%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5rem;
+  .__products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(34rem,1fr));
+    gap: 14rem;
+    .shop-product-mid-el-one{
+      grid-area: 4/1/span 2/span 3;
+    }
+    .shop-product-mid-el-two{
+      grid-area: 8/1/span 2/span 3;
+    }
+  }
+  .shop-right-body{
+    .inspiration-bottom-right{
+      display: grid;
+      grid-template-columns: 60% 39%;
+      padding: 0;
+      width: 100%;
+      gap: 10px;
+      .inspiration-bottom-image{
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 628px;
+      }
+      .inspiration-bottom-text{
+        padding: 120px 115px 0 0;
+        display: grid;
+        gap: 0px;
+        grid-auto-rows: min-content;
+        .inspiration-bottom-head-txt{
+          p{
+            color: #5c5c5c;
+            font-family: "Freight Sans Pro",system-ui;
+            font-size: 2.15rem;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 1.38px;
+            text-align: left;
+            font-style: normal;
+            margin: 10px auto;
+            text-transform: uppercase;
+          }
+          h2{
+            color: #3e3e3e;
+            font-family: "Freight Sans Pro",system-ui;
+            font-size: 6rem;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 2.4px;
+            line-height: 55px;
+            text-align: left;
+            font-style: normal;
+            text-transform: uppercase;
+            width: 80%;
+            margin-bottom: 40px;
+          }
+        }
+        span{
+          color: #2e2e2e;
+          font-family: "Freight Sans Pro",system-ui;
+          font-size: 2.2rem;
+          font-weight: 300;
+          letter-spacing: 0.55px;
+          line-height: 30px;
+          text-align: left;
+          font-style: normal;
+          margin-bottom: 0;
+          display: inline-block;
+        }
+        .inspiration-bottom-head-txt{
+          margin: 0;
+        }
+      }
+    }
+    .inspiration-bottom-left{
+      grid-template-columns: 39% 60%;
+      padding: 0;
+      width: 100%;
+      gap: 10px;
+      display: grid;
+      .inspiration-bottom-image{
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 628px;
+      }
+      .inspiration-bottom-text{
+        padding: 120px 0 0 115px;
+        display: grid;
+        gap: 0px;
+        grid-auto-rows: min-content;
+.inspiration-bottom-head-txt{
+  p{
+    color: #5c5c5c;
+    font-family: "Freight Sans Pro",system-ui;
+    font-size: 2.15rem;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1.38px;
+    text-align: left;
+    font-style: normal;
+    margin: 10px auto;
+    text-transform: uppercase;
+  }
+  h2{
+    color: #3e3e3e;
+    font-family: "Freight Sans Pro",system-ui;
+    font-size: 6rem;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 2.4px;
+    line-height: 55px;
+    text-align: left;
+    font-style: normal;
+    text-transform: uppercase;
+    width: 80%;
+    margin-bottom: 40px;
+  }
+}
+        span{
+          color: #2e2e2e;
+          font-family: "Freight Sans Pro",system-ui;
+          font-size: 2.2rem;
+          font-weight: 300;
+          letter-spacing: 0.55px;
+          line-height: 30px;
+          text-align: left;
+          font-style: normal;
+          margin-bottom: 0;
+          display: inline-block;
+        }
+        .inspiration-bottom-head-txt{
+          margin: 0;
+        }
+      }
+    }
+
+  }
+}

@@ -3,7 +3,7 @@ import ShopBodyContainer from '../shop-body-container/ShopBodyContainer'
 
 const ShopBody = () => {
     return (
-        <div>
+        <div className={"shop__body"}>
             <Dashboard />
             <ShopBodyContainer />
         </div>

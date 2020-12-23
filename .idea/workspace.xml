@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/ShopBody.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/productmiidlelements/MiddleElementOne.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/productmiidlelements/MiddleElementTwo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/FilteredProductBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/FilteredProductBottom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/dashboard/dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/dashboard/dashboard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body-container/ShopBodyContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body-container/ShopBodyContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/ShopBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/ShopBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -75,7 +84,8 @@
       <workItem from="1608269681272" duration="26447000" />
       <workItem from="1608530508381" duration="21129000" />
       <workItem from="1608555378742" duration="6419000" />
-      <workItem from="1608615968365" duration="11951000" />
+      <workItem from="1608615968365" duration="23865000" />
+      <workItem from="1608703029766" duration="2497000" />
     </task>
     <servers />
   </component>
