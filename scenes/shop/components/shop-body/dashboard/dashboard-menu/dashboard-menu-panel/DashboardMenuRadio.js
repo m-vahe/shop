@@ -12,7 +12,7 @@ const DashboardMenuRadio = ({ onChange, value,data }) => {
     <Radio.Group onChange={onChange} value={value} className='radio---'>
       {data.map((item, i) => {
         return (
-          <Radio value={i} style={radioStyle} key={i}>
+          <Radio value={item.name} style={radioStyle} key={i}>
             <span className='radio__text'>{item.name}</span>
           </Radio>
         );

@@ -14,7 +14,7 @@ const DashboardMenu = ({ onChange, callback, value, data }) => {
           key={i}
           
         >
-          <Panel key='1' header={item.title} >
+          <Panel key={i} header={item.title} >
             <DashboardMenuRadio
               onChange={onChange}
               value={value}
