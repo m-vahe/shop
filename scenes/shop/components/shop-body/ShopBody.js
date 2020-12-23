@@ -4,12 +4,8 @@ import ShopBodyHeader from './shop-body-header/ShopBodyHeader'
 
 const ShopBody = () => {
     return (
-<<<<<<< Updated upstream
         <div className={"shop__body"}>
-=======
-        <div>
             <ShopBodyHeader />
->>>>>>> Stashed changes
             <Dashboard />
             <ShopBodyContainer />
         </div>
