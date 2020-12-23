@@ -1,11 +1,17 @@
 import ShopHeader from './components/shop-header/ShopHeader'
 import ShopBody from './components/shop-body/ShopBody'
+import ShopBodyFooter from "./components/shop-body/shop-body-footer/ShopBodyFooter";
+import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 
 const ShopScene = () =>{
   return (
       <>
-        <ShopHeader/>
-        <ShopBody/>
+        <div className={"shop-all-elements"}>
+            <ShopHeader/>
+            <ShopBody/>
+            <ShopBodyFooter/>
+            <NewsletterRep/>
+        </div>
       </>
   )
 }

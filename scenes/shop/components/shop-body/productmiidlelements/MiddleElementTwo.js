@@ -15,7 +15,7 @@ const MiddleElementTwo = () =>{
                         </div>
                         <span >
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur debitis eum quos sed similique sunt veniam voluptates.
-                            Dignissimos esse expedita magni quaerat quas. Laboriosam nihil pariatur porro!
+
                         </span>
                     </div>
 

@@ -1,6 +1,6 @@
 .shopHeader__container {
     display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 50% 50%;
     padding-left: 9rem;
     margin-top: 4rem;
   &__info {
@@ -34,10 +34,6 @@
   }
 
   &__images {
-    &--item {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
+   min-height: 625px;
   }
 }

@@ -12,7 +12,7 @@ const MiddleElementOne = () =>{
                         </div>
                         <span >
                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur debitis eum quos sed similique sunt veniam voluptates.
-                            Dignissimos esse expedita magni quaerat quas. Laboriosam nihil pariatur porro!
+
                         </span>
                     </div>
                     <div className={"col-lg-6 inspiration-bottom-image"} style={{backgroundImage:"url(/inspirationbot1.png)"}}>

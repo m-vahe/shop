@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
-import SingleProduct from "../../../../shareable/Products/SingleProduct";
 import MiddleElementOne from "../shop-body/productmiidlelements/MiddleElementOne";
 import MiddleElementTwo from "../shop-body/productmiidlelements/MiddleElementTwo";
+import SingleProduct from "../../../../shareable/Products/SingleProduct";
+
 
 const ShopBodyContainer = () => {
     const [data,setData] = useState([
@@ -89,19 +90,21 @@ const ShopBodyContainer = () => {
             id:20,productHead:"Clean product",productHead2:"Limited edition",productName:"Ylumi", productTextFoot:"Energy Kapseln",
             productTextFoot2:"Kapseln",price:"28,00 €",new:true,approoved:true,imageHead:"/item.png",heart:false
         },
+       
     ])
     return (
-       <div className={"shop-right-body"}>
+       <div className="shop-right-body">
            <div className={"__products"}>
                {data.map((e,i)=>{
                    return(
-                       <SingleProduct elem={e} setData={setData} products={data}/>
+                   <div key={i}>
+                       <SingleProduct elem={e} products={data} setData={setData}/>
+                   </div>
                    )
                })}
-               <MiddleElementTwo/>
-               <MiddleElementOne/>
+                <MiddleElementTwo/>
+                <MiddleElementOne/>
            </div>
-
        </div>
     )
 }

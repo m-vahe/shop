@@ -19,11 +19,12 @@
 @import "../shareable/social/social.scss";
 @import "../shareable/Products/ProductsWithLeftText";
 @import "../shareable/Products/SingleProduct";
-@import 'antd/dist/antd.css';
+@import "antd/dist/antd.css";
 @import "../scenes/shop/components/dashboard/dashboard.scss";
 @import "../scenes/shop/components/shop-body/ShopBody";
 @import "../scenes/shop/components/shop-body/dashboard/dashboard.scss";
 @import "../scenes/shop/components/shop-body/shop-body-header/shopBodyHeader.scss";
+@import "../scenes/shop/components/shop-body/shop-body-footer/ShopBodyFooter";
 
 @font-face {
     src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */

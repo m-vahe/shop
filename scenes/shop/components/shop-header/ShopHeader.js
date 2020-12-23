@@ -12,8 +12,7 @@ const ShopHeader = () => {
             iusto, maiores natus omnis perspiciatis quas, quasi quos tempore totam voluptatibus. Consectetur laboriosam pariatur repellendus tempora. Molestiae, temporibus.
         </span>
       </div>
-      <div className='shopHeader__container__images'>
-        <img className='shopHeader__container__images--item' src='/shoptop.png' />
+      <div className='shopHeader__container__images' style={{backgroundImage:"url(/shoptop.png)"}}>
       </div>
     </div>
   );

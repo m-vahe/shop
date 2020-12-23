@@ -1,13 +1,12 @@
 import Dashboard from './dashboard/Dashboard'
-import ShopBodyContainer from './shop-body-container/ShopBodyContainer'
-import ShopBodyHeader from './shop-body-header/ShopBodyHeader'
+import ShopBodyContainer from "../shop-body-container/ShopBodyContainer";
 
 const ShopBody = () => {
     return (
         <div className={"shop__body"}>
-            <ShopBodyHeader />
             <Dashboard />
-            <ShopBodyContainer />
+            <ShopBodyContainer/>
+
         </div>
     )
 }
