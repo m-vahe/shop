@@ -45,7 +45,7 @@ const BottomVideo = () =>{
                             strokeLinejoin: "round",
                             strokeMiterlimit: "10",
                             position: "absolute",
-                            width: "3.5rem",
+                            width: "7.5rem",
                             left:"42%",
                             top:"36%",
                             cursor:"pointer"
@@ -107,7 +107,7 @@ const BottomVideo = () =>{
                             strokeLinejoin: "round",
                             strokeMiterlimit: "10",
                             position: "absolute",
-                            width: "3.5rem",
+                            width: "7.5rem",
                             left:"42%",
                             top:"36%",
                             cursor:"pointer"
@@ -169,7 +169,7 @@ const BottomVideo = () =>{
                             strokeLinejoin: "round",
                             strokeMiterlimit: "10",
                             position: "absolute",
-                            width: "3.5rem",
+                            width: "7.5rem",
                             left:"42%",
                             top:"36%",
                             cursor:"pointer"

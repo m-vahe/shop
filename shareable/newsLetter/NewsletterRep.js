@@ -16,11 +16,19 @@ const NewsletterRep = ({ padding }) => {
               placeholder={'Email adresse'}
               className='newsLetter__container__action__form--email'
             />
-            <input
-              type='submit'
-              className='newsLetter__container__action__form--submit'
-              value={'Senden'}
-            />
+            {/*<div className={"newsLetter__container__action__form--sbmt"}>*/}
+            {/*  <input*/}
+            {/*      type='submit'*/}
+            {/*      className='newsLetter__container__action__form--submit'*/}
+            {/*      value={'Senden'}*/}
+            {/*  />*/}
+            {/*</div>*/}
+
+              <input
+                  type='submit'
+                  className='newsLetter__container__action__form--submit'
+                  value={'Senden'}
+              />
           </form>
         </div>
       </div>

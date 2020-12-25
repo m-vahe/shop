@@ -32,7 +32,7 @@ const DpabMagazine = () =>{
                                 <a href="#">Mehr lesen</a>
                             </div>
                         </div>
-                        <div className={"col-lg-6"} style={{paddingLeft:"25px"}}>
+                        <div className={"dpab-bottom-section-right"} style={{paddingLeft:"25px"}} >
                             <div className={" dpab-bottom-section-right"}>
                                 <h2>DIANA VREELAND</h2>
                                 <p>Modedesignerin und Chefredakteurin Vogue</p>

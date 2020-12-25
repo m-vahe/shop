@@ -5,6 +5,10 @@
   padding: 15px 0;
   //background: #080808;
   .payment-section{
+    display: none !important;
+    img{
+      width: 80%;
+    }
     width: 81.5%;
     margin: 0 auto;
     display: flex;
@@ -28,6 +32,9 @@
       display: flex;
       justify-content: space-evenly;
       padding:7.8vh 0;
+      @media screen and(max-width: 900px) {
+          flex-wrap: wrap;
+      }
       .nav-top-items{
         display: flex;
         flex-direction: column;
@@ -64,6 +71,9 @@
     margin-top: 40px;
     position: relative;
     padding-bottom: 40px;
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
   .footer-main-nav{
     display: flex;

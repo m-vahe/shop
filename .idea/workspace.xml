@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/firstIntro/FirstIntro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftMoblie.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header/mediaheader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/mediaheader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/mobile-header/mobileHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/mobile-header/mobileHeader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/VideoPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/VideoPart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer/FooterPayment.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/FooterPayment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/amazonlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/gorgeenlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mastercardlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/paypallogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/versandartenlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/visalogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vorkasselogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/zahlungstartenlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/BottomVideos.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/BottomVideos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/DpabMagazine.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/DpabMagazine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +96,7 @@
       <workItem from="1608703029766" duration="4076000" />
       <workItem from="1608707362101" duration="1000000" />
       <workItem from="1608710293844" duration="6577000" />
-      <workItem from="1608874454472" duration="17727000" />
+      <workItem from="1608874454472" duration="28187000" />
     </task>
     <servers />
   </component>

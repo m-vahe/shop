@@ -31,10 +31,10 @@ const Homepage = () =>{
                 <FilteredProductBottom/>
                 <VideoPart/>
                 <BottomVideo/>
-                {/*<DpabMagazine/>*/}
-                {/*<DpabBottom/>*/}
-                {/*<Services/>*/}
-                {/*<Newsletter/>*/}
+                <DpabMagazine/>
+                <DpabBottom/>
+                <Services/>
+                <Newsletter/>
             </div>
         </>
     )

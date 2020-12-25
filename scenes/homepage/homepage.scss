@@ -1170,10 +1170,10 @@
       flex-direction: column;
       align-items: center;
       .dpab-top-section-img{
-        height:  695px;
+        min-height:  695px;
         width: 100%;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:100% 100%;
       }
       .dpab-top-section-txt{
         background: white;
@@ -1248,9 +1248,9 @@
         .dpab-bottom-section-left-img-bod{
           width: 100%;
           .dpab-bottom-section-left-img{
-            height:  668px;
+            min-height:  668px;
             width: 100%;
-            background-size: cover;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
           }
         }
@@ -1329,9 +1329,9 @@
         padding: 50px;
         .dpab-bottom-section-right-img{
           width: 100%;
-          height: 627px;
+          min-height: 627px;
           margin-bottom: 3vh;
-          background-size: cover;
+          background-size: 100% 100%;
           background-repeat: no-repeat;
         }
         h2{
@@ -1401,7 +1401,7 @@
     width: 100%;
     min-height: 607px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
