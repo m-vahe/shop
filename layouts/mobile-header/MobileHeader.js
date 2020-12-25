@@ -4,11 +4,10 @@ import {
   ShoppingCartOutlined,
   SearchOutlined,
 } from '@ant-design/icons';
-import Link from 'next/link';
-import Image from 'next/image';
 import { Input, Drawer } from 'antd';
 import MobileCard from './MobileCard';
 import MobileMenuFooter from './MobileMenuFooter';
+import Logo from '../logo/Logo';
 
 const MobileHeader = () => {
   const [visible, setVisible] = useState(false);
@@ -38,18 +37,7 @@ const MobileHeader = () => {
           <div className='mobileHeader__container__icon--menu'>
             <MenuOutlined onClick={showDrawer} />
           </div>
-          <div className='mobileHeader__container__logo'>
-            <Link exact href={'/'}>
-              <a href='/'>
-                <Image
-                  src='/logo.png'
-                  alt='Das Parfum'
-                  width={308}
-                  height={75}
-                />
-              </a>
-            </Link>
-          </div>
+          <Logo />
           <div className='mobileHeader__container__icon--cart'>
             <ShoppingCartOutlined />
           </div>
@@ -62,11 +50,11 @@ const MobileHeader = () => {
           />
         </div>
         <Drawer
-          title='Das Parfum & Beauty'
+          title={<Logo />}
           className='mobileHeader__drawer__container'
           placement='left'
           closable={true}
-          width={'80%'}
+          width={315}
           onClose={onClose}
           visible={visible}
           keyboard={true}

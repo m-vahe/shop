@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import MiddleElementOne from '../productmiidlelements/MiddleElementOne';
-import MiddleElementTwo from '../productmiidlelements/MiddleElementTwo';
 import SingleProduct from '../../../../../shareable/Products/SingleProduct';
-import ShopBodyHeader from '../shop-body-header/ShopBodyHeader'
+import InfoContainer from '../../../../../shareable/info-container/InfoContainer';
 
 const ShopBodyContainer = () => {
   const [data, setData] = useState([
@@ -281,45 +279,39 @@ const ShopBodyContainer = () => {
     },
   ]);
   return (
-      <div className='shop-right-body'>
-        <div className={'__products'}>
-          {data.map((e, i) => {
-            return (
-              <div key={i}>
-                <SingleProduct elem={e} products={data} setData={setData} />
-              </div>
-            );
-          })}
-          {/* <MiddleElementTwo />
-          <MiddleElementOne /> */}
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-            }}
-          >
-            <figure>
-              '
-              <img
-                src='/inspirationbot2.png'
-                alt=''
-                style={{ maxWidth: '100%' }}
-              />
-            </figure>
-            <div className={'col-lg-6 inspiration-bottom-text'}>
-              <div className={'inspiration-bottom-head-txt'}>
-                <p>Duft sensation aus frankreich</p>
-                <h2>Damen Parfums</h2>
-              </div>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-                consequuntur debitis eum quos sed similique sunt veniam
-                voluptates.
-              </span>
+    <div className='shop-right-body'>
+      <div className={'__products'}>
+        {data.map((e, i) => {
+          return (
+            <div key={i}>
+              <SingleProduct elem={e} products={data} setData={setData} />
             </div>
-          </div>
-        </div>
+          );
+        })}
+        <InfoContainer
+          className='middleInfoContainer'
+          title='Duftserie für zuhause'
+          text='Spoil your home'
+          desc='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+          src='/inspirationbot2.png'
+          width='840'
+          height='629'
+          layout='intrinsic'
+        />
+        <InfoContainer
+          className='bottomInfoContainer'
+          title='Duftserie für zuhause'
+          text='Spoil your home'
+          desc='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
+                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+          src='/inspirationbot1.png'
+          width='840'
+          height='628'
+          layout='intrinsic'
+        />
       </div>
+    </div>
   );
 };
 

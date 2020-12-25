@@ -50,12 +50,13 @@
   padding: 0;
 }
 .ant-drawer-title {
-  font-size: 4.5rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 0.8rem;
-  width: 55vw;
-  line-height: 5.5rem;
+  width:50%;
+}
+
+.ant-drawer-close{
+  .anticon{
+    font-size: 5rem;
+  }
 }
 
 .ant-card-head {

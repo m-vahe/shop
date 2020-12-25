@@ -39,7 +39,8 @@
     //   }
     // }
   }
-  .shop-product-mid-el-one {
+
+  .middleInfoContainer {
     grid-area: 4/1 / span 2 / span 3;
     .shop-product-mid-el-one-content {
       .shop-product-image-container {
@@ -52,7 +53,7 @@
       }
     }
   }
-  .shop-product-mid-el-two {
+  .bottomInfoContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
     grid-area: 8/1 / span 2 / span 3;
