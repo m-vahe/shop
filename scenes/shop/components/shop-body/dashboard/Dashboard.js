@@ -5,7 +5,7 @@ const Dashboard = () => {
   const [value, setValue] = useState([]);
 
   const onChange = (e) => {
-    setValue([...value,e.target.value]);
+    // setValue([...value,e.target.value]);
   };
   
   function callback(key) {

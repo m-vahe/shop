@@ -7,7 +7,6 @@ const DashboardMenu = ({ onChange, callback, value, data }) => {
     <>
       {data.titles.map((item,i) => (
         <Collapse
-          defaultActiveKey={['1']}
           onChange={callback}
           expandIconPosition='right'
           ghost='true'

@@ -1,6 +1,6 @@
 import { Select } from 'antd';
 
-const ShareableSelect = () => {
+const ShareableSelect = ({defaultValue}) => {
     
 const { Option } = Select;
 
@@ -9,7 +9,7 @@ function handleChange(value) {
   }
 
     return (
-        <Select defaultValue="lucy" style={{ width: 120 }} onChange={handleChange}>
+        <Select defaultValue={defaultValue} style={{ width: 120 }} onChange={handleChange}>
         <Option value="jack">Jack</Option>
         <Option value="Yiminghe">yiminghe</Option>
       </Select>

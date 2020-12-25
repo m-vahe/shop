@@ -4,15 +4,21 @@
   }
 }
 .shop__body {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 5rem;
+  &__content{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    margin-top: 5rem;
+    @media screen and(max-width: 1024px) {
+      grid-template-columns:unset;
+    }
+  }
   .__products {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(34rem, 1fr));
     gap: 14rem;
     @media screen and(max-width: 1024px) {
-      grid-template-columns: repeat(auto-fill, minmax(42rem, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
     }
     // @media screen and(max-width: 1815px) {
     //   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));

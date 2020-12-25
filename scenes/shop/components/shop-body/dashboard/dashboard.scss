@@ -1,14 +1,25 @@
 .dashboard__container {
-  @media  screen and (max-width: 1024px) {
+  padding-left: 8.5rem;
+  @media screen and (max-width: 1024px) {
     display: none;
   }
   .ant-collapse {
+    .ant-collapse-item-active {
+      .ant-collapse-header {
+        .anticon {
+          svg {
+            transform: rotate(180deg) !important;
+          }
+        }
+      }
+    }
     .ant-collapse-item {
       .ant-collapse-header {
-        font-size: 3.5rem;
+        font-size: 2.9rem;
         color: #3e3e3e;
         .anticon {
           font-size: 3rem;
+          transform: rotate(90deg);
         }
       }
       .ant-collapse-content {

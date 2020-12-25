@@ -27,10 +27,10 @@ const ShopBodyHeader = ({onChange}) => {
           {children}
         </Select>
       </div>
-      <div className='shopBodyHeader__container__selects__container'>
-        <ShareableSelect />
-        <ShareableSelect />
-        <ShareableSelect />
+      <div className='shopBodyHeader__container__selects'>
+        <ShareableSelect defaultValue='PRIES'/>
+        <ShareableSelect defaultValue='NAME'/>
+        <ShareableSelect defaultValue='NEU'/>
       </div>
     </div>
   );

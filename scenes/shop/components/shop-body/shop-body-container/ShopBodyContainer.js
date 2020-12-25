@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import MiddleElementOne from '../shop-body/productmiidlelements/MiddleElementOne';
-import MiddleElementTwo from '../shop-body/productmiidlelements/MiddleElementTwo';
-import SingleProduct from '../../../../shareable/Products/SingleProduct';
-import ShopBodyHeader from '../shop-body/shop-body-header/ShopBodyHeader'
+import MiddleElementOne from '../productmiidlelements/MiddleElementOne';
+import MiddleElementTwo from '../productmiidlelements/MiddleElementTwo';
+import SingleProduct from '../../../../../shareable/Products/SingleProduct';
+import ShopBodyHeader from '../shop-body-header/ShopBodyHeader'
 
 const ShopBodyContainer = () => {
   const [data, setData] = useState([
@@ -290,8 +290,8 @@ const ShopBodyContainer = () => {
               </div>
             );
           })}
-          <MiddleElementTwo />
-          <MiddleElementOne />
+          {/* <MiddleElementTwo />
+          <MiddleElementOne /> */}
           <div
             style={{
               display: 'grid',

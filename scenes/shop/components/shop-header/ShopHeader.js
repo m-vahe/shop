@@ -15,12 +15,11 @@ const ShopHeader = () => {
           consequatur corporis culpa ex excepturi fugit iure iusto maiores odit
           rem temporibus totam, voluptate. Ab accusamus atque consequuntur culpa
           cum dolores eius harum illo ipsam, iusto, maiores natus omnis
-          perspiciatis quas, quasi quos tempore totam voluptatibus. Consectetur
-          laboriosam pariatur repellendus tempora. Molestiae, temporibus.
+          perspiciatis quas, quasi quos tempore totam voluptatibus.
         </span>
       </div>
       <div className='shopHeader__container__images'>
-        <Image width={941} height={624} layout='responsive' src='/shoptop.png' />
+        <Image width={941} height={624} layout='intrinsic' src='/shoptop.png' />
       </div>
     </div>
   );

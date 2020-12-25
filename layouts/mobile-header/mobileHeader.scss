@@ -5,9 +5,8 @@
       display: grid;
       grid-auto-flow: column;
       justify-content: space-between;
-      width: 90.5%;
-      margin: 0 auto;
-      padding:  2.8rem 0;
+      align-items: center;
+      padding: 2.8rem;
       &__icon--menu {
         font-size: 6rem;
         .anticon {
@@ -20,9 +19,17 @@
           color: #434343;
         }
       }
+      &__logo {
+        width: 25rem;
+        height: auto;
+      }
     }
   }
   .mobileHeader__search__container {
+    display: none;
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
     &--input {
       padding: 1.5rem 2rem 1.2rem 2rem;
       background-color: #efefef;
@@ -78,7 +85,7 @@
     }
   }
   &__footer {
-    margin-top:7rem;
+    margin-top: 7rem;
     &--text {
       color: #fff;
       font-size: 3rem;
