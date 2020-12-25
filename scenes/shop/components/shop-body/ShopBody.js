@@ -5,7 +5,7 @@ const ShopBody = () => {
     return (
         <div className={"shop__body"}>
             <Dashboard />
-            <ShopBodyContainer/>
+            {/* <ShopBodyContainer/> */}
 
         </div>
     )

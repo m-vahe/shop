@@ -1,4 +1,5 @@
 import ShopHeader from './components/shop-header/ShopHeader'
+import ShopHeaderMobile from './components/shop-header/ShopHeaderMobile'
 import ShopBody from './components/shop-body/ShopBody'
 import ShopBodyFooter from "./components/shop-body/shop-body-footer/ShopBodyFooter";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
@@ -8,9 +9,10 @@ const ShopScene = () =>{
       <>
         <div className={"shop-all-elements"}>
             <ShopHeader/>
+            <ShopHeaderMobile/>
             <ShopBody/>
-            <ShopBodyFooter/>
-            <NewsletterRep/>
+            {/* <ShopBodyFooter/> */}
+            {/* <NewsletterRep/> */}
         </div>
       </>
   )

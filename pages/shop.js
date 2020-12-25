@@ -1,12 +1,14 @@
-import PageHeader from "../layouts/header/Header";
-import Footer from "../layouts/footer/Footer";
-import ShopScene from "../scenes/shop";
+import PageHeader from '../layouts/header/Header';
+import MobilePageHeader from '../layouts/mobile-header/MobileHeader';
+import Footer from '../layouts/footer/Footer';
+import ShopScene from '../scenes/shop';
 export default function Shop() {
-    return (
-        <>
-            <PageHeader />
-                <ShopScene/>
-            <Footer/>
-        </>
-    );
+  return (
+    <>
+      <PageHeader />
+      <MobilePageHeader />
+      <ShopScene />
+      {/* <Footer/> */}
+    </>
+  );
 }

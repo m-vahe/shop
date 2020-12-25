@@ -1,39 +1,69 @@
 .shopHeader__container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding-left: 9rem;
-    margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 9rem;
+  margin-top: 4rem;
+  @media screen and (max-width:1024px){
+    display:none
+   
+  }
   &__info {
-      &--label {
-          display: inline-block;
-          font-size: 2.5rem;
-          font-weight: 300;
-          color: #5c5c5c;
-          text-transform: uppercase;
-          margin-top: 10rem;
-        }
-        &--title {
-            display: inline-block;
-            color: #3e3e3e;
-            font-size: 9rem;
-            font-weight: 300;
-            font-style: normal;
-            text-transform: uppercase;
-            line-height: 1;
-        }
-        &--description {
-          width: 82rem;
-          display: inline-block;
-          color: #2e2e2e;
-          line-height: 30px;
-          font-size: 2.1rem;
-          font-style: normal;
-          margin-top: 3rem;
-          font-weight: 300;
+    &--label {
+      display: inline-block;
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: #5c5c5c;
+      text-transform: uppercase;
+      margin-top: 10rem;
+    }
+    &--title {
+      display: inline-block;
+      color: #3e3e3e;
+      font-size: 9rem;
+      font-weight: 300;
+      font-style: normal;
+      text-transform: uppercase;
+      line-height: 1;
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        font-size: 7rem;
+      }
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 3rem;
+      }
+    }
+    &--description {
+      width: 60rem;
+      display: inline-block;
+      color: #2e2e2e;
+      line-height: 30px;
+      font-size: 2.1rem;
+      font-style: normal;
+      margin-top: 3rem;
+      font-weight: 300;
+      @media screen and (min-width: 1024px) and (max-width: 1440px) {
+        width: 50rem;
+      }
+      @media screen and (max-width: 1024px) {
+        font-size: 3rem;
+        width: unset;
+      }
     }
   }
+}
 
-  &__images {
-   min-height: 625px;
+.shopHeader__container__mobile{
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .shopHeader__container {
+    grid-template-columns: unset;
   }
 }
+@media screen and (max-width: 1024px) {
+  .shopHeader__container__mobile {
+    display:block;
+    margin-top: -3.5rem;
+  }
+}
+

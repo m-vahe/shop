@@ -1,11 +1,11 @@
 const MiddleElementTwo = () =>{
     return(
         <>
-            <div className={"shop-product-mid-el-one"} >
+            <div className="shop-product-mid-el-two" >
                 <div className={"d-flex flex-wrap inspiration-bottom-right"} >
-                    <div className={"col-lg-6 inspiration-bottom-image"} style={{backgroundImage:"url(/inspirationbot2.png)"}}>
-
-                    </div>
+                <div className="shop-product-image-container">
+                    <img src="/inspirationbot2.png" alt="" className="shop-product-image-container-item"/>
+                </div>
                     <div className={"col-lg-6 inspiration-bottom-text"}>
                         <div className={"inspiration-bottom-head-txt"}>
                             <p >Duft sensation aus frankreich</p>
