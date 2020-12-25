@@ -1,3 +1,4 @@
+
 .homepage-body{
   display: flex;
   flex-direction: column;
@@ -6,7 +7,7 @@
   gap: 132px;
 }
 .first-intro{
-  margin-top: 50px;
+  margin-top: 30px;
   .first-intro-body{
     width: 100%;
     margin: 0 auto;
@@ -14,6 +15,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: column;
     gap: 25px;
+
     .first-intro-bod-left{
       padding: 100px 0px 100px 87px;
       margin-bottom: 49px;
@@ -29,20 +31,12 @@
         color: white;
         font-size: 25px;
         font-weight: 400;
-        padding: 9px;
+        padding: 11.5px;
         font-style: normal;
         letter-spacing: 5px;
         text-align: center;
         text-transform: uppercase;
-        @media screen and (max-width:1797px){
-          font-size: 2rem;
-          width: 40%;
-          padding: 9px;
-        }
-        @media screen and (max-width:1440px){
-          font-size: 1.5rem;
-          padding: 6px;
-        }
+
       }
       p{
         color: #5c5c5c;
@@ -55,12 +49,7 @@
         text-transform: uppercase;
         margin: 0;
         margin-bottom: 15px;
-        @media screen and (max-width:1630px){
-          font-size: 1.8rem;
-        }
-        @media screen and (max-width:1440px){
-          font-size: 1.4rem;
-        }
+
       }
       h2{
         color: #3e3e3e;
@@ -71,12 +60,7 @@
         line-height: 79px;
         text-align: left;
         text-transform: uppercase;
-        @media screen and (max-width:1612px){
-            font-size: 7.5rem;
-        }
-        @media screen and (max-width:1460px){
-          font-size: 6.5rem;
-        }
+
       }
     }
     .first-intro-bod-right{
@@ -84,6 +68,10 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+
+  }
+  @media screen and(max-width: 1024px){
+    display: none;
   }
 }
 
@@ -171,7 +159,7 @@
     min-height: 67vh;
     p{
       position: absolute;
-      top: -8vh;
+      top: -100px;
       color: #3e3e3e;
       font-family: 'Open Sans Condensed', system-ui;
       font-size: 6vw;
@@ -239,7 +227,7 @@
       text-transform: uppercase;
       font-style: normal;
       text-transform: uppercase;
-      padding: 15px 10px;
+      padding: 12px 10px;
       background-color: #080808;
       width: 75%;
       border: none;
@@ -305,8 +293,8 @@
 
     }
     .inspiration-bottom-btn{
-      width: 35%;
-      padding: 15px 5px;
+      width: 36%;
+      padding: 10.5px 0px;
       background-color: #080808;
       color: #ffffff;
       font-family: "Freight Sans Pro",system-ui;
@@ -374,8 +362,8 @@
 
     }
     .inspiration-bottom-btn{
-      width: 35%;
-      padding: 15px 5px;
+      width: 36%;
+      padding: 10.5px 0px;
       background-color: #080808;
       color: #ffffff;
       font-family: "Freight Sans Pro",system-ui;
@@ -406,7 +394,7 @@
       .insp-bot-sm{
 
         width: fit-content;
-        padding: 10px ;
+        padding-left: 10px;
         background-color: #000000;
         color: #ffffff;
         font-family: "Ivy Presto Display",system-ui;
@@ -439,7 +427,7 @@
         text-align: center;
         padding: 0px 10px;
         width: fit-content;
-
+        line-height: 61px;
       }
     }
     .inspiration-bottom-imagetxt-two{
@@ -453,7 +441,7 @@
         color: #ffffff;
         font-family: "Freight Sans Pro",system-ui;
         font-size: 6rem;
-        font-weight: 300;
+        font-weight: 400;
         font-style: normal;
         letter-spacing: 2.4px;
         text-align: left;
@@ -465,7 +453,7 @@
         padding: 0px 10px;
         width: fit-content;
         margin: 10px 0;
-
+        line-height: 61px;
       }
     }
   }

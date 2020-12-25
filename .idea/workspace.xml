@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-footer/ShopBodyFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-footer/ShopBodyFooter.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/firstIntro/FirstIntro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftMoblie.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/components/dashboard/dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/dashboard/dashboard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body-container/ShopBodyContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body-container/ShopBodyContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/ShopBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/ShopBody.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/ShopBody.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/ShopBody.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/dashboard/dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/dashboard/dashboard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/productmiidlelements/MiddleElementOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/productmiidlelements/MiddleElementOne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/productmiidlelements/MiddleElementTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/productmiidlelements/MiddleElementTwo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-container/ShopBodyContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-header/ShopHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-header/ShopHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-header/shopheader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-header/shopheader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/mediaheader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/mediaheader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/mobile-header/mobileHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/mobile-header/mobileHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/VideoPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/VideoPart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,11 +54,11 @@
       <recent name="$PROJECT_DIR$/public/paymentlogos" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scenes/homepage/components" />
       <recent name="$PROJECT_DIR$/scenes/shop/components/shop-body" />
       <recent name="$PROJECT_DIR$/shareable/Products" />
       <recent name="$PROJECT_DIR$/scenes/shop/components" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/scenes/shop/layouts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -91,7 +88,8 @@
       <workItem from="1608615968365" duration="23865000" />
       <workItem from="1608703029766" duration="4076000" />
       <workItem from="1608707362101" duration="1000000" />
-      <workItem from="1608710293844" duration="6121000" />
+      <workItem from="1608710293844" duration="6577000" />
+      <workItem from="1608874454472" duration="17727000" />
     </task>
     <servers />
   </component>

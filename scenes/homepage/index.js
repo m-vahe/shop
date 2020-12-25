@@ -13,12 +13,14 @@ import DpabBottom from "./components/DpabBottom";
 import Services from "./components/Services";
 import Newsletter from "./components/Newsletter";
 import BottomVideo from "./components/BottomVideos";
+import FirstIntroMobile from "./components/mobile/firstIntro/FirstIntro";
 
 const Homepage = () =>{
     return(
         <>
             <div className={"homepage-body"}>
                 <FirstIntro/>
+                <FirstIntroMobile/>
                 <FirstProducts/>
                 <SecondSection/>
                 <InspirationSection/>
@@ -29,10 +31,10 @@ const Homepage = () =>{
                 <FilteredProductBottom/>
                 <VideoPart/>
                 <BottomVideo/>
-                <DpabMagazine/>
-                <DpabBottom/>
-                <Services/>
-                <Newsletter/>
+                {/*<DpabMagazine/>*/}
+                {/*<DpabBottom/>*/}
+                {/*<Services/>*/}
+                {/*<Newsletter/>*/}
             </div>
         </>
     )

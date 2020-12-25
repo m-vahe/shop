@@ -26,7 +26,7 @@
 @import '../scenes/shop/components/shop-body/dashboard/dashboard.scss';
 @import '../scenes/shop/components/shop-body/shop-body-header/shopBodyHeader.scss';
 @import '../scenes/shop/components/shop-body/shop-body-footer/ShopBodyFooter';
-
+@import "../scenes/homepage/components/mobile/MobileChanged";
 @font-face {
   src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
   src: local('Freight Sans Pro'), local('FreightSansPro'),
@@ -42,7 +42,7 @@
       url('../public/fonts/FreightSansProBlack-Italic.eot#OpenSans')
       format('svg'); /* Legacy iOS */
 }
-
+@import "../scenes/homepage/components/mobile/MobileChanged";
 * {
   padding: 0;
   margin: 0;
@@ -77,6 +77,11 @@ html {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   html {
     font-size: 47.5%;
+  }
+}
+@media screen and (max-width: 768px)  {
+  html {
+    font-size: 42.5%;
   }
 }
 // @media screen and (min-width: 475px) and (max-width: 768px) {
