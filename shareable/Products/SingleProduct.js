@@ -1,4 +1,7 @@
+import { useRouter } from 'next/router'
+
 const SingleProduct = ({elem,products,setData}) =>{
+    const router = useRouter()
 
     const addToFavorites = (e) =>{
         setData(products.map(elem => {
@@ -8,10 +11,18 @@ const SingleProduct = ({elem,products,setData}) =>{
             return elem
         }))
     }
+    const toProductPage = (e) => {
+        if(router.pathname !== "/products"){
+            router.push(`/products/${e}`)
+        }
+        else{
+            router.push(e)
+        }
+    }
     return(
         <>
             <div className={" first-prod-items col-lg-3"} >
-                <div className={"picture-body-prod"}>
+                <div className={"picture-body-prod"} onClick={()=>toProductPage(elem.id)}>
                     <img src={elem.imageHead} className={"item-picture"} alt=""/>
                     {elem.new && <span className={"item-new"}>New</span>}
                     {

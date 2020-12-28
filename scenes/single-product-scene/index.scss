@@ -1,0 +1,11 @@
+@import "components/right-product-text/RightProductText";
+@import "components/left-product-images/LeftProductImages";
+
+.product__details__container{
+  width: 90.5%;
+  margin: 50px auto;
+  &__top{
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+}

@@ -27,6 +27,7 @@
 @import '../scenes/shop/components/shop-body/shop-body-header/shopBodyHeader.scss';
 @import '../scenes/shop/components/shop-body/shop-body-footer/ShopBodyFooter';
 @import "../scenes/homepage/components/mobile/MobileChanged";
+@import "scenes/single-product-scene/index";
 @font-face {
   src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
   src: local('Freight Sans Pro'), local('FreightSansPro'),
@@ -43,6 +44,7 @@
       format('svg'); /* Legacy iOS */
 }
 @import "../scenes/homepage/components/mobile/MobileChanged";
+
 * {
   padding: 0;
   margin: 0;

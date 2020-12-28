@@ -1,8 +1,5 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHeart, faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import {useState,useEffect} from "react";
 import ProductsWithFilter from "../../../shareable/ProductsWithFilter";
-
 const ProductsWithFilterHomepage = () =>{
     const headtext = "Männerpflege"
     const [products,setProducts] = useState(

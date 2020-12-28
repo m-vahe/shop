@@ -23,19 +23,26 @@
       display: grid;
       grid-auto-flow: row;
       gap: 44px;
+      @media screen and(max-width: 1300px) {
+          gap:20px
+      }
       button{
         width: 34.7%;
         background: #000000;
         border: none;
         outline: none;
         color: white;
-        font-size: 25px;
+        font-size: 2.5rem;
         font-weight: 400;
         padding: 11.5px;
         font-style: normal;
         letter-spacing: 5px;
         text-align: center;
         text-transform: uppercase;
+        @media screen and(max-width: 1795px){
+         width: fit-content;
+        }
+
 
       }
       p{
@@ -60,6 +67,20 @@
         line-height: 79px;
         text-align: left;
         text-transform: uppercase;
+        @media screen and(max-width: 1795px){
+          font-size: 8rem;
+        }
+        @media screen and(max-width: 1510px){
+          line-height: 60px;
+          margin-bottom: 3rem;
+        }
+        @media screen and(max-width: 1270px){
+          font-size: 7rem;
+        }
+        @media screen and(max-width: 1124px){
+          font-size: 6.5rem;
+          margin-bottom: 2rem;
+        }
 
       }
     }
@@ -101,6 +122,9 @@
           /* Text style for "Gemütliche" */
           font-style: normal;
           text-transform: uppercase;
+          @media screen and(max-width: 1225px){
+           font-size: 2rem;
+          }
           //letter-spacing: normal;
         }
         h3{
@@ -115,7 +139,9 @@
           font-style: normal;
           text-transform: uppercase;
           margin: 5px auto;
-
+          @media screen and(max-width: 1365px){
+              min-height: 133px;
+          }
         }
       }
       .sec-sec-el-link{
@@ -231,6 +257,9 @@
       background-color: #080808;
       width: 75%;
       border: none;
+      @media screen and (max-width: 1725px) {
+        width: fit-content;
+      }
     }
   }
 }
@@ -264,7 +293,7 @@
         color: #3e3e3e;
         font-family: "Freight Sans Pro",system-ui;
         font-size: 6rem;
-        font-weight: 300;
+        font-weight: 400;
         font-style: normal;
         letter-spacing: 2.4px;
         line-height: 55px;
@@ -307,6 +336,10 @@
       font-style: normal;
       text-transform: uppercase;
       border: none;
+      @media screen and(max-width: 1610px) {
+        width: fit-content;
+        padding: 1rem;
+      }
     }
 
   }
@@ -333,7 +366,7 @@
         color: #3e3e3e;
         font-family: "Freight Sans Pro",system-ui;
         font-size: 6rem;
-        font-weight: 300;
+        font-weight: 400;
         font-style: normal;
         letter-spacing: 2.4px;
         line-height: 55px;
@@ -376,6 +409,10 @@
       font-style: normal;
       text-transform: uppercase;
       border: none;
+      @media screen and(max-width: 1610px) {
+        width: fit-content;
+        padding: 1rem;
+      }
     }
   }
   .inspiration-bottom-image{
@@ -487,7 +524,7 @@
       .circled-txt {
         position: absolute;
         bottom: 0%;
-        left: 0%;
+        left: -20px;
 
       }
 
@@ -685,7 +722,7 @@
       color: #3e3e3e;
       font-family: "Freight Sans Pro", system-ui;
       font-size: 6rem;
-      font-weight: 300;
+      font-weight: 400;
       font-style: normal;
       text-align: left;
       letter-spacing: 2.4px;
@@ -744,8 +781,8 @@
     h2{
       color: #3e3e3e;
       font-family: "Freight Sans Pro",system-ui;
-      font-size: 6rem;
-      font-weight: 300;
+      font-size: 6.6rem;
+      font-weight: 400;
       font-style: normal;
       letter-spacing: 3.3px;
       text-align: center;
@@ -797,9 +834,7 @@
       cursor: pointer;
     }
     .circled-txt{
-      position: absolute;
-      bottom: 25vh;
-      left: 2vh;
+
 
     }
     .picture-body-prod{
@@ -810,7 +845,7 @@
       .circled-txt{
         position: absolute;
         bottom: 10%;
-        left: 0%;
+        left: -20px;
 
       }
       .item-new{
@@ -977,6 +1012,10 @@
     border: none;
     margin: 100px  0 0 0;
     background-color: #080808;
+    @media screen and (max-width: 1650px) {
+        width: fit-content;
+        padding: 1.5rem;
+    }
   }
 
   .first-product-bottom-body{
@@ -1007,7 +1046,7 @@
           font-style: normal;
           text-transform: uppercase;
           position: absolute;
-          top: -65px;
+          top: -90px;
           left: 0px;
         }
       }
@@ -1033,7 +1072,7 @@
           margin: 0px 0 12px  0 ;
           font-family: "Freight Sans Pro",system-ui;
           font-size: 6rem;
-          font-weight: 300;
+          font-weight: 400;
           font-style: normal;
           letter-spacing: 2.4px;
           text-align: center;
@@ -1100,7 +1139,7 @@
         margin: 0px 0 10px  0 ;
         font-family: "Freight Sans Pro",system-ui;
         font-size: 6rem;
-        font-weight: 300;
+        font-weight: 400;
         font-style: normal;
         letter-spacing: 2.4px;
         text-align: center;
@@ -1185,7 +1224,7 @@
         h2{
           color: #3e3e3e;
           font-size: 4.5rem;
-          font-weight: 300;
+          font-weight: 400;
           font-style: normal;
           letter-spacing: 2.25px;
           text-align: center;
@@ -1269,7 +1308,7 @@
             color: #3e3e3e;
             font-family: "Freight Sans Pro",system-ui;
             font-size: 4.5rem;
-            font-weight: 300;
+            font-weight: 400;
             font-style: normal;
             letter-spacing: 2.25px;
             text-align: center;
@@ -1338,7 +1377,7 @@
           color: #3e3e3e;
           font-family: "Freight Sans Pro",system-ui;
           font-size: 4.5rem;
-          font-weight: 300;
+          font-weight: 400;
           font-style: normal;
           letter-spacing: 2.25px;
           text-align: center;
@@ -1417,7 +1456,7 @@
       color: #3e3e3e;
       font-family: "Freight Sans Pro",system-ui;
       font-size: 6rem;
-      font-weight: 300;
+      font-weight: 400;
       font-style: normal;
       letter-spacing: 2.4px;
       line-height: 70px;
@@ -1465,7 +1504,7 @@
     h2{
       color: #2e2e2e;
       font-size: 3.8rem;
-      font-weight: 300;
+      font-weight: 400;
       font-style: normal;
       letter-spacing: 3.5px;
       text-align: center;

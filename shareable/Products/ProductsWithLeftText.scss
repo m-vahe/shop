@@ -16,13 +16,14 @@
     position: relative;
     .picture-body-prod{
       position: relative;
+      cursor: pointer;
       .item-picture{
         width: 100%;
       }
       .circled-txt{
         position: absolute;
         bottom: 0%;
-        left: 0%;
+        left: -20px;
 
       }
       .item-new{
@@ -205,7 +206,7 @@
       color: #3e3e3e;
       font-family: "Freight Sans Pro",system-ui;
       font-size: 6rem;
-      font-weight: 300;
+      font-weight: 400;
       font-style: normal;
       text-align: left;
       letter-spacing: 2.4px;
@@ -244,6 +245,10 @@
       text-transform: uppercase;
       margin-top: 17px;
       padding: 13px 15px;
+      @media screen and(max-width: 1810px){
+          font-size: 2.4rem;
+          width: fit-content;
+      }
     }
   }
 }

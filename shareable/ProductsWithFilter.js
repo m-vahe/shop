@@ -1,9 +1,8 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHeart, faShoppingCart} from "@fortawesome/free-solid-svg-icons";
 import {useState,useEffect} from "react";
+import {useRouter} from "next/router";
 
 const ProductsWithFilter = ({headtext,products, setProducts, autoFlow,gridTemplateColumns,gap}) =>{
-
+    const router = useRouter()
     const [parfum,setParfum] = useState(true)
     const [beauty,setBeauty] = useState(false)
     const [interiour,setInteriour] = useState(false)
@@ -15,6 +14,14 @@ const ProductsWithFilter = ({headtext,products, setProducts, autoFlow,gridTempla
                 return elem
             }))
         console.log(e)
+    }
+    const toProductPage = (e) => {
+        if(router.pathname !== "/products"){
+            router.push(`/products/${e}`)
+        }
+        else{
+            router.push(e)
+        }
     }
     return(
         <>
@@ -43,7 +50,7 @@ const ProductsWithFilter = ({headtext,products, setProducts, autoFlow,gridTempla
                     {products.map((e,i)=>{
                         return(
                             <div className={" first-prod-items col-lg-3"} key={i}>
-                                <div className={"picture-body-prod"}>
+                                <div className={"picture-body-prod"} onClick={()=>toProductPage(e.id)}>
                                     <img src={e.imageHead} className={"item-picture"} alt=""/>
                                     {e.new && <span className={"item-new"}>New</span>}
                                     {

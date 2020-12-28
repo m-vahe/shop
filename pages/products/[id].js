@@ -1,16 +1,13 @@
 import React from "react";
-const EmailConfirmationPage = () => {
+import SingleProductScene from "../../scenes/single-product-scene";
+const ProductDetail = () => {
   return (
     <>
-      <h1>Girst</h1>
+      <SingleProductScene/>
     </>
   );
 };
 
-export async function getStaticProps() {
-  return {
-    props: {},
-  };
-}
 
-export default EmailConfirmationPage;
+
+export default ProductDetail;
