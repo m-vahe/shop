@@ -3,192 +3,172 @@
     padding: 0 4rem;
   }
 }
+
+%titleProps {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #5c5c5c;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  @media screen and (max-width: 500px) {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+}
+%containerProps {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-items: center;
+}
+
+%textProps {
+  display: block;
+  color: #3e3e3e;
+  font-size: 9rem;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1;
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    font-size: 4rem;
+  }
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 3rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 3rem;
+  }
+}
+%descriptionProps {
+  display: block;
+  color: #2e2e2e;
+  line-height: 30px;
+  font-size: 2.1rem;
+  font-style: normal;
+  margin-top: 3rem;
+  font-weight: 300;
+  width: 25vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    width: 30vw;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 3rem;
+    width: unset;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 2rem;
+  }
+}
+
 .shop__body {
-  &__content{
+  &__content {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: auto 1fr;
-    margin-top: 5rem;
+    margin: 5rem 10rem 0 0;
     @media screen and(max-width: 1024px) {
-      grid-template-columns:unset;
+      grid-template-columns: unset;
     }
   }
   .__products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(34rem, 1fr));
-    gap: 14rem;
+    grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
+    gap: 10rem;
     @media screen and(max-width: 1024px) {
-      grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
+      grid-template-columns: unset;
+      gap: 7rem;
     }
-    // @media screen and(max-width: 1815px) {
-    //   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    //   .shop-product-mid-el-one{
-    //     grid-area: 4/1/span 1/span 2;
-    //   }
-    //   .shop-product-mid-el-two {
-    //     grid-area: 4/1/span 1/span 2;
-    //   }
-    // }
-    // @media screen and(max-width: 1375px) {
-    //   grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr)) !important;
-    //   .shop-product-mid-el-one{
-    //     grid-area: 5/1/span 1/span 2 !important;
-    //   }
-    //   .shop-product-mid-el-two {
-    //     grid-area: 9/1/span 1/span 2 !important;
-    //   }
-    // }
-  }
 
-  .middleInfoContainer {
-    grid-area: 4/1 / span 2 / span 3;
-    .shop-product-mid-el-one-content {
-      .shop-product-image-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
-        .shop-product-image-container-item {
-          max-width: 100%;
-          height: auto;
+    .middleInfoContainer {
+      @extend %containerProps;
+      grid-area: 4 / 1 /4 / 4;
+      @media screen and (max-width: 1024px) {
+        grid-auto-flow: unset;
+        grid-template-columns: unset;
+        grid-area: 4 / 1 / 4 / 4;
+      }
+      &__content {
+        &--title {
+          @extend %titleProps;
+        }
+        &--text {
+          width: 30vw;
+          @extend %textProps;
+          @media screen and (max-width: 1024px) {
+            width: unset;
+          }
+        }
+        &--description {
+          @extend %descriptionProps;
+        }
+      }
+      &__image {
+        grid-column: 1;
+        // min-height: 629px;
+        @media screen and (max-width: 1024px) {
+          grid-row: 1;
+          min-height: unset;
+        }
+      }
+    }
+    .bottomInfoContainer {
+      @extend %containerProps;
+      grid-area: 7 / 1 / 7 / 4;
+      @media screen and (max-width: 1024px) {
+        grid-auto-flow: unset;
+        grid-template-columns: unset;
+        grid-area: 7 / auto / 4 / auto;
+      }
+      &__content {
+        &--title {
+          @extend %titleProps;
+        }
+        &--text {
+          width: 30vw;
+          @extend %textProps;
+          @media screen and (max-width: 1024px) {
+            width: unset;
+          }
+        }
+        &--description {
+          @extend %descriptionProps;
+        }
+      }
+      &__image {
+        min-height: 629px;
+        @media screen and (max-width: 1024px) {
+          grid-row: 1;
+          min-height: unset;
         }
       }
     }
   }
-  .bottomInfoContainer {
+}
+
+.shop-desc-body {
+  display: grid;
+  .pagination{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
-    grid-area: 8/1 / span 2 / span 3;
-    .shop-product-image-container {
-      .shop-product-image-container-item {
-        max-width: 100%;
-        height: auto;
-      }
-    }
+    margin:15rem;
+    justify-content: center;
   }
-
-  .shop-right-body {
-    .inspiration-bottom-right {
-      display: grid;
-      grid-template-columns: 60% 39%;
-      padding: 0;
-      width: 100%;
-      gap: 10px;
-      .inspiration-bottom-image {
-        position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 628px;
-      }
-      .inspiration-bottom-text {
-        padding: 120px 115px 0 0;
-        display: grid;
-        gap: 0px;
-        grid-auto-rows: min-content;
-        .inspiration-bottom-head-txt {
-          p {
-            color: #5c5c5c;
-            font-family: 'Freight Sans Pro', system-ui;
-            font-size: 2.15rem;
-            font-weight: 300;
-            font-style: normal;
-            letter-spacing: 1.38px;
-            text-align: left;
-            font-style: normal;
-            margin: 10px auto;
-            text-transform: uppercase;
-          }
-          h2 {
-            color: #3e3e3e;
-            font-family: 'Freight Sans Pro', system-ui;
-            font-size: 6rem;
-            font-weight: 300;
-            font-style: normal;
-            letter-spacing: 2.4px;
-            line-height: 55px;
-            text-align: left;
-            font-style: normal;
-            text-transform: uppercase;
-            width: 80%;
-            margin-bottom: 40px;
-          }
-        }
-        span {
-          color: #2e2e2e;
-          font-family: 'Freight Sans Pro', system-ui;
-          font-size: 2.2rem;
-          font-weight: 300;
-          letter-spacing: 0.55px;
-          line-height: 30px;
-          text-align: left;
-          font-style: normal;
-          margin-bottom: 0;
-          display: inline-block;
-        }
-        .inspiration-bottom-head-txt {
-          margin: 0;
-        }
-      }
+  .shop__description {
+    &--title {
+      color:#929292;
+      font-size: 3.8rem;
+      text-transform: uppercase;
     }
-    .inspiration-bottom-left {
-      grid-template-columns: 39% 60%;
-      padding: 0;
-      width: 100%;
-      gap: 10px;
-      display: grid;
-      .inspiration-bottom-image {
-        position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 628px;
-      }
-      .inspiration-bottom-text {
-        padding: 120px 0 0 115px;
-        display: grid;
-        gap: 0px;
-        grid-auto-rows: min-content;
-        .inspiration-bottom-head-txt {
-          p {
-            color: #5c5c5c;
-            font-family: 'Freight Sans Pro', system-ui;
-            font-size: 2.15rem;
-            font-weight: 300;
-            font-style: normal;
-            letter-spacing: 1.38px;
-            text-align: left;
-            font-style: normal;
-            margin: 10px auto;
-            text-transform: uppercase;
-          }
-          h2 {
-            color: #3e3e3e;
-            font-family: 'Freight Sans Pro', system-ui;
-            font-size: 6rem;
-            font-weight: 300;
-            font-style: normal;
-            letter-spacing: 2.4px;
-            line-height: 55px;
-            text-align: left;
-            font-style: normal;
-            text-transform: uppercase;
-            width: 80%;
-            margin-bottom: 40px;
-          }
-        }
-        span {
-          color: #2e2e2e;
-          font-family: 'Freight Sans Pro', system-ui;
-          font-size: 2.2rem;
-          font-weight: 300;
-          letter-spacing: 0.55px;
-          line-height: 30px;
-          text-align: left;
-          font-style: normal;
-          margin-bottom: 0;
-          display: inline-block;
-        }
-        .inspiration-bottom-head-txt {
-          margin: 0;
-        }
-      }
+    &--text {
+      color:#929292;
+      font-size: 1.8rem;
     }
   }
 }

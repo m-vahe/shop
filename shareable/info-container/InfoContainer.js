@@ -12,14 +12,14 @@ const InfoContainer = ({
 }) => {
   return (
     <div className={className}>
-      <div className='infoContainer__content'>
-        <p className='infoContainer__content--title'>{title}</p>
-        <p className='infoContainer__content--text'>{text}</p>
-        <p div className='infoContainer__content--description'>
+      <div className={`${className}__content`}>
+        <span className={`${className}__content--title`}>{title}</span>
+        <span className={`${className}__content--text`}>{text}</span>
+        <span div className={`${className}__content--description`}>
           {desc}
-        </p>
+        </span>
       </div>
-      <div className='infoContainer__image'>
+      <div className={`${className}__image`}>
         <Image width={width} height={height} layout={layout} src={src} />
       </div>
     </div>

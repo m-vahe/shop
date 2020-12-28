@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import SingleProduct from '../../../../../shareable/Products/SingleProduct';
+import PagePagination from '../../../../../shareable/pagination/Pagination';
 import InfoContainer from '../../../../../shareable/info-container/InfoContainer';
+import ShopDescription from './shop-description/ShopDescription';
 
 const ShopBodyContainer = () => {
   const [data, setData] = useState([
@@ -280,7 +282,7 @@ const ShopBodyContainer = () => {
   ]);
   return (
     <div className='shop-right-body'>
-      <div className={'__products'}>
+      <div className='__products'>
         {data.map((e, i) => {
           return (
             <div key={i}>
@@ -311,6 +313,10 @@ const ShopBodyContainer = () => {
           layout='intrinsic'
         />
       </div>
+        <div className='shop-desc-body'>
+          <PagePagination />
+          <ShopDescription />
+        </div>
     </div>
   );
 };
