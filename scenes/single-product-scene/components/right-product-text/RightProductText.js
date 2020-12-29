@@ -1,21 +1,26 @@
 import { Collapse } from 'antd';
 import SingleProductHeader from "../single-product-header/SingleProductHeader";
+import SimpleText from "./collapse-components/SimpleText";
+import ListedText from "./collapse-components/ListedText";
+import VideoCollapse from "./collapse-components/Video";
+import SwipeableCarousel from "./collapse-components/SwipeableCarousel";
+import TextComponent from "./text-components/TextComponent";
 
 const RightProductText = () =>{
     const { Panel } = Collapse;
     const dataofCollapse = [
-        {type:"text"},
-        {type:"list"},
-        {type:"list"},
-        {type:"text"},
-        {type:"video"},
-        {type:"carousel"},
+        {type:"list",title:"beschreibung",component:<ListedText/>},
+        {type:"text",title:"inhaltsstoffe",component:<SimpleText/>},
+        {type:"list",title:"inhaltsstoffe",component:<ListedText/>},
+        {type:"text",title:"duftanlasse",component:<SimpleText/>},
+        {type:"video",title:"video",component:<VideoCollapse/>},
+        {type:"carousel",title:"kollektion",component:<SwipeableCarousel/>},
     ]
     return(
         <>
-            <div style={{display:"flex",flexDirection:"column"}}>
+            <div className={"right-product-body-all"}>
                 <SingleProductHeader/>
-                <div >
+                <div className={"right-product-collapse-body"} >
                     {dataofCollapse.map((e,i)=>{
                         return(
                             <Collapse
@@ -23,18 +28,14 @@ const RightProductText = () =>{
                                 expandIconPosition='right'
                                 ghost='true'
                             >
-                                <Panel header={"alllaas"} key={i} >
-                                    {/*stugel yst typei kanchel componentner*/}
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid asperiores dignissimos
-                                        dolor doloremque dolorum eaque eius exercitationem hic incidunt iste nam natus nihil odit quam,
-                                        soluta sunt tempora.
-                                    </p>
+                                <Panel header={e.title} key={i} >
+                                    {e.component}
                                 </Panel>
                             </Collapse>
                         )
                     })}
                 </div>
+                <TextComponent/>
             </div>
         </>
     )

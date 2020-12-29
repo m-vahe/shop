@@ -2,28 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/collapse-components/CollapseComponents.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/collapse-components/ListedText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/collapse-components/SimpleText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/collapse-components/SwipeableCarousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/collapse-components/Video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/text-components/TextComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/text-components/TextComponent.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/[id].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/mediahomepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/mediahomepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/product-details/ProductDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/product-details/ProductDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/social/Social.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/social/Social.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/select/ShareableSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/select/ShareableSelect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -102,6 +99,7 @@
       <workItem from="1608710293844" duration="6577000" />
       <workItem from="1608874454472" duration="28889000" />
       <workItem from="1609133840756" duration="15424000" />
+      <workItem from="1609219790720" duration="23018000" />
     </task>
     <servers />
   </component>

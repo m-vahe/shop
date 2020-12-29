@@ -1,6 +1,9 @@
 @import "components/right-product-text/RightProductText";
 @import "components/left-product-images/LeftProductImages";
-
+@import "components/right-product-text/collapse-components/CollapseComponents";
+@import "~swiper/swiper-bundle.css";
+@import "components/single-product-bottom/SingleProductBottom";
+@import "components/single-product-header/SingleProductHeader";
 .product__details__container{
   width: 90.5%;
   margin: 50px auto;
@@ -8,4 +11,27 @@
     display: grid;
     grid-template-columns: 35% 65%;
   }
+}
+.swiper-button-next {
+  background-image: url("/arrownext.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  top: 36%;
+}
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-prev{
+  background-image: url("/arrowprev.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  top: 36%;
+}
+.product-bottom-prod-w-filter{
+  padding: 15rem 0;
 }
