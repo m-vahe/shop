@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import {
   MenuOutlined,
-  ShoppingCartOutlined,
   SearchOutlined,
 } from '@ant-design/icons';
-import { Input, Drawer } from 'antd';
+import {  Drawer } from 'antd';
 import MobileCard from './MobileCard';
 import MobileMenuFooter from './MobileMenuFooter';
 import Logo from '../logo/Logo';
+import Image from 'next/image'
 
 const MobileHeader = () => {
   const [visible, setVisible] = useState(false);
@@ -22,14 +22,6 @@ const MobileHeader = () => {
     setVisible(false);
   };
 
-  const prefix = (
-    <SearchOutlined
-      style={{
-        fontSize: 26,
-        color: '#7B7B7B',
-      }}
-    />
-  );
   return (
     <>
       <div className='mobileHeader'>
@@ -38,16 +30,10 @@ const MobileHeader = () => {
             <MenuOutlined onClick={showDrawer} />
           </div>
           <Logo />
-          <div className='mobileHeader__container__icon--cart'>
-            <ShoppingCartOutlined />
+          <div className='mobileHeader__container__image--cart'>
+          <SearchOutlined />
+            <Image src='/bag.svg' width={30} height={30}/>
           </div>
-        </div>
-        <div className='mobileHeader__search__container'>
-          <Input
-            placeholder='suche'
-            className='mobileHeader__search__container--input'
-            prefix={prefix}
-          />
         </div>
         <Drawer
           title={<Logo />}

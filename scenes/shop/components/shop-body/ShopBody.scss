@@ -22,6 +22,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   justify-items: center;
+
 }
 
 %textProps {
@@ -75,17 +76,25 @@
     grid-template-columns: auto 1fr;
     margin: 5rem 10rem 0 0;
     @media screen and(max-width: 1024px) {
+      margin: 5rem 0 0 0;
       grid-template-columns: unset;
     }
   }
   .__products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(45rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
     gap: 10rem;
+    @media screen and(min-width: 1024px) and (max-width: 1440px){
+      gap: 5rem;
+    }
     @media screen and(max-width: 1024px) {
-      grid-template-columns: unset;
+      grid-template-columns: repeat(auto-fill, minmax(38rem, 1fr));
       gap: 7rem;
     }
+    @media screen and(min-width: 624px) and (max-width: 1024px) {
+      grid-template-columns: repeat(auto-fill, minmax(38rem, 1fr));
+    }
+   
 
     .middleInfoContainer {
       @extend %containerProps;
@@ -93,7 +102,10 @@
       @media screen and (max-width: 1024px) {
         grid-auto-flow: unset;
         grid-template-columns: unset;
-        grid-area: 4 / 1 / 4 / 4;
+        grid-area: 5 / span 2 / 5 / span 4;
+      }
+      @media screen and (max-width: 624px) {
+        grid-area: 5 / 1 / 5 / 1
       }
       &__content {
         &--title {
@@ -120,12 +132,16 @@
       }
     }
     .bottomInfoContainer {
+      align-items: center;
       @extend %containerProps;
-      grid-area: 7 / 1 / 7 / 4;
+      grid-area: 7 / 1 /7 / 4;
       @media screen and (max-width: 1024px) {
         grid-auto-flow: unset;
         grid-template-columns: unset;
-        grid-area: 7 / auto / 4 / auto;
+        grid-area: 9 / span 2 / 9 / span 4;
+      }
+      @media screen and (max-width: 624px) {
+        grid-area: 9 / 1 / 9 / 1
       }
       &__content {
         &--title {
@@ -143,7 +159,7 @@
         }
       }
       &__image {
-        min-height: 629px;
+        // min-height: 629px;
         @media screen and (max-width: 1024px) {
           grid-row: 1;
           min-height: unset;
@@ -157,7 +173,7 @@
   display: grid;
   .pagination{
     display: grid;
-    margin:15rem;
+    margin:15rem 0 15rem 0;
     justify-content: center;
   }
   .shop__description {
