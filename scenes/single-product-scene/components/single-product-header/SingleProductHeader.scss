@@ -3,6 +3,94 @@
   grid-template-columns: 55% 45%;
   margin-top: 7.5rem;
   margin-bottom: 3rem;
+  .right-side{
+    .bot-text-right{
+      .r-first{
+        display:flex ;
+        justify-content: flex-end;
+        span{
+          &:nth-child(1){
+            margin-right: 30px;
+            letter-spacing: 1.2px;
+          }
+          &:nth-child(2){
+            margin-left: 30px;
+            letter-spacing: .8px;
+          }
+        }
+      }
+      .r-second{
+        margin-top: 4rem;
+        display:flex ;
+        justify-content: flex-end;
+        align-items: center;
+        p{
+          text-transform: uppercase;
+          font-weight: 300;
+          font-size: 2.5rem;
+          margin: 0;
+        }
+        .letter-svg{
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+      }
+      p{
+        &:nth-child(1){
+          margin: 0;
+          text-align: right;
+          font-size: 5rem;
+          letter-spacing: 1px;
+        }
+      }
+    }
+    .select-number{
+      display: grid;
+      grid-template-columns: 30% 66%;
+      gap: 2rem;
+      p{
+        text-transform: uppercase;
+        background: black;
+        color: white;
+        font-size: 3.5rem;
+        margin: 0;
+        @media screen and(max-width: 1890px) {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+  .ant-input-number-lg{
+    height: 55px;
+    width: 70%;
+    .ant-input-number-input-wrap{
+      height: 100%;
+      input{
+        height: 100%;
+        font-size: 2.2rem;
+      }
+    }
+  }
+  .ant-input-number-handler-up-inner{
+    color: #5c5c5c !important;
+    &:hover{
+      color: #5c5c5c !important;
+    }
+  }
+  .ant-input-number-handler-down-inner{
+    color: #5c5c5c !important;
+    &:hover{
+      color: #5c5c5c !important;
+    }
+  }
+  .ant-input-number{
+    border-color: #d9d9d9;
+    box-shadow: 0 0 0 0 !important;
+    &:hover{
+      border-color: #d9d9d9;
+    }
+  }
  .ant-select-selector{
     border-color:  #d9d9d9 !important;
    box-shadow: 0 0 0 0 !important;
