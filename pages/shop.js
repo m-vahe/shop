@@ -8,7 +8,7 @@ export default function Shop() {
       <PageHeader />
       <MobilePageHeader />
       <ShopScene />
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }

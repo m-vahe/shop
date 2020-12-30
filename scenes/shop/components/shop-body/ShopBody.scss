@@ -124,7 +124,6 @@
       }
       &__image {
         grid-column: 1;
-        // min-height: 629px;
         @media screen and (max-width: 1024px) {
           grid-row: 1;
           min-height: unset;
@@ -159,7 +158,6 @@
         }
       }
       &__image {
-        // min-height: 629px;
         @media screen and (max-width: 1024px) {
           grid-row: 1;
           min-height: unset;

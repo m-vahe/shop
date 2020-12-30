@@ -3,6 +3,9 @@
   grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
   gap: 13rem;
   margin: 10rem;
+  @media screen and (max-width: 475px) {
+    margin: 3rem;
+  }
   .video-small-body-only{
     position: relative;
     display: grid;

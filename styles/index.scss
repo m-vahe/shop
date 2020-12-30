@@ -28,6 +28,7 @@
 @import '../scenes/shop/components/shop-body/shop-body-footer/ShopBodyFooter';
 @import "../scenes/homepage/components/mobile/MobileChanged";
 @import "scenes/single-product-scene/index";
+@import "../scenes/shop/components/shop-body/mobile-filter/mobileFilter.scss";
 @font-face {
   src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
   src: local('Freight Sans Pro'), local('FreightSansPro'),

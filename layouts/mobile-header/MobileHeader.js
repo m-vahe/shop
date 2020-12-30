@@ -1,16 +1,14 @@
 import { useState } from 'react';
-import {
-  MenuOutlined,
-  SearchOutlined,
-} from '@ant-design/icons';
-import {  Drawer } from 'antd';
+import { MenuOutlined, SearchOutlined } from '@ant-design/icons';
+import { Drawer,Input } from 'antd';
 import MobileCard from './MobileCard';
 import MobileMenuFooter from './MobileMenuFooter';
 import Logo from '../logo/Logo';
-import Image from 'next/image'
+import Image from 'next/image';
 
 const MobileHeader = () => {
   const [visible, setVisible] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
 
   const data = [{}];
 
@@ -22,8 +20,20 @@ const MobileHeader = () => {
     setVisible(false);
   };
 
+const openSerach =()=>{
+  setShowSearch(!showSearch)
+}
+
+  const prefix = (
+    <SearchOutlined
+      style={{
+        fontSize: 26,
+        color: '#7b7b7b',
+      }}
+    />
+  );
+
   return (
-    <>
       <div className='mobileHeader'>
         <div className='mobileHeader__container'>
           <div className='mobileHeader__container__icon--menu'>
@@ -31,9 +41,16 @@ const MobileHeader = () => {
           </div>
           <Logo />
           <div className='mobileHeader__container__image--cart'>
-          <SearchOutlined />
-            <Image src='/bag.svg' width={30} height={30}/>
+            <SearchOutlined onClick={openSerach} />
+            <Image src='/bag.svg' width={30} height={30} />
           </div>
+          </div>
+          <div className={showSearch ? 'mobileHeader__search__container' : 'hide'}>
+            <Input
+              placeholder='suche'
+              className='mobileHeader__search__container--input'
+              prefix={prefix}
+            />
         </div>
         <Drawer
           title={<Logo />}
@@ -54,7 +71,6 @@ const MobileHeader = () => {
           <MobileMenuFooter />
         </Drawer>
       </div>
-    </>
   );
 };
 

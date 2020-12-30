@@ -1,8 +1,24 @@
+import { Drawer } from 'antd';
+import { useState } from 'react';
+import Dashboard from '../dashboard/Dashboard'
+
 const MobileFilter = () => {
+  const [visible, setVisible] = useState(false);
+
+  const data = [{}];
+
+  const showDrawer = () => {
+    setVisible(true);
+  };
+
+  const onClose = () => {
+    setVisible(false);
+  };
   return (
     <div>
+      <button onClick={showDrawer}>FILTER</button>
       <Drawer
-        title={<Logo />}
+        title='FILTER'
         className='mobileHeader__drawer__container'
         placement='left'
         closable={true}
@@ -13,10 +29,7 @@ const MobileFilter = () => {
         maskClosable={true}
         onBlur={onClose}
       >
-        <MobileCard title='SHOP BY' data={data} />
-        <MobileCard title='FRAUEN' data={data} />
-        <MobileCard title='HERREN' data={data} />
-        <MobileCard title='UNISEX' data={data} />
+      <Dashboard />
       </Drawer>
     </div>
   );
