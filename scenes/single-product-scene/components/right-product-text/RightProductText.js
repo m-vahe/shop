@@ -5,6 +5,7 @@ import ListedText from "./collapse-components/ListedText";
 import VideoCollapse from "./collapse-components/Video";
 import SwipeableCarousel from "./collapse-components/SwipeableCarousel";
 import TextComponent from "./text-components/TextComponent";
+import SingleProductHeaderMobile from "../single-product-header/SingleProductHeaderMobile";
 
 const RightProductText = () =>{
     const { Panel } = Collapse;
@@ -20,6 +21,7 @@ const RightProductText = () =>{
         <>
             <div className={"right-product-body-all"}>
                 <SingleProductHeader/>
+                <SingleProductHeaderMobile/>
                 <div className={"right-product-collapse-body"} >
                     {dataofCollapse.map((e,i)=>{
                         return(

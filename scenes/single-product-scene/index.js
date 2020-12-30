@@ -5,6 +5,7 @@ import RightProductText from "./components/right-product-text/RightProductText";
 import SingleProductBottom from "./components/single-product-bottom/SingleProductBottom";
 import ProductsWithFilter from "../../shareable/ProductsWithFilter";
 import {useState} from "react";
+import MobileSwipeableCarousel from "./components/left-product-images/mobile-images /MobileSwipeableTop";
 
 const SingleProductScene = () =>{
     const headtext = "Männerpflege"
@@ -31,16 +32,19 @@ const SingleProductScene = () =>{
     return(
         <>
             <Header/>
-                <div className={"product__details__container"}>
-                    <div className={"product__details__container__top"}>
-                        <LeftProductImages/>
-                        <RightProductText/>
-                    </div>
-                </div>
-            <SingleProductBottom/>
-           <div className={"product-bottom-prod-w-filter"}>
-               <ProductsWithFilter headtext={headtext} products={products} setProducts={setProducts}/>
-           </div>
+              <div className={"product-single-details-body"}>
+                  <div className={"product__details__container"}>
+                      <div className={"product__details__container__top"}>
+                          <MobileSwipeableCarousel/>
+                          <LeftProductImages/>
+                          <RightProductText/>
+                      </div>
+                  </div>
+                  <SingleProductBottom/>
+                  <div className={"product-bottom-prod-w-filter"}>
+                      <ProductsWithFilter headtext={headtext} products={products} setProducts={setProducts}/>
+                  </div>
+              </div>
             <Footer/>
         </>
     )

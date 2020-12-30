@@ -1,3 +1,13 @@
+.first-prod-items{
+  .picture-body-prod{
+    .circled-txt{
+      left: 0;
+    }
+  }
+  button{
+    justify-content: center;
+  }
+}
 @import '../layouts/header/header';
 @import '../scenes/homepage/homepage';
 @import '../layouts/footer/footer';
@@ -87,7 +97,7 @@ html {
     font-size: 42.5%;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 475px) {
+@media screen  and (max-width: 475px) {
   html {
     font-size: 37.5%;
   }

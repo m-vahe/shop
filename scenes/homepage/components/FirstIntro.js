@@ -13,8 +13,8 @@ const FirstIntro = () =>{
                        </div>
                         <button>JETZT SHOPPEN</button>
                     </div>
-                    <div className={"first-intro-bod-right "} style={{backgroundImage:"url(/first1.jpg)"}}>
-
+                    <div className={"first-intro-bod-right "} >
+                        <Image src={"/first1.jpg"} width={1000} height={625} layout={"responsive"}/>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper';
-SwiperCore.use([Navigation]);
+import SwiperCore, { Navigation,  Pagination } from 'swiper';
+SwiperCore.use([Navigation,Pagination]);
 const SwipeableCarousel = () =>{
     const swiperData = [
         {image:"/item.png",text:"clean product"},
@@ -21,6 +21,7 @@ const SwipeableCarousel = () =>{
                 spaceBetween={50}
                 slidesPerView={4}
                 navigation
+                // pagination={{ clickable: true }}
             >
                 {swiperData.map((e,i)=>{
                     return(

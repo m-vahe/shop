@@ -6,6 +6,9 @@
   display: flex;
   justify-content: space-between;
   padding: 10rem 0;
+  @media screen and(max-width: 1024px){
+    flex-wrap: wrap;
+  }
   .single-product-bottom-element{
     display: grid;
     justify-content: center;
