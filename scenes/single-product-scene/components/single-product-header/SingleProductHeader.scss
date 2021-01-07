@@ -355,6 +355,11 @@
       height: 14rem !important;
     }
   }
+  @media screen and(max-width: 400px){
+    .swiper-images-body{
+      height: 10rem !important;
+    }
+  }
   .swiper-element-main{
 
       p{

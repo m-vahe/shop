@@ -5,7 +5,7 @@ import RightProductText from "./components/right-product-text/RightProductText";
 import SingleProductBottom from "./components/single-product-bottom/SingleProductBottom";
 import ProductsWithFilter from "../../shareable/ProductsWithFilter";
 import {useState} from "react";
-import MobileSwipeableCarousel from "./components/left-product-images/mobile-images /MobileSwipeableTop";
+import MobileSwipeableCarousel from "./components/left-product-images/mobile-images/MobileSwipeableTop";
 import MobileHeader from "../../layouts/mobile-header/MobileHeader";
 
 const SingleProductScene = () =>{
