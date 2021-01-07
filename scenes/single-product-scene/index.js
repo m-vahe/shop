@@ -6,6 +6,7 @@ import SingleProductBottom from "./components/single-product-bottom/SingleProduc
 import ProductsWithFilter from "../../shareable/ProductsWithFilter";
 import {useState} from "react";
 import MobileSwipeableCarousel from "./components/left-product-images/mobile-images /MobileSwipeableTop";
+import MobileHeader from "../../layouts/mobile-header/MobileHeader";
 
 const SingleProductScene = () =>{
     const headtext = "Männerpflege"
@@ -32,6 +33,7 @@ const SingleProductScene = () =>{
     return(
         <>
             <Header/>
+            <MobileHeader/>
               <div className={"product-single-details-body"}>
                   <div className={"product__details__container"}>
                       <div className={"product__details__container__top"}>

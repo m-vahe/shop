@@ -2,22 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/mobile-images /MobileSwipeableTop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeaderMobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/productdetailslogopink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/style_black.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/FirstIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/FirstIntro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/collapse-components/SwipeableCarousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/collapse-components/SwipeableCarousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -92,6 +91,8 @@
       <workItem from="1609133840756" duration="15424000" />
       <workItem from="1609219790720" duration="26427000" />
       <workItem from="1609306543731" duration="13048000" />
+      <workItem from="1609332399865" duration="612000" />
+      <workItem from="1609999347560" duration="5379000" />
     </task>
     <servers />
   </component>

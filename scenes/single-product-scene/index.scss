@@ -54,6 +54,17 @@
 .product__details__container{
   width: 90.5%;
   margin: 50px auto;
+  @media screen and(max-width: 1024px){
+    margin: 0 auto;
+  }
+  .swiper-mobile{
+    .swiper-images-body{
+      height: 60rem !important;
+      @media screen and(max-width: 620px){
+        height: 45rem !important;
+      }
+    }
+  }
   &__top{
     display: grid;
     grid-template-columns: 35% 65%;
