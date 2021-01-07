@@ -16,7 +16,7 @@ const MobileFilter = () => {
   };
   return (
     <div>
-      <button onClick={showDrawer}>FILTER</button>
+      {/*<button onClick={showDrawer}>FILTER</button>*/}
       <Drawer
         title='FILTER'
         className='mobileHeader__drawer__container'

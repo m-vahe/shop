@@ -1,3 +1,4 @@
+import Image from "next/image";
 const FirstIntroMobile = () =>{
     return(
         <>
@@ -7,7 +8,9 @@ const FirstIntroMobile = () =>{
                     <h2 className={"big-text"}>Machen Sie</h2>
                     <h2 className={"big-text1"}> Den Typen-Test</h2>
                 </div>
-                <div className={"image-body"} style={{backgroundImage:"url(/first1.jpg)"}}></div>
+                <div className={"image-body"} >
+                    <Image src="/first1.jpg" width={941} height={625} layout="responsive" />
+                </div>
                 <div className={"button-body"}>
                     <button>
                         JETZT SHOPPEN

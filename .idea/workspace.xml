@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/productdetailslogopink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/style_black.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/firstIntro/FirstIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/firstIntro/FirstIntro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/ShopBody.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/ShopBody.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/dashboard/dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/dashboard/dashboard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/mobile-filter/MobileFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/mobile-filter/MobileFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +93,7 @@
       <workItem from="1609219790720" duration="26427000" />
       <workItem from="1609306543731" duration="13048000" />
       <workItem from="1609332399865" duration="612000" />
-      <workItem from="1609999347560" duration="5379000" />
+      <workItem from="1609999347560" duration="6340000" />
     </task>
     <servers />
   </component>

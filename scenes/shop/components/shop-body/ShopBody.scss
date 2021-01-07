@@ -73,6 +73,7 @@
   &__content {
     display: grid;
     grid-auto-flow: column;
+    gap: 5rem;
     grid-template-columns: auto 1fr;
     margin: 5rem 10rem 0 0;
     @media screen and(max-width: 1024px) {

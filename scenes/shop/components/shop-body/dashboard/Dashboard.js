@@ -20,7 +20,7 @@ const Dashboard = () => {
       { title: 'DUFT ANLASS' },
       { title: 'DUFTNOTEN' },
       { title: 'DUFTRICHTUNG' },
-      { title: '(SONNENSCHUTZ)' },
+      { title: 'SONNENSCHUTZ' },
     ],
     category: [
       {

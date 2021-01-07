@@ -6,6 +6,7 @@
   .ant-collapse {
     .ant-collapse-item-active {
       .ant-collapse-header {
+        padd
         .anticon {
           svg {
             transform: rotate(180deg) !important;
@@ -17,8 +18,11 @@
       .ant-collapse-header {
         font-size: 2.9rem;
         color: #3e3e3e;
+        border-bottom: 1px solid #949494;
+        padding: 1.2rem 4rem 1.2rem 0;
         .anticon {
           font-size: 3rem;
+          right: 0;
           transform: rotate(90deg);
         }
       }
