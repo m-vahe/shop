@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const DpabMagazine = () =>{
     return(
         <>
@@ -5,7 +7,9 @@ const DpabMagazine = () =>{
                 <div className={"dpab-magazin-body"}>
                     <h2 className={"dpab-magazin-title"}>DPAB MAGAZIN</h2>
                     <div className={"dpab-top-section"}>
-                        <div style={{backgroundImage:"url(/dpab1.png)"}} className={"dpab-top-section-img"} ></div>
+                        <div className={"dpab-top-section-img"} >
+                        <Image src='/dpab1.png' width={1720} height={695} layout='responsive'/>
+                        </div>
                         <div className={"dpab-top-section-txt"}>
                             <h2>Home sweet home</h2>
                             <p>Gemütliches Ambiente für Zuhause </p>
@@ -20,7 +24,9 @@ const DpabMagazine = () =>{
                     <div className={"dpab-bottom-section d-flex flex-wrap"}>
                         <div className={"col-lg-6 dpab-bottom-section-left d-flex"}>
                             <div className={"dpab-bottom-section-left-img-bod"}>
-                                <div className={"dpab-bottom-section-left-img"} style={{backgroundImage:"url(/dpab2.png)"}}></div>
+                                <div className={"dpab-bottom-section-left-img"}>
+                                    <Image  src='/dpab2.png' width={837} height={635} layout='responsive'/>
+                                </div>
                             </div>
                             <div className={"dpab-bottom-section-left-txt"}>
                                 <h2>SANA JARDIN</h2>
@@ -40,7 +46,9 @@ const DpabMagazine = () =>{
                                 Zur Vorstellung einer unserer Duftkollektionen stellen wir, von Das Parfum & Beauty Ihnen seine berühmte Namensgeberin vor – Diana Vreeland.
                                 Dianas hedonistische Mutter machte ihrer Tochter relativ früh einprägsam bewusst, dass sie hässlich sei.
                             </span>
-                                <div style={{backgroundImage:"url(/dpab3.png)"}} className={"dpab-bottom-section-right-img"}></div>
+                                <div className={"dpab-bottom-section-right-img"}>
+                                <Image  src='/dpab3.png' width={760} height={627} layout='responsive'/>
+                                </div>
                                 <a href="#">Mehr lesen</a>
                             </div>
                         </div>

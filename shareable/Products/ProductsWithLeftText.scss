@@ -188,8 +188,7 @@
   .firstprod-left-text{
     display: flex;
     flex-direction: column;
-    grid-gap: 10px;
-    gap: 45px;
+    gap: 0.5rem;
     p{
       color: #5c5c5c;
       font-size: 2.2rem;
@@ -200,7 +199,6 @@
       font-style: normal;
       text-transform: uppercase;
       margin: 0;
-      margin-bottom: 22px;
     }
     h2{
       color: #3e3e3e;
@@ -214,12 +212,11 @@
       text-align: left;
       /* Text style for "Exklusive" */
       font-style: normal;
-      margin-top: 0px;
+      margin: 0px;
       text-transform: uppercase;
       line-height: 55px;
     }
     span{
-      margin-top: 57px;
       display: inline-block;
       color: #2e2e2e;
       font-size: 22px;
@@ -229,6 +226,7 @@
       line-height: 35px;
       width: 82%;
       text-align: left;
+      margin-top: 5rem;
     }
     button{
       border: none;
@@ -243,7 +241,7 @@
       text-align: center;
       font-style: normal;
       text-transform: uppercase;
-      margin-top: 17px;
+      margin-top: 4rem;
       padding: 13px 15px;
       @media screen and(max-width: 1810px){
           font-size: 2.4rem;

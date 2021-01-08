@@ -1,8 +1,8 @@
 import FirstAddSection from "../../../shareable/FirstAddSection";
 
 const SecondSection = () =>{
-    const image1="/aaa.png"
-    const image2="/anzeige-final.png"
+    const image1="/aaa.jpg"
+    const image2="/anzeige-final.jpg"
 
     return(
         <>

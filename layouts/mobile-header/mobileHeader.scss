@@ -1,6 +1,9 @@
 .mobileHeader {
+  display: none;
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
   .mobileHeader__container {
-    display: none;
     @media screen and (max-width: 1024px) {
       display: grid;
       grid-auto-flow: column;

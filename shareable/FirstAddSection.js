@@ -1,10 +1,14 @@
+import Image from 'next/image'
+
 const FirstAddSection = ({background,image1,image2,textcolor,padding}) =>{
     return(
         <>
             <div className={"second-section-home "} style={{backgroundColor:background,paddingTop:padding,paddingBottom:padding}}>
                 <div className={"sec-sect-all d-flex flex-wrap"}>
                     <div className={"sec-sec-el col-lg-6"}>
-                        <div style={{backgroundImage:`url(${image1})`}} className={"sec-sec-img"}></div>
+                        <div>
+                            <Image src={image1} layout='responsive' width={840} height={630}/>
+                        </div>
                         <div className={"sec-sec-el-text"}>
                             <p style={{color:textcolor}}>
                                 Gemütliches ambiente für ihr Zuhause
@@ -20,7 +24,9 @@ const FirstAddSection = ({background,image1,image2,textcolor,padding}) =>{
                         </div>
                     </div>
                     <div className={"sec-sec-el col-lg-6"}>
-                        <div style={{backgroundImage:`url(${image2})`}} className={"sec-sec-img"}></div>
+                        <div>
+                        <Image src={image2} layout='responsive' width={840} height={630}/>
+                        </div>
                         <div className={"sec-sec-el-text"}>
                             <p style={{color:textcolor}}>
                                 Mit dieser Kollektion bleibt der Sommer länger

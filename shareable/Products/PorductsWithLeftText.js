@@ -34,9 +34,9 @@ const ProductsWithLeftText = (
     }
     return(
         <>
-            <div className={"first-products-body "}>
-                <div className={"firstprod-left-text"}>
-                    <div>
+            <div className="first-products-body ">
+                <div className="firstprod-left-text">
+                    <div className="firstprod-left-text">
                         <p>Beauty: Gesichtspflege</p>
                         <h2>
                             Exklusive
