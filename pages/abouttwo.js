@@ -1,13 +1,13 @@
 import PageHeader from "../layouts/header/Header";
 import Footer from "../layouts/footer/Footer";
-import HerrenScene from "../scenes/herren";
 import MobileHeader from "../layouts/mobile-header/MobileHeader";
-export default function Herren() {
+import AboutTwoScene from "../scenes/abouttwo";
+export default function AboutTwo() {
     return (
         <>
             <PageHeader />
             <MobileHeader/>
-                <HerrenScene/>
+                <AboutTwoScene/>
             <Footer/>
         </>
     );

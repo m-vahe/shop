@@ -10,6 +10,9 @@
     flex-wrap: wrap;
   }
   .single-product-bottom-element{
+    @media screen and(max-width: 1024px) {
+        margin: 7rem auto;
+    }
     display: grid;
     justify-content: center;
     align-items: center;

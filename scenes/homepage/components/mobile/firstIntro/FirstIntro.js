@@ -1,22 +1,13 @@
 import Image from "next/image";
+import FirstShareableIntro from "../../../../../shareable/firstIntro/FirstShareableIntro";
 const FirstIntroMobile = () =>{
+    const smalltxt = "Entdecken Sie perfekte Pflege und Düfte für Ihren Stil"
+    const bigtext1 = "Machen Sie"
+    const bigtext2 = "Den Typen-Test"
+    const btntext = "JETZT SHOPPEN"
     return(
         <>
-            <div className={"mobile__firstintro__body"}>
-                <div className={"text-body"}>
-                    <p className={"small-text"}>Entdecken Sie perfekte Pflege und Düfte für Ihren Stil</p>
-                    <h2 className={"big-text"}>Machen Sie</h2>
-                    <h2 className={"big-text1"}> Den Typen-Test</h2>
-                </div>
-                <div className={"image-body"} >
-                    <Image src="/first1.jpg" width={941} height={625} layout="responsive" />
-                </div>
-                <div className={"button-body"}>
-                    <button>
-                        JETZT SHOPPEN
-                    </button>
-                </div>
-            </div>
+            <FirstShareableIntro smalltxt = {smalltxt} bigtext1={bigtext1} bigtext2 = {bigtext2} btntext={btntext}/>
         </>
     )
 }

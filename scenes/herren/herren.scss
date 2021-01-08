@@ -1,3 +1,4 @@
+@import "./components/mobilecomponents/FirstComponent";
 .harren-main-body{
   display: grid;
   gap: 132px;
@@ -9,6 +10,9 @@
   grid-auto-flow: column;
   grid-template-columns: 50%;
   margin-top: 50px;
+  @media screen and(max-width: 1024px) {
+      display: none;
+  }
     .herren-head-left{
       display: flex;
       justify-content: flex-end;

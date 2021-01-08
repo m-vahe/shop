@@ -5,7 +5,9 @@ const SingleProductBottom = () =>{
         <>
             <div className={"single-product-bottom"}>
                 <div className={"single-product-bottom-element"}>
-                    <img style={{justifySelf:"center"}} src={"/style_black.png"} />
+                    <div style={{justifySelf:"center"}}>
+                        <img style={{justifySelf:"center",marginBottom:"5rem"}} src={"/style_black.png"} />
+                    </div>
 
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum, eveniet maxime pariatur placeat sunt.
@@ -13,14 +15,18 @@ const SingleProductBottom = () =>{
                     <a href="#">Magazin Artikel Link</a>
                 </div>
                 <div className={"single-product-bottom-element"}>
-                    <img style={{justifySelf:"center"}} src={"/productdetailslogopink.png"} />
+                    <div style={{justifySelf:"center"}}>
+                        <img style={{justifySelf:"center",marginBottom:"5rem"}} src={"/productdetailslogopink.png"} />
+                    </div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum, eveniet maxime pariatur placeat sunt.
                     </p>
                     <a href="#">Magazin Artikel Link</a>
                 </div>
                 <div className={"single-product-bottom-element"}>
-                    <img style={{justifySelf:"center"}} src={"/style_black.png"} />
+                    <div style={{justifySelf:"center"}}>
+                        <img style={{justifySelf:"center",marginBottom:"5rem"}} src={"/style_black.png"} />
+                    </div>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum, eveniet maxime pariatur placeat sunt.
                     </p>

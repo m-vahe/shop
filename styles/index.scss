@@ -39,6 +39,8 @@
 @import "../scenes/homepage/components/mobile/MobileChanged";
 @import "scenes/single-product-scene/index";
 @import "../scenes/shop/components/shop-body/mobile-filter/mobileFilter.scss";
+@import "scenes/abouttwo/index";
+@import "shareable/abouttwoproducts/AboutTwoProducts";
 @font-face {
   src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
   src: local('Freight Sans Pro'), local('FreightSansPro'),

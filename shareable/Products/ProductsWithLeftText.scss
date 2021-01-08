@@ -91,10 +91,10 @@
         background-color: #000000;
         transition: .5s;
         cursor: pointer;
-       p{
-         transition: .5s;
-         color: #ffffff;
-       }
+        p{
+          transition: .5s;
+          color: #ffffff;
+        }
         .letter-svg{
           transition: .5s;
           stroke: white !important;
@@ -179,7 +179,7 @@
       letter-spacing: 1.4px;
       line-height: 35px;
       text-align: center;
-      /* Text style for "28,00 €" */
+      /* Text style for "28,00 " */
       font-style: normal;
 
     }
@@ -244,8 +244,8 @@
       margin-top: 4rem;
       padding: 13px 15px;
       @media screen and(max-width: 1810px){
-          font-size: 2.4rem;
-          width: fit-content;
+        font-size: 2.4rem;
+        width: fit-content;
       }
     }
   }

@@ -9,6 +9,7 @@ import ProductsWithFilterHarrenTwo from "./components/ProductsWithFilterHarrenTw
 import SecondFilteredProdBottom from "./components/SecondFilteredProdBottom";
 import Services from "./components/Services";
 import Newsletter from "./components/Newsletter";
+import FirstComponent from "./components/mobilecomponents/FirstComponent";
 
 const HerrenScene = () =>{
 
@@ -16,6 +17,7 @@ const HerrenScene = () =>{
         <>
             <div className={"harren-main-body"}>
                 <HerrenHead/>
+                <FirstComponent/>
                 <FirstProducts/>
                 <SecondSection/>
                 <ProductsWithFilterHarren/>

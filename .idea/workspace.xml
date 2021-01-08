@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/abouttwo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/about/autograpliljana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/about/liljana.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/abouttwo/components/headtext/HeadText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/abouttwo/components/headtext/HeadText.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/abouttwo/components/secondSection/SecondSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/abouttwo/components/secondSection/SecondSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/abouttwo/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/abouttwo/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareable/abouttwoproducts/AboutTwoProducts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareable/abouttwoproducts/AboutTwoProducts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareable/firstIntro/FirstShareableIntro.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/herren.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/herren.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/herren.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/herren.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/firstIntro/FirstIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/firstIntro/FirstIntro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -35,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/about" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -44,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/about" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/paymentlogos" />
     </key>
@@ -88,7 +111,8 @@
       <workItem from="1609219790720" duration="26427000" />
       <workItem from="1609306543731" duration="13048000" />
       <workItem from="1609332399865" duration="612000" />
-      <workItem from="1609999347560" duration="10643000" />
+      <workItem from="1609999347560" duration="14452000" />
+      <workItem from="1610083685789" duration="17465000" />
     </task>
     <servers />
   </component>
