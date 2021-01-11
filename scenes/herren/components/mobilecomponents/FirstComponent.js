@@ -7,7 +7,7 @@ const FirstHerrenComponent = () =>{
     const btntext = "JETZT SHOPPEN"
     const color = "white"
     const bg="black"
-    const padding="10px 0 27px 0"
+    const padding="paddmobher"
 
     return(
         <>

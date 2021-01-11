@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/aboutthree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/components/headtext/HeadText.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/components/headtext/HeadText.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/components/secondsection/SecondSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/components/secondsection/SecondSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/abouttwo/components/thirdsection/ThirdSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/abouttwo/components/thirdsection/ThirdSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareable/abouttwoproducts/products/Products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareable/abouttwoproducts/products/Products.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/abouttwo/components/secondSection/SecondSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/abouttwo/components/secondSection/SecondSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/abouttwo/components/secondSection/SecondSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/abouttwo/components/secondSection/SecondSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/abouttwo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/abouttwo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/abouttwo/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/abouttwo/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/abouttwoproducts/AboutTwoProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/abouttwoproducts/AboutTwoProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/abouttwoproducts/AboutTwoProducts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/abouttwoproducts/AboutTwoProducts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/firstIntro/FirstShareableIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/firstIntro/FirstShareableIntro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +69,11 @@
       <recent name="$PROJECT_DIR$/public/paymentlogos" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scenes/aboutthree/components/secondsection" />
+      <recent name="$PROJECT_DIR$/scenes/aboutthree/components/headtext" />
       <recent name="$PROJECT_DIR$/scenes/single-product-scene" />
       <recent name="$PROJECT_DIR$/scenes/homepage/components" />
       <recent name="$PROJECT_DIR$/scenes/shop/components/shop-body" />
-      <recent name="$PROJECT_DIR$/shareable/Products" />
-      <recent name="$PROJECT_DIR$/scenes/shop/components" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -89,7 +111,8 @@
       <workItem from="1609332399865" duration="612000" />
       <workItem from="1609999347560" duration="14452000" />
       <workItem from="1610083685789" duration="17465000" />
-      <workItem from="1610115555900" duration="277000" />
+      <workItem from="1610115555900" duration="427000" />
+      <workItem from="1610342908596" duration="16737000" />
     </task>
     <servers />
   </component>

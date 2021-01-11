@@ -1,18 +1,19 @@
-.second-about-section-all{
+.third-about-section-all{
   width:90.5%;
   margin: 0 auto;
   margin-top: 10rem;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 75% 25%;
+
   @media screen and(max-width: 1024px) {
     grid-template-columns: none;
     grid-auto-flow: row;
   }
-  .second-about-section-right{
-    padding-left:12rem ;
+  .third-about-section-right{
+    padding-right:12rem ;
     text-transform: uppercase;
     @media screen and(max-width: 1024px) {
-     padding: 0;
+      padding: 0;
     }
     h2{
       font-size: 4rem;
@@ -44,13 +45,14 @@
       margin-bottom: 5.5rem;
     }
   }
-  .second-about-section-left{
+  .third-about-section-left{
     width: 100%;
     height: fit-content;
     position: sticky;
     top: 0;
     @media screen and(max-width: 1024px) {
       position: unset;
+      grid-row: 1;
     }
     .liljana-div{
       width: 100%;

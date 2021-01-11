@@ -1,21 +1,9 @@
-import AboutTwoProducts from "../../../../shareable/abouttwoproducts/AboutTwoProducts";
-
-const SecondAboutSection = () =>{
-    const products = [
-        {image:"about/abprod1.png",link:"#"},
-        {image:"about/abprod2.png",link:"#"},
-        {image:"about/abprod3.png",link:"#"},
-    ]
+const SecondAboutSectionThree = () =>{
     return(
         <>
-            <div className="second-about-section-all">
+            <div className="second-about-section-all-three">
                 <div className={"second-about-section-left"}>
-                    <div className={"liljana-div"} style={{backgroundImage:"url(/about/liljana.png)"}}></div>
-
-                    <img src="/about/autograpliljana.png" alt="Liljanas autograph"/>
-                    <p>
-                        Gründerin und Geschäftsführerin von Das Parfum and Beauty
-                    </p>
+                    <div className={"liljana-div"} style={{backgroundImage:"url(/about/bearbeitet-Kopie.png)"}}></div>
                 </div>
                 <div className={"second-about-section-right"}>
                     <h2>
@@ -51,11 +39,10 @@ const SecondAboutSection = () =>{
                         Salt Scrub Peeling nehmen und anschließend die Lotion dick eincremen. Zum Erleichtern des Einschlafens
                         gebe ich gerne das Amly Spray auf mein Kissen. Schön im Schlaf.
                     </p>
-                    <AboutTwoProducts products={products}/>
                 </div>
             </div>
         </>
     )
 }
 
-export default SecondAboutSection
+export default SecondAboutSectionThree
