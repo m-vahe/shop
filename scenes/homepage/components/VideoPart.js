@@ -8,7 +8,9 @@ const VideoPart = () =>{
     return(
         <>
             {/*<h1 style={{padding:"45vh 0",textAlign:"center"}}>Videos Part in progress . . . </h1>*/}
-            <div className={"video-body"} >
+            <div className={"video-body"} 
+            style={{marginBottom:"6rem"}}
+            >
                 <ReactPlayer url='/video.webm'  muted={true}
                              width='100%'
                              height='120vh'

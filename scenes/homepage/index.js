@@ -32,8 +32,8 @@ const Homepage = () =>{
                 <VideoPart/>
                 <BottomVideo/>
                 <DpabMagazine/>
-                 <DpabBottom/>
-                 <Services/>
+                <DpabBottom/>
+                <Services/>
                 <Newsletter/>
             </div>
         </>

@@ -2,7 +2,7 @@ const InspirationBottomOneRep = ({background,color})=>{
     return(
         <>
             <div style={{backgroundColor:background}}>
-                <div className={"d-flex flex-wrap inspiration-bottom"} >
+                <div className={"d-flex flex-wrap inspiration-bottom "} >
                     <div className={"col-lg-6 inspiration-bottom-text"}>
                         <div className={"inspiration-bottom-head-txt"}>
                             <p style={{color:color}}>Damendüfte</p>

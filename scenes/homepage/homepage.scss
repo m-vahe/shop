@@ -4,6 +4,19 @@
   display: grid;
   grid-auto-flow: row;
   gap: 4rem;
+
+  .inspiration-bottom-left{
+    margin-bottom: 15rem;
+  }
+  .product__with__filter{
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    
+  }
+  .neuigkeiten{
+    margin-bottom: 15rem;
+    
+  }
 }
 .first-intro {
   margin-top: 30px;
@@ -173,6 +186,7 @@
   gap: 10px;
   .inspiration-left {
     position: relative;
+    margin-top: 11rem;
     p {
       position: absolute;
       top: -5vw;
@@ -270,6 +284,7 @@
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 50%;
+  margin-top: 10rem;
   .inspiration-bottom-text2 {
     padding: 45px 0 0 40px;
     display: flex;
@@ -1470,21 +1485,29 @@
 }
 .services-body {
   width: 90.5%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
+  margin: 20rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  @media screen and (max-width: 1250px) {
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  }
   .services-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    @media screen and (min-width: 425px)and(max-width: 1250px) {
+      width: 60%;
+    }
     svg {
       width: 90px;
       margin-bottom: 50px;
     }
     h2 {
       color: #2e2e2e;
-      font-size: 3.8rem;
+      font-size: 3.5rem;
       font-weight: 400;
       font-style: normal;
       letter-spacing: 3.5px;
@@ -1494,18 +1517,25 @@
 
       text-transform: uppercase;
       margin-bottom: 20px;
+      @media screen and (max-width: 1024px) {
+        width: 30rem;
+      }
     }
     p {
       color: #2e2e2e;
       font-family: 'Freight Sans Pro', system-ui;
       font-size: 2.5rem;
-      font-weight: 300;
       font-style: normal;
-      letter-spacing: 1.25px;
-      line-height: 35px;
       text-align: center;
-      /* Text style for "Lorem ipsu" */
+      font-weight: normal;
+      font-stretch: normal;
       font-style: normal;
+      line-height: 1.2;
+      letter-spacing: 1.05px;
+      margin-bottom: 5rem;
+      @media screen and (max-width: 1024px) {
+        width: 35rem;
+      }
     }
   }
 }

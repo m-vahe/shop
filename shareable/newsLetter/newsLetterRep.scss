@@ -7,17 +7,26 @@
     display: grid;
     justify-content: center;
     &--title {
-      font-weight: 400;
       color: #3e3e3e;
-      font-size: 6.2rem;
+      font-size: 6rem;
       text-transform: uppercase;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: 2.4px;
+      margin-top: 14rem;
     }
     &--info {
       width: 51.5rem;
-      font-size: 2.5rem;
-      font-weight: 300;
+      font-size: 2.2rem;
       font-style: normal;
       color: #3e3e3e;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.36;
+      letter-spacing: 0.55px;
     }
   }
   &__action {

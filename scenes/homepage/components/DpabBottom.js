@@ -1,7 +1,7 @@
 const DpabBottom = () =>{
    return(
        <>
-           <div className={"dpab-bottom-body d-flex"}>
+           <div className={"dpab-bottom-body d-flex"} style={{marginTop:"12rem"}}>
                <div className={"dpab-bot-txt"}>
                    <h2>
                        Das Parfum and beauty

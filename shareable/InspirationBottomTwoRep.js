@@ -2,7 +2,7 @@ const InspirationBottomTwoRep = ({background,color,padding})=>{
     return(
         <>
             <div style={{backgroundColor:background,paddingBottom:padding}}>
-                <div className={"d-flex flex-wrap inspiration-bottom"}>
+                <div className={"d-flex flex-wrap inspiration-bottom  inspiration-bottom-left"}>
 
                     <div className={"col-lg-6 inspiration-bottom-image"} style={{backgroundImage:"url(/inspirationbot2.png)"}}>
                         <div className={"inspiration-bottom-imagetxt-two"}>

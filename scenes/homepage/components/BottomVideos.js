@@ -7,7 +7,7 @@ const BottomVideo = () =>{
     const [play3,setPlay3] =useState(false)
     return(
         <>
-            <div className={"bottom-video-body d-flex flex-wrap"}>
+            <div className={"bottom-video-body d-flex flex-wrap"} style={{marginBottom:"12rem"}}>
 
                 <div className={"col-lg-4 small-vid-bod"}>
                     <div className={"video-small-body-only"}>
