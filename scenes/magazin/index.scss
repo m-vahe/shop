@@ -1,0 +1,28 @@
+@import "components/component-header-body/ComponentHeaderBody";
+@import "components/add-section/AddSection";
+
+.magazin-products-body{
+  background: black;
+  padding: 5rem 0;
+  .magazin-products-body-container{
+    width: 90.5%;
+    margin: 0 auto;
+    .magaz-prod-title{
+      margin-bottom: 5.5rem;
+      font-size: 6.5rem;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: 2.4px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+    .magazin-products-list-body{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+      gap: 4rem;
+    }
+  }
+}

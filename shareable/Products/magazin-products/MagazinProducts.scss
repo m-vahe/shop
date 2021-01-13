@@ -1,0 +1,45 @@
+.magazin__single__item__body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__image{
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+      width: 92%;
+    }
+  }
+  &__text{
+    &--nohover{
+      h3{
+        font-size: 4.3rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: 1.6px;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      p{
+        font-size: 2.5rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: 1.38px;
+        text-align: center;
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

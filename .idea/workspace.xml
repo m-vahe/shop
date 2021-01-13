@@ -2,28 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/aboutthree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/components/headtext/HeadText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/components/headtext/HeadText.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/components/secondsection/SecondSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/components/secondsection/SecondSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/aboutthree/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/abouttwo/components/thirdsection/ThirdSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/abouttwo/components/thirdsection/ThirdSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/abouttwoproducts/products/Products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/abouttwoproducts/products/Products.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/magazin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/ComponentHeaderBody.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/ComponentHeaderBody.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/ComponentHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/ComponentHeader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/mediatek-info/MediatekInfoMagazin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/products-list-top/ProductsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/abouttwo/components/secondSection/SecondSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/abouttwo/components/secondSection/SecondSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/abouttwo/components/secondSection/SecondSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/abouttwo/components/secondSection/SecondSection.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/abouttwo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/abouttwo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/abouttwo/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/abouttwo/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/abouttwoproducts/AboutTwoProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/abouttwoproducts/AboutTwoProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/abouttwoproducts/AboutTwoProducts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/abouttwoproducts/AboutTwoProducts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/firstIntro/FirstShareableIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/firstIntro/FirstShareableIntro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/component-header/ComponentHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/component-header/ComponentHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/component-header/component-info/ComponentInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/component-header/component-info/ComponentInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/component-header/component-title/ComponentTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/component-header/component-title/ComponentTitle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,11 +66,11 @@
       <recent name="$PROJECT_DIR$/public/paymentlogos" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/magazin" />
+      <recent name="$PROJECT_DIR$/scenes/magazin/components/component-header-body" />
       <recent name="$PROJECT_DIR$/scenes/aboutthree/components/secondsection" />
       <recent name="$PROJECT_DIR$/scenes/aboutthree/components/headtext" />
       <recent name="$PROJECT_DIR$/scenes/single-product-scene" />
-      <recent name="$PROJECT_DIR$/scenes/homepage/components" />
-      <recent name="$PROJECT_DIR$/scenes/shop/components/shop-body" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -112,7 +109,9 @@
       <workItem from="1609999347560" duration="14452000" />
       <workItem from="1610083685789" duration="17465000" />
       <workItem from="1610115555900" duration="427000" />
-      <workItem from="1610342908596" duration="16737000" />
+      <workItem from="1610342908596" duration="27259000" />
+      <workItem from="1610449330878" duration="9847000" />
+      <workItem from="1610515980586" duration="7686000" />
     </task>
     <servers />
   </component>
@@ -136,7 +135,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/layouts/footer/FooterNav.js</url>
-          <line>3</line>
+          <line>4</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
