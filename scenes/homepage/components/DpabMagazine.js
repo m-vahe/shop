@@ -38,8 +38,7 @@ const DpabMagazine = () =>{
                                 <a href="#">Mehr lesen</a>
                             </div>
                         </div>
-                        <div className={"dpab-bottom-section-right"} style={{paddingLeft:"25px"}} >
-                            <div className={" dpab-bottom-section-right"}>
+                        <div className={"dpab-bottom-section-right"}>
                                 <h2>DIANA VREELAND</h2>
                                 <p>Modedesignerin und Chefredakteurin Vogue</p>
                                 <span>
@@ -50,7 +49,6 @@ const DpabMagazine = () =>{
                                 <Image  src='/dpab3.png' width={760} height={627} layout='responsive'/>
                                 </div>
                                 <a href="#">Mehr lesen</a>
-                            </div>
                         </div>
                     </div>
                 </div>

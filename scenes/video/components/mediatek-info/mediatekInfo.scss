@@ -2,7 +2,7 @@
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
-  margin: 3rem 0;
+  margin: 3rem 0 5rem 0;
   gap: 5rem;
   @media screen and (max-width: 475px) {
     gap: 1rem;

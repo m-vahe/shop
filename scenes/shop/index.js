@@ -11,8 +11,7 @@ const ShopScene = () =>{
             <ShopHeader/>
             <ShopHeaderMobile/>
             <ShopBody/>
-            {/* <ShopBodyFooter/> */}
-            {/* <NewsletterRep/> */}
+            <NewsletterRep/>
         </div>
       </>
   )

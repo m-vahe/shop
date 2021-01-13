@@ -1,75 +1,78 @@
-.first-products-body{
+.first-products-body {
   width: 90.5%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 29% auto;
-  .prod-items-bod{
+  .prod-items-bod {
     justify-content: space-between;
     display: grid;
     grid-auto-flow: column;
-    margin-top:15px
+    margin-top: 15px;
   }
-  .first-prod-items{
+  .first-prod-items {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     position: relative;
-    .picture-body-prod{
+    .picture-body-prod {
       position: relative;
+      margin-bottom: 5rem;
       cursor: pointer;
-      .item-picture{
+      .item-picture {
         width: 100%;
       }
-      .circled-txt{
+      .circled-txt {
         position: absolute;
         bottom: 0%;
         left: -20px;
-
-      }
-      .item-new{
-        position: absolute;
-        bottom: 0;
-        color: #ffffff;
-        margin: 0;
-
-        font-size: 1.3rem;
-        padding: 4px 15px;
-        font-weight: 300;
-        font-style: normal;
-        letter-spacing: 2.4px;
-        text-align: center;
-        /* Text style for "New" */
-        font-style: normal;
-        left: 42%;
-        text-transform: uppercase;
-        /* Style for "Pfad 56" */
-        //width: 67px;
-        background-color: #000000
       }
     }
-    .heart-icon-item{
+    .item-new {
+      color: #ffffff;
+      margin: 0;
+      font-size: 1.3rem;
+      padding: 4px 15px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2.4px;
+      text-align: center;
+      font-style: normal;
+      text-transform: uppercase;
+      background-color: #000000;
+    }
+    .item-notNew{
+      font-size: 1.3rem;
+      padding: 4px 15px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 2.4px;
+      text-align: center;
+      font-style: normal;
+      text-transform: uppercase;
+      opacity: 0;
+    }
+    .heart-icon-item {
       position: absolute;
       top: 0vh;
-      right:0;
-      width: 30px;
-      height: 30px;
+      right: 0;
+      margin-right: -1vw;
       stroke: #7b7b7b;
       cursor: pointer;
     }
 
-
-    button{
+    button {
       margin-top: 15px;
       width: 182px;
       padding: 10px;
       border: 1px solid #707070;
       background: white;
-      transition: .5s;
+      transition: 0.5s;
       display: flex;
       align-items: center;
-      p{
+      p {
         color: #2e2e2e;
-        font-family: "Freight Sans Pro",system-ui;
+        font-family: 'Freight Sans Pro', system-ui;
         font-size: 2rem;
         font-weight: 300;
         font-style: normal;
@@ -82,28 +85,28 @@
         padding: 0;
       }
 
-      .letter-svg{
+      .letter-svg {
         stroke: #7b7b7b !important;
-        transition: .5s !important;
+        transition: 0.5s !important;
       }
-      &:hover{
+      &:hover {
         border: 1px solid #707070;
         background-color: #000000;
-        transition: .5s;
+        transition: 0.5s;
         cursor: pointer;
-        p{
-          transition: .5s;
+        p {
+          transition: 0.5s;
           color: #ffffff;
         }
-        .letter-svg{
-          transition: .5s;
+        .letter-svg {
+          transition: 0.5s;
           stroke: white !important;
         }
       }
     }
-    .prod-txt-head{
+    .prod-txt-head {
       color: #7b7b7b;
-      font-family: "Freight Sans Pro",system-ui;
+      font-family: 'Freight Sans Pro', system-ui;
       font-size: 2rem;
       font-weight: 300;
       font-style: normal;
@@ -115,10 +118,10 @@
       margin-top: 20px;
       text-transform: uppercase;
     }
-    .prod-txt-head2{
+    .prod-txt-head2 {
       margin: 10px auto;
       color: #7b7b7b;
-      font-family: "Freight Sans Pro",system-ui;
+      font-family: 'Freight Sans Pro', system-ui;
       font-size: 1.7rem;
       font-weight: 500;
       font-style: normal;
@@ -130,10 +133,10 @@
 
       text-transform: uppercase;
     }
-    .prod-txt-name{
-      margin-top: 25px;
+    .prod-txt-name {
+      margin-top: 1.5rem;
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",system-ui;
+      font-family: 'Freight Sans Pro', system-ui;
       margin-bottom: 0;
       font-size: 3.6rem;
       font-weight: 300;
@@ -144,10 +147,9 @@
       font-style: normal;
       text-transform: uppercase;
     }
-    .prod-txt-foot{
-      margin-top: 5px;
+    .prod-txt-foot {
       color: #2e2e2e;
-      font-family: "Freight Sans Pro",system-ui;
+      font-family: 'Freight Sans Pro', system-ui;
       font-size: 2.5rem;
       font-weight: 300;
       font-style: normal;
@@ -156,11 +158,10 @@
       text-align: center;
       /* Text style for "Energy Kap" */
       font-style: normal;
-
     }
-    .prod-txt-foot2{
+    .prod-txt-foot2 {
       color: #7b7b7b;
-      font-family: "Freight Sans Pro",system-ui;
+      font-family: 'Freight Sans Pro', system-ui;
       font-size: 2rem;
       font-weight: 300;
       font-style: normal;
@@ -171,7 +172,7 @@
       text-decoration: underline;
       text-transform: uppercase;
     }
-    .prod-txt-price{
+    .prod-txt-price {
       color: #2e2e2e;
       font-size: 2.8rem;
       font-weight: 600;
@@ -181,15 +182,13 @@
       text-align: center;
       /* Text style for "28,00 " */
       font-style: normal;
-
     }
-
   }
-  .firstprod-left-text{
+  .firstprod-left-text {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    p{
+    p {
       color: #5c5c5c;
       font-size: 2.2rem;
       font-weight: 300;
@@ -200,9 +199,9 @@
       text-transform: uppercase;
       margin: 0;
     }
-    h2{
+    h2 {
       color: #3e3e3e;
-      font-family: "Freight Sans Pro",system-ui;
+      font-family: 'Freight Sans Pro', system-ui;
       font-size: 6rem;
       font-weight: 400;
       font-style: normal;
@@ -216,7 +215,7 @@
       text-transform: uppercase;
       line-height: 55px;
     }
-    span{
+    span {
       display: inline-block;
       color: #2e2e2e;
       font-size: 22px;
@@ -228,13 +227,13 @@
       text-align: left;
       margin-top: 5rem;
     }
-    button{
+    button {
       border: none;
       width: 58.5%;
       min-height: 50px;
       background-color: #080808;
       color: #ffffff;
-      font-family: "Freight Sans Pro",system-ui;
+      font-family: 'Freight Sans Pro', system-ui;
       font-size: 2.6rem;
       font-weight: 400;
       letter-spacing: 5px;
@@ -243,11 +242,11 @@
       text-transform: uppercase;
       margin-top: 4rem;
       padding: 13px 15px;
-      @media screen and(max-width: 1810px){
+      @media screen and(max-width: 1810px) {
         font-size: 2.4rem;
         width: fit-content;
       }
     }
   }
 }
-@import "ProductsWithLeftMoblie";
+@import 'ProductsWithLeftMoblie';
