@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/magazin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/ComponentHeaderBody.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/ComponentHeaderBody.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/ComponentHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/ComponentHeader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottom.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/mediatek-info/MediatekInfoMagazin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/products-list-top/ProductsList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/magazin/magaz2sect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/magazin-second-section/MagazinSecondSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/magazin-second-section/MagazinSecondSection.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/component-header/ComponentHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/component-header/ComponentHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/component-header/component-info/ComponentInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/component-header/component-info/ComponentInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/component-header/component-title/ComponentTitle.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/component-header/component-title/ComponentTitle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +99,7 @@
       <workItem from="1610115555900" duration="427000" />
       <workItem from="1610342908596" duration="27259000" />
       <workItem from="1610449330878" duration="9847000" />
-      <workItem from="1610515980586" duration="7686000" />
+      <workItem from="1610515980586" duration="22928000" />
     </task>
     <servers />
   </component>

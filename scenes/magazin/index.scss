@@ -1,9 +1,10 @@
 @import "components/component-header-body/ComponentHeaderBody";
 @import "components/add-section/AddSection";
-
+@import "components/magazin-second-section/MagazinSecondSection";
 .magazin-products-body{
   background: black;
   padding: 5rem 0;
+  margin: 11rem auto;
   .magazin-products-body-container{
     width: 90.5%;
     margin: 0 auto;
