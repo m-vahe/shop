@@ -4,6 +4,7 @@ import ProductsList from "./components/products-list-top/ProductsList";
 import MagazinSecondSection from "./components/magazin-second-section/MagazinSecondSection";
 import Social from "../../shareable/social/Social";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
+import BeautyEssentials from "./components/beauty-esentials/BeautyEsentials";
 
 const MagazinScene = () =>{
     return(
@@ -14,6 +15,7 @@ const MagazinScene = () =>{
             <MagazinSecondSection/>
             <ProductsList/>
             <AddSection/>
+            <BeautyEssentials/>
             <Social/>
             <NewsletterRep/>
         </>

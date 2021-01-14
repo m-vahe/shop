@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/magazin/magaz2sect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/magazin-second-section/MagazinSecondSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/magazin-second-section/MagazinSecondSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/beauty-esentials/BeautyEsentials.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/beauty-esentials/BeautyEsentials.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareable/beauty-magaz-essentials/BeautyEssentialItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/ComponentHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/ComponentHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottom.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/magazin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/magazin/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -99,7 +101,9 @@
       <workItem from="1610115555900" duration="427000" />
       <workItem from="1610342908596" duration="27259000" />
       <workItem from="1610449330878" duration="9847000" />
-      <workItem from="1610515980586" duration="22928000" />
+      <workItem from="1610515980586" duration="23058000" />
+      <workItem from="1610623235010" duration="10152000" />
+      <workItem from="1610635625676" duration="559000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,7 @@
 @import "components/component-header-body/ComponentHeaderBody";
 @import "components/add-section/AddSection";
 @import "components/magazin-second-section/MagazinSecondSection";
+@import "components/beauty-esentials/BeautyEsentials";
 .magazin-products-body{
   background: black;
   padding: 5rem 0;
@@ -9,6 +10,9 @@
     width: 90.5%;
     margin: 0 auto;
     .magaz-prod-title{
+      @media screen and(max-width: 600px) {
+        font-size: 4.5rem;
+      }
       margin-bottom: 5.5rem;
       font-size: 6.5rem;
       font-weight: normal;
@@ -21,6 +25,9 @@
       text-transform: uppercase;
     }
     .magazin-products-list-body{
+      @media screen and(max-width: 1024px){
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+      }
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
       gap: 4rem;

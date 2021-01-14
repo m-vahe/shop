@@ -5,13 +5,36 @@
     margin-bottom: 3rem;
   }
   &__buttons{
+    @media screen and(max-width: 1024px){
+      width: 65%;
+    }
+    @media screen and(max-width: 690px){
+      width: 80%;
+      grid-auto-flow: unset;
+      grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
+    }
+    @media screen and(max-width: 590px){
+      width: 80%;
+      grid-auto-flow: unset;
+      grid-template-columns: repeat(auto-fit,minmax(23rem,1fr));
+    }
     width: 50%;
     margin: 0 auto;
     display: grid;
     grid-auto-flow: column;
     gap: 2rem;
     justify-items: center;
+
     button{
+      @media screen and(max-width: 1024px){
+        font-size: 1.8rem;
+      }
+      @media screen and(max-width: 690px){
+        width: 80%;
+      }
+      @media screen and(max-width: 590px){
+        width: 80%;
+      }
       width: fit-content;
       background-color: #ffffff;
       border: none;
@@ -25,6 +48,7 @@
       text-align: center;
       color: #000000;
       padding: 6px 12px;
+
     }
   }
 }
