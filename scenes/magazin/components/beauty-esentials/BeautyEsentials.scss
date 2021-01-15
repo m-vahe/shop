@@ -20,6 +20,9 @@
       color: #ffffff;
       position: absolute;
       top: -4vw;
+      @media screen and(max-width: 528px) {
+        top:-8vw
+      }
     }
   }
   &__items{
@@ -51,6 +54,7 @@
            letter-spacing: 1.38px;
            text-align: left;
            color: #ffffff;
+           margin-top: 1rem;
          }
           .title{
             font-size: 6.5rem;
