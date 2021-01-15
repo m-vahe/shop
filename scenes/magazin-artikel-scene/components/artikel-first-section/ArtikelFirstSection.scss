@@ -1,0 +1,27 @@
+.artikel__first__container{
+  width: 90.5%;
+  margin: 10rem auto;
+  &--text1{
+    font-size: 4rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 1.4px;
+    text-align: left;
+    color: #3e3e3e;
+    width: 70%;
+    text-transform: uppercase;
+  }
+  &--text2{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #5c5c5c;
+  }
+}

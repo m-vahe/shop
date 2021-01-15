@@ -2,19 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/magazinartikelone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/artikel-first-section/ArtikelFirstSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/artikel-first-section/ArtikelFirstSection.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/component-header/MagazinArtikelHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/component-header/MagazinArtikelHeader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/component-header/head/MagazinArtikelComponentHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/component-header/mediatek-info/MediatekInfoMagazin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/artikel-centered-text/ArtikelCenteredTextSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/artikel-centered-text/ArtikelCenteredTextSection.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/artikel-first-sec-bottom/ArtikelFirstSecBottom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/artikel-first-sec-bottom/ArtikelFirstSecBottom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/component-header/text-part/TextPart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/component-header/text-part/TextPart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/magazine-sticky-text-part/MagazSticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/magazine-sticky-text-part/MagazSticky.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer/FooterPayment.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/FooterPayment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/artikel-first-section/ArtikelFirstSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/artikel-first-section/ArtikelFirstSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/artikel-first-section/ArtikelFirstSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/artikel-first-section/ArtikelFirstSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/component-header/MagazinArtikelHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/component-header/MagazinArtikelHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/component-header/MagazinArtikelHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/component-header/MagazinArtikelHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/beauty-esentials/BeautyEsentials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/beauty-esentials/BeautyEsentials.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/ComponentHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/ComponentHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottom.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,11 +67,11 @@
       <recent name="$PROJECT_DIR$/public/paymentlogos" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scenes/magazin-artikel-scene/components" />
       <recent name="$PROJECT_DIR$/public/magazin" />
       <recent name="$PROJECT_DIR$/scenes/magazin/components/component-header-body" />
       <recent name="$PROJECT_DIR$/scenes/aboutthree/components/secondsection" />
       <recent name="$PROJECT_DIR$/scenes/aboutthree/components/headtext" />
-      <recent name="$PROJECT_DIR$/scenes/single-product-scene" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -109,7 +115,8 @@
       <workItem from="1610515980586" duration="23058000" />
       <workItem from="1610623235010" duration="10152000" />
       <workItem from="1610635625676" duration="675000" />
-      <workItem from="1610690680397" duration="4596000" />
+      <workItem from="1610690680397" duration="5562000" />
+      <workItem from="1610697530014" duration="11817000" />
     </task>
     <servers />
   </component>

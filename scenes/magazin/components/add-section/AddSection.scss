@@ -30,6 +30,11 @@
       grid-template-columns: 45% 55%;
       margin: 0 !important;
     }
+    @media screen and(max-width: 400px) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin: 0 !important;
+    }
       &--img{
       min-height: 32.8vw;
       background-size: cover;
@@ -54,6 +59,9 @@
         }
         @media screen and(max-width: 890px) {
           font-size: 3.5rem;
+        }
+        @media screen and(max-width: 520px) {
+          font-size: 3rem;
         }
         @media screen and(max-width: 410px) {
           font-size: 2.3rem;
@@ -93,8 +101,11 @@
         @media screen and(max-width: 890px) {
           font-size: 5rem;
         }
+        @media screen and(max-width: 520px) {
+          font-size: 4.5rem;
+        }
         @media screen and(max-width: 410px) {
-          font-size: 4rem;
+          font-size: 3.5rem;
         }
       }
       span{
@@ -111,6 +122,9 @@
         }
         @media screen and(max-width: 890px) {
           font-size: 2.6rem;
+        }
+        @media screen and(max-width: 890px) {
+          font-size: 2.2rem;
         }
         @media screen and(max-width: 410px) {
           font-size: 1.9rem;
