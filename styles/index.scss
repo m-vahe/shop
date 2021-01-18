@@ -41,10 +41,16 @@
 @import "../scenes/shop/components/shop-body/mobile-filter/mobileFilter.scss";
 @import "scenes/abouttwo/index";
 @import "shareable/abouttwoproducts/AboutTwoProducts";
+@import "../shareable/sidebar/sidebar.scss";
 @import "scenes/aboutthree/index";
 @import "scenes/magazin/index";
 @import "shareable/Products/magazin-products/MagazinProducts";
-@import "scenes/magazin-artikel-scene/index";
+@import "shareable/sidebar/profile/profile.scss";
+@import "shareable/sidebar/main-account/mainAccount.scss";
+@import '../scenes/konto/components/konto-container/kontoContainer.scss';
+@import '../scenes/konto/konto.scss';
+@import '../scenes/konto/components/konto-container/konto-container-item/kontoContainerItem.scss';
+
 @font-face {
   src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
   src: local('Freight Sans Pro'), local('FreightSansPro'),
@@ -60,6 +66,7 @@
       url('../public/fonts/FreightSansProBlack-Italic.eot#OpenSans')
       format('svg'); /* Legacy iOS */
 }
+
 @import "../scenes/homepage/components/mobile/MobileChanged";
 * {
   padding: 0;

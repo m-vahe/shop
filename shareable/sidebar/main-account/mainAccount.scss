@@ -1,0 +1,24 @@
+%listProps {
+    font-size: 3rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+  }
+  
+  .mainAccount__container {
+      margin-top: 4rem;
+      @media screen and (max-width:1024px){
+      display: none;
+      }
+    &__list {
+      list-style-type: none;
+      &--item{
+          @extend %listProps;
+          &:first-child{
+              font-weight: bold;
+          }
+      }
+    }
+  }
+  
