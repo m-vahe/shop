@@ -42,6 +42,7 @@
     }
     &--logged {
       @extend %listProps;
+      
     }
     &--logout {
       font-size: 2rem;
@@ -50,6 +51,7 @@
       line-height: 1.75;
       letter-spacing: 1px;
       color: #797979;
+      cursor: pointer;
     }
   }
 }

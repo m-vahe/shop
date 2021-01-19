@@ -4,7 +4,9 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from 'next/link'
+import {useRouter} from 'next/router'
 const HeaderSearch = () => {
+    const router = useRouter()
     return (
         <>
             <div className={"header-mid-body"}>
@@ -41,7 +43,7 @@ const HeaderSearch = () => {
                             <button>Fr</button>
                         </div>
                         <div className={"header-icons"}>
-                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" className={"letter-svg"} style={{strokeWidth:"0",fill:"#7b7b7b"}}>
+                            <svg onClick={()=>router.push('/konto/main')} viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" className={"letter-svg"} style={{strokeWidth:"0",fill:"#7b7b7b"}}>
                                 <g data-name="Layer 2" id="Layer_2">
                                     <path d="M16,29A13,13,0,1,1,29,16,13,13,0,0,1,16,29ZM16,5A11,11,0,1,0,27,16,11,11,0,0,0,16,5Z"/>
                                     <path d="M16,17a5,5,0,1,1,5-5A5,5,0,0,1,16,17Zm0-8a3,3,0,1,0,3,3A3,3,0,0,0,16,9Z"/>

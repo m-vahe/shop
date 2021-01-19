@@ -1,6 +1,5 @@
 const userName = 'MARTA';
 const Profile = () => {
-  console.log('file: Profile.js ~ line 4 ~ Profile ~ history', history);
   return (
     <div className='profile__container'>
       <h2 className='profile__container--mobile'>mein account</h2>
