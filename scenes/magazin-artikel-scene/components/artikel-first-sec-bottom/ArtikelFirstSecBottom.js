@@ -11,6 +11,14 @@ const ArtikelFirstSecBottom = () =>{
                 <div className={"artikel__first__bottom__container__images--itemsmall"}>
                     <img src="/magazin/addsection/image2.png" alt=""/>
                 </div>
+                <div className={"artikel__first__bottom__container__images__itemsmallmobile"}>
+                    <div >
+                        <img src="/magazin/addsection/image2.png" alt=""/>
+                    </div>
+                    <div >
+                        <img src="/magazin/addsection/image2.png" alt=""/>
+                    </div>
+                </div>
             </div>
             <a href="#" className={"artikel__first__bottom__container--link"}>Fotogalerie öffnen</a>
         </div>

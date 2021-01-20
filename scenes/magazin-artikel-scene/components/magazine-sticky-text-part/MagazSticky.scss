@@ -3,7 +3,46 @@
   margin: 10rem auto;
   display: grid;
   grid-auto-flow: column;
+  @media screen and(max-width: 1024px) {
+    grid-auto-flow: row;
+  }
+  &__image2{
+    @media screen and(min-width: 1024px) {
+      display: none;
+    }
+    p{
+
+      font-size: 2.2rem;
+      font-weight: 400;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.35;
+      letter-spacing: 1.2px;
+      text-align: left;
+      color: #5c5c5c;
+      margin: 0;
+    }
+    a{
+      font-size: 2.2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-decoration: underline;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.75;
+      letter-spacing: 1px;
+      text-align: left;
+      color: #a12224;
+      &:hover{
+        color: #a12224;
+        text-decoration: underline;
+      }
+    }
+  }
   &__image{
+    @media screen and(max-width: 1024px){
+      display: none;
+    }
     p{
 
       font-size: 2.2rem;
@@ -35,6 +74,10 @@
   }
   &__text{
     padding-left: 14rem;
+    @media screen and(max-width: 1024px){
+      padding-left: 0;
+      margin-top: 5rem;
+    }
     h3{
       text-transform: uppercase;
       font-size: 4.2rem;

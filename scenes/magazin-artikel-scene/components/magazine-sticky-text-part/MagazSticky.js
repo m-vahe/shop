@@ -7,6 +7,11 @@ const MagazSticky = () =>{
                 <p>Produkte und Bildbeschreibung </p>
                 <a href="#">Produkte shoppen</a>
             </div>
+            <div className={"magaz__artikel__sticky__container__image2"}>
+                <Image src={"/magazin/magaz.jpg"} width={994} height={743}/>
+                <p>Produkte und Bildbeschreibung </p>
+                <a href="#">Produkte shoppen</a>
+            </div>
             <div className={"magaz__artikel__sticky__container__text"}>
                 <h3>
                     Headline Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod

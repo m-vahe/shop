@@ -22,6 +22,36 @@
     gap: 4rem;
     display: grid;
     grid-template-columns: 50% 25% 25%;
+
+    &__itemsmallmobile{
+      @media screen and(min-width: 1024px) {
+        display: none;
+      }
+      @media screen and(max-width: 1024px) {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 4rem;
+      }
+
+      div{
+        img{width: 100%}
+      }
+    }
+    &--itemsmall{
+      @media screen and(max-width: 1024px){
+        display: none;
+      }
+    }
+    &--itembig{
+      @media screen and(max-width: 1024px){
+        width: 70% !important;
+      }
+    }
+    @media screen and(max-width: 1024px) {
+      grid-auto-flow: row;
+      grid-template-columns: unset;
+      width: 100%;
+    }
     margin-bottom: 3rem;
     div{
 

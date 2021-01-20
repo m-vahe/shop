@@ -2,7 +2,7 @@ import {useState} from "react";
 import Link from 'next/link'
 const Navbar = () =>{
     const [navList,setNavList] = useState([
-        {name:"PARFUM",hovered:false,link:"/parfum",hover:true}, {name:"Beauty",hovered:false,link:"/beauty",hover:true},{name:"Herren",hovered:false,link:"/herren",hover:true},
+        {name:"PARFUM",hovered:false,link:"/parfum/asd",hover:true}, {name:"Beauty",hovered:false,link:"/beauty",hover:true},{name:"Herren",hovered:false,link:"/herren",hover:true},
         {name:"interieur",hovered:false,link:"/interieur",hover:true},
         {name:"lifestyle",hovered:false,link:"/lifestyle",hover:true},{name:"Beauty food",hovered:false, link:"/beautyfood",hover:true},{name:"clean Beauty",hovered:false,link:"/cleanbeauty",hover:true},
         {name:"Marken",hovered:false,link:"/marken"},{name:"typentests",hovered:false, link:"/typentests"},{name:"video",hovered:false,link:"/video"},

@@ -1,18 +1,82 @@
 .payment__section__container {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  gap: 10rem;
   border-top: 1px solid #000000;
-  padding: 2.4rem;
-  @media screen and(max-width: 1024px) {
-    grid-auto-flow: unset;
-    gap: 2rem;
-  }
-  &__content {
-    display: grid;
-    grid-auto-flow: column;
+  .footerpaymentbod{
+    display: flex;
     gap: 3rem;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+
+    @media screen and(max-width: 1440px){
+      .zahlungitem{
+        width: 28vw;
+      }
+      .mastercarditem{
+        width: 10vw;
+      }
+      .versandartenitem{
+        width: 28vw;
+      }
+      .vorkasseitem{
+        width: 16vw;
+      }
+      div{
+          width: 14vw;
+      }
+    }
+    @media screen and(max-width: 1024px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      div{
+        width: 6vw;
+      }
+      .zahlungitem{
+        width: 14vw;
+      }
+      .mastercarditem{
+        width: 5vw;
+      }
+      .vorkasseitem{
+        width: 6vw;
+      }
+      .versandartenitem{
+        width: 14vw;
+      }
+    }
+    @media screen and(max-width: 607px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      div{
+        width: 14vw;
+      }
+      .zahlungitem{
+        width: 25vw;
+      }
+      .mastercarditem{
+        width: 5vw;
+      }
+      .vorkasseitem{
+        width: 15vw;
+      }
+      .versandartenitem{
+        width: 25vw;
+      }
+    }
+  }
+
+.mastercarditem{
+  width: 7vw;
+  @media screen and(max-width: 1440px){
+    div{
+      width: 11vw;
+    }
+  }
+}
+  .dhlitem{
+    width: 10vw;
+  }
+  img{
+    width: 100%;
   }
 }
 .nav-footer-body {
