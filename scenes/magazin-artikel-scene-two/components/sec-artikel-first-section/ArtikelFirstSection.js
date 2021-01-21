@@ -1,9 +1,9 @@
 import ArtikelFirstSection from "../../../../shareable/artikel-first-section/ArtikelFirstSection";
 
-const ArtikelFirstSectionBody = () =>{
+const SecondArtikelFirstSection = () =>{
     return(
         <ArtikelFirstSection/>
     )
 }
 
-export default ArtikelFirstSectionBody
+export default SecondArtikelFirstSection

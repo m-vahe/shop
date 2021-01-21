@@ -51,7 +51,9 @@
 @import '../scenes/konto/components/konto-container/kontoContainer.scss';
 @import '../scenes/konto/konto.scss';
 @import '../scenes/konto/components/konto-container/konto-container-item/kontoContainerItem.scss';
-
+@import "scenes/magazin-artikel-scene-two/index";
+@import "shareable/artikel-first-section/ArtikelFirstSection";
+@import "shareable/Products/magazin-products/MagazWhiteProducts";
 @font-face {
   src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
   src: local('Freight Sans Pro'), local('FreightSansPro'),

@@ -1,0 +1,31 @@
+.whishlist__modal__container{
+  position: absolute;
+  left: 0;
+  top: 110%;
+  width: 100%;
+  border: 1px solid black;
+  z-index: 5;
+  padding: 5rem 2.5rem;
+  background: white;
+  &__body{
+    .social__container {
+      display: grid;
+      justify-content: flex-start;
+      margin: 0;
+      &__icons{
+        justify-content: unset;
+      }
+    }
+    p{
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.35;
+      letter-spacing: 1.38px;
+      text-align: left;
+      color: #5c5c5c;
+    }
+  }
+}
