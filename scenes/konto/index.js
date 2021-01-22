@@ -10,7 +10,6 @@ import Lesezeichen from "./components/lesezeichen/Lesezeichen";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 const Konto = () => {
   const router = useRouter()
-  console.log(router);
   return (
     <>
       <div className='konto'>

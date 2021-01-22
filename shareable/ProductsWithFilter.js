@@ -82,9 +82,9 @@ const ProductsWithFilter = ({
               <div className={' first-prod-items col-lg-3'} key={i}>
                 <div
                   className={'picture-body-prod'}
-                  onClick={() => toProductPage(e.id)}
+
                 >
-                  <img src={e.imageHead} className={'item-picture'} alt='' />
+                  <img src={e.imageHead} className={'item-picture'} alt='' onClick={() => toProductPage(e.id)} />
 
                   {e.approoved && (
                     <img

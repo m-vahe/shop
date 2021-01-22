@@ -1,10 +1,12 @@
 import Image from 'next/image';
+import {useRouter} from "next/router";
 
 const Social = ({page}) => {
+  const route = useRouter()
   return (
     <div className='social__container'>
       <div className='social__container__title'>
-        <h4 >FOLGEN SIE DPA AUF</h4>
+        <h4 >{route.query.id === "whishlist" ? "Teile deine wishlist direkt":"FOLGEN SIE DPA AUF"}</h4>
       </div>
       <div className='social__container__icons'>
         <div className='social__container__icons--icon'>

@@ -1,5 +1,6 @@
 import KontoContainerItem from './konto-container-item/KontoContainerItem'
 
+
 const KontoContainer = () => {
 
     const kontoData = [
@@ -37,7 +38,7 @@ const KontoContainer = () => {
   return (
     <div className='kontoContainer'>
       {kontoData.map((item) => (
-        <KontoContainerItem key={item.id} item={item}/>
+        <KontoContainerItem key={item.id} item={item} />
       ))}
     </div>
   )

@@ -53,8 +53,8 @@ const ProductsWithLeftText = (
                         return(
 
                             <div className={" first-prod-items col-lg-3"} key={i} >
-                                <div className={"picture-body-prod"} onClick={()=>toProductPage(e.id)}>
-                                    <img src={e.imageHead} className={"item-picture"} alt=""/>
+                                <div className={"picture-body-prod"} >
+                                    <img src={e.imageHead} className={"item-picture"} alt="" onClick={()=>toProductPage(e.id)}/>
                                     
                                     {
                                         e.approoved && <img src="/15-layers.png" alt="15 layers" className={"circled-txt"}/>

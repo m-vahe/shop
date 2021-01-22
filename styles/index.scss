@@ -54,6 +54,8 @@
 @import "scenes/magazin-artikel-scene-two/index";
 @import "shareable/artikel-first-section/ArtikelFirstSection";
 @import "shareable/Products/magazin-products/MagazWhiteProducts";
+@import "shareable/about/head-text/HeadText";
+@import "scenes/lexikon/index";
 @font-face {
   src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
   src: local('Freight Sans Pro'), local('FreightSansPro'),
@@ -76,6 +78,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Freight Sans Pro', system-ui;
+  button{
+    cursor: pointer;
+  }
 }
 
 html {

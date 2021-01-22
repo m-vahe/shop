@@ -100,7 +100,7 @@ const WhishList = () =>{
                 <button onClick={showModal}>
                     Wishlist teilen
                 </button>
-                <ModalWhishlist show={show}/>
+                <ModalWhishlist show={show} setShow={setShow}/>
             </div>
             <div className={"whishlist__container__products"}>
                 {data.map((e, i) => {

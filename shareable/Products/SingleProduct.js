@@ -25,9 +25,9 @@ const SingleProduct = ({ elem, products, setData }) => {
       <div className={' first-prod-items col-lg-3'}>
         <div
           className={'picture-body-prod'}
-          onClick={() => toProductPage(elem.id)}
+
         >
-          <img src={elem.imageHead} className={'item-picture'} alt='' />
+          <img src={elem.imageHead} className={'item-picture'} alt=''  onClick={() => toProductPage(elem.id)}/>
 
           {elem.approoved && (
             <img
