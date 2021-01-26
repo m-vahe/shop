@@ -5,20 +5,22 @@ import MagazinSecondSection from "./components/magazin-second-section/MagazinSec
 import Social from "../../shareable/social/Social";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import BeautyEssentials from "./components/beauty-esentials/BeautyEsentials";
+import MagazinSecondSectionMobile from "./components/magazin-second-section/MagazinSecondSectionMobile";
 
 const MagazinScene = () =>{
     return(
-        <>
+        <div className={"magazin__all__elements"}>
             <ComponentHeaderBody/>
             <AddSection/>
             <ProductsList/>
             <MagazinSecondSection/>
+            <MagazinSecondSectionMobile/>
             <ProductsList/>
             <AddSection/>
             <BeautyEssentials/>
             <Social/>
             <NewsletterRep/>
-        </>
+        </div>
     )
 }
 

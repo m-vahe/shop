@@ -2,37 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/lexikon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/components/collapse/LexikonCollapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/components/collapse/LexikonCollapse.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/components/collapse/components/collapse-left-image/CollapseLeftImage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/components/collapse/components/collapse-left-image/CollapseLeftImage.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/components/collapse/components/only-left-text/OnlyLeftText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/components/collapse/components/only-left-text/OnlyLeftText.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/components/head-text/HeadTextLexikon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/components/head-text/HeadTextLexikon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/components/lexikon-filter/LexikonFilter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/components/lexikon-filter/LexikonFilter.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/lexikon/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/about/head-text/HeadText.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/about/head-text/HeadText.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottomMobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottomMobile.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/magazin-second-section/MagazinSecondSectionMobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/magazin/components/magazin-second-section/MagazinSecondSectionMobile.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/abouttwo/components/headtext/HeadText.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/abouttwo/components/headtext/HeadText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/mobile-header/mobileHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/mobile-header/mobileHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/Inspiration.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/Inspiration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/herren.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/herren.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/konto-container/KontoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/konto-container/KontoContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/konto-container/konto-container-item/KontoContainerItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/konto-container/konto-container-item/KontoContainerItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/whishlist/Whishlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/whishlist/Whishlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/whishlist/components/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/whishlist/components/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/whishlist/components/Modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/whishlist/components/Modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/login/compoents/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/login/compoents/LoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/ComponentHeaderBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/ComponentHeaderBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/ComponentHeaderBody.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/ComponentHeaderBody.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/component-header-body/component-header/component-header-bottom/ComponentHeaderBottom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/magazin-second-section/MagazinSecondSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/magazin-second-section/MagazinSecondSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/magazin-second-section/MagazinSecondSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/magazin-second-section/MagazinSecondSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/ShopBody.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/ShopBody.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/dashboard/dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/dashboard/dashboard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/social/Social.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/social/Social.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftMoblie.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftMoblie.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/info-container/InfoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/info-container/InfoContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +129,9 @@
       <workItem from="1611035824608" duration="21055000" />
       <workItem from="1611122727412" duration="19759000" />
       <workItem from="1611208245500" duration="23122000" />
-      <workItem from="1611296357337" duration="17882000" />
+      <workItem from="1611296357337" duration="18671000" />
+      <workItem from="1611573018097" duration="10012000" />
+      <workItem from="1611642651905" duration="12185000" />
     </task>
     <servers />
   </component>

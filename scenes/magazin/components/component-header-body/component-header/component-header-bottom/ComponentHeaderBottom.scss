@@ -1,6 +1,9 @@
 .component__header__bottom__body{
   width: 100%;
   margin: 0 auto;
+  @media screen and(max-width: 1024px) {
+    display: none;
+  }
   &__image{
     transform: translateX(-10rem);
     @media screen and(max-width: 1024px) {

@@ -4,7 +4,7 @@ const Inspiration = () =>{
     const background = "black"
     const color = "white"
     const image = "/inspirharren.png"
-    const padding = "159px"
+    const padding = "10px"
     return(
         <InspirationSection background={background} color={color} image={image} padding={padding}/>
     )

@@ -248,44 +248,44 @@
   }
   .video-body {
     height: 350px;
-    p {
-      top: 56%;
-      left: 15vw;
-      @media screen and(max-width: 990px) {
-        font-size: 4.5rem;
-      }
-      @media screen and(max-width: 950px) {
-        font-size: 4.2rem;
-      }
-      @media screen and(max-width: 872px) {
-        font-size: 3.9rem;
-      }
-      @media screen and(max-width: 720px) {
-        left: 12vw;
-      }
-      @media screen and(max-width: 680px) {
-        left: 11%;
-      }
-      @media screen and(max-width: 666px) {
-        left: 10%;
-      }
-      @media screen and(max-width: 646px) {
-        left: 10%;
-        font-size: 4vw;
-      }
-      @media screen and(max-width: 562px) {
-        left: 9%;
-        font-size: 4vw;
-      }
-      @media screen and(max-width: 562px) {
-        left: 10%;
-        font-size: 3.8vw;
-      }
-      @media screen and(max-width: 322px) {
-        left: 7%;
-        font-size: 2rem;
-      }
-    }
+    //p {
+    //  top: 56%;
+    //  left: 15vw;
+    //  @media screen and(max-width: 990px) {
+    //    font-size: 4.5rem;
+    //  }
+    //  @media screen and(max-width: 950px) {
+    //    font-size: 4.2rem;
+    //  }
+    //  @media screen and(max-width: 872px) {
+    //    font-size: 3.9rem;
+    //  }
+    //  @media screen and(max-width: 720px) {
+    //    left: 12vw;
+    //  }
+    //  @media screen and(max-width: 680px) {
+    //    left: 11%;
+    //  }
+    //  @media screen and(max-width: 666px) {
+    //    left: 10%;
+    //  }
+    //  @media screen and(max-width: 646px) {
+    //    left: 10%;
+    //    font-size: 4vw;
+    //  }
+    //  @media screen and(max-width: 562px) {
+    //    left: 9%;
+    //    font-size: 4vw;
+    //  }
+    //  @media screen and(max-width: 562px) {
+    //    left: 10%;
+    //    font-size: 3.8vw;
+    //  }
+    //  @media screen and(max-width: 322px) {
+    //    left: 7%;
+    //    font-size: 2rem;
+    //  }
+    //}
     #videoBG {
       top: -40vh !important;
     }

@@ -1,7 +1,25 @@
 @import "./components/mobilecomponents/FirstComponent";
 .harren-main-body{
   display: grid;
-  gap: 132px;
+  gap: 85px;
+  .inspiration-bottom{
+    margin-top: 0;
+    .inspiration-bottom-text{
+      @media screen and(min-width: 1024px) and(max-width: 1228px) {
+        padding-top: 0;
+        align-self: center;
+      }
+    }
+    .inspiration-bottom-text2{
+      @media screen and(min-width: 1024px) and(max-width: 1228px) {
+        padding-top: 0;
+        align-self: center;
+      }
+    }
+  }
+  .second-section-home{
+   margin-top: 5rem;
+  }
 }
 .herren-head-body{
     width: 100%;
@@ -50,7 +68,7 @@
           font-family: "Freight Sans Pro",system-ui;
           font-size: 2.5rem;
           padding: 20px;
-          margin-top: 50px;
+          margin-top: 0px;
           font-weight: 500;
           font-style: normal;
           letter-spacing: 5px;

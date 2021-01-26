@@ -14,6 +14,9 @@
   }
   .neuigkeiten {
     margin-bottom: 15rem;
+    @media screen and (max-width: 1650px) {
+     margin-bottom: 0;
+    }
   }
 }
 .first-intro {
@@ -55,7 +58,6 @@
         letter-spacing: 5px;
         text-align: center;
         text-transform: uppercase;
-        max-height: 6vh;
         @media screen and(max-width: 1795px) {
           width: fit-content;
         }
@@ -185,6 +187,9 @@
   grid-template-columns: 75% 25%;
   gap: 10px;
   margin-top: 15rem;
+  @media screen and (max-width: 1024px){
+    margin-top: 15rem !important;
+  }
   .inspiration-left {
     position: relative;
     p {
@@ -819,6 +824,9 @@
       width: 30%;
       margin-bottom: 100px;
       display: flex;
+      @media screen and(max-width: 1268px) {
+        width: 40%;
+      }
       .active-filter {
         text-decoration: underline;
       }
@@ -1014,6 +1022,9 @@
     @media screen and (max-width: 1650px) {
       width: fit-content;
       padding: 1.5rem;
+    }
+    @media screen and (max-width: 500px) {
+      margin-top: 5rem;
     }
   }
 
@@ -1289,6 +1300,7 @@
         flex-direction: column;
         align-items: center;
         padding-right: 25px;
+        justify-content: space-between;
         .dpab-bottom-section-left-img-bod {
           width: 100%;
           .dpab-bottom-section-left-img {
@@ -1304,6 +1316,7 @@
           align-items: center;
           padding: 6rem 5rem;
           height: 100%;
+          justify-content: space-between;
           h2 {
             margin-top: 3vh;
             margin-bottom: 10px;
@@ -1369,6 +1382,7 @@
         align-items: center;
         height: 100%;
         padding: 50px;
+        justify-content: space-between;
         .dpab-bottom-section-right-img {
           width: 100%;
           margin-bottom: 3vh;
@@ -1649,7 +1663,25 @@
     text-transform: uppercase;
     position: absolute;
     top: 53%;
-    left: 28vw;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    @media screen and(max-width: 1669px) {
+        top: 61%;
+        transform: translate(-50%,-61%);
+        white-space:nowrap;
+    }
+    @media screen and(max-width: 643px) {
+      top: 73%;
+      transform: translate(-50%,-73%);
+      white-space:unset;
+      word-break: break-word;
+      width: 90%;
+    }
+    @media screen and(max-width: 419px){
+        font-size: 4rem;
+        top: 63%;
+        transform: translate(-50%,-63%);
+    }
   }
   .playvideohome {
     position: absolute;
@@ -1657,6 +1689,13 @@
     left: 47.5%;
     cursor: pointer;
     width: 73px;
+
+    @media screen and (max-width: 1024px) {
+      top: 37% !important;
+    }
+    @media screen and(max-width: 419px){
+      top: 40% !important;
+    }
   }
   .pausevideohome {
     position: absolute;

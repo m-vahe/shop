@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <>
-      <header>
+      <header >
           <div className="page-header-top-black">
                 <span className="col-lg-12">
                   Parfum & Beauty deals: Versandkostenfrei ab 25€ inkl. 3 gratisproben

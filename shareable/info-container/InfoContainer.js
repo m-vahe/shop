@@ -20,7 +20,7 @@ const InfoContainer = ({
         </span>
       </div>
       <div className={`${className}__image`}>
-        <Image width={width} height={height} layout={layout} src={src} />
+        <img src={src} />
       </div>
     </div>
   );

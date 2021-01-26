@@ -63,16 +63,21 @@ const LoginForm = () => {
               </Link>
             </div>
             <div className={'login-right-three d-flex flex-wrap'}>
-              <img
-                src='./amazonlogin.png'
-                alt='amazon'
-                className={'col-lg-6'}
-              />
-              <img
-                src='./paypallogin.png'
-                alt='paypal'
-                className={'col-lg-6'}
-              />
+              <div>
+                <img
+                    src='./amazonlogin.png'
+                    alt='amazon'
+                    className={'col-lg-6'}
+                />
+              </div>
+              <div>
+                <img
+                    src='./paypallogin.png'
+                    alt='paypal'
+                    className={'col-lg-6'}
+                />
+              </div>
+
             </div>
           </div>
         </div>

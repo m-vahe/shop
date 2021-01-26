@@ -1,7 +1,9 @@
 @import "components/component-header-body/ComponentHeaderBody";
 @import "components/add-section/AddSection";
 @import "components/magazin-second-section/MagazinSecondSection";
+@import "components/magazin-second-section/MagazinSecondSectionMobile";
 @import "components/beauty-esentials/BeautyEsentials";
+
 .magazin-products-body{
   background: black;
   padding: 5rem 0;
@@ -10,6 +12,9 @@
     width: 90.5%;
     margin: 0 auto;
     .magaz-prod-title{
+      @media screen and(max-width: 1024px) {
+        text-align: left;
+      }
       @media screen and(max-width: 600px) {
         font-size: 4.5rem;
       }
@@ -28,9 +33,24 @@
       @media screen and(max-width: 1024px){
         grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
       }
+      @media screen and(max-width: 631px){
+        grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+      }
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
       gap: 4rem;
+    }
+  }
+}
+.magazin__all__elements{
+  .social__container{
+    margin-top: 15rem;
+  }
+  .newsLetter__container{
+    margin-top: 0;
+    &__header{
+      margin: 0 auto !important;
+      margin-bottom: 40px;
     }
   }
 }

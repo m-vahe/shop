@@ -1,36 +1,10 @@
 import Image from "next/image";
 import {useState,useEffect} from "react"
 const MagazinSecondSection = () =>{
-    const size = useWindowSize();
-    const [height,setHeight] = useState(800)
-    function useWindowSize() {
-        const [windowSize, setWindowSize] = useState({
-            width: undefined,
-            height: undefined,
-        });
 
-        useEffect(() => {
-            function handleResize() {
-                setWindowSize({
-                    width: window.innerWidth,
-                    height: window.innerHeight,
-                });
-            }
-            window.addEventListener("resize", handleResize);
-            handleResize();
-            return () => window.removeEventListener("resize", handleResize);
-        }, []);
-
-        return windowSize;
-    }
-    useEffect(()=>{
-        if(size.width <= 1024){
-            setHeight(600)
-        }
-    },[size])
     return(
         <div className={"magazin__second__section__container"}>
-            <Image src={"/magazin/magaz2sect.png"} width={950} height={height} layout={"responsive"}/>
+            <Image src={"/magazin/magaz2sect.png"} width={950} height={800} layout={"responsive"}/>
             <div className={"magazin__second__section__container__righttxt"}>
                 <p className={"magazin__second__section__container__righttxt--date"}>07.11. 2020</p>
                 <p className={"magazin__second__section__container__righttxt--coverstory"}>Coverstory </p>
