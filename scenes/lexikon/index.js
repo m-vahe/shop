@@ -5,7 +5,7 @@ import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 
 const LexikonScene = () =>{
     return(
-        <div>
+        <div className={"lexikon__body__for__all"}>
             <HeadTextLexikon/>
             <LexikonFilter/>
             <LexikonCollapse/>

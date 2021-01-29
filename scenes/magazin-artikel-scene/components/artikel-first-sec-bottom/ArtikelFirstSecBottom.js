@@ -1,4 +1,8 @@
-const ArtikelFirstSecBottom = () =>{
+import {useState} from "react"
+import {useRouter} from "next/router";
+
+const ArtikelFirstSecBottom = ({setShowSlider}) =>{
+    const route = useRouter()
     return(
         <div className={"artikel__first__bottom__container"}>
             <div className={"artikel__first__bottom__container__images"}>
@@ -20,7 +24,7 @@ const ArtikelFirstSecBottom = () =>{
                     </div>
                 </div>
             </div>
-            <a href="#" className={"artikel__first__bottom__container--link"}>Fotogalerie öffnen</a>
+            <span onClick={()=>route.push("/magazinartikelone/gallery")} className={"artikel__first__bottom__container--link"}>Fotogalerie öffnen</span>
         </div>
     )
 }

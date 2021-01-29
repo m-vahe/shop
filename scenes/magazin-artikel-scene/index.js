@@ -7,19 +7,27 @@ import ArtikelTwoImages from "./components/artikel-two-images/ArtikelTwoImages";
 import ArtikelProductsList from "./components/artikel-products-list/ArtikelProductsList";
 import Social from "../../shareable/social/Social";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
-
+import {useState,useEffect} from "react"
+import CarouselArtikel from "./components/carousel/CarouselArtikel";
 const MagazinArtikelScene = () =>{
+    const [showSlider,setShowSlider] = useState(false)
+
     return(
-        <div>
-            <MagazinArtikelHeader/>
-            <ArtikelFirstSectionBody/>
-            <ArtikelFirstSecBottom/>
-            <MagazSticky/>
-            <ArtikelCenteredSection/>
-            <ArtikelTwoImages/>
-            <ArtikelProductsList/>
-            <Social/>
-            <NewsletterRep/>
+        <div className={"artikel__all__elements"}>
+            {
+                !showSlider ?
+                    <>
+                        <MagazinArtikelHeader/>
+                        <ArtikelFirstSectionBody/>
+                        <ArtikelFirstSecBottom setShowSlider={setShowSlider}/>
+                        <MagazSticky/>
+                        <ArtikelCenteredSection/>
+                        <ArtikelTwoImages/>
+                        <ArtikelProductsList/>
+                        <Social/>
+                        <NewsletterRep/>
+                    </>:<CarouselArtikel setShowSlider={setShowSlider}/>
+            }
         </div>
     )
 }

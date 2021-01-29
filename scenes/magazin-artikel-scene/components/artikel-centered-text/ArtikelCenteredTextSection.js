@@ -25,7 +25,9 @@ const ArtikelCenteredSection = () =>{
                 numquam porro provident quas sed ut. Ad delectus deleniti dolorem dolores doloribus error ipsam magnam
                 non odio officiis perspiciatis quod saepe sapiente, sunt suscipit temporibus voluptate, voluptatem.
             </p>
-            <Image src={"/magazin/centered/centered.png"} width={1104} height={835}/>
+            <div className={"artikel__centered__container__image"}>
+                <Image src={"/magazin/centered/centered.png"} width={1104} height={835}/>
+            </div>
             <span>
                 Produkte und Bildbeschreibung 
             </span>

@@ -1,6 +1,9 @@
 .lexikon__collapse__container{
   width: 90.5%;
   margin: 0 auto;
+  .ant-collapse-content-box{
+    padding: 0;
+  }
   .ant-collapse-item {
     margin-top: 4rem;
     .ant-collapse-header {

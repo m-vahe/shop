@@ -1,8 +1,9 @@
 import ArtikelFirstSection from "../../../../shareable/artikel-first-section/ArtikelFirstSection";
 
 const ArtikelFirstSectionBody = () =>{
+
     return(
-        <ArtikelFirstSection/>
+        <ArtikelFirstSection />
     )
 }
 

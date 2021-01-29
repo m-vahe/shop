@@ -12,6 +12,9 @@
   width: 90.5%;
   margin: 0 auto;
   padding: 55px 0 95px 0;
+  @media screen and (max-width: 1024px){
+    padding: 0px 0 95px 0;
+  }
   .login-scene-head {
     h2 {
       text-align: center;
@@ -43,10 +46,17 @@
     gap: 220px;
     @media screen and (max-width:1024px){
       grid-template-columns: unset;
+      gap: 5rem;
+    }
+    @media screen and (max-width:400px){
+      width: 85%;
     }
     .login-right-form {
       display: grid;
       grid-template-rows: 20% 20% 20% 20%;
+      @media screen and (max-width: 1024px){
+        grid-template-rows: unset;
+      }
       .login-right-two {
         margin-top: 10px;
         display: grid;
@@ -74,10 +84,26 @@
           line-height: 35px;
           text-align: left;
           text-decoration: underline;
+          @media screen and(max-width: 1024px) {
+            width: unset;
+          }
         }
       }
       .login-right-three {
         margin-top: 10px;
+        @media screen and(max-width: 600px) {
+          div{
+            margin: 3rem auto;
+          }
+        }
+        @media screen and(max-width: 600px) {
+          div{
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+        }
         img {
           margin: 0;
           padding: 0;
@@ -93,6 +119,9 @@
         line-height: 35px;
         text-align: left;
         text-transform: uppercase;
+        @media screen and(max-width: 1024px) {
+          margin: 30px 0;
+        }
       }
       .login-right-one {
         display: grid;
@@ -106,6 +135,9 @@
           line-height: 35px;
           text-align: left;
           text-transform: uppercase;
+          @media screen and(max-width: 1024px){
+            width: unset;
+          }
         }
         button {
           border: 1px solid #707070;

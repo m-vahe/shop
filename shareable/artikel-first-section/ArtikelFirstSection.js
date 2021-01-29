@@ -22,6 +22,8 @@ const ArtikelFirstSection = () =>{
                 </svg>
             </div>
             <div className={"artikel__first__container__social"}>
+                <p >Düfte</p>
+                <p className={"date-dufte"}>07.11.2020</p>
                 <FontAwesomeIcon icon={faFacebook} />
                 <FontAwesomeIcon icon={faInstagram} />
                 <FontAwesomeIcon icon={faTwitter} />

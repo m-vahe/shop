@@ -4,6 +4,9 @@ const CollapseLeftImage = () =>{
         <div className={"lexikon__collapse__left__container"}>
             <div className={"lexikon__collapse__left__container__image"}>
                 <img src="/lexikon/lexikon.png" alt="lexikon"/>
+                <div className={"lexikon__collapse__left__container__image--mobile"}>
+                    <Image src={"/lexikon/lexikon.png"} width={1000} height={650}/>
+                </div>
             </div>
             <div className={"lexikon__collapse__left__container__text"}>
                 <h2>

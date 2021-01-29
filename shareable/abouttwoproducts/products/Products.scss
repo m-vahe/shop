@@ -26,8 +26,12 @@
     }
     @media screen and(max-width: 1265px){
       &:nth-child(3){
-        display: none !important;
+        margin-top: 8rem;
       }
+    }
+    @media screen and(max-width: 839px){
+
+      margin-top: 10rem !important;
     }
   }
 }
