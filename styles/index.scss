@@ -12,7 +12,6 @@
 @import '../scenes/homepage/homepage';
 @import '../layouts/footer/footer';
 @import '../layouts/header/mediaheader';
-@import '../scenes/homepage/mediahomepage';
 @import '../scenes/login/login';
 @import '../scenes/herren/herren';
 @import '../scenes/herren/mediaherren';
@@ -56,6 +55,8 @@
 @import "shareable/Products/magazin-products/MagazWhiteProducts";
 @import "shareable/about/head-text/HeadText";
 @import "scenes/lexikon/index";
+@import "layouts/cartSidebar/CartSidebar";
+@import "shareable/cart-sidebar/product/CartSidebarProduct";
 @font-face {
   src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
   src: local('Freight Sans Pro'), local('FreightSansPro'),

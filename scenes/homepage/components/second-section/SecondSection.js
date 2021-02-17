@@ -1,4 +1,4 @@
-import FirstAddSection from "../../../shareable/FirstAddSection";
+import FirstAddSection from "../../../../shareable/FirstAddSection";
 
 const SecondSection = () =>{
     const image1="/aaa.jpg"

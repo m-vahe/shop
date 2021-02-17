@@ -1,13 +1,15 @@
 import ReactPlayer from 'react-player'
 import {useState} from "react";
+import {useRef} from "react"
 
 const BottomVideo = () =>{
     const [play1,setPlay1] =useState(false)
     const [play2,setPlay2] =useState(false)
     const [play3,setPlay3] =useState(false)
+    const y = useRef()
     return(
         <>
-            <div className={"bottom-video-body d-flex flex-wrap"} style={{marginBottom:"12rem"}}>
+            <div className={"bottom-video-body d-flex flex-wrap"} style={{marginBottom:"12rem"}} onClick={()=>console.log(y.current.offsetTop)} ref={y}>
 
                 <div className={"col-lg-4 small-vid-bod"}>
                     <div className={"video-small-body-only"}>

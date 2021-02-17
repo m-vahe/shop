@@ -1,5 +1,5 @@
 import Image from "next/image";
-import InspirationSection from "../../../shareable/Inspiration";
+import InspirationSection from "../../../../shareable/Inspiration";
 const Inspiration = () =>{
     const image = "/inspiration.png"
     return(

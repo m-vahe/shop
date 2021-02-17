@@ -1,4 +1,4 @@
-import Neuigkeiten from "../../../shareable/Neuigkeiten";
+import Neuigkeiten from "../../../../shareable/Neuigkeiten";
 const FilteredProductBottom = () =>{
     const btntext = "mehr neuigkeiten"
     return(

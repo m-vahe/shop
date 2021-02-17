@@ -1,6 +1,9 @@
-import {useState} from "react";
-import ProductsWithLeftText from "../../../shareable/Products/PorductsWithLeftText";
-const SecondProducts = () =>{
+import {useState,useEffect} from "react";
+import {getProdWLTxtOne} from "../../../../services/actions/homepage__stable";
+import {useDispatch, useSelector} from "react-redux";
+import ProductsWithLeftText from "../../../../shareable/Products/PorductsWithLeftText";
+const FirstProducts = () =>{
+    const dispatch = useDispatch()
     const [heart,setHeart] = useState(false)
     const [heart1,setHeart1] = useState(false)
     const [heart2,setHeart2] = useState(false)
@@ -23,6 +26,12 @@ const SecondProducts = () =>{
             },
         ]
     )
+    const prodTxt = useSelector(state => state.navbar.prodWLTxt);
+    // const [prod]
+    useEffect(()=>{
+        dispatch(getProdWLTxtOne())
+        console.log(prodTxt)
+    },[])
     return(
         <>
             <ProductsWithLeftText
@@ -37,4 +46,4 @@ const SecondProducts = () =>{
     )
 }
 
-export default SecondProducts
+export default FirstProducts

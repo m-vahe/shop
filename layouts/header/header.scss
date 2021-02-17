@@ -30,9 +30,6 @@
     justify-content: center;
     align-items: center;
     min-height: 35px;
-    @media screen and (max-width: 1300px){
-        display: none
-    }
     span {
         color: #434343;
         font-family: "Freight Sans Pro",system-ui;
@@ -286,10 +283,7 @@
                             }
                         }
 
-                        border-left: 1px solid black;
-                        border-top: 1px solid black;
-                        border-right: 1px solid black;
-                        border-bottom: 1px solid white;
+
                         .hovered{
                             border: 1px solid black;
                             background: white;
@@ -344,6 +338,14 @@
                             }
                             }
                         }
+                    }
+                }
+                .main-list-with-hover{
+                    &:hover{
+                        border-left: 1px solid black;
+                        border-top: 1px solid black;
+                        border-right: 1px solid black;
+                        border-bottom: 1px solid white;
                     }
                 }
             }

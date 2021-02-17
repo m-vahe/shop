@@ -31,6 +31,9 @@ const ProductsWithFilter = ({
       router.push(e);
     }
   };
+    const toApproved = () =>{
+        router.push("/magazinartikelone")
+    }
   return (
     <>
       <div className={'filtered-products-body d-flex flex-wrap'}>
@@ -91,6 +94,7 @@ const ProductsWithFilter = ({
                       src='/15-layers.png'
                       alt='15 layers'
                       className={'circled-txt'}
+                      onClick={toApproved}
                     />
                   )}
                   <svg
@@ -101,7 +105,7 @@ const ProductsWithFilter = ({
                     className={'letter-svg heart-icon-item'}
                     onClick={() => addToFavorites(e)}
                     style={
-                      e.heart ? { stroke: '#ea0026' } : { stroke: '#7b7b7b' }
+                      e.heart ? { stroke: '#000000' } : { stroke: '#7b7b7b' }
                     }
                   >
                     <path
@@ -109,7 +113,7 @@ const ProductsWithFilter = ({
                       style={
                         e.heart
                           ? {
-                              fill: '#ea0026',
+                              fill: '#000000',
                               strokeMiterlimit: '10',
                               strokeWidth: '32px',
                             }

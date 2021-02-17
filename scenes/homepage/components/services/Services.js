@@ -3,8 +3,8 @@ import { faTruck ,faHeart, faPercent, faFlask} from "@fortawesome/free-solid-svg
 const Services = () =>{
     return(
         <>
-            <div className={"d-flex flex-wrap services-body"}>
-                <div className={"col-lg-3 services-item"}>
+            <div className={"services-body"}>
+                <div className={"services-item"}>
                     <FontAwesomeIcon
                         style={{fontSize:"70px"}}
                         icon={faTruck}

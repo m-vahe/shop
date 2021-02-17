@@ -1,9 +1,9 @@
 import ComponentHeader from '../../shareable/component-header/ComponentHeader';
 import MediatekInfo from './components/mediatek-info/MediatekInfo';
-import VideoPart from '../homepage/components/VideoPart'
+import VideoPart from '../homepage/components/video/VideoPart'
 import VideosContainer from './components/video-container/VideosContainer'
-import Newsletter from '../homepage/components/Newsletter';
 import Social from '../../shareable/social/Social';
+import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 
 const Video = () => {
   return (
@@ -16,7 +16,7 @@ const Video = () => {
       <VideoPart />
       <VideosContainer />
       <Social />
-      <Newsletter />
+      <NewsletterRep />
     </div>
   );
 };

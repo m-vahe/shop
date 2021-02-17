@@ -2,7 +2,7 @@ import HeadText from "./components/headtext/HeadText";
 import SecondAboutSection from "./components/secondSection/SecondSection";
 import ThirdSection from "./components/thirdsection/ThirdSection";
 import Social from "../../shareable/social/Social";
-import Newsletter from "../homepage/components/Newsletter";
+import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 
 const AboutTwoScene = () =>{
     return(
@@ -11,7 +11,7 @@ const AboutTwoScene = () =>{
             <SecondAboutSection/>
             <ThirdSection/>
             <Social/>
-            <Newsletter/>
+            <NewsletterRep/>
         </div>
     )
 }

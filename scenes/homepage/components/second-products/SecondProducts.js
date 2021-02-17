@@ -1,6 +1,6 @@
 import {useState} from "react";
-import ProductsWithLeftText from "../../../shareable/Products/PorductsWithLeftText";
-const FirstProducts = () =>{
+import ProductsWithLeftText from "../../../../shareable/Products/PorductsWithLeftText";
+const SecondProducts = () =>{
     const [heart,setHeart] = useState(false)
     const [heart1,setHeart1] = useState(false)
     const [heart2,setHeart2] = useState(false)
@@ -37,4 +37,4 @@ const FirstProducts = () =>{
     )
 }
 
-export default FirstProducts
+export default SecondProducts

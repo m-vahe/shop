@@ -1,7 +1,9 @@
 import HeaderSearch from "./HeaderSearch";
 import Navbar from "./Navbar";
 const Header = () => {
-  return (
+
+
+    return (
     <>
       <header >
           <div className="page-header-top-black">

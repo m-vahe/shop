@@ -5,7 +5,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from 'next/link'
 import {useRouter} from 'next/router'
+import {useState} from "react";
+import CartSidebar from "../cartSidebar/CartSidebar";
 const HeaderSearch = () => {
+    const [visible,setVisible] = useState(false)
+    const showDrawer = () => {
+        setVisible(true)
+    };
+
+    const onClose = () => {
+        setVisible(false)
+    };
     const router = useRouter()
     return (
         <>
@@ -51,10 +61,10 @@ const HeaderSearch = () => {
                                 </g>
 
                             </svg>
-                            <svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512' className={"letter-svg"} style={{width:"20px",margin:"0 14px"}}>
+                            <svg onClick={()=>router.push("/konto/whishlist")} xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512' className={"letter-svg"} style={{width:"20px",margin:"0 14px"}}>
                                 <path d='M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z' style={{fill:"none",strokeMiterlimit:"10",strokeWidth:"32px"}} />
                             </svg>
-                            <svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'  style={{fill:"none",strokeMiterlimit:"10",strokeWidth:"32px",width:"20px"}} className={"letter-svg"}>
+                            <svg onClick={showDrawer} xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'  style={{fill:"none",strokeMiterlimit:"10",strokeWidth:"32px",width:"20px"}} className={"letter-svg"}>
                                 <circle cx='176' cy='416' r='16' />
                                 <circle cx='400' cy='416' r='16' />
                                 <polyline points='48 80 112 80 160 352 416 352' />
@@ -76,9 +86,11 @@ const HeaderSearch = () => {
                     </Link>
                 </div>
             </div>
+            <CartSidebar visible = {visible} showDrawer={showDrawer} onClose={onClose}/>
         </>
     )
 };
+
 export default HeaderSearch;
 
 

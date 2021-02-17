@@ -1,0 +1,103 @@
+.inspiration-body {
+  width: 90.5%;
+  margin: 0px auto;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 75% 25%;
+  gap: 10px;
+  margin-top: 15rem;
+  @media screen and (max-width: 1024px){
+    margin-top: 15rem !important;
+  }
+  .inspiration-left {
+    position: relative;
+    p {
+      position: absolute;
+      top: -5vw;
+      color: #3e3e3e;
+      font-family: 'Open Sans Condensed', system-ui;
+      font-size: 6vw;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 11px;
+      text-align: left;
+      text-transform: uppercase;
+      font-style: normal;
+      z-index: 99;
+    }
+  }
+  .inspiration-right {
+    padding: 7.3rem 0 0 4.2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 1370px) {
+      padding: 3.3rem 0 0 4.2rem;
+    }
+    .inspiration-right-headtxt {
+      color: #5c5c5c;
+      font-family: 'Freight Sans Pro', system-ui;
+      font-size: 1.19vw;
+      font-weight: normal;
+      margin: 0;
+      font-style: normal;
+      letter-spacing: 1.38px;
+      text-align: left;
+      /* Text style for "Gesichtspf" */
+      font-style: normal;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin-top: 0.5rem;
+      color: #3e3e3e;
+      font-family: 'Freight Sans Pro', system-ui;
+      font-size: 3.125vw;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 0.92;
+      letter-spacing: 2.4px;
+      text-align: left;
+      text-transform: uppercase;
+      width: 120%;
+      margin-bottom: 0;
+      @media screen and (max-width: 1370px) {
+        margin-top: 0.3rem;
+      }
+    }
+    .inspiration-right-bottxt {
+      margin: 5rem 0;
+      color: #2e2e2e;
+      font-family: 'Freight Sans Pro', system-ui;
+      font-size: 1.145vw;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.59;
+      letter-spacing: 0.55px;
+      text-align: left;
+      /* Text style for "Lorem ipsu" */
+      font-style: normal;
+      @media screen and (max-width: 1370px) {
+        margin: 3rem 0;
+      }
+    }
+    button {
+      color: #ffffff;
+      font-family: 'Freight Sans Pro', system-ui;
+      font-size: 1.35vw;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      font-style: normal;
+      text-transform: uppercase;
+      padding: 12px 10px;
+      background-color: #080808;
+      width: 75%;
+      border: none;
+      @media screen and (max-width: 1725px) {
+        width: fit-content;
+      }
+    }
+  }
+}

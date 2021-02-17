@@ -1,4 +1,4 @@
-import InspirationBottomOneRep from "../../../shareable/InsprationBottomOneRep";
+import InspirationBottomOneRep from "../../../../shareable/InsprationBottomOneRep";
 
 const InspirationBottomOne = ()=>{
     return(

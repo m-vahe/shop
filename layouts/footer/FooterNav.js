@@ -45,19 +45,19 @@ const FooterNav = () =>{
                             </p>
                         </div>
                     </div>
-                    <div className={"footer-navigation-all"}>
-                        <div className={"footer-navbar-all"}>
-                            <nav>
-                                <ul className={"footer-main-nav"}>
-                                    {navList.map((e,i)=>{
-                                        return(
-                                            <li key={i} className={"main-list"}  ><Link exact href={e.link}>{e.name}</Link></li>
-                                        )
-                                    })}
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
+                    {/*<div className={"footer-navigation-all"}>*/}
+                    {/*    <div className={"footer-navbar-all"}>*/}
+                    {/*        <nav>*/}
+                    {/*            <ul className={"footer-main-nav"}>*/}
+                    {/*                {navList.map((e,i)=>{*/}
+                    {/*                    return(*/}
+                    {/*                        <li key={i} className={"main-list"}  ><Link exact href={e.link}>{e.name}</Link></li>*/}
+                    {/*                    )*/}
+                    {/*                })}*/}
+                    {/*            </ul>*/}
+                    {/*        </nav>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </>

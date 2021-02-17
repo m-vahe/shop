@@ -20,6 +20,9 @@ const SingleProduct = ({ elem, products, setData }) => {
       router.push(e);
     }
   };
+    const toApproved = () =>{
+        router.push("/magazinartikelone")
+    }
   return (
     <>
       <div className={' first-prod-items col-lg-3'}>
@@ -34,6 +37,7 @@ const SingleProduct = ({ elem, products, setData }) => {
               src='/15-layers.png'
               alt='15 layers'
               className={'circled-txt'}
+              onClick={toApproved}
             />
           )}
           <svg
@@ -43,14 +47,14 @@ const SingleProduct = ({ elem, products, setData }) => {
             viewBox='0 0 512 512'
             className={'letter-svg heart-icon-item'}
             onClick={() => addToFavorites(elem)}
-            style={elem.heart ? { stroke: '#ea0026' } : { stroke: '#7b7b7b' }}
+            style={elem.heart ? { stroke: '#000000' } : { stroke: '#7b7b7b' }}
           >
             <path
               d='M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z'
               style={
                 elem.heart
                   ? {
-                      fill: '#ea0026',
+                      fill: '#000000',
                       strokeMiterlimit: '10',
                       strokeWidth: '32px',
                     }

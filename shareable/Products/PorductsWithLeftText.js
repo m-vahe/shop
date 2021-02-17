@@ -1,15 +1,6 @@
 import { useRouter } from 'next/router'
 const ProductsWithLeftText = (
     {
-        heart,
-        heart1,
-        heart2,
-        setHeart,
-        setHeart1,
-        setHeart2,
-        image1,
-        image2,
-        image3,
         products,
         setProducts
     }
@@ -31,6 +22,9 @@ const ProductsWithLeftText = (
         else{
             router.push(e)
         }
+    }
+    const toApproved = () =>{
+        router.push("/magazinartikelone")
     }
     return(
         <>
@@ -57,14 +51,14 @@ const ProductsWithLeftText = (
                                     <img src={e.imageHead} className={"item-picture"} alt="" onClick={()=>toProductPage(e.id)}/>
                                     
                                     {
-                                        e.approoved && <img src="/15-layers.png" alt="15 layers" className={"circled-txt"}/>
+                                        e.approoved && <img src="/15-layers.png" alt="15 layers" className={"circled-txt"} onClick={toApproved}/>
                                     }
                                     <svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512' className={"letter-svg heart-icon-item"}
                                      onClick={()=>addToFavorites(e)}
-                                     style={e.heart ? {stroke:"#ea0026"}:{stroke:"#7b7b7b"}}>
+                                     style={e.heart ? {stroke:"#000000"}:{stroke:"#7b7b7b"}}>
                                     <path
                                         d='M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z'
-                                        style={e.heart ? {fill:"#ea0026",strokeMiterlimit:"10",strokeWidth:"32px"}:{fill:"none",strokeMiterlimit:"10",strokeWidth:"32px"}} />
+                                        style={e.heart ? {fill:"#000000",strokeMiterlimit:"10",strokeWidth:"32px"}:{fill:"none",strokeMiterlimit:"10",strokeWidth:"32px"}} />
                                 </svg>
                                 </div>
                                 {e.new ? <span className={'item-new'}>New</span> : <span className={'item-notNew'}>New</span>}
