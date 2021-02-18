@@ -1,12 +1,14 @@
 import {
     GET_NAVBAR_SETTINGS,
     GET_HOMEPAGE_SECTIONONE,
-    GET_HOMEPAGE_PRODWLTXT_ONE
+    GET_HOMEPAGE_PRODWLTXT_ONE,
+    GET_HEADER_CONTACTS
 } from "../action-types/homepage__stable"
 const initialState = {
     navList: [],
     homePageSctOne:[],
-    prodWLTxt:[]
+    prodWLTxt:[],
+    headerContacts:[]
 }
 const homeRedcucer = (state= initialState,action) =>{
     switch (action.type){
@@ -19,6 +21,11 @@ const homeRedcucer = (state= initialState,action) =>{
             return {
                 ...state,
                 homePageSctOne: action.payload
+            }
+        case "GET_HEADER_CONTACTS":
+            return {
+                ...state,
+                headerContacts: action.payload
             }
         case "GET_HOMEPAGE_PRODWLTXT_ONE":
             return {
