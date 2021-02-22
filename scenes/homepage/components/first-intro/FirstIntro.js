@@ -25,6 +25,7 @@ const FirstIntro = () =>{
                                 <h2 className={"intro-big-txt"}>{homepageIntro?.title}</h2>
                             </Link>
                         </div>
+                        
                         <Link href={`${homepageIntro?.url}`}><button>{homepageIntro?.button_text}</button></Link>
                     </div>
                     <div className={"first-intro-bod-right "} >
