@@ -1,21 +1,39 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector} from 'react-redux';
+import { getHomePageSctOne } from '../../../services/actions/homepage__stable';
+import Link from 'next/link';
 
-const HerrenHead = () =>{
+const HerrenHead = () => {
+    const dispatch = useDispatch();
+
+    const HPFS = useSelector(state => state.navbar.homePageSctOne);
+    const herrenIntro = HPFS.find(p => p.position === 'HerrenPage');
+
+    useEffect(() => {
+        dispatch(getHomePageSctOne());
+    }, []);
+
     return(
         <>
             <div className={"herren-head-body d-flex flex-wrap"}>
                 <div className={"col-lg-6 herren-head-left"}>
                     <div className={"herren-head-left-body"}>
-                        <p>Bart und Gesichtspflege </p>
-                        <h2>
-                            Ihre neue
-                            Grooming routine
-                        </h2>
-                        <button>JETZT SHOPPEN</button>
+                        <p>{herrenIntro?.header}</p>
+                        <Link href={`${herrenIntro?.url}`}>
+                            <h2>
+                                {herrenIntro?.title}
+                            </h2>
+                        </Link>
+                        <Link href={`${herrenIntro?.url}`}>
+                            <button>{herrenIntro?.button_text}</button>
+                        </Link>
                     </div>
                 </div>
-                <div className={"col-lg-6 herren-head-right"} style={{backgroundImage:"url(./herrentopimg.png)"}}>
+                <Link href={`${herrenIntro?.url}`}>
+                    <div className={"col-lg-6 herren-head-right"} style={{backgroundImage:"url(./herrentopimg.png)"}}>
 
-                </div>
+                    </div>
+                </Link>
             </div>
         </>
     )

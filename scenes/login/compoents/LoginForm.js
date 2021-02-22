@@ -1,10 +1,38 @@
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 // import {
 //   faFacebook,
 // } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faGooglePlusSquare } from '@fortawesome/free-brands-svg-icons';
+import { login } from '../../../services/actions/auth';
+import { useDispatch, useSelector } from 'react-redux';
+import { useRouter } from 'next/router';
+
 const LoginForm = () => {
+  const router = useRouter();
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const authData = useSelector(state => state.auth);
+  const dispatch = useDispatch();
+  
+  useEffect(() => {
+    if (authData?.isAuthenticated) {
+      router.push('/');
+    }
+  }, [authData]);
+
+  const handleLogin = e => {
+    e.preventDefault();
+
+    dispatch(login({
+      identifier: email,
+      password
+    }));
+  };
+
   return (
     <>
       <div className={'login-scene d-flex'}>
@@ -20,9 +48,21 @@ const LoginForm = () => {
           <div className={'left-of-login-form col-lg-5 d-flex'}>
             <div className={'left-login-form-one'}>
               <h2>Kunden Log-in</h2>
-              <form action='#'>
-                <input type='email' placeholder={'E-Mail-Adresse'} />
-                <input type='password' placeholder={'Passwort'} />
+              <form action='#' onSubmit={handleLogin}>
+                <input 
+                  type='email' 
+                  placeholder={'E-Mail-Adresse'} 
+                  value={email} 
+                  onChange={e => setEmail(e.target.value)} 
+                />
+
+                <input 
+                  type='password' 
+                  placeholder={'Passwort'} 
+                  value={password}
+                  onChange={e => setPassword(e.target.value)}
+                />
+
                 <div className={'forgot-pass-and-submit'}>
                   <button type='submit'>Anmelden</button>
                   <Link href={'/forgotpassword'}>

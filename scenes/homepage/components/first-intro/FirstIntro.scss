@@ -11,6 +11,7 @@
     .first-intro-bod-right{
       img{
         width: 100%;
+        cursor: pointer;
       }
     }
     .first-intro-bod-left {
@@ -24,6 +25,7 @@
       }
       h2 {
         margin: 0;
+        cursor: pointer;
       }
       @media screen and(max-width: 1300px) {
         gap: 2rem;
