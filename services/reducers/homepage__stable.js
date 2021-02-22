@@ -2,15 +2,20 @@ import {
     GET_NAVBAR_SETTINGS,
     GET_HOMEPAGE_SECTIONONE,
     GET_HOMEPAGE_PRODWLTXT_ONE,
-    GET_HEADER_CONTACTS
-} from "../action-types/homepage__stable"
+    GET_HEADER_CONTACTS,
+    SET_HOMEPAGE_HEADERTXTS
+} from "../action-types/homepage__stable";
+
 const initialState = {
     navList: [],
     homePageSctOne:[],
     prodWLTxt:[],
-    headerContacts:[]
-}
-const homeRedcucer = (state= initialState,action) =>{
+    headerContacts:[],
+    headerText1: '',
+    headerText2: '',
+};
+
+const homeRedcucer = (state= initialState, action) =>{
     switch (action.type){
         case "GET_NAVBAR_SETTINGS":
             return {
@@ -31,6 +36,12 @@ const homeRedcucer = (state= initialState,action) =>{
             return {
                 ...state,
                 prodWLTxt: action.payload
+            }
+        case SET_HOMEPAGE_HEADERTXTS: 
+            return {
+                ...state,
+                headerText1: action.payload[0],
+                headerText2: action.payload[1]
             }
     }
     return state

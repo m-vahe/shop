@@ -1,26 +1,35 @@
 import HeaderSearch from "./HeaderSearch";
 import Navbar from "./Navbar";
+import { getHeaderTexts } from '../../services/actions/homepage__stable';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from "react";
+
 const Header = () => {
+  const dispatch = useDispatch();
+  const { headerText1, headerText2 } = useSelector(state => state.navbar);
 
-
-    return (
+  useEffect(() => {
+    dispatch(getHeaderTexts());
+  }, []);
+  
+  return (
     <>
-      <header >
-          <div className="page-header-top-black">
-                <span className="col-lg-12">
-                  Parfum & Beauty deals: Versandkostenfrei ab 25€ inkl. 3 gratisproben
-                </span>
-                  </div>
-                  <div className="page-header-top-grey">
-                <span className="col-lg-12">
-                  Geniessen Sie 10% Rabatt auf Ihren ersten Einkauf. Mit dem Code
-                  FIRST2020 beim Checkout auf das gesamte Sortiment.
-                </span>
-          </div>
-          <HeaderSearch />
-          <Navbar/>
+      <header>
+        <div className="page-header-top-black">
+          <span className="col-lg-12">
+            {headerText1}
+          </span>
+        </div>
+        <div className="page-header-top-grey">
+          <span className="col-lg-12">
+            {headerText2}
+          </span>
+        </div>
+        <HeaderSearch />
+        <Navbar />
       </header>
     </>
   );
 };
+
 export default Header;

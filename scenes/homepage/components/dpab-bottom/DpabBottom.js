@@ -16,7 +16,7 @@ const DpabBottom = () =>{
                    <p className={"dpab-bot-head-other"}>
                        Montag – Freitag 10:00 – 18:00 Uhr • Samstag 10:00 – 14:00Uhr
                    </p>
-                   <p className={"dpab-bot-head-other"}>Telefon: +49 6173 963 0853</p>
+                   <p className={"dpab-bot-head-other"}>Telefon: <a href="tel:+4961739630853">+49 6173 963 0853</a></p>
                </div>
                <div style={{backgroundImage:"url(/dpabbottom.png)"}} className={"dpab-bot-img"}>
 

@@ -78,7 +78,7 @@
                     stroke: #7b7b7b;
                     margin-right: 9px;
                 }
-                p{
+                a {
                     color: #7b7b7b;
                     font-family: "Freight Sans Pro",system-ui;
                     font-size: 1.4rem;
@@ -100,7 +100,7 @@
                     width: 24px;
                     margin-right: 7px;
                 }
-                p{
+                a {
                     color: #7b7b7b;
                     font-family: "Freight Sans Pro",system-ui;
                     font-size: 1.4rem;
@@ -135,11 +135,19 @@
                 letter-spacing: 1.68px;
                 line-height: normal;
                 margin-right: 10px;
+
                 button{
                     text-transform: uppercase;
                     border: none;
                     background: transparent;
                     color: #7b7b7b;
+                    outline: none;
+
+                    &.active {
+                        font-weight: bold;
+                        pointer-events: none;
+                    }
+
                     &:nth-child(1){
                         margin-right: 5px;
                     }
