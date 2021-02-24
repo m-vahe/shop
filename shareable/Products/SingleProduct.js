@@ -1,18 +1,25 @@
 import { useRouter } from 'next/router';
 
-const SingleProduct = ({ elem, products, setData }) => {
+const formatter = new Intl.NumberFormat('de-DE', {
+  style: 'currency',
+  currency: 'EUR',
+  minimumFractionDigits: 2
+});
+
+const SingleProduct = ({ elem, favouriteClickHandler }) => {
   const router = useRouter();
 
-  const addToFavorites = (e) => {
-    setData(
-      products.map((elem) => {
-        if (elem.id === e.id) {
-          elem.heart = !elem.heart;
-        }
-        return elem;
-      })
-    );
-  };
+  // const addToFavorites = (e) => {
+  //   setData(
+  //     products.map((elem) => {
+  //       if (elem.id === e.id) {
+  //         elem.heart = !elem.heart;
+  //       }
+  //       return elem;
+  //     })
+  //   );
+  // };
+
   const toProductPage = (e) => {
     if (router.pathname !== '/products') {
       router.push(`/products/${e}`);
@@ -20,9 +27,11 @@ const SingleProduct = ({ elem, products, setData }) => {
       router.push(e);
     }
   };
-    const toApproved = () =>{
-        router.push("/magazinartikelone")
-    }
+
+  const toApproved = () =>{
+      router.push("/magazinartikelone")
+  };
+
   return (
     <>
       <div className={' first-prod-items col-lg-3'}>
@@ -30,9 +39,9 @@ const SingleProduct = ({ elem, products, setData }) => {
           className={'picture-body-prod'}
 
         >
-          <img src={elem.imageHead} className={'item-picture'} alt=''  onClick={() => toProductPage(elem.id)}/>
+          <img src={elem?.images[0].url} className={'item-picture'} alt=''  onClick={() => toProductPage(elem.id)}/>
 
-          {elem.approoved && (
+          {!elem.approoved && (
             <img
               src='/15-layers.png'
               alt='15 layers'
@@ -46,13 +55,13 @@ const SingleProduct = ({ elem, products, setData }) => {
             height='512'
             viewBox='0 0 512 512'
             className={'letter-svg heart-icon-item'}
-            onClick={() => addToFavorites(elem)}
-            style={elem.heart ? { stroke: '#000000' } : { stroke: '#7b7b7b' }}
+            onClick={() => favouriteClickHandler(elem.id)}
+            style={elem.favorit ? { stroke: '#000000' } : { stroke: '#7b7b7b' }}
           >
             <path
               d='M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z'
               style={
-                elem.heart
+                elem.favorit
                   ? {
                       fill: '#000000',
                       strokeMiterlimit: '10',
@@ -73,10 +82,22 @@ const SingleProduct = ({ elem, products, setData }) => {
         </span>
 
         <span className={'prod-txt-head2'}>Limited edition</span>
-        <h3 className={'prod-txt-name'}>Ylumi</h3>
-        <span className={'prod-txt-foot'}>Energy Kapseln</span>
-        <span className={'prod-txt-foot2'}>Kapseln</span>
-        <h3 className={'prod-txt-price'}>28,00 €</h3>
+        {elem?.brand ? (
+          <h3 className={'prod-txt-name'}>{elem?.brand}</h3>
+        ) : (
+          <h3 className={'prod-txt-name'} style={{opacity: 0}}>Ylumi</h3>
+        )}
+        {elem?.name ? (
+          <span className={'prod-txt-foot'}>{elem?.name}</span>
+        ) : (
+          <span className={'prod-txt-foot'} style={{opacity: 0}}>Energy Kapseln</span>
+        )}
+        {elem?.kind ? (
+          <span className={'prod-txt-foot2'}>Kapseln</span>
+        ) : (
+          <span className={'prod-txt-foot2'} style={{opacity: 0}}>Kapseln</span>
+        )}
+        <h3 className={'prod-txt-price'}>{formatter.format(elem.price || 0)}</h3>
 
         <button>
           <p>Quick shop </p>

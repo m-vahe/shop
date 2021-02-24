@@ -53,5 +53,5 @@ export const getHeaderTexts = () => {
                 });
             })
             .catch(err => dispatch({ type: SET_ERROR }));
-    }
+    };
 };

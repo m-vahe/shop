@@ -2,8 +2,13 @@ import {useState,useEffect} from "react";
 import {getProdWLTxtOne} from "../../../../services/actions/homepage__stable";
 import {useDispatch, useSelector} from "react-redux";
 import ProductsWithLeftText from "../../../../shareable/Products/PorductsWithLeftText";
-const FirstProducts = () =>{
-    const dispatch = useDispatch()
+import { getProducts, addToWishList } from '../../../../services/actions/products';
+
+const FirstProducts = () => {
+    const dispatch = useDispatch();
+
+    const prdcts = useSelector(state => state?.products?.products);
+
     const [heart,setHeart] = useState(false)
     const [heart1,setHeart1] = useState(false)
     const [heart2,setHeart2] = useState(false)
@@ -30,12 +35,14 @@ const FirstProducts = () =>{
     // const [prod]
     useEffect(()=>{
         dispatch(getProdWLTxtOne())
-        console.log(prodTxt)
-    },[])
+        dispatch(getProducts(3));
+    }, []);
+
     return(
         <>
             <ProductsWithLeftText
-                products = {products}
+                products = {prdcts}
+                addToWishList={addToWishList}
                 setProducts = {setProducts}
                 heart={heart} heart1={heart1}
                 heart2={heart2} setHeart={setHeart}
