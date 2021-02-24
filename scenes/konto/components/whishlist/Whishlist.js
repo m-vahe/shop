@@ -1,93 +1,27 @@
 import SingleProduct from "../../../../shareable/Products/SingleProduct";
-import {useState} from "react";
+import { useState, useEffect } from "react";
+import { getUserWishlist, addToWishList } from '../../../../services/actions/products';
+import { useDispatch, useSelector } from 'react-redux';
 import ModalWhishlist from "./components/Modal";
 
-const WhishList = () =>{
-    const [data,setData] = useState([
-        {
-            id: 0,
-            productHead: 'Clean product',
-            productHead2: 'Limited edition',
-            productName: 'Ylumi',
-            productTextFoot: 'Energy Kapseln',
-            productTextFoot2: 'Kapseln',
-            price: '28,00 €',
-            new: true,
-            approoved: true,
-            imageHead: '/item.png',
-            heart: false,
-        },
-        {
-            id: 1,
-            productHead: 'Clean product',
-            productHead2: 'Limited edition',
-            productName: 'Ylumi',
-            productTextFoot: 'Energy Kapseln',
-            productTextFoot2: 'Kapseln',
-            price: '28,00 €',
-            new: true,
-            approoved: true,
-            imageHead: '/item.png',
-            heart: false,
-        },
-        {
-            id: 2,
-            productHead: 'Clean product',
-            productHead2: 'Limited edition',
-            productName: 'Ylumi',
-            productTextFoot: 'Energy Kapseln',
-            productTextFoot2: 'Kapseln',
-            price: '28,00 €',
-            new: true,
-            approoved: true,
-            imageHead: '/item.png',
-            heart: false,
-        },
-        {
-            id: 3,
-            productHead: 'Clean product',
-            productHead2: 'Limited edition',
-            productName: 'Ylumi',
-            productTextFoot: 'Energy Kapseln',
-            productTextFoot2: 'Kapseln',
-            price: '28,00 €',
-            new: true,
-            approoved: true,
-            imageHead: '/item.png',
-            heart: false,
-        },
-        {
-            id: 4,
-            productHead: 'Clean product',
-            productHead2: 'Limited edition',
-            productName: 'Ylumi',
-            productTextFoot: 'Energy Kapseln',
-            productTextFoot2: 'Kapseln',
-            price: '28,00 €',
-            new: true,
-            approoved: true,
-            imageHead: '/item.png',
-            heart: false,
-        },
-        {
-            id: 5,
-            productHead: 'Clean product',
-            productHead2: 'Limited edition',
-            productName: 'Ylumi',
-            productTextFoot: 'Energy Kapseln',
-            productTextFoot2: 'Kapseln',
-            price: '28,00 €',
-            new: true,
-            approoved: true,
-            imageHead: '/item.png',
-            heart: false,
-        },
+const WhishList = () => {
+    const dispatch = useDispatch();
+    const { favouriteProducts } = useSelector(state => state.products);
 
-    ])
-    const [show,setShow] = useState(false)
+    useEffect(() => {
+        dispatch(getUserWishlist());
+    }, []);
+
+    console.log(favouriteProducts, 22222);
+    const [show, setShow] = useState(false)
     const showModal = () =>{
-        setShow(!show)
-    }
+        setShow(!show);
+    };
+
+    const favouriteClickHandler = id => {
+        dispatch(addToWishList(id));
+    };
+
     return(
         <div className={"whishlist__container"}>
             <div className={"whishlist__container__text"}>
@@ -103,10 +37,13 @@ const WhishList = () =>{
                 <ModalWhishlist show={show} setShow={setShow}/>
             </div>
             <div className={"whishlist__container__products"}>
-                {data.map((e, i) => {
+                {favouriteProducts.map((e, i) => {
                     return (
                         <div key={i}>
-                            <SingleProduct elem={e} products={data} setData={setData} />
+                            <SingleProduct 
+                                elem={e}
+                                favouriteClickHandler={favouriteClickHandler}
+                             />
                         </div>
                     );
                 })}
