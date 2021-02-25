@@ -1,38 +1,38 @@
-const InspirationBottomOneRep = ({background,color})=>{
-    return(
-        <>
-            <div style={{backgroundColor:background}}>
-                <div className={"d-flex flex-wrap inspiration-bottom "} >
-                    <div className={"col-lg-6 inspiration-bottom-text"}>
-                        <div className={"inspiration-bottom-head-txt"}>
-                            <p style={{color:color}}>Damendüfte</p>
-                            <h2 style={{color:color}}>
-                                Die Duft-sensation
-                                Aus Frankreich
+import Link from 'next/link';
+
+const InspirationBottomOneRep = ({ background, color, inspiration }) => (
+    <>
+        <div style={{backgroundColor:background}}>
+            <div className={"d-flex flex-wrap inspiration-bottom "} >
+                <div className={"col-lg-6 inspiration-bottom-text"}>
+                    <div className={"inspiration-bottom-head-txt"}>
+                        <p style={{color:color}}>{inspiration?.header}</p>
+                        <Link href={inspiration?.url || ''}>
+                            <h2 style={{color:color, cursor: 'pointer'}}>
+                                {inspiration?.title}
                             </h2>
-                        </div>
-                        <span style={{color:color}}>
-                           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Sed diam voluptua.
-                           At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                           no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                        </span>
-                        <button className={"inspiration-bottom-btn"} style={{color:background,backgroundColor:color}}>JETZT SHOPPEN</button>
+                        </Link>
                     </div>
-                    <div className={"col-lg-6 inspiration-bottom-image"} style={{backgroundImage:"url(/inspirationbot1.png)"}}>
-                        <div className={"inspiration-bottom-imagetxt"}>
-                            <p className={"insp-bot-sm"}>Saison highlight</p>
-                            <p className={"insp-bot-lg"}>
-                                Entdecken sie die
-                            </p>
-                            <p className={"insp-bot-lg"}>
-                                Düfte des winters
-                            </p>
-                        </div>
-                    </div>
+                    <span style={{color:color}}>
+                        {inspiration?.text}
+                    </span>
+                    <Link href={inspiration?.url || ''}>
+                        <button className={"inspiration-bottom-btn"} style={{color:background,backgroundColor:color}}>{inspiration?.button_text}</button>
+                    </Link>
                 </div>
+                <Link href={inspiration?.url || ''}>
+                    <div className={"col-lg-6 inspiration-bottom-image"} style={{backgroundImage: `url(${inspiration?.images?.url || '/inspirationbot1.png'})`, cursor: 'pointer'}}>
+                        <div className={"inspiration-bottom-imagetxt"}>
+                            <p className={"insp-bot-sm"}>{inspiration?.image_header}</p>
+                            <p className={"insp-bot-lg"}>
+                                {inspiration?.image_title}
+                            </p>
+                        </div>
+                    </div>
+                </Link>
             </div>
-        </>
-    )
-}
+        </div>
+    </>
+);
 
 export default InspirationBottomOneRep

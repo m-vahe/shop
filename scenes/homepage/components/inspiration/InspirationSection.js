@@ -1,10 +1,11 @@
-import Image from "next/image";
 import InspirationSection from "../../../../shareable/Inspiration";
-const Inspiration = () =>{
+
+const Inspiration = ({ inspiration }) => {
+
     const image = "/inspiration.png"
     return(
         <>
-            <InspirationSection  image={image}/>
+            <InspirationSection inspiration={inspiration} image={image} />
         </>
     )
 }

@@ -34,7 +34,7 @@ const Navbar = () => {
                       e.categories.length > 0 ? "main-list-with-hover" : ""
                     }`}
                   >
-                    <Link href={e.item_name.toLowerCase()}>
+                    <Link href={e?.item_name.toLowerCase() || ''}>
                       <a
                         className={`hovered-top-link ${
                           route.pathname === e.item_name.toLowerCase()
@@ -58,32 +58,29 @@ const Navbar = () => {
                       <>
                         <div className={"hovered"}>
                           {e.categories.map((category) => (
-                            <>
-                              <div
-                                className={" nav-hov-links "}
-                                key={category.id}
-                              >
-                                <h2>{category.CategoryName}</h2>
-                                {category.subCategories.length
-                                  ? category.subCategories.map((subC) => (
-                                      <Link href={"/a-z"} key={subC.id}>
-                                        {subC.SubCategoryName}
-                                      </Link>
-                                    ))
-                                  : null}
-                              </div>
-
-                            </>
+                            <div
+                              className={" nav-hov-links "}
+                              key={category.id}
+                            >
+                              <h2>{category.CategoryName}</h2>
+                              {category.subCategories.length
+                                ? category.subCategories.map((subC) => (
+                                    <Link href={"/a-z"} key={subC.id}>
+                                      {subC.SubCategoryName}
+                                    </Link>
+                                  ))
+                                : null}
+                            </div>
                           ))}
                           
                           {e?.images && (
                             <div className="col-lg-3 image-cont">
-                              <Link href={`${e?.url}`}>
+                              <Link href={`${e?.url || ''}`}>
                                 <div style={{backgroundImage: `url(${e?.images?.formats?.small?.url})`}}>
                                 </div>
                               </Link>
 
-                              <Link href={`${e?.url}`}>
+                              <Link href={`${e?.url || ''}`}>
                                 <h2>{e?.title}</h2>
                               </Link>
                             </div>

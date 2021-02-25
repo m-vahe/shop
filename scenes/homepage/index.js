@@ -14,18 +14,44 @@ import Services from "./components/services/Services";
 import BottomVideo from "./components/bottom-videos/BottomVideos";
 import FirstIntroMobile from "./components/mobile/firstIntro/FirstIntro";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
-
+import { useDispatch } from 'react-redux';
+import { getCollectionShops, getInspirations } from '../../services/actions/homepage__stable';
+import { useEffect, useState } from "react";
 
 const Homepage = () =>{
     // const htmltext = "<div><h1 style='color:red'>Alohha Bitches</h1></div>"
+    const dispatch = useDispatch();
+
+    const [firstData, setFirstData] = useState({});
+    const [secondData, setSecondData] = useState({});
+    const [inspiration, setInspiration] = useState({});
+
+    useEffect(() => {
+        dispatch(getCollectionShops())
+            .then(res => {
+                setFirstData(res?.find(elem => elem.position === 'HomePageLeft'));
+                setSecondData(res?.find(elem => elem.position === 'HomePageRight'));
+            });
+
+        dispatch(getInspirations())
+            .then(data => {
+                setInspiration(data.find(elem => elem.position === 'HomePageOne'));
+            });
+    }, []);
+
     return(
         <>
             <div className={"homepage-body"}>
                 <FirstIntro/>
                 <FirstIntroMobile/>
                 <FirstProducts/>
-                <SecondSection/>
-                <InspirationSection/>
+                <SecondSection 
+                    firstData={firstData} 
+                    secondData={secondData} 
+                />
+                <InspirationSection
+                    inspiration={inspiration} 
+                />
                 <InspirationBottomOne/>
                 <InspirationBottomTwo/>
                 <SecondProducts/>

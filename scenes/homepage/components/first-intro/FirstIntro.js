@@ -21,15 +21,15 @@ const FirstIntro = () =>{
                         <div>
                             <p className={"intro-small-txt"}>{homepageIntro?.header}</p>
 
-                            <Link href={`${homepageIntro?.url}`}>
+                            <Link href={`${homepageIntro?.url || ''}`}>
                                 <h2 className={"intro-big-txt"}>{homepageIntro?.title}</h2>
                             </Link>
                         </div>
                         
-                        <Link href={`${homepageIntro?.url}`}><button>{homepageIntro?.button_text}</button></Link>
+                        <Link href={`${homepageIntro?.url || ''}`}><button>{homepageIntro?.button_text}</button></Link>
                     </div>
                     <div className={"first-intro-bod-right "} >
-                        <Link href={`${homepageIntro?.url}`}>
+                        <Link href={`${homepageIntro?.url || ''}`}>
                             <img src={`${homepageIntro?.images.url}`} />
                         </Link>
                     </div>
