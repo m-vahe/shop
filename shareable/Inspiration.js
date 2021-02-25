@@ -1,12 +1,16 @@
 import Image from 'next/image';
-const InspirationSection = ({ background, color, image, padding }) => {
+import Link from 'next/link';
+
+const InspirationSection = ({ background, color, inspiration, padding }) => {
   return (
     <>
       <div style={{ backgroundColor: background, paddingTop: padding }}>
         <div className='inspiration-body d-flex flex-wrap'>
           <div className='col-lg-9 col-xl-9 inspiration-left'>
-            <p style={{ color: color }}>INSPIRATION</p>
-            <Image width={1278} height={630} layout='responsive' src={image} />
+            <p style={{ color: color }}>{inspiration?.image_title}</p>
+            <Link href={inspiration?.url || ''}>
+              <Image width={1278} height={630} layout='responsive' src={inspiration?.images?.url ||'/inspiration.png'} />
+            </Link>
           </div>
           <div className={'col-lg-3 col-xl-3 inspiration-right d-flex'}>
             <div className={'inspiration-right-head'}>
@@ -14,18 +18,20 @@ const InspirationSection = ({ background, color, image, padding }) => {
                 className={'inspiration-right-headtxt'}
                 style={{ color: color }}
               >
-                Gesichtspflege-serie
+                {inspiration?.header}
               </p>
-              <h2 style={{ color: color }}>Find your Inner beauty</h2>
+              <Link href={inspiration?.url || ''}>
+                <h2 style={{ color: color, cursor: 'pointer' }}>{inspiration?.title}</h2>
+              </Link>
             </div>
             <p className={'inspiration-right-bottxt'} style={{ color: color }}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Consectetur debitis dicta in modi pariatur! Accusantium,
-              consequuntur cum doloribus molestiae possimus saepe.
+              {inspiration?.text}
             </p>
-            <button style={{ color: background, backgroundColor: color }}>
-              JETZT SHOPPEN
-            </button>
+            <Link href={inspiration?.url || ''}>
+              <button style={{ color: background, backgroundColor: color }}>
+                {inspiration?.button_text}
+              </button>
+            </Link>
           </div>
         </div>
       </div>

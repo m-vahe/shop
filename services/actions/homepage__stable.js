@@ -6,6 +6,10 @@ import {
     SET_ERROR,
     GET_HOMEPAGE_HEADERTXTS,
     SET_HOMEPAGE_HEADERTXTS,
+    GET_COLLECTION_SHOPS,
+    SET_COLLECTION_SHOPS,
+    GET_INSPIRATIONS,
+    SET_INSPIRATIONS
 } from "../action-types/homepage__stable"
 import axios from "axios";
 
@@ -53,5 +57,43 @@ export const getHeaderTexts = () => {
                 });
             })
             .catch(err => dispatch({ type: SET_ERROR }));
+    };
+};
+
+export const getCollectionShops = () => {
+    return dispatch => {
+        dispatch({ type: GET_COLLECTION_SHOPS });
+
+        return axios.get(`${process.env.NEXT_PUBLIC_API_URL}/collection-shops`)
+        .then(res => {
+            const { data } = res;
+            
+            dispatch({ 
+                type: SET_COLLECTION_SHOPS, 
+                payload: data
+            });
+
+            return data;
+        })
+        .catch(err => dispatch({ type: SET_ERROR }));
+    };
+};
+
+export const getInspirations = () => {
+    return dispatch => {
+        dispatch({ type: GET_INSPIRATIONS });
+        
+        return axios.get(`${process.env.NEXT_PUBLIC_API_URL}/inspirations`)
+        .then(res => {
+            const { data } = res;
+            
+            dispatch({ 
+                type: SET_INSPIRATIONS, 
+                payload: data
+            });
+
+            return data;
+        })
+        .catch(err => dispatch({ type: SET_ERROR }));
     };
 };

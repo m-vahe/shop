@@ -3,7 +3,11 @@ import {
     GET_HOMEPAGE_SECTIONONE,
     GET_HOMEPAGE_PRODWLTXT_ONE,
     GET_HEADER_CONTACTS,
-    SET_HOMEPAGE_HEADERTXTS
+    SET_HOMEPAGE_HEADERTXTS,
+    GET_COLLECTION_SHOPS,
+    SET_COLLECTION_SHOPS,
+    GET_INSPIRATIONS,
+    SET_INSPIRATIONS
 } from "../action-types/homepage__stable";
 
 const initialState = {
@@ -13,6 +17,10 @@ const initialState = {
     headerContacts:[],
     headerText1: '',
     headerText2: '',
+    collectionShopsLoading: false,
+    collectionShops: [],
+    inspirationsLoading: false,
+    inspirations: []
 };
 
 const homeRedcucer = (state= initialState, action) =>{
@@ -42,6 +50,28 @@ const homeRedcucer = (state= initialState, action) =>{
                 ...state,
                 headerText1: action.payload[0],
                 headerText2: action.payload[1]
+            }
+        case GET_COLLECTION_SHOPS:
+            return {
+                ...state,
+                collectionShopsLoading: true
+            }
+        case SET_COLLECTION_SHOPS:
+            return {
+                ...state,
+                collectionShopsLoading: false,
+                collectionShops: action.payload
+            }
+        case GET_INSPIRATIONS:
+            return {
+                ...state,
+                inspirationsLoading: true
+            }
+        case SET_INSPIRATIONS:
+            return {
+                ...state,
+                inspirationsLoading: false,
+                inspirations: action.payload
             }
     }
     return state

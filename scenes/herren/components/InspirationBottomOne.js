@@ -1,11 +1,15 @@
 import InspirationBottomOneRep from "../../../shareable/InsprationBottomOneRep";
 
-const InspirationBottomOne = () =>{
+const InspirationBottomOne = ({ inspiration }) =>{
     const background = "black"
     const color = "white"
     return(
         <>
-            <InspirationBottomOneRep background={background} color={color}/>
+            <InspirationBottomOneRep 
+                inspiration={inspiration} 
+                background={background} 
+                color={color}
+            />
         </>
     )
 }

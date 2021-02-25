@@ -19,17 +19,17 @@ const HerrenHead = () => {
                 <div className={"col-lg-6 herren-head-left"}>
                     <div className={"herren-head-left-body"}>
                         <p>{herrenIntro?.header}</p>
-                        <Link href={`${herrenIntro?.url}`}>
+                        <Link href={`${herrenIntro?.url || ''}`}>
                             <h2>
                                 {herrenIntro?.title}
                             </h2>
                         </Link>
-                        <Link href={`${herrenIntro?.url}`}>
+                        <Link href={`${herrenIntro?.url || ''}`}>
                             <button>{herrenIntro?.button_text}</button>
                         </Link>
                     </div>
                 </div>
-                <Link href={`${herrenIntro?.url}`}>
+                <Link href={`${herrenIntro?.url || ''}`}>
                     <div className={"col-lg-6 herren-head-right"} style={{backgroundImage:"url(./herrentopimg.png)"}}>
 
                     </div>
