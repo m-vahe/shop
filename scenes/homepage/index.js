@@ -16,6 +16,8 @@ import FirstIntroMobile from "./components/mobile/firstIntro/FirstIntro";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import { useDispatch } from 'react-redux';
 import { getCollectionShops, getInspirations } from '../../services/actions/homepage__stable';
+import { getProductsWithLeftText } from '../../services/actions/products';
+import { getNewsReport } from '../../services/actions/news';
 import { useEffect, useState } from "react";
 
 const Homepage = () =>{
@@ -37,6 +39,10 @@ const Homepage = () =>{
             .then(data => {
                 setInspiration(data.find(elem => elem.position === 'HomePageOne'));
             });
+
+        dispatch(getProductsWithLeftText());
+
+        dispatch(getNewsReport());
     }, []);
 
     return(

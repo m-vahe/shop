@@ -4,7 +4,9 @@ import {
   SET_ERROR, 
   SWITCH_TO_FAVOURITE,
   GET_FAVOURITES_PRODUCTS,
-  SET_FAVOURITES_PRODUCTS
+  SET_FAVOURITES_PRODUCTS,
+  GET_PRODUCTS_WITH_LEFT_TEXT,
+  SET_PRODUCTS_WITH_LEFT_TEXT
 } from '../action-types/products';
 import axios from 'axios';
 
@@ -59,5 +61,25 @@ export const getUserWishlist = () => {
         dispatch({ type: SET_FAVOURITES_PRODUCTS, payload: data });
       })
       .catch(err => dispatch({ type: SET_ERROR, payload: err }));
+  };
+};
+
+export const getProductsWithLeftText = () => {
+  return dispatch => {
+    dispatch({ type: GET_PRODUCTS_WITH_LEFT_TEXT });
+
+    axios.get(
+      `${process.env.NEXT_PUBLIC_API_URL}/product-with-left-texts`,
+      // { headers: { Authorization: `Bearer ${JSON.parse(localStorage.getItem('userData') || '{}').jwt || ''}` } }
+      )
+        .then(res => {
+          const { data } = res;
+
+          dispatch({ 
+            type: SET_PRODUCTS_WITH_LEFT_TEXT, 
+            payload: data 
+          });
+        })
+        .catch(err => dispatch({ type: SET_ERROR, payload: err }));
   };
 };

@@ -9,7 +9,7 @@ const formatter = new Intl.NumberFormat('de-DE', {
 });
 
 // console.log(JSON.parse(Cookies.get('userData')), 88888888);
-const ProductsWithLeftText = ({ products, setProducts, addToWishList }) => {
+const ProductsWithLeftText = ({ products, leftText, addToWishList }) => {
   const router = useRouter();
   const dispatch = useDispatch();
   const { isAuthenticated } = useSelector(state => state.auth);
@@ -20,16 +20,8 @@ const ProductsWithLeftText = ({ products, setProducts, addToWishList }) => {
     }
 
     dispatch(addToWishList(id));
-    // setProducts(
-    //   products.map((elem) => {
-    //     if (elem.id === e.id) {
-    //       elem.heart = !elem.heart;
-    //     }
-    //     return elem;
-    //   })
-    // );
-    // console.log(e);
   };
+
   const toProductPage = (e) => {
     if (router.pathname !== "/products") {
       router.push(`/products/${e}`);
@@ -46,15 +38,17 @@ const ProductsWithLeftText = ({ products, setProducts, addToWishList }) => {
       <div className="first-products-body ">
         <div className="firstprod-left-text">
           <div className="firstprod-left-text">
-            <p>Beauty: Gesichtspflege</p>
-            <h2>Exklusive Neuheiten</h2>
+            <p>{leftText?.Header}</p>
+            <Link href={leftText?.url || ''}>
+              <h2>{leftText?.Title}</h2>
+            </Link>
             <span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-              cupiditate ea fuga illo illum laboriosam minima, odit, quae rerum
-              ut voluptate.
+              {leftText?.Text}
             </span>
           </div>
-          <button>JETZT SHOPPEN</button>
+          <Link href={leftText?.url || ''}>
+            <button>{leftText?.Button_text}</button>
+          </Link>
         </div>
 
         <div className={"prod-items-bod"}>

@@ -8,6 +8,8 @@ const FirstProducts = () => {
     const dispatch = useDispatch();
 
     const prdcts = useSelector(state => state?.products?.products);
+    const productsWithLeftText = useSelector(state => state?.products?.productsWithLeftText);
+    
 
     const [heart,setHeart] = useState(false)
     const [heart1,setHeart1] = useState(false)
@@ -31,6 +33,7 @@ const FirstProducts = () => {
             },
         ]
     )
+    const [leftText, setLeftText] = useState({});
     const prodTxt = useSelector(state => state.navbar.prodWLTxt);
     // const [prod]
     useEffect(()=>{
@@ -38,9 +41,14 @@ const FirstProducts = () => {
         dispatch(getProducts(3));
     }, []);
 
+    useEffect(() => {
+        setLeftText(productsWithLeftText.find(pr => pr.position === 'HomePageOne'));
+    }, [productsWithLeftText]);
+
     return(
         <>
             <ProductsWithLeftText
+                leftText={leftText}
                 products = {prdcts}
                 addToWishList={addToWishList}
                 setProducts = {setProducts}
