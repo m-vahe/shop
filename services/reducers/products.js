@@ -4,7 +4,9 @@ import {
     SET_ERROR, 
     SWITCH_TO_FAVOURITE,
     GET_FAVOURITES_PRODUCTS,
-    SET_FAVOURITES_PRODUCTS
+    SET_FAVOURITES_PRODUCTS,
+    GET_PRODUCTS_WITH_LEFT_TEXT,
+    SET_PRODUCTS_WITH_LEFT_TEXT
 } from '../action-types/products';
 
 const initialState = {
@@ -12,7 +14,9 @@ const initialState = {
   favouriteProductsLoading: false,
   products: [],
   favouriteProducts: [],
-  productsError: null
+  productsError: null,
+  productsWithLeftTextLoading: false,
+  productsWithLeftText: [],
 };
 
 const productsReducer = (state = initialState, { type, payload }) => {
@@ -57,6 +61,19 @@ const productsReducer = (state = initialState, { type, payload }) => {
                 ...state,
                 favouriteProductsLoading: false,
                 favouriteProducts: payload
+            }
+        }
+        case GET_PRODUCTS_WITH_LEFT_TEXT: {
+            return {
+                ...state,
+                productsWithLeftTextLoading: true,
+            }
+        }
+        case SET_PRODUCTS_WITH_LEFT_TEXT: {
+            return {
+                ...state,
+                productsWithLeftTextLoading: false,
+                productsWithLeftText: payload,
             }
         }
         default:

@@ -7,7 +7,9 @@ const Neuigkeiten = ({
   btntext,
   width,
   padd,
+  neuigkeiten
 }) => {
+  console.log(neuigkeiten, 555555555);
   return (
     <>
       <div
@@ -21,9 +23,9 @@ const Neuigkeiten = ({
         <div className={'d-flex flex-row flex-wrap first-product-bottom-body'}>
           <div className={'col-lg-6 product-bottom-left d-flex'}>
             <div className={'prod-bot-left-img'}>
-              <h2 style={{ color: color }}>Neuigkeiten</h2>
+              <h2 style={{ color: color }}>{neuigkeiten?.header}</h2>
               <Image
-                src='/productbotleft.png'
+                src={neuigkeiten?.images?.url || '/productbotleft.png'}
                 layout='responsive'
                 width={840}
                 height={840}
@@ -31,19 +33,13 @@ const Neuigkeiten = ({
             </div>
             <div className={'prod-bod-left-txt'}>
               <p style={{ color: color }}>Neuigkeiten im shop</p>
-              <h2 style={{ color: color }}>Parfum des Monats</h2>
+              <h2 style={{ color: color }}>{neuigkeiten?.title}</h2>
               <span style={{ color: color }}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat. sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
-               
+                {neuigkeiten?.text}
               </span>
-              <a href='#'>Mehr lesen</a>
+              <Link href={neuigkeiten?.url || ''}>
+                <a href='#'>{neuigkeiten?.link_text}</a>
+              </Link>
             </div>
           </div>
           <div className={'col-lg-6 product-bottom-right'}>
