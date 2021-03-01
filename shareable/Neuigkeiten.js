@@ -9,7 +9,8 @@ const Neuigkeiten = ({
   btntext,
   width,
   padd,
-  neuigkeiten
+  neuigkeiten,
+  neuigkeitenSecond
 }) => {
   console.log(neuigkeiten, 555555555);
   return (
@@ -25,7 +26,7 @@ const Neuigkeiten = ({
         <div className={'d-flex flex-row flex-wrap first-product-bottom-body'}>
           <div className={'col-lg-6 product-bottom-left d-flex'}>
             <div className={'prod-bot-left-img'}>
-              <h2 style={{ color: color }}>{neuigkeiten?.header}</h2>
+              <h2 style={{ color: color }}>{neuigkeiten?.title}</h2>
               <Image
                 src={neuigkeiten?.images?.url || '/productbotleft.png'}
                 layout='responsive'
@@ -34,7 +35,7 @@ const Neuigkeiten = ({
               />
             </div>
             <div className={'prod-bod-left-txt'}>
-              <p style={{ color: color }}>Neuigkeiten im shop</p>
+              <p style={{ color: color }}>{neuigkeiten?.header}</p>
               <h2 style={{ color: color }}>{neuigkeiten?.title}</h2>
               <span style={{ color: color }}>
                 {neuigkeiten?.text}
@@ -45,28 +46,22 @@ const Neuigkeiten = ({
             </div>
           </div>
           <div className={'col-lg-6 product-bottom-right'}>
-            <p style={{ color: color }}>Neuigkeiten im shop</p>
-            <h2 style={{ color: color }}>Parfum des Monats</h2>
+            <p style={{ color: color }}>{neuigkeitenSecond?.header}</p>
+            <h2 style={{ color: color }}>{neuigkeitenSecond?.title}</h2>
             <span style={{ color: color }}>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat. sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              {neuigkeitenSecond?.text}
             </span>
             <div className={'prod-bot-right-img'}>
               <Image
-                src='/productbotright.png'
+                src={neuigkeitenSecond?.images?.url || '/productbotright.png'}
                 layout='responsive'
                 width={981}
                 height={669}
               />
             </div>
-            <a href='#'>Mehr lesen</a>
+            <Link href={neuigkeitenSecond?.url || ''}>
+              <a href='#'>{neuigkeitenSecond?.link_text}</a>
+            </Link>
           </div>
         </div>
         <button

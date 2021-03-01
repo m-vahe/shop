@@ -13,6 +13,7 @@ import FirstComponent from "./components/mobilecomponents/FirstComponent";
 import { useEffect, useState } from "react";
 import { useDispatch } from 'react-redux';
 import { getCollectionShops, getInspirations } from '../../services/actions/homepage__stable';
+import { getNewsReport } from '../../services/actions/news';
 
 const HerrenScene = () => {
     const dispatch = useDispatch();
@@ -36,6 +37,8 @@ const HerrenScene = () => {
                 setInspiration2(data.find(elem => elem.position === 'HerrenPageTwo'));
                 setInspiration3(data.find(elem => elem.position === 'HerrenPageThre'));
             });
+        
+        dispatch(getNewsReport());
     }, []);
 
     return(

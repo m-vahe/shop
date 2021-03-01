@@ -5,11 +5,12 @@ const FilteredProductBottom = () =>{
     const btntext = "mehr neuigkeiten";
     const news = useSelector(({ news }) => news);
 
-    const neuigkeiten = news.newsReports.find(n => n.position === 'HomePageSix');
+    const neuigkeiten = news.newsReports.find(n => n.position === 'HomePageOne');
+    const neuigkeitenSecond = news.newsReports.find(n => n.position === 'HomePageTwo');
 
     return(
         <div className='neuigkeiten'>
-            <Neuigkeiten btntext={btntext} neuigkeiten={neuigkeiten} />
+            <Neuigkeiten btntext={btntext} neuigkeiten={neuigkeiten} neuigkeitenSecond={neuigkeitenSecond} />
         </div>
     )
 }
