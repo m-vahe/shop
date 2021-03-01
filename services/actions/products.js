@@ -17,7 +17,7 @@ export const getProducts = (limit = 3) => {
 
     axios.get(
       `${process.env.NEXT_PUBLIC_API_URL}/products?_limit=${limit}`,
-      { headers: { Authorization: `Bearer ${JSON.parse(localStorage.getItem('userData') || '{}').jwt || ''}` } }
+      { headers: { Authorization: JSON.parse(localStorage.getItem('userData') || '{}').jwt ? `Bearer ${JSON.parse(localStorage.getItem('userData') || '{}').jwt || ''}` : '' } }
       )
         .then(res => {
           const { data } = res;

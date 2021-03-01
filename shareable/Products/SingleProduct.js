@@ -99,7 +99,7 @@ const SingleProduct = ({ elem, favouriteClickHandler }) => {
         )}
         <h3 className={'prod-txt-price'}>{formatter.format(elem.price || 0)}</h3>
 
-        <button>
+        <button  onClick={()=> console.log(elem)}>
           <p>Quick shop </p>
           <svg
             xmlns='http://www.w3.org/2000/svg'

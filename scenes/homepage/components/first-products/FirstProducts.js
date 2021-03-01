@@ -1,5 +1,4 @@
 import {useState,useEffect} from "react";
-import {getProdWLTxtOne} from "../../../../services/actions/homepage__stable";
 import {useDispatch, useSelector} from "react-redux";
 import ProductsWithLeftText from "../../../../shareable/Products/PorductsWithLeftText";
 import { getProducts, addToWishList } from '../../../../services/actions/products';
@@ -9,7 +8,7 @@ const FirstProducts = () => {
 
     const prdcts = useSelector(state => state?.products?.products);
     const productsWithLeftText = useSelector(state => state?.products?.productsWithLeftText);
-    
+    const authData = useSelector(state => state.auth);
 
     const [heart,setHeart] = useState(false)
     const [heart1,setHeart1] = useState(false)
@@ -37,9 +36,9 @@ const FirstProducts = () => {
     const prodTxt = useSelector(state => state.navbar.prodWLTxt);
     // const [prod]
     useEffect(()=>{
-        dispatch(getProdWLTxtOne())
+        console.log(authData?.isAuthenticated, 444444);
         dispatch(getProducts(3));
-    }, []);
+    }, [authData?.isAuthenticated]);
 
     useEffect(() => {
         setLeftText(productsWithLeftText.find(pr => pr.position === 'HomePageOne'));

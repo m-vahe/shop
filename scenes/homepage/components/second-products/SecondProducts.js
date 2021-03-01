@@ -40,7 +40,7 @@ const SecondProducts = () =>{
     }, []);
 
     useEffect(() => {
-        setLeftText(productsWithLeftText.find(pr => pr.position === 'HomePageOne'));
+        setLeftText(productsWithLeftText.find(pr => pr.position === 'HomePageTwo'));
     }, [productsWithLeftText]);
 
     return(

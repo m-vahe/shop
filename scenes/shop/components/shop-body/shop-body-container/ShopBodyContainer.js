@@ -16,7 +16,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -29,7 +29,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -42,7 +42,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -55,7 +55,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -68,7 +68,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -81,7 +81,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -94,7 +94,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -107,7 +107,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -120,7 +120,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -133,7 +133,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -146,7 +146,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -159,7 +159,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -172,7 +172,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -185,7 +185,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -198,7 +198,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -211,7 +211,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -224,7 +224,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -237,7 +237,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -250,7 +250,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -263,7 +263,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
     {
@@ -276,7 +276,7 @@ const ShopBodyContainer = () => {
       price: '28,00 €',
       new: true,
       approoved: true,
-      imageHead: '/item.png',
+      images: [{url:'/item.png'}],
       heart: false,
     },
   ]);

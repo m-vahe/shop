@@ -15,7 +15,7 @@ const HerrenHead = () => {
 
     return(
         <>
-            <div className={"herren-head-body d-flex flex-wrap"}>
+            <div className={"herren-head-body"}>
                 <div className={"col-lg-6 herren-head-left"}>
                     <div className={"herren-head-left-body"}>
                         <p>{herrenIntro?.header}</p>

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import {useRouter} from "next/router";
 
 const Neuigkeiten = ({
   background,
@@ -12,7 +13,7 @@ const Neuigkeiten = ({
   neuigkeiten,
   neuigkeitenSecond
 }) => {
-  console.log(neuigkeiten, 555555555);
+  const router = useRouter()
   return (
     <>
       <div
@@ -26,17 +27,21 @@ const Neuigkeiten = ({
         <div className={'d-flex flex-row flex-wrap first-product-bottom-body'}>
           <div className={'col-lg-6 product-bottom-left d-flex'}>
             <div className={'prod-bot-left-img'}>
-              <h2 style={{ color: color }}>{neuigkeiten?.title}</h2>
-              <Image
-                src={neuigkeiten?.images?.url || '/productbotleft.png'}
-                layout='responsive'
-                width={840}
-                height={840}
-              />
+              <h2 style={{ color: color }}>NEUIGKEITEN</h2>
+              <div onClick={()=>router.push(`${neuigkeiten?.url}`)} style={{cursor:"pointer"}}>
+                <Image
+                    src={neuigkeiten?.images?.url || '/productbotleft.png'}
+                    layout='responsive'
+                    width={840}
+                    height={840}
+                />
+              </div>
             </div>
             <div className={'prod-bod-left-txt'}>
               <p style={{ color: color }}>{neuigkeiten?.header}</p>
-              <h2 style={{ color: color }}>{neuigkeiten?.title}</h2>
+              <h2 style={{ color: color,cursor:"pointer" }} onClick={()=>router.push(`${neuigkeiten?.url}`)} >
+                {neuigkeiten?.title}
+              </h2>
               <span style={{ color: color }}>
                 {neuigkeiten?.text}
               </span>
@@ -47,11 +52,18 @@ const Neuigkeiten = ({
           </div>
           <div className={'col-lg-6 product-bottom-right'}>
             <p style={{ color: color }}>{neuigkeitenSecond?.header}</p>
-            <h2 style={{ color: color }}>{neuigkeitenSecond?.title}</h2>
+            <h2
+                onClick={
+                  ()=>router.push(`${neuigkeitenSecond?.url}`)
+                }
+                style={{cursor:"pointer",color: color }}
+            >
+              {neuigkeitenSecond?.title}
+            </h2>
             <span style={{ color: color }}>
               {neuigkeitenSecond?.text}
             </span>
-            <div className={'prod-bot-right-img'}>
+            <div className={'prod-bot-right-img'}  onClick={()=>router.push(`${neuigkeitenSecond?.url}`)} style={{cursor:"pointer"}}>
               <Image
                 src={neuigkeitenSecond?.images?.url || '/productbotright.png'}
                 layout='responsive'
@@ -66,6 +78,7 @@ const Neuigkeiten = ({
         </div>
         <button
           className={'filter-bot-btn'}
+          onClick={()=>router.push("/magazin")}
           style={{
             color: background,
             backgroundColor: color,

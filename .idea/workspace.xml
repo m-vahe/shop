@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/services/action-types/newsletter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/actions/newsletter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/reducers/newsletter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/homepage__stable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/Head.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/Head.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/herren.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/herren.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/first-products/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/first-products/FirstProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/inpiration-bottom-one/InspirationBottomOne.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/inpiration-bottom-one/InspirationBottomOne.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/second-products/SecondProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/second-products/SecondProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/services/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/services/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/services/Services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/services/Services.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-container/ShopBodyContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-container/ShopBodyContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/actions/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/actions/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Neuigkeiten.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Neuigkeiten.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,19 +80,6 @@
       <recent name="$PROJECT_DIR$/scenes/homepage/components/inspiration-bottom-two" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -150,6 +141,7 @@
       <workItem from="1613462086591" duration="14975000" />
       <workItem from="1613544588578" duration="14338000" />
       <workItem from="1613630070386" duration="17660000" />
+      <workItem from="1614581602719" duration="14810000" />
     </task>
     <servers />
   </component>
