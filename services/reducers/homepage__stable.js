@@ -16,15 +16,15 @@ import {
 
 const initialState = {
     navList: [],
-    navListLoaded:false,
+    navListLoaded:true,
     homePageSctOne:[],
-    homePageSctOneLoaded:false,
+    homePageSctOneLoaded:true,
     prodWLTxt:[],
     headerContacts:[],
-    headerContactsLoaded:false,
+    headerContactsLoaded:true,
     headerText1: '',
     headerText2: '',
-    collectionShopsLoading: false,
+    collectionShopsLoading: true,
     collectionShops: [],
     inspirationsLoading: false,
     inspirations: [],
@@ -33,33 +33,21 @@ const initialState = {
 
 const homeRedcucer = (state= initialState, action) =>{
     switch (action.type){
-        case GET_HOMEPAGE_SECTIONONE:
-            return {
-                ...state,
-                homePageSctOneLoaded: true
-            }
+
         case SET_HOMEPAGE_SECTIONONE:
             return {
                 ...state,
                 homePageSctOne: action.payload,
                 homePageSctOneLoaded: false
             }
-        case GET_NAVBAR_SETTINGS:
-            return {
-                ...state,
-                navListLoaded: true
-            }
+
         case SET_NAVBAR_SETTINGS:
             return {
                 ...state,
                 navList: action.payload,
                 navListLoaded: false
             }
-        case GET_HEADER_CONTACTS:
-            return {
-                ...state,
-                headerContactsLoaded: true
-            }
+
         case SET_HEADER_CONTACTS:
             return {
                 ...state,

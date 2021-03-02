@@ -4,7 +4,6 @@ import {useEffect} from "react";
 import Link from "next/link";
 
 const FirstIntro = () =>{
-    const dispatch = useDispatch();
 
     const HPFS = useSelector(state => state.navbar.homePageSctOne);
     const homepageIntro = HPFS.find(p => p.position === 'HomePage');
@@ -27,9 +26,14 @@ const FirstIntro = () =>{
                         <Link href={`${homepageIntro?.url || ''}`}><button>{homepageIntro?.button_text}</button></Link>
                     </div>
                     <div className={"first-intro-bod-right "} >
-                        <Link href={`${homepageIntro?.url || ''}`}>
-                            <img src={`${homepageIntro?.images.url}`} />
-                        </Link>
+                        {
+                            !homepageIntro?.images.url ? <img src='/first1.jpg' />
+                                :
+                                <Link href={`${homepageIntro?.url}`}>
+                                    <img src={`${homepageIntro?.images.url} ` || '/first1.jpg'} />
+                                </Link>
+                        }
+
                     </div>
                 </div>
             </div>

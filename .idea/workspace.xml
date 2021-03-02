@@ -3,21 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/loader/loader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/loader/loader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/dpab-magazine/DpabMagazine.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/dpab-magazine/DpabMagazine.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/components/first-intro/FirstIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/first-intro/FirstIntro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/services/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/services/Services.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/konto-container/KontoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/konto-container/KontoContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/lexikon/components/collapse/components/collapse-left-image/CollapseLeftImage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/lexikon/components/collapse/components/collapse-left-image/CollapseLeftImage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/actions/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/homepage__stable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/reducers/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/FirstAddSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/FirstAddSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Inspiration.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Inspiration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +131,7 @@
       <workItem from="1613544588578" duration="14338000" />
       <workItem from="1613630070386" duration="17660000" />
       <workItem from="1614581602719" duration="15923000" />
-      <workItem from="1614667382402" duration="12976000" />
+      <workItem from="1614667382402" duration="15783000" />
     </task>
     <servers />
   </component>

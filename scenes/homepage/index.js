@@ -18,7 +18,7 @@ import { useDispatch ,useSelector} from 'react-redux';
 import {getCollectionShops, getHomePageSctOne, getInspirations} from '../../services/actions/homepage__stable';
 import { getProductsWithLeftText } from '../../services/actions/products';
 import { getNewsReport } from '../../services/actions/news';
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import Loader from "../../layouts/loader/Loader";
 import Header from "../../layouts/header/Header";
 import MobileHeader from "../../layouts/mobile-header/MobileHeader";
@@ -34,8 +34,10 @@ const Homepage = () =>{
     const [firstData, setFirstData] = useState({});
     const [secondData, setSecondData] = useState({});
     const [inspiration, setInspiration] = useState({});
+    const HPFS = useSelector(state => state.navbar.homePageSctOne);
+    const homepageIntro = HPFS.find(p => p.position === 'HomePage');
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         dispatch(getCollectionShops())
             .then(res => {
                 setFirstData(res?.find(elem => elem.position === 'HomePageLeft'));
@@ -56,13 +58,13 @@ const Homepage = () =>{
     return(
         <>
             {
-                loaded && navlistloaded && headerloaded ?
+                loaded && navlistloaded && headerloaded && !homepageIntro?.images.url &&
                     <div className={"loader__body"}>
                            <Space size="middle">
                                <Spin size="large" />
                            </Space>
                     </div>
-                    :
+            }
                     <>
                         <Header/>
                         <MobileHeader/>
@@ -92,7 +94,6 @@ const Homepage = () =>{
                         </div>
                         <Footer/>
                     </>
-            }
         </>
     )
 }
