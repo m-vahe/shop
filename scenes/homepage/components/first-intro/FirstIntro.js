@@ -9,9 +9,7 @@ const FirstIntro = () =>{
     const HPFS = useSelector(state => state.navbar.homePageSctOne);
     const homepageIntro = HPFS.find(p => p.position === 'HomePage');
 
-    useEffect(() => {
-        dispatch(getHomePageSctOne());
-    }, []);
+
 
     return(
         <>

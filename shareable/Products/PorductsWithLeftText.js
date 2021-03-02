@@ -54,7 +54,7 @@ const ProductsWithLeftText = ({ products, leftText, addToWishList }) => {
         <div className={"prod-items-bod"}>
           {products && products.map((e, i) => {
             return (
-                <div className={' first-prod-items col-lg-3'}>
+                <div className={' first-prod-items col-lg-3'} key={i}>
                   <div
                       className={'picture-body-prod'}
 

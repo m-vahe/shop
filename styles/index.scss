@@ -8,6 +8,25 @@
     justify-content: center;
   }
 }
+.loader__body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ant-spin-lg{
+    font-size: 10rem !important;
+  }
+  .ant-spin-dot{
+    font-size: 10rem !important;
+  }
+  .ant-spin-dot-item{
+    background: black;
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+}
+
 @import '../layouts/header/header';
 @import '../scenes/homepage/homepage';
 @import '../layouts/footer/footer';

@@ -9,7 +9,9 @@ const FirstAddSection = ({ background, firstData, secondData, textcolor, padding
                     <div className={"sec-sec-el col-lg-6"}>
                         <div>
                             <Link href={firstData?.url || '/'}>
-                                <Image src={firstData?.images?.url || '/aaa.jpg'} layout='responsive' width={840} height={630}/>
+                                <a href="">
+                                    <Image src={firstData?.images?.url || '/aaa.jpg'} layout='responsive' width={840} height={630}/>
+                                </a>
                             </Link>
                         </div>
                         <div className={"sec-sec-el-text"}>
@@ -17,9 +19,11 @@ const FirstAddSection = ({ background, firstData, secondData, textcolor, padding
                                 {firstData?.header}
                             </p>
                             <Link href={firstData?.url || '/'}>
-                                <h3 style={{color:textcolor, cursor: 'pointer'}}>
-                                    {firstData?.title}
-                                </h3>
+                                <a href="#">
+                                    <h3 style={{color:textcolor, cursor: 'pointer'}}>
+                                        {firstData?.title}
+                                    </h3>
+                                </a>
                             </Link>
                         </div>
                         <div className={"sec-sec-el-link"}>
@@ -33,7 +37,9 @@ const FirstAddSection = ({ background, firstData, secondData, textcolor, padding
                     <div className={"sec-sec-el col-lg-6"}>
                         <div>
                             <Link href={secondData?.url || '/'}>
-                                <Image src={secondData?.images?.url || '/aaa.jpg'} layout='responsive' width={840} height={630} />                  
+                                <a href="#">
+                                    <Image src={secondData?.images?.url || '/aaa.jpg'} layout='responsive' width={840} height={630} />
+                                </a>
                             </Link>
                         </div>
                         <div className={"sec-sec-el-text"}>
@@ -42,9 +48,11 @@ const FirstAddSection = ({ background, firstData, secondData, textcolor, padding
                             </p>
 
                             <Link href={secondData?.url || '/'}>
-                                <h3 style={{color:textcolor, cursor: 'pointer'}}>
-                                    {secondData?.title}
-                                </h3>
+                                <a href="#">
+                                    <h3 style={{color:textcolor, cursor: 'pointer'}}>
+                                        {secondData?.title}
+                                    </h3>
+                                </a>
                             </Link>     
                         </div>
                         <div className={"sec-sec-el-link"}>

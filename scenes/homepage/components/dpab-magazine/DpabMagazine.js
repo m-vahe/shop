@@ -1,6 +1,13 @@
 import Image from 'next/image'
-
+import {useSelector} from "react-redux";
+import Link from "next/link";
 const DpabMagazine = () =>{
+    const news = useSelector(({ news }) => news);
+
+    const dpabBig = news.newsReports.find(n => n.position === 'HomePageThree');
+    const dpabLeft = news.newsReports.find(n => n.position === 'HomePageFour');
+    const dpabRight = news.newsReports.find(n => n.position === 'HomePageFive');
+    console.log(dpabLeft,7777777777777777777777777777)
     return(
         <>
             <div className={"dpab-magazin-all"}>
@@ -8,47 +15,49 @@ const DpabMagazine = () =>{
                     <h2 className={"dpab-magazin-title"}>DPAB MAGAZIN</h2>
                     <div className={"dpab-top-section"}>
                         <div className={"dpab-top-section-img"} >
-                        <Image src='/dpab1.png' width={1720} height={695} layout='responsive'/>
+                        <Image src={`${dpabBig?.images?.url || '/productbotleft.png'}`} width={1720} height={695} layout='responsive'/>
                         </div>
                         <div className={"dpab-top-section-txt"}>
-                            <h2>Home sweet home</h2>
-                            <p>Gemütliches Ambiente für Zuhause </p>
+                            <h2>{dpabBig?.title}</h2>
+                            <p>{dpabBig?.header}</p>
                             <span>
-                                Es gibt wohl kaum etwas schöneres, als nach einem langen Tag nach Hause zu kommen und die lang ersehnte Entspannung in seinem eigenen Heim genießen zu können.
-                                Es gibt unzählige Möglichkeiten seine geliebten vier Wände in einem Design einzurichten, mit dem man sich absolut wohl fühlt. Egal ob im Landhausstil, modern,
-                                minimalistisch oder im skandinavischen Stil. Beim Einrichten können Sie Ihrer
+                                {dpabBig?.text}
                              </span>
-                            <a href="#">Mehr lesen</a>
+                            <Link href={dpabBig?.url || "/"}>
+                                <a href={"#"}>{dpabBig?.link_text}</a>
+                            </Link>
                         </div>
                     </div>
                     <div className={"dpab-bottom-section d-flex flex-wrap"}>
                         <div className={"col-lg-6 dpab-bottom-section-left d-flex"}>
                             <div className={"dpab-bottom-section-left-img-bod"}>
                                 <div className={"dpab-bottom-section-left-img"}>
-                                    <Image  src='/dpab2.png' width={837} height={635} layout='responsive'/>
+                                    <Image  src={`${dpabLeft?.images?.url || '/productbotleft.png'}`} width={837} height={635} layout='responsive'/>
                                 </div>
                             </div>
                             <div className={"dpab-bottom-section-left-txt"}>
-                                <h2>SANA JARDIN</h2>
-                                <p>Mehr als ein parfum</p>
+                                <h2>{dpabLeft?.title}</h2>
+                                <p>{dpabLeft?.header}</p>
                                 <span>
-                                    Sana Jardin ist eine faszinierende und außergewöhnliche Marke. Dass das Team von das Parfum and Beauty besonders durch ihre spannende Geschichte
-                                    und einzigartige Philosophie beeindruckt.
+                                    {dpabLeft?.text}
                                 </span>
-                                <a href="#">Mehr lesen</a>
+                                <Link href={dpabLeft?.url || "/"}>
+                                    <a href="#">{dpabLeft?.link_text}</a>
+                                </Link>
                             </div>
                         </div>
                         <div className={"dpab-bottom-section-right"}>
-                                <h2>DIANA VREELAND</h2>
-                                <p>Modedesignerin und Chefredakteurin Vogue</p>
+                                <h2>{dpabRight?.title}</h2>
+                                <p>{dpabRight?.header}</p>
                                 <span>
-                                Zur Vorstellung einer unserer Duftkollektionen stellen wir, von Das Parfum & Beauty Ihnen seine berühmte Namensgeberin vor – Diana Vreeland.
-                                Dianas hedonistische Mutter machte ihrer Tochter relativ früh einprägsam bewusst, dass sie hässlich sei.
-                            </span>
+                                    {dpabRight?.text}
+                                </span>
                                 <div className={"dpab-bottom-section-right-img"}>
-                                <Image  src='/dpab3.png' width={760} height={627} layout='responsive'/>
+                                <Image  src={`${dpabRight?.images.url || '/productbotleft.png'}`} width={760} height={627} layout='responsive'/>
                                 </div>
-                                <a href="#">Mehr lesen</a>
+                                <Link href={dpabRight?.url || "/"}>
+                                    <a href="#">{dpabRight?.link_text}</a>
+                                </Link>
                         </div>
                     </div>
                 </div>

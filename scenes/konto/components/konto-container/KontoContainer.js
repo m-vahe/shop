@@ -21,7 +21,7 @@ const KontoContainer = () => {
         },
         {
             id: 4,
-            title: 'wishlist',
+            title: 'whishlist',
             text: 'Lorem ipsum dolor sit amet, con'
         },
         {

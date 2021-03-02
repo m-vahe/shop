@@ -14,16 +14,23 @@ import Services from "./components/services/Services";
 import BottomVideo from "./components/bottom-videos/BottomVideos";
 import FirstIntroMobile from "./components/mobile/firstIntro/FirstIntro";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
-import { useDispatch } from 'react-redux';
-import { getCollectionShops, getInspirations } from '../../services/actions/homepage__stable';
+import { useDispatch ,useSelector} from 'react-redux';
+import {getCollectionShops, getHomePageSctOne, getInspirations} from '../../services/actions/homepage__stable';
 import { getProductsWithLeftText } from '../../services/actions/products';
 import { getNewsReport } from '../../services/actions/news';
 import { useEffect, useState } from "react";
+import Loader from "../../layouts/loader/Loader";
+import Header from "../../layouts/header/Header";
+import MobileHeader from "../../layouts/mobile-header/MobileHeader";
+import Footer from "../../layouts/footer/Footer";
+import { Spin, Space } from 'antd';
 
 const Homepage = () =>{
     // const htmltext = "<div><h1 style='color:red'>Alohha Bitches</h1></div>"
     const dispatch = useDispatch();
-
+    const loaded = useSelector((state) => state.navbar.homePageSctOneLoaded);
+    const navlistloaded = useSelector((state) => state.navbar.navListLoaded)
+    const headerloaded = useSelector((state) => state.navbar.headerContactsLoaded)
     const [firstData, setFirstData] = useState({});
     const [secondData, setSecondData] = useState({});
     const [inspiration, setInspiration] = useState({});
@@ -41,36 +48,51 @@ const Homepage = () =>{
             });
 
         dispatch(getProductsWithLeftText());
-
         dispatch(getNewsReport());
+        dispatch(getHomePageSctOne());
     }, []);
+
 
     return(
         <>
-            <div className={"homepage-body"}>
-                <FirstIntro/>
-                <FirstIntroMobile/>
-                <FirstProducts/>
-                <SecondSection 
-                    firstData={firstData} 
-                    secondData={secondData} 
-                />
-                <InspirationSection
-                    inspiration={inspiration} 
-                />
-                <InspirationBottomOne/>
-                <InspirationBottomTwo/>
-                <SecondProducts/>
-                <ProductsWithFilterHomepage/>
-                <FilteredProductBottom/>
-                <VideoPart/>
-                <BottomVideo/>
-                <DpabMagazine/>
-                <DpabBottom/>
-                <Services/>
-                <NewsletterRep/>
-                {/*<div dangerouslySetInnerHTML={{__html:htmltext}}></div>*/}
-            </div>
+            {
+                loaded && navlistloaded && headerloaded ?
+                    <div className={"loader__body"}>
+                           <Space size="middle">
+                               <Spin size="large" />
+                           </Space>
+                    </div>
+                    :
+                    <>
+                        <Header/>
+                        <MobileHeader/>
+                        <div className={"homepage-body"}>
+                            <FirstIntro/>
+                            <FirstIntroMobile/>
+                            <FirstProducts/>
+                            <SecondSection
+                                firstData={firstData}
+                                secondData={secondData}
+                            />
+                            <InspirationSection
+                                inspiration={inspiration}
+                            />
+                            <InspirationBottomOne/>
+                            <InspirationBottomTwo/>
+                            <SecondProducts/>
+                            <ProductsWithFilterHomepage/>
+                            <FilteredProductBottom/>
+                            <VideoPart/>
+                            <BottomVideo/>
+                            <DpabMagazine/>
+                            <DpabBottom/>
+                            <Services/>
+                            <NewsletterRep/>
+                            {/*<div dangerouslySetInnerHTML={{__html:htmltext}}></div>*/}
+                        </div>
+                        <Footer/>
+                    </>
+            }
         </>
     )
 }

@@ -15,10 +15,10 @@ export default function Home() {
 
   return (
     <>
-        <PageHeader />
-        <MobilePageHeader />
+        {/*<PageHeader />*/}
+        {/*<MobilePageHeader />*/}
         <Homepage/>
-        <Footer/>
+        {/*<Footer/>*/}
     </>
   );
 }
