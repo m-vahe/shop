@@ -8,7 +8,6 @@ const formatter = new Intl.NumberFormat('de-DE', {
   minimumFractionDigits: 2
 });
 
-// console.log(JSON.parse(Cookies.get('userData')), 88888888);
 const ProductsWithLeftText = ({ products, leftText, addToWishList }) => {
   const router = useRouter();
   const dispatch = useDispatch();
@@ -104,10 +103,15 @@ const ProductsWithLeftText = ({ products, leftText, addToWishList }) => {
                     </svg>
                   </div>
                   {e.new ? <span className={'item-new'}>New</span> : <span className={'item-notNew'}>New</span>}
-                  <span className={'prod-txt-head'} style={{ opacity: '0' }}>
-          Clean product
-        </span>
-
+                  {
+                    e.clean_product ?
+                        <span className={'prod-txt-head'} >
+                          Clean product
+                        </span> :
+                        <span className={'prod-txt-head'} style={{opacity:"0"}}>
+                          Clean product
+                        </span>
+                  }
                   <span className={'prod-txt-head2'}>Limited edition</span>
                   {e?.brand ? (
                       <h3 className={'prod-txt-name'}>{e?.brand}</h3>
@@ -126,7 +130,7 @@ const ProductsWithLeftText = ({ products, leftText, addToWishList }) => {
                   )}
                   <h3 className={'prod-txt-price'}>{formatter.format(e.price || 0)}</h3>
 
-                  <button>
+                  <button >
                     <p>Quick shop </p>
                     <svg
                         xmlns='http://www.w3.org/2000/svg'

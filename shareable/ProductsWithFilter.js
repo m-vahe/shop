@@ -22,7 +22,6 @@ const ProductsWithFilter = ({
         return elem;
       })
     );
-    console.log(e);
   };
   const toProductPage = (e) => {
     if (router.pathname !== '/products') {

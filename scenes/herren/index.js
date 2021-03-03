@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 import { useDispatch } from 'react-redux';
 import { getCollectionShops, getInspirations } from '../../services/actions/homepage__stable';
 import { getNewsReport } from '../../services/actions/news';
+import {getProductsWithLeftText} from "../../services/actions/products";
 
 const HerrenScene = () => {
     const dispatch = useDispatch();
@@ -39,6 +40,7 @@ const HerrenScene = () => {
             });
         
         dispatch(getNewsReport());
+        dispatch(getProductsWithLeftText());
     }, []);
 
     return(

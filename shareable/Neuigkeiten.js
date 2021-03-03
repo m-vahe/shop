@@ -29,11 +29,10 @@ const Neuigkeiten = ({
             <div className={'prod-bot-left-img'}>
               <h2 style={{ color: color }}>NEUIGKEITEN</h2>
               <div onClick={()=>router.push(`${neuigkeiten?.url}`)} style={{cursor:"pointer"}}>
-                <Image
+                <img
                     src={neuigkeiten?.images?.url || '/productbotleft.png'}
                     layout='responsive'
-                    width={840}
-                    height={840}
+
                 />
               </div>
             </div>
@@ -64,11 +63,8 @@ const Neuigkeiten = ({
               {neuigkeitenSecond?.text}
             </span>
             <div className={'prod-bot-right-img'}  onClick={()=>router.push(`${neuigkeitenSecond?.url}`)} style={{cursor:"pointer"}}>
-              <Image
+              <img
                 src={neuigkeitenSecond?.images?.url || '/productbotright.png'}
-                layout='responsive'
-                width={981}
-                height={669}
               />
             </div>
             <Link href={neuigkeitenSecond?.url || ''}>

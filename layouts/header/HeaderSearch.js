@@ -24,7 +24,6 @@ const HeaderSearch = () => {
 
     useEffect(()=>{
         dispatch(getHeaderContacts())
-        console.log(headerContacts)
     },[])
 
     const [visible,setVisible] = useState(false)

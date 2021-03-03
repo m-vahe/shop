@@ -8,7 +8,6 @@ const InspirationBottomTwo = () => {
     
     useEffect(() => {
         setHomepageThirdI(inspirations.find(elem => elem.position === 'HomePageThre'));
-        console.log(homepageThirdI, 6666666666666666);
     }, [inspirations]);
 
     return(

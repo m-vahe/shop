@@ -57,7 +57,6 @@ export const getUserWishlist = () => {
     )
       .then(res => {
         const { data } = res;
-        console.log(res, 5555555);
         dispatch({ type: SET_FAVOURITES_PRODUCTS, payload: data });
       })
       .catch(err => dispatch({ type: SET_ERROR, payload: err }));

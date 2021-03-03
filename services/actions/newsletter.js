@@ -7,7 +7,6 @@ export const postNewsletter = (formData) => {
         axios.post('http://207.154.241.233:1337/user-newsletters',formData)
             .then(response => {
                 dispatch({type: POST_NEWSLETTER, payload: response.data})
-                console.log(response,88888888888888888)
             } )
             .catch(err => dispatch({type: SET_ERROR}));
     }

@@ -1,26 +1,20 @@
 import Image from 'next/image';
 
 const InfoContainer = ({
-  title,
-  text,
-  desc,
-  src,
   className,
-  width,
-  height,
-  layout,
+  textData
 }) => {
   return (
     <div className={className}>
       <div className={`${className}__content`}>
-        <span className={`${className}__content--title`}>{title}</span>
-        <span className={`${className}__content--text`}>{text}</span>
+        <span className={`${className}__content--title`}>{textData?.header}</span>
+        <span className={`${className}__content--text`}>{textData?.title}</span>
         <span div className={`${className}__content--description`}>
-          {desc}
+          {textData?.text}
         </span>
       </div>
       <div className={`${className}__image`}>
-        <img src={src} />
+        <img src={`${textData?.images.url || '/productbotleft.png'}`} />
       </div>
     </div>
   );

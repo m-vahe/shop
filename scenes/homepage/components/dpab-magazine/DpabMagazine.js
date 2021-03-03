@@ -7,7 +7,6 @@ const DpabMagazine = () =>{
     const dpabBig = news.newsReports.find(n => n.position === 'HomePageThree');
     const dpabLeft = news.newsReports.find(n => n.position === 'HomePageFour');
     const dpabRight = news.newsReports.find(n => n.position === 'HomePageFive');
-    console.log(dpabLeft,7777777777777777777777777777)
     return(
         <>
             <div className={"dpab-magazin-all"}>

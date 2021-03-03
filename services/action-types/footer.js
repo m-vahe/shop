@@ -1,0 +1,3 @@
+export const GET_FOOTER_DATA = "GET_FOOTER_DATA"
+export const SET_FOOTER_DATA = "SET_FOOTER_DATA"
+export const SET_ERROR = "SET_ERROR"

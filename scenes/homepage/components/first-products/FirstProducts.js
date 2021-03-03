@@ -36,7 +36,6 @@ const FirstProducts = () => {
     const prodTxt = useSelector(state => state.navbar.prodWLTxt);
     // const [prod]
     useEffect(()=>{
-        console.log(authData?.isAuthenticated, 444444);
         dispatch(getProducts(3));
     }, [authData?.isAuthenticated]);
 

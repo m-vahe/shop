@@ -10,7 +10,7 @@ const InspirationSection = ({ background, color, inspiration, padding }) => {
             <p style={{ color: color }}>{inspiration?.image_title}</p>
             <Link href={inspiration?.url || ''}>
               <a href="#">
-                <Image width={1278} height={630} layout='responsive' src={inspiration?.images?.url ||'/inspiration.png'} />
+                <img  src={inspiration?.images?.url ||'/inspiration.png'} />
               </a>
             </Link>
           </div>

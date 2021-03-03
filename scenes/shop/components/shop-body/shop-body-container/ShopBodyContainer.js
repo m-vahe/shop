@@ -3,6 +3,7 @@ import SingleProduct from '../../../../../shareable/Products/SingleProduct';
 import PagePagination from '../../../../../shareable/pagination/Pagination';
 import InfoContainer from '../../../../../shareable/info-container/InfoContainer';
 import ShopDescription from './shop-description/ShopDescription';
+import {useSelector} from "react-redux";
 
 const ShopBodyContainer = () => {
   const [data, setData] = useState([
@@ -280,6 +281,9 @@ const ShopBodyContainer = () => {
       heart: false,
     },
   ]);
+  const news = useSelector(({ news }) => news);
+  const  shopHeadTwo = news.newsReports.find(n => n.position === 'ShopPageTwo');
+  const  shopHeadThree = news.newsReports.find(n => n.position === 'ShopPageThree');
   return (
     <div className='shop-right-body'>
       <div className='__products'>
@@ -292,25 +296,11 @@ const ShopBodyContainer = () => {
         })}
         <InfoContainer
           className='middleInfoContainer'
-          title='Duftserie für zuhause'
-          text='Spoil your home'
-          desc='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
-                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
-          src='/inspirationbot2.png'
-          width='840'
-          height='629'
-          layout='intrinsic'
+          textData = {shopHeadTwo}
         />
         <InfoContainer
           className='bottomInfoContainer'
-          title='Duftserie für zuhause'
-          text='Spoil your home'
-          desc='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.
-                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
-          src='/inspirationbot1.png'
-          width='840'
-          height='628'
-          layout='intrinsic'
+          textData ={shopHeadThree}
         />
       </div>
         <div className='shop-desc-body'>

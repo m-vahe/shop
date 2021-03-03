@@ -1,5 +1,4 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faTruck ,faHeart, faPercent, faFlask} from "@fortawesome/free-solid-svg-icons";
+
 const Services = () =>{
     return(
         <>

@@ -2,11 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/services/action-types/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/actions/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/reducers/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/first-intro/FirstIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/first-intro/FirstIntro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/cartSidebar/CartSidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/cartSidebar/CartSidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer/FooterNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/FooterNavigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/FirstProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/Inspiration.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/Inspiration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/mobilecomponents/FirstComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/bottom-videos/BottomVideos.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/bottom-videos/BottomVideos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/dpab-magazine/DpabMagazine.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/dpab-magazine/DpabMagazine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/filtered-product-bottom/FilteredProductBottom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/filtered-product-bottom/FilteredProductBottom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/first-products/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/first-products/FirstProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/inspiration-bottom-two/InspirationBottomTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/inspiration-bottom-two/InspirationBottomTwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/inspiration/InspirationSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/inspiration/InspirationSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/inspiration/InspirationSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/inspiration/InspirationSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/firstIntro/FirstIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/firstIntro/FirstIntro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/services/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/services/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/konto/components/whishlist/Whishlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/whishlist/Whishlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-container/ShopBodyContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-container/ShopBodyContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-container/shop-description/ShopDescription.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-container/shop-description/ShopDescription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-header/ShopHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-header/ShopHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-header/ShopHeaderMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-header/ShopHeaderMobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-header/shopheader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-header/shopheader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/action-types/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/actions/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/actions/newsletter.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/newsletter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/actions/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/reducers/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/news.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Inspiration.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Inspiration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Neuigkeiten.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Neuigkeiten.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSideBarProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSideBarProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSidebarProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSidebarProduct.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/firstIntro/FirstShareableIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/firstIntro/FirstShareableIntro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/info-container/InfoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/info-container/InfoContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +87,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/services/reducers" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -55,11 +96,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/reducers" />
+      <recent name="$PROJECT_DIR$/services/actions" />
       <recent name="$PROJECT_DIR$/shareable/about/head-text" />
       <recent name="$PROJECT_DIR$/scenes/magazin-artikel-scene-two/components" />
       <recent name="$PROJECT_DIR$/shareable" />
-      <recent name="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/component-header" />
-      <recent name="$PROJECT_DIR$/public/about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/shareable/cart-sidebar/product" />
@@ -68,6 +109,19 @@
       <recent name="$PROJECT_DIR$/scenes/homepage/components/second-section" />
       <recent name="$PROJECT_DIR$/scenes/homepage/components/inspiration-bottom-two" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -131,7 +185,9 @@
       <workItem from="1613544588578" duration="14338000" />
       <workItem from="1613630070386" duration="17660000" />
       <workItem from="1614581602719" duration="15923000" />
-      <workItem from="1614667382402" duration="15783000" />
+      <workItem from="1614667382402" duration="19307000" />
+      <workItem from="1614754056948" duration="326000" />
+      <workItem from="1614754546591" duration="27000" />
     </task>
     <servers />
   </component>

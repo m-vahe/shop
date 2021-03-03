@@ -15,7 +15,6 @@ const Navbar = () => {
 
   useEffect(() => {
     setNavList(navlist);
-    console.log(navList);
   }, [navlist]);
 
   const route = useRouter();

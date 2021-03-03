@@ -12,7 +12,6 @@ const WhishList = () => {
         dispatch(getUserWishlist());
     }, []);
 
-    console.log(favouriteProducts, 22222);
     const [show, setShow] = useState(false)
     const showModal = () =>{
         setShow(!show);

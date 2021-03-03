@@ -1,4 +1,4 @@
-import { GET_NEWS_REPORT, SET_NEWS_REPORT, SET_ERROR } from '../action-types/news';
+import { GET_NEWS_REPORT, SET_NEWS_REPORT, SET_ERROR,SET_SHOP_LGTXT } from '../action-types/news';
 import axios from 'axios';
 
 export const getNewsReport = () => {
@@ -16,4 +16,19 @@ export const getNewsReport = () => {
       })
       .catch(err => dispatch({ type: SET_ERROR, payload: err }));
   };
+};
+export const getShopLgText = () => {
+    return dispatch => {
+
+        axios.get(`${process.env.NEXT_PUBLIC_API_URL}/shop-page-large-texts`)
+            .then(res => {
+                const { data } = res;
+
+                dispatch({
+                    type: SET_SHOP_LGTXT,
+                    payload: data
+                });
+            })
+            .catch(err => dispatch({ type: SET_ERROR, payload: err }));
+    };
 };

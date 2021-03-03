@@ -1,11 +1,20 @@
 import ShopHeader from './components/shop-header/ShopHeader'
 import ShopHeaderMobile from './components/shop-header/ShopHeaderMobile'
 import ShopBody from './components/shop-body/ShopBody'
-import ShopBodyFooter from "./components/shop-body/shop-body-footer/ShopBodyFooter";
+// import ShopBodyFooter from "./components/shop-body/shop-body-footer/ShopBodyFooter";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
+import {useLayoutEffect,useState} from "react"
+import {useDispatch, useSelector} from "react-redux";
+import {getNewsReport,getShopLgText} from "../../services/actions/news";
 
 const ShopScene = () =>{
-  return (
+    const dispatch = useDispatch()
+    useLayoutEffect(() => {
+        dispatch(getNewsReport());
+        dispatch(getShopLgText())
+    }, []);
+
+    return (
       <>
         <div className={"shop-all-elements"}>
             <ShopHeader/>

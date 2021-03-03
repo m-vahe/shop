@@ -6,11 +6,16 @@
   grid-template-columns: 75% 25%;
   gap: 10px;
   margin-top: 15rem;
+
   @media screen and (max-width: 1024px){
     margin-top: 15rem !important;
   }
   .inspiration-left {
     position: relative;
+    width: 100%;
+    img{
+      width: 100%;
+    }
     p {
       position: absolute;
       top: -5vw;

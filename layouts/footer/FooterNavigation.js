@@ -1,6 +1,6 @@
 import {useState} from "react";
 import Link from "next/link";
-const FooterNavigation = () =>{
+const FooterNavigation = ({footerData}) =>{
     const [navList,setNavList] = useState([
         {name:"PARFUM",hovered:false,link:"/parfum"}, {name:"Beauty",hovered:false,link:"/beauty"},{name:"Herren",hovered:false,link:"/herren"},{name:"interieur",hovered:false,link:"/interieur"},
         {name:"Accessoires",hovered:false,link:"/accessoires"},{name:"Shop",hovered:false, link:"/shop"},{name:"typentests",hovered:false, link:"/typentests"},
@@ -22,33 +22,33 @@ const FooterNavigation = () =>{
            <div className={"footer__navigation__container__body"}>
                <div className={"footer__navigation__container__body__item"}>
                    <h2>Kontakt</h2>
-                   {kontakt.map((e,i)=>{
+                   {footerData[0]?.map((e,i)=>{
                        return(
-                           <p key={i}>{e}</p>
+                           <p key={i}>{e?.title}{e?.value}</p>
                        )
                    })}
                </div>
                <div className={"footer__navigation__container__body__item1"}>
                    <h2>Dpab Store</h2>
-                   {dpab.map((e,i)=>{
+                   {footerData[1]?.map((e,i)=>{
                        return(
-                           <p key={i}>{e}</p>
+                           <p key={i}>{e?.title}{e?.value1}{e?.value2}</p>
                        )
                    })}
                </div>
                <div className={"footer__navigation__container__body__item2"}>
                    <h2>Online Shop</h2>
-                   {navList.map((e,i)=>{
+                   {footerData[2]?.map((e,i)=>{
                        return(
-                           <li key={i}   ><Link exact href={e.link}>{e.name}</Link></li>
+                           <li key={i}><Link exact href={`${e?.url}`}><a>{e?.name}</a></Link></li>
                        )
                    })}
                </div>
                <div className={"footer__navigation__container__body__item3"}>
                    <h2>Mein Konto</h2>
-                   {konto.map((e,i)=>{
+                   {footerData[3]?.map((e,i)=>{
                        return(
-                           <li key={i}   ><Link exact href={e.link}>{e.name}</Link></li>
+                           <li key={i}   ><Link exact href={`${e?.url}`}><a >{e?.title}</a></Link></li>
                        )
                    })}
                </div>

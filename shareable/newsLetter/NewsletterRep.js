@@ -20,7 +20,6 @@ const NewsletterRep = ({ padding }) => {
           case true : openNotificationWithIcon("success")
       }
       dispatch(setNewsLetters(null))
-      console.log("akjhsdbjga")
   },[success])
 
     const openNotificationWithIcon = type => {
