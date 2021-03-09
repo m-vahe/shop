@@ -7,15 +7,23 @@ import InspirationBottomOne from "./components/InspirationBottomOne";
 import InspirationBottomTwo from "./components/InspirationBottomTwo";
 import ProductsWithFilterHarrenTwo from "./components/ProductsWithFilterHarrenTwo";
 import SecondFilteredProdBottom from "./components/SecondFilteredProdBottom";
-import Services from "./components/Services";
+import Services from "./components/ServicesHerren";
 import Newsletter from "./components/Newsletter";
 import FirstComponent from "./components/mobilecomponents/FirstComponent";
 import { useEffect, useState } from "react";
-import { useDispatch } from 'react-redux';
-import { getCollectionShops, getInspirations } from '../../services/actions/homepage__stable';
+import {useDispatch, useSelector} from 'react-redux';
+import {
+    getCollectionShops,
+    getHomePageSctOne,
+    getInspirations,
+    getNavbar
+} from '../../services/actions/homepage__stable';
 import { getNewsReport } from '../../services/actions/news';
 import {getProductsWithLeftText} from "../../services/actions/products";
-
+import { Space, Spin} from "antd";
+import MobileHeader from "../../layouts/mobile-header/MobileHeader";
+import Footer from "../../layouts/footer/Footer";
+import PageHeader from "../../layouts/header/Header"
 const HerrenScene = () => {
     const dispatch = useDispatch();
 
@@ -24,8 +32,9 @@ const HerrenScene = () => {
     const [inspiration1, setInspiration1] = useState({});
     const [inspiration2, setInspiration2] = useState({});
     const [inspiration3, setInspiration3] = useState({});
-
+    
     useEffect(() => {
+        dispatch(getNavbar());
         dispatch(getCollectionShops())
             .then(res => {
                 setFirstData(res?.find(elem => elem.position === 'HerrenPageLeft'));
@@ -41,30 +50,47 @@ const HerrenScene = () => {
         
         dispatch(getNewsReport());
         dispatch(getProductsWithLeftText());
+        dispatch(getHomePageSctOne());
     }, []);
-
+    const headLoaded = useSelector(state=>state.navbar.homePageSctOneLoaded)
+    const navlistloaded = useSelector((state) => state.navbar.navListLoaded)
+    const headerloaded = useSelector((state) => state.navbar.headerContactsLoaded)
+    console.log(navlistloaded,"***********************************")
     return(
         <>
-            <div className={"harren-main-body"}>
-                <HerrenHead/>
-                <FirstComponent/>
-                <FirstProducts/>
-                <SecondSection 
-                    firstData={firstData}
-                    secondData={secondData}
-                />
-                <ProductsWithFilterHarren/>
-                <div className={"harreninsp"}>
-                    <Inspiration inspiration={inspiration1} />
-                    <InspirationBottomOne inspiration={inspiration2} />
-                    <InspirationBottomTwo inspiration={inspiration3} />
-                </div>
-                <ProductsWithFilterHarrenTwo/>
-                <SecondFilteredProdBottom/>
-                <Services/>
-                <Newsletter/>
+            {
+                !headLoaded && !navlistloaded ?
+                <>
+                    <PageHeader/>
+                    <MobileHeader/>
+                    <div className={"harren-main-body"}>
+                        <HerrenHead/>
+                        <FirstComponent/>
+                        <FirstProducts/>
+                        <SecondSection
+                            firstData={firstData}
+                            secondData={secondData}
+                        />
+                        <ProductsWithFilterHarren/>
+                        <div className={"harreninsp"}>
+                            <Inspiration inspiration={inspiration1} />
+                            <InspirationBottomOne inspiration={inspiration2} />
+                            <InspirationBottomTwo inspiration={inspiration3} />
+                        </div>
+                        <ProductsWithFilterHarrenTwo/>
+                        <SecondFilteredProdBottom/>
+                        <Services/>
+                        <Newsletter/>
 
-            </div>
+                    </div>
+                    <Footer/>
+                </>:
+                    <div className={"loader__body"}>
+                        <Space size="middle">
+                            <Spin size="large" />
+                        </Space>
+                    </div>
+            }
         </>
     )
 }

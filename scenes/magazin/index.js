@@ -6,17 +6,30 @@ import Social from "../../shareable/social/Social";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import BeautyEssentials from "./components/beauty-esentials/BeautyEsentials";
 import MagazinSecondSectionMobile from "./components/magazin-second-section/MagazinSecondSectionMobile";
-
+import {useEffect} from "react"
+import {useDispatch, useSelector} from "react-redux";
+import {getStairsAdd} from "../../services/actions/news";
 const MagazinScene = () =>{
+
+    const dispatch = useDispatch()
+    useEffect(()=>{
+        dispatch(getStairsAdd())
+        console.log(addData1,1111111111,addData2,22222222222)
+    },[])
+
+    const adds = useSelector(state => state.news.stairAdd);
+    const addData1 = adds.find(n => n.position === 'One');
+    const addData2 = adds.find(n => n.position === 'Two');
+
     return(
         <div className={"magazin__all__elements"}>
             <ComponentHeaderBody/>
-            <AddSection/>
+            <AddSection addData={addData1}/>
             <ProductsList/>
             <MagazinSecondSection/>
             <MagazinSecondSectionMobile/>
             <ProductsList/>
-            <AddSection/>
+            <AddSection addData={addData2}/>
             <BeautyEssentials/>
             <Social/>
             <NewsletterRep/>

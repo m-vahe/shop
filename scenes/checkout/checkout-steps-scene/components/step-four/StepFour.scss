@@ -1,0 +1,41 @@
+.checkout__stepfour__container{
+  width: 75%;
+  margin: 7rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 11rem;
+  .checkout__stepone__container__bottom{
+    padding: 0;
+  }
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #838383;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    margin-bottom: -8rem;
+    p{
+      font-size: 3.3rem;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.17;
+      letter-spacing: 1.5px;
+      text-align: left;
+      color: #838383;
+      margin: 0;
+    }
+  }
+  &__products{
+    .checkoutstep__single__product{
+      &:first-child{
+        border-top: none;
+      }
+      border-top: 1px solid #838383;
+      padding: 5rem 0;
+      .checkoutstep__single__product__left{
+
+      }
+    }
+  }
+}

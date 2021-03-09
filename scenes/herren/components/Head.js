@@ -10,7 +10,7 @@ const HerrenHead = () => {
     const herrenIntro = HPFS.find(p => p.position === 'HerrenPage');
 
     useEffect(() => {
-        dispatch(getHomePageSctOne());
+
     }, []);
 
     return(

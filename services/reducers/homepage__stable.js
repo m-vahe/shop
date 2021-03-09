@@ -11,7 +11,7 @@ import {
     GET_INSPIRATIONS,
     SET_INSPIRATIONS,
     SET_LOADED,
-    SET_HOMEPAGE_SECTIONONE
+    SET_HOMEPAGE_SECTIONONE, SET_FOUR_ICONS
 } from "../action-types/homepage__stable";
 
 const initialState = {
@@ -28,7 +28,9 @@ const initialState = {
     collectionShops: [],
     inspirationsLoading: false,
     inspirations: [],
-    loaded:false
+    loaded:false,
+    fourIcons:[],
+    fourIconsLoaded:true
 };
 
 const homeRedcucer = (state= initialState, action) =>{
@@ -44,8 +46,9 @@ const homeRedcucer = (state= initialState, action) =>{
         case SET_NAVBAR_SETTINGS:
             return {
                 ...state,
+                navListLoaded: false,
                 navList: action.payload,
-                navListLoaded: false
+
             }
 
         case SET_HEADER_CONTACTS:
@@ -91,6 +94,12 @@ const homeRedcucer = (state= initialState, action) =>{
                 inspirationsLoading: false,
                 inspirations: action.payload,
                 loaded: false
+            }
+        case SET_FOUR_ICONS:
+            return {
+                ...state,
+                fourIcons: action.payload,
+                fourIconsLoaded: false
             }
     }
     return state

@@ -1,4 +1,7 @@
+// import {useSelector} from "react-redux";
+
 const MagazinAddSection = () =>{
+
     return(
         <div className={"magazin__add__section__container"}>
             <div className={"magazin__add__section__container__item item1"}>

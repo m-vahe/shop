@@ -1,11 +1,13 @@
-import { GET_NEWS_REPORT, SET_NEWS_REPORT, SET_ERROR,SET_SHOP_LGTXT } from '../action-types/news';
+import {GET_NEWS_REPORT, SET_NEWS_REPORT, SET_ERROR, SET_SHOP_LGTXT, SET_MAGAZIN_STAIR_ADD} from '../action-types/news';
 
 const initialState = {
-  newsReportLoading: false,
+  newsReportLoading: true,
   newsReports: [],
   error: null,
   shopPageLg:"",
-  shopLgLoaded:true
+  shopLgLoaded:true,
+  stairAdd:[],
+  stairAddLoaded:true
 };
 
 const newsReducer = (state = initialState, { type, payload }) => {
@@ -15,6 +17,7 @@ const newsReducer = (state = initialState, { type, payload }) => {
               ...state,
               newsReportLoading: true
           };
+
       case SET_NEWS_REPORT:
           return {
               ...state,
@@ -26,6 +29,12 @@ const newsReducer = (state = initialState, { type, payload }) => {
               ...state,
               shopLgLoaded: false,
               shopPageLg: payload
+          }
+      case SET_MAGAZIN_STAIR_ADD:
+          return {
+              ...state,
+              stairAdd: payload,
+              stairAddLoaded: false
           }
       case SET_ERROR:
           return {

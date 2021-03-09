@@ -81,6 +81,8 @@
 @import "scenes/lexikon/index";
 @import "layouts/cartSidebar/CartSidebar";
 @import "shareable/cart-sidebar/product/CartSidebarProduct";
+@import "scenes/checkout/index";
+@import "shareable/Products/checkout-ptoducts/CheckoutSingleProduct";
 @font-face {
   src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
   src: local('Freight Sans Pro'), local('FreightSansPro'),

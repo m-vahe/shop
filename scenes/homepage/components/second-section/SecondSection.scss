@@ -53,7 +53,10 @@
       }
       .sec-sec-el-link {
         margin-top: 5px;
+        height: 100%;
+        display: flex;
         a {
+          align-self: flex-end;
           color: #a12224;
           font-family: 'Freight Sans Pro', system-ui;
           font-size: 2rem;

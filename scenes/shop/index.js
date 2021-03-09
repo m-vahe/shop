@@ -6,22 +6,41 @@ import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import {useLayoutEffect,useState} from "react"
 import {useDispatch, useSelector} from "react-redux";
 import {getNewsReport,getShopLgText} from "../../services/actions/news";
-
+import PageHeader from "../../layouts/header/Header"
+import MobileHeader from "../../layouts/mobile-header/MobileHeader";
+import Footer from "../../layouts/footer/Footer";
+import {getNavbar} from "../../services/actions/homepage__stable";
+import {Space, Spin} from "antd";
 const ShopScene = () =>{
     const dispatch = useDispatch()
     useLayoutEffect(() => {
         dispatch(getNewsReport());
-        dispatch(getShopLgText())
+        dispatch(getShopLgText());
+        dispatch(getNavbar());
     }, []);
-
+    const headLoaded = useSelector(state=>state.news.newsReportLoading)
+    const navlistloaded = useSelector((state) => state.navbar.navListLoaded)
     return (
       <>
-        <div className={"shop-all-elements"}>
-            <ShopHeader/>
-            <ShopHeaderMobile/>
-            <ShopBody/>
-            <NewsletterRep/>
-        </div>
+          {
+              !headLoaded && !navlistloaded ?
+              <>
+                  <PageHeader/>
+                  <MobileHeader/>
+                  <div className={"shop-all-elements"}>
+                      <ShopHeader/>
+                      <ShopHeaderMobile/>
+                      <ShopBody/>
+                      <NewsletterRep/>
+                  </div>
+                  <Footer/>
+              </> :
+                  <div className={"loader__body"}>
+                      <Space size="middle">
+                          <Spin size="large" />
+                      </Space>
+                  </div>
+          }
       </>
   )
 }

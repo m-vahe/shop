@@ -9,7 +9,9 @@ import {
     SET_COLLECTION_SHOPS,
     GET_INSPIRATIONS,
     SET_INSPIRATIONS,
-    SET_NAVBAR_SETTINGS, SET_HEADER_CONTACTS,
+    SET_NAVBAR_SETTINGS,
+    SET_HEADER_CONTACTS,
+    SET_FOUR_ICONS
 } from "../action-types/homepage__stable"
 import axios from "axios";
 
@@ -30,12 +32,6 @@ export const getNavbar = () => {
             })
             .catch(err => dispatch({ type: SET_ERROR }));
     };
-    // return dispatch => {
-    //
-    //     axios.get('http://207.154.241.233:1337/navbaritems')
-    //         .then(response => dispatch({type: GET_NAVBAR_SETTINGS,payload: response.data}) )
-    //         .catch(err => dispatch({type: SET_ERROR}));
-    // }
 }
 
 export const getHomePageSctOne = () => {
@@ -134,3 +130,19 @@ export const getInspirations = () => {
         .catch(err => dispatch({ type: SET_ERROR }));
     };
 };
+export const getFourIcons = () => {
+    return dispatch => {
+        return axios.get(`${process.env.NEXT_PUBLIC_API_URL}/four-icons`)
+            .then(res => {
+                const { data } = res;
+
+                dispatch({
+                    type: SET_FOUR_ICONS,
+                    payload: data
+                });
+
+                return data;
+            })
+            .catch(err => dispatch({ type: SET_ERROR }));
+    };
+}
