@@ -2,60 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/checkout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/checkout/[id].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/CheckoutStepScene.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/CheckoutStepScene.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-four/StepFour.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-four/StepFour.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-one/StepOne.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-one/StepOne.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-one/modal/StepOneModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-three/StepThree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-three/StepThree.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-two/StepTwo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-two/StepTwo.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/steps/CustomStep.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/steps/CustomStep.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/components/checkout-modal/CheckoutModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/components/checkout-modal/CheckoutModal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/components/checkout-products-data/CheckoutProductsData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/components/checkout-products-data/CheckoutProductsData.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/components/checkout-products/CheckoutProducts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/components/checkout-products/CheckoutProducts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/checkout/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/herren/components/ServicesHerren.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/CheckoutSingleProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/CheckoutSingleProduct.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one/StepOneSingleProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one/StepOneSingleProduct.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/services/Services.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shareable/services/servicesIcons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/footer/FooterCopyright.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/FooterCopyright.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/footer/FooterNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/FooterNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/herren.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/herren.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/herren/components/Head.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/Head.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/herren/components/Services.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/herren/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/second-section/SecondSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/second-section/SecondSection.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/services/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/services/Services.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/magazin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/news.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/actions/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/actions/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/news.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/news.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/news.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Services.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/components/checkout-modal/CheckoutModal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/components/checkout-modal/CheckoutModal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/components/checkout-products-data/CheckoutProductsData.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/components/checkout-products-data/CheckoutProductsData.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/CheckoutSingleProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/CheckoutSingleProduct.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/cart-sidebar/footer/CartSidebarFooter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/cart-sidebar/footer/CartSidebarFooter.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,21 +70,6 @@
       <recent name="$PROJECT_DIR$/scenes/homepage/components/second-products" />
       <recent name="$PROJECT_DIR$/scenes/homepage/components/video" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -200,7 +138,8 @@
       <workItem from="1614754546591" duration="27000" />
       <workItem from="1614839317605" duration="18142000" />
       <workItem from="1614924443503" duration="24696000" />
-      <workItem from="1615271125852" duration="20623000" />
+      <workItem from="1615271125852" duration="20983000" />
+      <workItem from="1615360605818" duration="3527000" />
     </task>
     <servers />
   </component>

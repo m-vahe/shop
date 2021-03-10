@@ -1,9 +1,18 @@
 .checkout__single__product{
   display: flex;
   justify-content: space-between;
+  gap: 5rem;
+  @media screen and (max-width: 1310px) {
+      flex-wrap: wrap;
+  }
+
   &__left{
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 1024px){
+      width: 100%;
+      justify-content: center;
+    }
     img{
       width: 85%;
 
@@ -32,6 +41,9 @@
         text-align: left;
         color: #2e2e2e;
         margin-bottom: .8rem;
+        @media screen and(max-width: 1830px){
+          font-size: 2.5rem;
+        }
       }
       &--quantity{
         font-size: 2.7rem;
@@ -44,6 +56,9 @@
         color: #2e2e2e;
         text-transform: capitalize;
         margin-bottom: .8rem;
+        @media screen and(max-width: 1830px){
+          font-size: 2.5rem;
+        }
       }
       &--price{
         font-size: 3.05rem;
@@ -75,6 +90,10 @@
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+    @media screen and(max-width: 1024px){
+      width: 100%;
+      justify-content: center;
+    }
     &__top{
       display: flex;
       align-items: center;
@@ -85,7 +104,7 @@
         button{
           border: solid 1px #707070;
           background-color: #ffffff;
-          font-size: 2.8rem;
+          font-size: 2.2rem;
           font-weight: normal;
           font-stretch: normal;
           font-style: normal;
@@ -153,6 +172,13 @@
     &__whishlist{
       display: flex;
       align-items: center;
+      @media screen and (max-width: 1310px) {
+        width: 100%;
+      }
+      @media screen and(max-width: 1024px){
+        width: 100%;
+        justify-content: center;
+      }
       .letter-svg{
         width: 48px;
         height: 40px;

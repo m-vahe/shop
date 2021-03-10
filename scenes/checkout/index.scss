@@ -27,3 +27,9 @@
     grid-template-columns: 69% 29%;
   }
 }
+.checkout__scene__container__body{
+  display: flex;
+  @media screen and(max-width: 1024px) {
+    flex-wrap: wrap;
+  }
+}

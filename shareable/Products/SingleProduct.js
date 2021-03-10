@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import {useDispatch, useSelector} from "react-redux";
 
 const formatter = new Intl.NumberFormat('de-DE', {
   style: 'currency',
@@ -19,6 +20,15 @@ const SingleProduct = ({ elem, favouriteClickHandler }) => {
   //     })
   //   );
   // };
+    const dispatch = useDispatch();
+    const { isAuthenticated } = useSelector(state => state.auth);
+    // const favouriteClickHandler = id => {
+    //     if (!isAuthenticated) {
+    //         return router.push('/login');
+    //     }
+    //
+    //     dispatch(addToWishList(id));
+    // };
 
   const toProductPage = (e) => {
     if (router.pathname !== '/products') {
@@ -62,7 +72,7 @@ const SingleProduct = ({ elem, favouriteClickHandler }) => {
                     height='512'
                     viewBox='0 0 512 512'
                     className={'letter-svg heart-icon-item'}
-                    onClick={() => addToFavorites(e.id)}
+                    onClick={() => favouriteClickHandler(elem.id)}
                     style={elem.favorit ? { stroke: '#000000' } : { stroke: '#7b7b7b' }}
                 >
                     <path
