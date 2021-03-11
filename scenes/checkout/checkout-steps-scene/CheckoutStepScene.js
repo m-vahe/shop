@@ -63,14 +63,14 @@ const CheckoutStepScene = () =>{
     return(
         <div className={"checkout__step__scene__body"}>
             <div className={"checkout__step__scene__body__header"}>
-                <Steps current={current} progressDot={customDot}>
+                <Steps current={current}   responsive={false} labelPlacement={"vertical"} >
                     {steps.map((e,i)=>{
                         return(
-                            <Step title={e.name} num={e.id} key={i} />
+                            <Step  title={e.name} num={e.id} key={i} status={ current === stepNum - 1 ? "wait" : "current"}/>
                         )
                     })}
                 </Steps>
-                <div>
+                <div className={"checkout__step__scene__body__scenes"}>
                     {router.query.id === "step1" && <StepOne next={next}/> }
                     {router.query.id === "step2" && <StepTwo next={next}/> }
                     {router.query.id === "step3" && <StepThree next={next}/> }

@@ -38,11 +38,20 @@
       letter-spacing: 2.64px;
       text-align: left;
       color: #3e3e3e;
-      @media screen and(max-width: 455px){
-        font-size: 5rem;
+      @media screen and(max-width: 640px){
+        font-size: 6rem;
       }
-      @media screen and(max-width: 345px){
+      @media screen and(max-width: 570px){
+        font-size: 4.5rem;
+      }
+      @media screen and(max-width: 455px){
         font-size: 4rem;
+      }
+      @media screen and(max-width: 380px){
+        font-size: 3.5rem;
+      }
+      @media screen and(max-width: 350px){
+        font-size: 2.8rem;
       }
     }
   }
@@ -62,6 +71,12 @@
       text-transform: uppercase;
       color: #5c5c5c;
       width: 95%;
+      @media screen and(max-width: 455px){
+        font-size: 2rem;
+      }
+      @media screen and(max-width: 380px){
+        font-size: 1.8rem;
+      }
     }
     .ant-collapse-content-box{
       padding: 0;

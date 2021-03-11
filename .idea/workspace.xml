@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/CheckoutStepScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/CheckoutStepScene.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/CheckoutStepScene.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/CheckoutStepScene.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-four/StepFour.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-four/StepFour.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-one/StepOne.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-one/StepOne.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-three/StepThree.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-three/StepThree.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-two/StepTwo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-two/StepTwo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/steps/CustomStep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/steps/CustomStep.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/checkout/components/checkout-modal/CheckoutModal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/components/checkout-modal/CheckoutModal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/components/checkout-products-data/CheckoutProductsData.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/components/checkout-products-data/CheckoutProductsData.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/CheckoutSingleProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/CheckoutSingleProduct.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/cart-sidebar/footer/CartSidebarFooter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/cart-sidebar/footer/CartSidebarFooter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one/StepOneSingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one/StepOneSingleProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one/StepOneSingleProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one/StepOneSingleProduct.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +143,8 @@
       <workItem from="1614839317605" duration="18142000" />
       <workItem from="1614924443503" duration="24696000" />
       <workItem from="1615271125852" duration="20983000" />
-      <workItem from="1615360605818" duration="3527000" />
+      <workItem from="1615360605818" duration="8719000" />
+      <workItem from="1615374412857" duration="10889000" />
     </task>
     <servers />
   </component>

@@ -25,7 +25,7 @@ const StepOneSingleProduct = () =>{
     return(
         <div className={"checkoutstep__single__product"}>
             <div className={"checkoutstep__single__product__left"}>
-                <div>
+                <div className={"checkoutstep__single__product__left--img"}>
                     <img src="/item.png" alt=""/>
                 </div>
                 <div className={"checkoutstep__single__product__left__text"}>
