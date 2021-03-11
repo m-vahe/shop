@@ -260,6 +260,9 @@
         text-transform: uppercase;
         margin-top: 17px;
         padding: 15px;
+        @media screen and(max-width: 1024px){
+          align-self: end;
+        }
       }
     }
   }

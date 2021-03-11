@@ -11,7 +11,7 @@ import {
     SET_INSPIRATIONS,
     SET_NAVBAR_SETTINGS,
     SET_HEADER_CONTACTS,
-    SET_FOUR_ICONS
+    SET_FOUR_ICONS, SET_MIDFOOT, SET_NEWSLETTER_TEXT
 } from "../action-types/homepage__stable"
 import axios from "axios";
 
@@ -138,6 +138,38 @@ export const getFourIcons = () => {
 
                 dispatch({
                     type: SET_FOUR_ICONS,
+                    payload: data
+                });
+
+                return data;
+            })
+            .catch(err => dispatch({ type: SET_ERROR }));
+    };
+}
+export const getMidFoot = () => {
+    return dispatch => {
+        return axios.get(`${process.env.NEXT_PUBLIC_API_URL}/mid-footers`)
+            .then(res => {
+                const { data } = res;
+
+                dispatch({
+                    type: SET_MIDFOOT,
+                    payload: data
+                });
+
+                return data;
+            })
+            .catch(err => dispatch({ type: SET_ERROR }));
+    };
+}
+export const getNewsletterText = () => {
+    return dispatch => {
+        return axios.get(`${process.env.NEXT_PUBLIC_API_URL}/newsletter-texts`)
+            .then(res => {
+                const { data } = res;
+
+                dispatch({
+                    type: SET_NEWSLETTER_TEXT,
                     payload: data
                 });
 

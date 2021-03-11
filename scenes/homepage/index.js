@@ -10,16 +10,14 @@ import FilteredProductBottom from "./components/filtered-product-bottom/Filtered
 import VideoPart from "./components/video/VideoPart";
 import DpabMagazine from "./components/dpab-magazine/DpabMagazine";
 import DpabBottom from "./components/dpab-bottom/DpabBottom";
-// import Services from "./components/services/Services";
 import BottomVideo from "./components/bottom-videos/BottomVideos";
 import FirstIntroMobile from "./components/mobile/firstIntro/FirstIntro";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import { useDispatch ,useSelector} from 'react-redux';
-import {getCollectionShops, getHomePageSctOne, getInspirations} from '../../services/actions/homepage__stable';
+import {getCollectionShops, getHomePageSctOne, getInspirations,getMidFoot,getNewsletterText} from '../../services/actions/homepage__stable';
 import { getProductsWithLeftText } from '../../services/actions/products';
 import { getNewsReport } from '../../services/actions/news';
 import { useEffect, useLayoutEffect, useState } from "react";
-import Loader from "../../layouts/loader/Loader";
 import Header from "../../layouts/header/Header";
 import MobileHeader from "../../layouts/mobile-header/MobileHeader";
 import Footer from "../../layouts/footer/Footer";
@@ -53,6 +51,8 @@ const Homepage = () =>{
         dispatch(getProductsWithLeftText());
         dispatch(getNewsReport());
         dispatch(getHomePageSctOne());
+        dispatch(getMidFoot())
+
     }, []);
 
 

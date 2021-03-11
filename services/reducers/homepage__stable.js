@@ -11,7 +11,7 @@ import {
     GET_INSPIRATIONS,
     SET_INSPIRATIONS,
     SET_LOADED,
-    SET_HOMEPAGE_SECTIONONE, SET_FOUR_ICONS
+    SET_HOMEPAGE_SECTIONONE, SET_FOUR_ICONS, SET_MIDFOOT, SET_NEWSLETTER_TEXT
 } from "../action-types/homepage__stable";
 
 const initialState = {
@@ -30,12 +30,27 @@ const initialState = {
     inspirations: [],
     loaded:false,
     fourIcons:[],
-    fourIconsLoaded:true
+    fourIconsLoaded:true,
+    midfoot:[],
+    midfootLoaded:true,
+    newsletterText:[],
+    newsletterTextLoaded:true
 };
 
 const homeRedcucer = (state= initialState, action) =>{
     switch (action.type){
-
+        case SET_NEWSLETTER_TEXT:
+            return {
+                ...state,
+                newsletterText: action.payload,
+                newsletterTextLoaded: false
+            }
+        case SET_MIDFOOT:
+            return {
+                ...state,
+                midfoot: action.payload,
+                midfootLoaded: false
+            }
         case SET_HOMEPAGE_SECTIONONE:
             return {
                 ...state,

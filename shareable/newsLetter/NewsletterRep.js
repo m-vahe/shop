@@ -2,6 +2,7 @@ import {useState,useEffect} from "react"
 import {useDispatch,useSelector} from "react-redux";
 import {postNewsletter,setNewsLetters} from "../../services/actions/newsletter"
 import { Button, notification, Space } from 'antd';
+import {getNewsletterText} from '../../services/actions/homepage__stable';
 
 
 const NewsletterRep = ({ padding }) => {
@@ -11,7 +12,15 @@ const NewsletterRep = ({ padding }) => {
   const [checked2,setChecked2] = useState(false)
   const [checked3,setChecked3] = useState(false)
   const success = useSelector(state => state.newsletter.success);
+
   const [suc,setSuc] = useState(null)
+  useEffect(()=>{
+      dispatch(getNewsletterText())
+      console.log(textData,"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+  },[])
+
+  const textData = useSelector(state => state.navbar.newsletterText);
+
   useEffect(()=>{
 
       switch (success?.message){
@@ -35,8 +44,7 @@ const NewsletterRep = ({ padding }) => {
         <div className='newsLetter__container__header'>
           <h2 className='newsLetter__container__header--title'>Newsletter</h2>
           <p className='newsLetter__container__header--info'>
-            Abonnieren sie unseren newsletter und erhalten sie exklusive
-            neuigkeiten zu unseren neuen artikeln und werbeaktionen!
+              {textData[0]?.text}
           </p>
         </div>
         <div className='newsLetter__container__action'>

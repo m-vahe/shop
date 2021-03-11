@@ -135,7 +135,7 @@
     grid-auto-flow: dense;
     gap: 10px;
     .inspiration-bottom-image {
-      min-height: 530px;
+      height: 63vw;
     }
     .inspiration-bottom-text2 {
       button {
@@ -442,5 +442,50 @@
         }
       }
     }
+  }
+}
+.inspiration-bottom {
+  grid-template-columns: none;
+  grid-auto-flow: dense;
+  gap: 10px;
+  .inspiration-bottom-image {
+    height: 63vw;
+    .inspiration-bottom-imagetxt{
+      .insp-bot-lg{
+        @media screen and(max-width: 560px){
+          font-size: 4rem;
+          line-height: unset;
+        }
+      }
+    }
+    .inspiration-bottom-imagetxt-two{
+      .insp-bot-lg{
+        @media screen and(max-width: 560px){
+          font-size: 4rem;
+          line-height: unset;
+        }
+      }
+    }
+  }
+  .inspiration-bottom-text2 {
+    button {
+      padding: 5px 10px !important;
+      width: fit-content !important;
+    }
+    padding: 0;
+    grid-row: 2;
+  }
+  .inspiration-bottom-text {
+    button {
+      padding: 5px 10px !important;
+      width: fit-content !important;
+      span {
+        line-height: 1.15;
+        letter-spacing: 0.28px;
+        font-size: 2rem;
+      }
+    }
+    padding: 0;
+    grid-row: 2;
   }
 }

@@ -148,7 +148,10 @@
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 628px;
+    max-height: 630px;
+    img{
+      width: 100%;
+    }
     .inspiration-bottom-imagetxt {
       display: flex;
       flex-direction: column;
