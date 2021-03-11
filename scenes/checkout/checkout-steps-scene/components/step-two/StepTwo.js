@@ -1,6 +1,5 @@
 import { Radio, Input } from 'antd';
 import {useState} from "react"
-import {logger} from "redux-logger/src";
 const StepTwo = (props) =>{
     console.log(props)
     const {next} = props
