@@ -20,7 +20,7 @@
       position: absolute;
       top: -5vw;
       color: #3e3e3e;
-      font-family: 'Open Sans Condensed', system-ui;
+      font-family: 'Open Sans Condensed', system-ui,inherit;
       font-size: 6vw;
       font-weight: 400;
       font-style: normal;
@@ -40,7 +40,7 @@
     }
     .inspiration-right-headtxt {
       color: #5c5c5c;
-      font-family: 'Freight Sans Pro', system-ui;
+      font-family: 'Freight Sans Pro', system-ui,inherit;
       font-size: 1.19vw;
       font-weight: normal;
       margin: 0;
@@ -54,7 +54,7 @@
     h2 {
       margin-top: 0.5rem;
       color: #3e3e3e;
-      font-family: 'Freight Sans Pro', system-ui;
+      font-family: 'Freight Sans Pro', system-ui,inherit;
       font-size: 3.125vw;
       font-weight: normal;
       font-stretch: normal;
@@ -72,7 +72,7 @@
     .inspiration-right-bottxt {
       margin: 5rem 0;
       color: #2e2e2e;
-      font-family: 'Freight Sans Pro', system-ui;
+      font-family: 'Freight Sans Pro', system-ui,inherit;
       font-size: 1.145vw;
       font-stretch: normal;
       font-style: normal;
@@ -87,7 +87,7 @@
     }
     button {
       color: #ffffff;
-      font-family: 'Freight Sans Pro', system-ui;
+      font-family: 'Freight Sans Pro', system-ui,inherit;
       font-size: 1.35vw;
       font-weight: 400;
       font-style: normal;

@@ -3,16 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/CheckoutStepScene.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/CheckoutStepScene.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/CheckoutStepScene.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/CheckoutStepScene.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-four/StepFour.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-four/StepFour.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-one/StepOne.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-one/StepOne.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-three/StepThree.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-three/StepThree.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-two/StepTwo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-two/StepTwo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/steps/CustomStep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/steps/CustomStep.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/components/checkout-modal/CheckoutModal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/components/checkout-modal/CheckoutModal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one/StepOneSingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one/StepOneSingleProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one/StepOneSingleProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one/StepOneSingleProduct.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/herren/herren.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/herren.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/bottom-videos/BottomVideos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/bottom-videos/BottomVideos.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/dpab-bottom/DpabBottom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/dpab-bottom/DpabBottom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/dpab-magazine/DpabMagazine.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/dpab-magazine/DpabMagazine.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/filtered-product-bottom/FilteredProductBottom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/filtered-product-bottom/FilteredProductBottom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/inpiration-bottom-one/InspirationBottomOne.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/inpiration-bottom-one/InspirationBottomOne.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/inspiration/InspirationSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/inspiration/InspirationSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/second-section/SecondSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/second-section/SecondSection.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/services/Services.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/services/Services.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/video/VideoPart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/video/VideoPart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +151,8 @@
       <workItem from="1615271125852" duration="20983000" />
       <workItem from="1615360605818" duration="8719000" />
       <workItem from="1615374412857" duration="10889000" />
+      <workItem from="1615443534005" duration="571000" />
+      <workItem from="1615444202798" duration="2208000" />
     </task>
     <servers />
   </component>

@@ -20,7 +20,7 @@
         p {
           margin: 3.1rem 0 1rem 0;
           color: #5c5c5c;
-          font-family: 'Freight Sans Pro', system-ui;
+          font-family: 'Freight Sans Pro', system-ui,inherit;
           font-size: 2.5rem;
           font-weight: 300;
           font-style: normal;
@@ -37,7 +37,6 @@
         h3 {
           line-height: 6.7rem;
           color: #3e3e3e;
-          font-family: 'Freight Sans Pro', system-ui;
           font-size: 5rem;
           font-weight: 300;
           font-weight: normal;
@@ -58,7 +57,6 @@
         a {
           align-self: flex-end;
           color: #a12224;
-          font-family: 'Freight Sans Pro', system-ui;
           font-size: 2rem;
           font-weight: 300;
           font-style: normal;
