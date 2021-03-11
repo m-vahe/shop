@@ -5,14 +5,14 @@ import FooterNavigation from "./FooterNavigation";
 import FooterCopyright from "./FooterCopyright";
 import {useDispatch,useSelector} from "react-redux";
 import {useEffect} from "react"
-import {getFooterData} from "../../services/actions/footer";
+import {getFooterData,getFooterTop} from "../../services/actions/footer";
 
 const Footer = () =>{
     const dispatch = useDispatch()
     const footerData = useSelector(state=>state.footer.footerData)
 useEffect(()=>{
     dispatch(getFooterData())
-    console.log(footerData,8888888888888)
+    dispatch(getFooterTop())
 },[])
     return(
         <>

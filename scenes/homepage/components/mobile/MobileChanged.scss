@@ -131,12 +131,11 @@
     }
   }
   .inspiration-bottom {
-    grid-template-columns: none;
     grid-auto-flow: dense;
     gap: 10px;
-    .inspiration-bottom-image {
-      height: 63vw;
-    }
+    //.inspiration-bottom-image {
+    //  height: 63vw;
+    //}
     .inspiration-bottom-text2 {
       button {
         padding: 5px 10px !important;
@@ -445,11 +444,10 @@
   }
 }
 .inspiration-bottom {
-  grid-template-columns: none;
   grid-auto-flow: dense;
   gap: 10px;
   .inspiration-bottom-image {
-    height: 63vw;
+    //height: 63vw;
     .inspiration-bottom-imagetxt{
       .insp-bot-lg{
         @media screen and(max-width: 560px){

@@ -1,9 +1,11 @@
-import {GET_FOOTER_DATA,SET_FOOTER_DATA,SET_ERROR} from "../action-types/footer";
+import {GET_FOOTER_DATA, SET_FOOTER_DATA, SET_ERROR, SET_FOOTER_TOP} from "../action-types/footer";
 
 const initialState = {
     footerDataLoading:true,
     footerData: [],
-    error: null
+    error: null,
+    footerTop:[],
+    footerTopLoaded:true
 };
 
 const newsReducer = (state = initialState, { type, payload }) => {
@@ -13,6 +15,12 @@ const newsReducer = (state = initialState, { type, payload }) => {
                 ...state,
                 footerDataLoading: false,
                 footerData: payload
+            }
+        case SET_FOOTER_TOP:
+            return {
+                ...state,
+                footerTop: payload,
+                footerTopLoaded: false
             }
         case SET_ERROR:
             return {

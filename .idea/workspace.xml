@@ -3,20 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/dpab-bottom/DpabBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/dpab-bottom/DpabBottom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/filtered-product-bottom/FilteredProductBottom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/filtered-product-bottom/FilteredProductBottom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer/FooterNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/FooterNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/footer/FooterPayment.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/FooterPayment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-three/StepThree.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-three/StepThree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-three/StepThree.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-three/StepThree.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/components/inpiration-bottom-one/InspirationBottomOne.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/inpiration-bottom-one/InspirationBottomOne.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/inspiration/InspirationSection.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/inspiration/InspirationSection.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/actions/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftMoblie.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftMoblie.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/action-types/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/actions/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/reducers/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/footer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +146,7 @@
       <workItem from="1615360605818" duration="8719000" />
       <workItem from="1615374412857" duration="10889000" />
       <workItem from="1615443534005" duration="571000" />
-      <workItem from="1615444202798" duration="15786000" />
+      <workItem from="1615444202798" duration="19745000" />
     </task>
     <servers />
   </component>
@@ -174,7 +170,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/layouts/footer/FooterNav.js</url>
-          <line>4</line>
+          <line>3</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
