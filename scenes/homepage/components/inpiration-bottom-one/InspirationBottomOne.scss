@@ -12,6 +12,10 @@
     justify-content: center;
     flex-direction: column;
     flex: 1;
+    padding-left: 2rem !important;
+    @media screen and(max-width: 1024px) {
+      padding-left:0 !important;
+    }
     .inspiration-bottom-head-txt {
       margin-bottom: 10px;
       p {
@@ -85,9 +89,11 @@
     flex-direction: column;
     //padding: 65px 40px 0 0px;
     justify-content: center;
+    padding-right: 2rem !important;
     flex: 1;
     @media screen and(max-width: 1024px){
       order: 2;
+      padding-right: 0 !important;
     }
     .inspiration-bottom-head-txt {
       margin-bottom: 10px;

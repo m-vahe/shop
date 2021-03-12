@@ -40,10 +40,10 @@ const Navbar = () => {
                             ? "active-navbar"
                             : ""
                         }`}
-                        href={e.item_name.toLowerCase()}
+                        href={e?.item_name?.toLowerCase()}
                         style={
-                          route.query.id === e.item_name.toLowerCase()
-                            ? { webkitTextStroke: "1px solid black" }
+                          route.pathname.substring(1) === e?.item_name?.toLowerCase()
+                            ? { webkitTextStroke:"1px" }
                             : null
                         }
                       >

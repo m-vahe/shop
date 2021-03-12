@@ -1,4 +1,4 @@
-import Sidebar from '../../shareable//sidebar/Sidebar';
+import Sidebar from '../../shareable/sidebar/Sidebar';
 import KontoContainer from './components/konto-container/KontoContainer';
 import Adressen from "./components/adressen/Adressen";
 import { useRouter } from "next/router";

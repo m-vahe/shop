@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/magazinartikelone/[id].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/aboutthree.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/aboutthree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/abouttwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/abouttwo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/checkout/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout/[id].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/herren.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/herren.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/konto/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/konto/[id].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/lexikon.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lexikon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/magazin.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/magazin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/magazinartikelone.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/magazinartikelone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/magazinartikelone/gallery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/magazinartikeltwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/magazinartikeltwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/products/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/[id].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/inpiration-bottom-one/InspirationBottomOne.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/inpiration-bottom-one/InspirationBottomOne.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/konto/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +141,7 @@
       <workItem from="1615374412857" duration="10889000" />
       <workItem from="1615443534005" duration="571000" />
       <workItem from="1615444202798" duration="21129000" />
-      <workItem from="1615530796091" duration="6659000" />
+      <workItem from="1615530796091" duration="13610000" />
     </task>
     <servers />
   </component>
