@@ -7,7 +7,7 @@ const formatter = new Intl.NumberFormat('de-DE', {
   minimumFractionDigits: 2
 });
 
-const SingleProduct = ({ elem, favouriteClickHandler }) => {
+const SingleProduct = ({ elem, favouriteClickHandler,filter }) => {
   const router = useRouter();
 
   // const addToFavorites = (e) => {
@@ -51,7 +51,7 @@ const SingleProduct = ({ elem, favouriteClickHandler }) => {
             >
                 {elem?.images && (
                     <img
-                        src={elem?.images[0]?.url}
+                        src={elem?.images[0]?.url || elem?.images}
                         className={"item-picture"}
                         alt=""
                         onClick={() => toProductPage(e.id)}

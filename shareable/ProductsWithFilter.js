@@ -1,5 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import {useDispatch, useSelector} from "react-redux";
+import {addToWishList, getProductsWithFilter} from "../services/actions/products";
+
+const formatter = new Intl.NumberFormat('de-DE', {
+    style: 'currency',
+    currency: 'EUR',
+    minimumFractionDigits: 2
+});
 
 const ProductsWithFilter = ({
   headtext,
@@ -9,19 +17,51 @@ const ProductsWithFilter = ({
   gridTemplateColumns,
   gap,
 }) => {
+    const dispatch = useDispatch()
+
+
+
+  const { isAuthenticated } = useSelector(state => state.auth);
+  const productsData = useSelector(state=>state.products.productsWithFilter)
   const router = useRouter();
   const [parfum, setParfum] = useState(true);
   const [beauty, setBeauty] = useState(false);
   const [interiour, setInteriour] = useState(false);
+  const prods = productsData?.find(p => p.position === 'HomePage');
+  const [productsFiltered,setProductsFiltered] = useState([])
+
+    useEffect(()=>{
+        dispatch(getProductsWithFilter())
+            .then(res => {
+                setProductsFiltered(res?.find(p => p.position === 'HomePage').parfums);
+            })
+    },[]);
+
+  useEffect(()=>{
+      if(parfum){
+          setProductsFiltered(prods?.parfums)
+      }else if(beauty){
+          setProductsFiltered(prods?.beauties)
+      }else if(interiour){
+          setProductsFiltered(prods?.interieurs)
+      }
+  },[parfum,beauty,interiour])
   const addToFavorites = (e) => {
-    setProducts(
-      products.map((elem) => {
-        if (elem.id === e.id) {
-          elem.heart = !elem.heart;
-        }
-        return elem;
-      })
-    );
+          if (!isAuthenticated) {
+              return router.push('/login');
+          }
+
+          dispatch(addToWishList(Number(e)))
+              .then(res =>{
+                  console.log(res, 9999999999, productsFiltered)
+                  setProductsFiltered(prev => prev.map(p => {
+                      if (+p.productId === +res) {
+                          p.favorit = !p.favorit;
+                      }
+
+                      return p;
+                  }));
+              });
   };
   const toProductPage = (e) => {
     if (router.pathname !== '/products') {
@@ -79,38 +119,38 @@ const ProductsWithFilter = ({
             gap: gap,
           }}
         >
-          {products.map((e, i) => {
+          {productsFiltered?.map((e, i) => {
             return (
               <div className={' first-prod-items col-lg-3'} key={i}>
                 <div
                   className={'picture-body-prod'}
 
                 >
-                  <img src={e.imageHead} className={'item-picture'} alt='' onClick={() => toProductPage(e.id)} />
+                  <img src={e?.images} className={'item-picture'} alt='' onClick={() => toProductPage(e.id)} />
 
-                  {e.approoved && (
-                    <img
+                  {!e.approoved && (
+                      <img
                       src='/15-layers.png'
                       alt='15 layers'
                       className={'circled-txt'}
                       onClick={toApproved}
-                    />
-                  )}
+                      />
+                      )}
                   <svg
                     xmlns='http://www.w3.org/2000/svg'
                     width='512'
                     height='512'
                     viewBox='0 0 512 512'
                     className={'letter-svg heart-icon-item'}
-                    onClick={() => addToFavorites(e)}
+                    onClick={() => addToFavorites(e?.productId)}
                     style={
-                      e.heart ? { stroke: '#000000' } : { stroke: '#7b7b7b' }
+                      e?.favorit ? { stroke: '#000000' } : { stroke: '#7b7b7b' }
                     }
                   >
                     <path
                       d='M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z'
                       style={
-                        e.heart
+                        e?.favorit
                           ? {
                               fill: '#000000',
                               strokeMiterlimit: '10',
@@ -125,22 +165,37 @@ const ProductsWithFilter = ({
                     />
                   </svg>
                 </div>
-                {e.new ? (
-                  <span className={'item-new'}>New</span>
-                ) : (
-                  <span className={'item-notNew'}>New</span>
-                )}
-                <span className={'prod-txt-head'} style={{ opacity: '0' }}>
-                  Clean product
-                </span>
+                  {e.new ? <span className={'item-new'}>New</span> : <span className={'item-notNew'}>New</span>}
+                  {
+                      e.clean_product ?
+                          <span className={'prod-txt-head'} >
+                          Clean product
+                        </span> :
+                          <span className={'prod-txt-head'} style={{opacity:"0"}}>
+                          Clean product
+                        </span>
+                  }
 
                 <span className={'prod-txt-head2'}>Limited edition</span>
-                <h3 className={'prod-txt-name'}>Ylumi</h3>
-                <span className={'prod-txt-foot'}>Energy Kapseln</span>
-                <span className={'prod-txt-foot2'}>Kapseln</span>
-                <h3 className={'prod-txt-price'}>28,00 €</h3>
+                  {e?.brand ? (
+                      <h3 className={'prod-txt-name'}>{e?.brand}</h3>
+                  ) : (
+                      <h3 className={'prod-txt-name'} style={{opacity: 0}}>Ylumi</h3>
+                  )}
+                  {e?.name ? (
+                      <span className={'prod-txt-foot'}>{e?.name}</span>
+                  ) : (
+                      <span className={'prod-txt-foot'} style={{opacity: 0}}>Energy Kapseln</span>
+                  )}
+                  {e?.kind ? (
+                      <span className={'prod-txt-foot2'}>Kapseln</span>
+                  ) : (
+                      <span className={'prod-txt-foot2'} style={{opacity: 0}}>Kapseln</span>
+                  )}
+                  <h3 className={'prod-txt-price'}>{formatter.format(e?.price || 0)}</h3>
 
-                <button>
+
+                  <button>
                   Quick shop{' '}
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

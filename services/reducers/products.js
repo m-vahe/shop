@@ -1,12 +1,12 @@
-import { 
-    GET_PRODUCTS, 
-    SET_PRODUCTS, 
-    SET_ERROR, 
+import {
+    GET_PRODUCTS,
+    SET_PRODUCTS,
+    SET_ERROR,
     SWITCH_TO_FAVOURITE,
     GET_FAVOURITES_PRODUCTS,
     SET_FAVOURITES_PRODUCTS,
     GET_PRODUCTS_WITH_LEFT_TEXT,
-    SET_PRODUCTS_WITH_LEFT_TEXT
+    SET_PRODUCTS_WITH_LEFT_TEXT, GET_PRODUCTS_WITH_FILTER
 } from '../action-types/products';
 
 const initialState = {
@@ -17,10 +17,18 @@ const initialState = {
   productsError: null,
   productsWithLeftTextLoading: false,
   productsWithLeftText: [],
+  productsWithFilter:[],
+  productsWithFilterLoaded:true
 };
 
 const productsReducer = (state = initialState, { type, payload }) => {
     switch (type) {
+        case GET_PRODUCTS_WITH_FILTER:
+            return {
+                ...state,
+                productsWithFilterLoaded: false,
+                productsWithFilter: payload
+            };
         case GET_PRODUCTS:
             return {
                 ...state,
@@ -42,6 +50,13 @@ const productsReducer = (state = initialState, { type, payload }) => {
             return {
                 ...state,
                 products: state.products.map(p => {
+                    if (p.id === payload.id) {
+                        p.favorit = payload.isFavourite;
+                    }
+
+                    return p;
+                }),
+                productsWithFilter:state.productsWithFilter.map(p => {
                     if (p.id === payload.id) {
                         p.favorit = payload.isFavourite;
                     }
