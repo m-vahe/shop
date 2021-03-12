@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-four/StepFour.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-four/StepFour.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-four/StepFour.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/checkout-steps-scene/components/step-four/StepFour.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/magazinartikelone/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/magazinartikelone/gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/wishlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/carousel/CarouselArtikel.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/carousel/CarouselArtikel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/wishlist/components/whishlist-container/WhishListContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/wishlist/components/whishlist-container/whishListContainer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/wishlist/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +142,8 @@
       <workItem from="1615360605818" duration="8719000" />
       <workItem from="1615374412857" duration="10889000" />
       <workItem from="1615443534005" duration="571000" />
-      <workItem from="1615444202798" duration="20948000" />
+      <workItem from="1615444202798" duration="21129000" />
+      <workItem from="1615530796091" duration="856000" />
     </task>
     <servers />
   </component>

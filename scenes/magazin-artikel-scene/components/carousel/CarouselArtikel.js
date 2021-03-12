@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Carousel, Radio } from 'antd';
 import FirstElement from "./components/first/FirstElement";
 import {useRef} from "react"
