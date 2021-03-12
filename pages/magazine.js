@@ -2,7 +2,7 @@ import PageHeader from "../layouts/header/Header";
 import Footer from "../layouts/footer/Footer";
 import MobileHeader from "../layouts/mobile-header/MobileHeader";
 import MagazinScene from "../scenes/magazin";
-const Magazin = () => {
+const Magazine = () => {
     return (
         <>
             <PageHeader />
@@ -17,4 +17,4 @@ export async function getStaticProps() {
         props: {},
     };
 }
-export default Magazin
+export default Magazine
