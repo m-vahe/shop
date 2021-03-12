@@ -2,7 +2,7 @@ import PageHeader from "../layouts/header/Header";
 import Footer from "../layouts/footer/Footer";
 import MobileHeader from "../layouts/mobile-header/MobileHeader";
 import AboutTwoScene from "../scenes/abouttwo";
-export default function AboutTwo() {
+const AboutTwo = () => {
     return (
         <>
             <PageHeader />
@@ -12,3 +12,10 @@ export default function AboutTwo() {
         </>
     );
 }
+export async function getStaticProps() {
+    return {
+        props: {},
+    };
+}
+
+export default AboutTwo

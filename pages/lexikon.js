@@ -2,7 +2,7 @@ import PageHeader from "../layouts/header/Header";
 import Footer from "../layouts/footer/Footer";
 import MobileHeader from "../layouts/mobile-header/MobileHeader";
 import LexikonScene from "../scenes/lexikon";
-export default function Lexikon() {
+const Lexikon =()=> {
     return (
         <>
             <PageHeader />
@@ -12,3 +12,9 @@ export default function Lexikon() {
         </>
     );
 }
+export async function getStaticProps() {
+    return {
+        props: {},
+    };
+}
+export default Lexikon

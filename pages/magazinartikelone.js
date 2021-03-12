@@ -3,7 +3,7 @@ import Footer from "../layouts/footer/Footer";
 import MobileHeader from "../layouts/mobile-header/MobileHeader";
 import MagazinArtikelScene from "../scenes/magazin-artikel-scene";
 
-export default function Magazin() {
+const Magazin = () => {
     return (
         <>
             <PageHeader />
@@ -13,3 +13,11 @@ export default function Magazin() {
         </>
     );
 }
+
+export async function getStaticProps() {
+    return {
+        props: {},
+    };
+}
+
+export default Magazin

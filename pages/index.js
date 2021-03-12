@@ -6,7 +6,7 @@ import Footer from "../layouts/footer/Footer";
 import { getUserDataFromLocalStorage } from '../services/actions/auth';
 import { useDispatch } from 'react-redux';
 
-export default function Home() {
+const  Home = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -22,3 +22,10 @@ export default function Home() {
     </>
   );
 }
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
+export default Home

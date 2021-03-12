@@ -1,8 +1,15 @@
 import HerrenScene from "../scenes/herren";
-export default function Herren() {
+const Herren = () => {
     return (
         <>
             <HerrenScene/>
         </>
     );
 }
+export async function getStaticProps() {
+    return {
+        props: {},
+    };
+}
+
+export default Herren
