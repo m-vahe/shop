@@ -6,7 +6,7 @@ import {
     GET_FAVOURITES_PRODUCTS,
     SET_FAVOURITES_PRODUCTS,
     GET_PRODUCTS_WITH_LEFT_TEXT,
-    SET_PRODUCTS_WITH_LEFT_TEXT, GET_PRODUCTS_WITH_FILTER
+    SET_PRODUCTS_WITH_LEFT_TEXT, GET_PRODUCTS_WITH_FILTER, GET_PRODUCTS_PAGE_DATA
 } from '../action-types/products';
 
 const initialState = {
@@ -18,7 +18,9 @@ const initialState = {
   productsWithLeftTextLoading: false,
   productsWithLeftText: [],
   productsWithFilter:[],
-  productsWithFilterLoaded:true
+  productsWithFilterLoaded:true,
+  productsPageData:[],
+  productsPageDataLoaded:true
 };
 
 const productsReducer = (state = initialState, { type, payload }) => {
@@ -39,6 +41,12 @@ const productsReducer = (state = initialState, { type, payload }) => {
                 ...state,
                 productLoading: false,
                 products: payload
+            };
+        case GET_PRODUCTS_PAGE_DATA:
+            return {
+                ...state,
+                productsPageDataLoaded: false,
+                productsPageData: payload
             };
         case SET_ERROR:
             return {

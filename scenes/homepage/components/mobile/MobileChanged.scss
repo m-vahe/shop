@@ -195,57 +195,57 @@
       }
     }
   }
-  .prodbotbodall {
-    button {
-      width: fit-content !important;
-      padding: 5px 10px;
-    }
-  }
-  .first-product-bottom-body {
-    grid-auto-flow: row !important;
-    .prod-bod-left-txt {
-      align-items: normal !important;
-      p {
-        margin: 5px 0 !important;
-        text-align: left !important;
-      }
-      h2 {
-        text-align: left !important;
-        line-height: 40px;
-      }
-      span {
-        margin-top: 10px;
-        line-height: 1.4;
-        text-align: left !important;
-      }
-      a {
-        text-align: left !important;
-      }
-    }
-    .product-bottom-right {
-      display: grid !important;
-      p {
-        margin: 5px 0 !important;
-        text-align: left !important;
-      }
-      h2 {
-        text-align: left !important;
-        line-height: 40px;
-      }
-      span {
-        margin-top: 10px;
-        text-align: left !important;
-      }
-      a {
-        text-align: left !important;
-        padding: 0 !important;
-      }
-      .prod-bot-right-img {
-        margin-top: -15rem;
-        grid-row: 1;
-      }
-    }
-  }
+  //.prodbotbodall {
+  //  button {
+  //    width: fit-content !important;
+  //    padding: 5px 10px;
+  //  }
+  //}
+  //.first-product-bottom-body {
+  //  grid-auto-flow: row !important;
+  //  .prod-bod-left-txt {
+  //    align-items: normal !important;
+  //    p {
+  //      margin: 5px 0 !important;
+  //      text-align: left !important;
+  //    }
+  //    h2 {
+  //      text-align: left !important;
+  //      line-height: 40px;
+  //    }
+  //    span {
+  //      margin-top: 10px;
+  //      line-height: 1.4;
+  //      text-align: left !important;
+  //    }
+  //    a {
+  //      text-align: left !important;
+  //    }
+  //  }
+  //  .product-bottom-right {
+  //    display: grid !important;
+  //    p {
+  //      margin: 5px 0 !important;
+  //      text-align: left !important;
+  //    }
+  //    h2 {
+  //      text-align: left !important;
+  //      line-height: 40px;
+  //    }
+  //    span {
+  //      margin-top: 10px;
+  //      text-align: left !important;
+  //    }
+  //    a {
+  //      text-align: left !important;
+  //      padding: 0 !important;
+  //    }
+  //    .prod-bot-right-img {
+  //      margin-top: -15rem;
+  //      grid-row: 1;
+  //    }
+  //  }
+  //}
   .video-body {
     height: 350px;
     //p {

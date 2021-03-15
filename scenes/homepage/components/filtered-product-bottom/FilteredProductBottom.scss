@@ -28,18 +28,26 @@
   .first-product-bottom-body {
     width: 90.5%;
     margin: 0 auto;
-    //margin-top: 100px;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 30px;
+    display: flex;
     .product-bottom-left {
       flex-direction: column;
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
       img{
         width: 100%;
       }
       .prod-bot-left-img {
+        flex: 1;
         width: 100%;
         position: relative;
+        div{
+          height: 100%;
+          img{
+            height: 100%;
+            object-fit: cover;
+          }
+        }
         h2 {
           color: #3e3e3e;
           font-family: 'Ivy Presto Display', system-ui,inherit;
@@ -124,12 +132,16 @@
         }
       }
     }
+    .product-bottom-middle{
+      width: 20px;
+    }
     .product-bottom-right {
       align-self: flex-end;
       display: flex;
       flex-direction: column;
-      margin: 12vw 0 3rem 0;
+      margin: 12vw 0 0rem 0;
       width: 100%;
+      flex: 1;
       .prod-bot-right-img {
         margin-top: 5rem;
         img{
@@ -191,7 +203,7 @@
         font-style: normal;
         text-decoration: underline;
         text-transform: uppercase;
-        padding: 20px 0;
+        padding: 20px 0 0 0;
       }
     }
   }

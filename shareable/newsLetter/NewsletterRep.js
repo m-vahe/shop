@@ -61,7 +61,6 @@ const NewsletterRep = ({ padding }) => {
                   name={"name"}
                   placeholder={'Vorname'}
                   className='newsLetter__container__action__form--name'
-                  required={true}
                   value={newsLetter.First_name}
                   onChange={(e)=> {
                       const val = e.target.value;
@@ -76,7 +75,6 @@ const NewsletterRep = ({ padding }) => {
                   name={"lastname"}
                   placeholder={'nachname'}
                   className='newsLetter__container__action__form--lastname'
-                  required={true}
                   value={newsLetter.Surname}
                   onChange={(e)=> {
                       const val = e.target.value;

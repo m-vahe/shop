@@ -1,39 +1,39 @@
-// import {useSelector} from "react-redux";
+import moment from "moment";
 
-const MagazinAddSection = () =>{
+const MagazinAddSection = ({addData1,addData2,addData3}) =>{
 
     return(
         <div className={"magazin__add__section__container"}>
             <div className={"magazin__add__section__container__item item1"}>
-                <div className={"magazin__add__section__container__item--img"} style={{backgroundImage:"url(/magazin/addsection/image1.png)"}}></div>
+                <div className={"magazin__add__section__container__item--img"} style={{backgroundImage:`url(${addData1?.image?.url})`}}></div>
                 <div className={"magazin__add__section__container__item--text"}>
-                    <p>Interieur</p>
+                    <p>{addData1?.header}</p>
                     <h3>
-                        Herb und maskulin in den winter
+                        {addData1?.text}
                     </h3>
-                    <span>07.11. 2020</span>
+                    <span>{moment(addData1?.date).format("DD.MM.YYYY")}</span>
                 </div>
             </div>
             <div className={"magazin__add__section__container__item item2"}>
-                <div className={"magazin__add__section__container__item--img"} style={{backgroundImage:"url(/magazin/addsection/image2.png)"}}></div>
+                <div className={"magazin__add__section__container__item--img"} style={{backgroundImage:`url(${addData2?.image?.url})`}}></div>
                 <div className={"magazin__add__section__container__item--text"}>
-                    <p>Leben</p>
+                    <p>{addData2?.header}</p>
                     <h3>
-                        Entdecken sie die färben der saison
+                        {addData2?.text}
                     </h3>
-                    <span>07.11. 2020</span>
+                    <span>{moment(addData2?.date).format("DD.MM.YYYY")}</span>
                 </div>
             </div>
             <div className={"magazin__add__section__container__item item3"}>
-                <div className={"magazin__add__section__container__item--img"} style={{backgroundImage:"url(/magazin/addsection/image3.png)"}}></div>
+                <div className={"magazin__add__section__container__item--img"} style={{backgroundImage:`url(${addData3?.image?.url})`}}></div>
                 <div className={"magazin__add__section__container__item--text"}>
                     <p>
-                        Pflege
+                        {addData3?.header}
                     </p>
                     <h3>
-                        Tipps für die perfekte Rasur
+                        {addData3?.text}
                     </h3>
-                    <span>07.11. 2020</span>
+                    <span>{moment(addData3?.date).format("DD.MM.YYYY")}</span>
                 </div>
             </div>
         </div>

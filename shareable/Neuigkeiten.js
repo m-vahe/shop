@@ -24,7 +24,7 @@ const Neuigkeiten = ({
           paddingBottom: paddingBottom,
         }}
       >
-        <div className={'d-flex flex-row flex-wrap first-product-bottom-body'}>
+        <div className={'first-product-bottom-body'}>
           <div className={'col-lg-6 product-bottom-left d-flex'}>
             <div className={'prod-bot-left-img'}>
               <h2 style={{ color: color }}>NEUIGKEITEN</h2>
@@ -49,7 +49,8 @@ const Neuigkeiten = ({
               </Link>
             </div>
           </div>
-          <div className={'col-lg-6 product-bottom-right'}>
+          <div className={"product-bottom-middle"}></div>
+          <div className={' product-bottom-right'}>
             <p style={{ color: color }}>{neuigkeitenSecond?.header}</p>
             <h2
                 onClick={

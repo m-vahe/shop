@@ -6,7 +6,9 @@ import {
     GET_FAVOURITES_PRODUCTS,
     SET_FAVOURITES_PRODUCTS,
     GET_PRODUCTS_WITH_LEFT_TEXT,
-    SET_PRODUCTS_WITH_LEFT_TEXT, GET_PRODUCTS_WITH_FILTER
+    SET_PRODUCTS_WITH_LEFT_TEXT,
+    GET_PRODUCTS_WITH_FILTER,
+    GET_PRODUCTS_PAGE_DATA
 } from '../action-types/products';
 import axios from 'axios';
 
@@ -29,6 +31,23 @@ export const getProducts = (limit = 3) => {
         })
         .catch(err => dispatch({ type: SET_ERROR, payload: err }));
   };
+};
+export const getProductsPageData = () => {
+    return dispatch => {
+        axios.get(
+            `${process.env.NEXT_PUBLIC_API_URL}/products`,
+            { headers: { Authorization: JSON.parse(localStorage.getItem('userData') || '{}').jwt ? `Bearer ${JSON.parse(localStorage.getItem('userData') || '{}').jwt || ''}` : '' } }
+        )
+            .then(res => {
+                const { data } = res;
+
+                dispatch({
+                    type: GET_PRODUCTS_PAGE_DATA,
+                    payload: data
+                });
+            })
+            .catch(err => dispatch({ type: SET_ERROR, payload: err }));
+    };
 };
 
 export const addToWishList = product => {

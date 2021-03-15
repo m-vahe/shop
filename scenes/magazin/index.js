@@ -12,24 +12,28 @@ import {getStairsAdd} from "../../services/actions/news";
 const MagazinScene = () =>{
 
     const dispatch = useDispatch()
+
     useEffect(()=>{
         dispatch(getStairsAdd())
         console.log(addData1,1111111111,addData2,22222222222)
     },[])
-
     const adds = useSelector(state => state.news.stairAdd);
     const addData1 = adds.find(n => n.position === 'One');
     const addData2 = adds.find(n => n.position === 'Two');
+    const addData3 = adds.find(n => n.position === 'Three');
+    const addData4 = adds.find(n => n.position === 'Four');
+    const addData5 = adds.find(n => n.position === 'Five');
+    const addData6 = adds.find(n => n.position === 'Six');
 
     return(
         <div className={"magazin__all__elements"}>
             <ComponentHeaderBody/>
-            <AddSection addData={addData1}/>
+            <AddSection addData1={addData1} addData2={addData2} addData3={addData3}/>
             <ProductsList/>
             <MagazinSecondSection/>
             <MagazinSecondSectionMobile/>
             <ProductsList/>
-            <AddSection addData={addData2}/>
+            <AddSection addData1={addData4} addData2={addData5} addData3={addData6}/>
             <BeautyEssentials/>
             <Social/>
             <NewsletterRep/>
