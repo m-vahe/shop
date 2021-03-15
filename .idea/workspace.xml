@@ -3,20 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/[id].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/filtered-product-bottom/FilteredProductBottom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/filtered-product-bottom/FilteredProductBottom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/first-intro/FirstIntro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/first-intro/FirstIntro.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/components/add-section/AddSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/magazin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/actions/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Neuigkeiten.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Neuigkeiten.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/magazin-products/MagazinProducts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/newsLetterRep.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +141,7 @@
       <workItem from="1615444202798" duration="21129000" />
       <workItem from="1615530796091" duration="19298000" />
       <workItem from="1615790799752" duration="9000" />
-      <workItem from="1615790877195" duration="7727000" />
+      <workItem from="1615790877195" duration="9979000" />
     </task>
     <servers />
   </component>
