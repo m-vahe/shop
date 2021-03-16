@@ -8,6 +8,14 @@
     display: grid;
     grid-auto-flow: column;
     margin-top: 15px;
+    @media screen and(max-width: 1300px){
+      grid-auto-flow: unset;
+      grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    }
+    @media screen and(max-width: 1070px){
+      grid-auto-flow: unset;
+      grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+    }
   }
   .first-prod-items {
     display: flex;

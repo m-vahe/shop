@@ -13,7 +13,7 @@ const FirstShareableIntro = ({smalltxt,bigtext1,bigtext2,btntext,bg,color,paddin
                         !homepageIntro?.images.url ? <img src='/first1.jpg' />
                             :
                             <Link href={`${homepageIntro?.url}`}>
-                                <a >
+                                <a href={`${homepageIntro?.url}`}>
                                     <Image src={`${homepageIntro?.images.url} ` || '/first1.jpg'} width={941} height={625} layout="responsive" />
                                 </a>
                             </Link>
@@ -23,7 +23,7 @@ const FirstShareableIntro = ({smalltxt,bigtext1,bigtext2,btntext,bg,color,paddin
 
                 <div className={"button-body"}>
                     <Link href={`${homepageIntro?.url || ''}`}>
-                        <a>
+                        <a href={`${homepageIntro?.url || ''}`}>
                             <button style={{color:bg,backgroundColor:color}}>{homepageIntro?.button_text}</button>
                         </a>
                     </Link>

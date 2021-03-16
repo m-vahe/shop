@@ -14,7 +14,8 @@ import BottomVideo from "./components/bottom-videos/BottomVideos";
 import FirstIntroMobile from "./components/mobile/firstIntro/FirstIntro";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import { useDispatch ,useSelector} from 'react-redux';
-import {getCollectionShops, getHomePageSctOne, getInspirations,getMidFoot,getNewsletterText} from '../../services/actions/homepage__stable';
+import {getCollectionShops, getHomePageSctOne, getInspirations,getMidFoot} from '../../services/actions/homepage__stable';
+import {getProductsWithFilter} from "../../services/actions/products";
 import { getProductsWithLeftText } from '../../services/actions/products';
 import { getNewsReport } from '../../services/actions/news';
 import { useEffect, useLayoutEffect, useState } from "react";
@@ -72,7 +73,7 @@ const Homepage = () =>{
                         <div className={"homepage-body"}>
                             <FirstIntro/>
                             <FirstIntroMobile/>
-                            <FirstProducts/>
+                            <FirstProducts getFour={getProductsWithFilter}/>
                             <SecondSection
                                 firstData={firstData}
                                 secondData={secondData}
@@ -82,7 +83,7 @@ const Homepage = () =>{
                             />
                             <InspirationBottomOne/>
                             <InspirationBottomTwo/>
-                            <SecondProducts/>
+                            <SecondProducts getFour={getProductsWithFilter}/>
                             <ProductsWithFilterHomepage/>
                             <FilteredProductBottom/>
                             <VideoPart/>
@@ -91,7 +92,6 @@ const Homepage = () =>{
                             <DpabBottom/>
                             <Services/>
                             <NewsletterRep/>
-                            {/*<div dangerouslySetInnerHTML={{__html:htmltext}}></div>*/}
                         </div>
                         <Footer/>
                     </>

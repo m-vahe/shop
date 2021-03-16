@@ -13,7 +13,7 @@ const Services = () =>{
             <div className={"services-body"} >
                 {fourIcons?.map((e,i)=>{
                     return(
-                        <div className={"services-item"}>
+                        <div className={"services-item"} key={i}>
                             {icons[i]}
                             <h2>
                                 {e?.header}

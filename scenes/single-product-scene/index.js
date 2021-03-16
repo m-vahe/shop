@@ -7,6 +7,7 @@ import ProductsWithFilter from "../../shareable/ProductsWithFilter";
 import {useState} from "react";
 import MobileSwipeableCarousel from "./components/left-product-images/mobile-images/MobileSwipeableTop";
 import MobileHeader from "../../layouts/mobile-header/MobileHeader";
+import {getProductsWithFilter} from "../../services/actions/products";
 
 const SingleProductScene = () =>{
     const headtext = "Männerpflege"
@@ -44,7 +45,7 @@ const SingleProductScene = () =>{
                   </div>
                   <SingleProductBottom/>
                   <div className={"product-bottom-prod-w-filter"}>
-                      <ProductsWithFilter headtext={headtext} products={products} setProducts={setProducts}/>
+                      <ProductsWithFilter headtext={headtext} products={products} setProducts={setProducts} getProductsWithFilter={getProductsWithFilter}/>
                   </div>
               </div>
             <Footer/>

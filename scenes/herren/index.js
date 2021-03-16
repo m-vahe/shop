@@ -24,6 +24,8 @@ import { Space, Spin} from "antd";
 import MobileHeader from "../../layouts/mobile-header/MobileHeader";
 import Footer from "../../layouts/footer/Footer";
 import PageHeader from "../../layouts/header/Header"
+import {getEightProductsWithFilter} from "../../services/actions/products";
+
 const HerrenScene = () => {
     const dispatch = useDispatch();
 
@@ -55,7 +57,6 @@ const HerrenScene = () => {
     const headLoaded = useSelector(state=>state.navbar.homePageSctOneLoaded)
     const navlistloaded = useSelector((state) => state.navbar.navListLoaded)
     const headerloaded = useSelector((state) => state.navbar.headerContactsLoaded)
-    console.log(navlistloaded,"***********************************")
     return(
         <>
             {
@@ -66,12 +67,12 @@ const HerrenScene = () => {
                     <div className={"harren-main-body"}>
                         <HerrenHead/>
                         <FirstComponent/>
-                        <FirstProducts/>
+                        <FirstProducts getFour={getEightProductsWithFilter}/>
                         <SecondSection
                             firstData={firstData}
                             secondData={secondData}
                         />
-                        <ProductsWithFilterHarren/>
+                        <ProductsWithFilterHarren />
                         <div className={"harreninsp"}>
                             <Inspiration inspiration={inspiration1} />
                             <InspirationBottomOne inspiration={inspiration2} />

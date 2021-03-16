@@ -21,6 +21,9 @@ const CartSidebarProduct = () =>{
         }
         console.log(value)
     }
+    const onChange=()=>{
+
+    }
     return(
         <div className={"cart__sidebar__product__body"}>
             <div className={"cart__sidebar__product__body__image"}>
@@ -33,7 +36,7 @@ const CartSidebarProduct = () =>{
                 <span className={"cart__sidebar__product__body__text--price"}>{formatter.format(28.00 * value || 0)}</span>
                 <div className={"cart__sidebar__product__body__text--quantityinp"}>
                     <button className={"btnplus"} onClick={onIncHandler}><FontAwesomeIcon icon={faPlus}/></button>
-                    <input type="number"  min={"1"} max={"10"} value={value < 10 ? `0${value}` : value }/>
+                    <input type="number"  min={"1"} max={"10"} onChange={onChange} value={value < 10 ? `0${value}` : value }/>
                     <button className={"btnminus"} onClick={onDecHandler}><FontAwesomeIcon icon={faMinus}/></button>
                 </div>
                 <span className={"cart__sidebar__product__body__text--delete"}>löschen</span>

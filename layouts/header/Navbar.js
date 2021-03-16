@@ -43,7 +43,7 @@ const Navbar = () => {
                         href={e?.item_name?.toLowerCase()}
                         style={
                           route.pathname.substring(1) === e?.item_name?.toLowerCase()
-                            ? { webkitTextStroke:"1px" }
+                            ? { WebkitTextStroke:"1px" }
                             : null
                         }
                       >

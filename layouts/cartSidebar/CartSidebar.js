@@ -55,10 +55,10 @@ const CartSidebar = ({visible,onClose}) => {
                     <div className={"cart__sidebar__products"}>
                         {products.map((e,i)=>{
                             return(
-                                <>
+                                <div key={i}>
                                     <CartSidebarProduct key={i}/>
 
-                                </>
+                                </div>
                             )
                         })}
                     </div>

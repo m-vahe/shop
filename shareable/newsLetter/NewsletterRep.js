@@ -16,7 +16,6 @@ const NewsletterRep = ({ padding }) => {
   const [suc,setSuc] = useState(null)
   useEffect(()=>{
       dispatch(getNewsletterText())
-      console.log(textData,"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
   },[])
 
   const textData = useSelector(state => state.navbar.newsletterText);

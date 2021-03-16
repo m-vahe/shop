@@ -10,7 +10,7 @@ const FooterNav = () =>{
                     <div className={" footer-circled-bod"}>
                         {data.sort((a,b)=>{return a?.id-b?.id}).map((e,i)=>{
                             return(
-                                <div className={"nav-top-items "}>
+                                <div className={"nav-top-items "} key={i}>
                                     <div className={"footer-circled-persons"}>
                                         <Image src={`${e?.images?.url || '/dasparfum.jpg'}`} width={83} height={83}/>
                                     </div>
