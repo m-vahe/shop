@@ -3,30 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/cartSidebar/CartSidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/cartSidebar/CartSidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/footer/FooterNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/footer/FooterNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/products/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/products/[id].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/herren/components/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/FirstProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilterHarrenTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilterHarrenTwo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/herren/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/first-products/FirstProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/first-products/FirstProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/second-products/SecondProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/second-products/SecondProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/mobile-images/MobileSwipeableTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/mobile-images/MobileSwipeableTop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/action-types/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/actions/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/homepage__stable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/actions/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/reducers/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/homepage__stable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/reducers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSideBarProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSideBarProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/firstIntro/FirstShareableIntro.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/firstIntro/FirstShareableIntro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/info-container/InfoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/info-container/InfoContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/services/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/services/Services.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +49,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -164,6 +147,7 @@
       <workItem from="1615530796091" duration="19298000" />
       <workItem from="1615790799752" duration="9000" />
       <workItem from="1615790877195" duration="23217000" />
+      <workItem from="1615902873934" duration="3887000" />
     </task>
     <servers />
   </component>

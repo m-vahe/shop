@@ -34,7 +34,8 @@ const initialState = {
     midfoot:[],
     midfootLoaded:true,
     newsletterText:[],
-    newsletterTextLoaded:true
+    newsletterTextLoaded:true,
+    x:false
 };
 
 const homeRedcucer = (state= initialState, action) =>{

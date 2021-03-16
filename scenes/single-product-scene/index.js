@@ -7,27 +7,41 @@ import ProductsWithFilter from "../../shareable/ProductsWithFilter";
 import {useState,useEffect} from "react";
 import MobileSwipeableCarousel from "./components/left-product-images/mobile-images/MobileSwipeableTop";
 import MobileHeader from "../../layouts/mobile-header/MobileHeader";
-import {getProductsWithFilter} from "../../services/actions/products";
-import {useDispatch} from "react-redux"
+import {getProductsWithFilter, getSingleProduct} from "../../services/actions/products";
+import {useDispatch, useSelector} from "react-redux"
 import {getUserDataFromLocalStorage} from "../../services/actions/auth"
+import {useRouter} from "next/router";
+import { Spin, Space } from 'antd';
 const SingleProductScene = () =>{
     const headtext = "Männerpflege"
     const dispatch = useDispatch()
-   
+    const router = useRouter()
+    const loaded = useSelector(state=>state.products.singleProductLoaded)
+    const productData = useSelector(state=>state.products.singleProduct)
     useEffect(() => {
         dispatch(getUserDataFromLocalStorage());
+        dispatch(getSingleProduct(router.query.id))
+        console.log(productData,"aaaaaaaaa")
       }, []);
    
     return(
         <>
+            {
+                loaded &&
+                <div className={"loader__body"}>
+                    <Space size="middle">
+                        <Spin size="large" />
+                    </Space>
+                </div>
+            }
             <Header/>
             <MobileHeader/>
               <div className={"product-single-details-body"}>
                   <div className={"product__details__container"}>
                       <div className={"product__details__container__top"}>
-                          <MobileSwipeableCarousel/>
-                          <LeftProductImages/>
-                          <RightProductText/>
+                          <MobileSwipeableCarousel imagesData={productData?.images} elem={productData}/>
+                          <LeftProductImages elem={productData}/>
+                          <RightProductText elem={productData}/>
                       </div>
                   </div>
                   <SingleProductBottom/>

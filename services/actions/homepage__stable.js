@@ -22,12 +22,10 @@ export const getNavbar = () => {
         return axios.get(`${process.env.NEXT_PUBLIC_API_URL}/navbaritems`)
             .then(res => {
                 const { data } = res;
-
                 dispatch({
                     type: SET_NAVBAR_SETTINGS,
                     payload: data
                 });
-
                 return data;
             })
             .catch(err => dispatch({ type: SET_ERROR }));

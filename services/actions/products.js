@@ -8,7 +8,7 @@ import {
     GET_PRODUCTS_WITH_LEFT_TEXT,
     SET_PRODUCTS_WITH_LEFT_TEXT,
     GET_PRODUCTS_WITH_FILTER,
-    GET_PRODUCTS_PAGE_DATA, GET_EIGHT_PRODUCTS_WITH_FILTER
+    GET_EIGHT_PRODUCTS_WITH_FILTER, GET_SINGLE_PRODUCT_DATA, SET_PRODUCT_SINGLE_LOADED
 } from '../action-types/products';
 import axios from 'axios';
 
@@ -126,6 +126,24 @@ export const getEightProductsWithFilter = () => {
                 });
 
                 return data;
+            })
+            .catch(err => dispatch({ type: SET_ERROR, payload: err }));
+    };
+};
+
+export const getSingleProduct = (id) => {
+    return dispatch => {
+        dispatch({ type: SET_PRODUCT_SINGLE_LOADED })
+        axios.get(
+                `${process.env.NEXT_PUBLIC_API_URL}/products/${id}`
+            )
+            .then(res => {
+                const { data } = res;
+
+                dispatch({
+                    type: GET_SINGLE_PRODUCT_DATA,
+                    payload: data
+                });
             })
             .catch(err => dispatch({ type: SET_ERROR, payload: err }));
     };
