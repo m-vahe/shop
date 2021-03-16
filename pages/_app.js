@@ -3,7 +3,6 @@ import Head from "next/head";
 import "../styles/index.scss";
 import { Provider } from 'react-redux';
 import store from "../store/store";
-import { useSelector } from 'react-redux'
 class MyApp extends App {
 
   render() {

@@ -9,8 +9,11 @@
     grid-auto-flow: column;
     gap: 25px;
     .first-intro-bod-right{
+      height: 33vw;
       img{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
         cursor: pointer;
       }
     }

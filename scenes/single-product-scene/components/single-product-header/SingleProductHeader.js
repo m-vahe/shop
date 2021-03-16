@@ -1,8 +1,27 @@
 import ShareableSelect from "../../../../shareable/select/ShareableSelect";
-import { InputNumber } from 'antd';
+import {useState} from "react"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMinus, faPlus} from "@fortawesome/free-solid-svg-icons";
 const SingleProductHeader = () =>{
    const onChange=(value)=> {
         console.log('changed', value);
+    }
+    const [value,setValue] = useState(1)
+    const maxLimit = 10
+    const onIncHandler = () =>{
+        if(value < maxLimit){
+            setValue(value + 1)
+        }
+        console.log(value)
+    }
+    const onDecHandler = () =>{
+        if(value > 1){
+            setValue(value - 1)
+        }
+        console.log(value)
+    }
+    const onChanges=()=>{
+
     }
     return(
         <>
@@ -11,14 +30,28 @@ const SingleProductHeader = () =>{
                    <p>Ylumi</p>
                    <h2>Coco Beauty</h2>
                    <a href="#">Kapseln</a>
-                   <div className={"left-side-select"}>
-                       <span>Inhalt</span>
-                       <ShareableSelect defaultValue={"75 ML"} value={"large"}/>
+                   <div className="left-side-select-body">
+                        <div className={"left-side-select"}>
+                            <span>Inhalt</span>
+                            <ShareableSelect defaultValue={"75 ML"} value={"large"}/>
+                            
+                        </div>
+                        <div className={"left-side-select"}>
+                            <span>menge</span>
+                            <div className={"cart__sidebar__product__body__text--quantityinp"}>
+                               
+                                <input type="number"  min={"1"} max={"10"} onChange={onChanges} value={value < 10 ? `0${value}` : value }/>
+                                <div>
+                                    <button className={"btnplus"} onClick={onIncHandler}><FontAwesomeIcon icon={faPlus}/></button>
+                                    <button className={"btnminus"} onClick={onDecHandler}><FontAwesomeIcon icon={faMinus}/></button>
+                                </div>
+                            </div>
+                        </div>
                    </div>
                </div>
                <div className={"right-side"}>
                    <div className={"select-number"}>
-                       <InputNumber size="large" min={1} max={100000} defaultValue={3} onChange={onChange} />
+                      
                        <p>in den warenkorb</p>
                    </div>
                    <div className={"bot-text-right"}>

@@ -4,33 +4,20 @@ import LeftProductImages from "./components/left-product-images/LeftProductImage
 import RightProductText from "./components/right-product-text/RightProductText";
 import SingleProductBottom from "./components/single-product-bottom/SingleProductBottom";
 import ProductsWithFilter from "../../shareable/ProductsWithFilter";
-import {useState} from "react";
+import {useState,useEffect} from "react";
 import MobileSwipeableCarousel from "./components/left-product-images/mobile-images/MobileSwipeableTop";
 import MobileHeader from "../../layouts/mobile-header/MobileHeader";
 import {getProductsWithFilter} from "../../services/actions/products";
-
+import {useDispatch} from "react-redux"
+import {getUserDataFromLocalStorage} from "../../services/actions/auth"
 const SingleProductScene = () =>{
     const headtext = "Männerpflege"
-    const [products,setProducts] = useState(
-        [
-            {
-                id:0,productHead:"Clean product",productHead2:"Limited edition",productName:"Ylumi", productTextFoot:"Energy Kapseln",
-                productTextFoot2:"Kapseln",price:"28,00 €",new:true,approoved:true,imageHead:"/item.png",heart:false
-            },
-            {
-                id:1,productHead:"Clean product",productHead2:"Limited edition",productName:"Ylumi", productTextFoot:"Energy Kapseln",
-                productTextFoot2:"Kapseln",price:"28,00 €",new:false,approoved:true,imageHead:"/item.png",heart:false
-            },
-            {
-                id:2,productHead:"Clean product",productHead2:"Limited edition",productName:"Ylumi", productTextFoot:"Energy Kapseln",
-                productTextFoot2:"Kapseln",price:"28,00 €",new:false,approoved:true,imageHead:"/item.png",heart:false
-            },
-            {
-                id:3,productHead:"Clean product",productHead2:"Limited edition",productName:"Ylumi", productTextFoot:"Energy Kapseln",
-                productTextFoot2:"Kapseln",price:"28,00 €",new:false,approoved:true,imageHead:"/item.png",heart:false
-            },
-        ]
-    )
+    const dispatch = useDispatch()
+   
+    useEffect(() => {
+        dispatch(getUserDataFromLocalStorage());
+      }, []);
+   
     return(
         <>
             <Header/>
@@ -45,7 +32,11 @@ const SingleProductScene = () =>{
                   </div>
                   <SingleProductBottom/>
                   <div className={"product-bottom-prod-w-filter"}>
-                      <ProductsWithFilter headtext={headtext} products={products} setProducts={setProducts} getProductsWithFilter={getProductsWithFilter}/>
+                      <ProductsWithFilter headtext={headtext}
+                       position={"ProductPage"}
+                       getProductsWithFilter={getProductsWithFilter}
+
+                      />
                   </div>
               </div>
             <Footer/>

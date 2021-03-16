@@ -1,9 +1,27 @@
 import ShareableSelect from "../../../../shareable/select/ShareableSelect";
-import {InputNumber} from "antd";
-
+import {useState} from "react"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMinus, faPlus} from "@fortawesome/free-solid-svg-icons";
 const SingleProductHeaderMobile = () =>{
     const onChange=(value)=> {
         console.log('changed', value);
+    }
+    const [value,setValue] = useState(1)
+    const maxLimit = 10
+    const onIncHandler = () =>{
+        if(value < maxLimit){
+            setValue(value + 1)
+        }
+        console.log(value)
+    }
+    const onDecHandler = () =>{
+        if(value > 1){
+            setValue(value - 1)
+        }
+        console.log(value)
+    }
+    const onChanges=()=>{
+
     }
     return(
         <>
@@ -13,10 +31,14 @@ const SingleProductHeaderMobile = () =>{
                     <h2>Coco Beauty</h2>
                     <a href="#">Kapseln</a>
                     <div className={"left-side-select"}>
+                        
                         <div className={"select-ml"}>
-                            <div className={"select-ml-el"}>
-                                <span>menge</span>
-                                <InputNumber size="large" min={1} max={100000} defaultValue={3} onChange={onChange} />
+                            <div className={"cart__sidebar__product__body__text--quantityinp"}>
+                               <input type="number"  min={"1"} max={"10"} onChange={onChanges} value={value < 10 ? `0${value}` : value }/>
+                               <div>
+                                   <button className={"btnplus"} onClick={onIncHandler}><FontAwesomeIcon icon={faPlus}/></button>
+                                   <button className={"btnminus"} onClick={onDecHandler}><FontAwesomeIcon icon={faMinus}/></button>
+                               </div>
                             </div>
                             <div className={"select-ml-el"}>
                                 <span>inhalt</span>

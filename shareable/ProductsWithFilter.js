@@ -20,25 +20,29 @@ const ProductsWithFilter = ({
 }) => {
       const dispatch = useDispatch()
 
-      const { isAuthenticated } = useSelector(state => state.auth);
+      const  isAuthenticated  = useSelector(state => state.auth.isAuthenticated);
 
       const router = useRouter();
       const [parfum, setParfum] = useState(true);
       const [beauty, setBeauty] = useState(false);
       const [interiour, setInteriour] = useState(false);
-
+      
     useEffect(()=>{
         dispatch(getProductsWithFilter())
     },[]);
-
+    console.log( isAuthenticated,88888888888888888888 );
   const addToFavorites = (e) => {
           if (!isAuthenticated) {
               return router.push('/login');
           }
-          dispatch(addToWishList(Number(e))).
-          then(
-              res => dispatch(getProductsWithFilter()),
-          )
+          else{
+            dispatch(addToWishList(Number(e))).
+              then(
+                  res => dispatch(getProductsWithFilter()),
+              )
+          }
+          console.log( isAuthenticated );
+         
   };
   const toProductPage = (e) => {
     if (router.pathname !== '/products') {

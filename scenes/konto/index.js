@@ -8,7 +8,16 @@ import WhishList from "./components/whishlist/Whishlist";
 import NewsLetter from "./components/newsletter/NewsLetter";
 import Lesezeichen from "./components/lesezeichen/Lesezeichen";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
+import {useEffect} from "react"
+import {useDispatch} from "react-redux"
+import {getUserDataFromLocalStorage} from "../../services/actions/auth"
 const Konto = () => {
+  const dispatch = useDispatch()
+  
+  useEffect(() => {
+    dispatch(getUserDataFromLocalStorage());
+  }, []);
+
   const router = useRouter()
   return (
     <>

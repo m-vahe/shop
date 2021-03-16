@@ -6,12 +6,15 @@ import MobileMenuFooter from './MobileMenuFooter';
 import Logo from '../logo/Logo';
 import Image from 'next/image';
 import CartSidebar from "../cartSidebar/CartSidebar";
+import { useSelector } from 'react-redux';
+import Link from "next/link";
 
 const MobileHeader = () => {
   const [visible, setVisible] = useState(false);
   const [visible2, setVisible2] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
-
+  const navlinks = useSelector(state => state.navbar.navList)
+  console.log(navlinks,7777);
   const data = [{}];
 
   const showDrawer = () => {
@@ -72,12 +75,13 @@ const openSerach =()=>{
           visible={visible}
           keyboard={true}
           maskClosable={true}
-          onBlur={onClose}
+          // onBlur={onClose}
         >
-          <MobileCard title='SHOP BY' data={data} />
-          <MobileCard title='FRAUEN' data={data} />
-          <MobileCard title='HERREN' data={data} />
-          <MobileCard title='UNISEX' data={data} />
+          {navlinks?.map((e,i)=>{
+            return(
+                <MobileCard title={<Link href={e?.item_name.toLowerCase()}>{e?.item_name}</Link>} data={e.categories} key={i} classValue={e.categories.length === 0 && "without-body"} />  
+            )
+          })}
           <MobileMenuFooter />
         </Drawer>
         <CartSidebar onClose={onCloseCart} visible={visible2}/>

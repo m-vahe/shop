@@ -18,6 +18,7 @@ import {
     getInspirations,
     getNavbar
 } from '../../services/actions/homepage__stable';
+import {getUserDataFromLocalStorage} from "../../services/actions/auth"
 import { getNewsReport } from '../../services/actions/news';
 import {getProductsWithLeftText} from "../../services/actions/products";
 import { Space, Spin} from "antd";
@@ -28,7 +29,10 @@ import {getEightProductsWithFilter} from "../../services/actions/products";
 
 const HerrenScene = () => {
     const dispatch = useDispatch();
-
+    useEffect(() => {
+      dispatch(getUserDataFromLocalStorage());
+    }, []);
+  
     const [firstData, setFirstData] = useState({});
     const [secondData, setSecondData] = useState({});
     const [inspiration1, setInspiration1] = useState({});

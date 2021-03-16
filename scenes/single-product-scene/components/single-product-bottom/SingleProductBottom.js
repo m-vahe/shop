@@ -5,7 +5,7 @@ const SingleProductBottom = () =>{
         <>
             <div className={"single-product-bottom"}>
                 <div className={"single-product-bottom-element"}>
-                    <div style={{justifySelf:"center"}}>
+                    <div className="single-product-bottom-element-img">
                         <img style={{justifySelf:"center",marginBottom:"5rem"}} src={"/style_black.png"} />
                     </div>
 
@@ -15,7 +15,7 @@ const SingleProductBottom = () =>{
                     <a href="#">Magazin Artikel Link</a>
                 </div>
                 <div className={"single-product-bottom-element"}>
-                    <div style={{justifySelf:"center"}}>
+                    <div className="single-product-bottom-element-img" >
                         <img style={{justifySelf:"center",marginBottom:"5rem"}} src={"/productdetailslogopink.png"} />
                     </div>
                     <p>
@@ -24,7 +24,7 @@ const SingleProductBottom = () =>{
                     <a href="#">Magazin Artikel Link</a>
                 </div>
                 <div className={"single-product-bottom-element"}>
-                    <div style={{justifySelf:"center"}}>
+                    <div className="single-product-bottom-element-img">
                         <img style={{justifySelf:"center",marginBottom:"5rem"}} src={"/style_black.png"} />
                     </div>
                     <p>
