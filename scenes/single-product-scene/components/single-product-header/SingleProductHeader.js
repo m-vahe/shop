@@ -6,6 +6,11 @@ const SingleProductHeader = () =>{
    const onChange=(value)=> {
         console.log('changed', value);
     }
+    const formatter = new Intl.NumberFormat('de-DE', {
+        style: 'currency',
+        currency: 'EUR',
+        minimumFractionDigits: 2
+    });
     const [value,setValue] = useState(1)
     const maxLimit = 10
     const onIncHandler = () =>{
@@ -55,7 +60,7 @@ const SingleProductHeader = () =>{
                        <p>in den warenkorb</p>
                    </div>
                    <div className={"bot-text-right"}>
-                       <p>54,00 $</p>
+                       <p>{formatter.format(value*54)}</p>
                        <div className={"r-first"}>
                            <span>$ 416,67 / 100ML</span>
                            <span>Versandkostenfrei*</span>

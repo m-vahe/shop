@@ -1,4 +1,4 @@
-import { Carousel, Radio } from 'antd';
+import { Carousel } from 'antd';
 import FirstElement from "./components/first/FirstElement";
 import {useRef} from "react"
 import CenteredElement from "./components/centered/CenteredElement";

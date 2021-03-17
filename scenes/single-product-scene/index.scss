@@ -5,6 +5,7 @@
 @import "components/single-product-bottom/SingleProductBottom";
 @import "components/single-product-header/SingleProductHeader";
 @import '~swiper/components/pagination/pagination';
+@import "components/picture-modal/PictureModal";
 .product__details__container__top{
   @media screen and(max-width: 1024px) {
     display: unset !important;

@@ -5,13 +5,15 @@ import authReducer from '../services/reducers/auth';
 import productsReducer from '../services/reducers/products';
 import newsReportReducer from './reducers/news';
 import footerReducer from "./reducers/footer"
+import singleProductPageReducer from "./reducers/single-product";
 const rootReducer = combineReducers({
     navbar: homeReducer,
     newsletter: newsletterReducer,
     auth: authReducer,
     products: productsReducer,
     news: newsReportReducer,
-    footer:footerReducer
+    footer: footerReducer,
+    singleProdPage: singleProductPageReducer
 });
 
 export default rootReducer;

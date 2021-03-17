@@ -1,37 +1,25 @@
-import Image from 'next/image';
+import Link from 'next/link';
 
-const SingleProductBottom = () =>{
+const SingleProductBottom = ({textData}) =>{
     return(
         <>
             <div className={"single-product-bottom"}>
-                <div className={"single-product-bottom-element"}>
-                    <div className="single-product-bottom-element-img">
-                        <img style={{justifySelf:"center",marginBottom:"5rem"}} src={"/style_black.png"} />
-                    </div>
+                {textData?.map((e,i)=>{
+                    return(
+                        <div className={"single-product-bottom-element"} key={i}>
+                            <div className="single-product-bottom-element-img">
+                                <img style={{justifySelf:"center",marginBottom:"5rem"}} src={`${e?.images?.url}`} />
+                            </div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum, eveniet maxime pariatur placeat sunt.
-                    </p>
-                    <a href="#">Magazin Artikel Link</a>
-                </div>
-                <div className={"single-product-bottom-element"}>
-                    <div className="single-product-bottom-element-img" >
-                        <img style={{justifySelf:"center",marginBottom:"5rem"}} src={"/productdetailslogopink.png"} />
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum, eveniet maxime pariatur placeat sunt.
-                    </p>
-                    <a href="#">Magazin Artikel Link</a>
-                </div>
-                <div className={"single-product-bottom-element"}>
-                    <div className="single-product-bottom-element-img">
-                        <img style={{justifySelf:"center",marginBottom:"5rem"}} src={"/style_black.png"} />
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eum, eveniet maxime pariatur placeat sunt.
-                    </p>
-                    <a href="#">Magazin Artikel Link</a>
-                </div>
+                            <p>
+                                {e?.text}
+                            </p>
+                            <Link href={`${e.link}`}>
+                                <a href="#">Magazin Artikel Link</a>
+                            </Link>
+                        </div>
+                    )
+                })}
             </div>
         </>
     )

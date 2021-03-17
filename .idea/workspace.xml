@@ -2,14 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/picture-modal/PictureModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/picture-modal/PictureModal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/action-types/single-product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/actions/single-product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/reducers/single-product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/mobile-images/MobileSwipeableTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/mobile-images/MobileSwipeableTop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/mobile/MobileChanged.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/carousel/CarouselArtikel.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/carousel/CarouselArtikel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/carousel/components/centered/CenteredElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/carousel/components/centered/CenteredElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/carousel/components/first/FirstElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/components/carousel/components/first/FirstElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeaderMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeaderMobile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/actions/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/homepage__stable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/actions/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/homepage__stable.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/homepage__stable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/reducers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/services/reducers" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -58,11 +74,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mihran\Desktop\shop\services\reducers" />
+      <recent name="C:\Users\Mihran\Desktop\shop\services\actions" />
       <recent name="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one" />
       <recent name="$PROJECT_DIR$/layouts" />
       <recent name="$PROJECT_DIR$/shareable/services" />
-      <recent name="$PROJECT_DIR$/services/reducers" />
-      <recent name="$PROJECT_DIR$/services/actions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pages" />
@@ -148,6 +164,7 @@
       <workItem from="1615790799752" duration="9000" />
       <workItem from="1615790877195" duration="23217000" />
       <workItem from="1615902873934" duration="3887000" />
+      <workItem from="1615963284010" duration="8443000" />
     </task>
     <servers />
   </component>
