@@ -11,6 +11,9 @@
   .magazin-products-body-container{
     width: 90.5%;
     margin: 0 auto;
+    @media screen and(max-width: 1480px) {
+      padding-bottom: 15rem;
+    }
     .magaz-prod-title{
       @media screen and(max-width: 1024px) {
         text-align: left;

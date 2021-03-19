@@ -11,19 +11,22 @@ import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import {useEffect} from "react"
 import {useDispatch} from "react-redux"
 import {getUserDataFromLocalStorage} from "../../services/actions/auth"
+import {getKontoMainBoxesData} from "../../services/actions/konto";
 const Konto = () => {
   const dispatch = useDispatch()
   
   useEffect(() => {
     dispatch(getUserDataFromLocalStorage());
+    dispatch(getKontoMainBoxesData())
   }, []);
+
 
   const router = useRouter()
   return (
     <>
       <div className='konto'>
         <Sidebar />
-        {router.query.id == "main" && <KontoContainer/> }
+        {router.query.id == "main" && <KontoContainer /> }
         {router.query.id == "adressen" && <Adressen/>}
         {router.query.id == "nutzerdaten" && <Nutzerdaten/>}
         {router.query.id == "bestellungen" && <Bestellungen/> }

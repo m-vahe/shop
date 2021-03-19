@@ -6,6 +6,8 @@ import productsReducer from '../services/reducers/products';
 import newsReportReducer from './reducers/news';
 import footerReducer from "./reducers/footer"
 import singleProductPageReducer from "./reducers/single-product";
+import kontoPageReducer from "./reducers/konto";
+
 const rootReducer = combineReducers({
     navbar: homeReducer,
     newsletter: newsletterReducer,
@@ -13,7 +15,8 @@ const rootReducer = combineReducers({
     products: productsReducer,
     news: newsReportReducer,
     footer: footerReducer,
-    singleProdPage: singleProductPageReducer
+    singleProdPage: singleProductPageReducer,
+    konto : kontoPageReducer
 });
 
 export default rootReducer;

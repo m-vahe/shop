@@ -8,7 +8,11 @@ const SingleProductBottom = ({textData}) =>{
                     return(
                         <div className={"single-product-bottom-element"} key={i}>
                             <div className="single-product-bottom-element-img">
-                                <img style={{justifySelf:"center",marginBottom:"5rem"}} src={`${e?.images?.url}`} />
+                                <Link href={`${e?.link}`}>
+                                    <a href="#">
+                                        <img style={{justifySelf:"center",marginBottom:"5rem"}} src={`${e?.images?.url}`} />
+                                    </a>
+                                </Link>
                             </div>
 
                             <p>

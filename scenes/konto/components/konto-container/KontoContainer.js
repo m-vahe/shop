@@ -1,4 +1,5 @@
 import KontoContainerItem from './konto-container-item/KontoContainerItem'
+import {useSelector} from "react-redux";
 
 
 const KontoContainer = () => {
@@ -35,10 +36,11 @@ const KontoContainer = () => {
             text: 'Lorem ipsum dolor sit amet, con'
         },
     ]
+    const kontoMainData = useSelector(state => state.konto.mainBoxes)
   return (
     <div className='kontoContainer'>
-      {kontoData.map((item) => (
-        <KontoContainerItem key={item.id} item={item} />
+      {kontoMainData?.map((item) => (
+        <KontoContainerItem key={item.id} item={item}  />
       ))}
     </div>
   )

@@ -32,6 +32,7 @@
       flex-direction: column;
       padding: 3.94vh 0;
       transform: translateX(-3rem);
+
       @media screen and(max-width: 1200px) {
         padding: 3vh 0 !important;
       }
@@ -101,6 +102,12 @@
         text-align: left;
         color: #2e2e2e;
         margin-bottom: 2.23vh;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        word-break: break-word;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
       }
       &--link{
         @media screen and(max-width: 1024px){
@@ -116,6 +123,10 @@
         letter-spacing: 1px;
         text-align: left;
         color: #a12224;
+        &:hover{
+          color: #a12224;
+          text-decoration: underline;
+        }
       }
     }
   }

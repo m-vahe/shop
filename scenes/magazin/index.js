@@ -8,15 +8,16 @@ import BeautyEssentials from "./components/beauty-esentials/BeautyEsentials";
 import MagazinSecondSectionMobile from "./components/magazin-second-section/MagazinSecondSectionMobile";
 import {useEffect} from "react"
 import {useDispatch, useSelector} from "react-redux";
-import {getStairsAdd} from "../../services/actions/news";
+import {getNewsReport, getStairsAdd} from "../../services/actions/news";
 const MagazinScene = () =>{
 
     const dispatch = useDispatch()
 
     useEffect(()=>{
         dispatch(getStairsAdd())
-        console.log(addData1,1111111111,addData2,22222222222)
+        dispatch(getNewsReport())
     },[])
+
     const adds = useSelector(state => state.news.stairAdd);
     const addData1 = adds.find(n => n.position === 'One');
     const addData2 = adds.find(n => n.position === 'Two');
