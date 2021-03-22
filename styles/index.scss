@@ -85,6 +85,7 @@
 @import "scenes/checkout/index";
 @import "shareable/Products/checkout-ptoducts/CheckoutSingleProduct";
 @import "scenes/registration/index";
+@import "scenes/brands/index";
 @font-face {
   src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
   src: local('Freight Sans Pro'), local('FreightSansPro'),
@@ -114,6 +115,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior:smooth;
 }
 
 @media screen and (min-width: 1920px) {

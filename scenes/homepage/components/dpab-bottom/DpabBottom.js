@@ -17,7 +17,7 @@ const DpabBottom = () =>{
                    </p>
                    <p className={"dpab-bot-head-other"}>Telefon: <a href="tel:+4961739630853">+49 6173 963 0853</a></p>
                </div>
-               <div style={{backgroundImage: `url(${midfootData[0]?.images?.url || '/dpabbottom.png'})`,backgroundSize:"inherit"}} className={"dpab-bot-img"}></div>
+               <div style={{backgroundImage: `url(${midfootData[0]?.images?.url || '/dpabbottom.png'})`,backgroundSize:"cover"}} className={"dpab-bot-img"}></div>
            </div>
        </>
    )
