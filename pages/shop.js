@@ -1,4 +1,3 @@
-import Footer from '../layouts/footer/Footer';
 import ShopScene from '../scenes/shop';
 const Shop = () => {
   return (

@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/brands.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/brands/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/brands/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/action-types/registration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/actions/registration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/reducers/registration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/versandarten.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/head-img/HeadImg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/head-img/HeadImg.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-one/TextBoxOne.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-one/TextBoxOne.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-two/TextBoxTwo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-two/TextBoxTwo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/versandarten/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/versandarten/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/registrieren.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/registrieren.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/dpab-bottom/DpabBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/dpab-bottom/DpabBottom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/registration/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,6 +157,7 @@
       <workItem from="1616134666964" duration="21347000" />
       <workItem from="1616165529553" duration="9000" />
       <workItem from="1616394028901" duration="23381000" />
+      <workItem from="1616500018330" duration="6432000" />
     </task>
     <servers />
   </component>
