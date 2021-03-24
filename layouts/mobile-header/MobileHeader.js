@@ -14,8 +14,6 @@ const MobileHeader = () => {
   const [visible2, setVisible2] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
   const navlinks = useSelector(state => state.navbar.navList)
-  console.log(navlinks,7777);
-  const data = [{}];
 
   const showDrawer = () => {
     setVisible(true);

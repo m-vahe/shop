@@ -191,8 +191,6 @@ const RegistrationForm = () => {
                 setRobot(false)
             }
         }
-
-
     }
 
     const scroll = useRef()

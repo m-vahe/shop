@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/versandarten.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/head-img/HeadImg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/head-img/HeadImg.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-one/TextBoxOne.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-one/TextBoxOne.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-two/TextBoxTwo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-two/TextBoxTwo.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/versandarten/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/versandarten/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/ContactFormBody.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/ContactFormBody.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/ContactForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/ContactForm.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/form-body/FormBody.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/form-body/FormBody.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/header/ContactHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/header/ContactHeader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-header/ContactHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-header/ContactHeader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/contact/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/mobile-header/MobileHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/mobile-header/MobileHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/versandarten/components/head-img/HeadImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/versandarten/components/head-img/HeadImg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/versandarten/components/text-box-two/TextBoxTwo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-two/TextBoxTwo.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,11 +79,11 @@
       <recent name="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mihran\Desktop\shop\scenes\contact\components\contact-form\form" />
       <recent name="C:\Users\Mihran\Desktop\shop\public\registrationicons" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/shareable/services" />
       <recent name="$PROJECT_DIR$/shareable/cart-sidebar/product" />
-      <recent name="$PROJECT_DIR$/scenes/homepage/components/second-products" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -157,7 +167,8 @@
       <workItem from="1616134666964" duration="21347000" />
       <workItem from="1616165529553" duration="9000" />
       <workItem from="1616394028901" duration="23381000" />
-      <workItem from="1616500018330" duration="6432000" />
+      <workItem from="1616500018330" duration="11124000" />
+      <workItem from="1616566722109" duration="13354000" />
     </task>
     <servers />
   </component>
