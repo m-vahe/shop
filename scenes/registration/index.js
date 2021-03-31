@@ -4,24 +4,29 @@ import MobileHeader from "../../layouts/mobile-header/MobileHeader";
 import RegistrationForm from "./components/registration-form/RegistrationForm";
 import RegistrationInfo from "./components/registration-info/RegistrationInfo";
 import {useEffect} from "react"
-import {useDispatch} from "react-redux";
-import {getRegisterCountries} from "../../services/actions/registration";
+import {useDispatch, useSelector} from "react-redux";
+import {
+    getRegisterCountries,
+    getRegisterTextData
+} from "../../services/actions/registration";
 const RegistrationScene = () => {
     const dispatch = useDispatch()
 
     useEffect(()=>{
         dispatch(getRegisterCountries())
+        dispatch(getRegisterTextData())
     },[])
 
+    const textData = useSelector(state => state.registration.textData)
     return (
         <>
             <Header/>
             <MobileHeader/>
             <div className={"registration__page__body"}>
-                <RegistrationHeader/>
+                <RegistrationHeader textData={textData}/>
                 <div className={"registration__page__body__formandtext"}>
-                    <RegistrationForm/>
-                    <RegistrationInfo/>
+                    <RegistrationForm textData={textData}/>
+                    <RegistrationInfo textData={textData}/>
                 </div>
             </div>
 

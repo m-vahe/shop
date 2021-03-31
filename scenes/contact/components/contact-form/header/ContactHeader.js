@@ -1,13 +1,13 @@
-const ContactFormHeader = () =>{
+const ContactFormHeader = ({textData}) =>{
     return(
         <div className={"contact__form__header"}>
-            <h2>Kontakt</h2>
-            <p>DAS PARFUM AND BEAUTY DISTRIBUTION 1912 </p>
-            <p>GMBH</p>
-            <p>Friedrich-Ebert-Straße 13</p>
-            <p>61476 Kronberg</p>
-            <p>+49 (0) 6173 . 993 80 00</p>
-            <p>shop@dasparfum-beauty.de</p>
+            <h2>{textData?.contact_text}</h2>
+            <p>{textData?.text_1}</p>
+            <p>{textData?.text_2}</p>
+            <p>{textData?.text_3}</p>
+            <p>{textData?.text_4}</p>
+            <p>{textData?.text_5}</p>
+            <p>{textData?.text_6}</p>
         </div>
     )
 }

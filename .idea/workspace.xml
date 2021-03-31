@@ -5,24 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/ContactFormBody.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/ContactFormBody.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/ContactForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/ContactForm.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/form-body/FormBody.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/form-body/FormBody.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/header/ContactHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/header/ContactHeader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-header/ContactHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/components/contact-header/ContactHeader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/contact/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/typentest/[id].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/registration/components/registration-info/info-icons/InfoIcons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/header/Header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/steps/step1/StepOne.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/steps/step1/StepOne.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/steps/step2/StepTwo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/steps/step2/StepTwo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/steps/step3/StepThree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/steps/step3/StepThree.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/steps/step4/StepFour.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scenes/typentest/steps/step4/StepFour.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/action-types/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/action-types/versandarten.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/actions/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/actions/versandarten.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/reducers/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/reducers/versandarten.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/DateChecker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/mobile-header/MobileHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/mobile-header/MobileHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/contact/components/contact-form/ContactFormBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/ContactFormBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/ContactForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/ContactForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/ContactForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/form-body/FormBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/form/form-body/FormBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/contact/components/contact-form/header/ContactHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/header/ContactHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/contact/components/contact-form/header/ContactHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/contact/components/contact-form/header/ContactHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/contact/components/contact-header/ContactHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/contact/components/contact-header/ContactHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/contact/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/registration/components/registration-header/RegistrationHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/components/registration-header/RegistrationHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/registration/components/registration-info/RegistrationInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/components/registration-info/RegistrationInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/registration/components/registration-info/RegistrationInfo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/components/registration-info/RegistrationInfo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/registration/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/versandarten/components/head-img/HeadImg.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/versandarten/components/head-img/HeadImg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/versandarten/components/text-box-two/TextBoxTwo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-two/TextBoxTwo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/versandarten/components/text-box-one/TextBoxOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-one/TextBoxOne.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/versandarten/components/text-box-one/TextBoxOne.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-one/TextBoxOne.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/versandarten/components/text-box-two/TextBoxTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/versandarten/components/text-box-two/TextBoxTwo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/versandarten/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/versandarten/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/action-types/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/actions/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/reducers/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/rootReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +63,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -63,7 +90,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/services/reducers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scenes/registration/components/registration-info/info-icons" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -72,11 +99,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mihran\Desktop\shop\scenes\registration\components\registration-info\info-icons" />
+      <recent name="C:\Users\Mihran\Desktop\shop\services\action-types" />
       <recent name="C:\Users\Mihran\Desktop\shop\services\reducers" />
       <recent name="C:\Users\Mihran\Desktop\shop\services\actions" />
       <recent name="C:\Users\Mihran\Desktop\shop\public\registrationicons" />
-      <recent name="C:\Users\Mihran\Desktop\shop\scenes\registration\components\registration-info\icons" />
-      <recent name="$PROJECT_DIR$/shareable/Products/checkout-ptoducts/step-one" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mihran\Desktop\shop\scenes\contact\components\contact-form\form" />
@@ -168,7 +195,11 @@
       <workItem from="1616165529553" duration="9000" />
       <workItem from="1616394028901" duration="23381000" />
       <workItem from="1616500018330" duration="11124000" />
-      <workItem from="1616566722109" duration="13354000" />
+      <workItem from="1616566722109" duration="13783000" />
+      <workItem from="1616667728549" duration="14391000" />
+      <workItem from="1616739253995" duration="21071000" />
+      <workItem from="1617085494483" duration="22594000" />
+      <workItem from="1617170838479" duration="8834000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,8 @@
-const HeadImg = () =>{
+const HeadImg = ({img}) =>{
+
     return(
         <div className={"versandarten__head__body"}>
-            <img src="/versandartenhead.png" alt="/versandartenhead.png"/>
+            <img src={`${img || "/versandartenhead.png"}`} alt={`${img || "/versandartenhead.png"}`}/>
         </div>
     )
 }

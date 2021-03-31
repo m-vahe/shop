@@ -37,7 +37,7 @@ const Homepage = () =>{
     const HPFS = useSelector(state => state.navbar.homePageSctOne);
     const homepageIntro = HPFS.find(p => p.position === 'HomePage');
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         dispatch(getCollectionShops())
             .then(res => {
                 setFirstData(res?.find(elem => elem.position === 'HomePageLeft'));

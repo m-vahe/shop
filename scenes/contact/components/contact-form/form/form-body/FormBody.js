@@ -1,8 +1,10 @@
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {useState, useRef, useEffect} from "react"
 import {Tooltip} from 'antd';
+import {postContact} from "../../../../../../services/actions/contact";
 
 const FormBody = () => {
+    const dispatch = useDispatch()
     const [contactData, setContactData] = useState({
         name: "",
         email: "",
@@ -19,6 +21,7 @@ const FormBody = () => {
     const [orderIdError, setOrderIdError] = useState("")
     const [copyError, setCopyError] = useState("")
     const [privacyError, setPrivacyError] = useState("")
+
     const handleValidation = (e) => {
         e.persist();
         switch (e.target.name) {
@@ -119,7 +122,15 @@ const FormBody = () => {
         if ((!emailError && !subjectError && !privacyError && !messageError)
             && emailError !== "" && subjectError !== "" &&
             privacyError !== "" && messageError !== "") {
-            alert(JSON.stringify(contactData))
+            dispatch(postContact({
+                name:contactData.name,
+                email:contactData.email,
+                subject:contactData.subject,
+                Order_ID:contactData.orderId,
+                message:contactData.message,
+                copy_to_me:contactData.copyTo,
+                privacy:contactData.privacyPolicy
+            }))
             setContactData({
                 name: "",
                 email: "",
@@ -170,14 +181,14 @@ const FormBody = () => {
                 <input type="text" placeholder={"Name (Optional)"} name={"name"} onChange={handleValidation}
                        ref={scroll}
                        value={contactData?.name}/>
-                <Tooltip title={"Email is required"} color={"red"} visible={emailError} placement="bottomRight">
+                <Tooltip title={"Email is required"} color={"red"} visible={emailError ? true : false} placement="bottomRight">
                     <input
                         type="email" placeholder={"E-Mail*"} name={"email"}
                         onChange={handleValidation} value={contactData?.email}
                         className={emailError && "input-error"}
                     />
                 </Tooltip>
-                <Tooltip title={"Subject is required"} color={"red"} visible={subjectError} placement="bottomRight">
+                <Tooltip title={"Subject is required"} color={"red"} visible={subjectError ? true : false} placement="bottomRight">
                     <input type="text" placeholder={"Betreff*"} name={"subject"} onChange={handleValidation}
                            className={subjectError && "input-error"} value={contactData?.subject}/>
                 </Tooltip>
@@ -185,7 +196,7 @@ const FormBody = () => {
                        value={contactData?.orderId}/>
                 <div className={"contact__form__body__container__all__form__textarea"}>
                     <Tooltip title={"message is rquired and must contain at least 150 characters"} color={"red"}
-                             visible={messageError} placement="bottomRight">
+                             visible={messageError ? true : false} placement="bottomRight">
                          <textarea name="message" id="message" cols="30" rows="15" placeholder={"Nachricht*"}
                                    onChange={handleValidation} value={contactData?.message}
                                    className={messageError && "input-error"}
@@ -210,7 +221,7 @@ const FormBody = () => {
                     </div>
                     <div className={"registration__form__container__form__newsletter__item__body"}>
                         <Tooltip title={"You didn`t agree with our privacy and policy"} color={"red"}
-                                 visible={privacyError} placement="bottomRight">
+                                 visible={privacyError ? true : false} placement="bottomRight">
                             <input
                                 id={"yes"}
                                 type='checkbox'

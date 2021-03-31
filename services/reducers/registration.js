@@ -1,14 +1,18 @@
 import {
-    GET_SINGLEPRODUCT_STYLE_TEXT,
-    SET_DATA_LOADED,
-    SET_ERROR
-} from "../action-types/single-product";
-import {GET_COUNTRIES, SET_LOADED} from "../action-types/registration";
+    GET_COUNTRIES,
+    GET_REGISTER_TXT_DATA,
+    SET_LOADED,
+    SET_ERROR,
+    POST_REGISTRATION_DATA, SET_REGISTRATION_DATA
+} from "../action-types/registration";
 
 const initialState = {
     countries: [],
     countriesLoaded: true,
-    error: ""
+    error: "",
+    textData: {},
+    textDataLoaded: true,
+    success: null
 };
 
 const RegistrationReducer = (state = initialState, {type, payload}) => {
@@ -20,16 +24,36 @@ const RegistrationReducer = (state = initialState, {type, payload}) => {
                 countries: payload,
                 countriesLoaded: false
             }
+        case POST_REGISTRATION_DATA:
+            return {
+                ...state,
+                success: true
+            }
+        case GET_REGISTER_TXT_DATA:
+            return {
+                ...state,
+                textData: payload,
+                textDataLoaded: false
+            }
         case SET_LOADED:
             return {
                 ...state,
-                countriesLoaded: true
+                countriesLoaded: true,
+                textDataLoaded: true
+            }
+        case SET_REGISTRATION_DATA:
+            return {
+                ...state,
+                success: null,
+                error: ""
             }
         case SET_ERROR:
             return {
                 ...state,
-                error: payload,
-                countriesLoaded: false
+                error: true,
+                countriesLoaded: false,
+                textDataLoaded: false,
+                success: payload
             }
         default:
             return state;

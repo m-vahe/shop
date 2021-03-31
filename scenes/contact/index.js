@@ -5,15 +5,23 @@ import ContactHeader from "./components/contact-header/ContactHeader";
 import ContactFormBody from "./components/contact-form/ContactFormBody";
 import Services from "../../shareable/services/Services";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
+import {useEffect} from "react"
+import {useDispatch, useSelector} from "react-redux";
+import {getContactData} from "../../services/actions/contact";
 
 const ContactScene = () => {
+    const dispatch = useDispatch()
+    useEffect(()=>{
+        dispatch(getContactData())
+    },[])
+    const textData = useSelector(state => state.contact.textData)
     return(
         <>
             <Header/>
             <MobileHeader/>
             <div className={"contact__scene__body"}>
-                <ContactHeader/>
-                <ContactFormBody/>
+                <ContactHeader img={textData?.images?.url}/>
+                <ContactFormBody textData = {textData} />
             </div>
             <Services/>
             <NewsletterRep/>

@@ -7,6 +7,9 @@
     @media screen and(max-width: 1060px){
       flex-direction: column;
     }
+    &__middle{
+      width: 5rem;
+    }
     &__itemOne{
       flex: 1;
       display: grid;
@@ -86,6 +89,7 @@
         text-align: left;
         color: #2e2e2e;
         margin: 0;
+        line-height: 1.7;
       }
     }
   }

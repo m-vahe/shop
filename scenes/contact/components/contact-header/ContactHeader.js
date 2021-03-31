@@ -1,7 +1,7 @@
-const ContactHeader = () =>{
+const ContactHeader = ({img}) =>{
     return(
         <div className={"contact__header__container"}>
-            <img src="/kontaktheader.png" alt="/kontaktheader.png"/>
+            <img src={`${img || "/kontaktheader.png"}`} alt={`${img}`}/>
         </div>
     )
 }

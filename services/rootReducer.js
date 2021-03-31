@@ -8,6 +8,8 @@ import footerReducer from "./reducers/footer"
 import singleProductPageReducer from "./reducers/single-product";
 import kontoPageReducer from "./reducers/konto";
 import RegistrationReducer from "./reducers/registration";
+import versandartenReducer from "./reducers/versandarten";
+import ContactReducer from "./reducers/contact";
 
 const rootReducer = combineReducers({
     navbar: homeReducer,
@@ -17,8 +19,10 @@ const rootReducer = combineReducers({
     news: newsReportReducer,
     footer: footerReducer,
     singleProdPage: singleProductPageReducer,
-    konto : kontoPageReducer,
-    registration: RegistrationReducer
+    konto: kontoPageReducer,
+    registration: RegistrationReducer,
+    versandarten: versandartenReducer,
+    contact: ContactReducer
 });
 
 export default rootReducer;

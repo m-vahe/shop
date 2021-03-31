@@ -1,11 +1,11 @@
 import ContactHeader from "./header/ContactHeader";
 import ContactForm from "./form/ContactForm";
 
-const ContactFormBody = () =>{
+const ContactFormBody = ({textData}) =>{
     return(
         <div className={"contact__form__body"}>
-            <ContactHeader/>
-            <ContactForm/>
+            <ContactHeader textData = {textData}/>
+            <ContactForm textData={textData}/>
         </div>
     )
 }
