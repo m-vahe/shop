@@ -41,8 +41,7 @@ const ProductsWithFilter = ({
                   res => dispatch(getProductsWithFilter()),
               )
           }
-          console.log( isAuthenticated );
-         
+
   };
   const toProductPage = (e) => {
     if (router.pathname !== '/products') {

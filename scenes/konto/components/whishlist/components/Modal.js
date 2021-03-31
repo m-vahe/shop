@@ -15,7 +15,7 @@ const ModalWhishlist = ({show,setShow}) =>{
                 <p>Kopiere einfach den link und sende ihn an deine freunde.</p>
                 <div className={"whishlist__modal__container__body__copy"}>
                     <input type="text" defaultValue={"https://dpab.de/user123456789/wishlist/65328986"} ref={inp} onClick={copyLinkDataHandler}/>
-                    <button>Link kopieren</button>
+                    <button onClick={copyLinkDataHandler}>Link kopieren</button>
                 </div>
                 <textarea name="area" id="area" cols="30" rows="10"
                   style={
@@ -27,8 +27,10 @@ const ModalWhishlist = ({show,setShow}) =>{
                             }
                         }
                           value={copy}
-                          ref={text}/>
-
+                          ref={text}
+                onChange={()=> {
+                    return
+                }}/>
                 <Social/>
                 <p className={"close"} onClick={()=>setShow(false)}></p>
             </div>

@@ -321,7 +321,7 @@ const RegistrationForm = ({textData}) => {
                 <Tooltip title={"Name is required"} color={"red"} visible={nameError ? true : false}
                          placement="bottomRight">
                     <input name={"name"} type="text" placeholder={"Vorname*"} value={registerData.name}
-                           className={nameError && "input-error"}
+                           className={nameError ? "input-error" : ""}
                            maxLength={16}
                            onChange={handleValidation}
                     />
@@ -329,7 +329,7 @@ const RegistrationForm = ({textData}) => {
                 <Tooltip title={"Surname is required"} color={"red"} visible={surNameError ? true : false}
                          placement="bottomRight">
                     <input name={"surname"} type="text" placeholder={"Nachname*"}
-                           className={surNameError && "input-error"}
+                           className={surNameError ? "input-error" : ""}
                            maxLength={16}
                            value={registerData.surname}
                            onChange={handleValidation}
@@ -338,20 +338,20 @@ const RegistrationForm = ({textData}) => {
                 <Tooltip title={"Please enter email"} color={"red"} visible={emailError ? true : false}
                          placement="bottomRight">
                     <input name={"email"} type="email" placeholder={"E-Mail-Adresse*"}
-                           className={emailError && "input-error"}
+                           className={emailError ? "input-error" : ""}
                            value={registerData.email}
                            onChange={handleValidation}/>
                 </Tooltip>
                 <Tooltip title={"Please enter password"} color={"red"} visible={passwordError ? true : false}
                          placement="bottomRight">
                     <input name={"password"} type="password" placeholder={"Passwort*"} value={registerData.password}
-                           className={passwordError && "input-error"}
+                           className={passwordError ? "input-error" : ""}
                            onChange={handleValidation}/>
                 </Tooltip>
                 <Tooltip title={"Please repeat password"} color={"red"} visible={repeatEmailError ? true : false}
                          placement="bottomRight">
                     <input name={"repeatEmail"} type="password" value={registerData.repeatPassword}
-                           className={repeatEmailError && "input-error"}
+                           className={repeatEmailError ? "input-error" : ""}
                            placeholder={"Passwort bestätigen*"}
                            onChange={handleValidation}/>
                 </Tooltip>
@@ -451,7 +451,7 @@ const RegistrationForm = ({textData}) => {
                         <label htmlFor="yes">Ich bin kein Roboter</label>
                     </div>
                 </Tooltip>
-                <input type="submit" value={"Anmalden"} className={"registration__form__container__form__submit"}/>
+                <input type="submit" value={"Anmelden"} className={"registration__form__container__form__submit"}/>
                 <p className={"registration__form__container__form__bottxt"}>Mit Ihrer Registrierung stimmen Sie
                     den <span>Nutzungsbedingungen</span> von Das Parfum & Beauty zu.</p>
             </form>

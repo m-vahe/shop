@@ -9,6 +9,7 @@ import {useState, useEffect, useCallback} from "react";
 import {useDispatch,useSelector} from "react-redux";
 import {getHeaderContacts} from "../../services/actions/homepage__stable"
 import CartSidebar from "../cartSidebar/CartSidebar";
+import HeaderLoginPopup from "./modal/HeaderLoginPopup";
 
 const HeaderSearch = () => {
     const [languages, setLanguages] = useState([
@@ -35,7 +36,19 @@ const HeaderSearch = () => {
     const onClose = () => {
         setVisible(false)
     };
+    const [isModalVisible, setIsModalVisible] = useState(false);
 
+    const showModal = () => {
+        setIsModalVisible(true);
+    };
+
+    const handleOk = () => {
+        setIsModalVisible(false);
+    };
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
+    };
 
     const handleChangeLng = useCallback(id => {
         setLanguages(prev => prev.map(lng => {
@@ -80,7 +93,7 @@ const HeaderSearch = () => {
                         <div className={"header-lang"}>
                             {languages.map((lng, idx) => (
                                 <span key={lng.id}>
-                                    <button 
+                                    <button
                                         className={lng.active ? 'active' : ''}
                                         onClick={() => handleChangeLng(lng.id)}
                                     >
@@ -91,8 +104,17 @@ const HeaderSearch = () => {
                             ))}
                         </div>
                         <div className={"header-icons"}>
-                            <svg 
-                                onClick={() => router.push(isAuthenticated ? '/konto/main' : '/login')} 
+                            <HeaderLoginPopup isModalVisible={isModalVisible} setIsModalVisible = {setIsModalVisible}/>
+                            <svg
+                                onClick={() => {
+                                    if(isAuthenticated){
+                                        router.push('/konto/main')
+                                    }else{
+                                        if(router.pathname !== "/login"){
+                                            showModal()
+                                        }
+                                    }
+                                }}
                                 viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" className={"letter-svg"} style={{strokeWidth:"0",fill:"#7b7b7b"}}>
                                 <g data-name="Layer 2" id="Layer_2">
                                     <path d="M16,29A13,13,0,1,1,29,16,13,13,0,0,1,16,29ZM16,5A11,11,0,1,0,27,16,11,11,0,0,0,16,5Z"/>
@@ -101,13 +123,29 @@ const HeaderSearch = () => {
                                 </g>
 
                             </svg>
-                            <svg 
-                                onClick={() => router.push(isAuthenticated ? '/konto/whishlist' : '/login')} 
+                            <svg
+                                onClick={() => {
+                                    if(isAuthenticated){
+                                        router.push('/konto/whishlist')
+                                    }else{
+                                        if(router.pathname !== "/login"){
+                                            showModal()
+                                        }
+                                    }
+                                }}
                             xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512' className={"letter-svg"} style={{width:"20px",margin:"0 14px"}}>
                                 <path d='M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z' style={{fill:"none",strokeMiterlimit:"10",strokeWidth:"32px"}} />
                             </svg>
-                            <svg 
-                                onClick={() => isAuthenticated ? showDrawer() : router.push('/login')} 
+                            <svg
+                                onClick={() => {
+                                    if(isAuthenticated){
+                                        showDrawer()
+                                    }else{
+                                        if(router.pathname !== "/login"){
+                                            showModal()
+                                        }
+                                    }
+                                }}
                                 xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'  style={{fill:"none",strokeMiterlimit:"10",strokeWidth:"32px",width:"20px"}} className={"letter-svg"}>
                                 <circle cx='176' cy='416' r='16' />
                                 <circle cx='400' cy='416' r='16' />
