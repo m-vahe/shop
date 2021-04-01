@@ -24,6 +24,7 @@ import MobileHeader from "../../layouts/mobile-header/MobileHeader";
 import Footer from "../../layouts/footer/Footer";
 import { Spin, Space } from 'antd';
 import Services from "../../shareable/services/Services";
+import RenderModal from "./components/render-modal/RenderModal";
 
 const Homepage = () =>{
     // const htmltext = "<div><h1 style='color:red'>Alohha Bitches</h1></div>"
@@ -36,6 +37,11 @@ const Homepage = () =>{
     const [inspiration, setInspiration] = useState({});
     const HPFS = useSelector(state => state.navbar.homePageSctOne);
     const homepageIntro = HPFS.find(p => p.position === 'HomePage');
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const showModal = () => {
+        setIsModalVisible(true);
+    };
 
     useEffect(() => {
         dispatch(getCollectionShops())
@@ -53,7 +59,7 @@ const Homepage = () =>{
         dispatch(getNewsReport());
         dispatch(getHomePageSctOne());
         dispatch(getMidFoot())
-
+        showModal()
     }, []);
 
 
@@ -70,6 +76,7 @@ const Homepage = () =>{
                     <>
                         <Header/>
                         <MobileHeader/>
+                        <RenderModal isModalVisible={isModalVisible} setIsModalVisible={setIsModalVisible} />
                         <div className={"homepage-body"}>
                             <FirstIntro/>
                             <FirstIntroMobile/>

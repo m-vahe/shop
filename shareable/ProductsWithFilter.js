@@ -30,7 +30,6 @@ const ProductsWithFilter = ({
     useEffect(()=>{
         dispatch(getProductsWithFilter())
     },[]);
-    console.log( isAuthenticated,88888888888888888888 );
   const addToFavorites = (e) => {
           if (!isAuthenticated) {
               return router.push('/login');

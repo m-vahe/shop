@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/layouts/header/modal/HeaderLoginPopup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layouts/header/modal/HeaderLoginPopup.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/render-modal/RenderModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/homepage/components/render-modal/RenderModal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/whishlist/components/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/whishlist/components/Modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/render-modal/RenderModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/render-modal/RenderModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/render-modal/RenderModal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/render-modal/RenderModal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +159,8 @@
       <workItem from="1616667728549" duration="14391000" />
       <workItem from="1616739253995" duration="21071000" />
       <workItem from="1617085494483" duration="22594000" />
-      <workItem from="1617170838479" duration="20456000" />
+      <workItem from="1617170838479" duration="20532000" />
+      <workItem from="1617280439664" duration="7196000" />
     </task>
     <servers />
   </component>

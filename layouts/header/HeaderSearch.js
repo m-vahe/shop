@@ -42,13 +42,7 @@ const HeaderSearch = () => {
         setIsModalVisible(true);
     };
 
-    const handleOk = () => {
-        setIsModalVisible(false);
-    };
 
-    const handleCancel = () => {
-        setIsModalVisible(false);
-    };
 
     const handleChangeLng = useCallback(id => {
         setLanguages(prev => prev.map(lng => {
