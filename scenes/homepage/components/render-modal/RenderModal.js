@@ -1,11 +1,7 @@
 import {Modal} from 'antd';
-import Link from "next/link";
 import {useRouter} from "next/router";
-import {useDispatch, useSelector} from "react-redux";
-import {useState, useEffect} from "react"
 
 const RenderModal = ({isModalVisible, setIsModalVisible}) => {
-    const router = useRouter();
 
     const handleOk = () => {
         setIsModalVisible(false);
@@ -14,7 +10,6 @@ const RenderModal = ({isModalVisible, setIsModalVisible}) => {
     const handleCancel = () => {
         setIsModalVisible(false);
     };
-
 
     return (
         <Modal
@@ -39,7 +34,7 @@ const RenderModal = ({isModalVisible, setIsModalVisible}) => {
                             <button type="submit">Jetzt anmelden</button>
                         </div>
                         <div className={"privacy_popup container"}>
-                            <input type="checkbox"/>
+                            <input type="checkbox" />
                             <span className="checkmark"></span>
                             <label htmlFor="privacy">
                                 Hiermit bestätige ich, dass ich die Daten­schutz­erklärung gelesen habe *.

@@ -25,6 +25,7 @@ import Footer from "../../layouts/footer/Footer";
 import { Spin, Space } from 'antd';
 import Services from "../../shareable/services/Services";
 import RenderModal from "./components/render-modal/RenderModal";
+import PressReviews from "../brands/components/press-reviews/PressReviews";
 
 const Homepage = () =>{
     // const htmltext = "<div><h1 style='color:red'>Alohha Bitches</h1></div>"
@@ -59,7 +60,10 @@ const Homepage = () =>{
         dispatch(getNewsReport());
         dispatch(getHomePageSctOne());
         dispatch(getMidFoot())
-        showModal()
+        if(localStorage.getItem("popup") !== "shown"){
+            showModal()
+        }
+        localStorage.setItem("popup","shown")
     }, []);
 
 
@@ -99,6 +103,7 @@ const Homepage = () =>{
                             <DpabBottom/>
                             <Services/>
                             <NewsletterRep/>
+                            <PressReviews/>
                         </div>
                         <Footer/>
                     </>

@@ -3,7 +3,7 @@ import ShopHeaderMobile from './components/shop-header/ShopHeaderMobile'
 import ShopBody from './components/shop-body/ShopBody'
 // import ShopBodyFooter from "./components/shop-body/shop-body-footer/ShopBodyFooter";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
-import {useLayoutEffect,useState} from "react"
+import {useEffect,useState} from "react"
 import {useDispatch, useSelector} from "react-redux";
 import {getNewsReport,getShopLgText} from "../../services/actions/news";
 import PageHeader from "../../layouts/header/Header"
@@ -13,7 +13,7 @@ import {getNavbar} from "../../services/actions/homepage__stable";
 import {Space, Spin} from "antd";
 const ShopScene = () =>{
     const dispatch = useDispatch()
-    useLayoutEffect(() => {
+    useEffect(() => {
         dispatch(getNewsReport());
         dispatch(getShopLgText());
         dispatch(getNavbar());

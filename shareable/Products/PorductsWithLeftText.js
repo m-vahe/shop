@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
-import {getProductsWithFilter,getEightProductsWithFilter} from "../../services/actions/products";
 
 const formatter = new Intl.NumberFormat('de-DE', {
   style: 'currency',
