@@ -37,7 +37,7 @@ const RenderModal = ({isModalVisible, setIsModalVisible}) => {
                             <input type="checkbox" />
                             <span className="checkmark"></span>
                             <label htmlFor="privacy">
-                                Hiermit bestätige ich, dass ich die Daten­schutz­erklärung gelesen habe *.
+                                Hiermit bestätige ich, dass ich die <span>Daten­schutz­erklärung</span> gelesen habe *.
                             </label>
                         </div>
                     </form>

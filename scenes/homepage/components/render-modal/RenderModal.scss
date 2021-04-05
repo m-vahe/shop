@@ -200,6 +200,11 @@
                   letter-spacing: 1.2px;
                   text-align: left;
                   color: #ffffff;
+                  text-transform: uppercase;
+                  span{
+                    margin-left: 1rem;
+                    text-decoration: underline;
+                  }
                 }
                 .checkmark{
                   position: absolute;
@@ -231,6 +236,7 @@
               letter-spacing: 1.08px;
               text-align: left;
               color: #ffffff;
+              text-transform: uppercase;
             }
           }
         }

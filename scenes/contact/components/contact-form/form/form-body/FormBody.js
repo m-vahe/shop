@@ -234,7 +234,7 @@ const FormBody = () => {
                         </Tooltip>
                         <label htmlFor="yes">
                             Hiermit bestätige ich, dass ich die
-                            Daten­schutz­erklärung gelesen habe.*
+                            <span>{""}Daten­schutz­erklärung</span> gelesen habe.*
                         </label>
                     </div>
                 </div>

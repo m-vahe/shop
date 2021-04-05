@@ -18,6 +18,7 @@ import Application from "./components/application/Application";
 import Points from "./components/points/Points"
 import PressReviews from "./components/press-reviews/PressReviews";
 import Partners from "./components/partners/Partners";
+import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 const BrandsScene = () =>{
     const dispatch = useDispatch()
     const prdcts = useSelector(state => state?.products?.products);
@@ -68,6 +69,7 @@ const BrandsScene = () =>{
                     addToWishList={addToWishList}
                     getFour={getProductsWithFilter}
                 />
+                <NewsletterRep/>
             </div>
             <Footer/>
         </>

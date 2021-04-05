@@ -148,7 +148,7 @@ const NewsletterRep = ({ padding }) => {
                           }))
                       }}
                   />
-                  <label htmlFor="Unisex">Unisex</label>
+                  <label htmlFor="Unisex">Divers</label>
                 </div>
               </div>
               <input

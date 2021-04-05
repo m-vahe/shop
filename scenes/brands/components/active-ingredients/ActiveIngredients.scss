@@ -46,6 +46,18 @@
       color: #3e3e3e;
       margin-bottom: 1.5rem;
       text-transform: uppercase;
+      @media screen and (max-width:1350px ){
+        font-size: 5.6rem;
+      }
+      @media screen and (max-width:1200px ){
+        font-size: 5rem;
+      }
+      @media screen and (max-width:1070px ){
+        font-size: 4.3rem;
+      }
+      @media screen and (max-width:1024px ){
+        font-size: 6.6rem;
+      }
     }
 
     &__header {
