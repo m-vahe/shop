@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-// import {
-//   faFacebook,
-// } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faGooglePlusSquare } from '@fortawesome/free-brands-svg-icons';
 import { login } from '../../../services/actions/auth';
 import { useDispatch, useSelector } from 'react-redux';
 import { useRouter } from 'next/router';
+import {notification, Tooltip} from "antd";
 
 const LoginForm = () => {
   const router = useRouter();
@@ -17,20 +15,59 @@ const LoginForm = () => {
 
   const authData = useSelector(state => state.auth);
   const dispatch = useDispatch();
-  
+  const success = useSelector(state=>state.auth.loginError)
+  useEffect(() => {
+    if (success?.response?.data?.message[0]?.messages[0]?.message !== undefined &&
+        success?.response?.data?.message[0]?.messages[0]?.message !== null) {
+      openNotificationWithIcon("error")
+    } else if (success) {
+      setEmail("")
+      setPassword("")
+      openNotificationWithIcon("success")
+    }
+  }, [success])
+  const openNotificationWithIcon = type => {
+    notification[type]({
+      message: '',
+      description: type === "success" ? "Logged in successfully" : "Please provide your email or password"
+    });
+  };
   useEffect(() => {
     if (authData?.isAuthenticated) {
       router.push('/');
     }
   }, [authData]);
-
+  const [emailError,setEmailError] = useState("")
+  const [passwordError,setPasswordError] = useState("")
+  const [emailErrorMessage,setEmailErrorMessage] = useState("Please insert a valid email address.")
+  const [passwordErrorMessage,setPasswordErrorMessage] = useState("Please insert a valid email password.")
   const handleLogin = e => {
     e.preventDefault();
+    if(email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) &&
+    password.length >= 8){
+      dispatch(login({
+        identifier: email,
+        password
+      }));
+      setEmailError("")
+      setPasswordError("")
 
-    dispatch(login({
-      identifier: email,
-      password
-    }));
+    }else {
+      if(password.length <8){
+        setPasswordError(true)
+        setPasswordErrorMessage("Password must be at least 8 characters")
+      }
+      if(password.length === 0){
+        setPasswordErrorMessage("Password is required")
+      }
+      if(!email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+        setEmailError(true)
+        setEmailErrorMessage("Please insert a valid email address.")
+      }
+      if(email.length === 0){
+        setEmailErrorMessage("Email is required")
+      }
+    }
   };
 
   return (
@@ -49,20 +86,36 @@ const LoginForm = () => {
             <div className={'left-login-form-one'}>
               <h2>Kunden Log-in</h2>
               <form action='#' onSubmit={handleLogin}>
-                <input 
-                  type='email' 
-                  placeholder={'E-Mail-Adresse'} 
-                  value={email} 
-                  onChange={e => setEmail(e.target.value)} 
-                />
-
-                <input 
-                  type='password' 
-                  placeholder={'Passwort'} 
-                  value={password}
-                  onChange={e => setPassword(e.target.value)}
-                />
-
+                <Tooltip title={emailErrorMessage} color={"red"} visible={emailError ? true : false}
+                         placement="bottomRight">
+                  <input
+                      type='email'
+                      placeholder={'E-Mail-Adresse'}
+                      className={`${emailError ? "input-error" : null}`}
+                      value={email}
+                      onChange={e => {
+                        setEmail(e.target.value)
+                        if(e.target.value.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+                          setEmailError(false)
+                        }else setEmailError(true)
+                      }}
+                  />
+                </Tooltip>
+                <Tooltip title={passwordErrorMessage} color={"red"} visible={passwordError ? true : false}
+                         placement="bottomRight">
+                  <input
+                      type='password'
+                      placeholder={'Passwort'}
+                      value={password}
+                      className={`${passwordError ? "input-error" : null}`}
+                      onChange={e => {
+                        setPassword(e.target.value)
+                        if(e.target.value.length<8){
+                          setPasswordError(true)
+                        }else {setPasswordError(false)}
+                      }}
+                  />
+                </Tooltip>
                 <div className={'forgot-pass-and-submit'}>
                   <button type='submit'>Anmelden</button>
                   <Link href={'/forgotpassword'}>

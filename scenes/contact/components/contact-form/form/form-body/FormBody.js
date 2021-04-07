@@ -1,5 +1,5 @@
-import {useDispatch, useSelector} from "react-redux";
-import {useState, useRef, useEffect} from "react"
+import {useDispatch} from "react-redux";
+import {useState, useRef} from "react"
 import {Tooltip} from 'antd';
 import {postContact} from "../../../../../../services/actions/contact";
 
@@ -123,13 +123,13 @@ const FormBody = () => {
             && emailError !== "" && subjectError !== "" &&
             privacyError !== "" && messageError !== "") {
             dispatch(postContact({
-                name:contactData.name,
-                email:contactData.email,
-                subject:contactData.subject,
-                Order_ID:contactData.orderId,
-                message:contactData.message,
-                copy_to_me:contactData.copyTo,
-                privacy:contactData.privacyPolicy
+                name: contactData.name,
+                email: contactData.email,
+                subject: contactData.subject,
+                Order_ID: contactData.orderId,
+                message: contactData.message,
+                copy_to_me: contactData.copyTo,
+                privacy: contactData.privacyPolicy
             }))
             setContactData({
                 name: "",
@@ -181,16 +181,18 @@ const FormBody = () => {
                 <input type="text" placeholder={"Name (Optional)"} name={"name"} onChange={handleValidation}
                        ref={scroll}
                        value={contactData?.name}/>
-                <Tooltip title={"Email is required"} color={"red"} visible={emailError ? true : false} placement="bottomRight">
+                <Tooltip title={"Email is required"} color={"red"} visible={emailError ? true : false}
+                         placement="bottomRight">
                     <input
                         type="email" placeholder={"E-Mail*"} name={"email"}
                         onChange={handleValidation} value={contactData?.email}
-                        className={emailError && "input-error"}
+                        className={emailError ? "input-error" : null}
                     />
                 </Tooltip>
-                <Tooltip title={"Subject is required"} color={"red"} visible={subjectError ? true : false} placement="bottomRight">
+                <Tooltip title={"Subject is required"} color={"red"} visible={subjectError ? true : false}
+                         placement="bottomRight">
                     <input type="text" placeholder={"Betreff*"} name={"subject"} onChange={handleValidation}
-                           className={subjectError && "input-error"} value={contactData?.subject}/>
+                           className={subjectError ? "input-error" : null} value={contactData?.subject}/>
                 </Tooltip>
                 <input type="text" placeholder={"Auftrags-ID (optional)"} name={"orderId"} onChange={handleValidation}
                        value={contactData?.orderId}/>
@@ -199,7 +201,7 @@ const FormBody = () => {
                              visible={messageError ? true : false} placement="bottomRight">
                          <textarea name="message" id="message" cols="30" rows="15" placeholder={"Nachricht*"}
                                    onChange={handleValidation} value={contactData?.message}
-                                   className={messageError && "input-error"}
+                                   className={messageError ? "input-error" : null}
                          />
                     </Tooltip>
 

@@ -1,9 +1,8 @@
 import {Select} from 'antd';
 import {useDispatch, useSelector} from "react-redux";
 import {useState, useRef, useEffect} from "react"
-import {Tooltip} from 'antd';
+import {Tooltip,notification} from 'antd';
 import {postRegistration} from "../../../../services/actions/registration";
-import {notification} from 'antd';
 import moment from "moment";
 import {postNewsletter, setNewsLetters} from "../../../../services/actions/newsletter";
 

@@ -231,6 +231,13 @@
           letter-spacing: 1.5px;
           line-height: 35px;
           text-transform: uppercase;
+          outline: none;
+        }
+        .input-error{
+          &:focus{
+            outline: none;
+          }
+          border:1px solid red !important;
         }
         input {
           border: 1px solid #b5b5b5;
@@ -238,6 +245,7 @@
           padding: 5px 10px;
           height: 55px;
           font-size: 2.6rem;
+          outline: none;
           &::placeholder {
             color: #000000;
             font-size: 2.6rem;

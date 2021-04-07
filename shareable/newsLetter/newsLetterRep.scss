@@ -122,12 +122,18 @@
           }
         }
       }
+      .input-error{
+        &:focus{
+          outline: none;
+        }
+        border:1px solid red !important;
+      }
       &--email {
         padding-left: 10px;
         background-color: rgba(0, 0, 0, 0.1);
-        border: 0;
         outline: none;
         font-size: 2.2rem;
+        border: 1px solid transparent;
         &::placeholder {
           font-size: 2.2rem;
           font-weight: 400;
