@@ -16,12 +16,14 @@ const RegistrationForm = ({textData}) => {
     const dispatch = useDispatch()
     const success = useSelector(state => state.registration.success)
     useEffect(() => {
-        if (success?.response?.data?.message[0]?.messages[0]?.message !== undefined &&
-            success?.response?.data?.message[0]?.messages[0]?.message !== null) {
-            openNotificationWithIcon("error")
-        } else if (success) {
-            openNotificationWithIcon("success")
-        }
+       if(success?.response !== null ){
+           if (success?.response?.data?.message[0]?.messages[0]?.message !== undefined &&
+               success?.response?.data?.message[0]?.messages[0]?.message !== null) {
+               openNotificationWithIcon("error")
+           } else if (success) {
+               openNotificationWithIcon("success")
+           }
+       }
     }, [success])
 
     const openNotificationWithIcon = type => {
