@@ -1,16 +1,16 @@
 import RegistrationScene from "../scenes/registration";
 const Registrieren = () => {
-    return (
-        <>
-            <RegistrationScene/>
-        </>
-    );
+  return (
+    <>
+      <RegistrationScene />
+    </>
+  );
 };
 
 export async function getStaticProps() {
-    return {
-        props: {},
-    };
+  return {
+    props: {},
+  };
 }
 
 export default Registrieren;

@@ -1,81 +1,81 @@
 .payment__section__container {
   border-top: 1px solid #000000;
-  .footerpaymentbod{
+  .footerpaymentbod {
     display: flex;
     gap: 3rem;
     width: 60%;
     margin: 0 auto;
     align-items: center;
 
-    @media screen and(max-width: 1440px){
-      .zahlungitem{
+    @media screen and(max-width: 1440px) {
+      .zahlungitem {
         width: 28vw;
       }
-      .mastercarditem{
+      .mastercarditem {
         width: 10vw;
       }
-      .versandartenitem{
+      .versandartenitem {
         width: 28vw;
       }
-      .vorkasseitem{
+      .vorkasseitem {
         width: 16vw;
       }
-      div{
-          width: 14vw;
+      div {
+        width: 14vw;
       }
     }
     @media screen and(max-width: 1024px) {
       flex-wrap: wrap;
       justify-content: center;
-      div{
+      div {
         width: 6vw;
       }
-      .zahlungitem{
+      .zahlungitem {
         width: 14vw;
       }
-      .mastercarditem{
+      .mastercarditem {
         width: 5vw;
       }
-      .vorkasseitem{
+      .vorkasseitem {
         width: 6vw;
       }
-      .versandartenitem{
+      .versandartenitem {
         width: 14vw;
       }
     }
     @media screen and(max-width: 607px) {
       flex-wrap: wrap;
       justify-content: center;
-      div{
+      div {
         width: 14vw;
       }
-      .zahlungitem{
+      .zahlungitem {
         width: 25vw;
       }
-      .mastercarditem{
+      .mastercarditem {
         width: 5vw;
       }
-      .vorkasseitem{
+      .vorkasseitem {
         width: 15vw;
       }
-      .versandartenitem{
+      .versandartenitem {
         width: 25vw;
       }
     }
   }
 
-.mastercarditem{
-  width: 7vw;
-  @media screen and(max-width: 1440px){
-    div{
-      width: 11vw;
+  .mastercarditem {
+    width: 7vw;
+    @media screen and(max-width: 1440px) {
+      div {
+        width: 11vw;
+      }
     }
   }
-}
-  .dhlitem{
+  .dhlitem {
     width: 10vw;
   }
-  img{
+  img {
     width: 100%;
   }
 }
@@ -159,7 +159,7 @@
       display: inline-block;
       //height: 15px;
       color: #000000;
-      font-family: 'Freight Sans Pro', system-ui,inherit;
+      font-family: "Freight Sans Pro", system-ui, inherit;
       font-size: 2.2rem;
       font-weight: 300;
       font-style: normal;
@@ -186,22 +186,20 @@
   }
 }
 
-.footer__navigation__container{
-
+.footer__navigation__container {
   background: black;
-  &__body{
+  &__body {
     width: 90.5%;
     margin: 0 auto;
     padding: 10rem 0;
     color: white;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(21rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     gap: 5rem;
     @media screen and(max-width: 1024px) {
-      grid-template-columns: repeat(auto-fit,minmax(33rem,1fr));
-
+      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
     }
-    h2{
+    h2 {
       color: white;
       text-transform: uppercase;
       font-size: 2.2rem;
@@ -211,37 +209,37 @@
         font-size: 2.5rem;
       }
     }
-    p{
+    p {
       text-transform: uppercase;
       font-size: 2.2rem;
       font-weight: 300;
     }
-    a{
+    a {
       text-transform: uppercase;
       color: white;
       font-size: 2.2rem;
       font-weight: 300;
     }
-    li{
+    li {
       list-style: none;
       font-size: 2.2rem;
     }
   }
 }
-.footer__copyright{
+.footer__copyright {
   background: black;
 
   margin: 0 auto;
   padding: 5rem 10rem;
-  p{
+  p {
     text-align: center;
     color: white;
     text-transform: uppercase;
     font-size: 2.3rem;
-    @media screen and(max-width: 1200px){
+    @media screen and(max-width: 1200px) {
       font-size: 2rem;
     }
-    @media screen and(max-width: 768px){
+    @media screen and(max-width: 768px) {
       font-size: 1.6rem;
     }
   }
