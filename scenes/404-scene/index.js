@@ -3,8 +3,8 @@ import Footer from "../../layouts/footer/Footer";
 import NotFound from "./components/not-found/NotFound";
 import ErrorPageProducts from "./components/products-with-filter/ErrorPageProducts";
 import Services from "../../shareable/services/Services";
-import NewsletterRep from "../../shareable/newsletter/NewsletterRep";
 import ProductOffers from "./components/product-offers/ProductOffers";
+import NewsletterRep from "../../shareable/newsletter/NewsletterRep";
 import MobileHeader from "../../layouts/mobile-header/MobileHeader";
 import MobileNotFound from "./components/mobile-not-found/MobileNotFound";
 const ErrorScene = () => {
