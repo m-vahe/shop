@@ -6,24 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/404-scene/components/products-with-filter/ErrorPageProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/404-scene/components/products-with-filter/ErrorPageProducts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/404-scene/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/404-scene/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/aboutthree/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/aboutthree/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/abouttwo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/abouttwo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/brands/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/checkout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/checkout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/contact/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/ergebins/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/ergebins/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/lexikon/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/lexikon/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene-two/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene-two/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/magazin-artikel-scene/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin-artikel-scene/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/magazin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/magazin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/registration/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/shop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/typentest/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/typentest/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/versandarten/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/versandarten/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/video/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../next-js-application-01" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -179,7 +162,7 @@
       <workItem from="1617693731508" duration="7850000" />
       <workItem from="1617776498915" duration="4889000" />
       <workItem from="1617863705427" duration="621000" />
-      <workItem from="1619090352576" duration="1659000" />
+      <workItem from="1619090352576" duration="3394000" />
     </task>
     <servers />
   </component>
