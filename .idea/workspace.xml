@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scenes/registration/components/registration-info/info-icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../next-js-application-01" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -160,7 +161,8 @@
       <workItem from="1617358798874" duration="12487000" />
       <workItem from="1617603756279" duration="21561000" />
       <workItem from="1617693731508" duration="7850000" />
-      <workItem from="1617776498915" duration="2302000" />
+      <workItem from="1617776498915" duration="4889000" />
+      <workItem from="1617863705427" duration="621000" />
     </task>
     <servers />
   </component>

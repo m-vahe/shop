@@ -69,8 +69,7 @@ const BrandsScene = () =>{
                     addToWishList={addToWishList}
                     getFour={getProductsWithFilter}
                 />
-                <NewsletterRep/>
-            </div>
+                <NewsletterRep/>            </div>
             <Footer/>
         </>
     )

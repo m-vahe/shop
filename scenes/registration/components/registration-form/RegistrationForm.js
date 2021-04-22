@@ -261,6 +261,7 @@ const RegistrationForm = ({textData}) => {
     const [day, setDay] = useState([])
 
     useEffect(() => {
+
         let currentYear = new Date().getFullYear();
         let yearQnt = 99
         let arr = []
@@ -316,6 +317,7 @@ const RegistrationForm = ({textData}) => {
         }
     }, [yes, no])
     return (
+
         <div className={"registration__form__container"}>
             <h2 className={"registration__form__container--title"} ref={scroll}>{textData?.text_top_of_form}</h2>
             <form action="" className={"registration__form__container__form"} onSubmit={onSubmit}>
