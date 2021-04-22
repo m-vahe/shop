@@ -1,15 +1,15 @@
-.first-prod-items{
-  .picture-body-prod{
-    .circled-txt{
+.first-prod-items {
+  .picture-body-prod {
+    .circled-txt {
       cursor: pointer;
       left: 0;
     }
   }
-  button{
+  button {
     justify-content: center;
   }
 }
-.loader__body{
+.loader__body {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,46 +20,46 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  .ant-spin-lg{
+  .ant-spin-lg {
     font-size: 10rem !important;
   }
-  .ant-spin-dot{
+  .ant-spin-dot {
     font-size: 10rem !important;
   }
-  .ant-spin-dot-item{
+  .ant-spin-dot-item {
     background: black;
     width: 5rem !important;
     height: 5rem !important;
   }
 }
 
-@import '../layouts/header/header';
-@import '../scenes/homepage/homepage';
-@import '../layouts/footer/footer';
-@import '../layouts/header/mediaheader';
-@import '../scenes/login/login';
-@import '../scenes/herren/herren';
-@import '../scenes/herren/mediaherren';
-@import '../scenes/shop/components/shop-header/shopheader.scss';
-@import '../layouts/loader/loader';
-@import '../layouts/mobile-header/mobileHeader.scss';
-@import '../shareable/component-header/component-info/componentInfo.scss';
-@import '../shareable/newsLetter/newsLetterRep.scss';
-@import '../shareable/component-header/componentHeader.scss';
-@import '../shareable/component-header/component-title/componentTitle.scss';
-@import '../scenes/video/components/mediatek-info/mediatekInfo.scss';
-@import '../scenes/video/components/small-video-container/smallVideoContainer.scss';
-@import '../scenes/video/components/video-container/videoContainer.scss';
-@import '../shareable/component-header/component-info/componentInfo.scss';
-@import '../shareable/social/social.scss';
-@import '../shareable/Products/ProductsWithLeftText';
-@import '../shareable/Products/SingleProduct';
-@import 'antd/dist/antd.css';
-@import '../scenes/shop/components/shop-body/dashboard/dashboard.scss';
-@import '../scenes/shop/components/shop-body/ShopBody';
-@import '../scenes/shop/components/shop-body/dashboard/dashboard.scss';
-@import '../scenes/shop/components/shop-body/shop-body-header/shopBodyHeader.scss';
-@import '../scenes/shop/components/shop-body/shop-body-footer/ShopBodyFooter';
+@import "../layouts/header/header";
+@import "../scenes/homepage/homepage";
+@import "../layouts/footer/footer";
+@import "../layouts/header/mediaheader";
+@import "../scenes/login/login";
+@import "../scenes/herren/herren";
+@import "../scenes/herren/mediaherren";
+@import "../scenes/shop/components/shop-header/shopheader.scss";
+@import "../layouts/loader/loader";
+@import "../layouts/mobile-header/mobileHeader.scss";
+@import "../shareable/component-header/component-info/componentInfo.scss";
+@import "../shareable/newsLetter/newsLetterRep.scss";
+@import "../shareable/component-header/componentHeader.scss";
+@import "../shareable/component-header/component-title/componentTitle.scss";
+@import "../scenes/video/components/mediatek-info/mediatekInfo.scss";
+@import "../scenes/video/components/small-video-container/smallVideoContainer.scss";
+@import "../scenes/video/components/video-container/videoContainer.scss";
+@import "../shareable/component-header/component-info/componentInfo.scss";
+@import "../shareable/social/social.scss";
+@import "../shareable/Products/ProductsWithLeftText";
+@import "../shareable/Products/SingleProduct";
+@import "antd/dist/antd.css";
+@import "../scenes/shop/components/shop-body/dashboard/dashboard.scss";
+@import "../scenes/shop/components/shop-body/ShopBody";
+@import "../scenes/shop/components/shop-body/dashboard/dashboard.scss";
+@import "../scenes/shop/components/shop-body/shop-body-header/shopBodyHeader.scss";
+@import "../scenes/shop/components/shop-body/shop-body-footer/ShopBodyFooter";
 @import "../scenes/homepage/components/mobile/MobileChanged";
 @import "scenes/single-product-scene/index";
 @import "../scenes/shop/components/shop-body/mobile-filter/mobileFilter.scss";
@@ -72,9 +72,9 @@
 @import "shareable/Products/magazin-products/MagazinProducts";
 @import "shareable/sidebar/profile/profile.scss";
 @import "shareable/sidebar/main-account/mainAccount.scss";
-@import '../scenes/konto/components/konto-container/kontoContainer.scss';
-@import '../scenes/konto/konto.scss';
-@import '../scenes/konto/components/konto-container/konto-container-item/kontoContainerItem.scss';
+@import "../scenes/konto/components/konto-container/kontoContainer.scss";
+@import "../scenes/konto/konto.scss";
+@import "../scenes/konto/components/konto-container/konto-container-item/kontoContainerItem.scss";
 @import "scenes/magazin-artikel-scene-two/index";
 @import "shareable/artikel-first-section/ArtikelFirstSection";
 @import "shareable/Products/magazin-products/MagazWhiteProducts";
@@ -89,20 +89,22 @@
 @import "scenes/versandarten/index";
 @import "scenes/contact/index";
 @import "scenes/typentest/index";
+@import "scenes/404-scene/index";
+@import "scenes/ergebins/index.scss";
 @font-face {
-  src: url('../public/fonts/FreightSansProBlack-Italic.eot'); /* IE9 Compat Modes */
-  src: local('Freight Sans Pro'), local('FreightSansPro'),
-    url('../public/fonts/FreightSansProBlack-Italic.eot?#iefix')
-      format('embedded-opentype'),
-    /* IE6-IE8 */ url('../public/fonts/FreightSansProBlack-Italic.woff2')
-      format('woff2'),
+  src: url("../public/fonts/FreightSansProBlack-Italic.eot"); /* IE9 Compat Modes */
+  src: local("Freight Sans Pro"), local("FreightSansPro"),
+    url("../public/fonts/FreightSansProBlack-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../public/fonts/FreightSansProBlack-Italic.woff2")
+      format("woff2"),
     /* Super Modern Browsers */
-      url('../public/fonts/FreightSansProBlack-Italic.woff') format('woff'),
-    /* Modern Browsers */ url('../public/fonts/FreightSansProBlack-Italic.ttf')
-      format('truetype'),
+      url("../public/fonts/FreightSansProBlack-Italic.woff") format("woff"),
+    /* Modern Browsers */ url("../public/fonts/FreightSansProBlack-Italic.ttf")
+      format("truetype"),
     /* Safari, Android, iOS */
-      url('../public/fonts/FreightSansProBlack-Italic.eot#OpenSans')
-      format('svg'); /* Legacy iOS */
+      url("../public/fonts/FreightSansProBlack-Italic.eot#OpenSans")
+      format("svg"); /* Legacy iOS */
 }
 
 @import "../scenes/homepage/components/mobile/MobileChanged";
@@ -110,15 +112,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Freight Sans Pro', system-ui, inherit;
-  button{
+  font-family: "Freight Sans Pro", system-ui, inherit;
+  button {
     cursor: pointer;
   }
 }
 
 html {
   font-size: 62.5%;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 1920px) {
@@ -152,7 +154,7 @@ html {
     font-size: 42.5%;
   }
 }
-@media screen  and (max-width: 475px) {
+@media screen and (max-width: 475px) {
   html {
     font-size: 37.5%;
   }

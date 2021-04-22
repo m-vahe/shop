@@ -3,18 +3,18 @@ import Footer from "../layouts/footer/Footer";
 import MobileHeader from "../layouts/mobile-header/MobileHeader";
 import MagazinScene from "../scenes/magazin";
 const Magazine = () => {
-    return (
-        <>
-            <PageHeader />
-            <MobileHeader/>
-                <MagazinScene/>
-            <Footer/>
-        </>
-    );
-}
+  return (
+    <>
+      <PageHeader />
+      <MobileHeader />
+      <MagazinScene />
+      <Footer />
+    </>
+  );
+};
 export async function getStaticProps() {
-    return {
-        props: {},
-    };
+  return {
+    props: {},
+  };
 }
-export default Magazine
+export default Magazine;
