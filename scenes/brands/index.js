@@ -19,13 +19,16 @@ import Points from "./components/points/Points"
 import PressReviews from "./components/press-reviews/PressReviews";
 import Partners from "./components/partners/Partners";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
+import {getUserDataFromLocalStorage} from "../../services/actions/auth";
 const BrandsScene = () =>{
     const dispatch = useDispatch()
     const prdcts = useSelector(state => state?.products?.products);
     const productsWithLeftText = useSelector(state => state?.products?.productsWithLeftText);
     const authData = useSelector(state => state.auth);
 
-
+    useEffect(() => {
+        dispatch(getUserDataFromLocalStorage());
+    }, []);
     useEffect(()=>{
         dispatch(getProducts(3));
     }, [authData?.isAuthenticated]);

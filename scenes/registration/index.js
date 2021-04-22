@@ -9,10 +9,12 @@ import {
     getRegisterCountries,
     getRegisterTextData
 } from "../../services/actions/registration";
+import {getUserDataFromLocalStorage} from "../../services/actions/auth";
 const RegistrationScene = () => {
     const dispatch = useDispatch()
 
     useEffect(()=>{
+        dispatch(getUserDataFromLocalStorage());
         dispatch(getRegisterCountries())
         dispatch(getRegisterTextData())
     },[])

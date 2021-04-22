@@ -11,9 +11,12 @@ import MobileHeader from "../../layouts/mobile-header/MobileHeader";
 import Footer from "../../layouts/footer/Footer";
 import {getNavbar} from "../../services/actions/homepage__stable";
 import {Space, Spin} from "antd";
+import {getUserDataFromLocalStorage} from "../../services/actions/auth";
 const ShopScene = () =>{
+
     const dispatch = useDispatch()
     useEffect(() => {
+        dispatch(getUserDataFromLocalStorage());
         dispatch(getNewsReport());
         dispatch(getShopLgText());
         dispatch(getNavbar());

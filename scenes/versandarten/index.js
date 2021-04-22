@@ -10,10 +10,13 @@ import {useEffect} from "react"
 import {useDispatch, useSelector} from "react-redux";
 import {getVersandartenText} from "../../services/actions/versandarten";
 import {Space, Spin} from "antd";
+import {getUserDataFromLocalStorage} from "../../services/actions/auth";
 
 const VersandartenScene = () => {
     const dispatch = useDispatch()
+
     useEffect(() => {
+        dispatch(getUserDataFromLocalStorage());
         dispatch(getVersandartenText())
     }, [])
     const versandartenText = useSelector(state => state.versandarten.versandartenText)

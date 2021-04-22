@@ -1,4 +1,5 @@
 const HeadTextShareable = ({text1,text2,text3}) =>{
+
     return(
         <>
            <div className={"about-two-head-text"}>

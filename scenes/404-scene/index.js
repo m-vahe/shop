@@ -7,7 +7,14 @@ import ProductOffers from "./components/product-offers/ProductOffers";
 import NewsletterRep from "../../shareable/newsletter/NewsletterRep";
 import MobileHeader from "../../layouts/mobile-header/MobileHeader";
 import MobileNotFound from "./components/mobile-not-found/MobileNotFound";
+import {getUserDataFromLocalStorage} from "../../services/actions/auth"
+import {useDispatch} from "react-redux";
+import {useEffect} from "react";
 const ErrorScene = () => {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(getUserDataFromLocalStorage());
+    }, []);
   return (
     <>
       <Header />

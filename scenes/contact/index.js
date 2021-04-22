@@ -8,10 +8,12 @@ import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import {useEffect} from "react"
 import {useDispatch, useSelector} from "react-redux";
 import {getContactData} from "../../services/actions/contact";
+import {getUserDataFromLocalStorage} from "../../services/actions/auth";
 
 const ContactScene = () => {
     const dispatch = useDispatch()
     useEffect(()=>{
+        dispatch(getUserDataFromLocalStorage());
         dispatch(getContactData())
     },[])
     const textData = useSelector(state => state.contact.textData)

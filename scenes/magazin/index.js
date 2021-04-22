@@ -9,11 +9,12 @@ import MagazinSecondSectionMobile from "./components/magazin-second-section/Maga
 import {useEffect} from "react"
 import {useDispatch, useSelector} from "react-redux";
 import {getNewsReport, getStairsAdd} from "../../services/actions/news";
+import {getUserDataFromLocalStorage} from "../../services/actions/auth";
 const MagazinScene = () =>{
-
     const dispatch = useDispatch()
 
     useEffect(()=>{
+        dispatch(getUserDataFromLocalStorage());
         dispatch(getStairsAdd())
         dispatch(getNewsReport())
     },[])

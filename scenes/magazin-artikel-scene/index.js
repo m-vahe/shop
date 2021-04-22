@@ -9,9 +9,14 @@ import Social from "../../shareable/social/Social";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import {useState,useEffect} from "react"
 import CarouselArtikel from "./components/carousel/CarouselArtikel";
+import {useDispatch} from "react-redux";
+import {getUserDataFromLocalStorage} from "../../services/actions/auth";
 const MagazinArtikelScene = () =>{
     const [showSlider,setShowSlider] = useState(false)
-
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(getUserDataFromLocalStorage());
+    }, []);
     return(
         <div className={"artikel__all__elements"}>
             {
