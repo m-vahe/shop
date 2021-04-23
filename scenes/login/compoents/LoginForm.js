@@ -145,7 +145,9 @@ const LoginForm = () => {
           </div>
           <div className={'col-lg-5 login-right-form'}>
             <div className={'login-right-one'}>
-              <h2>Noch kein Konto? Registrieren</h2>
+              <Link href="/registrieren">
+                <h2>Noch kein Konto? Registrieren</h2>
+              </Link>
               <button>Konto erstellen</button>
             </div>
             <p className={'login-right-mid-txt'}>ODER</p>
