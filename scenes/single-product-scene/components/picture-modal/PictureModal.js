@@ -2,7 +2,7 @@ import { Modal} from 'antd';
 import { Carousel } from 'antd';
 import {useRef} from "react";
 
-const PictureModal = ({setIsmodalVisible,isModalVisible,dataImages}) =>{
+const PictureModal = ({ setIsmodalVisible, isModalVisible, dataImages }) => {
     const handleOk = () => {
         setIsmodalVisible(false);
     };

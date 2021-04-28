@@ -19,7 +19,8 @@ export default function ErgebnisTester() {
           src="/productbotleft.png"
           alt="Picture"
           width={1720}
-          height={900}
+          height={1000}
+          objectFit="cover"
         />
         <div
           //   className={`ergebnis__tester__parfum__card ${

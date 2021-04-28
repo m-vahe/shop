@@ -2,6 +2,7 @@ import {
     GET_SINGLEPRODUCT_STYLE_TEXT,
     SET_ERROR,
     SET_DATA_LOADED
+    ,GET_SINGLEPRODUCT_VARIANT_ID
 } from "../action-types/single-product";
 import axios from "axios";
 
@@ -21,5 +22,18 @@ export const getSingleProductText = () => {
                 });
             })
             .catch(err => dispatch({ type: SET_ERROR, payload: err }));
+    };
+};
+
+
+export const getSingleProductVariantId = (id) => {
+    console.log(id, "idddd1111111111111111111111111111111111");
+    return dispatch => {
+        dispatch({
+            type: GET_SINGLEPRODUCT_VARIANT_ID,
+            payload: id
+        });
+       
+           
     };
 };

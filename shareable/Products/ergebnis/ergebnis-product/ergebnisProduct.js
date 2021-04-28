@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ErgebnisProduct() {
   const parfumTypes = [
@@ -63,7 +61,13 @@ export default function ErgebnisProduct() {
       {parfumData.map((item, index) => {
         return (
           <div className="ergebnis__product__parfum" key={index}>
-            <Image src={item.img} alt="Picture" width={1720} height={900} />
+            <Image
+              src={item.img}
+              alt="Picture"
+              width={1720}
+              height={1000}
+              objectFit="cover"
+            />
             <div
               className={`ergebnis__product__parfum__card ${
                 index % 2 === 0 ? "product__card__left" : "product__card__right"
@@ -74,9 +78,27 @@ export default function ErgebnisProduct() {
               <p>{item.description}</p>
               <span>{item.parfum}</span>
               <h5>{item.price}</h5>
-              <button>QUICK SHOP
-              <FontAwesomeIcon icon={faShoppingBag} />
-
+              <button>
+                QUICK SHOP
+                <img src="/bag.svg" className="bag" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  viewBox="0 0 512 512"
+                  color="black"
+                  style={{
+                    fill: "none",
+                    strokeMiterlimit: "10",
+                    strokeWidth: "32px",
+                    width: "25px",
+                  }}
+                  className={"letter-svg"}
+                >
+                  <circle cx="176" cy="416" r="16" />
+                  <circle cx="400" cy="416" r="16" />
+                  <polyline points="48 80 112 80 160 352 416 352" />
+                  <path d="M160,288H409.44a8,8,0,0,0,7.85-6.43l28.8-144a8,8,0,0,0-7.85-9.57H128" />
+                </svg>
               </button>
             </div>
           </div>

@@ -15,6 +15,8 @@ export default function MobileNotFound() {
             width={940}
             height={624.7}
             className="image"
+            objectFit="cover"
+
           />
         </div>
         <p>

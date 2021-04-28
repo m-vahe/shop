@@ -29,6 +29,8 @@ export default function NotFound() {
           width={940}
           height={624.7}
           className="image"
+          objectFit="cover"
+
         />
       </div>
     </div>

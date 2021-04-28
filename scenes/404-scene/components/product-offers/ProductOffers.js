@@ -51,7 +51,13 @@ export default function ProductOffers() {
         {cards.map((item, index) => {
           return (
             <div className="offers__container__cards__card" key={index}>
-              <Image src={item.img} alt="Picture" width={587} height={325} />
+              <Image
+                src={item.img}
+                alt="Picture"
+                width={488}
+                height={305}
+                objectFit="cover"
+              />
               <h2>{item.title}</h2>
               <p>{item.description}</p>
 

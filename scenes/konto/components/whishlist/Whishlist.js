@@ -18,7 +18,7 @@ const WhishList = () => {
     };
 
     const favouriteClickHandler = id => {
-        dispatch(addToWishList(id));
+        dispatch(addToWishList(id,variantId));
     };
 
     return(

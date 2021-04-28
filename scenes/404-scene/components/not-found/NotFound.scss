@@ -10,10 +10,11 @@
   &__notFound__text {
     margin-right: 12.3rem;
     h2 {
-      font-size: 4.5rem;
-      font-weight: normal;
+      font-size: 4.4rem;
+      font-weight: 450;
       font-stretch: normal;
       font-style: normal;
+      line-height: 1.38;
       letter-spacing: 1.6px;
       text-align: left;
       color: #3e3e3e;
@@ -27,7 +28,7 @@
       }
     }
     span {
-      font-size: 10.8rem;
+      font-size: 10.5rem;
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
@@ -46,13 +47,13 @@
     p {
       margin-top: 3.5rem;
       font-size: 2.5rem;
-      font-weight: normal;
+      font-weight: 500;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.74;
       letter-spacing: 0.92px;
       text-align: left;
-      color: #3e3e3e;
+      color: #7e7d7d;
 
       @media screen and(max-width: 1478px) {
         font-size: 2rem;
@@ -88,9 +89,10 @@
         font-size: 3.2rem;
         padding-right: 8px;
         padding-left: 70px;
-        font-weight: normal;
+        font-weight: 450;
         text-align: left;
         margin-right: 4rem;
+        
 
         @media screen and(max-width: 1478px) {
           font-size: 2.5rem;
@@ -103,12 +105,12 @@
       }
     }
     button {
-      padding: 5px 10px 4px 18px;
+      padding: 6px 11px 4px 19px;
       background-color: #080808;
       color: #ffffff;
       font-style: normal;
       letter-spacing: 5px;
-      font-size: 2.7rem;
+      font-size: 2.6rem;
       border: none;
 
       @media screen and(max-width: 1478px) {

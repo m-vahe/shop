@@ -1,13 +1,15 @@
 import {
     GET_SINGLEPRODUCT_STYLE_TEXT,
     SET_DATA_LOADED,
-    SET_ERROR
+    SET_ERROR,
+    GET_SINGLEPRODUCT_VARIANT_ID
 } from "../action-types/single-product";
 
 const initialState = {
     styles:[],
     stylesLoaded:true,
-    error:""
+    error: "",
+    singleProductVariantId: null,
 };
 
 const singleProductPageReducer = (state = initialState, { type, payload }) => {
@@ -29,6 +31,12 @@ const singleProductPageReducer = (state = initialState, { type, payload }) => {
                 ...state,
                 error: payload,
                 stylesLoaded: false
+            }
+
+            case GET_SINGLEPRODUCT_VARIANT_ID:
+            return {
+                ...state,
+                singleProductVariantId: payload,
             }
         default:
             return state;

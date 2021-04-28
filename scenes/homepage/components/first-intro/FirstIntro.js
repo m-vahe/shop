@@ -9,7 +9,6 @@ const FirstIntro = () =>{
     const homepageIntro = HPFS.find(p => p.position === 'HomePage');
 
 
-
     return(
         <>
             <div className={"first-intro "}>

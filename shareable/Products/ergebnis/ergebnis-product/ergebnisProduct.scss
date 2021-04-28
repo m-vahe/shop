@@ -69,6 +69,7 @@
         text-align: center;
         color: #000000;
         margin: 0 2rem 2rem 2rem;
+        cursor: pointer;
 
         @media screen and(max-width: 1024px) {
           font-size: 1.7rem;
@@ -208,14 +209,37 @@
         text-align: left;
         color: #2e2e2e;
         margin-top: 2rem;
+
+        .bag {
+          width: 2rem;
+          margin-left: 0.9rem;
+          display: none;
+          @media screen and(max-width: 1024px) {
+            display: inline-block;
+          }
+
+          @media screen and(max-width: 500px) {
+           width: 1.7rem;
+          }
+        }
+
+        .letter-svg {
+          stroke: #2e2e2e;
+          margin-left: -4px;
+          margin-bottom: -5px;
+          @media screen and(max-width: 1024px) {
+            display: none;
+          }
+        }
+
         @media screen and(max-width: 1024px) {
-          font-size: 1.6rem;
-          padding: 4px 11.5px 4px 11px;
+          font-size: 1.4rem;
+          padding: 5px 4.5px 4px 11px;
           margin-top: 0.5rem;
         }
         @media screen and(max-width: 500px) {
           font-size: 1.1rem;
-          padding: 4px 11.5px 4px 11px;
+          padding: 4px 4.5px 3px 11px;
           margin-top: 0.5rem;
         }
       }
