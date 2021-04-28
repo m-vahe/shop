@@ -9,7 +9,7 @@ const initialState = {
     styles:[],
     stylesLoaded:true,
     error: "",
-    singleProductVariantId: null,
+    singleProductVariantId: "",
 };
 
 const singleProductPageReducer = (state = initialState, { type, payload }) => {

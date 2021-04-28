@@ -1,23 +1,35 @@
 import { Select } from "antd";
 import { useDispatch } from "react-redux";
 import { getSingleProductVariantId } from '../../services/actions/single-product';
+import {useEffect} from "react";
 
 
-const ShareableSelect = ({ defaultValue, value, data, setBottleId }) => {
+const ShareableSelect = ({ defaultValue, value, data, setBottleId,product }) => {
   const { Option } = Select;
   const dispatch = useDispatch();
+  let defaultVariant= []
 
+  useEffect(()=>{
+    // dispatch(getSingleProductVariantId(defaultValue[0]?.id))
+    console.log(defaultValue,"8888888-----888888")
+  },[])
   function handleChange(value) {
     dispatch(getSingleProductVariantId(value));
-
     setBottleId(value);
-    console.log("value,", value);
-    console.log(`selected ${value}`);
   }
-
+  if(product) {
+    if (product.variants_of_a_products.length === 1) {
+      defaultVariant = [...product.variants_of_a_products]
+    } else {
+      defaultVariant = product.variants_of_a_products.filter((item) => {
+        return item.main === true;
+      })
+    }
+  }
   return (
     <Select
-      defaultValue={defaultValue}
+      defaultValue={defaultVariant[0]?.bottle_sizes}
+      value={defaultValue}
       size={value}
       style={{ width: 120 }}
       onChange={handleChange}

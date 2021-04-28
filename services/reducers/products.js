@@ -83,7 +83,7 @@ const productsReducer = (state = initialState, { type, payload }) => {
         ...state,
         products: state.products.map((p) => {
           if (p.id === payload.id) {
-            p.favorit = payload.isFavourite;
+            // p.favorit = payload.isFavourite;
             p.variants_of_a_products.map((i) => {
               if (i.id === payload.variant_id) {
                 i.favorite = payload.isFavourite;
