@@ -27,7 +27,6 @@ export const getSingleProductText = () => {
 
 
 export const getSingleProductVariantId = (id) => {
-    console.log(id, "idddd1111111111111111111111111111111111");
     return dispatch => {
         dispatch({
             type: GET_SINGLEPRODUCT_VARIANT_ID,

@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/actions/single-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/single-product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/select/ShareableSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/select/ShareableSelect.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +167,8 @@
       <workItem from="1617863705427" duration="621000" />
       <workItem from="1619090352576" duration="5588000" />
       <workItem from="1619162212871" duration="14000" />
+      <workItem from="1619594686088" duration="18905000" />
+      <workItem from="1619680146329" duration="6235000" />
     </task>
     <servers />
   </component>
