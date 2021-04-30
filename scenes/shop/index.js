@@ -24,27 +24,36 @@ const ShopScene = () =>{
     const headLoaded = useSelector(state=>state.news.newsReportLoading)
     const navlistloaded = useSelector((state) => state.navbar.navListLoaded)
     return (
-      <>
-          {
-              !headLoaded && !navlistloaded ?
-              <>
-                  <PageHeader/>
-                  <MobileHeader/>
-                  <div className={"shop-all-elements"}>
-                      <ShopHeader/>
-                      <ShopHeaderMobile/>
-                      <ShopBody/>
-                      <NewsletterRep/>
-                  </div>
-                  <Footer/>
-              </> :
-                  <div className={"loader__body"}>
-                      <Space size="middle">
-                          <Spin size="large" />
-                      </Space>
-                  </div>
-          }
-      </>
+      // <>
+      //     {
+      //         !headLoaded && !navlistloaded ?
+      //         <>
+      //             <PageHeader/>
+      //             <MobileHeader/>
+      //             <div className={"shop-all-elements"}>
+      //                 <ShopHeader/>
+      //                 <ShopHeaderMobile/>
+      //
+      //
+      //
+      //                 <ShopBody/>
+      //                 <NewsletterRep/>
+      //             </div>
+      //             <Footer/>
+      //         </> :
+      //             <div className={"loader__body"}>
+      //                 <Space size="middle">
+      //                     <Spin size="large" />
+      //                 </Space>
+      //             </div>
+      //     }
+      // </>
+
+        <h1 style={{width:"90.5%",margin:"0 auto"}}>
+            We are working on this part now
+            <br/>
+            We have this content, but it has some errors , so we closed it in server
+        </h1>
   )
 }
 
