@@ -36,10 +36,10 @@ const SingleProduct = ({elem, favouriteClickHandler, filter}) => {
                             }
                             className={"item-picture"}
                             alt=""
-                            onClick={() => toProductPage(elem.id)}
+                            onClick={() => toProductPage(elem?.id)}
                         />
                     )}
-                    {!elem.approoved && (
+                    {!elem?.approoved && (
                         <img
                             src="/15-layers.png"
                             alt="15 layers"
@@ -54,14 +54,14 @@ const SingleProduct = ({elem, favouriteClickHandler, filter}) => {
                         viewBox="0 0 512 512"
                         className={"letter-svg heart-icon-item"}
                         onClick={() =>
-                            favouriteClickHandler(elem.id, elem.variants_of_a_products[0].id)
+                            favouriteClickHandler(elem?.id, elem?.variants_of_a_products[0].id)
                         }
-                        style={elem.variants_of_a_products[0].favorite ? {stroke: "#000000"} : {stroke: "#7b7b7b"}}
+                        style={elem?.variants_of_a_products[0].favorite ? {stroke: "#000000"} : {stroke: "#7b7b7b"}}
                     >
                         <path
                             d="M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z"
                             style={
-                                elem.variants_of_a_products[0].favorite
+                                elem?.variants_of_a_products[0].favorite
                                     ? {
                                         fill: "#000000",
                                         strokeMiterlimit: "10",
@@ -76,11 +76,11 @@ const SingleProduct = ({elem, favouriteClickHandler, filter}) => {
                         />
                     </svg>
                 </div>
-                {moment(new Date()).format("YYYY-MM-DD") <= elem.New_Date_Limit ?
+                {moment(new Date()).format("YYYY-MM-DD") <= elem?.New_Date_Limit ?
                     <span className={'item-new'}>New</span> :
                     <span className={'item-notNew'}>New</span>}
                 {/**/}
-                {elem.clean_product ? (
+                {elem?.clean_product ? (
                     <span className={"prod-txt-head"}>Clean product</span>
                 ) : (
                     <span className={"prod-txt-head"} style={{opacity: "0"}}>

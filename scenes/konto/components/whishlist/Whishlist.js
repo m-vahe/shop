@@ -1,13 +1,13 @@
 import SingleProduct from "../../../../shareable/Products/SingleProduct";
-import { useState, useEffect } from "react";
-import { getUserWishlist, addToWishList } from '../../../../services/actions/products';
-import { useDispatch, useSelector } from 'react-redux';
+import {useState, useEffect} from "react";
+import {getUserWishlist, addToWishList} from '../../../../services/actions/products';
+import {useDispatch, useSelector} from 'react-redux';
 import ModalWhishlist from "./components/Modal";
 import {getUserDataFromLocalStorage} from "../../../../services/actions/auth";
 
 const WhishList = () => {
     const dispatch = useDispatch();
-    const { favouriteProducts } = useSelector(state => state.products);
+    const {favouriteProducts} = useSelector(state => state.products);
 
     useEffect(() => {
         dispatch(getUserDataFromLocalStorage());
@@ -15,15 +15,16 @@ const WhishList = () => {
     }, []);
 
     const [show, setShow] = useState(false)
-    const showModal = () =>{
+    const showModal = () => {
         setShow(!show);
     };
 
-    const favouriteClickHandler = (id,variantId) => {
-        dispatch(addToWishList(id,variantId)).then(dispatch(getUserWishlist()));
-    };
+    const favouriteClickHandler = (id, variantId) => {
+        dispatch(addToWishList(id, variantId))
 
-    return(
+    };
+    const favouriteProductsLoading = useSelector(state => state.products.favouriteProductsLoading)
+    return (
         <div className={"whishlist__container"}>
             <div className={"whishlist__container__text"}>
                 <h2>Deine wishlist</h2>
@@ -38,13 +39,13 @@ const WhishList = () => {
                 <ModalWhishlist show={show} setShow={setShow}/>
             </div>
             <div className={"whishlist__container__products"}>
-                {favouriteProducts.map((e, i) => {
+                {favouriteProductsLoading ? <p>Loading</p> : favouriteProducts.map((e, i) => {
                     return (
                         <div key={i}>
-                            <SingleProduct 
+                            <SingleProduct
                                 elem={e}
                                 favouriteClickHandler={favouriteClickHandler}
-                             />
+                            />
                         </div>
                     );
                 })}

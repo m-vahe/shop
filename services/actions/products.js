@@ -88,9 +88,9 @@ export const addToWishList = (product, variantId) => {
                     payload: {
                         id: product,
                         variant_id: variantId,
-                        isFavourite: data.isFavorite,
                         data:data
                     },
+
                 });
 
                 return product;
@@ -113,7 +113,6 @@ export const getUserWishlist = () => {
             })
             .then((res) => {
                 const {data} = res;
-                console.log(data,7777888999666)
                 dispatch({type: SET_FAVOURITES_PRODUCTS, payload: data});
             })
             .catch((err) => dispatch({type: SET_ERROR, payload: err}));
