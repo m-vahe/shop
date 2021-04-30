@@ -12,12 +12,14 @@ import {
   GET_EIGHT_PRODUCTS_WITH_FILTER,
   GET_SINGLE_PRODUCT_DATA,
   SET_PRODUCT_SINGLE_LOADED,
+  SET_PRODUCTS_TWO,
 } from "../action-types/products";
 
 const initialState = {
   productLoading: false,
   favouriteProductsLoading: false,
   products: [],
+  products2:[],
   favouriteProducts: [],
   productsError: null,
   productsWithLeftTextLoading: false,
@@ -65,6 +67,14 @@ const productsReducer = (state = initialState, { type, payload }) => {
         ...state,
         productLoading: false,
         products: payload,
+
+      };
+    case SET_PRODUCTS_TWO:
+      return {
+        ...state,
+        productLoading: false,
+        products2: payload,
+
       };
     case GET_PRODUCTS_PAGE_DATA:
       return {
@@ -83,13 +93,14 @@ const productsReducer = (state = initialState, { type, payload }) => {
         ...state,
         products: state.products.map((p) => {
           if (p.id === payload.id) {
-            // p.favorit = payload.isFavourite;
-            p.variants_of_a_products.map((i) => {
-              if (i.id === payload.variant_id) {
-                i.favorite = payload.isFavourite;
-              }
-              return i;
-            });
+            p = payload.data
+          }
+
+          return p;
+        }),
+        products2: state.products2.map((p) => {
+          if (p.id === payload.id) {
+            p = payload.data
           }
 
           return p;

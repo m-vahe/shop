@@ -17,6 +17,7 @@ const SingleProductHeaderMobile = () => {
     const dispatch = useDispatch();
 
     const {singleProduct} = useSelector((state) => state.products);
+    console.log(singleProduct, "singleProduct")
     const {isAuthenticated} = useSelector((state) => state.auth);
     const singleProductVariantId = useSelector((state) => state.singleProdPage.singleProductVariantId)
     const [defaultVariant, setDefaultVariant] = useState([])
@@ -72,19 +73,34 @@ const SingleProductHeaderMobile = () => {
     const onChanges = () => {
     };
 
-    const toggleVariantAsfavourite = (id, variantId) => {
-        if (!isAuthenticated) {
-            return router.push("/login");
-        }
-        dispatch(addToWishList(id, variantId)).then((res) => dispatch(getSingleProduct(router.query.id)));
-    };
 
     useEffect(() => {
         setDefaultVariant(singleProduct?.variants_of_a_products.filter(item => item.main === true))
     }, [])
     useEffect(() => {
-        setDefaultVariant(singleProduct?.variants_of_a_products.filter(item => item.id === singleProductVariantId), 777777)
+        setDefaultVariant(singleProduct?.variants_of_a_products.filter(item => item.id === singleProductVariantId))
     }, [singleProductVariantId])
+
+    let variantId = []
+
+    if (singleProduct.variants_of_a_products.length === 1) {
+        variantId = [...singleProduct.variants_of_a_products]
+    } else {
+        variantId = singleProduct.variants_of_a_products.filter((item) => {
+            return item.main === true;
+        })
+    }
+
+    const toggleVariantAsfavourite = (id, variantId, defaultId) => {
+        if (!isAuthenticated) {
+            return router.push("/login");
+        }
+        if (variantId === undefined) {
+            dispatch(addToWishList(id, defaultId[0].id)).then((res) => dispatch(getSingleProduct(router.query.id)));
+        } else {
+            dispatch(addToWishList(id, variantId)).then((res) => dispatch(getSingleProduct(router.query.id)));
+        }
+    };
     return (
         <>
             <div className={"single-product-header-mobile"}>
@@ -152,38 +168,45 @@ const SingleProductHeaderMobile = () => {
                                 viewBox="0 0 512 512"
                                 className={"letter-svg heart-icon-item"}
                                 style={
-                                    !bottleId ? singleProduct?.variants_of_a_products?.find(item => item.id === defaultVariant[0]?.id)?.favorite
-                                        ? {stroke: "#000000" }
-                                        : {stroke: "#7b7b7b"} : singleProduct?.variants_of_a_products?.find(item => item.id === bottleId)?.favorite
-                                        ? {stroke: "#000000"}
-                                        : {stroke: "#7b7b7b"}
+                                    !singleProduct?.variants_of_a_products?.find(item => item.id === singleProductVariantId) ?
+                                        singleProduct?.variants_of_a_products?.find(item => item.id === variantId[0].id).favorite ?
+                                            {stroke: "#000000"}
+                                            : {stroke: "#7b7b7b"} :
+                                        singleProduct?.variants_of_a_products?.find(item => item.id === singleProductVariantId)?.favorite ?
+                                            {stroke: "#000000"}
+                                            : {stroke: "#7b7b7b"}
                                 }
-                                onClick={() => toggleVariantAsfavourite(singleProduct.id, !bottleId ? defaultVariant[0]?.id : bottleId)}
+                                onClick={() => {
+                                    toggleVariantAsfavourite(singleProduct.id, !bottleId ? defaultVariant[0]?.id : bottleId, variantId)
+                                    console.log(singleProduct, "***********//////////////")
+                                }}
                             >
                                 <path
                                     d="M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z"
                                     style={
-                                        !bottleId ? singleProduct?.variants_of_a_products?.find(item => item.id === defaultVariant[0]?.id)?.favorite
-                                            ? {
-                                                fill: "#000000",
-                                                strokeMiterlimit: "10",
-                                                strokeWidth: "32px",
-                                            }
-                                            : {
-                                                fill: "none",
-                                                strokeMiterlimit: "10",
-                                                strokeWidth: "32px",
-                                            } : singleProduct?.variants_of_a_products?.find(item => item.id === bottleId)?.favorite
-                                            ? {
-                                                fill: "#000000",
-                                                strokeMiterlimit: "10",
-                                                strokeWidth: "32px",
-                                            }
-                                            : {
-                                                fill: "none",
-                                                strokeMiterlimit: "10",
-                                                strokeWidth: "32px",
-                                            }
+                                        !singleProduct?.variants_of_a_products?.find(item => item.id === singleProductVariantId) ?
+                                            singleProduct?.variants_of_a_products?.find(item => item.id === variantId[0].id).favorite ?
+                                                {
+                                                    fill: "#000000",
+                                                    strokeMiterlimit: "10",
+                                                    strokeWidth: "32px",
+                                                }
+                                                : {
+                                                    fill: "none",
+                                                    strokeMiterlimit: "10",
+                                                    strokeWidth: "32px",
+                                                } :
+                                            singleProduct?.variants_of_a_products?.find(item => item.id === singleProductVariantId)?.favorite
+                                                ? {
+                                                    fill: "#000000",
+                                                    strokeMiterlimit: "10",
+                                                    strokeWidth: "32px",
+                                                }
+                                                : {
+                                                    fill: "none",
+                                                    strokeMiterlimit: "10",
+                                                    strokeWidth: "32px",
+                                                }
                                     }
                                 />
                             </svg>

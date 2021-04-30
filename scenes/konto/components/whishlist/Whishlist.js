@@ -3,12 +3,14 @@ import { useState, useEffect } from "react";
 import { getUserWishlist, addToWishList } from '../../../../services/actions/products';
 import { useDispatch, useSelector } from 'react-redux';
 import ModalWhishlist from "./components/Modal";
+import {getUserDataFromLocalStorage} from "../../../../services/actions/auth";
 
 const WhishList = () => {
     const dispatch = useDispatch();
     const { favouriteProducts } = useSelector(state => state.products);
 
     useEffect(() => {
+        dispatch(getUserDataFromLocalStorage());
         dispatch(getUserWishlist());
     }, []);
 
@@ -17,8 +19,8 @@ const WhishList = () => {
         setShow(!show);
     };
 
-    const favouriteClickHandler = id => {
-        dispatch(addToWishList(id,variantId));
+    const favouriteClickHandler = (id,variantId) => {
+        dispatch(addToWishList(id,variantId)).then(dispatch(getUserWishlist()));
     };
 
     return(

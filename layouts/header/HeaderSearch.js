@@ -10,6 +10,7 @@ import {useDispatch,useSelector} from "react-redux";
 import {getHeaderContacts} from "../../services/actions/homepage__stable"
 import CartSidebar from "../cartSidebar/CartSidebar";
 import HeaderLoginPopup from "./modal/HeaderLoginPopup";
+import {getUserDataFromLocalStorage} from "../../services/actions/auth";
 
 const HeaderSearch = () => {
     const [languages, setLanguages] = useState([
@@ -25,6 +26,7 @@ const HeaderSearch = () => {
 
     useEffect(()=>{
         dispatch(getHeaderContacts())
+        dispatch(getUserDataFromLocalStorage())
     },[])
 
     const [visible,setVisible] = useState(false)
@@ -169,8 +171,6 @@ const HeaderSearch = () => {
 
 export default HeaderSearch;
 
-
-//one
 
 
 

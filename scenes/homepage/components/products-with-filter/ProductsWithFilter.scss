@@ -20,6 +20,9 @@
         position: relative;
         margin-bottom: 5rem;
         .item-picture {
+          max-width: 275px;
+          height: 41rem;
+          object-fit: cover;
           width: 100%;
         }
 
@@ -340,6 +343,9 @@
       position: relative;
       margin-bottom: 5rem;
       .item-picture {
+        max-width: 275px;
+        height: 41rem;
+        object-fit: cover;
         width: 100%;
       }
       .circled-txt {

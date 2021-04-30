@@ -46,7 +46,7 @@ const LeftProductImages = ({elem}) => {
                     <div className={"about-product-main-img-body"}>
                         <div className={"product-page-image-head"}>
                             <img
-                                src={productVariant[0]?.images[0]?.url ? productVariant[0]?.images[0].url : image}
+                                src={productVariant[0]?.images[0]?.url ? productVariant[0]?.images[0]?.url : image}
                                 alt="product"
                                 className={"main-pic"}
                                 onClick={() => {
@@ -96,7 +96,7 @@ const LeftProductImages = ({elem}) => {
                     </div>
                     <div className={"bottom_three-images-body"}>
                         {productVariant[0]?.images.filter((item) => {
-                            return item.id !== defaultVariant[0]?.images[0]?.id;
+                            return item.id !== productVariant[0]?.images[0]?.id;
                         }).map((e, i) => {
                             return (
                                 <div className={"bottom-three-images"} key={i}>

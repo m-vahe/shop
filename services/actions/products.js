@@ -1,6 +1,7 @@
 import {
     GET_PRODUCTS,
     SET_PRODUCTS,
+    SET_PRODUCTS_TWO,
     SET_ERROR,
     SWITCH_TO_FAVOURITE,
     GET_FAVOURITES_PRODUCTS,
@@ -10,16 +11,16 @@ import {
     GET_PRODUCTS_WITH_FILTER,
     GET_EIGHT_PRODUCTS_WITH_FILTER,
     GET_SINGLE_PRODUCT_DATA,
-    SET_PRODUCT_SINGLE_LOADED, SET_SINGLE_PRODUCT_SELECTED,
+    SET_PRODUCT_SINGLE_LOADED,
 } from "../action-types/products";
 import axios from "axios";
 
-export const getProducts = (limit = 3) => {
+export const getProducts = () => {
     return (dispatch) => {
         dispatch({type: GET_PRODUCTS});
 
         axios
-            .get(`${process.env.NEXT_PUBLIC_API_URL}/products?_limit=${limit}`, {
+            .get(`${process.env.NEXT_PUBLIC_API_URL}/findByLimit/3`, {
                 headers: {
                     Authorization: JSON.parse(localStorage.getItem("userData") || "{}")
                         .jwt
@@ -40,12 +41,33 @@ export const getProducts = (limit = 3) => {
             .catch((err) => dispatch({type: SET_ERROR, payload: err}));
     };
 };
+export const getProductsTwo = () => {
+    return (dispatch) => {
+        dispatch({type: GET_PRODUCTS});
 
+        axios
+            .get(`${process.env.NEXT_PUBLIC_API_URL}/findByLimit/3`, {
+                headers: {
+                    Authorization: JSON.parse(localStorage.getItem("userData") || "{}")
+                        .jwt
+                        ? `Bearer ${
+                            JSON.parse(localStorage.getItem("userData") || "{}").jwt || ""
+                        }`
+                        : "",
+                },
+            })
+            .then((res) => {
+                const {data} = res;
+
+                dispatch({
+                    type: SET_PRODUCTS_TWO,
+                    payload: data,
+                });
+            })
+            .catch((err) => dispatch({type: SET_ERROR, payload: err}));
+    };
+};
 export const addToWishList = (product, variantId) => {
-    // console.log(product);
-    // console.log(variantId);
-
-
     return (dispatch) => {
         return axios
             .post(
@@ -67,6 +89,7 @@ export const addToWishList = (product, variantId) => {
                         id: product,
                         variant_id: variantId,
                         isFavourite: data.isFavorite,
+                        data:data
                     },
                 });
 
@@ -90,6 +113,7 @@ export const getUserWishlist = () => {
             })
             .then((res) => {
                 const {data} = res;
+                console.log(data,7777888999666)
                 dispatch({type: SET_FAVOURITES_PRODUCTS, payload: data});
             })
             .catch((err) => dispatch({type: SET_ERROR, payload: err}));

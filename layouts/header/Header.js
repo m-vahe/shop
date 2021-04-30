@@ -11,18 +11,26 @@ const Header = () => {
   useEffect(() => {
     dispatch(getHeaderTexts());
   }, []);
-  
+  function firstTextFunction() {
+    return {
+      __html: headerText1
+    };
+  }
+  function secondTextFunction() {
+    return {
+      __html: headerText2
+    };
+  }
   return (
     <>
       <header>
         <div className="page-header-top-black">
-          <span className="col-lg-12">
-            {headerText1}
+          <span className="col-lg-12" dangerouslySetInnerHTML={firstTextFunction()}>
           </span>
         </div>
         <div className="page-header-top-grey">
-          <span className="col-lg-12">
-            {headerText2}
+          <span className="col-lg-12" dangerouslySetInnerHTML={secondTextFunction()}>
+
           </span>
         </div>
         <HeaderSearch />

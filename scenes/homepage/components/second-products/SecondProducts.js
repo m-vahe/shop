@@ -1,16 +1,16 @@
 import {useState, useEffect} from "react";
 import ProductsWithLeftText from "../../../../shareable/Products/PorductsWithLeftText";
-import { getProducts, addToWishList } from '../../../../services/actions/products';
+import { addToWishList, getProductsTwo} from '../../../../services/actions/products';
 import {useDispatch, useSelector} from "react-redux";
 
-const SecondProducts = ({getFour}) =>{
+const SecondProducts = ({}) =>{
     const dispatch = useDispatch();
 
-    const prdcts = useSelector(state => state?.products?.products);
+    const prdcts = useSelector(state => state?.products?.products2);
     const productsWithLeftText = useSelector(state => state?.products?.productsWithLeftText);
     const [leftText, setLeftText] = useState({});
     useEffect(()=>{
-        dispatch(getProducts(3));
+        dispatch(getProductsTwo());
     }, []);
 
     useEffect(() => {
@@ -23,7 +23,6 @@ const SecondProducts = ({getFour}) =>{
                 products = {prdcts}
                 leftText={leftText}
                 addToWishList={addToWishList}
-                getFour={getFour}
             />
         </>
     )

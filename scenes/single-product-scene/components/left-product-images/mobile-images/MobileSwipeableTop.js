@@ -23,19 +23,21 @@ const MobileSwipeableCarousel = ({ imagesData, elem }) => {
     });
   }
 
-  
     let [productVariant, setProductVariant] = useState(defaultVariant);
-    let images = productVariant[0]?.images?.length > 0 ? productVariant[0]?.images : elem?.images;
 
-  useEffect(() => {
-    if (singleProductVariantId !== null) {
-      setProductVariant(
-        elem.variants_of_a_products.filter((item) => {
-          return item.id === singleProductVariantId;
-        })
-      );
-    }
-  }, [singleProductVariantId]);
+    useEffect(() => {
+        if (singleProductVariantId !== "") {
+            setProductVariant(
+                elem.variants_of_a_products.filter((item) => {
+                    return item.id === singleProductVariantId;
+                })
+            );
+        }
+    }, [singleProductVariantId]);
+
+    let images = productVariant[0]?.images.length === 0 ? elem?.images : productVariant[0]?.images;
+
+
 
     return(
         <>
@@ -51,11 +53,11 @@ const MobileSwipeableCarousel = ({ imagesData, elem }) => {
                             <SwiperSlide key = {i} >
                                 <div className={"swiper-element-main"}>
                                     <p className={"new-swiper-el"}
-                                        
+
                                        style={elem?.New_Date_Limit <
-                                             moment(new Date()).format("YYYY-MM-DD") ?
-                                             {backgroundColor:"transparent"} :
-                                             {backgroundColor:"black"}}
+                                       moment(new Date()).format("YYYY-MM-DD") ?
+                                           {backgroundColor:"transparent"} :
+                                           {backgroundColor:"black"}}
                                     >
                                         New
                                     </p>
@@ -63,15 +65,15 @@ const MobileSwipeableCarousel = ({ imagesData, elem }) => {
                                         elem?.clean_product ?
                                             {opacity:"1"}
                                             : {opacity:"0"}
-                                        }
+                                    }
                                     >
                                         Clean Product
                                     </p>
                                     <p className={"swiper-limited"}
                                        style={
-                                        elem?.limited_edition ?
-                                            {opacity:"1"}
-                                            : {opacity:"0"}
+                                           elem?.limited_edition ?
+                                               {opacity:"1"}
+                                               : {opacity:"0"}
                                        }
                                     >Limited Edition</p>
                                     <div className={"swiper-images-body"}>

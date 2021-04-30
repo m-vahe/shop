@@ -9,19 +9,25 @@ import NewsLetter from "./components/newsletter/NewsLetter";
 import Lesezeichen from "./components/lesezeichen/Lesezeichen";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import {useEffect} from "react"
-import {useDispatch} from "react-redux"
+import {useDispatch, useSelector} from "react-redux"
 import {getUserDataFromLocalStorage} from "../../services/actions/auth"
 import {getKontoMainBoxesData} from "../../services/actions/konto";
 const Konto = () => {
   const dispatch = useDispatch()
-  
+  const authData = useSelector(state => state.auth);
+
   useEffect(() => {
     dispatch(getUserDataFromLocalStorage());
     dispatch(getKontoMainBoxesData())
   }, []);
 
-
+  useEffect(() => {
+    if (!authData?.isAuthenticated) {
+      router.push('/');
+    }
+  }, [authData]);
   const router = useRouter()
+  console.log(authData)
   return (
     <>
       <div className='konto'>

@@ -12,9 +12,10 @@ const FirstProducts = ({getFour}) => {
     const [leftText, setLeftText] = useState({});
 
     useEffect(()=>{
-        dispatch(getProducts(3));
-    }, [authData?.isAuthenticated]);
-
+        dispatch(getProducts());
+    }, []);
+    useEffect(()=>{
+    },[prdcts])
     useEffect(() => {
         setLeftText(productsWithLeftText.find(pr => pr.position === 'HomePageOne'));
     }, [productsWithLeftText]);
