@@ -12,13 +12,13 @@ const ShareableSelect = ({defaultValue, value, data, setBottleId, product}) => {
         dispatch(getSingleProductVariantId(value));
         setBottleId(value);
     }
-    if (product.variants_of_a_products.length === 1) {
-        defaultVariant = [...product.variants_of_a_products]
+    if (product?.variants_of_a_products.length === 1) {
+        defaultVariant = [...product?.variants_of_a_products]
     } else {
-        defaultVariant = product.variants_of_a_products.filter((item) => {
+        defaultVariant = product?.variants_of_a_products?.filter((item) => {
             return item.main === true;
         })
-        getSingleProductVariantId(product.variants_of_a_products.filter((item) => {
+        getSingleProductVariantId(product?.variants_of_a_products?.filter((item) => {
             return item.main === true;
         })[0].id)
     }

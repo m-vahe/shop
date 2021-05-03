@@ -17,7 +17,6 @@ const SingleProductHeader = () => {
     const dispatch = useDispatch();
 
     const {singleProduct} = useSelector((state) => state.products);
-    console.log(singleProduct,"singleProduct")
     const {isAuthenticated} = useSelector((state) => state.auth);
     const singleProductVariantId = useSelector((state) => state.singleProdPage.singleProductVariantId)
     const [defaultVariant, setDefaultVariant] = useState([])

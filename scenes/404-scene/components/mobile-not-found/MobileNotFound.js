@@ -1,8 +1,19 @@
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getNotFoundData } from "../../../../services/actions/not_found_page";
 
 export default function MobileNotFound() {
+  // const dispatch = useDispatch();
+  // const { notFoundData } = useSelector((state) => state.notFoundReduser);
+  // console.log('%c 🍼️ notFoundData: ', 'font-size:20px;background-color: #42b983;color:#fff;', notFoundData);
+
+  // useEffect(() => {
+  //   dispatch(getNotFoundData());
+  // }, []);
+
   return (
     <div className="mobile__container">
       <div className="mobile__container__notFound__text">
@@ -16,7 +27,6 @@ export default function MobileNotFound() {
             height={624.7}
             className="image"
             objectFit="cover"
-
           />
         </div>
         <p>
