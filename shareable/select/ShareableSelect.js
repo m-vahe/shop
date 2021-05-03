@@ -1,13 +1,10 @@
 import {Select} from "antd";
 import {useDispatch} from "react-redux";
 import {getSingleProductVariantId} from '../../services/actions/single-product';
-
-
 const ShareableSelect = ({defaultValue, value, data, setBottleId, product}) => {
     const {Option} = Select;
     const dispatch = useDispatch();
     let defaultVariant = []
-
     const handleChange = (value) => {
         dispatch(getSingleProductVariantId(value));
         setBottleId(value);
@@ -40,5 +37,4 @@ const ShareableSelect = ({defaultValue, value, data, setBottleId, product}) => {
         </Select>
     );
 };
-
 export default ShareableSelect;
