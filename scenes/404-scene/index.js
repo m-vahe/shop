@@ -10,11 +10,14 @@ import MobileNotFound from "./components/mobile-not-found/MobileNotFound";
 import {getUserDataFromLocalStorage} from "../../services/actions/auth"
 import {useDispatch} from "react-redux";
 import {useEffect} from "react";
+import {getNotFoundData} from "../../services/actions/not_found_page";
 const ErrorScene = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getUserDataFromLocalStorage());
+        dispatch(getNotFoundData())
     }, []);
+
   return (
     <>
       <Header />

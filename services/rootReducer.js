@@ -24,7 +24,7 @@ const rootReducer = combineReducers({
     registration: RegistrationReducer,
     versandarten: versandartenReducer,
     contact: ContactReducer,
-    notFoundReduser : notFoundReduser
+    notFoundReducer : notFoundReduser
 });
 
 export default rootReducer;

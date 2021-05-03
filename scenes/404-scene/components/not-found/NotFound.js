@@ -7,21 +7,21 @@ import { getNotFoundData } from "../../../../services/actions/not_found_page";
 
 export default function NotFound() {
 
-  const dispatch = useDispatch();
-  const {notFoundData,loading}  = useSelector((state) => state.notFoundReduser);
-  
-  useEffect(() => {
-    dispatch(getNotFoundData());
-  }, []);
-  console.log('%c 🌮 loading: ', 'font-size:20px;background-color: #7F2B82;color:#fff;', loading);
+  // const dispatch = useDispatch();
+  const {notFoundData}  = useSelector((state) => state.notFoundReducer);
+  //
+  // useEffect(() => {
+  //   dispatch(getNotFoundData());
+  // }, []);
+  // console.log('%c 🌮 loading: ', 'font-size:20px;background-color: #7F2B82;color:#fff;', loading);
 
   return (
     <div className="container">
       <div className="container__notFound__text">
-        <h2>{notFoundData?.section1.title}</h2>
+        <h2>{notFoundData?.section1?.title}</h2>
         <span>404</span>
         <p>
-          {notFoundData?.section1.description}
+          {notFoundData?.section1?.description}
         </p>
 
         <div>
@@ -32,8 +32,9 @@ export default function NotFound() {
       </div>
 
       <div>
+          {/*<img src={notFoundData?.section1?.images?.url} alt=""/>*/}
         <Image
-          src={notFoundData?.section1.images.url}
+          src={notFoundData?.section1?.images.url || "/item.png"}
           alt="Picture"
           width={940}
           height={624.7}
