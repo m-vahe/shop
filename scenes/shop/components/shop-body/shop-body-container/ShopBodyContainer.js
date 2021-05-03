@@ -1,314 +1,74 @@
-import React, { useState } from 'react';
-import SingleProduct from '../../../../../shareable/Products/SingleProduct';
+import React, {useEffect, useRef, useState} from 'react';
 import PagePagination from '../../../../../shareable/pagination/Pagination';
 import InfoContainer from '../../../../../shareable/info-container/InfoContainer';
 import ShopDescription from './shop-description/ShopDescription';
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {addToWishList} from "../../../../../services/actions/products";
+import {useRouter} from "next/router";
+import ShopSingleProduct from "../../../../../shareable/Products/ShopSingleProduct";
 
 const ShopBodyContainer = () => {
-  const [data, setData] = useState([
-    {
-      id: 0,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 1,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 2,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 3,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 4,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 5,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 6,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 7,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 8,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 9,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 10,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 11,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 12,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 13,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 14,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 15,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 16,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 17,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 18,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 19,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-    {
-      id: 20,
-      productHead: 'Clean product',
-      productHead2: 'Limited edition',
-      productName: 'Ylumi',
-      productTextFoot: 'Energy Kapseln',
-      productTextFoot2: 'Kapseln',
-      price: '28,00 €',
-      new: true,
-      approoved: true,
-      images: [{url:'/item.png'}],
-      heart: false,
-    },
-  ]);
-  const news = useSelector(({ news }) => news);
-  const  shopHeadTwo = news.newsReports.find(n => n.position === 'ShopPageTwo');
-  const  shopHeadThree = news.newsReports.find(n => n.position === 'ShopPageThree');
-  return (
-    <div className='shop-right-body'>
-      <div className='__products'>
-        {data.map((e, i) => {
-          return (
-            <div key={i}>
-              <SingleProduct elem={e} products={data} setData={setData} />
+    const dispatch = useDispatch()
+    const router = useRouter()
+
+    const news = useSelector(({news}) => news);
+    const shopHeadTwo = news.newsReports.find(n => n.position === 'ShopPageTwo');
+    const shopHeadThree = news.newsReports.find(n => n.position === 'ShopPageThree');
+    const productsData = useSelector(state => state.shop.shopProducts)
+    const {isAuthenticated} = useSelector((state) => state.auth);
+    const favouriteClickHandler = (id, variantId) => {
+        if (!isAuthenticated) {
+            return router.push("/login");
+        }
+        dispatch(addToWishList(id, variantId))
+    };
+    const [minValue, setMinValue] = useState(0)
+    const [maxValue, setMaxValue] = useState(21)
+    const [current,setCurrent] = useState(1)
+    const scrollToref = useRef()
+
+    const handleChange = value => {
+        setCurrent(value)
+        if (value <= 1) {
+            setMinValue(0)
+            setMaxValue(21)
+        } else {
+            setMinValue((value - 1) * 21)
+            setMaxValue(value*21)
+        }
+    };
+
+    useEffect(()=>{
+        scrollToref.current.scrollIntoView();
+    },[current])
+
+    return (
+        <div className='shop-right-body' ref={scrollToref}>
+            <div className='__products' >
+                {productsData &&
+                productsData.length > 0 &&
+                productsData.slice(minValue, maxValue).map((e, i) => {
+                    return (
+                        <div key={i}>
+                            <ShopSingleProduct elem={e} favouriteClickHandler={favouriteClickHandler}/>
+                        </div>
+                    );
+                })}
+                <InfoContainer
+                    className='middleInfoContainer'
+                    textData={shopHeadTwo}
+                />
+                <InfoContainer
+                    className='bottomInfoContainer'
+                    textData={shopHeadThree}
+                />
             </div>
-          );
-        })}
-        <InfoContainer
-          className='middleInfoContainer'
-          textData = {shopHeadTwo}
-        />
-        <InfoContainer
-          className='bottomInfoContainer'
-          textData ={shopHeadThree}
-        />
-      </div>
-        <div className='shop-desc-body'>
-          <PagePagination />
-          <ShopDescription />
+            <div className='shop-desc-body'>
+                <PagePagination handleChange={handleChange} totalSize ={productsData.length} current={current}/>
+                <ShopDescription/>
+            </div>
         </div>
-    </div>
-  );
+    );
 };
 
 export default ShopBodyContainer;

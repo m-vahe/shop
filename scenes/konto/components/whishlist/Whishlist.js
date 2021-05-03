@@ -8,7 +8,7 @@ import {getUserDataFromLocalStorage} from "../../../../services/actions/auth";
 const WhishList = () => {
     const dispatch = useDispatch();
     const {favouriteProducts} = useSelector(state => state.products);
-
+    const { isAuthenticated } = useSelector((state) => state.auth);
     useEffect(() => {
         dispatch(getUserDataFromLocalStorage());
         dispatch(getUserWishlist());
@@ -20,8 +20,10 @@ const WhishList = () => {
     };
 
     const favouriteClickHandler = (id, variantId) => {
+        if (!isAuthenticated) {
+            return router.push("/login");
+        }
         dispatch(addToWishList(id, variantId))
-
     };
     const favouriteProductsLoading = useSelector(state => state.products.favouriteProductsLoading)
     return (
