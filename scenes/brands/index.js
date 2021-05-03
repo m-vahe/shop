@@ -30,7 +30,7 @@ const BrandsScene = () =>{
         dispatch(getUserDataFromLocalStorage());
     }, []);
     useEffect(()=>{
-        dispatch(getProducts(3));
+        dispatch(getProducts());
     }, [authData?.isAuthenticated]);
 
     return(

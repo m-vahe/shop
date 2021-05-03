@@ -13,6 +13,7 @@ import {
     GET_SINGLE_PRODUCT_DATA,
     SET_PRODUCT_SINGLE_LOADED,
     SET_PRODUCTS_TWO,
+    GET_PRODUCTS_WITH_FILTER_TWO
 } from "../action-types/products";
 
 const initialState = {
@@ -25,6 +26,7 @@ const initialState = {
     productsWithLeftTextLoading: false,
     productsWithLeftText: [],
     productsWithFilter: [],
+    productsWithFilter2: [],
     productsWithFilterLoaded: true,
     productsPageData: [],
     productsPageDataLoaded: true,
@@ -56,6 +58,12 @@ const productsReducer = (state = initialState, {type, payload}) => {
                 ...state,
                 productsWithFilterLoaded: false,
                 productsWithFilter: payload,
+            };
+        case GET_PRODUCTS_WITH_FILTER_TWO:
+            return {
+                ...state,
+                productsWithFilterLoaded: false,
+                productsWithFilter2: payload,
             };
         case GET_PRODUCTS:
             return {
@@ -106,11 +114,16 @@ const productsReducer = (state = initialState, {type, payload}) => {
 
                     return p;
                 }),
-                productsWithFilter: state.productsWithFilter.map((p) => {
+                productsWithFilter: state.productsWithFilter.payload.array.map((p) => {
                     if (p.id === payload.id) {
-                        p.favorit = payload.isFavourite;
+                        p = payload.data;
                     }
-
+                    return p;
+                }),
+                productsWithFilter2: state.productsWithFilter2.payload.array.map((p) => {
+                    if (p.id === payload.id) {
+                        p = payload.data;
+                    }
                     return p;
                 }),
 

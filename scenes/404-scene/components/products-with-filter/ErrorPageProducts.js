@@ -19,7 +19,7 @@ const ErrorPageProducts = () => {
             <div className='product__with__filter'>
                 <ProductsWithFilter
                     headtext={headtext}
-                    position={"HomePage"}
+                    position={"NotFoundPage"}
                     getProductsWithFilter={getProductsWithFilter}
                 />
             </div>

@@ -3,8 +3,6 @@ import {getProductsWithFilter} from "../../../../services/actions/products";
 
 const ProductsWithFilterHomepage = () => {
   const headtext = 'Männerpflege';
-
-
   return (
     <div className='product__with__filter'>
       <ProductsWithFilter

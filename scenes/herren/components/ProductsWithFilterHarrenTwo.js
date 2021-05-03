@@ -1,5 +1,5 @@
 import ProductsWithFilter from "../../../shareable/ProductsWithFilter";
-import {getEightProductsWithFilter} from "../../../services/actions/products";
+import {getProductsWithFilterSecond} from "../../../services/actions/products";
 
 const ProductsWithFilterHarrenTwo = () =>{
     const headtext = "Männerpflege"
@@ -11,8 +11,8 @@ const ProductsWithFilterHarrenTwo = () =>{
             <ProductsWithFilter
                 headtext={headtext}
                 gridTemplateColumns={gridTemplateColumns} autoFlow ={autoflow} gap = {gap}
-                position={"HerrenPageOne"}
-                getProductsWithFilter={getEightProductsWithFilter}
+                position={"HerrenPageTwo"}
+                getProductsWithFilter={getProductsWithFilterSecond}
             />
         </>
     )

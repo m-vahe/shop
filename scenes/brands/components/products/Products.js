@@ -17,7 +17,7 @@ const BrandsProducts = ({ products, addToWishList, getFour }) => {
       return router.push("/login");
     }
 
-    dispatch(addToWishList(id, variantId)).then((res) => dispatch(getFour()));
+    dispatch(addToWishList(id, variantId))
   };
 
   const toProductPage = (e) => {
@@ -64,10 +64,10 @@ const BrandsProducts = ({ products, addToWishList, getFour }) => {
                       viewBox="0 0 512 512"
                       className={"letter-svg heart-icon-item"}
                       onClick={() =>
-                        addToFavorites(e.id, e.variants_of_a_products)
+                        addToFavorites(e.id, e.variants_of_a_products.find(item=>item.main === true).id)
                       }
                       style={
-                        e.favorit
+                        e.variants_of_a_products.find(item=>item.main === true).favorite
                           ? { stroke: "#000000" }
                           : { stroke: "#7b7b7b" }
                       }
@@ -75,7 +75,7 @@ const BrandsProducts = ({ products, addToWishList, getFour }) => {
                       <path
                         d="M352.92,80C288,80,256,144,256,144s-32-64-96.92-64C106.32,80,64.54,124.14,64,176.81c-1.1,109.33,86.73,187.08,183,252.42a16,16,0,0,0,18,0c96.26-65.34,184.09-143.09,183-252.42C447.46,124.14,405.68,80,352.92,80Z"
                         style={
-                          e.favorit
+                          e.variants_of_a_products.find(item=>item.main === true).favorite
                             ? {
                                 fill: "#000000",
                                 strokeMiterlimit: "10",
@@ -125,7 +125,7 @@ const BrandsProducts = ({ products, addToWishList, getFour }) => {
                     </span>
                   )}
                   <h3 className={"prod-txt-price"}>
-                    {formatter.format(e.price || 0)}
+                    {formatter.format( e.variants_of_a_products.find(item=>item.main === true).price || 0)}
                   </h3>
 
                   <button>
