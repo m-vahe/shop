@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/services/action-types/shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/actions/shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/reducers/shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shareable/select/ShareableShopSelect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/registration/components/registration-form/RegistrationForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-header/ShopBodyHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-header/ShopBodyHeader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/shop/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/mobile-images/MobileSwipeableTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/mobile-images/MobileSwipeableTop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shareable/select/ShareableSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/select/ShareableSelect.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -51,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../next-js-application-01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/services/reducers" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -60,10 +61,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Mihran\Desktop\shop\scenes\registration\components\registration-info\info-icons" />
-      <recent name="C:\Users\Mihran\Desktop\shop\services\action-types" />
       <recent name="C:\Users\Mihran\Desktop\shop\services\reducers" />
       <recent name="C:\Users\Mihran\Desktop\shop\services\actions" />
+      <recent name="C:\Users\Mihran\Desktop\shop\scenes\registration\components\registration-info\info-icons" />
+      <recent name="C:\Users\Mihran\Desktop\shop\services\action-types" />
       <recent name="C:\Users\Mihran\Desktop\shop\public\registrationicons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -171,7 +172,8 @@
       <workItem from="1619162212871" duration="14000" />
       <workItem from="1619594686088" duration="18905000" />
       <workItem from="1619680146329" duration="21205000" />
-      <workItem from="1619765943387" duration="22636000" />
+      <workItem from="1619765943387" duration="22737000" />
+      <workItem from="1620025647308" duration="1811000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,7 @@
 import { Select } from 'antd';
 import React from 'react';
 import ShareableSelect from '../../../../../shareable/select/ShareableSelect';
+import ShareableShopSelect from "../../../../../shareable/select/ShareableShopSelect";
 
 const ShopBodyHeader = ({onChange}) => {
   const count = 517;
@@ -27,11 +28,11 @@ const ShopBodyHeader = ({onChange}) => {
           {children}
         </Select>
       </div>
-      {/*<div className='shopBodyHeader__container__selects'>*/}
-      {/*  <ShareableSelect defaultValue='PRIES'/>*/}
-      {/*  <ShareableSelect defaultValue='NAME'/>*/}
-      {/*  <ShareableSelect defaultValue='NEU'/>*/}
-      {/*</div>*/}
+      <div className='shopBodyHeader__container__selects'>
+        <ShareableShopSelect defaultValue='PRIES'/>
+        <ShareableShopSelect defaultValue='NAME'/>
+        <ShareableShopSelect defaultValue='NEU'/>
+      </div>
     </div>
   );
 };

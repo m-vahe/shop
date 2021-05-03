@@ -30,7 +30,7 @@ const ShareableSelect = ({defaultValue, value, data, setBottleId, product}) => {
             style={{width: 120}}
             onChange={handleChange}
         >
-            {data?.variants_of_a_products.map((e, i) => {
+            {data?.variants_of_a_products?.map((e, i) => {
                 return (
                     <Option key={i} value={e?.id}>
                         {e?.bottle_sizes}

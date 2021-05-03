@@ -1,0 +1,3 @@
+export const GET_SHOP_PRODUCTS = "GET_SHOP_PRODUCTS"
+export const SET_SHOP_PRODUCTS = "SET_SHOP_PRODUCTS"
+export const SET_ERROR = "SET_ERROR"
