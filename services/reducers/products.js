@@ -115,8 +115,6 @@ const productsReducer = (state = initialState, {type, payload}) => {
                 }),
 
                 favouriteProducts: state.favouriteProducts.filter(e => !(e.id === payload.id && e.variants_of_a_products[0].id === payload.variant_id))
-                // favouriteProducts: console.log(.filter(k=>k?.variants_of_a_products[0]?.id !== payload?.variant_id))
-                // favouriteProducts: state.favouriteProducts.filter((item) => item?.id !== payload?.id).filter(k=>k?.variants_of_a_products[0]?.id === payload?.variant_id)
             };
         case GET_FAVOURITES_PRODUCTS: {
             return {
