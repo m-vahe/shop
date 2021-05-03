@@ -1,12 +1,12 @@
 import * as notFoundTypes from "../action-types/not_found_page";
 
 const initialState = {
-  loading: false,
+  loading: true,
   error: null,
   notFoundData: null,
 };
 
-const notFoundReduser = (state = initialState, { type, payload }) => {
+const notFoundReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case notFoundTypes.LOADER:
       return {
@@ -33,4 +33,4 @@ const notFoundReduser = (state = initialState, { type, payload }) => {
   }
 };
 
-export default notFoundReduser;
+export default notFoundReducer;

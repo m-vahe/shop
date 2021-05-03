@@ -10,7 +10,7 @@ import kontoPageReducer from "./reducers/konto";
 import RegistrationReducer from "./reducers/registration";
 import versandartenReducer from "./reducers/versandarten";
 import ContactReducer from "./reducers/contact";
-import notFoundReduser from './reducers/not_found_page';
+import notFoundReducer from './reducers/not_found_page';
 
 const rootReducer = combineReducers({
     navbar: homeReducer,
@@ -24,7 +24,7 @@ const rootReducer = combineReducers({
     registration: RegistrationReducer,
     versandarten: versandartenReducer,
     contact: ContactReducer,
-    notFoundReducer : notFoundReduser
+    notFoundReducer : notFoundReducer
 });
 
 export default rootReducer;

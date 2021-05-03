@@ -1,58 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 export default function ProductOffers() {
-  const cards = [
-    {
-      img: "/productbotleft.png",
-      title: "NEUIGKEITEN",
-      description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-      category: "ZUR KATEGORIE",
-    },
-    {
-      img: "/productbotleft.png",
-      title: "NEUIGKEITEN",
-      description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-      category: "ZUR KATEGORIE",
-    },
-    {
-      img: "/productbotleft.png",
-      title: "NEUIGKEITEN",
-      description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-      category: "ZUR KATEGORIE",
-    },
-    {
-      img: "/productbotleft.png",
-      title: "NEUIGKEITEN",
-      description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-      category: "ZUR KATEGORIE",
-    },
-    {
-      img: "/productbotleft.png",
-      title: "NEUIGKEITEN",
-      description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
-      category: "ZUR KATEGORIE",
-    },
-  ];
-
+  const { notFoundData } = useSelector((state) => state.notFoundReducer);
+  
   return (
     <div className="offers__container">
       <div className="offers__container__title">
-        <h2>IHRE SUCHE WAR NICHT ERFOLGREICH?</h2>
-        <p>SCHAUEN SIE SICH GERNE IN UNSEREM SHOP UM!</p>
+        <h2>{notFoundData?.section2?.title}</h2>
+        <p>{notFoundData?.section2?.subtitle}</p>
       </div>
 
       <div className="offers__container__cards">
-        {cards.map((item, index) => {
+        {notFoundData?.section3?.map((item, index) => {
           return (
             <div className="offers__container__cards__card" key={index}>
               <Image
-                src={item.img}
+                src={item.image.url }
                 alt="Picture"
                 width={488}
                 height={305}
@@ -61,8 +26,8 @@ export default function ProductOffers() {
               <h2>{item.title}</h2>
               <p>{item.description}</p>
 
-              <Link href="/">
-                <a>{item.category}</a>
+              <Link href={`${notFoundData?.section3?.link}`}>
+                <a>ZUR KATEGORIE</a>
               </Link>
             </div>
           );

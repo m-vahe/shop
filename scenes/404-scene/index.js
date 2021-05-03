@@ -10,8 +10,13 @@ import MobileNotFound from "./components/mobile-not-found/MobileNotFound";
 import {getUserDataFromLocalStorage} from "../../services/actions/auth"
 import {useDispatch} from "react-redux";
 import {useEffect} from "react";
-import {getNotFoundData} from "../../services/actions/not_found_page";
+import { getNotFoundData } from "../../services/actions/not_found_page";
+import {Space, Spin} from "antd";
+import {  useSelector } from "react-redux";
+
 const ErrorScene = () => {
+  const {loading}  = useSelector((state) => state.notFoundReducer);
+
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getUserDataFromLocalStorage());
@@ -20,15 +25,23 @@ const ErrorScene = () => {
 
   return (
     <>
-      <Header />
-      <MobileHeader />
-      <NotFound />
-      <MobileNotFound />
-      <ProductOffers />
-      <ErrorPageProducts />
-      <Services />
-      <NewsletterRep padding={"20px"}/>
-      <Footer />
+    {loading ?  <div className={"loader__body"}>
+                      <Space size="middle">
+                          <Spin size="large" />
+                      </Space>
+      </div> : <>
+                   <Header />
+                   <MobileHeader />
+                   <NotFound />
+                   <MobileNotFound />
+                   <ProductOffers />
+                   <ErrorPageProducts />
+                   <Services />
+                   <NewsletterRep padding={"20px"}/>
+          <Footer />
+          </>
+                  }
+     
     </>
   );
 };

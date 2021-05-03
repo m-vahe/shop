@@ -1,20 +1,12 @@
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getNotFoundData } from "../../../../services/actions/not_found_page";
+import {  useSelector } from "react-redux";
 
 export default function NotFound() {
 
-  // const dispatch = useDispatch();
   const {notFoundData}  = useSelector((state) => state.notFoundReducer);
-  //
-  // useEffect(() => {
-  //   dispatch(getNotFoundData());
-  // }, []);
-  // console.log('%c 🌮 loading: ', 'font-size:20px;background-color: #7F2B82;color:#fff;', loading);
-
+  
   return (
     <div className="container">
       <div className="container__notFound__text">
@@ -32,7 +24,6 @@ export default function NotFound() {
       </div>
 
       <div>
-          {/*<img src={notFoundData?.section1?.images?.url} alt=""/>*/}
         <Image
           src={notFoundData?.section1?.images.url || "/item.png"}
           alt="Picture"

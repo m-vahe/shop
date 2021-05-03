@@ -1,19 +1,11 @@
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getNotFoundData } from "../../../../services/actions/not_found_page";
+import {  useSelector } from "react-redux";
 
 export default function MobileNotFound() {
-  // const dispatch = useDispatch();
-  // const { notFoundData } = useSelector((state) => state.notFoundReduser);
-  // console.log('%c 🍼️ notFoundData: ', 'font-size:20px;background-color: #42b983;color:#fff;', notFoundData);
-
-  // useEffect(() => {
-  //   dispatch(getNotFoundData());
-  // }, []);
-
+  const { notFoundData } = useSelector((state) => state.notFoundReducer);
+  
   return (
     <div className="mobile__container">
       <div className="mobile__container__notFound__text">
@@ -21,8 +13,8 @@ export default function MobileNotFound() {
 
         <div>
           <Image
-            src="/productbotleft.png"
-            alt="Picture"
+          src={notFoundData?.section1?.images.url || "/item.png"}
+          alt="Picture"
             width={940}
             height={624.7}
             className="image"
@@ -30,10 +22,7 @@ export default function MobileNotFound() {
           />
         </div>
         <p>
-          Die Seite zu diesem Link existiert nicht, wurde umgezogen oder
-          gelöscht. Überprüfen sie Ihre eingabe oder nutzen sie unsere
-          seiteninterne Suchfunktion. Gerne können sie auch Kontakt mit uns
-          aufnehmen.
+        {notFoundData?.section1?.description}
         </p>
         <div>
           <div>
