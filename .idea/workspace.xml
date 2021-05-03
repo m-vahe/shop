@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/services/action-types/brands-products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/actions/brands-products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/reducers/brands-products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/404-scene/components/products-with-filter/ErrorPageProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/404-scene/components/products-with-filter/ErrorPageProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/brands/components/products/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/products/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/brands/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilterHarrenTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/herren/components/ProductsWithFilterHarrenTwo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-container/ShopBodyContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/shop/components/shop-body/shop-body-container/ShopBodyContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/actions/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/reducers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/reducers/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/ShopSingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ShopSingleProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +172,7 @@
       <workItem from="1619594686088" duration="18905000" />
       <workItem from="1619680146329" duration="21205000" />
       <workItem from="1619765943387" duration="22737000" />
-      <workItem from="1620025647308" duration="19035000" />
+      <workItem from="1620025647308" duration="20703000" />
     </task>
     <servers />
   </component>

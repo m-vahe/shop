@@ -6,6 +6,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {addToWishList} from "../../../../../services/actions/products";
 import {useRouter} from "next/router";
 import ShopSingleProduct from "../../../../../shareable/Products/ShopSingleProduct";
+import {getShopProducts} from "../../../../../services/actions/shop";
 
 const ShopBodyContainer = () => {
     const dispatch = useDispatch()
@@ -42,12 +43,13 @@ const ShopBodyContainer = () => {
         scrollToref.current.scrollIntoView();
     },[current])
 
+    useEffect(()=>{
+        console.log(productsData)
+    },[productsData])
     return (
         <div className='shop-right-body' ref={scrollToref}>
             <div className='__products' >
-                {productsData &&
-                productsData.length > 0 &&
-                productsData.slice(minValue, maxValue).map((e, i) => {
+                {productsData.map((e, i) => {
                     return (
                         <div key={i}>
                             <ShopSingleProduct elem={e} favouriteClickHandler={favouriteClickHandler}/>

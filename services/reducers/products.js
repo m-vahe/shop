@@ -114,13 +114,13 @@ const productsReducer = (state = initialState, {type, payload}) => {
 
                     return p;
                 }),
-                productsWithFilter: state.productsWithFilter.payload.array.map((p) => {
+                productsWithFilter: state.productsWithFilter?.payload?.array?.map((p) => {
                     if (p.id === payload.id) {
                         p = payload.data;
                     }
                     return p;
                 }),
-                productsWithFilter2: state.productsWithFilter2.payload.array.map((p) => {
+                productsWithFilter2: state.productsWithFilter2?.payload?.array?.map((p) => {
                     if (p.id === payload.id) {
                         p = payload.data;
                     }

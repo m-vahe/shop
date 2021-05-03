@@ -1,15 +1,12 @@
 import {useRouter} from "next/router";
 import moment from "moment";
-
 const formatter = new Intl.NumberFormat("de-DE", {
     style: "currency",
     currency: "EUR",
     minimumFractionDigits: 2,
 });
-
 const ShopSingleProduct = ({elem, favouriteClickHandler, filter}) => {
     const router = useRouter();
-
     const toProductPage = (e) => {
         if (router.pathname !== "/products") {
             router.push(`/products/${e}`);
@@ -17,7 +14,6 @@ const ShopSingleProduct = ({elem, favouriteClickHandler, filter}) => {
             router.push(e);
         }
     };
-
     const toApproved = () => {
         router.push("/magazinartikelone");
     };
@@ -111,7 +107,6 @@ const ShopSingleProduct = ({elem, favouriteClickHandler, filter}) => {
                 <h3 className={"prod-txt-price"}>
                     {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0)}
                 </h3>
-
                 <button>
                     <p>Quick shop </p>
                     <svg
@@ -137,5 +132,4 @@ const ShopSingleProduct = ({elem, favouriteClickHandler, filter}) => {
         </>
     );
 };
-
 export default ShopSingleProduct;

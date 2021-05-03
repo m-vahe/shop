@@ -5,16 +5,13 @@ import {
     SET_LOADED
 } from "../action-types/shop";
 import {SWITCH_TO_FAVOURITE} from "../action-types/products";
-
 const initialState = {
     shopProducts:[],
     shopProductsLoaded:true,
     error:null
 };
-
 const shopPageReducer = (state = initialState, {type, payload}) => {
     switch (type) {
-
         case GET_SHOP_PRODUCTS:
             return {
                 ...state,
@@ -25,9 +22,7 @@ const shopPageReducer = (state = initialState, {type, payload}) => {
                 ...state,
                 shopProductsLoaded: false,
                 shopProducts: payload,
-
             };
-
         case SET_ERROR:
             return {
                 ...state,
@@ -49,5 +44,4 @@ const shopPageReducer = (state = initialState, {type, payload}) => {
             return state;
     }
 };
-
 export default shopPageReducer;

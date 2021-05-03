@@ -89,7 +89,7 @@ export const addToWishList = (product, variantId,array) => {
                         id: product,
                         variant_id: variantId,
                         data:data,
-                        array:array
+                        array:array || ""
                     },
 
                 });
