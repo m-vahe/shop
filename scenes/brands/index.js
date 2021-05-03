@@ -20,17 +20,33 @@ import PressReviews from "./components/press-reviews/PressReviews";
 import Partners from "./components/partners/Partners";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import {getUserDataFromLocalStorage} from "../../services/actions/auth";
+import {
+    getBrandsProductsFive,
+    getBrandsProductsFour,
+    getBrandsProductsOne,
+    getBrandsProductsThree,
+    getBrandsProductsTwo
+} from "../../services/actions/brands-products";
 const BrandsScene = () =>{
     const dispatch = useDispatch()
-    const prdcts = useSelector(state => state?.products?.products);
+    const productOne = useSelector(state => state?.brand.productOne);
+    const productTwo = useSelector(state => state?.brand.productTwo);
+    const productThree = useSelector(state => state?.brand.productThree);
+    const productFour = useSelector(state => state?.brand.productFour);
+    const productFive = useSelector(state => state?.brand.productFive);
     const productsWithLeftText = useSelector(state => state?.products?.productsWithLeftText);
     const authData = useSelector(state => state.auth);
 
     useEffect(() => {
         dispatch(getUserDataFromLocalStorage());
+        dispatch(getBrandsProductsOne());
+        dispatch(getBrandsProductsTwo());
+        dispatch(getBrandsProductsThree());
+        dispatch(getBrandsProductsFour());
+        dispatch(getBrandsProductsFive())
     }, []);
     useEffect(()=>{
-        dispatch(getProducts());
+
     }, [authData?.isAuthenticated]);
 
     return(
@@ -41,34 +57,34 @@ const BrandsScene = () =>{
                 <BrandsHeader/>
                 <SummaryAdds/>
                 <Products
-                    products = {prdcts}
+                    products = {productOne}
                     addToWishList={addToWishList}
                     getFour={getProductsWithFilter}
                 />
                 <BrandPortrait/>
                 <Products
-                    products = {prdcts}
+                    products = {productTwo}
                     addToWishList={addToWishList}
                     getFour={getProductsWithFilter}
                 />
                 <ActiveIngredients/>
                 <CareProducts/>
                 <Products
-                    products = {prdcts}
+                    products = {productThree}
                     addToWishList={addToWishList}
                     getFour={getProductsWithFilter}
                 />
                 <Application/>
                 <Points/>
                 <Products
-                    products = {prdcts}
+                    products = {productFour}
                     addToWishList={addToWishList}
                     getFour={getProductsWithFilter}
                 />
                 <PressReviews/>
                 <Partners/>
                 <Products
-                    products = {prdcts}
+                    products = {productFive}
                     addToWishList={addToWishList}
                     getFour={getProductsWithFilter}
                 />

@@ -4,6 +4,7 @@ import {
     GET_BRANDS_PRODUCTS_ONE, GET_BRANDS_PRODUCTS_THREE, GET_BRANDS_PRODUCTS_TWO, SET_BRANDS_PRODUCTS_FOUR,
     SET_BRANDS_PRODUCTS_ONE, SET_BRANDS_PRODUCTS_THREE,
     SET_BRANDS_PRODUCTS_TWO,
+    GET_BRANDS_PRODUCTS_FIVE,SET_BRANDS_PRODUCTS_FIVE,
     SET_ERROR
 } from "../action-types/brands-products";
 
@@ -109,6 +110,34 @@ export const getBrandsProductsFour = () => {
 
                 dispatch({
                     type: SET_BRANDS_PRODUCTS_FOUR,
+                    payload: data,
+                });
+            })
+            .catch((err) => dispatch({type: SET_ERROR, payload: err}));
+    };
+};
+
+
+export const getBrandsProductsFive = () => {
+    return (dispatch) => {
+        dispatch({type: GET_BRANDS_PRODUCTS_FIVE});
+
+        axios
+            .get(`${process.env.NEXT_PUBLIC_API_URL}/findByLimit/3`, {
+                headers: {
+                    Authorization: JSON.parse(localStorage.getItem("userData") || "{}")
+                        .jwt
+                        ? `Bearer ${
+                            JSON.parse(localStorage.getItem("userData") || "{}").jwt || ""
+                        }`
+                        : "",
+                },
+            })
+            .then((res) => {
+                const {data} = res;
+
+                dispatch({
+                    type: SET_BRANDS_PRODUCTS_FIVE,
                     payload: data,
                 });
             })

@@ -1,4 +1,11 @@
 import {SWITCH_TO_FAVOURITE} from "../action-types/products";
+import {
+    GET_BRANDS_PRODUCTS_FIVE,
+    GET_BRANDS_PRODUCTS_FOUR,
+    GET_BRANDS_PRODUCTS_ONE, GET_BRANDS_PRODUCTS_THREE,
+    GET_BRANDS_PRODUCTS_TWO, SET_BRANDS_PRODUCTS_FIVE, SET_BRANDS_PRODUCTS_FOUR,
+    SET_BRANDS_PRODUCTS_ONE, SET_BRANDS_PRODUCTS_THREE, SET_BRANDS_PRODUCTS_TWO, SET_ERROR
+} from "../action-types/brands-products";
 
 const initialState = {
     productOne:[],
@@ -9,26 +16,67 @@ const initialState = {
     productThreeLoaded:true,
     productFour:[],
     productFourLoaded:true,
+    productFive:[],
+    productFiveLoaded:true,
 };
 
 const brandsProductsReducer = (state = initialState, {type, payload}) => {
     switch (type) {
-
-
-        case GET_PRODUCTS:
+        case GET_BRANDS_PRODUCTS_ONE:
             return {
                 ...state,
-                productLoading: true,
+                productOneLoaded: true,
             };
-        case SET_PRODUCTS:
+        case SET_BRANDS_PRODUCTS_ONE:
             return {
                 ...state,
-                productLoading: false,
-                products: payload,
-
+                productOneLoaded: false,
+                productOne: payload,
             };
-
-
+        case GET_BRANDS_PRODUCTS_TWO:
+            return {
+                ...state,
+                productTwoLoaded: true,
+            };
+        case SET_BRANDS_PRODUCTS_TWO:
+            return {
+                ...state,
+                productTwoLoaded: false,
+                productTwo: payload,
+            };
+        case GET_BRANDS_PRODUCTS_THREE:
+            return {
+                ...state,
+                productThreeLoaded: true,
+            };
+        case SET_BRANDS_PRODUCTS_THREE:
+            return {
+                ...state,
+                productThreeLoaded: false,
+                productThree: payload,
+            };
+        case GET_BRANDS_PRODUCTS_FOUR:
+            return {
+                ...state,
+                productFourLoaded: true,
+            };
+        case SET_BRANDS_PRODUCTS_FOUR:
+            return {
+                ...state,
+                productFourLoaded: false,
+                productFour: payload,
+            };
+        case GET_BRANDS_PRODUCTS_FIVE:
+            return {
+                ...state,
+                productFiveLoaded: true,
+            };
+        case SET_BRANDS_PRODUCTS_FIVE:
+            return {
+                ...state,
+                productFiveLoaded: false,
+                productFive: payload,
+            };
         case SET_ERROR:
             return {
                 ...state,
@@ -62,6 +110,13 @@ const brandsProductsReducer = (state = initialState, {type, payload}) => {
                 }),
                 productFourLoaded: false,
                 productFour: state.productFour.map((p) => {
+                    if (p.id === payload.id) {
+                        p = payload.data;
+                    }
+                    return p;
+                }),
+                productFiveLoaded: false,
+                productFive: state.productFive.map((p) => {
                     if (p.id === payload.id) {
                         p = payload.data;
                     }

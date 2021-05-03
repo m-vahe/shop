@@ -12,6 +12,7 @@ import versandartenReducer from "./reducers/versandarten";
 import ContactReducer from "./reducers/contact";
 import notFoundReducer from "./reducers/not_found_page";
 import shopPageReducer from "./reducers/shop";
+import brandsProductsReducer from "./reducers/brands-products";
 
 const rootReducer = combineReducers({
   navbar: homeReducer,
@@ -27,6 +28,7 @@ const rootReducer = combineReducers({
   contact: ContactReducer,
   notFoundReducer: notFoundReducer,
   shop: shopPageReducer,
+  brand: brandsProductsReducer
 });
 
 export default rootReducer;
