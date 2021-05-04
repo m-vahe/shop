@@ -6,24 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/brands.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/brands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/brands/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/brands/components/header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/header/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/brands/components/summary-adds/SummaryAdds.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/summary-adds/SummaryAdds.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/brands/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/products-with-filter/ProductsWithFilter.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/typentest/steps/step4/StepFour.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/typentest/steps/step4/StepFour.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/brands-products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/brands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/actions/brands-products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/brands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/actions/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/brands-products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/brands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ProductsWithLeftText.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +168,7 @@
       <workItem from="1619680146329" duration="21205000" />
       <workItem from="1619765943387" duration="22737000" />
       <workItem from="1620025647308" duration="22303000" />
-      <workItem from="1620109010073" duration="18552000" />
+      <workItem from="1620109010073" duration="18805000" />
     </task>
     <servers />
   </component>

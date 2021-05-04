@@ -4,7 +4,7 @@ const SummaryAdds = ({data}) => {
     return (
         <div className={"summary__adds"}>
             <div className={"summary__adds__img"}>
-                <img src={data.img.url} alt="/brandsHeader.png"/>
+                <img src={data.img?.url} alt="/brandsHeader.png"/>
             </div>
             <div className={"summary__adds__text"}>
                 <h3>{data.title}</h3>
@@ -17,7 +17,7 @@ const SummaryAdds = ({data}) => {
                 <span>
                     {data.text}
                 </span>
-                <Link href={data.link}>
+                <Link href={data?.link}>
                     <a href="#">
                         {data.btnTxt ? data.btnTxt: 'Mehr lesen'}
                     </a>
