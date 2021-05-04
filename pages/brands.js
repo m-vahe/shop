@@ -1,9 +1,12 @@
 import BrandsScene from "../scenes/brands";
+import {useRouter} from "next/router";
 
 const Brands = () => {
+    const router = useRouter()
+
     return (
         <>
-            <BrandsScene/>
+            <BrandsScene id={router.query}/>
         </>
     );
 };

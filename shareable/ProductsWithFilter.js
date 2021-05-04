@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import {useRouter} from 'next/router';
 import {useDispatch, useSelector} from "react-redux";
-import {addToWishList} from "../services/actions/products";
+import {addToWishList, addToWishListTwo} from "../services/actions/products";
 import moment from "moment";
 
 const formatter = new Intl.NumberFormat('de-DE', {
@@ -50,9 +50,11 @@ const ProductsWithFilter = ({
         if (!isAuthenticated) {
             return router.push("/login");
         }
-        dispatch(addToWishList(id, variantId, parfum ? "parfums" : beauty ? "beauties" : interiour ? "interieurs" : null)).then(
-            res => dispatch(getProductsWithFilter(position)),
-        )
+        if(position === "HerrenPageTwo"){
+            dispatch(addToWishListTwo(id, variantId, parfum ? "parfums" : beauty ? "beauties" : interiour ? "interieurs" : null))
+        }else{
+            dispatch(addToWishList(id, variantId, parfum ? "parfums" : beauty ? "beauties" : interiour ? "interieurs" : null))
+        }
     };
     return (
         <>
@@ -102,7 +104,7 @@ const ProductsWithFilter = ({
                 >
                     {parfum ? productsData?.parfums?.map((elem, i) => {
                         return (
-                            <div className={" first-prod-items col-lg-3"}>
+                            <div className={" first-prod-items col-lg-3"} key={i}>
                                 <div className={"picture-body-prod"}>
                                     {elem?.images && (
                                         <img
@@ -218,7 +220,7 @@ const ProductsWithFilter = ({
                         );
                     }) : beauty ? productsData?.beauties?.map((elem, i) => {
                         return (
-                            <div className={" first-prod-items col-lg-3"}>
+                            <div className={" first-prod-items col-lg-3"} key={i}>
                                 <div className={"picture-body-prod"}>
                                     {elem?.images && (
                                         <img
@@ -332,7 +334,7 @@ const ProductsWithFilter = ({
                         );
                     }) : interiour ? productsData?.interieurs?.map((elem, i) => {
                         return (
-                            <div className={" first-prod-items col-lg-3"}>
+                            <div className={" first-prod-items col-lg-3"} key={i}>
                                 <div className={"picture-body-prod"}>
                                     {elem?.images && (
                                         <img

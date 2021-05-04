@@ -11,7 +11,7 @@ import {
     GET_PRODUCTS_WITH_FILTER,
     GET_EIGHT_PRODUCTS_WITH_FILTER,
     GET_SINGLE_PRODUCT_DATA,
-    SET_PRODUCT_SINGLE_LOADED, GET_PRODUCTS_WITH_FILTER_TWO,
+    SET_PRODUCT_SINGLE_LOADED, GET_PRODUCTS_WITH_FILTER_TWO, SWITCH_TO_FAVOURITE_TWO,
 } from "../action-types/products";
 import axios from "axios";
 
@@ -90,6 +90,41 @@ export const addToWishList = (product, variantId,array) => {
                         variant_id: variantId,
                         data:data,
                         array:array || ""
+                    },
+
+                });
+
+                return product;
+            })
+            .catch((err) => dispatch({type: SET_ERROR, payload: err}));
+    };
+};
+
+export const addToWishListTwo = (product, variantId,array) => {
+    return (dispatch) => {
+        return axios
+            .post(
+                `${process.env.NEXT_PUBLIC_API_URL}/AddFavoriteProductsTheUser`,
+                {product: product, variant_id: variantId},
+                {
+                    headers: {
+                        Authorization: `Bearer ${
+                            JSON.parse(localStorage.getItem("userData") || "{}").jwt || ""
+                        }`,
+                    },
+                }
+            )
+            .then((res) => {
+                const {data} = res;
+                console.log(array)
+
+                dispatch({
+                    type: SWITCH_TO_FAVOURITE_TWO,
+                    payload: {
+                        id: product,
+                        variant_id: variantId,
+                        data:data,
+                        array:array
                     },
 
                 });

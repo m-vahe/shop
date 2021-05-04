@@ -1,12 +1,18 @@
 import axios from "axios";
 import {
     GET_BRANDS_PRODUCTS_FOUR,
-    GET_BRANDS_PRODUCTS_ONE, GET_BRANDS_PRODUCTS_THREE, GET_BRANDS_PRODUCTS_TWO, SET_BRANDS_PRODUCTS_FOUR,
-    SET_BRANDS_PRODUCTS_ONE, SET_BRANDS_PRODUCTS_THREE,
+    GET_BRANDS_PRODUCTS_ONE,
+    GET_BRANDS_PRODUCTS_THREE,
+    GET_BRANDS_PRODUCTS_TWO,
+    SET_BRANDS_PRODUCTS_FOUR,
+    SET_BRANDS_PRODUCTS_ONE,
+    SET_BRANDS_PRODUCTS_THREE,
     SET_BRANDS_PRODUCTS_TWO,
-    GET_BRANDS_PRODUCTS_FIVE,SET_BRANDS_PRODUCTS_FIVE,
-    SET_ERROR
-} from "../action-types/brands-products";
+    GET_BRANDS_PRODUCTS_FIVE,
+    SET_BRANDS_PRODUCTS_FIVE,
+    SET_ERROR, GET_BRAND_PAGE_DATA,
+    SET_BRAND_PAGE_DATA
+} from "../action-types/brands";
 
 
 export const getBrandsProductsOne = () => {
@@ -142,5 +148,22 @@ export const getBrandsProductsFive = () => {
                 });
             })
             .catch((err) => dispatch({type: SET_ERROR, payload: err}));
+    };
+};
+
+export const getBrandsPageData = (name) => {
+    return dispatch => {
+        dispatch({type: GET_BRAND_PAGE_DATA});
+
+        axios.get(`${process.env.NEXT_PUBLIC_API_URL}/brand-page-data?header_title_in=${name}`)
+            .then(res => {
+                const {data} = res;
+
+                dispatch({
+                    type: SET_BRAND_PAGE_DATA,
+                    payload: data
+                });
+            })
+            .catch(err => dispatch({type: SET_ERROR, payload: err}));
     };
 };

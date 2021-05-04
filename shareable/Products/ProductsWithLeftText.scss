@@ -16,7 +16,7 @@
     @media screen and(max-width: 1070px){
       grid-auto-flow: unset;
       grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
-      gap: 2rem;
+      gap: 6rem;
     }
   }
   .first-prod-items {
@@ -32,7 +32,7 @@
       .item-picture {
         max-width: 275px;
         height: 41rem;
-        object-fit: cover;
+        object-fit: contain;
         width: 100%;
       }
       .circled-txt {
@@ -91,8 +91,6 @@
         font-weight: 300;
         font-style: normal;
         letter-spacing: 2px;
-        text-align: left;
-        font-style: normal;
         text-transform: uppercase;
         text-align: center;
         margin: 0;
@@ -124,9 +122,7 @@
       font-weight: 300;
       font-style: normal;
       letter-spacing: 2.6px;
-      //line-height: 35px;
       text-align: center;
-      /* Text style for "Clean prod" */
       font-style: normal;
       margin-top: 20px;
       text-transform: uppercase;
@@ -138,9 +134,7 @@
       font-weight: 500;
       font-style: normal;
       letter-spacing: 0.34px;
-      //line-height: 35px;
       text-align: center;
-      /* Text style for "Limited ed" */
       font-style: normal;
 
       text-transform: uppercase;
@@ -154,9 +148,12 @@
       font-style: normal;
       letter-spacing: 3.5px;
       text-align: center;
-      /* Text style for "Ylumi" */
-      font-style: normal;
       text-transform: uppercase;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
     }
     .prod-txt-foot {
       color: #2e2e2e;

@@ -1,23 +1,21 @@
-const BrandsHeader = () => {
+import {useRouter} from "next/router";
+
+const BrandsHeader = ({data}) => {
+    const router = useRouter()
     return (
         <div className={"brands__header"}>
             <div className={"brands__header__text"}>
-                <h3>Bynacht</h3>
+                <h3>{data.title}</h3>
                 <p>
-                    Die exklusive Nachtpflege für den schönsten Luxus
-                    der Welt: Erholten Schlaf
+                    {data.head}
                 </p>
                 <span>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat.sed diam voluptua. At vero eos et accusam et justo duo dolores
-                    et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua.
+                   {data.text}
                 </span>
-                <button>Jetzt Shoppen</button>
+                <button onClick={()=>router.push("/shop")}>{data.btnTxt}</button>
             </div>
             <div className={"brands__header__img"}>
-                <img src="/brandsHeader.png" alt="/brandsHeader.png"/>
+                <img src={data.img?.url} alt="/brandsHeader.png"/>
             </div>
         </div>
     )

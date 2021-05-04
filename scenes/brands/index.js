@@ -21,22 +21,23 @@ import Partners from "./components/partners/Partners";
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import {getUserDataFromLocalStorage} from "../../services/actions/auth";
 import {
+    getBrandsPageData,
     getBrandsProductsFive,
     getBrandsProductsFour,
     getBrandsProductsOne,
     getBrandsProductsThree,
     getBrandsProductsTwo
-} from "../../services/actions/brands-products";
-const BrandsScene = () =>{
+} from "../../services/actions/brands";
+import {useRouter} from "next/router";
+import {Space, Spin} from "antd";
+
+const BrandsScene = ({id}) => {
     const dispatch = useDispatch()
     const productOne = useSelector(state => state?.brand.productOne);
     const productTwo = useSelector(state => state?.brand.productTwo);
     const productThree = useSelector(state => state?.brand.productThree);
     const productFour = useSelector(state => state?.brand.productFour);
     const productFive = useSelector(state => state?.brand.productFive);
-    const productsWithLeftText = useSelector(state => state?.products?.productsWithLeftText);
-    const authData = useSelector(state => state.auth);
-
     useEffect(() => {
         dispatch(getUserDataFromLocalStorage());
         dispatch(getBrandsProductsOne());
@@ -45,51 +46,87 @@ const BrandsScene = () =>{
         dispatch(getBrandsProductsFour());
         dispatch(getBrandsProductsFive())
     }, []);
-    useEffect(()=>{
-
-    }, [authData?.isAuthenticated]);
-
-    return(
+    useEffect(() => {
+        if (id) {
+            dispatch(getBrandsPageData(id.header_title_in))
+        }
+    }, [id]);
+    const data = useSelector(state => state.brand.brandPageData)
+    const loader = useSelector(state => state.brand.brandPageDataLoaded)
+    console.log(data)
+    return (
         <>
-            <Header/>
-            <MobileHeader/>
-            <div className={"brands__page__body"}>
-                <BrandsHeader/>
-                <SummaryAdds/>
-                <Products
-                    products = {productOne}
-                    addToWishList={addToWishList}
-                    getFour={getProductsWithFilter}
-                />
-                <BrandPortrait/>
-                <Products
-                    products = {productTwo}
-                    addToWishList={addToWishList}
-                    getFour={getProductsWithFilter}
-                />
-                <ActiveIngredients/>
-                <CareProducts/>
-                <Products
-                    products = {productThree}
-                    addToWishList={addToWishList}
-                    getFour={getProductsWithFilter}
-                />
-                <Application/>
-                <Points/>
-                <Products
-                    products = {productFour}
-                    addToWishList={addToWishList}
-                    getFour={getProductsWithFilter}
-                />
-                <PressReviews/>
-                <Partners/>
-                <Products
-                    products = {productFive}
-                    addToWishList={addToWishList}
-                    getFour={getProductsWithFilter}
-                />
-                <NewsletterRep/>            </div>
-            <Footer/>
+            {loader ?
+                <div className={"loader__body"}>
+                    <Space size="middle">
+                        <Spin size="large"/>
+                    </Space>
+                </div> :
+                <>
+                    <Header/>
+                    <MobileHeader/>
+                    <div className={"brands__page__body"}>
+                        <BrandsHeader
+                            data={{
+                                title: data?.header_title,
+                                text: data?.header_text,
+                                link: data?.header_link,
+                                img: data?.header_img,
+                                btnTxt: data?.header_btn,
+                                head: data?.header_head
+                            }}
+                        />
+                        <SummaryAdds
+                            data={
+                                {
+                                    title: data?.summary_title,
+                                    text: data?.summary_text,
+                                    link: data?.summary_link,
+                                    img: data?.summary_img,
+                                    btnTxt: data?.summary_linktxt,
+                                    head: data?.summary_head,
+                                    head2: data?.summary_head2
+                                }
+                            }
+                        />
+                        <Products
+                            products={productOne}
+                            addToWishList={addToWishList}
+                            getFour={getProductsWithFilter}
+                        />
+                        <BrandPortrait/>
+                        <Products
+                            products={productTwo}
+                            addToWishList={addToWishList}
+                            getFour={getProductsWithFilter}
+                        />
+                        <ActiveIngredients/>
+                        <CareProducts/>
+                        <Products
+                            products={productThree}
+                            addToWishList={addToWishList}
+                            getFour={getProductsWithFilter}
+                        />
+                        <Application/>
+                        <Points/>
+                        <Products
+                            products={productFour}
+                            addToWishList={addToWishList}
+                            getFour={getProductsWithFilter}
+                        />
+                        <PressReviews/>
+                        <Partners/>
+                        <Products
+                            products={productFive}
+                            addToWishList={addToWishList}
+                            getFour={getProductsWithFilter}
+                        />
+                        <NewsletterRep/>
+                    </div>
+                    <Footer/>
+                </>
+            }
+
         </>
     )
 }

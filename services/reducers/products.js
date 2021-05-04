@@ -13,7 +13,7 @@ import {
     GET_SINGLE_PRODUCT_DATA,
     SET_PRODUCT_SINGLE_LOADED,
     SET_PRODUCTS_TWO,
-    GET_PRODUCTS_WITH_FILTER_TWO
+    GET_PRODUCTS_WITH_FILTER_TWO, SWITCH_TO_FAVOURITE_TWO
 } from "../action-types/products";
 
 const initialState = {
@@ -97,8 +97,8 @@ const productsReducer = (state = initialState, {type, payload}) => {
                 productsError: payload,
             };
         case SWITCH_TO_FAVOURITE:
+            const name = payload.array
             return {
-
                 ...state,
                 favouriteProductsLoading: false,
                 products: state.products.map((p) => {
@@ -114,21 +114,32 @@ const productsReducer = (state = initialState, {type, payload}) => {
 
                     return p;
                 }),
-                productsWithFilter: state.productsWithFilter?.payload?.array?.map((p) => {
-                    if (p.id === payload.id) {
-                        p = payload.data;
-                    }
-                    return p;
-                }),
-                productsWithFilter2: state.productsWithFilter2?.payload?.array?.map((p) => {
-                    if (p.id === payload.id) {
-                        p = payload.data;
-                    }
-                    return p;
-                }),
-
+                productsWithFilter: {
+                    ...state.productsWithFilter,
+                    [name]: state?.productsWithFilter[name]?.map((p) => {
+                        if (p.id === payload.id) {
+                            p = payload.data
+                        }
+                        return p
+                    })
+                },
                 favouriteProducts: state.favouriteProducts.filter(e => !(e.id === payload.id && e.variants_of_a_products[0].id === payload.variant_id))
             };
+        case SWITCH_TO_FAVOURITE_TWO: {
+            const name = payload.array
+            return {
+                ...state,
+                productsWithFilter2: {
+                    ...state.productsWithFilter2,
+                    [name]: state?.productsWithFilter2[name]?.map((p) => {
+                        if (p.id === payload.id) {
+                            p = payload.data
+                        }
+                        return p
+                    })
+                }
+            }
+        }
         case GET_FAVOURITES_PRODUCTS: {
             return {
                 ...state,

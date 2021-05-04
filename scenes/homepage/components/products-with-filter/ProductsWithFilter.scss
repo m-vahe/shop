@@ -22,7 +22,7 @@
         .item-picture {
           max-width: 275px;
           height: 41rem;
-          object-fit: cover;
+          object-fit: contain;
           width: 100%;
         }
 
@@ -156,9 +156,12 @@
         font-style: normal;
         letter-spacing: 3.5px;
         text-align: center;
-        /* Text style for "Ylumi" */
-        font-style: normal;
         text-transform: uppercase;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
       }
 
       .prod-txt-foot {
@@ -273,6 +276,7 @@
   .products-with-filter-list {
     display: grid;
     grid-auto-flow: column;
+    gap: 2rem;
   }
   .products-filter-head-home {
     width: 100%;
@@ -345,7 +349,7 @@
       .item-picture {
         max-width: 275px;
         height: 41rem;
-        object-fit: cover;
+        object-fit: contain;
         width: 100%;
       }
       .circled-txt {
@@ -443,9 +447,12 @@
       letter-spacing: 3.5px;
       text-align: center;
       /* Text style for "Ylumi" */
-      font-style: normal;
-
       text-transform: uppercase;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
     }
     .prod-txt-foot {
       color: #2e2e2e;

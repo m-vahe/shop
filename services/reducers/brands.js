@@ -1,11 +1,12 @@
 import {SWITCH_TO_FAVOURITE} from "../action-types/products";
 import {
+    GET_BRAND_PAGE_DATA,
     GET_BRANDS_PRODUCTS_FIVE,
     GET_BRANDS_PRODUCTS_FOUR,
     GET_BRANDS_PRODUCTS_ONE, GET_BRANDS_PRODUCTS_THREE,
-    GET_BRANDS_PRODUCTS_TWO, SET_BRANDS_PRODUCTS_FIVE, SET_BRANDS_PRODUCTS_FOUR,
+    GET_BRANDS_PRODUCTS_TWO, SET_BRAND_PAGE_DATA, SET_BRANDS_PRODUCTS_FIVE, SET_BRANDS_PRODUCTS_FOUR,
     SET_BRANDS_PRODUCTS_ONE, SET_BRANDS_PRODUCTS_THREE, SET_BRANDS_PRODUCTS_TWO, SET_ERROR
-} from "../action-types/brands-products";
+} from "../action-types/brands";
 
 const initialState = {
     productOne:[],
@@ -18,10 +19,25 @@ const initialState = {
     productFourLoaded:true,
     productFive:[],
     productFiveLoaded:true,
+    brandPageData:{},
+    brandPageDataLoaded:true
 };
 
 const brandsProductsReducer = (state = initialState, {type, payload}) => {
     switch (type) {
+        case GET_BRAND_PAGE_DATA:{
+           return {
+               ...state,
+               brandPageDataLoaded: true
+           }
+        }
+        case SET_BRAND_PAGE_DATA:{
+            return {
+                ...state,
+                brandPageData: payload[0],
+                brandPageDataLoaded: false
+            }
+        }
         case GET_BRANDS_PRODUCTS_ONE:
             return {
                 ...state,
