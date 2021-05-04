@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/scenes/brands/components/summary-adds/SummaryAdds.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/summary-adds/SummaryAdds.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/components/active-ingredients/ActiveIngredients.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/active-ingredients/ActiveIngredients.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/components/active-ingredients/ActiveIngredients.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/active-ingredients/ActiveIngredients.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/components/application/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/application/Application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/components/brand-portrait/BrandPortrait.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/brand-portrait/BrandPortrait.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/components/care-products/CareProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/care-products/CareProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/components/partners/Partners.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/partners/Partners.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/components/partners/Partners.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/partners/Partners.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/components/points/Points.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/points/Points.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/components/press-reviews/PressReviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/press-reviews/PressReviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +177,7 @@
       <workItem from="1619680146329" duration="21205000" />
       <workItem from="1619765943387" duration="22737000" />
       <workItem from="1620025647308" duration="22303000" />
-      <workItem from="1620109010073" duration="18893000" />
+      <workItem from="1620109010073" duration="24096000" />
     </task>
     <servers />
   </component>

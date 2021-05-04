@@ -94,28 +94,68 @@ const BrandsScene = ({id}) => {
                             addToWishList={addToWishList}
                             getFour={getProductsWithFilter}
                         />
-                        <BrandPortrait/>
+                        <BrandPortrait
+                            data={{
+                                title:data?.brand_portrait_title,
+                                head:data?.brand_portraid_head,
+                                text:data?.brand_portraid_text,
+                                quote:data?.brand_portraid_quote,
+                                imgTxt:data?.brand_portraid_imgtext,
+                                img:data?.brand_portraid_img,
+                                desc:data?.brand_portraid_desc,
+                            }}
+                        />
                         <Products
                             products={productTwo}
                             addToWishList={addToWishList}
                             getFour={getProductsWithFilter}
                         />
-                        <ActiveIngredients/>
-                        <CareProducts/>
+                        <ActiveIngredients
+                            data={{
+                                title:data?.active_ingridients_title,
+                                head:data?.active_ingridients_header,
+                                img:data?.active_ingridients_img,
+                                imgTxt:data?.active_ingridients_imgtext,
+                                text:data?.active_ingridients_text
+                            }}
+                        />
+                        <CareProducts
+                            data={data?.brand_page_section_3s}
+                            desc={data?.care_products_desc}
+                        />
                         <Products
                             products={productThree}
                             addToWishList={addToWishList}
                             getFour={getProductsWithFilter}
                         />
-                        <Application/>
-                        <Points/>
+                        <Application data={
+                            {
+                                title:data?.aplication_title,
+                                head:data?.application_header,
+                                img:data?.application_img,
+                                imgTxt:data?.application_imgtext,
+                                text:data?.application_text
+                            }
+                        }
+                        />
+                        <Points array={data?.brand_page_section_4s}/>
                         <Products
                             products={productFour}
                             addToWishList={addToWishList}
                             getFour={getProductsWithFilter}
                         />
-                        <PressReviews/>
-                        <Partners/>
+                        <PressReviews
+                            data={
+                                {
+                                    title:data?.press_reviews_title,
+                                    text:data?.press_reviews_text,
+                                    imgTxt:data?.press_reviews_imgtext,
+                                    img:data?.press_reviews_img?.url,
+                                    head:data?.press_reviews_header
+                                }
+                            }
+                        />
+                        <Partners array={data?.brand_page_section_5s}/>
                         <Products
                             products={productFive}
                             addToWishList={addToWishList}

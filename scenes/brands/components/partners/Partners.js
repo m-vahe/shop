@@ -1,4 +1,4 @@
-const Partners = () =>{
+const Partners = ({array}) =>{
     const partnersData = [
         {img:"/Beautypunk.png",linkText:"mehr lassen",link:"https://www.beautypunk.com/"},
         {img:"/BeautyIn(logo).png",linkText:"mehr lassen",link:"https://www.beautypunk.com/"},
@@ -6,11 +6,11 @@ const Partners = () =>{
     ]
     return(
         <div className={"partners"}>
-            {partnersData.map((e,i)=>{
+            {array?.map((e,i)=>{
                 return(
                     <div className={"partners__items"}>
-                        <img src={e.img} alt={e.img}/>
-                        <a href={e.link} target="_blank" >{e.linkText}</a>
+                        <img src={e.images?.url} alt={e.images.url}/>
+                        <a href={e.link} target="_blank" >{e.link_text}</a>
                     </div>
                 )
             })}
