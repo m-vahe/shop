@@ -17,7 +17,7 @@ const SummaryAdds = ({data}) => {
                 <span>
                     {data.text}
                 </span>
-                <Link href={data?.link}>
+                <Link href={data?.link || "/404"}>
                     <a href="#">
                         {data.btnTxt ? data.btnTxt: 'Mehr lesen'}
                     </a>
