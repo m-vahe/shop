@@ -2,13 +2,14 @@ import {
     GET_SHOP_PRODUCTS,
     SET_SHOP_PRODUCTS,
     SET_ERROR,
-    SET_LOADED
+    SET_LOADED, SET_PRODUCTS_COUNT
 } from "../action-types/shop";
 import {SWITCH_TO_FAVOURITE} from "../action-types/products";
 const initialState = {
     shopProducts:[],
     shopProductsLoaded:true,
-    error:null
+    error:null,
+    count:0
 };
 const shopPageReducer = (state = initialState, {type, payload}) => {
     switch (type) {
@@ -29,6 +30,11 @@ const shopPageReducer = (state = initialState, {type, payload}) => {
                 shopProductsLoaded: false,
                 error: payload,
             };
+        case SET_PRODUCTS_COUNT:
+            return {
+                ...state,
+                count: payload
+            }
         case SWITCH_TO_FAVOURITE:
             return {
                 ...state,

@@ -1,40 +1,44 @@
-import { Select } from 'antd';
-import React from 'react';
-import ShareableSelect from '../../../../../shareable/select/ShareableSelect';
+import {Select} from 'antd';
+import React, {useEffect} from 'react';
 import ShareableShopSelect from "../../../../../shareable/select/ShareableShopSelect";
+import {useDispatch, useSelector} from "react-redux";
+import {getProductsCount} from "../../../../../services/actions/shop";
 
-const ShopBodyHeader = ({onChange}) => {
-  const count = 517;
-  const { Option } = Select;
-  const children = [];
-  for (let i = 10; i < 36; i++) {
-    children.push(
-      <Option key={i.toString(36) + i}>{i.toString(36) + i}</Option>
+const {Option} = Select;
+const ShopBodyHeader = ({ setByName, setByNew, setByPrice}) => {
+
+    const dispatch = useDispatch()
+    const count = useSelector(state => state.shop.count);
+    useEffect(() => {
+        dispatch(getProductsCount())
+    }, [])
+
+    return (
+        <div className='shopBodyHeader__container'>
+            <div className='shopBodyHeader__container--count'>{count} TREFFER</div>
+            <div className='shopBodyHeader__container__multiple'>
+
+            </div>
+            <div className='shopBodyHeader__container__selects'>
+                <ShareableShopSelect
+                    defaultValue={'PRIES'}
+                    valuesData={["PRIES","Ascending", "Descending"]}
+                    setByPrice={setByPrice}
+
+                />
+                <ShareableShopSelect
+                    defaultValue={'NAME'}
+                    valuesData={['NAME',"A-Z", "Z-A"]}
+                    setByName={setByName}
+                />
+                <ShareableShopSelect
+                    defaultValue={'NEU'}
+                    valuesData={["NEU", "ALL"]}
+                    setByNew={setByNew}
+                />
+            </div>
+        </div>
     );
-  }
-
-  return (
-    <div className='shopBodyHeader__container'>
-      <div className='shopBodyHeader__container--count'>{count} TREFFER</div>
-      <div className='shopBodyHeader__container__multiple'>
-        <Select
-          mode='multiple'
-          allowClear
-          style={{ width: '100%' }}
-          placeholder='Please select'
-          defaultValue={['a10', 'c12']}
-            onChange={onChange}
-        >
-          {children}
-        </Select>
-      </div>
-      <div className='shopBodyHeader__container__selects'>
-        <ShareableShopSelect defaultValue='PRIES'/>
-        <ShareableShopSelect defaultValue='NAME'/>
-        <ShareableShopSelect defaultValue='NEU'/>
-      </div>
-    </div>
-  );
 };
 
 export default ShopBodyHeader;

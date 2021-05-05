@@ -95,9 +95,9 @@ const SingleProductHeader = () => {
             return router.push("/login");
         }
         if (variantId === undefined) {
-            dispatch(addToWishList(id, defaultId[0].id)).then((res) => dispatch(getSingleProduct(router.query.id)));
+            dispatch(addToWishList(id, defaultId[0].id));
         } else {
-            dispatch(addToWishList(id, variantId)).then((res) => dispatch(getSingleProduct(router.query.id)));
+            dispatch(addToWishList(id, variantId))
         }
     };
     return (

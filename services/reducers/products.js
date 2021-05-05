@@ -114,6 +114,7 @@ const productsReducer = (state = initialState, {type, payload}) => {
 
                     return p;
                 }),
+                singleProduct: payload.data,
                 productsWithFilter: {
                     ...state.productsWithFilter,
                     [name]: state?.productsWithFilter[name]?.map((p) => {

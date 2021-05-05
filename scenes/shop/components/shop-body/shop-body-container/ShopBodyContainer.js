@@ -6,16 +6,17 @@ import {useDispatch, useSelector} from "react-redux";
 import {addToWishList} from "../../../../../services/actions/products";
 import {useRouter} from "next/router";
 import ShopSingleProduct from "../../../../../shareable/Products/ShopSingleProduct";
-import {getShopProducts} from "../../../../../services/actions/shop";
 
-const ShopBodyContainer = () => {
+const ShopBodyContainer = ({byName, byNew, byPrice}) => {
     const dispatch = useDispatch()
     const router = useRouter()
-
+    const productsData = useSelector(state => state.shop.shopProducts)
     const news = useSelector(({news}) => news);
+
+    const [data, setData] = useState([])
+    console.log(data, "data")
     const shopHeadTwo = news.newsReports.find(n => n.position === 'ShopPageTwo');
     const shopHeadThree = news.newsReports.find(n => n.position === 'ShopPageThree');
-    const productsData = useSelector(state => state.shop.shopProducts)
     const {isAuthenticated} = useSelector((state) => state.auth);
     const favouriteClickHandler = (id, variantId) => {
         if (!isAuthenticated) {
@@ -25,7 +26,7 @@ const ShopBodyContainer = () => {
     };
     const [minValue, setMinValue] = useState(0)
     const [maxValue, setMaxValue] = useState(21)
-    const [current,setCurrent] = useState(1)
+    const [current, setCurrent] = useState(1)
     const scrollToref = useRef()
 
     const handleChange = value => {
@@ -35,21 +36,45 @@ const ShopBodyContainer = () => {
             setMaxValue(21)
         } else {
             setMinValue((value - 1) * 21)
-            setMaxValue(value*21)
+            setMaxValue(value * 21)
         }
     };
 
-    useEffect(()=>{
+    useEffect(() => {
         scrollToref.current.scrollIntoView();
-    },[current])
+    }, [current])
 
-    useEffect(()=>{
-        console.log(productsData)
-    },[productsData])
+    useEffect(() => {
+        setData([...productsData])
+    }, [productsData])
+
+    useEffect(() => {
+        if (byPrice === "Ascending") {
+            setData([...data.sort((a, b) => {
+                return a.variants_of_a_products.find(item => item.main === true).price - b.variants_of_a_products.find(item => item.main === true).price
+            })])
+        }else if (byPrice === "Descending") {
+            setData([...data.sort((a, b) => {
+                return b.variants_of_a_products.find(item => item.main === true).price - a.variants_of_a_products.find(item => item.main === true).price
+            })])
+
+        }
+        if(byName === "A-Z"){
+            setData([...data.sort((a, b) => {
+             return a.name.localeCompare(b.name)
+            })])
+        }else if(byName === "Z-A"){
+            setData([...data.sort((a, b) => {
+                return b.name.localeCompare(a.name)
+            })])
+        }
+    }, [byPrice, byNew, byName])
     return (
         <div className='shop-right-body' ref={scrollToref}>
-            <div className='__products' >
-                {productsData.map((e, i) => {
+            <div className='__products'>
+                {data &&
+                data.length > 0 &&
+                data.slice(minValue, maxValue).map((e, i) => {
                     return (
                         <div key={i}>
                             <ShopSingleProduct elem={e} favouriteClickHandler={favouriteClickHandler}/>
@@ -66,7 +91,7 @@ const ShopBodyContainer = () => {
                 />
             </div>
             <div className='shop-desc-body'>
-                <PagePagination handleChange={handleChange} totalSize ={productsData.length} current={current}/>
+                <PagePagination handleChange={handleChange} totalSize={productsData.length} current={current}/>
                 <ShopDescription/>
             </div>
         </div>
