@@ -6,6 +6,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {addToWishList} from "../../../../../services/actions/products";
 import {useRouter} from "next/router";
 import ShopSingleProduct from "../../../../../shareable/Products/ShopSingleProduct";
+import moment from "moment";
 
 const ShopBodyContainer = ({byName, byNew, byPrice}) => {
     const dispatch = useDispatch()
@@ -53,21 +54,27 @@ const ShopBodyContainer = ({byName, byNew, byPrice}) => {
             setData([...data.sort((a, b) => {
                 return a.variants_of_a_products.find(item => item.main === true).price - b.variants_of_a_products.find(item => item.main === true).price
             })])
-        }else if (byPrice === "Descending") {
+        } else if (byPrice === "Descending") {
             setData([...data.sort((a, b) => {
                 return b.variants_of_a_products.find(item => item.main === true).price - a.variants_of_a_products.find(item => item.main === true).price
             })])
-
-        }
-        if(byName === "A-Z"){
+        }else if (byName === "A-Z") {
             setData([...data.sort((a, b) => {
-             return a.name.localeCompare(b.name)
+                return a.name.localeCompare(b.name)
             })])
-        }else if(byName === "Z-A"){
+        } else if (byName === "Z-A") {
             setData([...data.sort((a, b) => {
                 return b.name.localeCompare(a.name)
             })])
-        }
+        } else if (byNew === "New") {
+            setData([...data.sort((a, b) => {
+                return moment(b.New_Date_Limit) - moment(a.New_Date_Limit)
+            })])
+        }else if (byNew === "Old") {
+            setData([...data.sort((a, b) => {
+                return moment(a.New_Date_Limit) - moment(b.New_Date_Limit)
+            })])
+        }else setData([...productsData])
     }, [byPrice, byNew, byName])
     return (
         <div className='shop-right-body' ref={scrollToref}>

@@ -25,9 +25,9 @@ const ShareableShopSelect = ({defaultValue, valuesData, setByPrice, setByName, s
             style={{width: 120}}
             onChange={handleChange}
         >
-            {valuesData.map((e, i) => {
+            {valuesData.map((e) => {
                 return (
-                    <Option key={e}  name={defaultValue}  >
+                    <Option key={e}  name={defaultValue}>
                         {e}
                     </Option>
                 )
