@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import PagePagination from '../../../../../shareable/pagination/Pagination';
 import InfoContainer from '../../../../../shareable/info-container/InfoContainer';
 import ShopDescription from './shop-description/ShopDescription';
@@ -7,15 +7,15 @@ import {addToWishList} from "../../../../../services/actions/products";
 import {useRouter} from "next/router";
 import ShopSingleProduct from "../../../../../shareable/Products/ShopSingleProduct";
 import moment from "moment";
+import {sortShopProducts} from "../../../../../services/actions/shop";
 
-const ShopBodyContainer = ({byName, byNew, byPrice}) => {
+const ShopBodyContainer = ({selected}) => {
     const dispatch = useDispatch()
     const router = useRouter()
     const productsData = useSelector(state => state.shop.shopProducts)
+    const staticData = useSelector(state => state.shop.staticShopProducts)
     const news = useSelector(({news}) => news);
 
-    const [data, setData] = useState([])
-    console.log(data, "data")
     const shopHeadTwo = news.newsReports.find(n => n.position === 'ShopPageTwo');
     const shopHeadThree = news.newsReports.find(n => n.position === 'ShopPageThree');
     const {isAuthenticated} = useSelector((state) => state.auth);
@@ -30,58 +30,68 @@ const ShopBodyContainer = ({byName, byNew, byPrice}) => {
     const [current, setCurrent] = useState(1)
     const scrollToref = useRef()
 
-    const handleChange = value => {
-        setCurrent(value)
-        if (value <= 1) {
-            setMinValue(0)
-            setMaxValue(21)
-        } else {
-            setMinValue((value - 1) * 21)
-            setMaxValue(value * 21)
+    const handlePrev = () =>{
+        setCurrent(prev=>prev-1)
+        if (current <= 1) {
+            setCurrent(1)
         }
-    };
+    }
+    const handleNext = ()=>{
+        if ((current >= Math.ceil(productsData.length / 21))) {
+            setCurrent(Math.ceil(productsData.length / 21))
+        }
+        setCurrent(prev=>prev+1)
+    }
 
     useEffect(() => {
-        scrollToref.current.scrollIntoView();
+        if (current === 1) {
+            setMinValue(0)
+            setMaxValue(21)
+        }
+        if (current > 1) {
+            setMinValue((current - 1) * 21)
+            setMaxValue((current) * 21)
+        }
+        scrollToref.current.scrollIntoView()
     }, [current])
 
     useEffect(() => {
-        setData([...productsData])
-    }, [productsData])
-
-    useEffect(() => {
-        if (byPrice === "Ascending") {
-            setData([...data.sort((a, b) => {
-                return a.variants_of_a_products.find(item => item.main === true).price - b.variants_of_a_products.find(item => item.main === true).price
-            })])
-        } else if (byPrice === "Descending") {
-            setData([...data.sort((a, b) => {
-                return b.variants_of_a_products.find(item => item.main === true).price - a.variants_of_a_products.find(item => item.main === true).price
-            })])
-        }else if (byName === "A-Z") {
-            setData([...data.sort((a, b) => {
+        if (selected === "A-Z") {
+            dispatch(sortShopProducts([...productsData.sort((a, b) => {
                 return a.name.localeCompare(b.name)
-            })])
-        } else if (byName === "Z-A") {
-            setData([...data.sort((a, b) => {
+            })]))
+        } else if (selected === "Z-A") {
+            dispatch(sortShopProducts([...productsData.sort((a, b) => {
                 return b.name.localeCompare(a.name)
-            })])
-        } else if (byNew === "New") {
-            setData([...data.sort((a, b) => {
+            })]))
+        } else if (selected === "Ascending") {
+            dispatch(sortShopProducts([...productsData.sort((a, b) => {
+                return a.variants_of_a_products.find(item => item.main === true).price - b.variants_of_a_products.find(item => item.main === true).price
+            })]))
+        } else if (selected === "Descending") {
+            dispatch(sortShopProducts([...productsData.sort((a, b) => {
+                return b.variants_of_a_products.find(item => item.main === true).price - a.variants_of_a_products.find(item => item.main === true).price
+            })]))
+        } else if (selected === "New") {
+            dispatch(sortShopProducts([...productsData.sort((a, b) => {
                 return moment(b.New_Date_Limit) - moment(a.New_Date_Limit)
-            })])
-        }else if (byNew === "Old") {
-            setData([...data.sort((a, b) => {
+            })]))
+        } else if (selected === "Old") {
+            dispatch(sortShopProducts([...productsData.sort((a, b) => {
                 return moment(a.New_Date_Limit) - moment(b.New_Date_Limit)
-            })])
-        }else setData([...productsData])
-    }, [byPrice, byNew, byName])
+            })]))
+        } else {
+            console.log("aaaaaaa")
+            dispatch(sortShopProducts([...staticData]))
+        }
+    }, [selected])
+
     return (
         <div className='shop-right-body' ref={scrollToref}>
             <div className='__products'>
-                {data &&
-                data.length > 0 &&
-                data.slice(minValue, maxValue).map((e, i) => {
+                {productsData &&
+                productsData.length > 0 &&
+                productsData.slice(minValue, maxValue).map((e, i) => {
                     return (
                         <div key={i}>
                             <ShopSingleProduct elem={e} favouriteClickHandler={favouriteClickHandler}/>
@@ -98,7 +108,7 @@ const ShopBodyContainer = ({byName, byNew, byPrice}) => {
                 />
             </div>
             <div className='shop-desc-body'>
-                <PagePagination handleChange={handleChange} totalSize={productsData.length} current={current}/>
+                <PagePagination  next={handleNext} prev={handlePrev} totalSize={productsData.length} current={current}/>
                 <ShopDescription/>
             </div>
         </div>

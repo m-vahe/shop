@@ -192,7 +192,7 @@ const ProductsWithFilter = ({
                                     </span>
                                 )}
                                 <h3 className={"prod-txt-price"}>
-                                    {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0)}
+                                    {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0) } / {elem?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
                                 </h3>
 
                                 <button>
@@ -306,7 +306,7 @@ const ProductsWithFilter = ({
           </span>
                                 )}
                                 <h3 className={"prod-txt-price"}>
-                                    {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0)}
+                                    {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0)} / {elem?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
                                 </h3>
 
                                 <button>
@@ -420,7 +420,7 @@ const ProductsWithFilter = ({
           </span>
                                 )}
                                 <h3 className={"prod-txt-price"}>
-                                    {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0)}
+                                    {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0)} / {elem?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
                                 </h3>
 
                                 <button>

@@ -1,5 +1,12 @@
 import axios from "axios";
-import {SET_SHOP_PRODUCTS, SET_ERROR, SET_LOADED, GET_SHOP_PRODUCTS, SET_PRODUCTS_COUNT} from "../action-types/shop";
+import {
+    SET_SHOP_PRODUCTS,
+    SET_ERROR,
+    SET_LOADED,
+    GET_SHOP_PRODUCTS,
+    SET_PRODUCTS_COUNT,
+    SORT_SHOP_PRODUCTS
+} from "../action-types/shop";
 
 export const getShopProducts = () => {
     return (dispatch) => {
@@ -44,3 +51,12 @@ export const getProductsCount = () => {
             .catch(err => dispatch({type: SET_ERROR, payload: err}));
     };
 };
+
+export const sortShopProducts = (data) =>{
+    return dispatch => {
+        dispatch({
+            type:SORT_SHOP_PRODUCTS,
+            payload:data
+        })
+    }
+}

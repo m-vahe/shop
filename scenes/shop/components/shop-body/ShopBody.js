@@ -10,6 +10,7 @@ const ShopBody = () => {
     const [sortByPrice, setSortByPrice] = useState("PRIES")
     const [sortByName, setSortByName] = useState("NAME")
     const [sortByNew, setSortByNew] = useState("blank")
+    const [selected,setSelected] = useState("")
     useEffect(()=>{
         setSortByName("NAME")
         setSortByNew("blank")
@@ -23,20 +24,14 @@ const ShopBody = () => {
     return (
         <div className='shop__body'>
             <ShopBodyHeader
-                setByPrice={setSortByPrice}
-                setByName={setSortByName}
-                setByNew={setSortByNew}
+
+                setSelected={setSelected}
             />
             <div className='shop__body__content'>
                 <Dashboard/>
                 <MobileFilter/>
                 <ShopBodyContainer
-                    byPrice={sortByPrice}
-                    byName={sortByName}
-                    byNew={sortByNew}
-                    setByPrice={setSortByPrice}
-                    setByName={setSortByName}
-                    setByNew={setSortByNew}
+                    selected={selected}
                 />
             </div>
         </div>

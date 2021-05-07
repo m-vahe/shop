@@ -8,35 +8,29 @@ const {Option} = Select;
 const priceData = ["PRIES","Ascending", 'Descending'];
 const nameData = ["NAME","A-Z","Z-A"]
 const newData = ["All","New","Old"]
-const ShopBodyHeader = ({ setByName, setByNew, setByPrice}) => {
+const ShopBodyHeader = ({ setSelected}) => {
     const [price,setPrice] = useState(priceData[0])
     const [name,setName] = useState(nameData[0])
     const [nor,setNor] = useState(newData[0])
     const handlePriceChange = value => {
-        setByPrice(value)
-        setPrice(value)
-        setByName("NAME")
-        setByNew("blank")
         setName(nameData[0])
         setNor(newData[0])
+        setPrice(value)
+        setSelected(value)
     };
 
     const onNameChange = value => {
-        setByName(value)
-        setName(value)
-        setByPrice("PRIES")
-        setByNew("blank")
         setPrice(priceData[0])
         setNor(newData[0])
+        setName(value)
+        setSelected(value)
     };
 
     const onNewChange = value => {
-        setByNew(value)
-        setNor(value)
-        setByName("NAME")
-        setByPrice("PRIES")
         setName(nameData[0])
         setPrice(priceData[0])
+        setNor(value)
+        setSelected(value)
     };
     const dispatch = useDispatch()
     const count = useSelector(state => state.shop.count);

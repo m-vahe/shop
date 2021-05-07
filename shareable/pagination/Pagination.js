@@ -1,11 +1,10 @@
-import { Pagination } from 'antd';
-
-const PagePagination = ({handleChange,totalSize,current}) => {
+const PagePagination = ({next,prev,totalSize,current}) => {
   return (
     <div className='pagination'>
-      <Pagination simple defaultCurrent={1} current={current} total={totalSize}
-                  defaultPageSize={21}
-                  onChange={handleChange}/>
+        <button onClick={prev} className={`pagination__prev ${current === 1 ? "pagination__disabled" : ""}`}>{"|< <"}</button>
+        <span className={"pagination__pageNum"}>Seite {current}</span>
+        <span className={`pagination__totalNum `}>von {Math.ceil(totalSize/21)}</span>
+        <button onClick={next} className={`pagination__next ${current === Math.ceil(totalSize/21) ? "pagination__disabled" : ""}`}>{"> >|"}</button>
     </div>
   );
 };

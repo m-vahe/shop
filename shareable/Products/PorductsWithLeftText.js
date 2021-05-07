@@ -169,7 +169,7 @@ const ProductsWithLeftText = ({ products, leftText, addToWishList }) => {
                       e.variants_of_a_products?.find(
                         (item) => item.main === true
                       )?.price || 0
-                    )}
+                    )} / {e?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
                   </h3>
 
                   <button>

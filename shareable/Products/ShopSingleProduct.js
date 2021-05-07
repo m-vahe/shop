@@ -1,5 +1,6 @@
 import {useRouter} from "next/router";
 import moment from "moment";
+
 const formatter = new Intl.NumberFormat("de-DE", {
     style: "currency",
     currency: "EUR",
@@ -48,7 +49,7 @@ const ShopSingleProduct = ({elem, favouriteClickHandler, filter}) => {
                         viewBox="0 0 512 512"
                         className={"letter-svg heart-icon-item"}
                         onClick={() =>
-                            favouriteClickHandler(elem?.id, elem?.variants_of_a_products.find(item=>item.main === true).id)
+                            favouriteClickHandler(elem?.id, elem?.variants_of_a_products.find(item => item.main === true).id)
                         }
                         style={elem.variants_of_a_products.find(item => item.main === true).favorite ? {stroke: "#000000"} : {stroke: "#7b7b7b"}}
                     >
@@ -102,10 +103,11 @@ const ShopSingleProduct = ({elem, favouriteClickHandler, filter}) => {
                 ) : (
                     <span className={"prod-txt-foot2"} style={{opacity: 0}}>
                      Kapseln
-          </span>
+                    </span>
                 )}
                 <h3 className={"prod-txt-price"}>
                     {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0)}
+                    {" "} / {elem?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
                 </h3>
                 <button>
                     <p>Quick shop </p>

@@ -2,14 +2,16 @@ import {
     GET_SHOP_PRODUCTS,
     SET_SHOP_PRODUCTS,
     SET_ERROR,
-    SET_LOADED, SET_PRODUCTS_COUNT
+    SET_LOADED, SET_PRODUCTS_COUNT, SORT_SHOP_PRODUCTS
 } from "../action-types/shop";
 import {SWITCH_TO_FAVOURITE} from "../action-types/products";
+
 const initialState = {
-    shopProducts:[],
-    shopProductsLoaded:true,
-    error:null,
-    count:0
+    shopProducts: [],
+    shopProductsLoaded: true,
+    error: null,
+    count: 0,
+    staticShopProducts: []
 };
 const shopPageReducer = (state = initialState, {type, payload}) => {
     switch (type) {
@@ -23,7 +25,13 @@ const shopPageReducer = (state = initialState, {type, payload}) => {
                 ...state,
                 shopProductsLoaded: false,
                 shopProducts: payload,
+                staticShopProducts: payload
             };
+        case SORT_SHOP_PRODUCTS:
+            return {
+                ...state,
+                shopProducts: payload
+            }
         case SET_ERROR:
             return {
                 ...state,
@@ -40,6 +48,12 @@ const shopPageReducer = (state = initialState, {type, payload}) => {
                 ...state,
                 shopProductsLoaded: false,
                 shopProducts: state.shopProducts.map((p) => {
+                    if (p.id === payload.id) {
+                        p = payload.data;
+                    }
+                    return p;
+                }),
+                staticShopProducts: state.staticShopProducts.map((p) => {
                     if (p.id === payload.id) {
                         p = payload.data;
                     }
