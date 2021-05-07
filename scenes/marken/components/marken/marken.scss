@@ -1,0 +1,42 @@
+.marken__container {
+  width: 90.25%;
+  margin: 4rem auto;
+
+  &__header {
+    text-align: center;
+
+    &--title {
+      font-size: 9.7rem;
+      font-weight: 350;
+      color: #3e3e3e;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    &--subtitle {
+      font-size: 4.3rem;
+      color: #3e3e3e;
+
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border-bottom: 1px solid #3e3e3e;
+    padding: 5rem 0;
+    &__item {
+      &--title {
+        font-size: 5.4rem;
+        color: #3e3e3e;
+        text-transform: uppercase;
+      }
+
+      &--content {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: #3e3e3e;
+      }
+    }
+  }
+}
