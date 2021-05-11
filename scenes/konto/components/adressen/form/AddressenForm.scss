@@ -1,23 +1,26 @@
-.add__address{
+.add__address {
   position: relative;
-  &__title{
+
+  &__title {
     font-size: 6.6rem;
     font-weight: 300;
     color: #3e3e3e;
     text-transform: uppercase;
-    margin:0;
-    @media screen and (max-width: 1024px){
+    margin: 0;
+    @media screen and (max-width: 1024px) {
       font-size: 3rem;
       text-align: center;
     }
   }
-  &__text{
+
+  &__text {
     font-size: 2.5rem;
     text-transform: uppercase;
     color: #5c5c5c;
     font-weight: 400;
   }
-  &__back{
+
+  &__back {
     position: absolute;
     top: 2rem;
     right: 0;
@@ -27,32 +30,59 @@
     text-decoration: underline;
     cursor: pointer;
   }
-  form{
+
+  form {
     display: grid;
     gap: 2rem;
-    width: 40%;
-    @media screen and (max-width: 1500px){
-      width: 55%;
+    width: 70%;
+
+    .validation-field {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 2rem;
+      align-items: center;
+      grid-template-columns: 50% auto;
+      input{
+        outline: none;
+      }
+      p {
+        color: #a12224;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        margin-bottom: 0;
+      }
     }
-    @media screen and (max-width: 1024px){
+    .invalidInput{
+      input{
+        border-color: #a12224;
+        outline:1px solid #a12224;
+      }
+    }
+    @media screen and (max-width: 1500px) {
+      width: 85%;
+    }
+    @media screen and (max-width: 1024px) {
       width: 100%;
       align-items: center;
       display: flex;
       flex-direction: column;
     }
-    input{
-      @media screen and (max-width: 1024px){
+
+    input {
+      @media screen and (max-width: 1024px) {
         width: 100%;
       }
-        border: solid 1px #b5b5b5;
+      border: solid 1px #b5b5b5;
+      font-size: 2.4rem;
+      padding: 1rem;
+
+      &::placeholder {
         font-size: 2.4rem;
-        padding: 1rem ;
-        &::placeholder{
-          font-size: 2.4rem;
-          color: black;
-        }
+        color: black;
+      }
     }
-    input[type=submit]{
+
+    input[type=submit] {
       border: solid 1px #000000;
       text-transform: uppercase;
       padding: .5rem 3.4rem;
@@ -66,37 +96,43 @@
         font-size: 2.9rem;
       }
     }
-    .ant-select:not(.ant-select-disabled):hover .ant-select-selector{
-      @media screen and (max-width: 1024px){
+
+    .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+      @media screen and (max-width: 1024px) {
         width: 100%;
       }
       box-shadow: none !important;
       border: solid 1px #b5b5b5 !important;
     }
-    .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector{
+
+    .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
       box-shadow: none !important;
-      @media screen and (max-width: 1024px){
+      @media screen and (max-width: 1024px) {
         width: 100%;
       }
     }
-    .ant-select{
-      @media screen and (max-width: 1024px){
+
+    .ant-select {
+      @media screen and (max-width: 1024px) {
         width: 100%;
       }
-      .ant-select-arrow{
+
+      .ant-select-arrow {
         width: 2.5rem;
         top: 13%;
         color: #797979;
         background: white;
         height: 94%;
-        @media screen and (max-width: 1440px){
+        @media screen and (max-width: 1440px) {
           height: 73%;
           top: 28%;
         }
-        .anticon{
+
+        .anticon {
           width: 100%;
           height: 100%;
-          svg{
+
+          svg {
             width: 100%;
             height: 100%;
           }
@@ -104,16 +140,18 @@
       }
     }
 
-    .ant-select-selector{
+    .ant-select-selector {
       font-size: 2.4rem;
       padding: 1rem;
       height: 100% !important;
-      .ant-select-selection-search{
-        input{
+
+      .ant-select-selection-search {
+        input {
           height: 100%;
         }
       }
-      .ant-select-selection-item{
+
+      .ant-select-selection-item {
         height: 100%;
         display: flex;
         align-items: center;

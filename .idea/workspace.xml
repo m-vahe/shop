@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/marken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/konto/components/bestellungen/components/single/BestellungenSingle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/konto/components/bestellungen/components/single/BestellungenSingle.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/konto/components/bestellungen/components/single/components/bottom/BestellungSingleBottom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/konto/components/bestellungen/components/single/components/bottom/BestellungSingleBottom.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/konto/components/bestellungen/components/single/components/middle/BestellungSingleMiddle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/konto/components/bestellungen/components/single/components/middle/BestellungSingleMiddle.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/konto/components/bestellungen/components/single/components/top/BestellungSingleTop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/konto/components/bestellungen/components/single/components/top/BestellungSingleTop.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/marken/components/marken/marken.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/marken/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scenes/marken/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/contact/components/contact-header/ContactHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/contact-header/ContactHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/contact/components/contact-header/ContactHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/contact-header/ContactHeader.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/contact/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/contact/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/contact/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/bestellungen/Bestellungen.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/bestellungen/Bestellungen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/bestellungen/Bestellungen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/bestellungen/Bestellungen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/konto/KontoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/konto/KontoTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/konto/components/adressen/Adressen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/adressen/Adressen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/konto/components/adressen/form/AddressenForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/adressen/form/AddressenForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/konto/components/adressen/form/AddressenForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/adressen/form/AddressenForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +176,8 @@
       <workItem from="1620226608919" duration="136000" />
       <workItem from="1620226890934" duration="88000" />
       <workItem from="1620283956849" duration="25234000" />
-      <workItem from="1620368745883" duration="23762000" />
+      <workItem from="1620368745883" duration="24502000" />
+      <workItem from="1620713234832" duration="3859000" />
     </task>
     <servers />
   </component>

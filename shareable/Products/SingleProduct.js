@@ -111,7 +111,7 @@ const SingleProduct = ({elem, favouriteClickHandler, filter}) => {
           </span>
                 )}
                 <h3 className={"prod-txt-price"}>
-                    {formatter.format(elem?.variants_of_a_products[0]?.price || 0)} {" "}/ {elem?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
+                    {formatter.format(elem?.variants_of_a_products[0]?.price || 0)} {" "}/ {elem?.variants_of_a_products?.find(item => item.main === true)?.bottle_sizes || 0}
                 </h3>
 
                 <button>
