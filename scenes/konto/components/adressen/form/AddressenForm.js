@@ -262,13 +262,6 @@ useEffect(()=>{
         },1000)
 
     }
-const [canEdit,setCanEdit]=useState(false)
-useEffect(()=>{
-    if(editable !== {}){
-        setCanEdit(true)
-    }else setCanEdit(false)
-    console.log(editable,canEdit,888888888888888888)
-},[editable])
 
     return (
         <div className={"add__address"}>
