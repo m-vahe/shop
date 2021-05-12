@@ -14,19 +14,19 @@ const Adressen = () => {
     const dispatch = useDispatch()
 
     const [showForm, setShowForm] = useState(false)
-    const [appointment,setAppointment]=useState("")
+    const [appointment, setAppointment] = useState("")
 
-    const billingData = useSelector(state=>state.address.billingAddresses)
-    const deliveryData = useSelector(state=>state.address.deliveryAddresses)
-    const {billingAddressesLoaded, deliveryAddressesLoaded} = useSelector(state=>state.address)
+    const billingData = useSelector(state => state.address.billingAddresses)
+    const deliveryData = useSelector(state => state.address.deliveryAddresses)
+    const {billingAddressesLoaded, deliveryAddressesLoaded} = useSelector(state => state.address)
+    const [editableData, setEditableData] = useState({})
 
-
-    useEffect(()=>{
-        if(!showForm) {
+    useEffect(() => {
+        if (!showForm) {
             dispatch(getBillingAddress())
             dispatch(getDeliveryAddress())
         }
-        },[showForm])
+    }, [showForm])
     const handleShow = (e) => {
         setShowForm(true)
         setAppointment(e)
@@ -36,14 +36,15 @@ const Adressen = () => {
         setShowForm(false)
     }
     const router = useRouter()
-    return <>
-        {billingAddressesLoaded ||  deliveryAddressesLoaded? (
-                    <div className={"loader__body"}>
-                        <Space size="middle">
-                            <Spin size="large"/>
-                        </Space>
-                    </div>
-                ) : (<div className={"konto__adressen__container"}>
+    return (
+        <>
+            {billingAddressesLoaded || deliveryAddressesLoaded ? (
+                <div className={"loader__body"}>
+                    <Space size="middle">
+                        <Spin size="large"/>
+                    </Space>
+                </div>
+            ) : (<div className={"konto__adressen__container"}>
                 <p className={"page_name"}>Adressen</p>
                 {!showForm ?
                     <>
@@ -51,15 +52,17 @@ const Adressen = () => {
                             <AdressenTitle title={titleOne}/>
 
                             <div className={"konto__adressen__container__top__container"}>
-                                {billingData.map((e,i)=>{
-                                    return(
+                                {billingData.map((e, i) => {
+                                    return (
                                         <div key={i}>
-                                            <AdressenElem e={e} appointment={"billing"}/>
+                                            <AdressenElem e={e} appointment={"billing"} setEditable={setEditableData}
+                                                          setAppointment={setAppointment} setShowForm={setShowForm}/>
                                         </div>
                                     )
                                 })}
                                 <div className={"konto__adressen__container__top__add"}>
-                                    <div className={"konto__adressen__container__top__add__elem"} onClick={()=>handleShow("billing")}>
+                                    <div className={"konto__adressen__container__top__add__elem"}
+                                         onClick={() => handleShow("billing")}>
                                         <p>+</p>
                                     </div>
                                     <p className={"konto__adressen__container__top__add__link"}
@@ -70,15 +73,16 @@ const Adressen = () => {
                         <div className={"konto__adressen__container__bottom"}>
                             <AdressenTitle title={titleTwo}/>
                             <div className={"konto__adressen__container__top__containerbot"}>
-                                {deliveryData.map((e,i)=>{
-                                    return(
+                                {deliveryData.map((e, i) => {
+                                    return (
                                         <div key={i}>
                                             <AdressenElem e={e} appointment={"delivery"}/>
                                         </div>
                                     )
                                 })}
                                 <div className={"konto__adressen__container__top__add"}>
-                                    <div className={"konto__adressen__container__top__add__elem"} onClick={()=>handleShow("delivery")}>
+                                    <div className={"konto__adressen__container__top__add__elem"}
+                                         onClick={() => handleShow("delivery")}>
                                         <p>+</p>
                                     </div>
                                     <p className={"konto__adressen__container__top__add__link"}
@@ -87,16 +91,19 @@ const Adressen = () => {
                             </div>
                         </div>
                         <div className={"zuruck_back_body"}>
-                            <button className={"zuruck_back"} onClick={()=>router.push("/konto/main")}>zurück zur übersicht</button>
+                            <button className={"zuruck_back"} onClick={() => router.push("/konto/main")}>zurück zur
+                                übersicht
+                            </button>
                         </div>
                     </>
-                    : <AddressenForm back={handleClose} appointment={appointment}/>
+                    : <AddressenForm back={handleClose} appointment={appointment} editable={editableData} setShow={handleClose}/>
                 }
             </div>)
 
-        }
+            }
 
-    </>
+        </>
+    )
 }
 
 export default Adressen

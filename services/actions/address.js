@@ -1,6 +1,6 @@
 import axios from "axios";
 import {
-    ADD_ADDRESS, DELETE_ADDRESSES,
+    ADD_ADDRESS, DELETE_ADDRESSES, EDIT_ADDRESSES,
     GET_BILLING_ADDRESS, GET_DELIVERY_ADDRESS,
     SET_BILLING_ADDRESS,
     SET_DELIVERY_ADDRESS,
@@ -9,7 +9,7 @@ import {
 import {GET_PRODUCTS, SET_PRODUCTS} from "../action-types/products";
 
 export const addAddress = (data, appointment) => {
-    // console.log(data)
+
     return (dispatch) => {
         return axios
             .post(
@@ -130,4 +130,45 @@ export const deleteAddress = (id, appointment) => {
             })
             .catch((err) => dispatch({type: SET_ERROR, payload: err}));
     }
+}
+
+export const editAddress = (datas, appointment,id) => {
+
+    return (dispatch) => {
+        return axios
+            .put(
+                `${process.env.NEXT_PUBLIC_API_URL}/updateAddresses/${appointment}/${id}`,
+                {
+                    first_name: datas.name,
+                    surname: datas.surname,
+                    address_line: datas.addressLineOne,
+                    road: datas.road,
+                    house_number: datas.house,
+                    place: datas.ort,
+                    country: datas.country,
+                    postcode: datas.plz
+                },
+                {
+                    headers: {
+                        Authorization: `Bearer ${
+                            JSON.parse(localStorage.getItem("userData") || "{}").jwt || ""
+                        }`,
+                    },
+                }
+            )
+            .then((res) => {
+                const {data} = res;
+                dispatch({
+                    type: EDIT_ADDRESSES,
+                    payload: {
+                        data:data,
+                        id:id,
+                        appointment:appointment
+                    },
+                });
+
+                return data;
+            })
+            .catch((err) => dispatch({type: SET_ERROR, payload: err}));
+    };
 }

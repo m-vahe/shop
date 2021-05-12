@@ -1,10 +1,20 @@
 import {useDispatch} from "react-redux";
 import {deleteAddress} from "../../services/actions/address";
+import {useEffect} from "react";
 
-const AdressenElem = ({e,appointment}) =>{
+const AdressenElem = ({e,appointment,setEditable,setAppointment,setShowForm}) =>{
     const dispatch = useDispatch()
     const onDeleteHandler = (e) =>{
         dispatch(deleteAddress(e.id,appointment))
+    }
+    useEffect(()=>{
+        setEditable({})
+    },[])
+    const editHandler = (e) =>{
+
+        setEditable(e)
+        setAppointment(appointment)
+        setShowForm(true)
     }
     return(
             <div className={"konto__adressen__container__top__container__elem"}>
@@ -14,7 +24,7 @@ const AdressenElem = ({e,appointment}) =>{
                     <p>{e.road}</p>
                     <p>{e.place}</p>
                     <p>{e.country}</p>
-                    <p className={"konto__adressen__container__top__container__elem__item--edit"} >andern</p>
+                    <p className={"konto__adressen__container__top__container__elem__item--edit"} onClick={()=>editHandler(e)} >andern</p>
                     <p className={"konto__adressen__container__top__container__elem__item--delete"} onClick={()=>onDeleteHandler(e)}>loshchen</p>
                 </div>
             </div>

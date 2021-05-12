@@ -2,10 +2,10 @@ import {Select} from "antd";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import {getRegisterCountries} from "../../../../../services/actions/registration";
-import {addAddress} from "../../../../../services/actions/address";
+import {addAddress, editAddress} from "../../../../../services/actions/address";
 
 const {Option} = Select
-const AddressenForm = ({back,appointment}) => {
+const AddressenForm = ({back,appointment,editable,setShow}) => {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(getRegisterCountries())
@@ -19,7 +19,20 @@ const AddressenForm = ({back,appointment}) => {
             country: e
         }))
     }
-
+useEffect(()=>{
+    setFormData(prev=>({
+        ...prev,
+        name:editable.first_name,
+        surname:editable.surname,
+        addressLineOne:editable.address_line,
+        road:editable.road,
+        house:editable.house_number,
+        plz:editable.postcode,
+        ort:editable.place,
+        country:editable.country
+    }))
+    setContval(editable.country)
+},[editable])
     const [formData, setFormData] = useState({
         name: "",
         surname: "",
@@ -180,12 +193,8 @@ const AddressenForm = ({back,appointment}) => {
 
     const onSubmitHandler = (e) => {
         e.preventDefault()
-        console.log(formData)
-        if ((!nameError && !surnameError && !roadError && !postCodeError && !ortError && !houseNumberError) &&
-            (nameError !== "" && surnameError !== "" && roadError !== "" && postCodeError !== "" && ortError !== ""
-                && houseNumberError !== "" )
-        ) {
-            dispatch(addAddress(formData,appointment))
+        if(editable !== {}){
+            dispatch(editAddress(formData,appointment,editable.id))
             setFormData(
                 {
                     name: "",
@@ -198,34 +207,58 @@ const AddressenForm = ({back,appointment}) => {
                     country: ""
                 }
             )
-            setContval("select a country")
-            setNameError("")
-            setSurnameError("")
-            setRoadError("")
-            setPostCodeError("")
-            setOrtError("")
-            setHouseNumberError("")
-            setAddressLineOneError("")
-        }else {
-            if(nameError === ""){
-                setNameError(true)
-            }
-            if(surnameError === ""){
-                setSurnameError(true)
-            }
-            if(roadError === ""){
-                setRoadError(true)
-            }
-            if(houseNumberError === ""){
-                setHouseNumberError(true)
-            }
-            if(postCodeError === ""){
-                setPostCodeError(true)
-            }
-            if(ortError === ""){
-                setOrtError(true)
+            setContval("Select a country")
+        }else{
+            if ((!nameError && !surnameError && !roadError && !postCodeError && !ortError && !houseNumberError) &&
+                (nameError !== "" && surnameError !== "" && roadError !== "" && postCodeError !== "" && ortError !== ""
+                    && houseNumberError !== "" )
+            ) {
+                dispatch(addAddress(formData,appointment))
+                setFormData(
+                    {
+                        name: "",
+                        surname: "",
+                        addressLineOne: "",
+                        road: '',
+                        house: "",
+                        plz: "",
+                        ort: "",
+                        country: ""
+                    }
+                )
+                setContval("select a country")
+                setNameError("")
+                setSurnameError("")
+                setRoadError("")
+                setPostCodeError("")
+                setOrtError("")
+                setHouseNumberError("")
+                setAddressLineOneError("")
+            }else {
+                if(nameError === ""){
+                    setNameError(true)
+                }
+                if(surnameError === ""){
+                    setSurnameError(true)
+                }
+                if(roadError === ""){
+                    setRoadError(true)
+                }
+                if(houseNumberError === ""){
+                    setHouseNumberError(true)
+                }
+                if(postCodeError === ""){
+                    setPostCodeError(true)
+                }
+                if(ortError === ""){
+                    setOrtError(true)
+                }
             }
         }
+        setTimeout(()=>{
+            setShow()
+        },1000)
+
     }
 
 
