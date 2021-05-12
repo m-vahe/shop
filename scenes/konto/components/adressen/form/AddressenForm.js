@@ -20,18 +20,20 @@ const AddressenForm = ({back,appointment,editable,setShow}) => {
         }))
     }
 useEffect(()=>{
-    setFormData(prev=>({
-        ...prev,
-        name:editable.first_name,
-        surname:editable.surname,
-        addressLineOne:editable.address_line,
-        road:editable.road,
-        house:editable.house_number,
-        plz:editable.postcode,
-        ort:editable.place,
-        country:editable.country
-    }))
-    setContval(editable.country)
+    if(Object.keys(editable).length !== 0){
+        setFormData(prev=>({
+            ...prev,
+            name:editable.first_name,
+            surname:editable.surname,
+            addressLineOne:editable.address_line,
+            road:editable.road,
+            house:editable.house_number,
+            plz:editable.postcode,
+            ort:editable.place,
+            country:editable.country
+        }))
+        setContval(editable.country)
+    }
 },[editable])
     const [formData, setFormData] = useState({
         name: "",
@@ -193,7 +195,7 @@ useEffect(()=>{
 
     const onSubmitHandler = (e) => {
         e.preventDefault()
-        if(editable !== {}){
+        if(Object.keys(editable).length !== 0){
             dispatch(editAddress(formData,appointment,editable.id))
             setFormData(
                 {
@@ -260,8 +262,13 @@ useEffect(()=>{
         },1000)
 
     }
-
-
+const [canEdit,setCanEdit]=useState(false)
+useEffect(()=>{
+    if(editable !== {}){
+        setCanEdit(true)
+    }else setCanEdit(false)
+    console.log(editable,canEdit,888888888888888888)
+},[editable])
 
     return (
         <div className={"add__address"}>

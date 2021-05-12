@@ -15,7 +15,6 @@ const Adressen = () => {
 
     const [showForm, setShowForm] = useState(false)
     const [appointment, setAppointment] = useState("")
-
     const billingData = useSelector(state => state.address.billingAddresses)
     const deliveryData = useSelector(state => state.address.deliveryAddresses)
     const {billingAddressesLoaded, deliveryAddressesLoaded} = useSelector(state => state.address)
@@ -36,6 +35,10 @@ const Adressen = () => {
         setShowForm(false)
     }
     const router = useRouter()
+    // useEffect(()=>{
+    //     if(Object.keys(editableData).length === 0)
+    //     console.log(editableData,88888888)
+    // },[editableData])
     return (
         <>
             {billingAddressesLoaded || deliveryAddressesLoaded ? (
