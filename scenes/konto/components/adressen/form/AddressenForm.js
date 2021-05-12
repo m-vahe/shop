@@ -2,9 +2,10 @@ import {Select} from "antd";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import {getRegisterCountries} from "../../../../../services/actions/registration";
+import {addAddress} from "../../../../../services/actions/address";
 
 const {Option} = Select
-const AddressenForm = ({back}) => {
+const AddressenForm = ({back,appointment}) => {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(getRegisterCountries())
@@ -13,23 +14,34 @@ const AddressenForm = ({back}) => {
     const countriesData = useSelector(state => state.registration.countries)?.Data
     const handleCountryChange = (e) => {
         setContval(e)
+        setFormData(prev => ({
+            ...prev,
+            country: e
+        }))
     }
 
     const [formData, setFormData] = useState({
         name: "",
         surname: "",
-        addresLineOne: "",
+        addressLineOne: "",
         road: '',
         house: "",
         plz: "",
-        ort: ""
+        ort: "",
+        country: ""
     })
 
     const [nameError, setNameError] = useState("")
     const [surnameError, setSurnameError] = useState("")
+    const [addressLineOneError, setAddressLineOneError] = useState("")
+    const [roadError, setRoadError] = useState("")
+    const [houseNumberError, setHouseNumberError] = useState("")
+    const [postCodeError, setPostCodeError] = useState("")
+    const [ortError, setOrtError] = useState("")
+
     const handleValidation = e => {
         let re = /^[A-Za-z]+$/;
-        console.log(formData)
+        let addressReg = /[,#-\/\s\!\@\$.....]/gi
         switch (e.target.name) {
             case "name" :
                 e.target.value.length > 0 && e.target.value.length <= 16 && re.test(e.target.value) ?
@@ -69,14 +81,153 @@ const AddressenForm = ({back}) => {
                             setSurnameError(true)
                     )
                 break;
+            case "addressLineOne" :
+                addressReg.test(e.target.value) >= 0 ? (
+                        console.log("valid adrs"),
+                            setFormData(prev => ({
+                                ...prev,
+                                [e.target?.name]: e.target.value
+                            })),
+                            setAddressLineOneError(false))
+                    :
+                    (
+                        console.log("ïnvalid adrs"),
+                            setFormData(prev => ({
+                                ...prev,
+                                [e.target?.name]: e.target.value
+                            })),
+                            setAddressLineOneError(true)
+                    )
+                break;
+            case "road" :
+                e.target.value.length > 0 && e.target.value.length <= 16 ?
+                    (
+                        console.log("valid road"),
+                            setFormData(prev => ({
+                                ...prev,
+                                [e.target?.name]: e.target.value
+                            })),
+                            setRoadError(false))
+                    :
+                    (
+                        console.log("ïnvalid road"),
+                            setFormData(prev => ({
+                                ...prev,
+                                [e.target?.name]: e.target.value
+                            })),
+                            setRoadError(true)
+                    )
+                break;
+            case "house" :
+                e.target.value.length > 0 && e.target.value.length <= 16 && Number(e.target.value) ?
+                    (
+                        setFormData(prev => ({
+                            ...prev,
+                            [e.target?.name]: e.target.value
+                        })),
+                            setHouseNumberError(false))
+                    :
+                    (
+                        setFormData(prev => ({
+                            ...prev,
+                            [e.target?.name]: e.target.value
+                        })),
+                            setHouseNumberError(true)
+                    )
+                break;
+            case "plz":
+                e.target.value.length > 0 ?
+                    (
+                        setFormData(prev => ({
+                            ...prev,
+                            [e.target.name]: e.target.value
+                        })),
+                            setPostCodeError(false)
+
+                    )
+                    :
+                    (
+                        setFormData(prev => ({
+                            ...prev,
+                            [e.target.name]: e.target.value
+                        })),
+                            setPostCodeError(true)
+                    )
+                break;
+            case "ort":
+                e.target.value.length > 0 ?
+                    (
+                        setFormData(prev => ({
+                            ...prev,
+                            [e.target.name]: e.target.value
+                        })),
+                            setOrtError(false)
+
+                    )
+                    :
+                    (
+                        setFormData(prev => ({
+                            ...prev,
+                            [e.target.name]: e.target.value
+                        })),
+                            setOrtError(true)
+                    )
+                break;
             default:
                 break;
         }
     }
 
-    const onSubmitHandler = () => {
-        console.log("ähdbshbfhs")
+    const onSubmitHandler = (e) => {
+        e.preventDefault()
+        console.log(formData)
+        if ((!nameError && !surnameError && !roadError && !postCodeError && !ortError && !houseNumberError) &&
+            (nameError !== "" && surnameError !== "" && roadError !== "" && postCodeError !== "" && ortError !== ""
+                && houseNumberError !== "" )
+        ) {
+            dispatch(addAddress(formData,appointment))
+            setFormData(
+                {
+                    name: "",
+                    surname: "",
+                    addressLineOne: "",
+                    road: '',
+                    house: "",
+                    plz: "",
+                    ort: "",
+                    country: ""
+                }
+            )
+            setContval("select a country")
+            setNameError("")
+            setSurnameError("")
+            setRoadError("")
+            setPostCodeError("")
+            setOrtError("")
+            setHouseNumberError("")
+            setAddressLineOneError("")
+        }else {
+            if(nameError === ""){
+                setNameError(true)
+            }
+            if(surnameError === ""){
+                setSurnameError(true)
+            }
+            if(roadError === ""){
+                setRoadError(true)
+            }
+            if(houseNumberError === ""){
+                setHouseNumberError(true)
+            }
+            if(postCodeError === ""){
+                setPostCodeError(true)
+            }
+            if(ortError === ""){
+                setOrtError(true)
+            }
+        }
     }
+
 
 
     return (
@@ -87,21 +238,58 @@ const AddressenForm = ({back}) => {
             <p className={"add__address__text"}>
                 bitte tragen sie ihre adressdaten ein und klicken sie auf &bdquo; speichern &rdquo;
             </p>
-            <form action="#" onSubmit={onSubmitHandler}>
-                <div className={`validation-field ${nameError ? "invalidInput" : ""}`}>
-                    <input type="text" placeholder={"Vorname*"} name={"name"} onChange={(e) => handleValidation(e)}/>
+            <form action="#" onSubmit={(e)=>onSubmitHandler(e)}>
+                <div className={`validation-field ${nameError ? "invalidInput" : ""}`} >
+                    <input type="text" placeholder={"Vorname*"} name={"name"} value={formData.name}
+                           onChange={(e) => handleValidation(e)}/>
                     <p style={nameError ? {visibility: "visible"} : {visibility: "hidden"}}>Ungültiger Name</p>
                 </div>
                 <div className={`validation-field ${surnameError ? "invalidInput" : ""}`}>
-                    <input type="text" placeholder={"Nachname"} name={"surname"} onChange={(e) => handleValidation(e)}/>
+                    <input type="text" placeholder={"Nachname*"} name={"surname"}
+                           value={formData.surname}
+                           onChange={(e) => handleValidation(e)}/>
                     <p style={surnameError ? {visibility: "visible"} : {visibility: "hidden"}}>ungültiger Nachname</p>
                 </div>
-                <input type="text" placeholder={"Adresszeile 1 (oder Firmenname)"} name={"addressLineOne"}
-                       onChange={(e) => handleValidation(e)}/>
-                <input type="text" placeholder={"Strasse"} name={"road"} onChange={(e) => handleValidation(e)}/>
-                <input type="text" placeholder={"Hausnummer*"} name={"house"} onChange={(e) => handleValidation(e)}/>
-                <input type="text" placeholder={"PLZ*"} name={"plz"} onChange={(e) => handleValidation(e)}/>
-                <input type="text" placeholder={"Ort*"} name={"ort"} onChange={(e) => handleValidation(e)}/>
+                <div className={`validation-field ${addressLineOneError ? "invalidInput" : ""}`}>
+                    <input type="text" placeholder={"Adresszeile 1 (oder Firmenname)"} name={"addressLineOne"}
+                           value={formData.addressLineOne}
+                           onChange={(e) => handleValidation(e)}/>
+                    <p style={addressLineOneError ? {visibility: "visible"} : {visibility: "hidden"}}>
+                        ungültiger Adresszeile
+                    </p>
+                </div>
+                <div className={`validation-field ${roadError ? "invalidInput" : ""}`}>
+                    <input type="text" placeholder={"Strasse*"} name={"road"}
+                           value={formData.road}
+                           onChange={(e) => handleValidation(e)}/>
+                    <p style={roadError ? {visibility: "visible"} : {visibility: "hidden"}}>
+                        bitte füllen sie das pflitchfeld aus
+                    </p>
+                </div>
+                <div className={`validation-field ${houseNumberError ? "invalidInput" : ""}`}>
+                    <input type="text" placeholder={"Hausnummer*"} name={"house"}
+                           value={formData.house}
+                           onChange={(e) => handleValidation(e)}/>
+                    <p style={houseNumberError ? {visibility: "visible"} : {visibility: "hidden"}}>
+                        ungültiger housenummer
+                    </p>
+                </div>
+                <div className={`validation-field ${postCodeError ? "invalidInput" : ""} `}>
+                    <input type="text" placeholder={"PLZ*"} name={"plz"}
+                           value={formData.plz}
+                           onChange={(e) => handleValidation(e)}/>
+                    <p style={postCodeError ? {visibility: "visible"} : {visibility: "hidden"}}>
+                        bitte füllen sie das pflichtfeld aus!
+                    </p>
+                </div>
+                <div className={`validation-field ${ortError ? "invalidInput" : ""} `}>
+                    <input type="text" placeholder={"Ort*"} name={"ort"}
+                           value={formData.ort}
+                           onChange={(e) => handleValidation(e)}/>
+                    <p style={ortError ? {visibility: "visible"} : {visibility: "hidden"}}>
+                        bitte füllen sie das pflichtfeld aus!
+                    </p>
+                </div>
                 <Select
                     defaultValue={"Select a country"}
                     onChange={handleCountryChange}

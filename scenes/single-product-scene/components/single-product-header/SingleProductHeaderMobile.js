@@ -95,16 +95,16 @@ const SingleProductHeaderMobile = () => {
             return router.push("/login");
         }
         if (variantId === undefined) {
-            dispatch(addToWishList(id, defaultId[0].id)).then((res) => dispatch(getSingleProduct(router.query.id)));
+            dispatch(addToWishList(id, defaultId[0].id));
         } else {
-            dispatch(addToWishList(id, variantId)).then((res) => dispatch(getSingleProduct(router.query.id)));
+            dispatch(addToWishList(id, variantId))
         }
     };
     return (
         <>
             <div className={"single-product-header-mobile"}>
                 <div className={"left-side"}>
-                    <p>{singleProduct?.brand}</p>
+                    <p>{singleProduct?.brand?.name}</p>
                     <h2>{singleProduct?.name.toUpperCase()}</h2>
                     <a href="#">{singleProduct?.kind}</a>
                     <div className={"left-side-select"}>

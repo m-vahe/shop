@@ -134,23 +134,23 @@
         text-align: left;
         color: #2e2e2e;
 
-        a {
-          text-transform: uppercase;
-          font-size: 2rem;
-          font-weight: normal;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: 1.94;
-          letter-spacing: 2.34px;
-          text-align: left;
-          color: #7b7b7b;
-          text-decoration: underline;
-        }
+
 
         &__item {
           display: flex;
           flex-direction: column;
-
+          &--edit,&--delete {
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.94;
+            letter-spacing: 2.34px;
+            text-align: left;
+            color: #7b7b7b;
+            text-decoration: underline;
+          }
           &--titlebot {
             margin-bottom: 3rem !important;
           }

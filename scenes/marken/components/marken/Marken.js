@@ -158,8 +158,10 @@ const Marken = () => {
                     vertrauen
                 </p>
             </div>
+<>
             {newArray.map((e) => {
                 return (
+
                     <div className={"marken__container__content"}>
                         {
                             e.map((item, index) => {
@@ -180,8 +182,37 @@ const Marken = () => {
                             })
                         }
                     </div>
-                )
-            })}
+                        )
+                        })}
+
+
+            <div className={"marken__container__mobile__content"}>
+                {
+                    data.map((item, index) => {
+                        return (
+                            <div className={"marken__container__content__item"}>
+                                <h4 className={"marken__container__content__item--title"}>{item.title}</h4>
+                                {
+                                    item.content.map(contentItem => {
+                                        return (
+                                            <p className={"marken__container__content__item--content"}>
+                                                {contentItem}
+                                            </p>
+                                        )
+                                    })
+                                }
+                            </div>
+                        )
+                    })
+                }
+            </div>
+
+
+
+
+
+</>
+
 
         </div>
     )

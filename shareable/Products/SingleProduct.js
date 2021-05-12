@@ -39,7 +39,7 @@ const SingleProduct = ({elem, favouriteClickHandler, filter}) => {
                             onClick={() => toProductPage(elem?.id)}
                         />
                     )}
-                    {!elem?.approoved && (
+                    {!elem?.approoved_by_DPAB && (
                         <img
                             src="/15-layers.png"
                             alt="15 layers"
@@ -89,8 +89,8 @@ const SingleProduct = ({elem, favouriteClickHandler, filter}) => {
                 )}
                 {elem?.limited_edition ? <span className={'prod-txt-head2'}>Limited edition</span> :
                     <span style={{opacity: "0"}} className={'prod-txt-head2'}>Limited edition</span>}
-                {elem?.brand ? (
-                    <h3 className={"prod-txt-name"}>{elem?.brand}</h3>
+                {elem?.brand?.name ? (
+                    <h3 className={"prod-txt-name"}>{elem?.brand?.name}</h3>
                 ) : (
                     <h3 className={"prod-txt-name"} style={{opacity: 0}}>
                         Ylumi
@@ -111,7 +111,7 @@ const SingleProduct = ({elem, favouriteClickHandler, filter}) => {
           </span>
                 )}
                 <h3 className={"prod-txt-price"}>
-                    {formatter.format(elem?.variants_of_a_products[0]?.price || 0)} {" "}/ {elem?.variants_of_a_products?.find(item => item.main === true)?.bottle_sizes || 0}
+                    {formatter.format(elem?.variants_of_a_products[0]?.price || 0)}
                 </h3>
 
                 <button>

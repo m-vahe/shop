@@ -77,6 +77,12 @@ const MobileSwipeableCarousel = ({imagesData, elem}) => {
                                     >Limited Edition</p>
                                     <div className={"swiper-images-body"}>
                                         <img src={`${e?.url}`} alt=""/>
+                                        {e?.approved_by_DPAB && <img
+                                            src="/15-layers.png"
+                                            alt="15 layers"
+                                            className={"circled-txt"}
+                                            onClick={() => router.push("/aboutthree")}
+                                        />}
                                     </div>
 
                                 </div>

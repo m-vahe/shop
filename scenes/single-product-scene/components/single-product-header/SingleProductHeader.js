@@ -104,7 +104,7 @@ const SingleProductHeader = () => {
         <>
             <div className={"single-product-header"}>
                 <div className={"left-side"}>
-                    <p>{singleProduct?.brand}</p>
+                    <p>{singleProduct?.brand?.name}</p>
                     <h2>{singleProduct?.name.toUpperCase()}</h2>
                     <a href="#">{singleProduct?.kind}</a>
                     <div className="left-side-select-body">

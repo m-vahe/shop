@@ -402,7 +402,19 @@
 
   }
 }
-
+.swiper-images-body{
+  position: relative;
+  @media screen and (max-width: 1024px){
+    cursor:pointer;
+  }
+  .circled-txt{
+    position: absolute;
+    width: 8rem !important;
+    bottom: 0;
+    left: 0;
+    height: 8rem !important;
+  }
+}
 @media screen and(max-width: 1024px) {
   .swiper-button-next {
     display: none;

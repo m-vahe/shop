@@ -5,11 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/services/action-types/address.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/actions/address.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/reducers/address.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/konto/components/adressen/Adressen.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/adressen/Adressen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/konto/components/adressen/Adressen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/adressen/Adressen.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/konto/components/adressen/form/AddressenForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/adressen/form/AddressenForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/konto/components/adressen/form/AddressenForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/adressen/form/AddressenForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/marken/components/marken/Marken.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/marken/components/marken/Marken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/marken/components/marken/marken.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/marken/components/marken/marken.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/LeftProductImages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/mobile-images/MobileSwipeableTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/left-product-images/mobile-images/MobileSwipeableTop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeaderMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeaderMobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/ShopSingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/ShopSingleProduct.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/SingleProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/konto/AdressenElem.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/konto/AdressenElem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/store/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -177,7 +194,8 @@
       <workItem from="1620226890934" duration="88000" />
       <workItem from="1620283956849" duration="25234000" />
       <workItem from="1620368745883" duration="24502000" />
-      <workItem from="1620713234832" duration="3859000" />
+      <workItem from="1620713234832" duration="28183000" />
+      <workItem from="1620800542063" duration="6039000" />
     </task>
     <servers />
   </component>

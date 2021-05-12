@@ -34,7 +34,7 @@ const ShopSingleProduct = ({elem, favouriteClickHandler, filter}) => {
                             onClick={() => toProductPage(elem?.id)}
                         />
                     )}
-                    {!elem?.approoved && (
+                    {!elem?.approoved_by_DPAB && (
                         <img
                             src="/15-layers.png"
                             alt="15 layers"
@@ -74,7 +74,7 @@ const ShopSingleProduct = ({elem, favouriteClickHandler, filter}) => {
                 {moment(new Date()).format("YYYY-MM-DD") <= elem?.New_Date_Limit ?
                     <span className={'item-new'}>New</span> :
                     <span className={'item-notNew'}>New</span>}
-                {/**/}
+
                 {elem?.clean_product ? (
                     <span className={"prod-txt-head"}>Clean product</span>
                 ) : (
@@ -84,8 +84,8 @@ const ShopSingleProduct = ({elem, favouriteClickHandler, filter}) => {
                 )}
                 {elem?.limited_edition ? <span className={'prod-txt-head2'}>Limited edition</span> :
                     <span style={{opacity: "0"}} className={'prod-txt-head2'}>Limited edition</span>}
-                {elem?.brand ? (
-                    <h3 className={"prod-txt-name"}>{elem?.brand}</h3>
+                {elem?.brand?.name ? (
+                    <h3 className={"prod-txt-name"}>{elem?.brand?.name}</h3>
                 ) : (
                     <h3 className={"prod-txt-name"} style={{opacity: 0}}>
                         Ylumi
@@ -107,7 +107,7 @@ const ShopSingleProduct = ({elem, favouriteClickHandler, filter}) => {
                 )}
                 <h3 className={"prod-txt-price"}>
                     {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0)}
-                    {" "} / {elem?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
+                    {/*{" "} / {elem?.variants_of_a_products?.find(item => item.main === true)?.bottle_sizes}*/}
                 </h3>
                 <button>
                     <p>Quick shop </p>

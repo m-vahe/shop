@@ -72,7 +72,7 @@ const ProductsWithLeftText = ({ products, leftText, addToWishList }) => {
                       onClick={() => toProductPage(e.id)}
                     />
 
-                    {!e.approoved && (
+                    {!e.approoved_by_DPAB && (
                       <img
                         src="/15-layers.png"
                         alt="15 layers"
@@ -143,8 +143,8 @@ const ProductsWithLeftText = ({ products, leftText, addToWishList }) => {
                       Limited edition
                     </span>
                   )}
-                  {e?.brand ? (
-                    <h3 className={"prod-txt-name"}>{e?.brand}</h3>
+                  {e?.brand?.name ? (
+                    <h3 className={"prod-txt-name"}>{e?.brand?.name}</h3>
                   ) : (
                     <h3 className={"prod-txt-name"} style={{ opacity: "0" }}>
                       jdfbhsbh

@@ -72,12 +72,12 @@ const LeftProductImages = ({elem}) => {
                             >
                                 new
                             </p>
-                            <img
+                            {elem?.approved_by_DPAB && <img
                                 src="/15-layers.png"
                                 alt="15 layers"
                                 className={"circled-txt"}
                                 onClick={() => router.push("/aboutthree")}
-                            />
+                            />}
                         </div>
                         <p
                             className={"headtxt-one"}

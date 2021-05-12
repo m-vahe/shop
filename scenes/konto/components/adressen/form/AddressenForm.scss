@@ -35,13 +35,17 @@
     display: grid;
     gap: 2rem;
     width: 70%;
-
     .validation-field {
       display: grid;
       grid-auto-flow: column;
       gap: 2rem;
       align-items: center;
       grid-template-columns: 50% auto;
+      @media screen and (max-width: 1024px){
+        grid-template-columns: unset;
+        grid-auto-flow: unset;
+        width: 100%;
+      }
       input{
         outline: none;
       }
@@ -50,12 +54,21 @@
         text-transform: uppercase;
         font-size: 2.4rem;
         margin-bottom: 0;
+        @media screen and (max-width: 1024px){
+          display: none;
+        }
       }
     }
     .invalidInput{
       input{
         border-color: #a12224;
         outline:1px solid #a12224;
+
+      }
+      p{
+        @media screen and(max-width: 1024px) {
+          display: block;
+        }
       }
     }
     @media screen and (max-width: 1500px) {
@@ -92,6 +105,7 @@
       width: fit-content;
       font-size: 3.3rem;
       margin-top: 3rem;
+      cursor: pointer;
       @media screen and(max-width: 1024px) {
         font-size: 2.9rem;
       }
@@ -113,6 +127,7 @@
     }
 
     .ant-select {
+      width: 50%;
       @media screen and (max-width: 1024px) {
         width: 100%;
       }
