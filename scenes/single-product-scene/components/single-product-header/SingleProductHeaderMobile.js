@@ -112,20 +112,25 @@ const SingleProductHeaderMobile = () => {
                             <div
                                 className={"cart__sidebar__product__body__text--quantityinp"}
                             >
-                                <input
-                                    type="number"
-                                    min={"1"}
-                                    max={defaultVariant[0]?.quantity}
-                                    onChange={onChanges}
-                                    value={value < 10 ? `0${value}` : value}
-                                />
+                                <span>
+                                    Menge
+                                </span>
                                 <div>
-                                    <button className={"btnplus"} onClick={onIncHandler}>
-                                        <FontAwesomeIcon icon={faPlus}/>
-                                    </button>
-                                    <button className={"btnminus"} onClick={onDecHandler}>
-                                        <FontAwesomeIcon icon={faMinus}/>
-                                    </button>
+                                    <input
+                                        type="number"
+                                        min={"1"}
+                                        max={defaultVariant[0]?.quantity}
+                                        onChange={onChanges}
+                                        value={value < 10 ? `0${value}` : value}
+                                    />
+                                    <div className={"btnd-div"}>
+                                        <button className={"btnplus"} onClick={onIncHandler}>
+                                            <FontAwesomeIcon icon={faPlus}/>
+                                        </button>
+                                        <button className={"btnminus"} onClick={onDecHandler}>
+                                            <FontAwesomeIcon icon={faMinus}/>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                             <div className={"select-ml-el"}>

@@ -67,8 +67,10 @@
       }
       input[type=number] {
         -moz-appearance: textfield;
-        width: 25%;
+        width: 30.5%;
         text-align: center;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
         font-size: 3rem;
         outline: none;
         border-top: 1px solid #5c5c5c;
@@ -84,7 +86,7 @@
         font-size: 1.5rem;
         background: white;
         border: 1px solid #5c5c5c;
-        padding: 0 2rem;
+        padding: .3rem 2rem;
 
       }
 

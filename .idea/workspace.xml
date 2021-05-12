@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/adressen/Adressen.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/adressen/Adressen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/adressen/form/AddressenForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/adressen/form/AddressenForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeaderMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeaderMobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSidebarProduct.scss" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSidebarProduct.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +177,7 @@
       <workItem from="1620283956849" duration="25234000" />
       <workItem from="1620368745883" duration="24502000" />
       <workItem from="1620713234832" duration="28183000" />
-      <workItem from="1620800542063" duration="11950000" />
+      <workItem from="1620800542063" duration="13543000" />
     </task>
     <servers />
   </component>
