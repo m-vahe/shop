@@ -1,4 +1,4 @@
-import { combineReducers } from "redux";
+import {combineReducers} from "redux";
 import homeReducer from "../services/reducers/homepage__stable";
 import newsletterReducer from "../services/reducers/newsletter";
 import authReducer from "../services/reducers/auth";
@@ -14,23 +14,25 @@ import notFoundReducer from "./reducers/not_found_page";
 import shopPageReducer from "./reducers/shop";
 import brandsProductsReducer from "./reducers/brands";
 import addressReducer from "./reducers/address";
+import markenReducer from "./reducers/marken";
 
 const rootReducer = combineReducers({
-  navbar: homeReducer,
-  newsletter: newsletterReducer,
-  auth: authReducer,
-  products: productsReducer,
-  news: newsReportReducer,
-  footer: footerReducer,
-  singleProdPage: singleProductPageReducer,
-  konto: kontoPageReducer,
-  registration: RegistrationReducer,
-  versandarten: versandartenReducer,
-  contact: ContactReducer,
-  notFoundReducer: notFoundReducer,
-  shop: shopPageReducer,
-  brand: brandsProductsReducer,
-  address:addressReducer
+    navbar: homeReducer,
+    newsletter: newsletterReducer,
+    auth: authReducer,
+    products: productsReducer,
+    news: newsReportReducer,
+    footer: footerReducer,
+    singleProdPage: singleProductPageReducer,
+    konto: kontoPageReducer,
+    registration: RegistrationReducer,
+    versandarten: versandartenReducer,
+    contact: ContactReducer,
+    notFoundReducer: notFoundReducer,
+    shop: shopPageReducer,
+    brand: brandsProductsReducer,
+    address: addressReducer,
+    marken: markenReducer
 });
 
 export default rootReducer;
