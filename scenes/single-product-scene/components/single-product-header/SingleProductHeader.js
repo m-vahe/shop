@@ -161,7 +161,7 @@ const SingleProductHeader = () => {
                     </div>
                 </div>
                 <div className={"right-side"}>
-                    <div className={"select-number"} onClick={() => {
+                    <div className={"select-number"} style={{cursor:"pointer"}} onClick={() => {
                         addProductToBasket(singleProduct.id, !bottleId ? defaultVariant[0]?.id : bottleId, variantId, value)
                     }}>
                         <p>in den warenkorb</p>

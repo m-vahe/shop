@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMinus, faPlus} from "@fortawesome/free-solid-svg-icons";
 import {useRouter} from "next/router";
 import {addToWishList, getSingleProduct} from "../../../../services/actions/products";
+import {addToBasket} from "../../../../services/actions/basket";
 
 const SingleProductHeaderMobile = () => {
 
@@ -60,8 +61,12 @@ const SingleProductHeaderMobile = () => {
     }, []);
 
     const onIncHandler = () => {
-        if (value < maxLimit) {
+        if (maxLimit === undefined && value < Number(singleProduct.variants_of_a_products.find(item => item.main === true).quantity)) {
             setValue(value + 1);
+        } else {
+            if (value < maxLimit) {
+                setValue(value + 1);
+            }
         }
     };
     const onDecHandler = () => {
@@ -100,6 +105,17 @@ const SingleProductHeaderMobile = () => {
             dispatch(addToWishList(id, variantId))
         }
     };
+
+    const addProductToBasket = (id, variantId, defaultId, quantity) => {
+        if (!isAuthenticated) {
+            return router.push("/login");
+        }
+        if (variantId === undefined) {
+            dispatch(addToBasket(id, defaultId[0].id, quantity));
+        } else {
+            dispatch(addToBasket(id, variantId, quantity))
+        }
+    }
     return (
         <>
             <div className={"single-product-header-mobile"}>
@@ -119,7 +135,6 @@ const SingleProductHeaderMobile = () => {
                                     <input
                                         type="number"
                                         min={"1"}
-                                        max={defaultVariant[0]?.quantity}
                                         onChange={onChanges}
                                         value={value < 10 ? `0${value}` : value}
                                     />
@@ -161,7 +176,9 @@ const SingleProductHeaderMobile = () => {
                     </div>
                 </div>
                 <div className={"right-side"}>
-                    <p>in den warenkorb</p>
+                    <p onClick={() => {
+                        addProductToBasket(singleProduct.id, !bottleId ? defaultVariant[0]?.id : bottleId, variantId, value)
+                    }}>in den warenkorb</p>
                     <div className={"bot-text-right"}>
                         <div className={"r-second"}>
                             <p>auf meine wunchliste</p>

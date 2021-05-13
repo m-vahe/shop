@@ -3,6 +3,7 @@ import {useRouter} from 'next/router';
 import {useDispatch, useSelector} from "react-redux";
 import {addToWishList, addToWishListTwo} from "../services/actions/products";
 import moment from "moment";
+import {addToBasket} from "../services/actions/basket";
 
 const formatter = new Intl.NumberFormat('de-DE', {
     style: 'currency',
@@ -50,11 +51,18 @@ const ProductsWithFilter = ({
         if (!isAuthenticated) {
             return router.push("/login");
         }
-        if(position === "HerrenPageTwo"){
+        if (position === "HerrenPageTwo") {
             dispatch(addToWishListTwo(id, variantId, parfum ? "parfums" : beauty ? "beauties" : interiour ? "interieurs" : null))
-        }else{
+        } else {
             dispatch(addToWishList(id, variantId, parfum ? "parfums" : beauty ? "beauties" : interiour ? "interieurs" : null))
         }
+    };
+
+    const basketClickHandler = (id, variantId) => {
+        if (!isAuthenticated) {
+            return router.push("/login");
+        }
+        dispatch(addToBasket(id, variantId, 1))
     };
 
     return (
@@ -193,10 +201,12 @@ const ProductsWithFilter = ({
                                     </span>
                                 )}
                                 <h3 className={"prod-txt-price"}>
-                                    {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0) } / {elem?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
+                                    {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0)} / {elem?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
                                 </h3>
 
-                                <button>
+                                <button onClick={() =>
+                                    basketClickHandler(elem?.id, elem?.variants_of_a_products.find(item => item.main === true).id)
+                                }>
                                     <p>Quick shop </p>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +260,7 @@ const ProductsWithFilter = ({
                                         viewBox="0 0 512 512"
                                         className={"letter-svg heart-icon-item"}
                                         onClick={() =>
-                                            favouriteClickHandler(elem?.id, elem?.variants_of_a_products.find(item => item.main === true).id)
+                                            basketClickHandler(elem?.id, elem?.variants_of_a_products.find(item => item.main === true).id)
                                         }
                                         style={elem.variants_of_a_products.find(item => item.main === true).favorite ? {stroke: "#000000"} : {stroke: "#7b7b7b"}}
                                     >
@@ -310,7 +320,9 @@ const ProductsWithFilter = ({
                                     {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0)} / {elem?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
                                 </h3>
 
-                                <button>
+                                <button onClick={() =>
+                                    basketClickHandler(elem?.id, elem?.variants_of_a_products.find(item => item.main === true).id)
+                                }>
                                     <p>Quick shop </p>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -424,7 +436,9 @@ const ProductsWithFilter = ({
                                     {formatter.format(elem?.variants_of_a_products?.find(item => item.main === true)?.price || 0)} / {elem?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
                                 </h3>
 
-                                <button>
+                                <button onClick={() =>
+                                    basketClickHandler(elem?.id, elem?.variants_of_a_products.find(item => item.main === true).id)
+                                }>
                                     <p>Quick shop </p>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"

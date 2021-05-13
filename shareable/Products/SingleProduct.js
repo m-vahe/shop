@@ -1,6 +1,7 @@
 import {useRouter} from "next/router";
 import {useDispatch, useSelector} from "react-redux";
 import moment from "moment";
+import {addToBasket} from "../../services/actions/basket";
 
 const formatter = new Intl.NumberFormat("de-DE", {
     style: "currency",
@@ -10,7 +11,8 @@ const formatter = new Intl.NumberFormat("de-DE", {
 
 const SingleProduct = ({elem, favouriteClickHandler, filter}) => {
     const router = useRouter();
-
+    const dispatch = useDispatch()
+    const {isAuthenticated} = useSelector(state=>state.auth)
     const toProductPage = (e) => {
         if (router.pathname !== "/products") {
             router.push(`/products/${e}`);
@@ -21,6 +23,13 @@ const SingleProduct = ({elem, favouriteClickHandler, filter}) => {
 
     const toApproved = () => {
         router.push("/magazinartikelone");
+    };
+
+    const basketClickHandler = (id, variantId) => {
+        if (!isAuthenticated) {
+            return router.push("/login");
+        }
+        dispatch(addToBasket(id, variantId, 1))
     };
 
     return (
@@ -114,7 +123,9 @@ const SingleProduct = ({elem, favouriteClickHandler, filter}) => {
                     {formatter.format(elem?.variants_of_a_products[0]?.price || 0)}
                 </h3>
 
-                <button>
+                <button onClick={() =>
+                    basketClickHandler(elem?.id, elem?.variants_of_a_products.find(item => item.main === true).id)
+                }>
                     <p>Quick shop </p>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
