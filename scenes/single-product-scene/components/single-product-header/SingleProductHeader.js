@@ -6,6 +6,7 @@ import {addToWishList, getSingleProduct} from '../../../../services/actions/prod
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMinus, faPlus} from "@fortawesome/free-solid-svg-icons";
 import {useRouter} from "next/router";
+import {addToBasket} from "../../../../services/actions/basket";
 
 const SingleProductHeader = () => {
     const router = useRouter()
@@ -27,7 +28,7 @@ const SingleProductHeader = () => {
     );
     const [productPrice, setProductPrice] = useState(defaultVariant[0]?.price);
     const [productQuantity, setproductQuantity] = useState(
-        defaultVariant[0]?.quantity
+        singleProduct.variants_of_a_products.find(item => item.main === true).quantity
     );
     let [defaultProductVariant, setDefaultProductVariant] = useState(
         defaultVariant
@@ -45,7 +46,7 @@ const SingleProductHeader = () => {
         setproductQuantity(
             singleProduct?.variants_of_a_products?.filter((item) => {
                 return item.id === bottleId;
-            })[0]?.quantity
+            })[0]?.uantity
         );
         setValue(1);
     }, [bottleId]);
@@ -59,16 +60,22 @@ const SingleProductHeader = () => {
         );
     }, []);
 
-    const onIncHandler = () => {
-        if (value < maxLimit) {
+    const onIncHandler = (a) => {
+        if (maxLimit === undefined && value < Number(singleProduct.variants_of_a_products.find(item => item.main === true).quantity)) {
             setValue(value + 1);
+        } else {
+            if (value < maxLimit) {
+                setValue(value + 1);
+            }
         }
     };
+
     const onDecHandler = () => {
         if (value > 1) {
             setValue(value - 1);
         }
     };
+
     const onChanges = () => {
     };
 
@@ -76,6 +83,7 @@ const SingleProductHeader = () => {
     useEffect(() => {
         setDefaultVariant(singleProduct?.variants_of_a_products.filter(item => item.main === true))
     }, [])
+
     useEffect(() => {
         setDefaultVariant(singleProduct?.variants_of_a_products.filter(item => item.id === singleProductVariantId))
     }, [singleProductVariantId])
@@ -100,6 +108,17 @@ const SingleProductHeader = () => {
             dispatch(addToWishList(id, variantId))
         }
     };
+    const addProductToBasket = (id, variantId, defaultId, quantity) => {
+        if (!isAuthenticated) {
+            return router.push("/login");
+        }
+        if (variantId === undefined) {
+            dispatch(addToBasket(id, defaultId[0].id, quantity));
+        } else {
+            dispatch(addToBasket(id, variantId, quantity))
+        }
+    }
+
     return (
         <>
             <div className={"single-product-header"}>
@@ -126,12 +145,11 @@ const SingleProductHeader = () => {
                                 <input
                                     type="number"
                                     min={"1"}
-                                    max={defaultVariant[0]?.quantity}
                                     onChange={onChanges}
                                     value={value < 10 ? `0${value}` : value}
                                 />
                                 <div>
-                                    <button className={"btnplus"} onClick={onIncHandler}>
+                                    <button className={"btnplus"} onClick={() => onIncHandler(singleProduct)}>
                                         <FontAwesomeIcon icon={faPlus}/>
                                     </button>
                                     <button className={"btnminus"} onClick={onDecHandler}>
@@ -143,7 +161,9 @@ const SingleProductHeader = () => {
                     </div>
                 </div>
                 <div className={"right-side"}>
-                    <div className={"select-number"}>
+                    <div className={"select-number"} onClick={() => {
+                        addProductToBasket(singleProduct.id, !bottleId ? defaultVariant[0]?.id : bottleId, variantId, value)
+                    }}>
                         <p>in den warenkorb</p>
                     </div>
                     <div className={"bot-text-right"}>
@@ -177,7 +197,6 @@ const SingleProductHeader = () => {
                                 }
                                 onClick={() => {
                                     toggleVariantAsfavourite(singleProduct.id, !bottleId ? defaultVariant[0]?.id : bottleId, variantId)
-                                    console.log(singleProduct, "***********//////////////")
                                 }}
                             >
                                 <path
@@ -195,17 +214,17 @@ const SingleProductHeader = () => {
                                                     strokeMiterlimit: "10",
                                                     strokeWidth: "32px",
                                                 } :
-                                        singleProduct?.variants_of_a_products?.find(item => item.id === singleProductVariantId)?.favorite
-                                            ? {
-                                                fill: "#000000",
-                                                strokeMiterlimit: "10",
-                                                strokeWidth: "32px",
-                                            }
-                                            : {
-                                                fill: "none",
-                                                strokeMiterlimit: "10",
-                                                strokeWidth: "32px",
-                                            }
+                                            singleProduct?.variants_of_a_products?.find(item => item.id === singleProductVariantId)?.favorite
+                                                ? {
+                                                    fill: "#000000",
+                                                    strokeMiterlimit: "10",
+                                                    strokeWidth: "32px",
+                                                }
+                                                : {
+                                                    fill: "none",
+                                                    strokeMiterlimit: "10",
+                                                    strokeWidth: "32px",
+                                                }
                                     }
                                 />
                             </svg>

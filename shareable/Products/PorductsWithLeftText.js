@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import moment from "moment";
+import {addToBasket} from "../../services/actions/basket";
 
 const formatter = new Intl.NumberFormat("de-DE", {
   style: "currency",
@@ -20,7 +21,12 @@ const ProductsWithLeftText = ({ products, leftText, addToWishList }) => {
     }
     dispatch(addToWishList(id, variantId));
   };
-
+  const addProductToBasket = (id, variantId,quantity) => {
+    if (!isAuthenticated) {
+      return router.push("/login");
+    }
+    dispatch(addToBasket(id, variantId,quantity));
+  };
   const toProductPage = (e) => {
     if (router.pathname !== "/products") {
       router.push(`/products/${e}`);
@@ -172,7 +178,15 @@ const ProductsWithLeftText = ({ products, leftText, addToWishList }) => {
                     )} / {e?.variants_of_a_products?.find(item => item.main === true).bottle_sizes}
                   </h3>
 
-                  <button>
+                  <button  onClick={() => {
+                    addProductToBasket(
+                        e.id,
+                        e?.variants_of_a_products?.find(
+                            (item) => item.main === true
+                        )?.id,
+                        1
+                    );
+                  }}>
                     <p>Quick shop </p>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

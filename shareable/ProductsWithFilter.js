@@ -56,6 +56,7 @@ const ProductsWithFilter = ({
             dispatch(addToWishList(id, variantId, parfum ? "parfums" : beauty ? "beauties" : interiour ? "interieurs" : null))
         }
     };
+
     return (
         <>
             <div className={'filtered-products-body d-flex flex-wrap'}>

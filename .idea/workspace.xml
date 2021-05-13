@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/services/action-types/marken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/actions/marken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/reducers/marken.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/action-types/basket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/actions/basket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/reducers/basket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/marken/components/marken/Marken.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/marken/components/marken/Marken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/marken/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/marken/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-header/SingleProductHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/Products/PorductsWithLeftText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +181,7 @@
       <workItem from="1620368745883" duration="24502000" />
       <workItem from="1620713234832" duration="28183000" />
       <workItem from="1620800542063" duration="15033000" />
-      <workItem from="1620888275191" duration="3089000" />
+      <workItem from="1620888275191" duration="7738000" />
     </task>
     <servers />
   </component>
