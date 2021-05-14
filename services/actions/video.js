@@ -5,9 +5,12 @@ import {
     SET_ERROR,
     GET_VIDEOS,
     SET_VIDEOS,
-    SET_CHANGEABLE_VIDEOS, CHANGE_VIDEO, ADD_TO_BOOKMARK, GET_BOOKMARK_FAVORITES, SET_BOOKMARK_FAVORITES
+    SET_CHANGEABLE_VIDEOS,
+    CHANGE_VIDEO,
+    ADD_TO_BOOKMARK,
+    GET_BOOKMARK_FAVORITES,
+    SET_BOOKMARK_FAVORITES, FILTERED_VIDEOS
 } from "../action-types/video";
-import {GET_FAVOURITES_PRODUCTS, SET_FAVOURITES_PRODUCTS, SWITCH_TO_FAVOURITE_TWO} from "../action-types/products";
 
 export const getVideoText = () => {
     return (dispatch) => {
@@ -88,7 +91,6 @@ export const addToBookmark = (id) => {
             )
             .then((res) => {
                 const {data} = res;
-                console.log(data, "+++++++++++++++++22222222222222222------------")
                 dispatch({
                     type: ADD_TO_BOOKMARK,
                     payload: {
@@ -103,7 +105,7 @@ export const addToBookmark = (id) => {
     };
 }
 
-export const getUserBookmarks = () =>{
+export const getUserBookmarks = () => {
     return (dispatch) => {
         dispatch({type: GET_BOOKMARK_FAVORITES});
 
@@ -121,4 +123,15 @@ export const getUserBookmarks = () =>{
             })
             .catch((err) => dispatch({type: SET_ERROR, payload: err}));
     };
+}
+
+export const filterVideos = (filter) => {
+    return dispatch => {
+        dispatch(
+            {
+                type: FILTERED_VIDEOS,
+                payload: filter
+            }
+        )
+    }
 }

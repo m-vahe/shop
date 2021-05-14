@@ -1,6 +1,6 @@
 import {
     ADD_TO_BOOKMARK,
-    CHANGE_VIDEO, GET_BOOKMARK_FAVORITES,
+    CHANGE_VIDEO, FILTERED_VIDEOS, GET_BOOKMARK_FAVORITES,
     GET_VIDEO_TEXTS,
     GET_VIDEOS, SET_BOOKMARK_FAVORITES,
     SET_CHANGEABLE_VIDEOS,
@@ -17,6 +17,7 @@ const initialState = {
     videosLoaded: true,
     favorites: [],
     favoritesLoaded: true,
+    filtered:[],
     error: null
 };
 
@@ -80,6 +81,11 @@ const videoReducer = (state = initialState, {type, payload}) => {
                 ...state,
                 favorites: payload,
                 favoritesLoaded: false
+            }
+        case FILTERED_VIDEOS:
+            return {
+                ...state,
+                filtered: payload
             }
         case SET_ERROR:
             return {

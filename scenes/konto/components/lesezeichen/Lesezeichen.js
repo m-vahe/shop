@@ -18,7 +18,7 @@ const Lesezeichen = () =>{
         <div>
             <div className='videos__container__konto'>
                 {favorites.length !== 0 ? favorites.map((e,i) => (
-                    <SmallVideoContainer key={i} video={e} addToBookmark={addToBookmarkHandler}/>
+                    <SmallVideoContainer key={i} video={e} addToBookmark={addToBookmarkHandler} changeVideo={"no"}/>
                 )):<p>There is no videos in your bookmark</p>}
             </div>
         </div>

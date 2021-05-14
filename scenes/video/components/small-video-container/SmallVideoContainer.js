@@ -11,12 +11,14 @@ const VideosContainer = ({video, changeVideo,addToBookmark}) => {
                 <ReactPlayer url={video?.video?.url} muted={true}
                              width='100%'
                              height='100%'
-                             playing={false}
+                             playing={play1}
                              id={"videoBG"}
                 />
                 <img src="/play.png" alt="play" onClick={() => setPlay1(true)}
                      style={play1 ? {display: "none"} : null} onClick={() => {
-                    changeVideo(video)
+                    if(changeVideo !== "no"){
+                        changeVideo(video)
+                    }else setPlay1(true)
                 }}/>
                 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg"
 

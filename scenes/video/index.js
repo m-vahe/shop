@@ -7,7 +7,7 @@ import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import {getUserDataFromLocalStorage} from "../../services/actions/auth";
-import {getVideos, getVideoText} from "../../services/actions/video";
+import {filterVideos, getVideos, getVideoText} from "../../services/actions/video";
 
 const Video = () => {
     const dispatch = useDispatch()
@@ -25,26 +25,51 @@ const Video = () => {
 
     const [activeIndex, setActiveIndex] = useState()
 
-    useEffect(()=>{
+    useEffect(() => {
         setActiveIndex(videos[0]?.id)
-    },[videosLoaded])
+    }, [videosLoaded])
 
-    useEffect(()=>{
+    useEffect(() => {
         console.log(activeIndex)
-    },[activeIndex])
+    }, [activeIndex])
 
-    const info = videos.map(e=>{
-        return e.type
+    const info = videos.map(e => {
+        return e.type.toUpperCase()
     })
+
+    const [infoFilter, setInfoFilter] = useState({type: "", checked: false})
+
+    useEffect(() => {
+        let a = []
+        videos.map(e => {
+            if (e.type.toUpperCase() === infoFilter.type) {
+                a.push(e)
+            }
+        })
+        if (infoFilter.type !== "" && infoFilter.checked) {
+            dispatch(filterVideos(a))
+        } else dispatch(filterVideos([]))
+    }, [infoFilter])
+    const {filtered} = useSelector(state => state.video)
+
+    useEffect(() => {
+        if (filtered.length !== 0) {
+            setActiveIndex(filtered[0]?.id)
+        }
+    }, [filtered])
     return (
         <div>
             <ComponentHeader
                 info={videoText?.header}
                 title={videoText?.title}
             />
-            <MediatekInfo info={info}/>
-            <VideoPart text={videoText?.video_text} video={videos.find(item=>item.id === activeIndex)}/>
-            <VideosContainer videos={videos} activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
+            <MediatekInfo info={info} setInfo={setInfoFilter} checked={infoFilter.checked} filter={infoFilter}/>
+            <VideoPart text={videoText?.video_text}
+                       video={filtered.length !== 0 ?
+                           filtered.find(item => item.id === activeIndex) :
+                           videos.find(item => item.id === activeIndex)}/>
+            <VideosContainer videos={filtered.length !== 0 ? filtered : videos} activeIndex={activeIndex}
+                             setActiveIndex={setActiveIndex}/>
             <Social/>
             <NewsletterRep/>
         </div>
