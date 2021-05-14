@@ -4,25 +4,30 @@ import VideoPart from '../homepage/components/video/VideoPart'
 import VideosContainer from './components/video-container/VideosContainer'
 import Social from '../../shareable/social/Social';
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {getUserDataFromLocalStorage} from "../../services/actions/auth";
+import {getVideos, getVideoText} from "../../services/actions/video";
 
 const Video = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(getUserDataFromLocalStorage());
+        dispatch(getVideoText())
+        dispatch(getVideos())
     }, []);
+
+    const {videoText} = useSelector(state=>state.video)
 
   return (
     <div>
       <ComponentHeader
-        info='ENTDECKEN SIE TIPPS, ANLEITUNGEN UND EXKLUSIVE  VIDEOS'
-        title='MEDIATHEK'
+        info={videoText?.header}
+        title={videoText?.title}
       />
       <MediatekInfo />
-      <VideoPart />
+      <VideoPart text={videoText?.video_text} />
       <VideosContainer />
       <Social />
       <NewsletterRep />

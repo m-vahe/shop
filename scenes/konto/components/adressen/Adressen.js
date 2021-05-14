@@ -76,7 +76,8 @@ const Adressen = () => {
                                 {deliveryData.map((e, i) => {
                                     return (
                                         <div key={i}>
-                                            <AdressenElem e={e} appointment={"delivery"}/>
+                                            <AdressenElem e={e} appointment={"delivery"} setEditable={setEditableData}
+                                                          setAppointment={setAppointment} setShowForm={setShowForm}/>
                                         </div>
                                     )
                                 })}

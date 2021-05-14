@@ -1,0 +1,5 @@
+export const GET_VIDEO_TEXTS = "GET_VIDEO_TEXTS"
+export const SET_VIDEO_TEXTS = "SET_VIDEO_TEXTS"
+export const GET_VIDEOS = "GET_VIDEOS"
+export const SET_VIDEOS = "SET_VIDEOS"
+export const SET_ERROR = "SET_ERROR"

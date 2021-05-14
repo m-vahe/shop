@@ -2,7 +2,7 @@ import  {useState} from 'react'
 import ReactPlayer from 'react-player'
 import Image from "next/image";
 
-const VideoPart = () =>{
+const VideoPart = ({text}) =>{
     const [play,setPlay] = useState(false)
     const [show,setShow] = useState(false)
     return(
@@ -57,7 +57,7 @@ const VideoPart = () =>{
                         <line className="st0" x1="314.2" y1="430.8" x2="314.2" y2="81.2"/>
                     </g>
                 </svg>
-                <p >Entdecken sie unseren showroom</p>
+                <p >{text}</p>
             </div>
         </>
     )

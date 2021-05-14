@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/services/action-types/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/actions/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/reducers/video.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/cartSidebar/CartSidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/cartSidebar/CartSidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header/HeaderSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/mobile-header/MobileHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/mobile-header/MobileHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/basket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/actions/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/basket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/basket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/homepage/components/video/VideoPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/video/VideoPart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/konto/components/adressen/Adressen.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/adressen/Adressen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/video/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/cart-sidebar/footer/CartSidebarFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/cart-sidebar/footer/CartSidebarFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSideBarProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSideBarProduct.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,6 +183,7 @@
       <workItem from="1620713234832" duration="28183000" />
       <workItem from="1620800542063" duration="15033000" />
       <workItem from="1620888275191" duration="20724000" />
+      <workItem from="1620972552167" duration="3142000" />
     </task>
     <servers />
   </component>
