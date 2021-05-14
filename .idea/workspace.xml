@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/konto/components/lesezeichen/Lesezeichen.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/konto/components/lesezeichen/Lesezeichen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/video/components/mediatek-info/MediatekInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/components/mediatek-info/MediatekInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/video/components/small-video-container/SmallVideoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/components/small-video-container/SmallVideoContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/video/components/mediatek-info/mediatekInfo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/components/mediatek-info/mediatekInfo.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/video/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/action-types/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/action-types/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/actions/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/actions/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/reducers/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/reducers/video.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +179,7 @@
       <workItem from="1620713234832" duration="28183000" />
       <workItem from="1620800542063" duration="15033000" />
       <workItem from="1620888275191" duration="20724000" />
-      <workItem from="1620972552167" duration="18414000" />
+      <workItem from="1620972552167" duration="19186000" />
     </task>
     <servers />
   </component>

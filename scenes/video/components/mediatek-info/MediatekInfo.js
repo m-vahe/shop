@@ -4,6 +4,10 @@ const MediatekInfo = ({info, setInfo, checked, filter}) => {
             {[...new Set([...info])].map((e, i) => {
                 return (
                     <div className='mediatek__container__option' key={i}
+                         style={filter.type === e && filter.checked ? {
+                             background: "white",
+                             border: "1px solid black"
+                         } : null}
                          onClick={() => {
                              if (filter.type === e) {
                                  setInfo(prev => ({
@@ -20,7 +24,10 @@ const MediatekInfo = ({info, setInfo, checked, filter}) => {
                              }
                          }}
                     >
-                        <span className='mediatek__container__option--text'>{e}</span>
+                        <span className='mediatek__container__option--text'
+                              style={filter.type === e && filter.checked ?
+                                  {color: "black"} : null}
+                        >{e}</span>
                     </div>
                 )
             })}

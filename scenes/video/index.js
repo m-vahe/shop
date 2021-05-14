@@ -20,7 +20,6 @@ const Video = () => {
 
     const {videoText} = useSelector(state => state.video)
     const {videos} = useSelector(state => state.video)
-    const {videosForSelect} = useSelector(state => state.video)
     const {videosLoaded} = useSelector(state => state.video)
 
     const [activeIndex, setActiveIndex] = useState()
@@ -28,10 +27,6 @@ const Video = () => {
     useEffect(() => {
         setActiveIndex(videos[0]?.id)
     }, [videosLoaded])
-
-    useEffect(() => {
-        console.log(activeIndex)
-    }, [activeIndex])
 
     const info = videos.map(e => {
         return e.type.toUpperCase()
@@ -50,6 +45,7 @@ const Video = () => {
             dispatch(filterVideos(a))
         } else dispatch(filterVideos([]))
     }, [infoFilter])
+
     const {filtered} = useSelector(state => state.video)
 
     useEffect(() => {
@@ -57,6 +53,7 @@ const Video = () => {
             setActiveIndex(filtered[0]?.id)
         }
     }, [filtered])
+
     return (
         <div>
             <ComponentHeader
