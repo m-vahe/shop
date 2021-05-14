@@ -2,8 +2,10 @@ import { Drawer, Button, Radio, Space } from 'antd';
 import CartSidebarProduct from "../../shareable/cart-sidebar/product/CartSideBarProduct";
 import {useState,useEffect} from "react"
 import CartSidebarFooter from "../../shareable/cart-sidebar/footer/CartSidebarFooter";
+import {useSelector} from "react-redux";
 const CartSidebar = ({visible,onClose}) => {
         const [products,setProducts] = useState([1,2])
+        const productsData = useSelector(state=>state.basket.products)
         const [cartWidth,setCartWidth] = useState(488)
         const [windowSize, setWindowSize] = useState({
             width: undefined,
@@ -11,6 +13,7 @@ const CartSidebar = ({visible,onClose}) => {
         });
 
         useEffect(() => {
+            console.log("+++++++++++++++++++++")
             function handleResize() {
                 setWindowSize({
                     width: window.innerWidth,
@@ -43,7 +46,7 @@ const CartSidebar = ({visible,onClose}) => {
             <>
                 <Drawer
                     className = "shopping__cart__drawer"
-                    title="Warenkorb (2 Produkt)"
+                    title={`Warenkorb (${productsData.products ? productsData.products.length : 0 } Produkt)`}
                     placement={"right"}
                     closable={true}
                     onClose={onClose}
@@ -53,16 +56,15 @@ const CartSidebar = ({visible,onClose}) => {
                     width={cartWidth}
                 >
                     <div className={"cart__sidebar__products"}>
-                        {products.map((e,i)=>{
+                        {productsData?.products?.map((e,i)=>{
                             return(
                                 <div key={i}>
-                                    <CartSidebarProduct key={i}/>
-
+                                    <CartSidebarProduct key={i} elem={e}/>
                                 </div>
                             )
                         })}
                     </div>
-                    <CartSidebarFooter/>
+                    <CartSidebarFooter cost={productsData?.cost} data={productsData.products}/>
                 </Drawer>
             </>
         );

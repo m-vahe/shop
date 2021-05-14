@@ -11,6 +11,7 @@ import {getHeaderContacts} from "../../services/actions/homepage__stable"
 import CartSidebar from "../cartSidebar/CartSidebar";
 import HeaderLoginPopup from "./modal/HeaderLoginPopup";
 import {getUserDataFromLocalStorage} from "../../services/actions/auth";
+import {getBasketData} from "../../services/actions/basket";
 
 const HeaderSearch = () => {
     const [languages, setLanguages] = useState([
@@ -57,7 +58,11 @@ const HeaderSearch = () => {
             return lng;
         }));
     }, [languages]);
-
+useEffect(()=>{
+    if(visible){
+        dispatch(getBasketData())
+    }
+},[visible])
     return (
         <>
             <div className={"header-mid-body"}>

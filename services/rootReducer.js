@@ -15,6 +15,7 @@ import shopPageReducer from "./reducers/shop";
 import brandsProductsReducer from "./reducers/brands";
 import addressReducer from "./reducers/address";
 import markenReducer from "./reducers/marken";
+import basketReducer from "./reducers/basket";
 
 const rootReducer = combineReducers({
     navbar: homeReducer,
@@ -32,7 +33,8 @@ const rootReducer = combineReducers({
     shop: shopPageReducer,
     brand: brandsProductsReducer,
     address: addressReducer,
-    marken: markenReducer
+    marken: markenReducer,
+    basket: basketReducer
 });
 
 export default rootReducer;
