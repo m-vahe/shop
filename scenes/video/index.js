@@ -5,7 +5,7 @@ import VideosContainer from './components/video-container/VideosContainer'
 import Social from '../../shareable/social/Social';
 import NewsletterRep from "../../shareable/newsLetter/NewsletterRep";
 import {useDispatch, useSelector} from "react-redux";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {getUserDataFromLocalStorage} from "../../services/actions/auth";
 import {getVideos, getVideoText} from "../../services/actions/video";
 
@@ -18,21 +18,37 @@ const Video = () => {
         dispatch(getVideos())
     }, []);
 
-    const {videoText} = useSelector(state=>state.video)
+    const {videoText} = useSelector(state => state.video)
+    const {videos} = useSelector(state => state.video)
+    const {videosForSelect} = useSelector(state => state.video)
+    const {videosLoaded} = useSelector(state => state.video)
 
-  return (
-    <div>
-      <ComponentHeader
-        info={videoText?.header}
-        title={videoText?.title}
-      />
-      <MediatekInfo />
-      <VideoPart text={videoText?.video_text} />
-      <VideosContainer />
-      <Social />
-      <NewsletterRep />
-    </div>
-  );
+    const [activeIndex, setActiveIndex] = useState()
+
+    useEffect(()=>{
+        setActiveIndex(videos[0]?.id)
+    },[videosLoaded])
+
+    useEffect(()=>{
+        console.log(activeIndex)
+    },[activeIndex])
+
+    const info = videos.map(e=>{
+        return e.type
+    })
+    return (
+        <div>
+            <ComponentHeader
+                info={videoText?.header}
+                title={videoText?.title}
+            />
+            <MediatekInfo info={info}/>
+            <VideoPart text={videoText?.video_text} video={videos.find(item=>item.id === activeIndex)}/>
+            <VideosContainer videos={videos} activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
+            <Social/>
+            <NewsletterRep/>
+        </div>
+    );
 };
 
 export default Video;

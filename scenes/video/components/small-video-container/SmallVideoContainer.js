@@ -1,29 +1,28 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import ReactPlayer from 'react-player';
 import Image from 'next/image';
+import Link from "next/link";
 
-const VideosContainer = () => {
+const VideosContainer = ({video, changeVideo,addToBookmark}) => {
     const [play1, setPlay1] = useState(false);
     return (
         <div className={"col-lg-4 small-vid-bod"}>
             <div className={"video-small-body-only"}>
-                <ReactPlayer url='/video.webm'  muted={true}
+                <ReactPlayer url={video?.video?.url} muted={true}
                              width='100%'
                              height='100%'
-                             playing={play1}
+                             playing={false}
                              id={"videoBG"}
-
-
-                    // light="https://i.stack.imgur.com/zw9Iz.png"
                 />
-                <img src="/play.png" alt="play" onClick={()=>setPlay1(true)} style={play1 ? {display:"none"} : null}/>
+                <img src="/play.png" alt="play" onClick={() => setPlay1(true)}
+                     style={play1 ? {display: "none"} : null} onClick={() => {
+                    changeVideo(video)
+                }}/>
                 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg"
-                     onClick={()=>{
-                         setPlay1(false)
-                     }}
+
 
                      xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 512 512"  space="preserve" style={!play1 ? {
+                     viewBox="0 0 512 512" space="preserve" style={!play1 ? {
                     fill: "none",
                     stroke: "white",
                     strokeWidth: "25",
@@ -32,8 +31,8 @@ const VideosContainer = () => {
                     strokeMiterlimit: "10",
                     position: "absolute",
                     // width: "6rem",
-                    display:"none"
-                }: {
+                    display: "none"
+                } : {
                     fill: "none",
                     stroke: "white",
                     strokeWidth: "25",
@@ -42,9 +41,9 @@ const VideosContainer = () => {
                     strokeMiterlimit: "10",
                     position: "absolute",
                     width: "60px",
-                    left:"42%",
-                    top:"36%",
-                    cursor:"pointer"
+                    left: "42%",
+                    top: "36%",
+                    cursor: "pointer"
                 }}>
                     <g>
                         <line className="st0" x1="197.8" y1="430.8" x2="197.8" y2="81.2"/>
@@ -54,22 +53,22 @@ const VideosContainer = () => {
             </div>
             <div className={"small-vid-text"}>
                 <div className={"a"}>
-                    <p> Review </p>
-                    <div style={{marginTop:"25px"}}>
-                        <Image src='/bookmark.png' alt='bookmark' width={17} height={17} />
-                    </div>
+                    <p> {video?.type} </p>
+                    {video.favorite ? <p onClick={()=>addToBookmark(video.id)}>Fav</p>:<div style={{marginTop: "25px"}} >
+                        <Image src='/bookmark.png' alt='bookmark' width={17} height={17} onClick={()=>addToBookmark(video.id)}/>
+                    </div>}
                 </div>
                 <h2>
-                    Notorious Oud von D.S. & Durga
+                    {video?.video_name} {video?.id}
                 </h2>
                 <span>
-                            Lassen Sie sich von unserem Duftexperten Dr. Coucoulis den
-                            indonesischen Duft Notorious Oud von D.S. & Durga vorstellen. Formuliert in Bed-Stuy, Brooklyn mit
-                            nordafrikanischem Papyrus, afghanischem Safran und bulgarischer Rose.
-                        </span>
-                <a href="#">
-                    Produkt shoppen
-                </a>
+                          {video?.description}
+                </span>
+                <Link href={`${video?.link}`}>
+                    <a href="#">
+                        {video?.url}
+                    </a>
+                </Link>
             </div>
         </div>
     );

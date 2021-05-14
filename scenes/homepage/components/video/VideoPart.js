@@ -2,7 +2,7 @@ import  {useState} from 'react'
 import ReactPlayer from 'react-player'
 import Image from "next/image";
 
-const VideoPart = ({text}) =>{
+const VideoPart = ({text,video}) =>{
     const [play,setPlay] = useState(false)
     const [show,setShow] = useState(false)
     return(
@@ -11,7 +11,7 @@ const VideoPart = ({text}) =>{
             <div className={"video-body"} 
             style={{marginBottom:"6rem"}}
             >
-                <ReactPlayer url='/video.webm'  muted={true}
+                <ReactPlayer url={video?.video?.url}  muted={true}
                              width='100%'
                              height='120vh'
                              playing={play}
@@ -57,7 +57,7 @@ const VideoPart = ({text}) =>{
                         <line className="st0" x1="314.2" y1="430.8" x2="314.2" y2="81.2"/>
                     </g>
                 </svg>
-                <p >{text}</p>
+                <p style={play ? {display:"none"} : null}>{text}</p>
             </div>
         </>
     )
