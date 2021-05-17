@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/bookmark_filled.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/cartSidebar/CartSidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/cartSidebar/CartSidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/ProductsWithFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSideBarProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSideBarProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/video/components/small-video-container/SmallVideoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/components/small-video-container/SmallVideoContainer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +47,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mihran\Desktop\shop\public" />
       <recent name="C:\Users\Mihran\Desktop\shop\services\reducers" />
       <recent name="C:\Users\Mihran\Desktop\shop\services\actions" />
       <recent name="C:\Users\Mihran\Desktop\shop\scenes\registration\components\registration-info\info-icons" />
       <recent name="C:\Users\Mihran\Desktop\shop\services\action-types" />
-      <recent name="C:\Users\Mihran\Desktop\shop\public\registrationicons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mihran\Desktop\shop\shareable\contact-header" />
@@ -180,7 +179,8 @@
       <workItem from="1620800542063" duration="15033000" />
       <workItem from="1620888275191" duration="20724000" />
       <workItem from="1620972552167" duration="19916000" />
-      <workItem from="1621235675232" duration="750000" />
+      <workItem from="1621235675232" duration="2182000" />
+      <workItem from="1621237917518" duration="84000" />
     </task>
     <servers />
   </component>
@@ -209,5 +209,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

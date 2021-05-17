@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player';
 import Image from 'next/image';
 import Link from "next/link";
 
-const VideosContainer = ({video, changeVideo,addToBookmark}) => {
+const VideosContainer = ({video, changeVideo, addToBookmark}) => {
     const [play1, setPlay1] = useState(false);
     return (
         <div className={"col-lg-4 small-vid-bod"}>
@@ -16,9 +16,9 @@ const VideosContainer = ({video, changeVideo,addToBookmark}) => {
                 />
                 <img src="/play.png" alt="play" onClick={() => setPlay1(true)}
                      style={play1 ? {display: "none"} : null} onClick={() => {
-                    if(changeVideo !== "no"){
+                    if (changeVideo !== "no") {
                         changeVideo(video)
-                    }else setPlay1(true)
+                    } else setPlay1(true)
                 }}/>
                 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg"
 
@@ -56,12 +56,29 @@ const VideosContainer = ({video, changeVideo,addToBookmark}) => {
             <div className={"small-vid-text"}>
                 <div className={"a"}>
                     <p> {video?.type} </p>
-                    {video.favorite ? <p onClick={()=>addToBookmark(video.id)}>Fav</p>:<div style={{marginTop: "25px"}} >
-                        <Image src='/bookmark.png' alt='bookmark' width={17} height={17} onClick={()=>addToBookmark(video.id)}/>
-                    </div>}
+                    {video.favorite ?
+                        <div style={{marginTop: "25px"}}>
+                            <Image src='/bookmark_filled.png'
+                                   alt='bookmark'
+                                   width={17}
+                                   height={17}
+                                   onClick={() => addToBookmark(video.id)}
+                            />
+                        </div>
+                        :
+                        <div style={{marginTop: "25px"}}>
+                            <Image
+                                src='/bookmark.png'
+                                alt='bookmark'
+                                width={17}
+                                height={17}
+                                onClick={() => addToBookmark(video.id)}
+                            />
+                        </div>
+                    }
                 </div>
                 <h2>
-                    {video?.video_name} {video?.id}
+                    {video?.video_name}
                 </h2>
                 <span>
                           {video?.description}
