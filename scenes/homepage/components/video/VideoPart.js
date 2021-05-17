@@ -1,17 +1,15 @@
 import  {useState} from 'react'
 import ReactPlayer from 'react-player'
-import Image from "next/image";
 
 const VideoPart = ({text,video}) =>{
     const [play,setPlay] = useState(false)
     const [show,setShow] = useState(false)
     return(
         <>
-            {/*<h1 style={{padding:"45vh 0",textAlign:"center"}}>Videos Part in progress . . . </h1>*/}
-            <div className={"video-body"} 
+            <div className={"video-body"}
             style={{marginBottom:"6rem"}}
             >
-                <ReactPlayer url={video?.video?.url}  muted={true}
+                <ReactPlayer url={video?.video?.url || "/video.webm"}  muted={true}
                              width='100%'
                              height='120vh'
                              playing={play}
@@ -23,8 +21,6 @@ const VideoPart = ({text,video}) =>{
                 <img style={play ? {display:"none"}:null} className={"playvideohome"} src="/play.png" alt="play" onClick={()=>{
                     setPlay(true)
                 }}/>
-                {/*<button  style={play ? {display:"none"}:null} >Play</button>*/}
-                {/*<button className={"pausevideohome"} style={!play ? {display:"none"}:null} >Pause</button>*/}
                 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg"
                      onClick={()=>{
                          setPlay(false)

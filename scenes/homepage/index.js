@@ -97,16 +97,6 @@ const Homepage = () => {
   },[loader])
  
   return (
-    // <>
-    //   {homePageSctOneLoaded && loaded && navlistloaded && headerloaded && !homepageIntro?.images.url  && (
-    //     <div className={"loader__body"}>
-    //       <Space size="middle">
-    //         <Spin size="large" />
-    //       </Space>
-    //     </div>
-    //   )}
-    //   <>
-
     <>
       {homeLoader  && (
         <div className={"loader__body"}>

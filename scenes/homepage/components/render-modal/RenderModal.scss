@@ -152,6 +152,7 @@
                 height: 2.2rem;
                 width: 2.2rem;
                 background-color: white;
+                border: 1px solid white;
               }
 
               /* On mouse-over, add a grey background color */
@@ -159,6 +160,7 @@
               /* When the checkbox is checked, add a blue background */
               .container input:checked ~ .checkmark {
                 background-color: black;
+                border: 1px solid white;
               }
 
               /* Create the checkmark/indicator (hidden when not checked) */
@@ -175,8 +177,8 @@
 
               /* Style the checkmark/indicator */
               .container .checkmark:after {
-                left: 9px;
-                top: 5px;
+                left: 7px;
+                top: 4px;
                 width: 5px;
                 height: 10px;
                 border: solid white;

@@ -1,6 +1,5 @@
 import React from "react";
 import { Modal } from "antd";
-// import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getRenderModal } from "../../../../services/actions/homepage__stable";
@@ -46,12 +45,10 @@ const RenderModal = ({ isModalVisible, setIsModalVisible }) => {
               <button type="submit">Jetzt anmelden</button>
             </div>
             <div className={"privacy_popup container"}>
-              <input type="checkbox" />
+              <input type="checkbox" checked={true} />
               <span className="checkmark"></span>
               <label htmlFor="privacy">
                 {newsReports?.privacy}
-                {/* Hiermit bestätige ich, dass ich die{" "}
-                <span>Daten­schutz­erklärung</span> gelesen habe *. */}
               </label>
             </div>
           </form>
