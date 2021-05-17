@@ -13,7 +13,6 @@ const CartSidebar = ({visible,onClose}) => {
         });
 
         useEffect(() => {
-            console.log("+++++++++++++++++++++")
             function handleResize() {
                 setWindowSize({
                     width: window.innerWidth,

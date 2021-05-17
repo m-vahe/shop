@@ -260,7 +260,7 @@ const ProductsWithFilter = ({
                                         viewBox="0 0 512 512"
                                         className={"letter-svg heart-icon-item"}
                                         onClick={() =>
-                                            basketClickHandler(elem?.id, elem?.variants_of_a_products.find(item => item.main === true).id)
+                                            favouriteClickHandler(elem?.id, elem?.variants_of_a_products.find(item => item.main === true).id)
                                         }
                                         style={elem.variants_of_a_products.find(item => item.main === true).favorite ? {stroke: "#000000"} : {stroke: "#7b7b7b"}}
                                     >

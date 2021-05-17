@@ -10,13 +10,14 @@ const CartSidebarProduct = ({elem}) =>{
         currency: 'EUR',
         minimumFractionDigits: 2
     });
+
     const [value,setValue] = useState(elem.quantity)
+
     useEffect(()=>{
         setValue(Number(elem?.quantity))
     },[elem?.quantity])
-    const maxLimit = 10
-    const onIncHandler = () =>{
 
+    const onIncHandler = () =>{
         if(value < elem.variants_of_a_products[0].quantity){
             setValue(value + 1)
             dispatch(addToBasket(elem.id,elem.variants_of_a_products[0].id,1))
@@ -28,11 +29,9 @@ const CartSidebarProduct = ({elem}) =>{
             setValue(value - 1)
             dispatch(addToBasket(elem.id,elem.variants_of_a_products[0].id,-1))
         }
-        console.log(value)
     }
-    const onChange=()=>{
-
-    }
+    const onChange=()=>{}
+    console.log(elem)
     return(
         <div className={"cart__sidebar__product__body"}>
             <div className={"cart__sidebar__product__body__image"}>
@@ -42,7 +41,7 @@ const CartSidebarProduct = ({elem}) =>{
                 <span className={"cart__sidebar__product__body__text--name"}>{elem?.brand?.name}</span>
                 <span className={"cart__sidebar__product__body__text--type"}>{elem?.kind}</span>
                 <span className={"cart__sidebar__product__body__text--quantity"}>{value} Packung</span>
-                <span className={"cart__sidebar__product__body__text--price"}>{formatter.format(28.00 * value || 0)}</span>
+                <span className={"cart__sidebar__product__body__text--price"}>{formatter.format(elem.variants_of_a_products[0].price * value || 0)}</span>
                 <div className={"cart__sidebar__product__body__text--quantityinp"}>
                     <button className={"btnplus"} onClick={onIncHandler}><FontAwesomeIcon icon={faPlus}/></button>
                     <input type="number"  min={"1"} max={"10"} onChange={onChange} value={value < 10 ? `0${value}` : value }/>
