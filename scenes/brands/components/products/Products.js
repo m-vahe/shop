@@ -49,7 +49,7 @@ const BrandsProducts = ({ products, addToWishList, getFour }) => {
                       />
                     )}
 
-                    {!e.approoved && (
+                    {!e.approved_by_DPAB && (
                       <img
                         src="/15-layers.png"
                         alt="15 layers"
@@ -103,8 +103,8 @@ const BrandsProducts = ({ products, addToWishList, getFour }) => {
                     </span>
                   )}
                   <span className={"prod-txt-head2"}>Limited edition</span>
-                  {e?.brand ? (
-                    <h3 className={"prod-txt-name"}>{e?.brand}</h3>
+                  {e?.brand?.name ? (
+                    <h3 className={"prod-txt-name"}>{e?.brand?.name}</h3>
                   ) : (
                     <h3 className={"prod-txt-name"} style={{ opacity: 0 }}>
                       Ylumi

@@ -96,13 +96,13 @@ const BrandsScene = ({id}) => {
                         />
                         <BrandPortrait
                             data={{
-                                title:data?.brand_portrait_title,
-                                head:data?.brand_portraid_head,
-                                text:data?.brand_portraid_text,
-                                quote:data?.brand_portraid_quote,
-                                imgTxt:data?.brand_portraid_imgtext,
-                                img:data?.brand_portraid_img,
-                                desc:data?.brand_portraid_desc,
+                                title: data?.brand_portrait_title,
+                                head: data?.brand_portraid_head,
+                                text: data?.brand_portraid_text,
+                                quote: data?.brand_portraid_quote,
+                                imgTxt: data?.brand_portraid_imgtext,
+                                img: data?.brand_portraid_img,
+                                desc: data?.brand_portraid_desc,
                             }}
                         />
                         <Products
@@ -112,11 +112,11 @@ const BrandsScene = ({id}) => {
                         />
                         <ActiveIngredients
                             data={{
-                                title:data?.active_ingridients_title,
-                                head:data?.active_ingridients_header,
-                                img:data?.active_ingridients_img,
-                                imgTxt:data?.active_ingridients_imgtext,
-                                text:data?.active_ingridients_text
+                                title: data?.active_ingridients_title,
+                                head: data?.active_ingridients_header,
+                                img: data?.active_ingridients_img,
+                                imgTxt: data?.active_ingridients_imgtext,
+                                text: data?.active_ingridients_text
                             }}
                         />
                         <CareProducts
@@ -130,11 +130,11 @@ const BrandsScene = ({id}) => {
                         />
                         <Application data={
                             {
-                                title:data?.aplication_title,
-                                head:data?.application_header,
-                                img:data?.application_img,
-                                imgTxt:data?.application_imgtext,
-                                text:data?.application_text
+                                title: data?.aplication_title,
+                                head: data?.application_header,
+                                img: data?.application_img,
+                                imgTxt: data?.application_imgtext,
+                                text: data?.application_text
                             }
                         }
                         />
@@ -147,11 +147,11 @@ const BrandsScene = ({id}) => {
                         <PressReviews
                             data={
                                 {
-                                    title:data?.press_reviews_title,
-                                    text:data?.press_reviews_text,
-                                    imgTxt:data?.press_reviews_imgtext,
-                                    img:data?.press_reviews_img?.url,
-                                    head:data?.press_reviews_header
+                                    title: data?.press_reviews_title,
+                                    text: data?.press_reviews_text,
+                                    imgTxt: data?.press_reviews_imgtext,
+                                    img: data?.press_reviews_img?.url,
+                                    head: data?.press_reviews_header
                                 }
                             }
                         />

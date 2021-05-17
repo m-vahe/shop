@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3195dc-259a-4a0f-8c3c-d31cc858290a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/bookmark_filled.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/video/components/small-video-container/SmallVideoContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/video/components/small-video-container/SmallVideoContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/components/products/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/components/products/Products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/brands/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/brands/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/RightProductText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/text-components/TextComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/right-product-text/text-components/TextComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/components/single-product-bottom/SingleProductBottom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/single-product-scene/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/single-product-scene/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSideBarProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/cart-sidebar/product/CartSideBarProduct.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +185,7 @@
       <workItem from="1620888275191" duration="20724000" />
       <workItem from="1620972552167" duration="19916000" />
       <workItem from="1621235675232" duration="2182000" />
-      <workItem from="1621237917518" duration="84000" />
+      <workItem from="1621237917518" duration="2567000" />
     </task>
     <servers />
   </component>
