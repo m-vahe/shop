@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react"
 import {useDispatch, useSelector} from "react-redux";
 import {postNewsletter, setNewsLetters} from "../../services/actions/newsletter"
-import { notification,Tooltip} from 'antd';
+import {notification, Tooltip} from 'antd';
 import {getNewsletterText} from '../../services/actions/homepage__stable';
 
 const NewsletterRep = ({padding}) => {
@@ -37,17 +37,17 @@ const NewsletterRep = ({padding}) => {
             description: type === "success" ? "Thank you for subscription" : "You already subscribed to newsletter"
         });
     };
-    const [emailSuccess,setEmailSuccess] = useState("")
+    const [emailSuccess, setEmailSuccess] = useState("")
     const onSubmit = (e) => {
         e.preventDefault()
-        if(newsLetter.Email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+        if (newsLetter.Email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
             dispatch(postNewsletter(newsLetter))
             setChecked(false)
             setChecked2(false)
             setChecked3(false)
             setEmailSuccess("")
             setNewsLetter({First_name: "", Surname: "", Gender: "", Email: ""})
-        }else setEmailSuccess(true)
+        } else setEmailSuccess(true)
     }
     return (
         <>
@@ -169,9 +169,9 @@ const NewsletterRep = ({padding}) => {
                                         ...prev,
                                         Email: val
                                     }))
-                                    if(e.target.value.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+                                    if (e.target.value.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
                                         setEmailSuccess(false)
-                                    }else setEmailSuccess(true)
+                                    } else setEmailSuccess(true)
                                 }}
                             />
                         </Tooltip>

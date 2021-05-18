@@ -9,7 +9,7 @@
       <change beforePath="$PROJECT_DIR$/scenes/homepage/components/render-modal/RenderModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/render-modal/RenderModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/components/render-modal/RenderModal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/render-modal/RenderModal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scenes/homepage/components/video/VideoPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/components/video/VideoPart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenes/homepage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/homepage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" beforeDir="false" afterPath="$PROJECT_DIR$/shareable/newsLetter/NewsletterRep.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +182,8 @@
       <workItem from="1620888275191" duration="20724000" />
       <workItem from="1620972552167" duration="19916000" />
       <workItem from="1621235675232" duration="2182000" />
-      <workItem from="1621237917518" duration="3255000" />
+      <workItem from="1621237917518" duration="5344000" />
+      <workItem from="1621321895279" duration="358000" />
     </task>
     <servers />
   </component>

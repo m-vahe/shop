@@ -16,7 +16,7 @@ const VideoPart = ({text,video}) =>{
                              id={"videoBG"}
                              style={{position:"absolute",top:"-20vh",left:"0"}}
                              className={"video-elem-big"}
-                             // light="https://i.stack.imgur.com/zw9Iz.png"
+
                 />
                 <img style={play ? {display:"none"}:null} className={"playvideohome"} src="/play.png" alt="play" onClick={()=>{
                     setPlay(true)
